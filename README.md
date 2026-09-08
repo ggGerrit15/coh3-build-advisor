@@ -20,9 +20,8 @@ https://gggerrit15.github.io/coh3-build-advisor/
 
 ## Current Version
 
-**CoH3 Build Advisor v8.6**
+**v1.0.0 — Patch 2.5.3**
 
-Current data is based around **Patch 2.5.3**.
 
 ## Important
 
