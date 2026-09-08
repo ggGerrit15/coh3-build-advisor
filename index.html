@@ -6,7 +6,33 @@
 <title>CoH3 Build Advisor v8.6</title>
 <style>
 :root{--bg:#090d12;--panel:#131a22;--panel2:#1b2430;--line:#303b49;--txt:#edf2f7;--muted:#99a6b5;--accent:#e7a23b;--accent2:#ffd078;--green:#73d49b;--yellow:#edc45f;--red:#df7777;--blue:#77b9e8;--purple:#b690ff}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#070a0f,#101720 68%,#090d12);color:var(--txt);font-family:Inter,Segoe UI,Arial,sans-serif}.shell{max-width:1380px;margin:auto;padding:24px 16px 72px}.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:15px}h1{font-size:35px;margin:0 0 5px}h2,h3,h4{margin-top:0}.muted{color:var(--muted)}.small{font-size:12px}.patch{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 12px;color:var(--accent2);font-weight:700}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}.tab{background:var(--panel);border:1px solid var(--line);color:var(--txt);padding:9px 13px;border-radius:9px;cursor:pointer}.tab.active{border-color:var(--accent);color:var(--accent2);box-shadow:0 0 0 1px #e7a23b33 inset}.controls{display:grid;grid-template-columns:repeat(6,minmax(0,1fr)) auto;gap:10px;background:var(--panel);padding:14px;border:1px solid var(--line);border-radius:14px;position:sticky;top:8px;z-index:10;box-shadow:0 12px 32px #0008}label{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}select,input,textarea,button.action{width:100%;background:#0d131a;color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:10px}button.action{cursor:pointer;color:var(--accent2);font-weight:700}.controls button.action{margin-top:16px}.layout{display:grid;grid-template-columns:1.38fr .62fr;gap:14px;margin-top:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}.tag{padding:5px 8px;border:1px solid var(--line);background:var(--panel2);border-radius:999px;font-size:11px}.conf.High,.conf.Medium-High{color:var(--green)}.conf.Medium,.conf.Low-Medium{color:var(--yellow)}.conf.Low{color:var(--red)}.build{font-size:16px;line-height:1.75;padding:13px;background:#0d131a;border:1px solid var(--line);border-radius:10px}.arrow{color:var(--accent2);font-weight:800;padding:0 3px}.notice{border-left:3px solid var(--yellow);padding:10px 12px;background:#171a16;border-radius:8px;color:#d7d1b5}.info{border-left:3px solid var(--blue);padding:10px 12px;background:#101923;border-radius:8px;color:#c0d4e8}.goodnotice{border-left:3px solid var(--green);padding:10px 12px;background:#101c17;border-radius:8px;color:#c5e6d1}.branchgrid{display:grid;grid-template-columns:1fr 1.15fr 1.35fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}.branchgrid>div{padding:9px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}.branchgrid>div:nth-child(3n){border-right:0}.head{background:var(--panel2);font-weight:700;color:var(--accent2)}ol,ul{line-height:1.55;padding-left:21px}.source{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding:10px 0}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.hidden{display:none!important}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#070a0f,#101720 68%,#090d12);color:var(--txt);font-family:Inter,Segoe UI,Arial,sans-serif}.shell{max-width:1380px;margin:auto;padding:24px 16px 72px}.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:15px}h1{font-size:35px;margin:0 0 5px}h2,h3,h4{margin-top:0}.muted{color:var(--muted)}.small{font-size:12px}.patch{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 12px;color:var(--accent2);font-weight:700}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}.tab{background:var(--panel);border:1px solid var(--line);color:var(--txt);padding:9px 13px;border-radius:9px;cursor:pointer}.tab.active{border-color:var(--accent);color:var(--accent2);box-shadow:0 0 0 1px #e7a23b33 inset}.controls{display:grid;grid-template-columns:repeat(6,minmax(0,1fr)) auto;gap:10px;background:var(--panel);padding:14px;border:1px solid var(--line);border-radius:14px;position:sticky;top:8px;z-index:10;box-shadow:0 12px 32px #0008}label{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}select,input,textarea,button.action{width:100%;background:#0d131a;color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:10px}button.action{cursor:pointer;color:var(--accent2);font-weight:700}.controls button.action{margin-top:16px}.layout{display:grid;grid-template-columns:1.38fr .62fr;gap:14px;margin-top:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}.tag{padding:5px 8px;border:1px solid var(--line);background:var(--panel2);border-radius:999px;font-size:11px}.conf.High,.conf.Medium-High{color:var(--green)}.conf.Medium,.conf.Low-Medium{color:var(--yellow)}.conf.Low{color:var(--red)}.build{font-size:16px;line-height:1.75;padding:13px;background:#0d131a;border:1px solid var(--line);border-radius:10px}.arrow{color:var(--accent2);font-weight:800;padding:0 3px}.notice{border-left:3px solid var(--yellow);padding:10px 12px;background:#171a16;border-radius:8px;color:#d7d1b5}.info{border-left:3px solid var(--blue);padding:10px 12px;background:#101923;border-radius:8px;color:#c0d4e8}.goodnotice{border-left:3px solid var(--green);padding:10px 12px;background:#101c17;border-radius:8px;color:#c5e6d1}.branchgrid{display:grid;grid-template-columns:1fr 1.15fr 1.35fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}.branchgrid>div{padding:9px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}.branchgrid>div:nth-child(3n){border-right:0}.head{background:var(--panel2);font-weight:700;color:var(--accent2)}ol,ul{line-height:1.55;padding-left:21px}.source{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding:10px 0}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.hidden{display:none!important} .communitylinks{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  margin-top:9px;
+}
+
+.communitylink{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  color:var(--txt);
+  padding:8px 11px;
+  border-radius:9px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+}
+
+.communitylink:hover{
+  border-color:var(--accent);
+  color:var(--accent2);
+  text-decoration:none;
+}
 .smartgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.smartcard{background:#0d131a;border:1px solid var(--line);border-radius:12px;padding:13px;position:relative}.smartcard.first{border-color:var(--accent);box-shadow:0 0 0 1px #e7a23b44 inset}.score{font-size:31px;font-weight:900;color:var(--accent2);line-height:1}.scorebar{height:7px;background:#222c38;border-radius:999px;overflow:hidden;margin:8px 0 10px}.scorebar>span{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--green),var(--accent));border-radius:999px}.smartreason{font-size:12px;color:var(--muted);min-height:34px}.smartactions{display:flex;gap:7px;margin-top:10px}.smartactions button{background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:7px;padding:7px 9px;cursor:pointer}.scoreparts{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}.scorepart{background:var(--panel2);padding:7px;border-radius:7px;text-align:center;font-size:11px}.scorepart b{display:block;color:var(--accent2);font-size:13px}
 .phasegrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.phase{background:#0d131a;border:1px solid var(--line);border-radius:10px;padding:11px}.phase h4{color:var(--accent2);margin-bottom:8px}.phasesteps{display:flex;flex-direction:column;gap:6px}.phasestep{padding:7px 8px;background:var(--panel2);border-radius:7px;font-size:13px}.matchwrap{max-width:1180px;margin:14px auto}.matchhero{display:grid;grid-template-columns:1.25fr .75fr;gap:12px}.matchscore{font-size:52px;font-weight:900;color:var(--accent2)}.decisiongrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.decision{background:#0d131a;border:1px solid var(--line);border-radius:10px;padding:12px}.decision strong{display:block;color:var(--accent2);margin-bottom:5px}.matchbuild{font-size:19px;line-height:1.9}
 .comparegrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.comparecol{background:#0d131a;border:1px solid var(--line);border-radius:10px;padding:12px}.stepchips{display:flex;gap:6px;flex-wrap:wrap}.stepchip{border:1px solid var(--line);padding:6px 8px;border-radius:999px;font-size:12px;background:var(--panel2)}.stepchip.only{border-color:#9b6a31;color:#ffd59c}.stepchip.shared{border-color:#315f4a;color:#bde6cf}.diffgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.diffbox{background:var(--panel2);border-radius:9px;padding:10px}.diffbox ul{margin:6px 0}.comparetop{display:flex;align-items:end;gap:10px;margin-bottom:10px}.comparetop>div{flex:1}
@@ -14,12 +40,41 @@
 
 .teamcontrols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;background:var(--panel);padding:14px;border:1px solid var(--line);border-radius:14px}.teamtable{width:100%;border-collapse:collapse;font-size:14px}.teamtable th,.teamtable td{padding:10px 9px;border-bottom:1px solid var(--line);text-align:left}.teamtable th{color:var(--accent2);background:var(--panel2);position:sticky;top:0}.teamtable td.num,.teamtable th.num{text-align:right;font-variant-numeric:tabular-nums}.teamtable tr:first-child td{background:#142019}.teamtablewrap{overflow:auto;border:1px solid var(--line);border-radius:10px}.teamkpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.teamkpi{padding:12px;background:#0d131a;border:1px solid var(--line);border-radius:10px}.teamkpi .big{font-size:24px;font-weight:800;color:var(--accent2)}.mapbar{height:7px;background:#24303d;border-radius:99px;overflow:hidden;margin-top:6px}.mapbar>span{display:block;height:100%;background:var(--blue)}
 @media(max-width:1050px){.controls{grid-template-columns:1fr 1fr 1fr}.layout,.matchhero{grid-template-columns:1fr}.smartgrid,.phasegrid,.decisiongrid{grid-template-columns:1fr 1fr}.scoreparts{grid-template-columns:repeat(3,1fr)}}@media(max-width:700px){.controls,.creatorfilters,.teamcontrols{grid-template-columns:1fr 1fr;position:static}.smartgrid,.phasegrid,.decisiongrid,.comparegrid,.diffgrid,.statline,.methodgrid,.teamkpis{grid-template-columns:1fr}.creatorgrid{grid-template-columns:1fr}.branchgrid{grid-template-columns:1fr}.branchgrid>div{border-right:0}.rankrow{grid-template-columns:28px 1fr 90px}.rankrow>div:nth-child(4),.rankrow>div:nth-child(5){grid-column:2/4}.top{align-items:flex-start;flex-direction:column}}@media print{.controls,.tabs,.patch,.copybtn,.smartactions,.action{display:none!important}body{background:white;color:black}.card{background:white;border:1px solid #bbb}}
+@media(max-width:700px){
+  .communitylinks{
+    justify-content:flex-start;
+  }
+}
 </style>
 </head>
 <body>
 <div class="shell">
-  <div class="top"><div><h1>CoH3 Build Advisor v8.6</h1><div class="muted">Unofficial community tool • all four factions • Smart Advisor for 1v1 / 2v2 / 3v3 / 4v4 • map + ELO context • creator comparison</div></div><div class="patch">Patch 2.5.3 • 1v1 / 2v2 / 3v3 / 4v4 Smart Advisor</div></div>
-  <div class="tabs">
+  <div class="top"><di<div class="top">
+  <div>
+    <h1>CoH3 Build Advisor v8.6</h1>
+    <div class="muted">Unofficial community tool • all four factions • Smart Advisor for 1v1 / 2v2 / 3v3 / 4v4 • map + ELO context • creator comparison</div>
+  </div>
+
+  <div>
+    <div class="patch">Patch 2.5.3 • 1v1 / 2v2 / 3v3 / 4v4 Smart Advisor</div>
+
+    <div class="communitylinks">
+      <a class="communitylink"
+         href="https://github.com/ggGerrit15/coh3-build-advisor/discussions"
+         target="_blank"
+         rel="noopener noreferrer">
+        💬 Community
+      </a>
+
+      <a class="communitylink"
+         href="https://github.com/ggGerrit15/coh3-build-advisor/issues/new/choose"
+         target="_blank"
+         rel="noopener noreferrer">
+        🐛 Report Issue
+      </a>
+    </div>
+  </div>
+</div>
     <button class="tab active" data-view="advisor">Smart Build Advisor</button>
     <button class="tab" data-view="match">Match Mode</button>
     <button class="tab" data-view="creators">Creator Builds</button>
