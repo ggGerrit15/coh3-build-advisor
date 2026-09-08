@@ -67,3 +67,14 @@ Useful contributions include:
 - Creator build sources
 - Matchup-specific adjustments
 - Bugs in the website
+
+## ☕ Support the Project
+
+CoH3 Build Advisor is a free, unofficial community project.
+
+If you enjoy the tool and would like to support continued development,
+data work and future features, you can support the project here:
+
+[Support the project on Buy Me a Coffee]((https://buymeacoffee.com/coh3buildadvisor))
+
+Support is completely optional — feedback and contributions are just as valuable.
