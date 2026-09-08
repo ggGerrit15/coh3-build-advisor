@@ -1,6 +1,6 @@
 {
   "patch": "2.5.3",
-  "verified": "08 Sep 2026 — v8.6: full four-faction production/tech legality audit against the current CoH3Stats patch-2.5.3 roster. Current Advisor profiles were corrected where structures, tech upgrades or battlegroup production unlocks were missing; creator-original sequences remain preserved verbatim.",
+  "verified": "08 Sep 2026 — v1.0.0 initial public release. Full four-faction production/tech legality audit against the current CoH3Stats patch-2.5.3 roster. Current Advisor profiles were corrected where structures, tech upgrades or battlegroup production unlocks were missing; creator-original sequences remain preserved verbatim.",
   "profiles": [
     {
       "faction": "Wehrmacht",
@@ -12377,17 +12377,17 @@
     {
       "name": "CoHDB Battlegroups – 1000–1200",
       "url": "https://cohdb.com/battlegroups?patch=49048&rating_range=avg%3A1000_1200",
-      "note": "All-mode current-patch battlegroup context used by the v8.2 ELO selector."
+      "note": "All-mode current-patch battlegroup context used by the ELO selector."
     },
     {
       "name": "CoHDB Battlegroups – 1200–1400",
       "url": "https://cohdb.com/battlegroups?patch=49048&rating_range=avg%3A1200_1400",
-      "note": "All-mode current-patch battlegroup context used by the v8.1 ELO selector."
+      "note": "All-mode current-patch battlegroup context used by the ELO selector."
     },
     {
       "name": "CoHDB Battlegroups – 1400–1600",
       "url": "https://cohdb.com/battlegroups?patch=49048&rating_range=avg%3A1400_1600",
-      "note": "All-mode current-patch battlegroup context used by the v8.1 ELO selector."
+      "note": "All-mode current-patch battlegroup context used by the ELO selector."
     },
     {
       "name": "CoHDB Battlegroups – 1600–1800",
@@ -12437,7 +12437,7 @@
     {
       "name": "CoHDB Battlegroups – live 3v3 filter",
       "url": "https://cohdb.com/battlegroups?mode=threes&patch=49048",
-      "note": "Live 3v3 battlegroup page. v8.3 does not cache a global 3v3 BG table because that exact filtered table could not be reproducibly validated in this static research pass."
+      "note": "Live 3v3 battlegroup page. This release does not cache a global 3v3 BG table because that exact filtered table could not be reproducibly validated in this static research pass."
     },
     {
       "name": "CoHDB Maps",
