@@ -1,8 +1,8 @@
 ---
 name: Build Suggestion
 about: Suggest a new build order or improvement to an existing recommendation.
-title: ''
-labels: ''
+title: "[Build Suggestion] "
+labels: build-suggestion
 assignees: ''
 
 ---

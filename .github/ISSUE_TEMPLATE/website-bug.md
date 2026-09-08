@@ -1,8 +1,8 @@
 ---
 name: Website Bug
 about: Report a technical problem with the CoH3 Build Advisor website.
-title: ''
-labels: ''
+title: "[Website Bug] "
+labels: bug
 assignees: ''
 
 ---

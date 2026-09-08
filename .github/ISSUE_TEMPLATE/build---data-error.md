@@ -2,8 +2,8 @@
 name: Build / Data Error
 about: Report an incorrect build order, unit, tech requirement, statistic or battlegroup
   recommendation.
-title: ''
-labels: ''
+title: "[Data Error] "
+labels: data-error
 assignees: ''
 
 ---
