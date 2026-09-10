@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-10T14:24:46.684Z",
+  "generatedAt": "2026-09-10T15:00:54.091Z",
   "resolved": [
     {
       "key": "Wehrmacht|Breakthrough|Assault Forces|0|Assault Grenadiers",
@@ -1685,7 +1685,7 @@
   ],
   "unresolved": [],
   "qa": {
-    "checkedAt": "2026-09-10T14:25:18.269Z",
+    "checkedAt": "2026-09-10T15:01:33.192Z",
     "correctedKnownSwaps": [
       {
         "a": "Wehrmacht|Breakthrough|Assault Forces|1|Breakthrough",

@@ -1,6 +1,6 @@
 {
   "patch": "2.5.5",
-  "verified": "10 Sep 2026 — v1.1.13 public-copy cleanup. Removed methodology-heavy explanatory text from the main advisor, phase view, evidence sidebar, team-composition cards, ELO/archetype panels and rankings. Detailed source and methodology information remains available in the dedicated Sources tab.",
+  "verified": "10 Sep 2026 — v1.1.14 starting-unit clarity pass. Current Advisor build orders now label the unit already present at game start as “Starting unit: …”. If the same starting unit is intentionally produced again, subsequent copies are explicitly labelled “2nd …”, “3rd …”, etc. Creator-source data remains preserved; the live renderer applies the same display clarification without rewriting creator originals.",
   "battlegroupTrees": {
     "Wehrmacht": {
       "Breakthrough": {
@@ -5040,8 +5040,8 @@
       "confidence": "Medium",
       "verdict": "A deliberate economy-to-heavy-armor route. Strong when you can survive the midgame without overcommitting resources to the Tiger plan.",
       "build": [
-        "Start: Pioneer",
-        "Pioneer",
+        "Starting unit: Pioneer",
+        "2nd Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "Grenadier",
@@ -5126,7 +5126,7 @@
       "confidence": "Low-Medium",
       "verdict": "A defensive niche pick. Use Coastal Reserves and efficient fortifications to hold key territory, but keep enough mobile units to avoid being outmaneuvered.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Coastal Reserve",
         "MG42",
@@ -5171,7 +5171,7 @@
       "confidence": "Low-Medium",
       "verdict": "Niche infantry/defensive battlegroup. It can work, but current evidence is weaker than Luftwaffe, Mechanized or Siege Breaker.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "MG42",
@@ -5215,7 +5215,7 @@
       "confidence": "High",
       "verdict": "Recommended 251/Stummel Luftwaffe Battlegroup route: use Panzergrenadier Kompanie for the 251/Pak core, then scale with airborne infantry into conventional T4 armor. The Luftwaffe Kompanie is a separate T2 alternative, not the source of the 251.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Kettenkrad",
         "Infanterie Kompanie",
         "Fallschirmpioneer paradrop",
@@ -5302,7 +5302,7 @@
       "confidence": "Medium-High",
       "verdict": "Mobile Wehrmacht profile that trades some airborne infantry power for scouting, vehicle utility and the Panther late-game answer.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Kettenkrad",
         "Infanterie Kompanie",
         "Grenadier",
@@ -5360,8 +5360,8 @@
       "confidence": "Medium-High",
       "verdict": "A strong pressure build when the opponent leans on MGs, AT guns or fixed positions. The Siege Camp is a utility piece, not a replacement for real army strength.",
       "build": [
-        "Start: Pioneer",
-        "Pioneer",
+        "Starting unit: Pioneer",
+        "2nd Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "Grenadier",
@@ -5441,7 +5441,7 @@
       "confidence": "Medium",
       "verdict": "Infantry-control and information battlegroup with a King Tiger late option. Play a conventional Wehr core first; the battlegroup amplifies retreats and positional wins.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -5485,7 +5485,7 @@
       "confidence": "Medium",
       "verdict": "A slower heavy-armor route that becomes more comfortable in 2v2 because a teammate can help cover the Tiger transition.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "Grenadier",
@@ -5532,7 +5532,7 @@
       "confidence": "Low-Medium",
       "verdict": "Better in 2v2 than 1v1 on maps with defendable fuel/VP sectors, but still highly map-dependent.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Coastal Reserve",
         "MG42",
@@ -5577,7 +5577,7 @@
       "confidence": "Low",
       "verdict": "Playable but currently a niche choice. Best on maps where defensive positions and Sturmpioneer utility can be leveraged without sacrificing mobility.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "MG42",
@@ -5619,7 +5619,7 @@
       "confidence": "High",
       "verdict": "Best blind/default Wehrmacht 2v2 profile in this database: T1 → T3, hard AT, Fallschirmjägers, then Brummbär/Panzer IV.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -5666,7 +5666,7 @@
       "confidence": "Medium-High",
       "verdict": "Strong on open maps and in armor-heavy games. The Panther gives a clean late-game answer while Wespe helps against team-weapon concentrations.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -5713,7 +5713,7 @@
       "confidence": "Medium-High",
       "verdict": "Excellent when 2v2 collapses into fixed lanes, MG nests, AT-gun walls and forward reinforcement positions.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "Grenadier",
@@ -5760,7 +5760,7 @@
       "confidence": "Medium",
       "verdict": "Strong control abilities and a huge King Tiger endgame, but the build should remain conventional until the late game.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -5803,7 +5803,7 @@
       "confidence": "Medium",
       "verdict": "Heavy-armor team build: stabilize with infantry and AT, use the Command Panzer IV to support the lane, then scale toward the Tiger.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "Grenadier",
@@ -5852,7 +5852,7 @@
       "confidence": "Low-Medium",
       "verdict": "Defensive lane pick: fortify one important sector, keep mobile AT/armor behind it, and add the Obice only after the front is stable.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Coastal Reserve",
         "MG42",
@@ -5899,7 +5899,7 @@
       "confidence": "Low",
       "verdict": "Niche defensive pick: Sturmpioneer utility and defensive tools work best on fixed lanes, but you still need mobile AT and armor.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "MG42",
@@ -5943,7 +5943,7 @@
       "confidence": "High",
       "verdict": "Reliable team-game core: Grens/MG into T3 Pak and Fallschirmjägers, then conventional T4 armor.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -5992,7 +5992,7 @@
       "confidence": "Medium-High",
       "verdict": "Mobile armor pick: Jäger/Schreck cover the midgame, Wespe punishes support weapons, and Panther answers late armor.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -6041,7 +6041,7 @@
       "confidence": "Medium-High",
       "verdict": "Lane-breaking pick: use the Siege Camp and barrage tools to move support weapons, while keeping conventional AT and armor in the core.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "Grenadier",
@@ -6090,7 +6090,7 @@
       "confidence": "Medium",
       "verdict": "Control and late-game pick: play a conventional Wehr core first, then add terror tools and the King Tiger only when the economy supports it.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -6135,7 +6135,7 @@
       "confidence": "Medium",
       "verdict": "Heavy-armor team build: stabilize with infantry and AT, use the Command Panzer IV to support the lane, then scale toward the Tiger.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "Grenadier",
@@ -6187,7 +6187,7 @@
       "confidence": "Low-Medium",
       "verdict": "Defensive lane pick: fortify one important sector, keep mobile AT/armor behind it, and add the Obice only after the front is stable.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Coastal Reserve",
         "MG42",
@@ -6237,7 +6237,7 @@
       "confidence": "Low",
       "verdict": "Niche defensive pick: Sturmpioneer utility and defensive tools work best on fixed lanes, but you still need mobile AT and armor.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "MG42",
@@ -6284,7 +6284,7 @@
       "confidence": "Medium-High",
       "verdict": "Reliable team-game core: Grens/MG into T3 Pak and Fallschirmjägers, then conventional T4 armor.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -6336,7 +6336,7 @@
       "confidence": "Medium-High",
       "verdict": "Mobile armor pick: Jäger/Schreck cover the midgame, Wespe punishes support weapons, and Panther answers late armor.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -6388,7 +6388,7 @@
       "confidence": "Medium-High",
       "verdict": "Lane-breaking pick: use the Siege Camp and barrage tools to move support weapons, while keeping conventional AT and armor in the core.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "Grenadier",
         "Grenadier",
@@ -6440,7 +6440,7 @@
       "confidence": "Medium",
       "verdict": "Control and late-game pick: play a conventional Wehr core first, then add terror tools and the King Tiger only when the economy supports it.",
       "build": [
-        "Start: Pioneer",
+        "Starting unit: Pioneer",
         "Infanterie Kompanie",
         "MG42",
         "Grenadier",
@@ -6488,7 +6488,7 @@
       "confidence": "Medium",
       "verdict": "Vehicle-first DAK. Use a normal Light Support core to survive the early game, then lean on Panzer III / Command Panzer IV and the battlegroup vehicle bonuses.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Kradschützen",
         "Panzergrenadier",
         "250 Half-track",
@@ -6536,7 +6536,7 @@
       "confidence": "Medium",
       "verdict": "Camo and disruption DAK. The 250/3 creates ambush and vision setups, but the army still needs a normal Pak/Flak core behind it.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250 Half-track",
         "Convert 250 to 250/3 Funkpanzerwagen when unlocked",
@@ -6579,7 +6579,7 @@
       "confidence": "Medium-High",
       "verdict": "Straightforward combat DAK: early Panzergrenadiers, Light Support before the second Panzergrenadier, then Fire Support and Panzer III. Tiger Ace is a late option.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Kradschützen",
         "Panzergrenadier",
         "250 Half-track",
@@ -6629,7 +6629,7 @@
       "confidence": "Medium-High",
       "verdict": "Fast Bersaglieri pressure into Italian armor. Strongest when you keep the game mobile and flank instead of grinding into static AT.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Bersaglieri",
         "Bersaglieri",
         "Light Support Kompanie",
@@ -6674,9 +6674,9 @@
       "confidence": "Medium",
       "verdict": "Guastatori and artillery control. Use the normal DAK Fire Support core for AT and let the battlegroup break infantry-heavy or fortified positions.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Kradschützen",
-        "Panzerpioneer",
+        "2nd Panzerpioneer",
         "250 Half-track",
         "Light Support Kompanie",
         "Assault Grenadier",
@@ -6734,7 +6734,7 @@
       "confidence": "Medium-High",
       "verdict": "Kriegsmariner pressure into a mobile DAK midgame. Hardpoints are the main battlegroup investment; Flares are utility, not the opening priority.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Kriegsmariner",
         "Kriegsmariner",
         "Kriegsmariner",
@@ -6806,7 +6806,7 @@
       "confidence": "Medium",
       "verdict": "Anti-vehicle DAK. Tank Busters, mines and Pak coverage shape vehicle fights; Elefant is only a late answer to real heavy armor.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250 Half-track",
         "Light Support Kompanie",
@@ -6852,7 +6852,7 @@
       "confidence": "Medium",
       "verdict": "Vehicle-scaling option with salvage and air/vehicle utility. Strong when you can keep your armor alive and exploit wrecks.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250",
         "Light Support Kompanie",
@@ -6896,7 +6896,7 @@
       "confidence": "Medium",
       "verdict": "Execution-heavy utility pick. Camo and disruption can create excellent 2v2 ambushes, but it is less straightforward than Kriegsmarine.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250",
         "Convert 250 to 250/3 Funkpanzerwagen when unlocked",
@@ -6939,7 +6939,7 @@
       "confidence": "Medium-High",
       "verdict": "Aggressive conventional DAK with upgraded PGrens, solid vehicle scaling and Tiger Ace as a late win condition.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250 Half-track",
         "Light Support Kompanie",
@@ -6987,7 +6987,7 @@
       "confidence": "Medium",
       "verdict": "Playable mobile alternative, but less reliable than Kriegsmarine in fixed-lane 2v2 games.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Bersaglieri",
         "Bersaglieri",
         "Light Support Kompanie",
@@ -7033,7 +7033,7 @@
       "confidence": "Medium",
       "verdict": "Good niche team-game pick for Guastatori, Cannone and area control, especially on tighter maps.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier / Krad",
         "Light Support Kompanie",
         "Assault Grenadier",
@@ -7078,7 +7078,7 @@
       "confidence": "High",
       "verdict": "Best blind/default DAK 2v2 profile in this database: two Kriegs, Fire Support safety, then Panzer III + Walking Stuka.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Kriegsmariner",
         "Kriegsmariner",
         "Light Support Kompanie",
@@ -7128,7 +7128,7 @@
       "confidence": "Medium-High",
       "verdict": "The counter-pick for long firing lanes and armor-heavy Allied lineups.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250 Half-track",
         "Light Support Kompanie",
@@ -7173,7 +7173,7 @@
       "confidence": "Medium",
       "verdict": "Vehicle-heavy 3v3 option. Keep the Fire Support safety net, then scale into Panzer III / Command Panzer IV and use the battlegroup buffs around larger fights.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250",
         "Light Support Kompanie",
@@ -7236,7 +7236,7 @@
       "confidence": "Medium",
       "verdict": "Utility-heavy 3v3 pick. Funkpanzerwagen camouflage and disruption are strongest when they set up team ambushes rather than solo gimmicks.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250",
         "Convert 250 to 250/3 Funkpanzerwagen when unlocked",
@@ -7298,7 +7298,7 @@
       "confidence": "Medium-High",
       "verdict": "Strong conventional DAK team-game route: upgraded Panzergrenadiers and Fire Support hold the lane, Panzer III gives tempo, and Tiger Ace is a late option.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250 Half-track",
         "Light Support Kompanie",
@@ -7365,7 +7365,7 @@
       "confidence": "Medium",
       "verdict": "Mobile 3v3 option built around Bersaglieri and cheaper Italian vehicles. Best when you can rotate between lanes instead of fighting a static wall head-on.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Bersaglieri",
         "Bersaglieri",
         "Light Support Kompanie",
@@ -7430,7 +7430,7 @@
       "confidence": "Medium",
       "verdict": "Good on tighter 3v3 maps where Guastatori and Cannone can pressure fixed positions. Keep normal AT in the army so the artillery package does not leave you exposed.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier / Krad",
         "Light Support Kompanie",
         "Assault Grenadier",
@@ -7494,7 +7494,7 @@
       "confidence": "High",
       "verdict": "Reliable 3v3 lane build: Kriegsmariners into Fire Support, then Panzer III and Walking Stuka. Hardpoints add value once you have territory worth holding.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Kriegsmariner",
         "Kriegsmariner",
         "Light Support Kompanie",
@@ -7563,7 +7563,7 @@
       "confidence": "Medium-High",
       "verdict": "Armor-control pick for 3v3. Use mines, Tank Busters and Pak coverage to shape vehicle fights; Elefant is only for a true heavy-armor endgame.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250 Half-track",
         "Light Support Kompanie",
@@ -7627,7 +7627,7 @@
       "confidence": "Medium",
       "verdict": "Vehicle-scaling 4v4 pick. Layer Pak/Flak safety first, then use Panzer III / Command Panzer IV and the battlegroup vehicle bonuses around coordinated pushes.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250",
         "Light Support Kompanie",
@@ -7693,7 +7693,7 @@
       "confidence": "Medium",
       "verdict": "Specialist 4v4 support pick. Camo, beacons and disruption can create strong team plays, but the battlegroup needs a normal DAK combat core underneath it.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250",
         "Convert 250 to 250/3 Funkpanzerwagen when unlocked",
@@ -7758,7 +7758,7 @@
       "confidence": "Medium-High",
       "verdict": "Straightforward 4v4 combat option: upgraded Panzergrenadiers, real AT and Panzer III first; Tiger Ace is a late-game payoff if the match reaches it.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250 Half-track",
         "Light Support Kompanie",
@@ -7828,7 +7828,7 @@
       "confidence": "Medium",
       "verdict": "Mobile 4v4 option with Bersaglieri and discounted Italian vehicles. Stronger on maps where flanks and rotations remain possible.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Bersaglieri",
         "Bersaglieri",
         "Light Support Kompanie",
@@ -7896,7 +7896,7 @@
       "confidence": "Medium",
       "verdict": "Static-lane 4v4 specialist. Guastatori, Cannone and defensive artillery can control a VP lane, but do not sacrifice mobile AT and armor.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier / Krad",
         "Light Support Kompanie",
         "Assault Grenadier",
@@ -7963,7 +7963,7 @@
       "confidence": "Medium-High",
       "verdict": "Strong 4v4 support profile: Kriegsmariners and Hardpoints stabilize territory while Pak/Flak, Panzer III and Walking Stuka handle the main team fight.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Kriegsmariner",
         "Kriegsmariner",
         "Light Support Kompanie",
@@ -8035,7 +8035,7 @@
       "confidence": "Medium-High",
       "verdict": "Heavy anti-armor 4v4 pick. Mines, Tank Busters, Pak guns and late Elefant / Anti-Tank Overwatch become more valuable as enemy vehicle density rises.",
       "build": [
-        "Start: Panzerpioneer",
+        "Starting unit: Panzerpioneer",
         "Panzergrenadier",
         "250 Half-track",
         "Light Support Kompanie",
@@ -8102,7 +8102,7 @@
       "confidence": "Medium-High",
       "verdict": "The strongest high-level USF battlegroup signal in the current 1600–1800 all-mode sample, paired with the well-sampled Motor Pool shell. One Ranger normally replaces a Rifle role; do not turn every Rifle into an expensive bleed machine.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -8210,7 +8210,7 @@
       "confidence": "Medium-High",
       "verdict": "A statistically conservative Airborne build: keep the strong Barracks → Motor Pool backbone, replace some Rifle manpower with a Paratrooper, and use the paradropped AT gun to make the vehicle transition safer.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -8314,7 +8314,7 @@
       "confidence": "Medium-Low",
       "verdict": "The battlegroup itself is currently the weakest USF high-level all-mode statistical signal, so I would not blind-pick it for win rate alone. If you choose it, lean into the very strong Motor Pool → Tank Depot shell and make the battlegroup improve vehicles rather than forcing a gimmick.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -8418,7 +8418,7 @@
       "confidence": "Medium",
       "verdict": "A current, legal Free French shell that keeps the creator concept—French Sections into Motor Pool and Char B1—but anchors it to the statistically strong USF Motor Pool route.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "French Rifle Section",
         "Rifleman",
@@ -8520,7 +8520,7 @@
       "confidence": "Low-Medium",
       "verdict": "Heavy Weapons is the exception where mode matters a lot: the generic Barracks → WSC archetype is poor in 1v1 and below 50% in 2v2, but becomes much more respectable in 3v3. Therefore the 1v1/2v2 recommendations keep Motor Pool first and add WSC later; 3v3 can move WSC forward.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -8628,7 +8628,7 @@
       "confidence": "Medium-High",
       "verdict": "Italian Partisan has the highest raw 1600–1800 USF battlegroup win rate in the current all-mode table, but the sample is much smaller than Advanced Infantry/Airborne. Use tunnels as an economy/rotation layer on top of a normal USF army rather than replacing the army with gimmicks.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -8730,7 +8730,7 @@
       "confidence": "Medium-High",
       "verdict": "Preserves the Special Operations build we developed together, now with the current CoHDB archetype statistics shown beside it. The Weasel/SSF layer changes the manpower mix, but Motor Pool remains the safety checkpoint.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "M29 Weasel",
@@ -8787,7 +8787,7 @@
           "name": "Your established default",
           "when": "General use",
           "build": [
-            "Start: Scout",
+            "Starting unit: Scout",
             "Barracks",
             "Rifleman",
             "M29 Weasel",
@@ -8853,7 +8853,7 @@
       "confidence": "Medium-High",
       "verdict": "The strongest high-level USF battlegroup signal in the current 1600–1800 all-mode sample, paired with the well-sampled Motor Pool shell. One Ranger normally replaces a Rifle role; do not turn every Rifle into an expensive bleed machine.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -8962,7 +8962,7 @@
       "confidence": "Medium-High",
       "verdict": "Airborne is a strong 2v2 option when you want flexible infantry plus on-demand AT. Use a normal Rifle/Motor Pool core and let HMG/AT paradrops reduce the need for a deep WSC detour.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -9070,7 +9070,7 @@
       "confidence": "Medium",
       "verdict": "The battlegroup itself is currently the weakest USF high-level all-mode statistical signal, so I would not blind-pick it for win rate alone. If you choose it, lean into the very strong Motor Pool → Tank Depot shell and make the battlegroup improve vehicles rather than forcing a gimmick.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -9175,7 +9175,7 @@
       "confidence": "Medium",
       "verdict": "A current, legal Free French shell that keeps the creator concept—French Sections into Motor Pool and Char B1—but anchors it to the statistically strong USF Motor Pool route.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "French Rifle Section",
         "Rifleman",
@@ -9277,7 +9277,7 @@
       "confidence": "Medium",
       "verdict": "Heavy Weapons is the exception where mode matters a lot: the generic Barracks → WSC archetype is poor in 1v1 and below 50% in 2v2, but becomes much more respectable in 3v3. Therefore the 1v1/2v2 recommendations keep Motor Pool first and add WSC later; 3v3 can move WSC forward.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -9385,7 +9385,7 @@
       "confidence": "Medium-High",
       "verdict": "Italian Partisan has the highest raw 1600–1800 USF battlegroup win rate in the current all-mode table, but the sample is much smaller than Advanced Infantry/Airborne. Use tunnels as an economy/rotation layer on top of a normal USF army rather than replacing the army with gimmicks.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -9487,7 +9487,7 @@
       "confidence": "Medium-High",
       "verdict": "Preserves the Special Operations build we developed together, now with the current CoHDB archetype statistics shown beside it. The Weasel/SSF layer changes the manpower mix, but Motor Pool remains the safety checkpoint.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "M29 Weasel",
@@ -9545,7 +9545,7 @@
           "name": "Your established default",
           "when": "General use",
           "build": [
-            "Start: Scout",
+            "Starting unit: Scout",
             "Barracks",
             "Rifleman",
             "M29 Weasel",
@@ -9612,7 +9612,7 @@
       "confidence": "Medium-High",
       "verdict": "Ranger pressure pick: convert a Rifleman instead of bloating infantry, then add field artillery when the lane becomes static.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -9725,7 +9725,7 @@
       "confidence": "Medium-High",
       "verdict": "Flexible team-game pick: airborne infantry and paradropped weapons give early options, while air support adds late team-fight pressure.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -9827,7 +9827,7 @@
       "confidence": "Medium",
       "verdict": "Vehicle-scaling pick: preserve your vehicle core, use crew/repair bonuses efficiently, and scale into Easy Eights when the game reaches Tank Depot.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -9932,7 +9932,7 @@
       "confidence": "Medium",
       "verdict": "Methodical infantry pick: French Rifles and defensive tools hold ground, while the Char B1 or artillery provide the late payoff.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "French Rifle Section",
         "Rifleman",
@@ -10035,7 +10035,7 @@
       "confidence": "Medium-High",
       "verdict": "Team-weapon and halftrack pick: stronger crews and Assault Carriers hold lanes, then choose heavy AT or the Pershing for the late-game need.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -10144,7 +10144,7 @@
       "confidence": "Medium",
       "verdict": "Map-control and disruption pick: tunnels and infiltrators create rotations, while the normal USF tech core handles direct fights.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -10247,7 +10247,7 @@
       "confidence": "Medium-High",
       "verdict": "Flexible utility pick: Weasel and SSF provide mobility, Mark Vehicle helps against armor, and Whizbang/air support break static positions.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "M29 Weasel",
@@ -10304,7 +10304,7 @@
           "name": "Your established default",
           "when": "General use",
           "build": [
-            "Start: Scout",
+            "Starting unit: Scout",
             "Barracks",
             "Rifleman",
             "M29 Weasel",
@@ -10370,7 +10370,7 @@
       "confidence": "Medium-High",
       "verdict": "Ranger pressure pick: convert a Rifleman instead of bloating infantry, then add field artillery when the lane becomes static.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -10486,7 +10486,7 @@
       "confidence": "Medium-High",
       "verdict": "Flexible team-game pick: airborne infantry and paradropped weapons give early options, while air support adds late team-fight pressure.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -10591,7 +10591,7 @@
       "confidence": "Medium",
       "verdict": "Vehicle-scaling pick: preserve your vehicle core, use crew/repair bonuses efficiently, and scale into Easy Eights when the game reaches Tank Depot.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -10699,7 +10699,7 @@
       "confidence": "Medium",
       "verdict": "Methodical infantry pick: French Rifles and defensive tools hold ground, while the Char B1 or artillery provide the late payoff.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "French Rifle Section",
         "Rifleman",
@@ -10805,7 +10805,7 @@
       "confidence": "Medium-High",
       "verdict": "Team-weapon and halftrack pick: stronger crews and Assault Carriers hold lanes, then choose heavy AT or the Pershing for the late-game need.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -10917,7 +10917,7 @@
       "confidence": "Medium",
       "verdict": "Map-control and disruption pick: tunnels and infiltrators create rotations, while the normal USF tech core handles direct fights.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "Rifleman",
@@ -11023,7 +11023,7 @@
       "confidence": "Medium-High",
       "verdict": "Flexible utility pick: Weasel and SSF provide mobility, Mark Vehicle helps against armor, and Whizbang/air support break static positions.",
       "build": [
-        "Start: Scout",
+        "Starting unit: Scout",
         "Barracks",
         "Rifleman",
         "M29 Weasel",
@@ -11080,7 +11080,7 @@
           "name": "Your established default",
           "when": "General use",
           "build": [
-            "Start: Scout",
+            "Starting unit: Scout",
             "Barracks",
             "Rifleman",
             "M29 Weasel",
@@ -11149,7 +11149,7 @@
       "confidence": "Medium-High",
       "verdict": "Keep the statistically stable British tech core, use Commandos to improve infantry quality, then choose Pack Howitzer/Centaur/air support according to what the Axis player actually fields. In 1v1, avoid unnecessary side-tech that delays the first answer to enemy light vehicles.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -11263,7 +11263,7 @@
       "confidence": "Low-Medium",
       "verdict": "A map-dependent defensive profile: keep a normal mobile British core, then add Australian infantry, cheap AT and only the emplacements the terrain can genuinely protect. In 1v1, avoid unnecessary side-tech that delays the first answer to enemy light vehicles.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -11378,7 +11378,7 @@
       "confidence": "Medium",
       "verdict": "Use Canadian Shock as the battlegroup infantry replacement inside a conventional British tech shell; the battlegroup adds momentum and fire-based displacement rather than changing the whole economy. In 1v1, avoid unnecessary side-tech that delays the first answer to enemy light vehicles.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -11492,7 +11492,7 @@
       "confidence": "Medium-High",
       "verdict": "Use the current British Vickers/Dingo/Section shell to reach Company safely, then turn the battlegroup into vehicle scaling rather than forcing a fragile light-vehicle rush. In 1v1, avoid unnecessary side-tech that delays the first answer to enemy light vehicles.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -11608,7 +11608,7 @@
       "confidence": "Medium-High",
       "verdict": "A high-utility British profile: normal Vickers/Section/6-pounder safety first, then Gurkhas and artillery to break the positions that stall your Company/Grant push. In 1v1, avoid unnecessary side-tech that delays the first answer to enemy light vehicles.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -11722,7 +11722,7 @@
       "confidence": "Medium-High",
       "verdict": "A mobile anti-vehicle variant built around Polish Lancers, Tulips and a Firefly option, while preserving the current British Company/Grant backbone. In 1v1, avoid unnecessary side-tech that delays the first answer to enemy light vehicles.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -11834,7 +11834,7 @@
       "confidence": "Low",
       "verdict": "A niche commando/recon profile. The safest version keeps the standard British Company path and treats SSB tools as disruption layers rather than the entire army. In 1v1, avoid unnecessary side-tech that delays the first answer to enemy light vehicles.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -11948,7 +11948,7 @@
       "confidence": "Medium-High",
       "verdict": "Keep the statistically stable British tech core, use Commandos to improve infantry quality, then choose Pack Howitzer/Centaur/air support according to what the Axis player actually fields. In 2v2, respect double-player vehicle dives and support-weapon concentrations.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -12062,7 +12062,7 @@
       "confidence": "Low-Medium",
       "verdict": "A map-dependent defensive profile: keep a normal mobile British core, then add Australian infantry, cheap AT and only the emplacements the terrain can genuinely protect. In 2v2, respect double-player vehicle dives and support-weapon concentrations.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -12177,7 +12177,7 @@
       "confidence": "Medium",
       "verdict": "Use Canadian Shock as the battlegroup infantry replacement inside a conventional British tech shell; the battlegroup adds momentum and fire-based displacement rather than changing the whole economy. In 2v2, respect double-player vehicle dives and support-weapon concentrations.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -12291,7 +12291,7 @@
       "confidence": "Medium-High",
       "verdict": "Use the current British Vickers/Dingo/Section shell to reach Company safely, then turn the battlegroup into vehicle scaling rather than forcing a fragile light-vehicle rush. In 2v2, respect double-player vehicle dives and support-weapon concentrations.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -12409,7 +12409,7 @@
       "confidence": "Medium-High",
       "verdict": "A high-utility British profile: normal Vickers/Section/6-pounder safety first, then Gurkhas and artillery to break the positions that stall your Company/Grant push. In 2v2, respect double-player vehicle dives and support-weapon concentrations.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -12523,7 +12523,7 @@
       "confidence": "Medium-High",
       "verdict": "A mobile anti-vehicle variant built around Polish Lancers, Tulips and a Firefly option, while preserving the current British Company/Grant backbone. In 2v2, respect double-player vehicle dives and support-weapon concentrations.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -12639,7 +12639,7 @@
       "confidence": "Low",
       "verdict": "A niche commando/recon profile. The safest version keeps the standard British Company path and treats SSB tools as disruption layers rather than the entire army. In 2v2, respect double-player vehicle dives and support-weapon concentrations.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -12752,7 +12752,7 @@
       "confidence": "Medium-High",
       "verdict": "Commando and support-fire pick: paradrops pressure team weapons, while Centaur, air strikes and naval support answer the target in front of you.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -12866,7 +12866,7 @@
       "confidence": "Low-Medium",
       "verdict": "Defensive team pick: Australian infantry and the 2-pounder stabilize early, while emplacements and the Archer answer fixed lanes and armor.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -12983,7 +12983,7 @@
       "confidence": "Medium",
       "verdict": "Momentum infantry pick: Canadian Shock and assault tools win pushes, incendiary upgrades punish infantry, and the Crocodile is the late payoff.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -13097,7 +13097,7 @@
       "confidence": "Medium-High",
       "verdict": "Vehicle-scaling pick: reach Company safely, preserve armor with repair/support tools, then add Churchill armor only after AT coverage is secure.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -13215,7 +13215,7 @@
       "confidence": "Medium-High",
       "verdict": "Indirect-fire pick: Gurkhas hold the line while heavy mortar and artillery force support weapons to move; BL5.5 is a late option.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -13330,7 +13330,7 @@
       "confidence": "Medium-High",
       "verdict": "Mobile anti-vehicle pick: Lancers and Tulips pressure vehicles, while the Firefly or Decapitation Strike handle tougher late targets.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -13444,7 +13444,7 @@
       "confidence": "Low",
       "verdict": "Recon and commando pick: SSB units and the LRDG create asymmetric fights; use their tools to open positions, not replace the core British army.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -13557,7 +13557,7 @@
       "confidence": "Medium-High",
       "verdict": "Commando and support-fire pick: paradrops pressure team weapons, while Centaur, air strikes and naval support answer the target in front of you.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -13674,7 +13674,7 @@
       "confidence": "Low-Medium",
       "verdict": "Defensive team pick: Australian infantry and the 2-pounder stabilize early, while emplacements and the Archer answer fixed lanes and armor.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -13794,7 +13794,7 @@
       "confidence": "Medium",
       "verdict": "Momentum infantry pick: Canadian Shock and assault tools win pushes, incendiary upgrades punish infantry, and the Crocodile is the late payoff.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -13911,7 +13911,7 @@
       "confidence": "Medium-High",
       "verdict": "Vehicle-scaling pick: reach Company safely, preserve armor with repair/support tools, then add Churchill armor only after AT coverage is secure.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -14032,7 +14032,7 @@
       "confidence": "Medium-High",
       "verdict": "Indirect-fire pick: Gurkhas hold the line while heavy mortar and artillery force support weapons to move; BL5.5 is a late option.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -14150,7 +14150,7 @@
       "confidence": "Medium-High",
       "verdict": "Mobile anti-vehicle pick: Lancers and Tulips pressure vehicles, while the Firefly or Decapitation Strike handle tougher late targets.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
@@ -14267,7 +14267,7 @@
       "confidence": "Low",
       "verdict": "Recon and commando pick: SSB units and the LRDG create asymmetric fights; use their tools to open positions, not replace the core British army.",
       "build": [
-        "Start: Royal Engineer Section",
+        "Starting unit: Royal Engineer Section",
         "Vickers Machine Gun Team",
         "Section Command Post",
         "Dingo Light Scout Car",
