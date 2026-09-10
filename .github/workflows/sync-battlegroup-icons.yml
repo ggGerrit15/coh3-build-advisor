@@ -10,6 +10,7 @@ on:
       - 'scripts/clean_bg_tree_ui.mjs'
       - 'scripts/add_team_bg_orders.mjs'
       - 'scripts/embed_bg_recommendations.mjs'
+      - 'scripts/clean_public_copy.mjs'
       - '.github/workflows/sync-battlegroup-icons.yml'
 
 permissions:
@@ -62,6 +63,9 @@ jobs:
       - name: Embed battlegroup recommendations into live page
         run: node scripts/embed_bg_recommendations.mjs
 
+      - name: Clean public-facing copy
+        run: node scripts/clean_public_copy.mjs
+
       - name: Commit generated assets and site update
         run: |
           git config user.name "github-actions[bot]"
@@ -71,5 +75,5 @@ jobs:
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "Fix and audit battlegroup icons"
+          git commit -m "Clean public advisor copy"
           git push
