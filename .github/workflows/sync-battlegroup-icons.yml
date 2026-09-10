@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'scripts/sync_bg_icons.mjs'
+      - 'scripts/fix_bg_icon_swaps.mjs'
       - 'scripts/fix_bg_tree_layout.mjs'
       - 'scripts/clean_bg_tree_ui.mjs'
       - 'scripts/add_team_bg_orders.mjs'
@@ -31,6 +32,9 @@ jobs:
       - name: Generate local battlegroup icon assets
         run: node scripts/sync_bg_icons.mjs
 
+      - name: Fix and audit battlegroup icon mappings
+        run: node scripts/fix_bg_icon_swaps.mjs
+
       - name: Fix battlegroup tree layout
         run: node scripts/fix_bg_tree_layout.mjs
 
@@ -52,5 +56,5 @@ jobs:
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "Embed team-game battlegroup orders"
+          git commit -m "Fix and audit battlegroup icons"
           git push
