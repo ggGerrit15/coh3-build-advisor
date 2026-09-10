@@ -30,7 +30,18 @@ jobs:
           node-version: '22'
 
       - name: Generate local battlegroup icon assets
-        run: node scripts/sync_bg_icons.mjs
+        run: |
+          for attempt in 1 2 3; do
+            echo "Icon sync attempt ${attempt}/3"
+            if node scripts/sync_bg_icons.mjs; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              echo "Transient download failure; retrying in 5 seconds..."
+              sleep 5
+            fi
+          done
+          exit 1
 
       - name: Fix and audit battlegroup icon mappings
         run: node scripts/fix_bg_icon_swaps.mjs
