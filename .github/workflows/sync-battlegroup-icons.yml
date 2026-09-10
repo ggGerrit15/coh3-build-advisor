@@ -12,6 +12,7 @@ on:
       - 'scripts/embed_bg_recommendations.mjs'
       - 'scripts/clean_public_copy.mjs'
       - 'scripts/clarify_starting_units.mjs'
+      - 'scripts/trim_public_advisor_ui.mjs'
       - '.github/workflows/sync-battlegroup-icons.yml'
 
 permissions:
@@ -70,6 +71,9 @@ jobs:
       - name: Clarify starting units and duplicate openers
         run: node scripts/clarify_starting_units.mjs
 
+      - name: Trim public advisor UI
+        run: node scripts/trim_public_advisor_ui.mjs
+
       - name: Commit generated assets and site update
         run: |
           git config user.name "github-actions[bot]"
@@ -79,5 +83,5 @@ jobs:
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "Clarify starting units in build orders"
+          git commit -m "Trim public advisor UI"
           git push
