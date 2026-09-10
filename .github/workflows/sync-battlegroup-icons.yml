@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'scripts/sync_bg_icons.mjs'
+      - 'scripts/fix_bg_tree_layout.mjs'
       - '.github/workflows/sync-battlegroup-icons.yml'
 
 permissions:
@@ -27,6 +28,9 @@ jobs:
       - name: Generate local battlegroup icon assets
         run: node scripts/sync_bg_icons.mjs
 
+      - name: Fix battlegroup tree layout
+        run: node scripts/fix_bg_tree_layout.mjs
+
       - name: Commit generated assets and site update
         run: |
           git config user.name "github-actions[bot]"
@@ -36,5 +40,5 @@ jobs:
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "Localize battlegroup icons"
+          git commit -m "Fix battlegroup tree layout"
           git push
