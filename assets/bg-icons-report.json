@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-10T12:56:39.038Z",
+  "generatedAt": "2026-09-10T14:09:58.954Z",
   "resolved": [
     {
       "key": "Wehrmacht|Breakthrough|Assault Forces|0|Assault Grenadiers",
@@ -11,8 +11,8 @@
     {
       "key": "Wehrmacht|Breakthrough|Assault Forces|1|Breakthrough",
       "path": "assets/icons/wehrmacht--breakthrough--assault-forces--t2--breakthrough.webp",
-      "upstream": "export_flatten/mechanized_assault_group.webp",
-      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_right_3a_assault_group_ger"
+      "upstream": "export_flatten/breakthrough.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_right_2a_breakthrough_ger"
     },
     {
       "key": "Wehrmacht|Breakthrough|Assault Forces|1|Smoke Bombing Run",
@@ -23,8 +23,8 @@
     {
       "key": "Wehrmacht|Breakthrough|Assault Forces|2|Mechanized Assault Group",
       "path": "assets/icons/wehrmacht--breakthrough--assault-forces--t3--mechanized-assault-group.webp",
-      "upstream": "export_flatten/breakthrough.webp",
-      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_right_2a_breakthrough_ger"
+      "upstream": "export_flatten/mechanized_assault_group.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_right_3a_assault_group_ger"
     },
     {
       "key": "Wehrmacht|Breakthrough|Assault Forces|2|Incendiary Bombing Run",
@@ -1683,5 +1683,17 @@
       "ref": "upgrade/afrika_korps/battlegroups/subterfuge/right/subterfuge_right_2a_plunder_ak"
     }
   ],
-  "unresolved": []
+  "unresolved": [],
+  "qa": {
+    "checkedAt": "2026-09-10T14:10:22.330Z",
+    "correctedKnownSwaps": [
+      {
+        "a": "Wehrmacht|Breakthrough|Assault Forces|1|Breakthrough",
+        "b": "Wehrmacht|Breakthrough|Assault Forces|2|Mechanized Assault Group",
+        "reason": "confirmed cross-swap"
+      }
+    ],
+    "suspectedCrossSwaps": [],
+    "note": "Known confirmed swaps are corrected automatically. Other strong pairwise semantic candidates are reported only and are not auto-swapped."
+  }
 }
