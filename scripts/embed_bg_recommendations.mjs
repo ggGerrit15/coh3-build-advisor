@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 
 const JSON_PATH = 'coh3_build_advisor_data.json';
 const HTML_PATH = 'index.html';
-const VERSION = 'v1.1.11';
+const VERSION = 'v1.1.12';
 
 const data = JSON.parse(await fs.readFile(JSON_PATH, 'utf8'));
 const recs = data.battlegroupRecommendations || {};
@@ -36,7 +36,7 @@ html = html.replace(/CoH3 Build Advisor v1\.1\.\d+/g, `CoH3 Build Advisor ${VERS
 
 await fs.writeFile(HTML_PATH, html);
 
-data.verified = `10 Sep 2026 — ${VERSION} team-game recommendation embedding fix. The 28 battlegroups now expose explicit 3v3 and 4v4 numbered pick orders in the data file and the same recommendation object is embedded into index.html. This fixes the previous state where team-game orders existed in JSON but the live page still used the older small-game-only embedded recommendation constant.`;
+data.verified = `10 Sep 2026 — ${VERSION} battlegroup icon QA update. The confirmed Wehrmacht Breakthrough / Mechanized Assault Group icon cross-swap is corrected during the asset workflow, and the generated icon report now performs an additional branch-level semantic cross-swap audit for all battlegroups. The 28 battlegroups also continue to expose explicit 3v3 and 4v4 numbered pick orders in both JSON and index.html.`;
 await fs.writeFile(JSON_PATH, JSON.stringify(data, null, 2) + '\n');
 
-console.log(`Embedded ${battlegroups} battlegroups and ${teamOrders} 3v3/4v4 orders into index.html.`);
+console.log(`Embedded ${battlegroups} battlegroups and ${teamOrders} 3v3/4v4 orders into index.html (${VERSION}).`);
