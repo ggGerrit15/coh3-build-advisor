@@ -1,6 +1,6 @@
 {
   "patch": "2.5.5",
-  "verified": "10 Sep 2026 — v1.1.9 battlegroup recommendation UI cleanup. Removed explanatory recommendation notes, scope/confidence chips, branch/tier annotations in numbered picks, the Visual battlegroup tree heading/intro, and the Legal/Recommended legend. The visual tree, local icons, highlighted recommended nodes, and yellow pick-order badges remain unchanged.",
+  "verified": "10 Sep 2026 — v1.1.10 team-game battlegroup order update. Added explicit, canonical-tree-validated 3v3 and 4v4 numbered battlegroup recommendations for all 28 battlegroups (56 team-game orders total). Team modes no longer fall through to a missing generic team recommendation; the frontend now resolves exact 3v3/4v4 entries before any fallback. Existing 1v1/2v2 small-game recommendations remain unchanged.",
   "battlegroupTrees": {
     "Wehrmacht": {
       "Breakthrough": {
@@ -1624,6 +1624,84 @@
             "Panzer IV Command Tank is preferred over Blitzkrieg in the current tree because of its persistent synergy with the Tiger."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Assault Forces",
+              "tier": 1,
+              "choice": "Assault Grenadiers"
+            },
+            {
+              "branch": "Armored Offensive",
+              "tier": 1,
+              "choice": "2.5-tonne Cargo Truck"
+            },
+            {
+              "branch": "Assault Forces",
+              "tier": 2,
+              "choice": "Breakthrough"
+            },
+            {
+              "branch": "Assault Forces",
+              "tier": 3,
+              "choice": "Mechanized Assault Group"
+            },
+            {
+              "branch": "Armored Offensive",
+              "tier": 2,
+              "choice": "Panzer IV Command Tank"
+            },
+            {
+              "branch": "Armored Offensive",
+              "tier": 3,
+              "choice": "Tiger Heavy Tank"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Assault Forces",
+              "tier": 1,
+              "choice": "Assault Grenadiers"
+            },
+            {
+              "branch": "Assault Forces",
+              "tier": 2,
+              "choice": "Breakthrough"
+            },
+            {
+              "branch": "Armored Offensive",
+              "tier": 1,
+              "choice": "2.5-tonne Cargo Truck"
+            },
+            {
+              "branch": "Assault Forces",
+              "tier": 3,
+              "choice": "Mechanized Assault Group"
+            },
+            {
+              "branch": "Armored Offensive",
+              "tier": 2,
+              "choice": "Panzer IV Command Tank"
+            },
+            {
+              "branch": "Armored Offensive",
+              "tier": 3,
+              "choice": "Tiger Heavy Tank"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Italian Coastal": {
@@ -1668,6 +1746,84 @@
             "Support Bunkers can replace Designate Defensive Line in larger team games where the battlegroup is used as a true anchor."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Coastal Forces",
+              "tier": 1,
+              "choice": "Coastal Reserve"
+            },
+            {
+              "branch": "Heavy Fortifications",
+              "tier": 1,
+              "choice": "Support Bunkers"
+            },
+            {
+              "branch": "Coastal Forces",
+              "tier": 2,
+              "choice": "Artillery Officer"
+            },
+            {
+              "branch": "Heavy Fortifications",
+              "tier": 2,
+              "choice": "Designated Artillery Overwatch"
+            },
+            {
+              "branch": "Coastal Forces",
+              "tier": 3,
+              "choice": "Obice da 210/22"
+            },
+            {
+              "branch": "Heavy Fortifications",
+              "tier": 3,
+              "choice": "Bulwark"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Heavy Fortifications",
+              "tier": 1,
+              "choice": "Support Bunkers"
+            },
+            {
+              "branch": "Coastal Forces",
+              "tier": 1,
+              "choice": "Coastal Reserve"
+            },
+            {
+              "branch": "Coastal Forces",
+              "tier": 2,
+              "choice": "Artillery Officer"
+            },
+            {
+              "branch": "Heavy Fortifications",
+              "tier": 2,
+              "choice": "Designated Artillery Overwatch"
+            },
+            {
+              "branch": "Coastal Forces",
+              "tier": 3,
+              "choice": "Obice da 210/22"
+            },
+            {
+              "branch": "Heavy Fortifications",
+              "tier": 3,
+              "choice": "Bulwark"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Last Stand": {
@@ -1713,6 +1869,84 @@
             "Nebelwerfer Overwatch is the default late choice; Scavenge Doctrine remains a viable Stormtrooper-focused alternative."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Defense in Depth",
+              "tier": 1,
+              "choice": "Sturmpioneer conversion"
+            },
+            {
+              "branch": "Defense in Depth",
+              "tier": 2,
+              "choice": "Last Ditch Defenses"
+            },
+            {
+              "branch": "Desperate Battle",
+              "tier": 1,
+              "choice": "Final Battle"
+            },
+            {
+              "branch": "Desperate Battle",
+              "tier": 2,
+              "choice": "Panzerfaust Rollout"
+            },
+            {
+              "branch": "Defense in Depth",
+              "tier": 3,
+              "choice": "Rapid Salvage"
+            },
+            {
+              "branch": "Desperate Battle",
+              "tier": 3,
+              "choice": "Nebelwerfer Overwatch"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Defense in Depth",
+              "tier": 1,
+              "choice": "Sturmpioneer conversion"
+            },
+            {
+              "branch": "Defense in Depth",
+              "tier": 2,
+              "choice": "Last Ditch Defenses"
+            },
+            {
+              "branch": "Desperate Battle",
+              "tier": 1,
+              "choice": "Final Battle"
+            },
+            {
+              "branch": "Defense in Depth",
+              "tier": 3,
+              "choice": "Immobilize and Fortify"
+            },
+            {
+              "branch": "Desperate Battle",
+              "tier": 2,
+              "choice": "Panzerfaust Rollout"
+            },
+            {
+              "branch": "Desperate Battle",
+              "tier": 3,
+              "choice": "Nebelwerfer Overwatch"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Luftwaffe": {
@@ -1758,6 +1992,84 @@
             "Infantry Reserves is the default late Field Support choice; Flak 36 is more map- and matchup-dependent."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Field Support",
+              "tier": 1,
+              "choice": "Fallschirmpioneer Squad Paradrop"
+            },
+            {
+              "branch": "Air-to-Ground",
+              "tier": 1,
+              "choice": "Stuka Strafing Run"
+            },
+            {
+              "branch": "Air-to-Ground",
+              "tier": 2,
+              "choice": "Fallschirmjäger Squad Paradrop"
+            },
+            {
+              "branch": "Field Support",
+              "tier": 2,
+              "choice": "Flak 38 Anti-Air Emplacement"
+            },
+            {
+              "branch": "Field Support",
+              "tier": 3,
+              "choice": "Infantry Reserves"
+            },
+            {
+              "branch": "Air-to-Ground",
+              "tier": 3,
+              "choice": "Stuka Loiter"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Field Support",
+              "tier": 1,
+              "choice": "Fallschirmpioneer Squad Paradrop"
+            },
+            {
+              "branch": "Air-to-Ground",
+              "tier": 1,
+              "choice": "Stuka Strafing Run"
+            },
+            {
+              "branch": "Air-to-Ground",
+              "tier": 2,
+              "choice": "Fallschirmjäger Squad Paradrop"
+            },
+            {
+              "branch": "Field Support",
+              "tier": 2,
+              "choice": "Flak 38 Anti-Air Emplacement"
+            },
+            {
+              "branch": "Air-to-Ground",
+              "tier": 3,
+              "choice": "Stuka Loiter"
+            },
+            {
+              "branch": "Field Support",
+              "tier": 3,
+              "choice": "Flak 36 Anti-tank Emplacement"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Mechanized": {
@@ -1803,6 +2115,84 @@
             "Zeroing Artillery Barrage is used as the generic late support choice; Mechanized Assault remains a valid aggressive alternative."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Mechanized Armor",
+              "tier": 1,
+              "choice": "Raid Package"
+            },
+            {
+              "branch": "Mechanized Armor",
+              "tier": 2,
+              "choice": "StuG Assault Group"
+            },
+            {
+              "branch": "Mechanized Support",
+              "tier": 1,
+              "choice": "Spotting Scopes"
+            },
+            {
+              "branch": "Mechanized Support",
+              "tier": 2,
+              "choice": "Wespe"
+            },
+            {
+              "branch": "Mechanized Armor",
+              "tier": 3,
+              "choice": "Panther production unlock"
+            },
+            {
+              "branch": "Mechanized Support",
+              "tier": 3,
+              "choice": "Zeroing Artillery Barrage"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Mechanized Armor",
+              "tier": 1,
+              "choice": "Raid Package"
+            },
+            {
+              "branch": "Mechanized Support",
+              "tier": 1,
+              "choice": "Spotting Scopes"
+            },
+            {
+              "branch": "Mechanized Armor",
+              "tier": 2,
+              "choice": "StuG Assault Group"
+            },
+            {
+              "branch": "Mechanized Support",
+              "tier": 2,
+              "choice": "Wespe"
+            },
+            {
+              "branch": "Mechanized Armor",
+              "tier": 3,
+              "choice": "Panther production unlock"
+            },
+            {
+              "branch": "Mechanized Support",
+              "tier": 3,
+              "choice": "Zeroing Artillery Barrage"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Siege Breaker": {
@@ -1848,6 +2238,84 @@
             "Probing Barrage is the default final Vanguard pick because Havoc specifically rates it as a strong utility ability."
           ],
           "evidence": "Havoc Patch 2.5 feedback plus the stored Tightrope/Stephen/3HappyDolphin Siege Breaker creator paths, filtered through the canonical Patch 2.5.5 exclusivity rules."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Siegeworks",
+              "tier": 1,
+              "choice": "Siege Specialists"
+            },
+            {
+              "branch": "Vanguard Tactics",
+              "tier": 1,
+              "choice": "Clearing Gear"
+            },
+            {
+              "branch": "Siegeworks",
+              "tier": 2,
+              "choice": "Construct Siege Camp"
+            },
+            {
+              "branch": "Vanguard Tactics",
+              "tier": 2,
+              "choice": "Firestorm Doctrine"
+            },
+            {
+              "branch": "Siegeworks",
+              "tier": 3,
+              "choice": "Designate Siege Leader"
+            },
+            {
+              "branch": "Vanguard Tactics",
+              "tier": 3,
+              "choice": "Probing Barrage"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Siegeworks",
+              "tier": 1,
+              "choice": "Siege Specialists"
+            },
+            {
+              "branch": "Vanguard Tactics",
+              "tier": 1,
+              "choice": "Clearing Gear"
+            },
+            {
+              "branch": "Siegeworks",
+              "tier": 2,
+              "choice": "Construct Siege Camp"
+            },
+            {
+              "branch": "Vanguard Tactics",
+              "tier": 2,
+              "choice": "Firestorm Doctrine"
+            },
+            {
+              "branch": "Siegeworks",
+              "tier": 3,
+              "choice": "Sturmtiger production unlock"
+            },
+            {
+              "branch": "Vanguard Tactics",
+              "tier": 3,
+              "choice": "Probing Barrage"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Terror": {
@@ -1893,6 +2361,84 @@
             "Jericho Trumpet remains the preferred control pick. King Tiger is kept last because it is an expensive, vulnerable endgame option."
           ],
           "evidence": "Havoc Patch 2.5 feedback plus the stored Stephen Terror creator notes, reconciled with the canonical Patch 2.5.5 tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Weapon Superiority",
+              "tier": 1,
+              "choice": "Machine Gun Camouflage"
+            },
+            {
+              "branch": "Terror Tactics",
+              "tier": 1,
+              "choice": "Interrogate"
+            },
+            {
+              "branch": "Weapon Superiority",
+              "tier": 2,
+              "choice": "Defend the Fatherland"
+            },
+            {
+              "branch": "Terror Tactics",
+              "tier": 2,
+              "choice": "Jericho Trumpet"
+            },
+            {
+              "branch": "Terror Tactics",
+              "tier": 3,
+              "choice": "V1 Rocket Strike"
+            },
+            {
+              "branch": "Weapon Superiority",
+              "tier": 3,
+              "choice": "King Tiger Heavy Tank"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Weapon Superiority",
+              "tier": 1,
+              "choice": "Machine Gun Camouflage"
+            },
+            {
+              "branch": "Weapon Superiority",
+              "tier": 2,
+              "choice": "Defend the Fatherland"
+            },
+            {
+              "branch": "Terror Tactics",
+              "tier": 1,
+              "choice": "Interrogate"
+            },
+            {
+              "branch": "Terror Tactics",
+              "tier": 2,
+              "choice": "Jericho Trumpet"
+            },
+            {
+              "branch": "Weapon Superiority",
+              "tier": 3,
+              "choice": "King Tiger Heavy Tank"
+            },
+            {
+              "branch": "Terror Tactics",
+              "tier": 3,
+              "choice": "V1 Rocket Strike"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       }
     },
@@ -1940,6 +2486,84 @@
             "Frontline Medical Station, Infantry Assault and Free Fire Drills are all stronger candidates in larger team modes."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Field Ordnance",
+              "tier": 1,
+              "choice": "Ammunition Storage"
+            },
+            {
+              "branch": "Infantry Operations",
+              "tier": 1,
+              "choice": "Convert Rifleman to Ranger"
+            },
+            {
+              "branch": "Infantry Operations",
+              "tier": 2,
+              "choice": "Frontline Medical Station"
+            },
+            {
+              "branch": "Field Ordnance",
+              "tier": 2,
+              "choice": "M2A1 105mm Howitzer Emplacement"
+            },
+            {
+              "branch": "Infantry Operations",
+              "tier": 3,
+              "choice": "Infantry Assault"
+            },
+            {
+              "branch": "Field Ordnance",
+              "tier": 3,
+              "choice": "155mm Rapid Artillery Barrage"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Field Ordnance",
+              "tier": 1,
+              "choice": "Ammunition Storage"
+            },
+            {
+              "branch": "Field Ordnance",
+              "tier": 2,
+              "choice": "M2A1 105mm Howitzer Emplacement"
+            },
+            {
+              "branch": "Infantry Operations",
+              "tier": 1,
+              "choice": "Convert Rifleman to Ranger"
+            },
+            {
+              "branch": "Infantry Operations",
+              "tier": 2,
+              "choice": "Frontline Medical Station"
+            },
+            {
+              "branch": "Field Ordnance",
+              "tier": 3,
+              "choice": "155mm Rapid Artillery Barrage"
+            },
+            {
+              "branch": "Infantry Operations",
+              "tier": 3,
+              "choice": "Infantry Assault"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Airborne": {
@@ -1985,6 +2609,84 @@
             "Dual P-47 Rocket Strike remains the general small-game late pick; Carpet Bombing Run is more attractive against entrenched team-game positions."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Paradropped Infantry",
+              "tier": 1,
+              "choice": "Heavy Machine Gun Paradrop"
+            },
+            {
+              "branch": "Paradropped Infantry",
+              "tier": 2,
+              "choice": "Paratrooper Squad Paradrop"
+            },
+            {
+              "branch": "Aerial Support",
+              "tier": 1,
+              "choice": "Recon Loiter"
+            },
+            {
+              "branch": "Aerial Support",
+              "tier": 2,
+              "choice": "Supply Drop"
+            },
+            {
+              "branch": "Paradropped Infantry",
+              "tier": 3,
+              "choice": "Anti-tank Gun Team Paradrop"
+            },
+            {
+              "branch": "Aerial Support",
+              "tier": 3,
+              "choice": "Carpet Bombing Run"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Paradropped Infantry",
+              "tier": 1,
+              "choice": "Heavy Machine Gun Paradrop"
+            },
+            {
+              "branch": "Aerial Support",
+              "tier": 1,
+              "choice": "Recon Loiter"
+            },
+            {
+              "branch": "Paradropped Infantry",
+              "tier": 2,
+              "choice": "Paratrooper Squad Paradrop"
+            },
+            {
+              "branch": "Aerial Support",
+              "tier": 2,
+              "choice": "Supply Drop"
+            },
+            {
+              "branch": "Paradropped Infantry",
+              "tier": 3,
+              "choice": "Anti-tank Gun Team Paradrop"
+            },
+            {
+              "branch": "Aerial Support",
+              "tier": 3,
+              "choice": "Carpet Bombing Run"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Armored": {
@@ -2030,6 +2732,84 @@
             "War Machine is preferred over Easy Eight in Havoc's current assessment because the economy benefit scales across multiple vehicles."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Engineering Corp",
+              "tier": 1,
+              "choice": "Field Repairs"
+            },
+            {
+              "branch": "Armored Doctrine",
+              "tier": 1,
+              "choice": "Strength in Steel"
+            },
+            {
+              "branch": "Engineering Corp",
+              "tier": 2,
+              "choice": "Veteran Crews"
+            },
+            {
+              "branch": "Armored Doctrine",
+              "tier": 2,
+              "choice": "Seek and Destroy"
+            },
+            {
+              "branch": "Engineering Corp",
+              "tier": 3,
+              "choice": "M8 Scott SPG"
+            },
+            {
+              "branch": "Armored Doctrine",
+              "tier": 3,
+              "choice": "War Machine"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Engineering Corp",
+              "tier": 1,
+              "choice": "Field Repairs"
+            },
+            {
+              "branch": "Armored Doctrine",
+              "tier": 1,
+              "choice": "Strength in Steel"
+            },
+            {
+              "branch": "Engineering Corp",
+              "tier": 2,
+              "choice": "Veteran Crews"
+            },
+            {
+              "branch": "Armored Doctrine",
+              "tier": 2,
+              "choice": "Seek and Destroy"
+            },
+            {
+              "branch": "Engineering Corp",
+              "tier": 3,
+              "choice": "M31 Recovery Vehicle"
+            },
+            {
+              "branch": "Armored Doctrine",
+              "tier": 3,
+              "choice": "War Machine"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Free French": {
@@ -2075,6 +2855,84 @@
             "Char B1 is the default final Defense in Depth choice; Advanced Tourelles is the fortification-heavy alternative."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Defense in Depth",
+              "tier": 1,
+              "choice": "Zone Rouge"
+            },
+            {
+              "branch": "Methodical Battle Doctrine",
+              "tier": 1,
+              "choice": "French Rifle Section"
+            },
+            {
+              "branch": "Methodical Battle Doctrine",
+              "tier": 2,
+              "choice": "New Blood"
+            },
+            {
+              "branch": "Methodical Battle Doctrine",
+              "tier": 3,
+              "choice": "Railway Artillery"
+            },
+            {
+              "branch": "Defense in Depth",
+              "tier": 2,
+              "choice": "Maginot Line"
+            },
+            {
+              "branch": "Defense in Depth",
+              "tier": 3,
+              "choice": "Char B1 production unlock"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Defense in Depth",
+              "tier": 1,
+              "choice": "Zone Rouge"
+            },
+            {
+              "branch": "Methodical Battle Doctrine",
+              "tier": 1,
+              "choice": "French Rifle Section"
+            },
+            {
+              "branch": "Methodical Battle Doctrine",
+              "tier": 2,
+              "choice": "New Blood"
+            },
+            {
+              "branch": "Defense in Depth",
+              "tier": 2,
+              "choice": "Maginot Line"
+            },
+            {
+              "branch": "Methodical Battle Doctrine",
+              "tier": 3,
+              "choice": "Railway Artillery"
+            },
+            {
+              "branch": "Defense in Depth",
+              "tier": 3,
+              "choice": "Char B1 production unlock"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Heavy Weapons": {
@@ -2120,6 +2978,84 @@
             "Pershing remains a viable late alternative if the match calls for a heavy-tank capstone rather than additional dedicated AT."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium",
+          "sequence": [
+            {
+              "branch": "Weapons Teams",
+              "tier": 1,
+              "choice": "M2HB .50cal Heavy Machine Gun"
+            },
+            {
+              "branch": "Cavalry Support",
+              "tier": 1,
+              "choice": "Assault Carriers"
+            },
+            {
+              "branch": "Cavalry Support",
+              "tier": 2,
+              "choice": "Halftrack Strongpoints"
+            },
+            {
+              "branch": "Weapons Teams",
+              "tier": 2,
+              "choice": "Gallant Stand"
+            },
+            {
+              "branch": "Weapons Teams",
+              "tier": 3,
+              "choice": "Bolstered Team Weapons"
+            },
+            {
+              "branch": "Cavalry Support",
+              "tier": 3,
+              "choice": "Towed M5 3-inch Anti-tank Gun"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium",
+          "sequence": [
+            {
+              "branch": "Weapons Teams",
+              "tier": 1,
+              "choice": "M2HB .50cal Heavy Machine Gun"
+            },
+            {
+              "branch": "Cavalry Support",
+              "tier": 1,
+              "choice": "Assault Carriers"
+            },
+            {
+              "branch": "Cavalry Support",
+              "tier": 2,
+              "choice": "Halftrack Strongpoints"
+            },
+            {
+              "branch": "Weapons Teams",
+              "tier": 2,
+              "choice": "Gallant Stand"
+            },
+            {
+              "branch": "Weapons Teams",
+              "tier": 3,
+              "choice": "Black Dragon Artillery Barrage"
+            },
+            {
+              "branch": "Cavalry Support",
+              "tier": 3,
+              "choice": "M26 Pershing"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Italian Partisan": {
@@ -2165,6 +3101,84 @@
             "Forward Headquarters is selected over Saboteurs because demo-based play is weaker; the final Spy Network choice is a utility inference rather than a direct creator recommendation."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Low",
+          "sequence": [
+            {
+              "branch": "Underground Network",
+              "tier": 1,
+              "choice": "Construct Tunnel Network"
+            },
+            {
+              "branch": "Insurgency Tactics",
+              "tier": 1,
+              "choice": "Resistance Fighter Infiltration"
+            },
+            {
+              "branch": "Insurgency Tactics",
+              "tier": 2,
+              "choice": "Forward Headquarters"
+            },
+            {
+              "branch": "Underground Network",
+              "tier": 2,
+              "choice": "Smuggling Routes"
+            },
+            {
+              "branch": "Underground Network",
+              "tier": 3,
+              "choice": "Medical Caches"
+            },
+            {
+              "branch": "Insurgency Tactics",
+              "tier": 3,
+              "choice": "Spy Network"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Low",
+          "sequence": [
+            {
+              "branch": "Underground Network",
+              "tier": 1,
+              "choice": "Construct Tunnel Network"
+            },
+            {
+              "branch": "Underground Network",
+              "tier": 2,
+              "choice": "Smuggling Routes"
+            },
+            {
+              "branch": "Insurgency Tactics",
+              "tier": 1,
+              "choice": "Resistance Fighter Infiltration"
+            },
+            {
+              "branch": "Insurgency Tactics",
+              "tier": 2,
+              "choice": "Forward Headquarters"
+            },
+            {
+              "branch": "Underground Network",
+              "tier": 3,
+              "choice": "Medical Caches"
+            },
+            {
+              "branch": "Insurgency Tactics",
+              "tier": 3,
+              "choice": "Spy Network"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Special Operations": {
@@ -2210,6 +3224,84 @@
             "Whizbang is the key late Combat Support payoff and is especially strong after the team-weapon model-cap fix."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Combat Support",
+              "tier": 1,
+              "choice": "M29 Weasel with M1 Pack Howitzer"
+            },
+            {
+              "branch": "Combat Operations",
+              "tier": 1,
+              "choice": "Raiding Flares"
+            },
+            {
+              "branch": "Combat Operations",
+              "tier": 2,
+              "choice": "SSF Commando Squad"
+            },
+            {
+              "branch": "Combat Support",
+              "tier": 2,
+              "choice": "Mark Vehicle"
+            },
+            {
+              "branch": "Combat Support",
+              "tier": 3,
+              "choice": "Whizbang production unlock"
+            },
+            {
+              "branch": "Combat Operations",
+              "tier": 3,
+              "choice": "Air Re-Supply Operation"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Combat Support",
+              "tier": 1,
+              "choice": "M29 Weasel with M1 Pack Howitzer"
+            },
+            {
+              "branch": "Combat Operations",
+              "tier": 1,
+              "choice": "Raiding Flares"
+            },
+            {
+              "branch": "Combat Operations",
+              "tier": 2,
+              "choice": "SSF Commando Squad"
+            },
+            {
+              "branch": "Combat Support",
+              "tier": 2,
+              "choice": "Mark Vehicle"
+            },
+            {
+              "branch": "Combat Support",
+              "tier": 3,
+              "choice": "Whizbang production unlock"
+            },
+            {
+              "branch": "Combat Operations",
+              "tier": 3,
+              "choice": "Air Re-Supply Operation"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       }
     },
@@ -2257,6 +3349,84 @@
             "M1 Pack Howitzer is the default support choice; Commando Support Section remains useful when frontline reinforcement is the bigger need."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Royal Navy Support",
+              "tier": 1,
+              "choice": "Supply Surplus"
+            },
+            {
+              "branch": "Royal Air Force",
+              "tier": 1,
+              "choice": "Commando Section Paradrop"
+            },
+            {
+              "branch": "Royal Air Force",
+              "tier": 2,
+              "choice": "M1 Pack Howitzer Paradrop"
+            },
+            {
+              "branch": "Royal Navy Support",
+              "tier": 2,
+              "choice": "Centaur production unlock"
+            },
+            {
+              "branch": "Royal Navy Support",
+              "tier": 3,
+              "choice": "Assault Flares"
+            },
+            {
+              "branch": "Royal Air Force",
+              "tier": 3,
+              "choice": "Anti-tank Rocket Loiter"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Royal Air Force",
+              "tier": 1,
+              "choice": "Commando Section Paradrop"
+            },
+            {
+              "branch": "Royal Air Force",
+              "tier": 2,
+              "choice": "M1 Pack Howitzer Paradrop"
+            },
+            {
+              "branch": "Royal Navy Support",
+              "tier": 1,
+              "choice": "Supply Surplus"
+            },
+            {
+              "branch": "Royal Navy Support",
+              "tier": 2,
+              "choice": "Centaur production unlock"
+            },
+            {
+              "branch": "Royal Navy Support",
+              "tier": 3,
+              "choice": "Assault Flares"
+            },
+            {
+              "branch": "Royal Air Force",
+              "tier": 3,
+              "choice": "Anti-tank Rocket Loiter"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Australian Defense": {
@@ -2302,6 +3472,84 @@
             "Charged Creeping Barrage is preferred over Archer in the generic path because its targeting was improved and the Archer remains mobility-limited."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Frontline Defenders",
+              "tier": 1,
+              "choice": "Australian Light Infantry Section"
+            },
+            {
+              "branch": "Logistical Supremacy",
+              "tier": 1,
+              "choice": "Strengthen Economy"
+            },
+            {
+              "branch": "Logistical Supremacy",
+              "tier": 2,
+              "choice": "CMP 15cwt Supply Run"
+            },
+            {
+              "branch": "Frontline Defenders",
+              "tier": 2,
+              "choice": "Defensive Tactics"
+            },
+            {
+              "branch": "Frontline Defenders",
+              "tier": 3,
+              "choice": "Hold the Line!"
+            },
+            {
+              "branch": "Logistical Supremacy",
+              "tier": 3,
+              "choice": "Charged Creeping Barrage"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Logistical Supremacy",
+              "tier": 1,
+              "choice": "Strengthen Economy"
+            },
+            {
+              "branch": "Frontline Defenders",
+              "tier": 1,
+              "choice": "Australian Light Infantry Section"
+            },
+            {
+              "branch": "Logistical Supremacy",
+              "tier": 2,
+              "choice": "CMP 15cwt Supply Run"
+            },
+            {
+              "branch": "Frontline Defenders",
+              "tier": 2,
+              "choice": "Defensive Tactics"
+            },
+            {
+              "branch": "Frontline Defenders",
+              "tier": 3,
+              "choice": "Hold the Line!"
+            },
+            {
+              "branch": "Logistical Supremacy",
+              "tier": 3,
+              "choice": "Charged Creeping Barrage"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Canadian Shock": {
@@ -2347,6 +3595,84 @@
             "Incendiary Munitions and Churchill Crocodile form the default fire-support branch; Demolition Engineering is the structure-heavy alternative."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium",
+          "sequence": [
+            {
+              "branch": "Shock Assault",
+              "tier": 1,
+              "choice": "Offensive Resupply"
+            },
+            {
+              "branch": "Shock Assault",
+              "tier": 2,
+              "choice": "Canadian Shock Section"
+            },
+            {
+              "branch": "Incendiary Weapons",
+              "tier": 1,
+              "choice": "Incendiary Munitions"
+            },
+            {
+              "branch": "Incendiary Weapons",
+              "tier": 2,
+              "choice": "Pyrotechnics"
+            },
+            {
+              "branch": "Shock Assault",
+              "tier": 3,
+              "choice": "Point Assault"
+            },
+            {
+              "branch": "Incendiary Weapons",
+              "tier": 3,
+              "choice": "Churchill Crocodile"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium",
+          "sequence": [
+            {
+              "branch": "Shock Assault",
+              "tier": 1,
+              "choice": "Offensive Resupply"
+            },
+            {
+              "branch": "Incendiary Weapons",
+              "tier": 1,
+              "choice": "Incendiary Munitions"
+            },
+            {
+              "branch": "Shock Assault",
+              "tier": 2,
+              "choice": "Canadian Shock Section"
+            },
+            {
+              "branch": "Incendiary Weapons",
+              "tier": 2,
+              "choice": "Pyrotechnics"
+            },
+            {
+              "branch": "Shock Assault",
+              "tier": 3,
+              "choice": "Smoke Operation"
+            },
+            {
+              "branch": "Incendiary Weapons",
+              "tier": 3,
+              "choice": "Churchill Crocodile"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Heavy Armor": {
@@ -2392,6 +3718,84 @@
             "Churchill IV is the default heavy payoff; Black Prince remains a more specialized ultra-late choice."
           ],
           "evidence": "Havoc Patch 2.5 feedback plus the stored 3HappyDolphin Heavy Armor numbered path, updated where Havoc explicitly describes a newer preference."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Field Support and Logistics",
+              "tier": 1,
+              "choice": "Light Vehicle Withdraw and Refit"
+            },
+            {
+              "branch": "Heavy Armor Support",
+              "tier": 1,
+              "choice": "Rigorous Vehicle Training"
+            },
+            {
+              "branch": "Field Support and Logistics",
+              "tier": 2,
+              "choice": "Crusader AA production unlock"
+            },
+            {
+              "branch": "Heavy Armor Support",
+              "tier": 2,
+              "choice": "Forward Repair Assembly"
+            },
+            {
+              "branch": "Field Support and Logistics",
+              "tier": 3,
+              "choice": "Designate Targets"
+            },
+            {
+              "branch": "Heavy Armor Support",
+              "tier": 3,
+              "choice": "Churchill IV production unlock"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Field Support and Logistics",
+              "tier": 1,
+              "choice": "Light Vehicle Withdraw and Refit"
+            },
+            {
+              "branch": "Heavy Armor Support",
+              "tier": 1,
+              "choice": "Rigorous Vehicle Training"
+            },
+            {
+              "branch": "Field Support and Logistics",
+              "tier": 2,
+              "choice": "Radio Net"
+            },
+            {
+              "branch": "Heavy Armor Support",
+              "tier": 2,
+              "choice": "Forward Repair Assembly"
+            },
+            {
+              "branch": "Field Support and Logistics",
+              "tier": 3,
+              "choice": "Designate Targets"
+            },
+            {
+              "branch": "Heavy Armor Support",
+              "tier": 3,
+              "choice": "Churchill IV production unlock"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Indian Artillery": {
@@ -2437,6 +3841,84 @@
             "BL5.5 is the full artillery capstone; in 1v1 it is often delayed or skipped if the game is decided before a static late-game setup is viable."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium",
+          "sequence": [
+            {
+              "branch": "Artillery Support",
+              "tier": 1,
+              "choice": "4.2-inch Heavy Mortar"
+            },
+            {
+              "branch": "Infantry Assault",
+              "tier": 1,
+              "choice": "Valour"
+            },
+            {
+              "branch": "Infantry Assault",
+              "tier": 2,
+              "choice": "Gurkha Rifles Section"
+            },
+            {
+              "branch": "Artillery Support",
+              "tier": 2,
+              "choice": "Off-map Airburst Barrage"
+            },
+            {
+              "branch": "Infantry Assault",
+              "tier": 3,
+              "choice": "Volunteer Infantry"
+            },
+            {
+              "branch": "Artillery Support",
+              "tier": 3,
+              "choice": "BL5.5 Artillery Emplacement"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium",
+          "sequence": [
+            {
+              "branch": "Artillery Support",
+              "tier": 1,
+              "choice": "4.2-inch Heavy Mortar"
+            },
+            {
+              "branch": "Artillery Support",
+              "tier": 2,
+              "choice": "Off-map Airburst Barrage"
+            },
+            {
+              "branch": "Infantry Assault",
+              "tier": 1,
+              "choice": "Valour"
+            },
+            {
+              "branch": "Infantry Assault",
+              "tier": 2,
+              "choice": "Gurkha Rifles Section"
+            },
+            {
+              "branch": "Artillery Support",
+              "tier": 3,
+              "choice": "BL5.5 Artillery Emplacement"
+            },
+            {
+              "branch": "Infantry Assault",
+              "tier": 3,
+              "choice": "Volunteer Infantry"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Polish Cavalry": {
@@ -2482,6 +3964,84 @@
             "Firefly is preferred over Decapitation Strike as the default final Rocketry choice because it is the battlegroup's core late anti-armor answer."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Army in Exile",
+              "tier": 1,
+              "choice": "Strategic Targets"
+            },
+            {
+              "branch": "Rocketry",
+              "tier": 1,
+              "choice": "Tulip Rocket Launchers"
+            },
+            {
+              "branch": "Army in Exile",
+              "tier": 2,
+              "choice": "Polish Lancer Section"
+            },
+            {
+              "branch": "Army in Exile",
+              "tier": 3,
+              "choice": "Recon Mission"
+            },
+            {
+              "branch": "Rocketry",
+              "tier": 2,
+              "choice": "Land Mattress"
+            },
+            {
+              "branch": "Rocketry",
+              "tier": 3,
+              "choice": "Firefly production unlock"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Rocketry",
+              "tier": 1,
+              "choice": "Tulip Rocket Launchers"
+            },
+            {
+              "branch": "Army in Exile",
+              "tier": 1,
+              "choice": "Strategic Targets"
+            },
+            {
+              "branch": "Rocketry",
+              "tier": 2,
+              "choice": "Land Mattress"
+            },
+            {
+              "branch": "Army in Exile",
+              "tier": 2,
+              "choice": "Polish Lancer Section"
+            },
+            {
+              "branch": "Army in Exile",
+              "tier": 3,
+              "choice": "Recon Mission"
+            },
+            {
+              "branch": "Rocketry",
+              "tier": 3,
+              "choice": "Firefly production unlock"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Special Service": {
@@ -2527,6 +4087,84 @@
             "Ultra is chosen over the weak SSB Sniper. Havoc is selected as the general Reconnaissance-in-Force capstone; Desert Raiders is a vehicle-economy alternative."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Ungentlemanly Warfare",
+              "tier": 1,
+              "choice": "SSB Commando Section"
+            },
+            {
+              "branch": "Reconnaissance-in-Force",
+              "tier": 1,
+              "choice": "30cwt LRDG Truck"
+            },
+            {
+              "branch": "Ungentlemanly Warfare",
+              "tier": 2,
+              "choice": "Dead Drops"
+            },
+            {
+              "branch": "Reconnaissance-in-Force",
+              "tier": 2,
+              "choice": "Ultra"
+            },
+            {
+              "branch": "Ungentlemanly Warfare",
+              "tier": 3,
+              "choice": "Directed Air Support"
+            },
+            {
+              "branch": "Reconnaissance-in-Force",
+              "tier": 3,
+              "choice": "Havoc"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Low-Medium",
+          "sequence": [
+            {
+              "branch": "Reconnaissance-in-Force",
+              "tier": 1,
+              "choice": "30cwt LRDG Truck"
+            },
+            {
+              "branch": "Ungentlemanly Warfare",
+              "tier": 1,
+              "choice": "SSB Commando Section"
+            },
+            {
+              "branch": "Ungentlemanly Warfare",
+              "tier": 2,
+              "choice": "Dead Drops"
+            },
+            {
+              "branch": "Reconnaissance-in-Force",
+              "tier": 2,
+              "choice": "Ultra"
+            },
+            {
+              "branch": "Ungentlemanly Warfare",
+              "tier": 3,
+              "choice": "Directed Air Support"
+            },
+            {
+              "branch": "Reconnaissance-in-Force",
+              "tier": 3,
+              "choice": "Havoc"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       }
     },
@@ -2574,6 +4212,84 @@
             "Stuka Dive Bomb is the small-game default late air choice; Anti-tank Loiter becomes preferable against a vehicle-heavy enemy composition."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Support and Airpower",
+              "tier": 1,
+              "choice": "Salvage Kits"
+            },
+            {
+              "branch": "Armored Warfare",
+              "tier": 1,
+              "choice": "Veteran Gunners"
+            },
+            {
+              "branch": "Support and Airpower",
+              "tier": 2,
+              "choice": "Panzer Storm"
+            },
+            {
+              "branch": "Armored Warfare",
+              "tier": 2,
+              "choice": "Flammpanzer III"
+            },
+            {
+              "branch": "Armored Warfare",
+              "tier": 3,
+              "choice": "Battlefield Salvage"
+            },
+            {
+              "branch": "Support and Airpower",
+              "tier": 3,
+              "choice": "Stuka Anti-tank Loiter"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Support and Airpower",
+              "tier": 1,
+              "choice": "Salvage Kits"
+            },
+            {
+              "branch": "Armored Warfare",
+              "tier": 1,
+              "choice": "Veteran Gunners"
+            },
+            {
+              "branch": "Support and Airpower",
+              "tier": 2,
+              "choice": "Panzer Storm"
+            },
+            {
+              "branch": "Armored Warfare",
+              "tier": 2,
+              "choice": "Flammpanzer III"
+            },
+            {
+              "branch": "Armored Warfare",
+              "tier": 3,
+              "choice": "Battlefield Salvage"
+            },
+            {
+              "branch": "Support and Airpower",
+              "tier": 3,
+              "choice": "Stuka Anti-tank Loiter"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Elite Forces": {
@@ -2619,6 +4335,84 @@
             "Ace Squadron is retained as the default air capstone because Havoc still rates it as very strong."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Battlefield Dominance",
+              "tier": 1,
+              "choice": "Skirmisher Package"
+            },
+            {
+              "branch": "Battlefield Dominance",
+              "tier": 2,
+              "choice": "Daring Assault"
+            },
+            {
+              "branch": "Panzer Elite",
+              "tier": 1,
+              "choice": "Command 8 Rad Armored Car"
+            },
+            {
+              "branch": "Panzer Elite",
+              "tier": 2,
+              "choice": "Field Modifications"
+            },
+            {
+              "branch": "Battlefield Dominance",
+              "tier": 3,
+              "choice": "Ace Squadron"
+            },
+            {
+              "branch": "Panzer Elite",
+              "tier": 3,
+              "choice": "Crack Armor Upgrades"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Battlefield Dominance",
+              "tier": 1,
+              "choice": "Skirmisher Package"
+            },
+            {
+              "branch": "Panzer Elite",
+              "tier": 1,
+              "choice": "Command 8 Rad Armored Car"
+            },
+            {
+              "branch": "Battlefield Dominance",
+              "tier": 2,
+              "choice": "Daring Assault"
+            },
+            {
+              "branch": "Panzer Elite",
+              "tier": 2,
+              "choice": "Field Modifications"
+            },
+            {
+              "branch": "Battlefield Dominance",
+              "tier": 3,
+              "choice": "Ace Squadron"
+            },
+            {
+              "branch": "Panzer Elite",
+              "tier": 3,
+              "choice": "Crack Armor Upgrades"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Italian Combined Arms": {
@@ -2664,6 +4458,84 @@
             "Pact of Steel is the main late payoff; Artillery Cover is the situational alternative."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Low",
+          "sequence": [
+            {
+              "branch": "Combined Arms",
+              "tier": 1,
+              "choice": "Bersaglieri Squad"
+            },
+            {
+              "branch": "Italian Armor",
+              "tier": 1,
+              "choice": "Semovente Production Unlock"
+            },
+            {
+              "branch": "Combined Arms",
+              "tier": 2,
+              "choice": "Vehicle Support - Secure Location"
+            },
+            {
+              "branch": "Italian Armor",
+              "tier": 2,
+              "choice": "Carro Armato M13/40"
+            },
+            {
+              "branch": "Combined Arms",
+              "tier": 3,
+              "choice": "Force Recon"
+            },
+            {
+              "branch": "Italian Armor",
+              "tier": 3,
+              "choice": "Pact of Steel"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Low",
+          "sequence": [
+            {
+              "branch": "Combined Arms",
+              "tier": 1,
+              "choice": "Bersaglieri Squad"
+            },
+            {
+              "branch": "Italian Armor",
+              "tier": 1,
+              "choice": "Semovente Production Unlock"
+            },
+            {
+              "branch": "Combined Arms",
+              "tier": 2,
+              "choice": "Vehicle Support - Secure Location"
+            },
+            {
+              "branch": "Combined Arms",
+              "tier": 3,
+              "choice": "Force Recon"
+            },
+            {
+              "branch": "Italian Armor",
+              "tier": 2,
+              "choice": "Carro Armato M13/40"
+            },
+            {
+              "branch": "Italian Armor",
+              "tier": 3,
+              "choice": "Artillery Cover"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Italian Infantry": {
@@ -2709,6 +4581,84 @@
             "Obice 305mm Barrage is the default final Defensive Warfare pick; Propaganda War is the control alternative. Registered Artillery can replace Defensive Operations if immediate off-map punishment matters more than fortification synergy."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Defensive Warfare",
+              "tier": 1,
+              "choice": "Sound the Alarm"
+            },
+            {
+              "branch": "Field Engineering",
+              "tier": 1,
+              "choice": "Guastatori Squad"
+            },
+            {
+              "branch": "Defensive Warfare",
+              "tier": 2,
+              "choice": "Prepared Positions"
+            },
+            {
+              "branch": "Field Engineering",
+              "tier": 2,
+              "choice": "Defensive Operations"
+            },
+            {
+              "branch": "Defensive Warfare",
+              "tier": 3,
+              "choice": "Obice 305mm Barrage"
+            },
+            {
+              "branch": "Field Engineering",
+              "tier": 3,
+              "choice": "Cannone da 105/28"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Defensive Warfare",
+              "tier": 1,
+              "choice": "Sound the Alarm"
+            },
+            {
+              "branch": "Field Engineering",
+              "tier": 1,
+              "choice": "Guastatori Squad"
+            },
+            {
+              "branch": "Field Engineering",
+              "tier": 2,
+              "choice": "Defensive Operations"
+            },
+            {
+              "branch": "Defensive Warfare",
+              "tier": 2,
+              "choice": "Prepared Positions"
+            },
+            {
+              "branch": "Field Engineering",
+              "tier": 3,
+              "choice": "Cannone da 105/28"
+            },
+            {
+              "branch": "Defensive Warfare",
+              "tier": 3,
+              "choice": "Obice 305mm Barrage"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Kriegsmarine": {
@@ -2754,6 +4704,84 @@
             "Starburst Flares and Naval Intervention are the default later Off-shore picks. Stuka Overflight and Fritz X remain situational alternatives."
           ],
           "evidence": "Havoc feedback supplied by the project owner plus the current canonical Patch 2.5.5 Kriegsmarine tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Off-shore Support",
+              "tier": 1,
+              "choice": "Kriegsmariner Squad"
+            },
+            {
+              "branch": "Logistics Operations",
+              "tier": 1,
+              "choice": "Designate Resupply Point"
+            },
+            {
+              "branch": "Logistics Operations",
+              "tier": 2,
+              "choice": "Improved Hardpoints"
+            },
+            {
+              "branch": "Logistics Operations",
+              "tier": 3,
+              "choice": "Supply Interdiction"
+            },
+            {
+              "branch": "Off-shore Support",
+              "tier": 2,
+              "choice": "SLD Starburst Flares"
+            },
+            {
+              "branch": "Off-shore Support",
+              "tier": 3,
+              "choice": "Naval Intervention"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Off-shore Support",
+              "tier": 1,
+              "choice": "Kriegsmariner Squad"
+            },
+            {
+              "branch": "Logistics Operations",
+              "tier": 1,
+              "choice": "Designate Resupply Point"
+            },
+            {
+              "branch": "Logistics Operations",
+              "tier": 2,
+              "choice": "Improved Hardpoints"
+            },
+            {
+              "branch": "Logistics Operations",
+              "tier": 3,
+              "choice": "Supply Interdiction"
+            },
+            {
+              "branch": "Off-shore Support",
+              "tier": 2,
+              "choice": "SLD Starburst Flares"
+            },
+            {
+              "branch": "Off-shore Support",
+              "tier": 3,
+              "choice": "Naval Intervention"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Panzerjäger Kommand": {
@@ -2799,6 +4827,84 @@
             "Anti-Tank Overwatch is the generic small-game capstone. Elefant is the team-game/heavy-Firefly alternative rather than a blind 1v1 purchase."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Tank Hunting",
+              "tier": 1,
+              "choice": "Tank Busters"
+            },
+            {
+              "branch": "Stalling Tactics",
+              "tier": 1,
+              "choice": "Mine Fields"
+            },
+            {
+              "branch": "Tank Hunting",
+              "tier": 2,
+              "choice": "Crew Shock Tactics"
+            },
+            {
+              "branch": "Stalling Tactics",
+              "tier": 2,
+              "choice": "Combined Arms"
+            },
+            {
+              "branch": "Stalling Tactics",
+              "tier": 3,
+              "choice": "Butterfly Bomb Drop"
+            },
+            {
+              "branch": "Tank Hunting",
+              "tier": 3,
+              "choice": "Elefant"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "Medium-High",
+          "sequence": [
+            {
+              "branch": "Tank Hunting",
+              "tier": 1,
+              "choice": "Tank Busters"
+            },
+            {
+              "branch": "Stalling Tactics",
+              "tier": 1,
+              "choice": "Mine Fields"
+            },
+            {
+              "branch": "Tank Hunting",
+              "tier": 2,
+              "choice": "Crew Shock Tactics"
+            },
+            {
+              "branch": "Stalling Tactics",
+              "tier": 2,
+              "choice": "Combined Arms"
+            },
+            {
+              "branch": "Stalling Tactics",
+              "tier": 3,
+              "choice": "Butterfly Bomb Drop"
+            },
+            {
+              "branch": "Tank Hunting",
+              "tier": 3,
+              "choice": "Elefant"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       },
       "Battlefield Espionage": {
@@ -2844,6 +4950,84 @@
             "Transfer Depots is preferred over Disruption Operation for the economy-focused baseline, while Plunder and Operation Skorpion complete the resource/refund package."
           ],
           "evidence": "Havoc Patch 2.5 tier-list feedback supplied by the project owner, reconciled with the canonical Patch 2.5.5 battlegroup tree."
+        },
+        "3v3": {
+          "label": "3v3 team-game battlegroup order",
+          "scope": "3v3 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Infiltration",
+              "tier": 1,
+              "choice": "250/3 Funkpanzerwagen"
+            },
+            {
+              "branch": "Disruption",
+              "tier": 1,
+              "choice": "Sector Subterfuge Beacon"
+            },
+            {
+              "branch": "Disruption",
+              "tier": 2,
+              "choice": "Transfer Depots"
+            },
+            {
+              "branch": "Infiltration",
+              "tier": 2,
+              "choice": "Anti-Tank Incendiary Munitions"
+            },
+            {
+              "branch": "Disruption",
+              "tier": 3,
+              "choice": "Plunder"
+            },
+            {
+              "branch": "Infiltration",
+              "tier": 3,
+              "choice": "Operation Skorpion"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
+        },
+        "4v4": {
+          "label": "4v4 team-game battlegroup order",
+          "scope": "4v4 team-game baseline",
+          "confidence": "High",
+          "sequence": [
+            {
+              "branch": "Disruption",
+              "tier": 1,
+              "choice": "Sector Subterfuge Beacon"
+            },
+            {
+              "branch": "Infiltration",
+              "tier": 1,
+              "choice": "250/3 Funkpanzerwagen"
+            },
+            {
+              "branch": "Disruption",
+              "tier": 2,
+              "choice": "Transfer Depots"
+            },
+            {
+              "branch": "Disruption",
+              "tier": 3,
+              "choice": "Plunder"
+            },
+            {
+              "branch": "Infiltration",
+              "tier": 2,
+              "choice": "Anti-Tank Incendiary Munitions"
+            },
+            {
+              "branch": "Infiltration",
+              "tier": 3,
+              "choice": "Operation Skorpion"
+            }
+          ],
+          "notes": [],
+          "evidence": "Team-game baseline built from the project’s Havoc Patch 2.5 feedback, existing team-game role notes, and the canonical Patch 2.5.5 battlegroup tree. Exact mode entries are kept separate from the 1v1/2v2 small-game baseline."
         }
       }
     }
