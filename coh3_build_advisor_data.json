@@ -1,6 +1,6 @@
 {
   "patch": "2.5.5",
-  "verified": "10 Sep 2026 — v1.1.3 battlegroup recommendation + icon-tree update. Recommendation wording is simplified to “Recommendation”. All 28 battlegroups retain structured 1v1/2v2 numbered recommendation sequences validated against the canonical legal trees. Visual nodes lazily resolve the corresponding in-game ability icons from the COH3 Stats open-data/CDN source, with a text fallback if the remote icon cannot be loaded. Cached CoHDB statistics collected on 2.5.3 remain explicitly labelled as 2.5.3 snapshots.",
+  "verified": "10 Sep 2026 — v1.1.4 icon-loading fix. The visual battlegroup-tree icon loader now targets the current COH3 Stats open-data tag v2.5.3-3, tries CORS-friendly GitHub raw data with the COH3 Stats data CDN as fallback, checks multiple upgrade icon fields, retries export_flatten CDN paths, and includes exact Luftwaffe icon fallbacks. All 28 battlegroup recommendation sequences and canonical tree validation from v1.1.3 are retained.",
   "battlegroupTrees": {
     "Wehrmacht": {
       "Breakthrough": {
