@@ -1,6 +1,6 @@
 {
   "patch": "2.5.5",
-  "verified": "10 Sep 2026 — v1.1.12 battlegroup icon QA update. The confirmed Wehrmacht Breakthrough / Mechanized Assault Group icon cross-swap is corrected during the asset workflow, and the generated icon report now performs an additional branch-level semantic cross-swap audit for all battlegroups. The 28 battlegroups also continue to expose explicit 3v3 and 4v4 numbered pick orders in both JSON and index.html.",
+  "verified": "10 Sep 2026 — v1.1.13 public-copy cleanup. Removed methodology-heavy explanatory text from the main advisor, phase view, evidence sidebar, team-composition cards, ELO/archetype panels and rankings. Detailed source and methodology information remains available in the dedicated Sources tab.",
   "battlegroupTrees": {
     "Wehrmacht": {
       "Breakthrough": {
