@@ -11,6 +11,7 @@ on:
       - 'scripts/add_team_bg_orders.mjs'
       - 'scripts/embed_bg_recommendations.mjs'
       - 'scripts/clean_public_copy.mjs'
+      - 'scripts/clarify_starting_units.mjs'
       - '.github/workflows/sync-battlegroup-icons.yml'
 
 permissions:
@@ -66,6 +67,9 @@ jobs:
       - name: Clean public-facing copy
         run: node scripts/clean_public_copy.mjs
 
+      - name: Clarify starting units and duplicate openers
+        run: node scripts/clarify_starting_units.mjs
+
       - name: Commit generated assets and site update
         run: |
           git config user.name "github-actions[bot]"
@@ -75,5 +79,5 @@ jobs:
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "Clean public advisor copy"
+          git commit -m "Clarify starting units in build orders"
           git push
