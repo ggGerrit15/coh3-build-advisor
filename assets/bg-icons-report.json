@@ -1,0 +1,1687 @@
+{
+  "dataTag": "v2.5.3-3",
+  "generatedAt": "2026-09-10T12:16:02.154Z",
+  "resolved": [
+    {
+      "key": "Wehrmacht|Breakthrough|Assault Forces|0|Assault Grenadiers",
+      "path": "assets/icons/wehrmacht--breakthrough--assault-forces--t1--assault-grenadiers.webp",
+      "upstream": "export_flatten/assault_package.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_right_1_assault_grenadiers_ger"
+    },
+    {
+      "key": "Wehrmacht|Breakthrough|Assault Forces|1|Breakthrough",
+      "path": "assets/icons/wehrmacht--breakthrough--assault-forces--t2--breakthrough.webp",
+      "upstream": "export_flatten/mechanized_assault_group.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_right_3a_assault_group_ger"
+    },
+    {
+      "key": "Wehrmacht|Breakthrough|Assault Forces|1|Smoke Bombing Run",
+      "path": "assets/icons/wehrmacht--breakthrough--assault-forces--t2--smoke-bombing-run.webp",
+      "upstream": "export_flatten/stuka_smoke_bomb.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_right_2b_smoke_bombing_run_ger"
+    },
+    {
+      "key": "Wehrmacht|Breakthrough|Assault Forces|2|Mechanized Assault Group",
+      "path": "assets/icons/wehrmacht--breakthrough--assault-forces--t3--mechanized-assault-group.webp",
+      "upstream": "export_flatten/breakthrough.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_right_2a_breakthrough_ger"
+    },
+    {
+      "key": "Wehrmacht|Breakthrough|Assault Forces|2|Incendiary Bombing Run",
+      "path": "assets/icons/wehrmacht--breakthrough--assault-forces--t3--incendiary-bombing-run.webp",
+      "upstream": "export_flatten/incendiary_bombing_run.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_right_3b_incendiary_bombing_run_ger"
+    },
+    {
+      "key": "Wehrmacht|Breakthrough|Armored Offensive|0|Rapid Production",
+      "path": "assets/icons/wehrmacht--breakthrough--armored-offensive--t1--rapid-production.webp",
+      "upstream": "export_flatten/rapid_production.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_left_1a_rapid_production_ger"
+    },
+    {
+      "key": "Wehrmacht|Breakthrough|Armored Offensive|0|2.5-tonne Cargo Truck",
+      "path": "assets/icons/wehrmacht--breakthrough--armored-offensive--t1--2-5-tonne-cargo-truck.webp",
+      "upstream": "export_flatten/2_5_truck_german.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_left_1b_truck_2_5_ger"
+    },
+    {
+      "key": "Wehrmacht|Breakthrough|Armored Offensive|1|Panzer IV Command Tank",
+      "path": "assets/icons/wehrmacht--breakthrough--armored-offensive--t2--panzer-iv-command-tank.webp",
+      "upstream": "export_flatten/panzer_iv_cmd_german.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_left_2b_panzer_iv_cmd_ger"
+    },
+    {
+      "key": "Wehrmacht|Breakthrough|Armored Offensive|1|Blitzkrieg",
+      "path": "assets/icons/wehrmacht--breakthrough--armored-offensive--t2--blitzkrieg.webp",
+      "upstream": "export_flatten/blitzkrieg.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_left_2a_blitzkrieg_ger"
+    },
+    {
+      "key": "Wehrmacht|Breakthrough|Armored Offensive|2|Tiger Heavy Tank",
+      "path": "assets/icons/wehrmacht--breakthrough--armored-offensive--t3--tiger-heavy-tank.webp",
+      "upstream": "export_flatten/tiger_german.webp",
+      "ref": "upgrade/german/battlegroups/breakthrough/breakthrough_left_3_tiger_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Heavy Fortifications|0|Designate Defensive Line",
+      "path": "assets/icons/wehrmacht--italian-coastal--heavy-fortifications--t1--designate-defensive-line.webp",
+      "upstream": "export_flatten/ability_designated_defensive_line.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_early_warning_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Heavy Fortifications|0|Support Bunkers",
+      "path": "assets/icons/wehrmacht--italian-coastal--heavy-fortifications--t1--support-bunkers.webp",
+      "upstream": "export_flatten/support_bunker.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_support_bunkers_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Heavy Fortifications|1|Designated Artillery Overwatch",
+      "path": "assets/icons/wehrmacht--italian-coastal--heavy-fortifications--t2--designated-artillery-overwatch.webp",
+      "upstream": "export_flatten/designated_artillery_overwatch.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_right_3b_coastal_batteries_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Heavy Fortifications|1|Rapid Fortifications",
+      "path": "assets/icons/wehrmacht--italian-coastal--heavy-fortifications--t2--rapid-fortifications.webp",
+      "upstream": "export_flatten/rapid_fortifications.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_right_3a_rapid_fortification_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Heavy Fortifications|2|Call the Reserves!",
+      "path": "assets/icons/wehrmacht--italian-coastal--heavy-fortifications--t3--call-the-reserves.webp",
+      "upstream": "export_flatten/call_the_reserves.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_call_the_reserves_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Heavy Fortifications|2|Bulwark",
+      "path": "assets/icons/wehrmacht--italian-coastal--heavy-fortifications--t3--bulwark.webp",
+      "upstream": "export_flatten/bulwark.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_bulwark_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Coastal Forces|0|Coastal Reserve",
+      "path": "assets/icons/wehrmacht--italian-coastal--coastal-forces--t1--coastal-reserve.webp",
+      "upstream": "export_flatten/coastal_reserves_squad_wicd.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_left_1_coastal_reserves_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Coastal Forces|1|Artillery Officer",
+      "path": "assets/icons/wehrmacht--italian-coastal--coastal-forces--t2--artillery-officer.webp",
+      "upstream": "export_flatten/artillery_officer_wicd.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_artillery_officer_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Coastal Forces|2|Obice da 210/22",
+      "path": "assets/icons/wehrmacht--italian-coastal--coastal-forces--t3--obice-da-210-22.webp",
+      "upstream": "export_flatten/obice_da_210_22_wicd.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_obice_ger"
+    },
+    {
+      "key": "Wehrmacht|Italian Coastal|Coastal Forces|2|Coastal Wall",
+      "path": "assets/icons/wehrmacht--italian-coastal--coastal-forces--t3--coastal-wall.webp",
+      "upstream": "export_flatten/coastal_wall.webp",
+      "ref": "upgrade/german/battlegroups/coastal/coastal_bunker_supplies"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Desperate Battle|0|Final Battle",
+      "path": "assets/icons/wehrmacht--last-stand--desperate-battle--t1--final-battle.webp",
+      "upstream": "export_flatten/final_battle.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_final_battle_ger"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Desperate Battle|1|Borgward IV Wanze",
+      "path": "assets/icons/wehrmacht--last-stand--desperate-battle--t2--borgward-iv-wanze.webp",
+      "upstream": "export_flatten/borgward_iv_ger.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_borgward_iv_ger"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Desperate Battle|1|Panzerfaust Rollout",
+      "path": "assets/icons/wehrmacht--last-stand--desperate-battle--t2--panzerfaust-rollout.webp",
+      "upstream": "export_flatten/volkssturm_training.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_panzerfaust_rollout_ger"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Desperate Battle|2|Nebelwerfer Overwatch",
+      "path": "assets/icons/wehrmacht--last-stand--desperate-battle--t3--nebelwerfer-overwatch.webp",
+      "upstream": "export_flatten/nebelwerfer_overwatch.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_nebelwerfer_overwatch_ger"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Desperate Battle|2|Scavenge Doctrine",
+      "path": "assets/icons/wehrmacht--last-stand--desperate-battle--t3--scavenge-doctrine.webp",
+      "upstream": "export_flatten/scavenge.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_scavenge_ger"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Defense in Depth|0|Sturmpioneer conversion",
+      "path": "assets/icons/wehrmacht--last-stand--defense-in-depth--t1--sturmpioneer-conversion.webp",
+      "upstream": "export_flatten/sturmpioneer_ger.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_sturmpioneers_ger"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Defense in Depth|1|Improvised Barrage",
+      "path": "assets/icons/wehrmacht--last-stand--defense-in-depth--t2--improvised-barrage.webp",
+      "upstream": "export_flatten/improvised_barrage.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_improvised_barrage_ger"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Defense in Depth|1|Last Ditch Defenses",
+      "path": "assets/icons/wehrmacht--last-stand--defense-in-depth--t2--last-ditch-defenses.webp",
+      "upstream": "export_flatten/propaganda_tower.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_last_ditch_defenses_ger"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Defense in Depth|2|Rapid Salvage",
+      "path": "assets/icons/wehrmacht--last-stand--defense-in-depth--t3--rapid-salvage.webp",
+      "upstream": "export_flatten/recovery_efforts.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_recovery_efforts_ger"
+    },
+    {
+      "key": "Wehrmacht|Last Stand|Defense in Depth|2|Immobilize and Fortify",
+      "path": "assets/icons/wehrmacht--last-stand--defense-in-depth--t3--immobilize-and-fortify.webp",
+      "upstream": "export_flatten/immobilize_and_fortify.webp",
+      "ref": "upgrade/german/battlegroups/last_stand/last_stand_immobilize_and_fortify_ger"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Air-to-Ground|0|Reconnaissance Run",
+      "path": "assets/icons/wehrmacht--luftwaffe--air-to-ground--t1--reconnaissance-run.webp",
+      "upstream": "export/icons/races/german/abilities/reconissance_run.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_right_1a_recon_run"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Air-to-Ground|0|Stuka Strafing Run",
+      "path": "assets/icons/wehrmacht--luftwaffe--air-to-ground--t1--stuka-strafing-run.webp",
+      "upstream": "export/icons/races/german/abilities/stuka_strafing_run.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_right_1b_strafing_run_ger"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Air-to-Ground|1|Fallschirmjäger Squad Paradrop",
+      "path": "assets/icons/wehrmacht--luftwaffe--air-to-ground--t2--fallschirmjager-squad-paradrop.webp",
+      "upstream": "export/icons/races/german/symbols/fallshirmjagers_ger.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_right_2_fallschirmjagers"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Air-to-Ground|2|Fragmentation Bombs",
+      "path": "assets/icons/wehrmacht--luftwaffe--air-to-ground--t3--fragmentation-bombs.webp",
+      "upstream": "export/icons/races/german/abilities/fragmentation_bombs.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_right_3a_fragmentation_bombs"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Air-to-Ground|2|Stuka Loiter",
+      "path": "assets/icons/wehrmacht--luftwaffe--air-to-ground--t3--stuka-loiter.webp",
+      "upstream": "export/icons/races/german/abilities/stuka_attack_loiter.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_right_3b_attack_loiter"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Field Support|0|Fallschirmpioneer Squad Paradrop",
+      "path": "assets/icons/wehrmacht--luftwaffe--field-support--t1--fallschirmpioneer-squad-paradrop.webp",
+      "upstream": "export/icons/races/german/symbols/fallshirmpioneers_ger.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_left_1b_fallschirmpioneers"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Field Support|1|LG40 Recoilless Gun Paradrop",
+      "path": "assets/icons/wehrmacht--luftwaffe--field-support--t2--lg40-recoilless-gun-paradrop.webp",
+      "upstream": "export/icons/races/german/symbols/lg_40_anti-tank_gun.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_left_2a_lg40_weapon_drop"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Field Support|1|Flak 38 Anti-Air Emplacement",
+      "path": "assets/icons/wehrmacht--luftwaffe--field-support--t2--flak-38-anti-air-emplacement.webp",
+      "upstream": "export/icons/races/german/team_weapons/tw_20mm_emplacement_ger.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_left_3_flak36_88mm"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Field Support|2|Infantry Reserves",
+      "path": "assets/icons/wehrmacht--luftwaffe--field-support--t3--infantry-reserves.webp",
+      "upstream": "export/icons/races/german/abilities/infantry_reserves.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_left_1a_infantry_reserves"
+    },
+    {
+      "key": "Wehrmacht|Luftwaffe|Field Support|2|Flak 36 Anti-tank Emplacement",
+      "path": "assets/icons/wehrmacht--luftwaffe--field-support--t3--flak-36-anti-tank-emplacement.webp",
+      "upstream": "export/icons/races/german/team_weapons/tw_88mm_emplacement_ger.webp",
+      "ref": "upgrade/german/battlegroups/luftwaffe/luftwaffe_relay_point_ger"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Armor|0|Raid Package",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-armor--t1--raid-package.webp",
+      "upstream": "export_flatten/raid_package.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_left_1a_raid_package"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Armor|1|StuG Assault Group",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-armor--t2--stug-assault-group.webp",
+      "upstream": "export_flatten/stormtrooper_assault_group.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_left_2a_stug_assault_group"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Armor|1|8 Rad Armored Car",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-armor--t2--8-rad-armored-car.webp",
+      "upstream": "export_flatten/armored_car_8_rad_german.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_left_2b_8_rad"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Armor|2|Panther production unlock",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-armor--t3--panther-production-unlock.webp",
+      "upstream": "export_flatten/panther_build.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_left_panther_production_unlock_ger"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Support|0|Repair Crews",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-support--t1--repair-crews.webp",
+      "upstream": "export_flatten/mechanized_mobile_repair_kits.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_right_1a_mobile_repair_ger"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Support|0|Spotting Scopes",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-support--t1--spotting-scopes.webp",
+      "upstream": "export_flatten/spotting_scopes.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_right_1b_spotting_scopes"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Support|1|Stoßtruppen Assault Package",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-support--t2--stosstruppen-assault-package.webp",
+      "upstream": "export_flatten/stosstruppen_assault_package.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_right_3a_stosstruppen_package"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Support|1|Wespe",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-support--t2--wespe.webp",
+      "upstream": "export_flatten/wespe_german.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_right_3b_wespe"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Support|2|Mechanized Assault",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-support--t3--mechanized-assault.webp",
+      "upstream": "export_flatten/mechanized_assault.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_right_2a_mechanized_assault"
+    },
+    {
+      "key": "Wehrmacht|Mechanized|Mechanized Support|2|Zeroing Artillery Barrage",
+      "path": "assets/icons/wehrmacht--mechanized--mechanized-support--t3--zeroing-artillery-barrage.webp",
+      "upstream": "export_flatten/zeroing_artillery.webp",
+      "ref": "upgrade/german/battlegroups/mechanized/mechanized_right_2b_encirclement_barrage"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Siegeworks|0|Siege Specialists",
+      "path": "assets/icons/wehrmacht--siege-breaker--siegeworks--t1--siege-specialists.webp",
+      "upstream": "export_flatten/siege_specialists_ger.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_siege_specialists_ger"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Siegeworks|1|Grinding Advance",
+      "path": "assets/icons/wehrmacht--siege-breaker--siegeworks--t2--grinding-advance.webp",
+      "upstream": "export_flatten/grinding_advance.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_grinding_advance_ger"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Siegeworks|1|Construct Siege Camp",
+      "path": "assets/icons/wehrmacht--siege-breaker--siegeworks--t2--construct-siege-camp.webp",
+      "upstream": "export_flatten/bunker_mortar_autobuild_ger.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_siege_camp_ger"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Siegeworks|2|Designate Siege Leader",
+      "path": "assets/icons/wehrmacht--siege-breaker--siegeworks--t3--designate-siege-leader.webp",
+      "upstream": "export_flatten/siege_leader.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_designate_siege_leader_ger"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Siegeworks|2|Sturmtiger production unlock",
+      "path": "assets/icons/wehrmacht--siege-breaker--siegeworks--t3--sturmtiger-production-unlock.webp",
+      "upstream": "export_flatten/sturmtiger_build.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_sturmtiger_ger"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Vanguard Tactics|0|Clearing Gear",
+      "path": "assets/icons/wehrmacht--siege-breaker--vanguard-tactics--t1--clearing-gear.webp",
+      "upstream": "export_flatten/clearing_gear.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_clearing_gear_ger"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Vanguard Tactics|1|Into the Breach",
+      "path": "assets/icons/wehrmacht--siege-breaker--vanguard-tactics--t2--into-the-breach.webp",
+      "upstream": "export_flatten/into_the_breach.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_into_the_breach_ger"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Vanguard Tactics|1|Firestorm Doctrine",
+      "path": "assets/icons/wehrmacht--siege-breaker--vanguard-tactics--t2--firestorm-doctrine.webp",
+      "upstream": "export_flatten/firestorm_doctrine.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_firestorm_doctrine_ger"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Vanguard Tactics|2|Critical Location",
+      "path": "assets/icons/wehrmacht--siege-breaker--vanguard-tactics--t3--critical-location.webp",
+      "upstream": "export_flatten/critical_location.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_critical_location_ger"
+    },
+    {
+      "key": "Wehrmacht|Siege Breaker|Vanguard Tactics|2|Probing Barrage",
+      "path": "assets/icons/wehrmacht--siege-breaker--vanguard-tactics--t3--probing-barrage.webp",
+      "upstream": "export_flatten/probing_barrage.webp",
+      "ref": "upgrade/german/battlegroups/siegebreakers/siegebreakers_probing_barrage_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Terror Tactics|0|Interrogate",
+      "path": "assets/icons/wehrmacht--terror--terror-tactics--t1--interrogate.webp",
+      "upstream": "export_flatten/interrogate.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_interrogate_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Terror Tactics|0|Contempt for the Weak",
+      "path": "assets/icons/wehrmacht--terror--terror-tactics--t1--contempt-for-the-weak.webp",
+      "upstream": "export_flatten/contempt_for_the_weak.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_contempt_for_the_weak_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Terror Tactics|1|Jericho Trumpet",
+      "path": "assets/icons/wehrmacht--terror--terror-tactics--t2--jericho-trumpet.webp",
+      "upstream": "export_flatten/jericho_trumpet.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_jericho_trumpet_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Terror Tactics|1|Propaganda Leaflet Drop",
+      "path": "assets/icons/wehrmacht--terror--terror-tactics--t2--propaganda-leaflet-drop.webp",
+      "upstream": "export_flatten/propaganda_war.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_propaganda_war_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Terror Tactics|2|V1 Rocket Strike",
+      "path": "assets/icons/wehrmacht--terror--terror-tactics--t3--v1-rocket-strike.webp",
+      "upstream": "export_flatten/v1_rocket.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_off_map_rocket_v1_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Weapon Superiority|0|Machine Gun Camouflage",
+      "path": "assets/icons/wehrmacht--terror--weapon-superiority--t1--machine-gun-camouflage.webp",
+      "upstream": "export_flatten/ambush_camouflage.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_ambush_camouflage_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Weapon Superiority|0|Heavy Gunnery",
+      "path": "assets/icons/wehrmacht--terror--weapon-superiority--t1--heavy-gunnery.webp",
+      "upstream": "export_flatten/heavy_gunnery.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_heavy_gunnery_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Weapon Superiority|1|Defend the Fatherland",
+      "path": "assets/icons/wehrmacht--terror--weapon-superiority--t2--defend-the-fatherland.webp",
+      "upstream": "export_flatten/for_the_fatherland.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_defend_the_fatherland_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Weapon Superiority|1|No Quarter",
+      "path": "assets/icons/wehrmacht--terror--weapon-superiority--t2--no-quarter.webp",
+      "upstream": "export_flatten/no_quarter.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_no_quarter_ger"
+    },
+    {
+      "key": "Wehrmacht|Terror|Weapon Superiority|2|King Tiger Heavy Tank",
+      "path": "assets/icons/wehrmacht--terror--weapon-superiority--t3--king-tiger-heavy-tank.webp",
+      "upstream": "export_flatten/king_tiger_german.webp",
+      "ref": "upgrade/german/battlegroups/terror/terror_king_tiger_ger"
+    },
+    {
+      "key": "USF|Advanced Infantry|Infantry Operations|0|Convert Rifleman to Ranger",
+      "path": "assets/icons/usf--advanced-infantry--infantry-operations--t1--convert-rifleman-to-ranger.webp",
+      "upstream": "export_flatten/convert_rifleman_to_ranger.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_left_1_convert_rifleman_to_ranger_us"
+    },
+    {
+      "key": "USF|Advanced Infantry|Infantry Operations|1|Frontline Medical Station",
+      "path": "assets/icons/usf--advanced-infantry--infantry-operations--t2--frontline-medical-station.webp",
+      "upstream": "export_flatten/frontline_medical_station.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_left_2a_frontline_medical_tent_us"
+    },
+    {
+      "key": "USF|Advanced Infantry|Infantry Operations|1|Designate Assault Position",
+      "path": "assets/icons/usf--advanced-infantry--infantry-operations--t2--designate-assault-position.webp",
+      "upstream": "export_flatten/designate_assault_position.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_left_2a_designate_assault"
+    },
+    {
+      "key": "USF|Advanced Infantry|Infantry Operations|2|Ranger Weapon Training",
+      "path": "assets/icons/usf--advanced-infantry--infantry-operations--t3--ranger-weapon-training.webp",
+      "upstream": "export_flatten/ranger_weapon_training.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_left_3a_ranger_weapon_training_us"
+    },
+    {
+      "key": "USF|Advanced Infantry|Infantry Operations|2|Infantry Assault",
+      "path": "assets/icons/usf--advanced-infantry--infantry-operations--t3--infantry-assault.webp",
+      "upstream": "export_flatten/infantry_assault.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_left_3b_infantry_assault_us"
+    },
+    {
+      "key": "USF|Advanced Infantry|Field Ordnance|0|Artillery Observers",
+      "path": "assets/icons/usf--advanced-infantry--field-ordnance--t1--artillery-observers.webp",
+      "upstream": "export_flatten/artillery_observers_us.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_right_1a_artillery_observers_us"
+    },
+    {
+      "key": "USF|Advanced Infantry|Field Ordnance|0|Ammunition Storage",
+      "path": "assets/icons/usf--advanced-infantry--field-ordnance--t1--ammunition-storage.webp",
+      "upstream": "export_flatten/ammunition_storage_us.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_right_1b_ammunition_storage_us"
+    },
+    {
+      "key": "USF|Advanced Infantry|Field Ordnance|1|M2A1 105mm Howitzer Emplacement",
+      "path": "assets/icons/usf--advanced-infantry--field-ordnance--t2--m2a1-105mm-howitzer-emplacement.webp",
+      "upstream": "export_flatten/105mm_howitzer_passive.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_right_2_howitzer_105mm_us"
+    },
+    {
+      "key": "USF|Advanced Infantry|Field Ordnance|2|155mm Rapid Artillery Barrage",
+      "path": "assets/icons/usf--advanced-infantry--field-ordnance--t3--155mm-rapid-artillery-barrage.webp",
+      "upstream": "export_flatten/155mm_off-map.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_right_3a_off_map_artillery_us"
+    },
+    {
+      "key": "USF|Advanced Infantry|Field Ordnance|2|Free Fire Drills",
+      "path": "assets/icons/usf--advanced-infantry--field-ordnance--t3--free-fire-drills.webp",
+      "upstream": "export_flatten/105mm_howitzer_auto_fire.webp",
+      "ref": "upgrade/american/battlegroups/infantry/infantry_right_3b_auto_fire_howitzer_us"
+    },
+    {
+      "key": "USF|Airborne|Aerial Support|0|Smoke Bombing Run",
+      "path": "assets/icons/usf--airborne--aerial-support--t1--smoke-bombing-run.webp",
+      "upstream": "export_flatten/smoke_bombing_run.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_left_1a_smoke_us"
+    },
+    {
+      "key": "USF|Airborne|Aerial Support|0|Recon Loiter",
+      "path": "assets/icons/usf--airborne--aerial-support--t1--recon-loiter.webp",
+      "upstream": "export_flatten/recon_loiter.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_left_1b_recon_loiter_us"
+    },
+    {
+      "key": "USF|Airborne|Aerial Support|1|Supply Drop",
+      "path": "assets/icons/usf--airborne--aerial-support--t2--supply-drop.webp",
+      "upstream": "export_flatten/supply_drop.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_left_2a_supply_drop_us"
+    },
+    {
+      "key": "USF|Airborne|Aerial Support|1|Paradrop Reinforcements",
+      "path": "assets/icons/usf--airborne--aerial-support--t2--paradrop-reinforcements.webp",
+      "upstream": "export_flatten/paradropped_reinforcements.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_left_2b_air_dropped_reinforcement_us"
+    },
+    {
+      "key": "USF|Airborne|Aerial Support|2|Dual P-47 Rocket Strike",
+      "path": "assets/icons/usf--airborne--aerial-support--t3--dual-p-47-rocket-strike.webp",
+      "upstream": "export_flatten/p47_rocket_strafe.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_left_3a_rocket_strike_us"
+    },
+    {
+      "key": "USF|Airborne|Aerial Support|2|Carpet Bombing Run",
+      "path": "assets/icons/usf--airborne--aerial-support--t3--carpet-bombing-run.webp",
+      "upstream": "export_flatten/carpet_bombing_run.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_left_3b_carpet_bombing_run_us"
+    },
+    {
+      "key": "USF|Airborne|Paradropped Infantry|0|Pathfinders",
+      "path": "assets/icons/usf--airborne--paradropped-infantry--t1--pathfinders.webp",
+      "upstream": "export_flatten/pathfinder_us.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_right_1a_pathfinders_us"
+    },
+    {
+      "key": "USF|Airborne|Paradropped Infantry|0|Heavy Machine Gun Paradrop",
+      "path": "assets/icons/usf--airborne--paradropped-infantry--t1--heavy-machine-gun-paradrop.webp",
+      "upstream": "export_flatten/at_gun_57mm_paradrop_us.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_right_3_paradrop_at_gun_us"
+    },
+    {
+      "key": "USF|Airborne|Paradropped Infantry|1|Paratrooper Squad Paradrop",
+      "path": "assets/icons/usf--airborne--paradropped-infantry--t2--paratrooper-squad-paradrop.webp",
+      "upstream": "export_flatten/hmg_30cal_paradrop_us.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_right_1b_paradrop_hmg_us"
+    },
+    {
+      "key": "USF|Airborne|Paradropped Infantry|2|Anti-tank Gun Team Paradrop",
+      "path": "assets/icons/usf--airborne--paradropped-infantry--t3--anti-tank-gun-team-paradrop.webp",
+      "upstream": "export_flatten/paratrooper_us.webp",
+      "ref": "upgrade/american/battlegroups/airborne/airborne_right_2_paratrooper_us"
+    },
+    {
+      "key": "USF|Armored|Engineering Corp|0|Assault Engineers",
+      "path": "assets/icons/usf--armored--engineering-corp--t1--assault-engineers.webp",
+      "upstream": "export_flatten/assault_engineer_us.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_left_1a_assault_engineers_us"
+    },
+    {
+      "key": "USF|Armored|Engineering Corp|0|Field Repairs",
+      "path": "assets/icons/usf--armored--engineering-corp--t1--field-repairs.webp",
+      "upstream": "export_flatten/field_repairs.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_left_2a_field_repairs"
+    },
+    {
+      "key": "USF|Armored|Engineering Corp|1|Veteran Crews",
+      "path": "assets/icons/usf--armored--engineering-corp--t2--veteran-crews.webp",
+      "upstream": "export_flatten/veteran_crews.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_left_1b_veteran_crews_us"
+    },
+    {
+      "key": "USF|Armored|Engineering Corp|2|M8 Scott SPG",
+      "path": "assets/icons/usf--armored--engineering-corp--t3--m8-scott-spg.webp",
+      "upstream": "export_flatten/scott_us.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_right_2a_scott_us"
+    },
+    {
+      "key": "USF|Armored|Engineering Corp|2|M31 Recovery Vehicle",
+      "path": "assets/icons/usf--armored--engineering-corp--t3--m31-recovery-vehicle.webp",
+      "upstream": "export_flatten/recovery_vehicle_us.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_left_2b_recovery_vehicle_us"
+    },
+    {
+      "key": "USF|Armored|Armored Doctrine|0|Fast Deploy",
+      "path": "assets/icons/usf--armored--armored-doctrine--t1--fast-deploy.webp",
+      "upstream": "export_flatten/fast_deploy.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_right_1a_fast_deploy_us"
+    },
+    {
+      "key": "USF|Armored|Armored Doctrine|0|Strength in Steel",
+      "path": "assets/icons/usf--armored--armored-doctrine--t1--strength-in-steel.webp",
+      "upstream": "export_flatten/strength_in_steel.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_right_1b_strength_in_steel_us"
+    },
+    {
+      "key": "USF|Armored|Armored Doctrine|1|Seek and Destroy",
+      "path": "assets/icons/usf--armored--armored-doctrine--t2--seek-and-destroy.webp",
+      "upstream": "export_flatten/seek_and_destroy.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_right_2b_seek_and_destroy"
+    },
+    {
+      "key": "USF|Armored|Armored Doctrine|2|War Machine",
+      "path": "assets/icons/usf--armored--armored-doctrine--t3--war-machine.webp",
+      "upstream": "export_flatten/war_machine.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_left_3_war_machine_us"
+    },
+    {
+      "key": "USF|Armored|Armored Doctrine|2|Easy Eight production unlock",
+      "path": "assets/icons/usf--armored--armored-doctrine--t3--easy-eight-production-unlock.webp",
+      "upstream": "export_flatten/sherman_easy_8_build.webp",
+      "ref": "upgrade/american/battlegroups/armored/armored_right_3_sherman_easy_8_production_unlock_us"
+    },
+    {
+      "key": "USF|Free French|Methodical Battle Doctrine|0|French Rifle Section",
+      "path": "assets/icons/usf--free-french--methodical-battle-doctrine--t1--french-rifle-section.webp",
+      "upstream": "export_flatten/french_infantry_us.webp",
+      "ref": "upgrade/american/battlegroups/french/french_infantry_callin_us"
+    },
+    {
+      "key": "USF|Free French|Methodical Battle Doctrine|1|New Blood",
+      "path": "assets/icons/usf--free-french--methodical-battle-doctrine--t2--new-blood.webp",
+      "upstream": "export_flatten/new_blood.webp",
+      "ref": "upgrade/american/battlegroups/french/french_new_blood_us"
+    },
+    {
+      "key": "USF|Free French|Methodical Battle Doctrine|1|Old Guard",
+      "path": "assets/icons/usf--free-french--methodical-battle-doctrine--t2--old-guard.webp",
+      "upstream": "export_flatten/old_guard.webp",
+      "ref": "upgrade/american/battlegroups/french/french_old_guard_us"
+    },
+    {
+      "key": "USF|Free French|Methodical Battle Doctrine|2|Defiance",
+      "path": "assets/icons/usf--free-french--methodical-battle-doctrine--t3--defiance.webp",
+      "upstream": "export_flatten/defiance.webp",
+      "ref": "upgrade/american/battlegroups/french/french_defiance_us"
+    },
+    {
+      "key": "USF|Free French|Methodical Battle Doctrine|2|Railway Artillery",
+      "path": "assets/icons/usf--free-french--methodical-battle-doctrine--t3--railway-artillery.webp",
+      "upstream": "export_flatten/railway_artillery.webp",
+      "ref": "upgrade/american/battlegroups/french/french_railway_artillery_us"
+    },
+    {
+      "key": "USF|Free French|Defense in Depth|0|Zone Rouge",
+      "path": "assets/icons/usf--free-french--defense-in-depth--t1--zone-rouge.webp",
+      "upstream": "export_flatten/zone_rouge.webp",
+      "ref": "upgrade/american/battlegroups/french/french_red_zone_us"
+    },
+    {
+      "key": "USF|Free French|Defense in Depth|0|Boundary Lockdown",
+      "path": "assets/icons/usf--free-french--defense-in-depth--t1--boundary-lockdown.webp",
+      "upstream": "export_flatten/boundary_lockdown.webp",
+      "ref": "upgrade/american/battlegroups/french/french_boundary_lockdown_us"
+    },
+    {
+      "key": "USF|Free French|Defense in Depth|1|Maginot Line",
+      "path": "assets/icons/usf--free-french--defense-in-depth--t2--maginot-line.webp",
+      "upstream": "export_flatten/magino_line.webp",
+      "ref": "upgrade/american/battlegroups/french/french_maginot_line_us"
+    },
+    {
+      "key": "USF|Free French|Defense in Depth|2|Char B1 production unlock",
+      "path": "assets/icons/usf--free-french--defense-in-depth--t3--char-b1-production-unlock.webp",
+      "upstream": "export_flatten/char_b1_build.webp",
+      "ref": "upgrade/american/battlegroups/french/french_char_b1_us"
+    },
+    {
+      "key": "USF|Free French|Defense in Depth|2|Advanced Tourelles",
+      "path": "assets/icons/usf--free-french--defense-in-depth--t3--advanced-tourelles.webp",
+      "upstream": "export_flatten/advanced_tourelles.webp",
+      "ref": "upgrade/american/battlegroups/french/french_advanced_tourelles_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Weapons Teams|0|M2HB .50cal Heavy Machine Gun",
+      "path": "assets/icons/usf--heavy-weapons--weapons-teams--t1--m2hb-50cal-heavy-machine-gun.webp",
+      "upstream": "export_flatten/hmg_50cal_weapon_us.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_50cal_mg_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Weapons Teams|1|Gallant Stand",
+      "path": "assets/icons/usf--heavy-weapons--weapons-teams--t2--gallant-stand.webp",
+      "upstream": "export_flatten/gallant_stand.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_gallant_stand_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Weapons Teams|1|Rapid Reposition",
+      "path": "assets/icons/usf--heavy-weapons--weapons-teams--t2--rapid-reposition.webp",
+      "upstream": "export_flatten/rapid_reposition.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_rapid_reposition_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Weapons Teams|2|Black Dragon Artillery Barrage",
+      "path": "assets/icons/usf--heavy-weapons--weapons-teams--t3--black-dragon-artillery-barrage.webp",
+      "upstream": "export_flatten/240mm_barrage.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_240mm_heavy_barrage_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Weapons Teams|2|Bolstered Team Weapons",
+      "path": "assets/icons/usf--heavy-weapons--weapons-teams--t3--bolstered-team-weapons.webp",
+      "upstream": "export_flatten/bolstered_team_weapons.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_bolstered_fire_teams_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Cavalry Support|0|Assault Carriers",
+      "path": "assets/icons/usf--heavy-weapons--cavalry-support--t1--assault-carriers.webp",
+      "upstream": "export_flatten/halftrack_assault_us.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_assault_halftrack_m3_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Cavalry Support|1|Halftrack Strongpoints",
+      "path": "assets/icons/usf--heavy-weapons--cavalry-support--t2--halftrack-strongpoints.webp",
+      "upstream": "export_flatten/halftrack_strongpoints.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_strongpoint_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Cavalry Support|1|Exchangeable Parts",
+      "path": "assets/icons/usf--heavy-weapons--cavalry-support--t2--exchangeable-parts.webp",
+      "upstream": "export_flatten/exchangeable_parts.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_exchangeable_parts_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Cavalry Support|2|M26 Pershing",
+      "path": "assets/icons/usf--heavy-weapons--cavalry-support--t3--m26-pershing.webp",
+      "upstream": "export_flatten/pershing_us.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_pershing_us"
+    },
+    {
+      "key": "USF|Heavy Weapons|Cavalry Support|2|Towed M5 3-inch Anti-tank Gun",
+      "path": "assets/icons/usf--heavy-weapons--cavalry-support--t3--towed-m5-3-inch-anti-tank-gun.webp",
+      "upstream": "export_flatten/tw_at_gun_3in_m5_us.webp",
+      "ref": "upgrade/american/battlegroups/special_weapons/special_weapons_at_gun_3in_m5_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Underground Network|0|Construct Tunnel Network",
+      "path": "assets/icons/usf--italian-partisan--underground-network--t1--construct-tunnel-network.webp",
+      "upstream": "export_flatten/partisan_tunnel_main.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_tunnel_network_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Underground Network|1|Smuggling Routes",
+      "path": "assets/icons/usf--italian-partisan--underground-network--t2--smuggling-routes.webp",
+      "upstream": "export_flatten/smuggling_routes.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_smuggling_routes_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Underground Network|1|OSS Coordination",
+      "path": "assets/icons/usf--italian-partisan--underground-network--t2--oss-coordination.webp",
+      "upstream": "export_flatten/oss_coordination.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_oss_coordination_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Underground Network|2|Underground Detonation",
+      "path": "assets/icons/usf--italian-partisan--underground-network--t3--underground-detonation.webp",
+      "upstream": "export_flatten/underground_detonation.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_underground_detonation_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Underground Network|2|Medical Caches",
+      "path": "assets/icons/usf--italian-partisan--underground-network--t3--medical-caches.webp",
+      "upstream": "export_flatten/medical_caches.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_medical_caches_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Insurgency Tactics|0|Resistance Fighter Infiltration",
+      "path": "assets/icons/usf--italian-partisan--insurgency-tactics--t1--resistance-fighter-infiltration.webp",
+      "upstream": "export_flatten/resistance_fighters_partisan.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_resistance_fighters_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Insurgency Tactics|1|Forward Headquarters",
+      "path": "assets/icons/usf--italian-partisan--insurgency-tactics--t2--forward-headquarters.webp",
+      "upstream": "export_flatten/forward_hq.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_forward_headquarters_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Insurgency Tactics|1|Saboteur Infiltration",
+      "path": "assets/icons/usf--italian-partisan--insurgency-tactics--t2--saboteur-infiltration.webp",
+      "upstream": "export_flatten/partisan_sabotour.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_saboteur_infiltration_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Insurgency Tactics|2|False Orders",
+      "path": "assets/icons/usf--italian-partisan--insurgency-tactics--t3--false-orders.webp",
+      "upstream": "export_flatten/false_orders.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_false_orders_us"
+    },
+    {
+      "key": "USF|Italian Partisan|Insurgency Tactics|2|Spy Network",
+      "path": "assets/icons/usf--italian-partisan--insurgency-tactics--t3--spy-network.webp",
+      "upstream": "export_flatten/spy_network.webp",
+      "ref": "upgrade/american/battlegroups/partisans/partisans_spy_network_us"
+    },
+    {
+      "key": "USF|Special Operations|Combat Support|0|M29 Weasel",
+      "path": "assets/icons/usf--special-operations--combat-support--t1--m29-weasel.webp",
+      "upstream": "export_flatten/m_29_weassel.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_left_1a_m29_weasal_us"
+    },
+    {
+      "key": "USF|Special Operations|Combat Support|0|M29 Weasel with M1 Pack Howitzer",
+      "path": "assets/icons/usf--special-operations--combat-support--t1--m29-weasel-with-m1-pack-howitzer.webp",
+      "upstream": "export_flatten/m29_weasel_with_pack_howitzer.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_left_1b_m29_weasal_with_pack_howitzer"
+    },
+    {
+      "key": "USF|Special Operations|Combat Support|1|Mark Vehicle",
+      "path": "assets/icons/usf--special-operations--combat-support--t2--mark-vehicle.webp",
+      "upstream": "export_flatten/mark_vehicle.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_left_2a_mark_target_vehicle_us"
+    },
+    {
+      "key": "USF|Special Operations|Combat Support|1|P-47 Anti-Infantry Loiter",
+      "path": "assets/icons/usf--special-operations--combat-support--t2--p-47-anti-infantry-loiter.webp",
+      "upstream": "export_flatten/p47_anti_infantry_loiter.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_left_2b_strafing_support_us"
+    },
+    {
+      "key": "USF|Special Operations|Combat Support|2|Whizbang production unlock",
+      "path": "assets/icons/usf--special-operations--combat-support--t3--whizbang-production-unlock.webp",
+      "upstream": "export_flatten/sherman_whizbang_us_quickbuild.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_sherman_whizbang_production_unlock_us"
+    },
+    {
+      "key": "USF|Special Operations|Combat Operations|0|Raiding Flares",
+      "path": "assets/icons/usf--special-operations--combat-operations--t1--raiding-flares.webp",
+      "upstream": "export_flatten/raiding_flare.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_right_1a_raiding_flares_us"
+    },
+    {
+      "key": "USF|Special Operations|Combat Operations|0|Smoke Screen",
+      "path": "assets/icons/usf--special-operations--combat-operations--t1--smoke-screen.webp",
+      "upstream": "export_flatten/smoke_screen.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_right_1b_smoke_screen_us"
+    },
+    {
+      "key": "USF|Special Operations|Combat Operations|1|SSF Commando Squad",
+      "path": "assets/icons/usf--special-operations--combat-operations--t2--ssf-commando-squad.webp",
+      "upstream": "export_flatten/ssf_commandos_us.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_right_2_devils_brigade_us"
+    },
+    {
+      "key": "USF|Special Operations|Combat Operations|2|Assault Operation",
+      "path": "assets/icons/usf--special-operations--combat-operations--t3--assault-operation.webp",
+      "upstream": "export_flatten/assault_operation.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_right_3a_assault_operation_us"
+    },
+    {
+      "key": "USF|Special Operations|Combat Operations|2|Air Re-Supply Operation",
+      "path": "assets/icons/usf--special-operations--combat-operations--t3--air-re-supply-operation.webp",
+      "upstream": "export_flatten/air_resupply_operation.webp",
+      "ref": "upgrade/american/battlegroups/special_operations/special_operations_right_3b_air_resupply_operation_us"
+    },
+    {
+      "key": "British|Air and Sea|Royal Navy Support|0|Supply Surplus",
+      "path": "assets/icons/british--air-and-sea--royal-navy-support--t1--supply-surplus.webp",
+      "upstream": "export_flatten/supply_surplus.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_left_1b_supply_surplus_uk"
+    },
+    {
+      "key": "British|Air and Sea|Royal Navy Support|0|Naval Blockade",
+      "path": "assets/icons/british--air-and-sea--royal-navy-support--t1--naval-blockade.webp",
+      "upstream": "export_flatten/naval_blockade.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_left_1a_naval_blockade_uk"
+    },
+    {
+      "key": "British|Air and Sea|Royal Navy Support|1|Centaur production unlock",
+      "path": "assets/icons/british--air-and-sea--royal-navy-support--t2--centaur-production-unlock.webp",
+      "upstream": "export_flatten/centaur_africa_uk_quickbuild.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_left_2a_centaur_cs_uk"
+    },
+    {
+      "key": "British|Air and Sea|Royal Navy Support|2|Assault Flares",
+      "path": "assets/icons/british--air-and-sea--royal-navy-support--t3--assault-flares.webp",
+      "upstream": "export_flatten/raiding_flare.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_left_3a_assault_flares_uk"
+    },
+    {
+      "key": "British|Air and Sea|Royal Navy Support|2|Naval Bombardment",
+      "path": "assets/icons/british--air-and-sea--royal-navy-support--t3--naval-bombardment.webp",
+      "upstream": "export_flatten/naval_bombardment.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_left_3b_naval_bombardment_uk"
+    },
+    {
+      "key": "British|Air and Sea|Royal Air Force|0|Commando Section Paradrop",
+      "path": "assets/icons/british--air-and-sea--royal-air-force--t1--commando-section-paradrop.webp",
+      "upstream": "export_flatten/commando__lmg_uk.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_right_2b_commando_lmg_team_uk"
+    },
+    {
+      "key": "British|Air and Sea|Royal Air Force|1|M1 Pack Howitzer Paradrop",
+      "path": "assets/icons/british--air-and-sea--royal-air-force--t2--m1-pack-howitzer-paradrop.webp",
+      "upstream": "export_flatten/pack_howitzer_75mm_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_right_2a_pack_howitzer_team_uk"
+    },
+    {
+      "key": "British|Air and Sea|Royal Air Force|1|Commando Support Section",
+      "path": "assets/icons/british--air-and-sea--royal-air-force--t2--commando-support-section.webp",
+      "upstream": "export_flatten/commando_uk.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_right_1_commandos_uk"
+    },
+    {
+      "key": "British|Air and Sea|Royal Air Force|2|Incendiary Bombing Run",
+      "path": "assets/icons/british--air-and-sea--royal-air-force--t3--incendiary-bombing-run.webp",
+      "upstream": "export_flatten/incendiary_carpet_bombing.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_right_3a_incendiary_bombing_run_uk"
+    },
+    {
+      "key": "British|Air and Sea|Royal Air Force|2|Anti-tank Rocket Loiter",
+      "path": "assets/icons/british--air-and-sea--royal-air-force--t3--anti-tank-rocket-loiter.webp",
+      "upstream": "export_flatten/hawker_typhoon_strafing_support.webp",
+      "ref": "upgrade/british/battlegroups/british_air_and_sea/british_air_and_sea_right_3b_anti_tank_loiter_uk"
+    },
+    {
+      "key": "British|Australian Defense|Logistical Supremacy|0|Strengthen Economy",
+      "path": "assets/icons/british--australian-defense--logistical-supremacy--t1--strengthen-economy.webp",
+      "upstream": "export_flatten/strengthen_economy.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_strengthen_economy_uk"
+    },
+    {
+      "key": "British|Australian Defense|Logistical Supremacy|0|Artillery Trip Wire Flares",
+      "path": "assets/icons/british--australian-defense--logistical-supremacy--t1--artillery-trip-wire-flares.webp",
+      "upstream": "export_flatten/trip_wire_flares.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_tripwire_flares_uk"
+    },
+    {
+      "key": "British|Australian Defense|Logistical Supremacy|1|CMP 15cwt Supply Run",
+      "path": "assets/icons/british--australian-defense--logistical-supremacy--t2--cmp-15cwt-supply-run.webp",
+      "upstream": "export_flatten/cwt_supply_truck_route.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_cwt_supply_truck_route_uk"
+    },
+    {
+      "key": "British|Australian Defense|Logistical Supremacy|2|Charged Creeping Barrage",
+      "path": "assets/icons/british--australian-defense--logistical-supremacy--t3--charged-creeping-barrage.webp",
+      "upstream": "export_flatten/charged_creeping_barrage.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_charged_creeping_barrage_off_map_uk"
+    },
+    {
+      "key": "British|Australian Defense|Logistical Supremacy|2|Archer Tank Destroyer",
+      "path": "assets/icons/british--australian-defense--logistical-supremacy--t3--archer-tank-destroyer.webp",
+      "upstream": "export_flatten/archer_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_archer_tank_destroyer_call_in_uk"
+    },
+    {
+      "key": "British|Australian Defense|Frontline Defenders|0|Australian Light Infantry Section",
+      "path": "assets/icons/british--australian-defense--frontline-defenders--t1--australian-light-infantry-section.webp",
+      "upstream": "export_flatten/australian_light_infantry_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_australian_light_infantry_uk"
+    },
+    {
+      "key": "British|Australian Defense|Frontline Defenders|1|2-pounder Anti-tank Gun Team",
+      "path": "assets/icons/british--australian-defense--frontline-defenders--t2--2-pounder-anti-tank-gun-team.webp",
+      "upstream": "export_flatten/at_gun_2pdr_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_2pdr_at_gun_uk"
+    },
+    {
+      "key": "British|Australian Defense|Frontline Defenders|1|Defensive Tactics",
+      "path": "assets/icons/british--australian-defense--frontline-defenders--t2--defensive-tactics.webp",
+      "upstream": "export_flatten/defensive_tactics.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_defensive_tactics_uk"
+    },
+    {
+      "key": "British|Australian Defense|Frontline Defenders|2|Vehicle Over Repair",
+      "path": "assets/icons/british--australian-defense--frontline-defenders--t3--vehicle-over-repair.webp",
+      "upstream": "export_flatten/vehicle_over_repair.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_vehicles_over_repair_uk"
+    },
+    {
+      "key": "British|Australian Defense|Frontline Defenders|2|Hold the Line!",
+      "path": "assets/icons/british--australian-defense--frontline-defenders--t3--hold-the-line.webp",
+      "upstream": "export_flatten/bolster_defenses.webp",
+      "ref": "upgrade/british/battlegroups/australian_defense/australian_defense_bolster_defenses_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Shock Assault|0|Attacking Spirit",
+      "path": "assets/icons/british--canadian-shock--shock-assault--t1--attacking-spirit.webp",
+      "upstream": "export_flatten/attacking_spirit.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_attacking_spirit_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Shock Assault|0|Offensive Resupply",
+      "path": "assets/icons/british--canadian-shock--shock-assault--t1--offensive-resupply.webp",
+      "upstream": "export_flatten/offensive_resupply.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_offensive_resupply_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Shock Assault|1|Canadian Shock Section",
+      "path": "assets/icons/british--canadian-shock--shock-assault--t2--canadian-shock-section.webp",
+      "upstream": "export_flatten/heavy_infantry_canadian_uk.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_canadian_shock_troops_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Shock Assault|2|Point Assault",
+      "path": "assets/icons/british--canadian-shock--shock-assault--t3--point-assault.webp",
+      "upstream": "export_flatten/point_assault.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_point_assault_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Shock Assault|2|Smoke Operation",
+      "path": "assets/icons/british--canadian-shock--shock-assault--t3--smoke-operation.webp",
+      "upstream": "export_flatten/smoke_operation.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_smoke_operation_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Incendiary Weapons|0|Burnout",
+      "path": "assets/icons/british--canadian-shock--incendiary-weapons--t1--burnout.webp",
+      "upstream": "export_flatten/burnout.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_burnout_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Incendiary Weapons|0|Incendiary Munitions",
+      "path": "assets/icons/british--canadian-shock--incendiary-weapons--t1--incendiary-munitions.webp",
+      "upstream": "export_flatten/incendiary_munitions.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_incendiary_munitions_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Incendiary Weapons|1|Pyrotechnics",
+      "path": "assets/icons/british--canadian-shock--incendiary-weapons--t2--pyrotechnics.webp",
+      "upstream": "export_flatten/pyrotechnics.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_pyrotechnics_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Incendiary Weapons|2|Demolition Engineering",
+      "path": "assets/icons/british--canadian-shock--incendiary-weapons--t3--demolition-engineering.webp",
+      "upstream": "export_flatten/sapper_demo_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_demolition_engineering_uk"
+    },
+    {
+      "key": "British|Canadian Shock|Incendiary Weapons|2|Churchill Crocodile",
+      "path": "assets/icons/british--canadian-shock--incendiary-weapons--t3--churchill-crocodile.webp",
+      "upstream": "export_flatten/churchill_crocodile_uk.webp",
+      "ref": "upgrade/british/battlegroups/canadian_shock/canadian_shock_churchill_crocodile_uk"
+    },
+    {
+      "key": "British|Heavy Armor|Heavy Armor Support|0|Rigorous Vehicle Training",
+      "path": "assets/icons/british--heavy-armor--heavy-armor-support--t1--rigorous-vehicle-training.webp",
+      "upstream": "export_flatten/veteran_crews.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_left_1a_rigorous_vehicle_training_uk"
+    },
+    {
+      "key": "British|Heavy Armor|Heavy Armor Support|0|Engineer Detachments",
+      "path": "assets/icons/british--heavy-armor--heavy-armor-support--t1--engineer-detachments.webp",
+      "upstream": "export_flatten/sapper_africa_discount.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_right_1_on_hand_sappers"
+    },
+    {
+      "key": "British|Heavy Armor|Heavy Armor Support|1|Forward Repair Assembly",
+      "path": "assets/icons/british--heavy-armor--heavy-armor-support--t2--forward-repair-assembly.webp",
+      "upstream": "export_flatten/forward_repair_assembly_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_right_1b_forward_repair_assembly_uk"
+    },
+    {
+      "key": "British|Heavy Armor|Heavy Armor Support|2|Churchill IV production unlock",
+      "path": "assets/icons/british--heavy-armor--heavy-armor-support--t3--churchill-iv-production-unlock.webp",
+      "upstream": "export_flatten/churchill_afrika_uk_quickbuild.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_churchill_production_unlock_uk"
+    },
+    {
+      "key": "British|Heavy Armor|Heavy Armor Support|2|Churchill Black Prince",
+      "path": "assets/icons/british--heavy-armor--heavy-armor-support--t3--churchill-black-prince.webp",
+      "upstream": "export_flatten/churchill_black_prince_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_left_3b_churchill_black_prince_uk"
+    },
+    {
+      "key": "British|Heavy Armor|Field Support and Logistics|0|Light Vehicle Withdraw and Refit",
+      "path": "assets/icons/british--heavy-armor--field-support-and-logistics--t1--light-vehicle-withdraw-and-refit.webp",
+      "upstream": "export_flatten/vehicle_refit_africa.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_right_1a_light_withdraw_and_refit_uk"
+    },
+    {
+      "key": "British|Heavy Armor|Field Support and Logistics|1|Radio Net",
+      "path": "assets/icons/british--heavy-armor--field-support-and-logistics--t2--radio-net.webp",
+      "upstream": "export_flatten/radio_net.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_left_1b_radio_net_uk"
+    },
+    {
+      "key": "British|Heavy Armor|Field Support and Logistics|1|Crusader AA production unlock",
+      "path": "assets/icons/british--heavy-armor--field-support-and-logistics--t2--crusader-aa-production-unlock.webp",
+      "upstream": "export_flatten/crusader_aa_africa_uk_quickbuild.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_right_2_crusader_aa_uk"
+    },
+    {
+      "key": "British|Heavy Armor|Field Support and Logistics|2|Recon Artillery",
+      "path": "assets/icons/british--heavy-armor--field-support-and-logistics--t3--recon-artillery.webp",
+      "upstream": "export_flatten/recon_artillery.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_right_3a_recon_artillery_uk"
+    },
+    {
+      "key": "British|Heavy Armor|Field Support and Logistics|2|Designate Targets",
+      "path": "assets/icons/british--heavy-armor--field-support-and-logistics--t3--designate-targets.webp",
+      "upstream": "export_flatten/designate_targets.webp",
+      "ref": "upgrade/british/battlegroups/british_armored/british_armored_right_3b_designate_targets_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Infantry Assault|0|War Cry",
+      "path": "assets/icons/british--indian-artillery--infantry-assault--t1--war-cry.webp",
+      "upstream": "export_flatten/war_cry.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/left/artillery_war_cry_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Infantry Assault|0|Valour",
+      "path": "assets/icons/british--indian-artillery--infantry-assault--t1--valour.webp",
+      "upstream": "export_flatten/valour.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/left/artillery_valour_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Infantry Assault|1|Gurkha Rifles Section",
+      "path": "assets/icons/british--indian-artillery--infantry-assault--t2--gurkha-rifles-section.webp",
+      "upstream": "export_flatten/gurkhas_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/left/artillery_gurkhas_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Infantry Assault|2|Pillage",
+      "path": "assets/icons/british--indian-artillery--infantry-assault--t3--pillage.webp",
+      "upstream": "export_flatten/pillage.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/left/artillery_pillage_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Infantry Assault|2|Volunteer Infantry",
+      "path": "assets/icons/british--indian-artillery--infantry-assault--t3--volunteer-infantry.webp",
+      "upstream": "export_flatten/volunteer_infantry.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/left/artillery_volunteer_infantry_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Artillery Support|0|4.2-inch Heavy Mortar",
+      "path": "assets/icons/british--indian-artillery--artillery-support--t1--4-2-inch-heavy-mortar.webp",
+      "upstream": "export_flatten/mortar_heavy_4_2_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/right/artillery_4_2_inch_heavy_mortar_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Artillery Support|0|Artillery Saturation",
+      "path": "assets/icons/british--indian-artillery--artillery-support--t1--artillery-saturation.webp",
+      "upstream": "export_flatten/artillery_saturation.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/right/artillery_artillery_saturation_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Artillery Support|1|Off-map Airburst Barrage",
+      "path": "assets/icons/british--indian-artillery--artillery-support--t2--off-map-airburst-barrage.webp",
+      "upstream": "export_flatten/airburst_barrage.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/right/artillery_airburst_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Artillery Support|2|Perimeter Monitor",
+      "path": "assets/icons/british--indian-artillery--artillery-support--t3--perimeter-monitor.webp",
+      "upstream": "export_flatten/perimeter_monitor.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/right/artillery_perimeter_monitor_uk"
+    },
+    {
+      "key": "British|Indian Artillery|Artillery Support|2|BL5.5 Artillery Emplacement",
+      "path": "assets/icons/british--indian-artillery--artillery-support--t3--bl5-5-artillery-emplacement.webp",
+      "upstream": "export_flatten/howitzer_bl_5_5_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/indian_artillery/right/artillery_bl_5_5_heavy_artillery_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Army in Exile|0|Vengeance",
+      "path": "assets/icons/british--polish-cavalry--army-in-exile--t1--vengeance.webp",
+      "upstream": "export_flatten/vengeance.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_vengeance_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Army in Exile|0|Strategic Targets",
+      "path": "assets/icons/british--polish-cavalry--army-in-exile--t1--strategic-targets.webp",
+      "upstream": "export_flatten/strategic_targets.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_strategic_targets_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Army in Exile|1|Polish Lancer Section",
+      "path": "assets/icons/british--polish-cavalry--army-in-exile--t2--polish-lancer-section.webp",
+      "upstream": "export_flatten/polish_lancer_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_lancers_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Army in Exile|2|Recon Mission",
+      "path": "assets/icons/british--polish-cavalry--army-in-exile--t3--recon-mission.webp",
+      "upstream": "export_flatten/recon_mission.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_recon_mission_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Army in Exile|2|No Man Left Behind",
+      "path": "assets/icons/british--polish-cavalry--army-in-exile--t3--no-man-left-behind.webp",
+      "upstream": "export_flatten/no_man_left_behind.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_no_man_left_behind_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Rocketry|0|Tulip Rocket Launchers",
+      "path": "assets/icons/british--polish-cavalry--rocketry--t1--tulip-rocket-launchers.webp",
+      "upstream": "export_flatten/tulip_rockets.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_tulip_rockets_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Rocketry|1|Panzerbane Rockets",
+      "path": "assets/icons/british--polish-cavalry--rocketry--t2--panzerbane-rockets.webp",
+      "upstream": "export_flatten/panzerbane_rockets.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_panzerbane_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Rocketry|1|Land Mattress",
+      "path": "assets/icons/british--polish-cavalry--rocketry--t2--land-mattress.webp",
+      "upstream": "export_flatten/tw_land_mattress_africa_uk.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_land_mattress_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Rocketry|2|Firefly production unlock",
+      "path": "assets/icons/british--polish-cavalry--rocketry--t3--firefly-production-unlock.webp",
+      "upstream": "export_flatten/sherman_firefly_africa_uk_unlock.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_sherman_firefly_uk"
+    },
+    {
+      "key": "British|Polish Cavalry|Rocketry|2|Decapitation Strike",
+      "path": "assets/icons/british--polish-cavalry--rocketry--t3--decapitation-strike.webp",
+      "upstream": "export_flatten/decapitation_strike.webp",
+      "ref": "upgrade/british/battlegroups/polish_cavalry/polish_cavalry_decapitation_strike_uk"
+    },
+    {
+      "key": "British|Special Service|Ungentlemanly Warfare|0|SSB Commando Section",
+      "path": "assets/icons/british--special-service--ungentlemanly-warfare--t1--ssb-commando-section.webp",
+      "upstream": "export_flatten/ssb_commando_uk.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_commando_section_callin_uk"
+    },
+    {
+      "key": "British|Special Service|Ungentlemanly Warfare|1|Operation Thunderclap",
+      "path": "assets/icons/british--special-service--ungentlemanly-warfare--t2--operation-thunderclap.webp",
+      "upstream": "export_flatten/operation_thunderclap.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_operation_thunderclap_uk"
+    },
+    {
+      "key": "British|Special Service|Ungentlemanly Warfare|1|Dead Drops",
+      "path": "assets/icons/british--special-service--ungentlemanly-warfare--t2--dead-drops.webp",
+      "upstream": "export_flatten/dead_drops.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_dead_drop_rendevous_uk"
+    },
+    {
+      "key": "British|Special Service|Ungentlemanly Warfare|2|Directed Air Support",
+      "path": "assets/icons/british--special-service--ungentlemanly-warfare--t3--directed-air-support.webp",
+      "upstream": "export_flatten/directed_air_support.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_directed_air_support_uk"
+    },
+    {
+      "key": "British|Special Service|Ungentlemanly Warfare|2|Best of the Worst",
+      "path": "assets/icons/british--special-service--ungentlemanly-warfare--t3--best-of-the-worst.webp",
+      "upstream": "export_flatten/best_of_the_worst.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_best_of_the_worst_uk"
+    },
+    {
+      "key": "British|Special Service|Reconnaissance-in-Force|0|30cwt LRDG Truck",
+      "path": "assets/icons/british--special-service--reconnaissance-in-force--t1--30cwt-lrdg-truck.webp",
+      "upstream": "export_flatten/cwt_lrdg_truck_africa_uk_build.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_30cwt_truck_callin_uk"
+    },
+    {
+      "key": "British|Special Service|Reconnaissance-in-Force|1|Ultra",
+      "path": "assets/icons/british--special-service--reconnaissance-in-force--t2--ultra.webp",
+      "upstream": "export_flatten/ultra.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_ultra_uk"
+    },
+    {
+      "key": "British|Special Service|Reconnaissance-in-Force|1|SSB Sniper",
+      "path": "assets/icons/british--special-service--reconnaissance-in-force--t2--ssb-sniper.webp",
+      "upstream": "export_flatten/sniper_uk.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_sniper_callin_uk"
+    },
+    {
+      "key": "British|Special Service|Reconnaissance-in-Force|2|Havoc",
+      "path": "assets/icons/british--special-service--reconnaissance-in-force--t3--havoc.webp",
+      "upstream": "export_flatten/havoc.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_rear_havoc_uk"
+    },
+    {
+      "key": "British|Special Service|Reconnaissance-in-Force|2|Desert Raiders",
+      "path": "assets/icons/british--special-service--reconnaissance-in-force--t3--desert-raiders.webp",
+      "upstream": "export_flatten/desert_raiders.webp",
+      "ref": "upgrade/british/battlegroups/special_services/special_services_desert_raiders_uk"
+    },
+    {
+      "key": "DAK|Armored Support|Support and Airpower|0|Vehicle Awareness",
+      "path": "assets/icons/dak--armored-support--support-and-airpower--t1--vehicle-awareness.webp",
+      "upstream": "export_flatten/signal_detection.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/left/armored_support_vehicle_awareness_global_ak"
+    },
+    {
+      "key": "DAK|Armored Support|Support and Airpower|0|Salvage Kits",
+      "path": "assets/icons/dak--armored-support--support-and-airpower--t1--salvage-kits.webp",
+      "upstream": "export_flatten/salvage_kits.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/left/armored_support_auto_salvage_ak"
+    },
+    {
+      "key": "DAK|Armored Support|Support and Airpower|1|Panzer Storm",
+      "path": "assets/icons/dak--armored-support--support-and-airpower--t2--panzer-storm.webp",
+      "upstream": "export_flatten/panzerstorm.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/left/armored_support_breakthrough_ak"
+    },
+    {
+      "key": "DAK|Armored Support|Support and Airpower|2|Stuka Dive Bomb",
+      "path": "assets/icons/dak--armored-support--support-and-airpower--t3--stuka-dive-bomb.webp",
+      "upstream": "export_flatten/stuka_dive_bomb.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/left/armored_support_stuka_dive_bomb_ak"
+    },
+    {
+      "key": "DAK|Armored Support|Support and Airpower|2|Stuka Anti-tank Loiter",
+      "path": "assets/icons/dak--armored-support--support-and-airpower--t3--stuka-anti-tank-loiter.webp",
+      "upstream": "export_flatten/stuka_anti-tank_loiter.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/left/armored_support_at_loiter_ak"
+    },
+    {
+      "key": "DAK|Armored Support|Armored Warfare|0|Veteran Gunners",
+      "path": "assets/icons/dak--armored-support--armored-warfare--t1--veteran-gunners.webp",
+      "upstream": "export_flatten/veteran_gunners_b.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/right/armored_support_veteran_gunners_ak"
+    },
+    {
+      "key": "DAK|Armored Support|Armored Warfare|0|Superior Fire Drills",
+      "path": "assets/icons/dak--armored-support--armored-warfare--t1--superior-fire-drills.webp",
+      "upstream": "export_flatten/superior_fire_drills.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/right/armored_support_coax_upgrade_ak"
+    },
+    {
+      "key": "DAK|Armored Support|Armored Warfare|1|Flammpanzer III",
+      "path": "assets/icons/dak--armored-support--armored-warfare--t2--flammpanzer-iii.webp",
+      "upstream": "export_flatten/panzer_iii_flame_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/right/armored_support_flame_p3_ak"
+    },
+    {
+      "key": "DAK|Armored Support|Armored Warfare|2|Command Panzer IV",
+      "path": "assets/icons/dak--armored-support--armored-warfare--t3--command-panzer-iv.webp",
+      "upstream": "export_flatten/panzer_iv_command_stubby_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/right/armored_support_command_p4_ak"
+    },
+    {
+      "key": "DAK|Armored Support|Armored Warfare|2|Battlefield Salvage",
+      "path": "assets/icons/dak--armored-support--armored-warfare--t3--battlefield-salvage.webp",
+      "upstream": "export_flatten/battlefield_salvage.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/armored_support/right/armored_support_assault_salvage_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Battlefield Dominance|0|Skirmisher Package",
+      "path": "assets/icons/dak--elite-forces--battlefield-dominance--t1--skirmisher-package.webp",
+      "upstream": "export_flatten/skirmisher_package.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_skirmisher_upgrade_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Battlefield Dominance|1|Medical Supplements",
+      "path": "assets/icons/dak--elite-forces--battlefield-dominance--t2--medical-supplements.webp",
+      "upstream": "export_flatten/medical_supplements.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_medical_supplements_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Battlefield Dominance|1|Daring Assault",
+      "path": "assets/icons/dak--elite-forces--battlefield-dominance--t2--daring-assault.webp",
+      "upstream": "export_flatten/daring_assault.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_daring_assault_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Battlefield Dominance|2|Ace Squadron",
+      "path": "assets/icons/dak--elite-forces--battlefield-dominance--t3--ace-squadron.webp",
+      "upstream": "export_flatten/ace_squadron.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_stuka_ace_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Battlefield Dominance|2|Aerial Spotter",
+      "path": "assets/icons/dak--elite-forces--battlefield-dominance--t3--aerial-spotter.webp",
+      "upstream": "export_flatten/aerial_spotter.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_aerial_spotter_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Panzer Elite|0|Command 8 Rad Armored Car",
+      "path": "assets/icons/dak--elite-forces--panzer-elite--t1--command-8-rad-armored-car.webp",
+      "upstream": "export_flatten/armored_car_8_rad_command_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_command_8rad_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Panzer Elite|1|Field Modifications",
+      "path": "assets/icons/dak--elite-forces--panzer-elite--t2--field-modifications.webp",
+      "upstream": "export_flatten/field_modifications.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_field_modifications_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Panzer Elite|1|Long War Veterans",
+      "path": "assets/icons/dak--elite-forces--panzer-elite--t2--long-war-veterans.webp",
+      "upstream": "export_flatten/long_war_veterans.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_long_war_veterans_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Panzer Elite|2|Tiger Ace",
+      "path": "assets/icons/dak--elite-forces--panzer-elite--t3--tiger-ace.webp",
+      "upstream": "export_flatten/tiger_ace_ak_unlock.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_tiger_ace_ak"
+    },
+    {
+      "key": "DAK|Elite Forces|Panzer Elite|2|Crack Armor Upgrades",
+      "path": "assets/icons/dak--elite-forces--panzer-elite--t3--crack-armor-upgrades.webp",
+      "upstream": "export_flatten/crack_armor.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/elite_forces/elite_forces_crack_armor_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Combined Arms|0|Bersaglieri Squad",
+      "path": "assets/icons/dak--italian-combined-arms--combined-arms--t1--bersaglieri-squad.webp",
+      "upstream": "export_flatten/bersaglieri_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/right/italian_combined_arms_bersaglieri_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Combined Arms|1|Bersaglieri Bolster",
+      "path": "assets/icons/dak--italian-combined-arms--combined-arms--t2--bersaglieri-bolster.webp",
+      "upstream": "export_flatten/bersaglieri_bolster.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/italian_combined_arms_bersaglieri_bolster_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Combined Arms|1|Vehicle Support - Secure Location",
+      "path": "assets/icons/dak--italian-combined-arms--combined-arms--t2--vehicle-support-secure-location.webp",
+      "upstream": "export_flatten/secure_location.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/litalian_combined_arms_secured_flanks_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Combined Arms|2|Breda Model 30 Light Machine Guns",
+      "path": "assets/icons/dak--italian-combined-arms--combined-arms--t3--breda-model-30-light-machine-guns.webp",
+      "upstream": "export_flatten/breda_model_30_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/italian_combined_arms_bersaglieri_armanent_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Combined Arms|2|Force Recon",
+      "path": "assets/icons/dak--italian-combined-arms--combined-arms--t3--force-recon.webp",
+      "upstream": "export_flatten/force_recon.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/italian_combined_arms_force_recon_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Italian Armor|0|Semovente Production Unlock",
+      "path": "assets/icons/dak--italian-combined-arms--italian-armor--t1--semovente-production-unlock.webp",
+      "upstream": "export_flatten/semovente_ak_quickbuild.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/right/italian_combined_arms_semovente_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Italian Armor|1|Carro Armato M13/40",
+      "path": "assets/icons/dak--italian-combined-arms--italian-armor--t2--carro-armato-m13-40.webp",
+      "upstream": "export_flatten/m13_40_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/right/italian_combined_arms_m13_40_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Italian Armor|1|Strafing Run",
+      "path": "assets/icons/dak--italian-combined-arms--italian-armor--t2--strafing-run.webp",
+      "upstream": "export_flatten/stuka_strafing_run.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/left/italian_combined_arms_vehicle_strafe_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Italian Armor|2|Pact of Steel",
+      "path": "assets/icons/dak--italian-combined-arms--italian-armor--t3--pact-of-steel.webp",
+      "upstream": "export_flatten/pact_of_steel.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/italian_combined_arms_pact_of_steel_ak"
+    },
+    {
+      "key": "DAK|Italian Combined Arms|Italian Armor|2|Artillery Cover",
+      "path": "assets/icons/dak--italian-combined-arms--italian-armor--t3--artillery-cover.webp",
+      "upstream": "export_flatten/artillery_cover.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_combined_arms/italian_combined_arms_covering_fire_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Field Engineering|0|Guastatori Squad",
+      "path": "assets/icons/dak--italian-infantry--field-engineering--t1--guastatori-squad.webp",
+      "upstream": "export_flatten/guastatori_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/left/italian_infantry_guastatori_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Field Engineering|1|Registered Artillery",
+      "path": "assets/icons/dak--italian-infantry--field-engineering--t2--registered-artillery.webp",
+      "upstream": "export_flatten/registered_artillery.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/right/italian_infantry_registered_artillery_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Field Engineering|1|Defensive Operations",
+      "path": "assets/icons/dak--italian-infantry--field-engineering--t2--defensive-operations.webp",
+      "upstream": "export_flatten/base_defense_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/left/italian_infantry_defensive_operations_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Field Engineering|2|Cannone da 105/28",
+      "path": "assets/icons/dak--italian-infantry--field-engineering--t3--cannone-da-105-28.webp",
+      "upstream": "export_flatten/tw_howitzer_canonne_da_105_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/left/italian_infantry_cannone_da_105_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Defensive Warfare|0|Territory Booby Traps",
+      "path": "assets/icons/dak--italian-infantry--defensive-warfare--t1--territory-booby-traps.webp",
+      "upstream": "export_flatten/territory_booby_trap.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/left/italian_infantry_territory_booby_traps_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Defensive Warfare|0|Sound the Alarm",
+      "path": "assets/icons/dak--italian-infantry--defensive-warfare--t1--sound-the-alarm.webp",
+      "upstream": "export_flatten/sound_the_alarm.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/right/italian_infantry_sound_the_alarm_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Defensive Warfare|1|L6/40 Light Tank",
+      "path": "assets/icons/dak--italian-infantry--defensive-warfare--t2--l6-40-light-tank.webp",
+      "upstream": "export_flatten/l6_40_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/right/italian_infantry_double_l640_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Defensive Warfare|1|Prepared Positions",
+      "path": "assets/icons/dak--italian-infantry--defensive-warfare--t2--prepared-positions.webp",
+      "upstream": "export_flatten/prepared_positions.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/right/italian_infantry_defense_of_the_motherland_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Defensive Warfare|2|Propaganda War",
+      "path": "assets/icons/dak--italian-infantry--defensive-warfare--t3--propaganda-war.webp",
+      "upstream": "export_flatten/propaganda_warfare.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/right/italian_infantry_propaganda_war_ak"
+    },
+    {
+      "key": "DAK|Italian Infantry|Defensive Warfare|2|Obice 305mm Barrage",
+      "path": "assets/icons/dak--italian-infantry--defensive-warfare--t3--obice-305mm-barrage.webp",
+      "upstream": "export_flatten/obice_305mm_barrage.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/italian_infantry/right/italian_infantry_obice_barrage_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Off-shore Support|0|Kriegsmariner Squad",
+      "path": "assets/icons/dak--kriegsmarine--off-shore-support--t1--kriegsmariner-squad.webp",
+      "upstream": "export_flatten/kriegsmarine_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_kriegsmariner_squad_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Off-shore Support|1|SLD Starburst Flares",
+      "path": "assets/icons/dak--kriegsmarine--off-shore-support--t2--sld-starburst-flares.webp",
+      "upstream": "export_flatten/sld_starburst_flares.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_sld_starburst_flares_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Off-shore Support|1|Stuka Overflight",
+      "path": "assets/icons/dak--kriegsmarine--off-shore-support--t2--stuka-overflight.webp",
+      "upstream": "export_flatten/stuka_bombing_overflight.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_stuka_tri_bomb_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Off-shore Support|2|Naval Intervention",
+      "path": "assets/icons/dak--kriegsmarine--off-shore-support--t3--naval-intervention.webp",
+      "upstream": "export_flatten/naval_intervention.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_naval_intervention_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Off-shore Support|2|Fritz X Guided Bomb",
+      "path": "assets/icons/dak--kriegsmarine--off-shore-support--t3--fritz-x-guided-bomb.webp",
+      "upstream": "export_flatten/fritz_x_rocket.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_fritz_x_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Logistics Operations|0|Designate Resupply Point",
+      "path": "assets/icons/dak--kriegsmarine--logistics-operations--t1--designate-resupply-point.webp",
+      "upstream": "export_flatten/hardpoints.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_hardpoints_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Logistics Operations|1|Supply Reserves",
+      "path": "assets/icons/dak--kriegsmarine--logistics-operations--t2--supply-reserves.webp",
+      "upstream": "export_flatten/supply_reserves.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_supply_reserves_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Logistics Operations|1|Improved Hardpoints",
+      "path": "assets/icons/dak--kriegsmarine--logistics-operations--t2--improved-hardpoints.webp",
+      "upstream": "export_flatten/improved_hardpoints.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_improved_hardpoints_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Logistics Operations|2|Supply Interdiction",
+      "path": "assets/icons/dak--kriegsmarine--logistics-operations--t3--supply-interdiction.webp",
+      "upstream": "export_flatten/supply_interdiction.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_supply_interdiction_ak"
+    },
+    {
+      "key": "DAK|Kriegsmarine|Logistics Operations|2|Strategic Mobility",
+      "path": "assets/icons/dak--kriegsmarine--logistics-operations--t3--strategic-mobility.webp",
+      "upstream": "export_flatten/strategic_mobility.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/kriegsmarine/kriegsmarine_strategic_mobility_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Stalling Tactics|0|Mine Fields",
+      "path": "assets/icons/dak--panzerjager-kommand--stalling-tactics--t1--mine-fields.webp",
+      "upstream": "export_flatten/mine_fields.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_mine_fields_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Stalling Tactics|0|Blockade Equipment",
+      "path": "assets/icons/dak--panzerjager-kommand--stalling-tactics--t1--blockade-equipment.webp",
+      "upstream": "export_flatten/road_block_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_road_blocks_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Stalling Tactics|1|Combined Arms",
+      "path": "assets/icons/dak--panzerjager-kommand--stalling-tactics--t2--combined-arms.webp",
+      "upstream": "export_flatten/entrenchment.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_entrenchment_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Stalling Tactics|1|Early Warning",
+      "path": "assets/icons/dak--panzerjager-kommand--stalling-tactics--t2--early-warning.webp",
+      "upstream": "export_flatten/early_warning_02.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_early_warning_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Stalling Tactics|2|Butterfly Bomb Drop",
+      "path": "assets/icons/dak--panzerjager-kommand--stalling-tactics--t3--butterfly-bomb-drop.webp",
+      "upstream": "export_flatten/mine_butterfly_bomb_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_buttefly_bomb_drop_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Tank Hunting|0|Tank Busters",
+      "path": "assets/icons/dak--panzerjager-kommand--tank-hunting--t1--tank-busters.webp",
+      "upstream": "export_flatten/tank_busters.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_tank_busters_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Tank Hunting|0|GrB 39 Grenade Launcher Requisition",
+      "path": "assets/icons/dak--panzerjager-kommand--tank-hunting--t1--grb-39-grenade-launcher-requisition.webp",
+      "upstream": "export_flatten/grb_requisition.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_grb_requisition_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Tank Hunting|1|Crew Shock Tactics",
+      "path": "assets/icons/dak--panzerjager-kommand--tank-hunting--t2--crew-shock-tactics.webp",
+      "upstream": "export_flatten/crew_shock_tactics.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_crew_shock_tactics_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Tank Hunting|2|Elefant",
+      "path": "assets/icons/dak--panzerjager-kommand--tank-hunting--t3--elefant.webp",
+      "upstream": "export_flatten/elefant_tank_destroyer_ak.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_elefant_ak"
+    },
+    {
+      "key": "DAK|Panzerjäger Kommand|Tank Hunting|2|Anti-Tank Overwatch",
+      "path": "assets/icons/dak--panzerjager-kommand--tank-hunting--t3--anti-tank-overwatch.webp",
+      "upstream": "export_flatten/anti-tank_barrage.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/panzerjager_kommand/panzerjager_kommand_anti_tank_barrage_ak"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Infiltration|0|250/3 Funkpanzerwagen",
+      "path": "assets/icons/dak--battlefield-espionage--infiltration--t1--250-3-funkpanzerwagen.webp",
+      "upstream": "export_flatten/operation_skorpion.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/left/infiltration_left_3_storm_operation_ak"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Infiltration|1|Anti-Tank Incendiary Munitions",
+      "path": "assets/icons/dak--battlefield-espionage--infiltration--t2--anti-tank-incendiary-munitions.webp",
+      "upstream": "export_flatten/antitank_specialists.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/left/infiltration_left_2a_anti_tank_specialists_ak"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Infiltration|1|Advanced Ambush Training",
+      "path": "assets/icons/dak--battlefield-espionage--infiltration--t2--advanced-ambush-training.webp",
+      "upstream": "export_flatten/ambush-tactics.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/left/infiltration_left_2b_ambush_tactics_ak"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Infiltration|2|Operation Skorpion",
+      "path": "assets/icons/dak--battlefield-espionage--infiltration--t3--operation-skorpion.webp",
+      "upstream": "export_flatten/vampire_ht_ak_icon.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/left/infiltration_left_1_vampire_ht_goliath"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Disruption|0|Intel Disruption Beacon",
+      "path": "assets/icons/dak--battlefield-espionage--disruption--t1--intel-disruption-beacon.webp",
+      "upstream": "export_flatten/intel_radio_beacon_ak_icon.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/right/subterfuge_right_1a_intel_radio_beacon"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Disruption|0|Sector Subterfuge Beacon",
+      "path": "assets/icons/dak--battlefield-espionage--disruption--t1--sector-subterfuge-beacon.webp",
+      "upstream": "export_flatten/siphon_radio_beacon_ak_icon.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/right/subterfuge_right_1b_siphon_radio_beacon"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Disruption|1|Disruption Operation",
+      "path": "assets/icons/dak--battlefield-espionage--disruption--t2--disruption-operation.webp",
+      "upstream": "export_flatten/disruption.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/right/subterfuge_right_3a_disruption_ak"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Disruption|1|Transfer Depots",
+      "path": "assets/icons/dak--battlefield-espionage--disruption--t2--transfer-depots.webp",
+      "upstream": "export_flatten/black_market_ak_icon.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/right/subterfuge_right_2b_black_market_ak"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Disruption|2|Firestorm",
+      "path": "assets/icons/dak--battlefield-espionage--disruption--t3--firestorm.webp",
+      "upstream": "export_flatten/firestorm.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/right/subterfuge_right_3b_firestorm_ak"
+    },
+    {
+      "key": "DAK|Battlefield Espionage|Disruption|2|Plunder",
+      "path": "assets/icons/dak--battlefield-espionage--disruption--t3--plunder.webp",
+      "upstream": "export_flatten/plunder.webp",
+      "ref": "upgrade/afrika_korps/battlegroups/subterfuge/right/subterfuge_right_2a_plunder_ak"
+    }
+  ],
+  "unresolved": []
+}

@@ -1,6 +1,6 @@
 {
   "patch": "2.5.5",
-  "verified": "10 Sep 2026 — v1.1.4 icon-loading fix. The visual battlegroup-tree icon loader now targets the current COH3 Stats open-data tag v2.5.3-3, tries CORS-friendly GitHub raw data with the COH3 Stats data CDN as fallback, checks multiple upgrade icon fields, retries export_flatten CDN paths, and includes exact Luftwaffe icon fallbacks. All 28 battlegroup recommendation sequences and canonical tree validation from v1.1.3 are retained.",
+  "verified": "10 Sep 2026 — v1.1.7 local battlegroup icon asset update. All canonical battlegroup-tree ability icons are copied into this repository under assets/icons and referenced by same-origin paths in index.html. The site no longer depends on runtime COH3 Stats icon metadata/CDN requests for the visual battlegroup tree. Current client patch is 2.5.5; cached CoHDB ranking/map/statistical rows collected on 2.5.3 remain explicitly labelled as snapshots.",
   "battlegroupTrees": {
     "Wehrmacht": {
       "Breakthrough": {
@@ -15633,7 +15633,7 @@
         "Free French": {
           "w": 7422,
           "l": 7409,
-          "wr": 50.0,
+          "wr": 50,
           "n": 14831
         },
         "Heavy Weapons": {
@@ -15665,7 +15665,7 @@
         "Heavy Armor": {
           "w": 13747,
           "l": 13745,
-          "wr": 50.0,
+          "wr": 50,
           "n": 27492
         },
         "Polish Cavalry": {
@@ -15882,7 +15882,7 @@
       },
       {
         "map": "Longstop Hill",
-        "alliesWr": 51.0,
+        "alliesWr": 51,
         "n": 1895
       },
       {
@@ -18873,25 +18873,25 @@
     "remainingTeamWeight": 0.4,
     "bias": {
       "USF": {
-        "vehicle": 2.0,
+        "vehicle": 2,
         "static": 0.7,
         "armor": 1.2,
         "infantry": 1.5
       },
       "British": {
-        "vehicle": 1.0,
-        "static": 2.0,
+        "vehicle": 1,
+        "static": 2,
         "armor": 1.8,
         "infantry": 1.2
       },
       "Wehrmacht": {
-        "vehicle": 1.0,
-        "static": 2.0,
+        "vehicle": 1,
+        "static": 2,
         "armor": 1.8,
         "infantry": 1.2
       },
       "DAK": {
-        "vehicle": 2.0,
+        "vehicle": 2,
         "static": 0.8,
         "armor": 1.5,
         "infantry": 1.3
