@@ -1,0 +1,40 @@
+name: Sync battlegroup icons
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/sync_bg_icons.mjs'
+      - '.github/workflows/sync-battlegroup-icons.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  sync-icons:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Generate local battlegroup icon assets
+        run: node scripts/sync_bg_icons.mjs
+
+      - name: Commit generated assets and site update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html coh3_build_advisor_data.json assets/icons assets/bg-icons.json assets/bg-icons-report.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "Localize battlegroup icons"
+          git push
