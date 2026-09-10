@@ -1,6 +1,6 @@
 {
   "patch": "2.5.3",
-  "verified": "10 Sep 2026 — v1.0.1 full battlegroup-path QA update. DAK fixes are preserved; Wehrmacht, USF and British battlegroup paths were audited against the CoH3Stats 2.5.3 tech tree and rewritten to show real stage order, with OR marking same-tier alternatives. Generic 3v3/4v4 adaptation filler and synthetic team-support build steps were removed.",
+  "verified": "10 Sep 2026 — v1.1.0 team-composition update. 3v3 and 4v4 now support a lane opponent plus the remaining enemy factions. Battlegroup ranking uses a 60% lane / 40% remaining-team matchup weighting. The website dynamically resolves existing build alternatives toward AT, anti-infantry or indirect-fire priorities based on the selected enemy composition without moving units ahead of required tech.",
   "profiles": [
     {
       "faction": "Wehrmacht",
@@ -13692,7 +13692,7 @@
     ]
   },
   "techQaAudit": {
-    "version": "v1.0.1",
+    "version": "v1.1.0",
     "patch": "2.5.3",
     "profilesChecked": 112,
     "creatorBuildsPreserved": 19,
@@ -16552,8 +16552,50 @@
         "battlegroup": "all",
         "mode": "3v3/4v4",
         "reason": "Removed generic adaptation filler, synthetic Team support slot build steps, and repeated generic team-game branches/tips."
+      },
+      {
+        "faction": "All factions",
+        "battlegroup": "all",
+        "mode": "3v3/4v4",
+        "reason": "Added full enemy-team composition selection and conservative runtime build adaptation. Stored base build shells remain unchanged so the tech-legality audit stays valid."
       }
     ],
     "scope": "Current Advisor profiles only. Creator builds are historical/original references and are not rewritten to force every routine structure into the creator sequence."
+  },
+  "teamCompositionRules": {
+    "modes": [
+      "3v3",
+      "4v4"
+    ],
+    "laneWeight": 0.6,
+    "remainingTeamWeight": 0.4,
+    "bias": {
+      "USF": {
+        "vehicle": 2.0,
+        "static": 0.7,
+        "armor": 1.2,
+        "infantry": 1.5
+      },
+      "British": {
+        "vehicle": 1.0,
+        "static": 2.0,
+        "armor": 1.8,
+        "infantry": 1.2
+      },
+      "Wehrmacht": {
+        "vehicle": 1.0,
+        "static": 2.0,
+        "armor": 1.8,
+        "infantry": 1.2
+      },
+      "DAK": {
+        "vehicle": 2.0,
+        "static": 0.8,
+        "armor": 1.5,
+        "infantry": 1.3
+      }
+    },
+    "interpretation": "Qualitative risk layer derived from the advisor matchup notes; not measured team-composition win rates.",
+    "buildAdaptation": "The runtime adapter resolves existing conditional choices and raises priorities. It does not reorder a unit ahead of its required production structure or tech prerequisite."
   }
 }
