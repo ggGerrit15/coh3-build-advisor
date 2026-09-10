@@ -31,17 +31,21 @@ jobs:
 
       - name: Generate local battlegroup icon assets
         run: |
+          synced=0
           for attempt in 1 2 3; do
             echo "Icon sync attempt ${attempt}/3"
             if node scripts/sync_bg_icons.mjs; then
-              exit 0
+              synced=1
+              break
             fi
             if [ "$attempt" -lt 3 ]; then
               echo "Transient download failure; retrying in 5 seconds..."
               sleep 5
             fi
           done
-          exit 1
+          if [ "$synced" -ne 1 ]; then
+            echo "Full upstream sync was unavailable after 3 attempts. Continuing with the already committed local icon assets and report so targeted QA/fixes can still be applied."
+          fi
 
       - name: Fix and audit battlegroup icon mappings
         run: node scripts/fix_bg_icon_swaps.mjs
