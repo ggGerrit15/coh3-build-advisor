@@ -1,6 +1,6 @@
 {
   "patch": "2.5.5",
-  "verified": "10 Sep 2026 — v1.1.7 local battlegroup icon asset update. All canonical battlegroup-tree ability icons are copied into this repository under assets/icons and referenced by same-origin paths in index.html. The site no longer depends on runtime COH3 Stats icon metadata/CDN requests for the visual battlegroup tree. Current client patch is 2.5.5; cached CoHDB ranking/map/statistical rows collected on 2.5.3 remain explicitly labelled as snapshots.",
+  "verified": "10 Sep 2026 — v1.1.9 battlegroup recommendation UI cleanup. Removed explanatory recommendation notes, scope/confidence chips, branch/tier annotations in numbered picks, the Visual battlegroup tree heading/intro, and the Legal/Recommended legend. The visual tree, local icons, highlighted recommended nodes, and yellow pick-order badges remain unchanged.",
   "battlegroupTrees": {
     "Wehrmacht": {
       "Breakthrough": {
