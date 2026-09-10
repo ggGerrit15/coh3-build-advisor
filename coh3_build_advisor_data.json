@@ -1,6 +1,6 @@
 {
   "patch": "2.5.5",
-  "verified": "10 Sep 2026 — v1.1.14 starting-unit clarity pass. Current Advisor build orders now label the unit already present at game start as “Starting unit: …”. If the same starting unit is intentionally produced again, subsequent copies are explicitly labelled “2nd …”, “3rd …”, etc. Creator-source data remains preserved; the live renderer applies the same display clarification without rewriting creator originals.",
+  "verified": "10 Sep 2026 — v1.1.15 public UI cleanup. The live advisor now focuses on top picks, the recommended build order and battlegroup unlock path. QA diagnostics, score breakdowns, phase summaries, inline creator comparisons, matchup explanation tables, composition targets, play tips, map-fit scores and note boxes were removed from the public advisor view; underlying research data remains preserved.",
   "battlegroupTrees": {
     "Wehrmacht": {
       "Breakthrough": {
