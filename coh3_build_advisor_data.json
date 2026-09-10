@@ -1,6 +1,6 @@
 {
   "patch": "2.5.5",
-  "verified": "10 Sep 2026 — v1.1.10 team-game battlegroup order update. Added explicit, canonical-tree-validated 3v3 and 4v4 numbered battlegroup recommendations for all 28 battlegroups (56 team-game orders total). Team modes no longer fall through to a missing generic team recommendation; the frontend now resolves exact 3v3/4v4 entries before any fallback. Existing 1v1/2v2 small-game recommendations remain unchanged.",
+  "verified": "10 Sep 2026 — v1.1.11 team-game recommendation embedding fix. The 28 battlegroups now expose explicit 3v3 and 4v4 numbered pick orders in the data file and the same recommendation object is embedded into index.html. This fixes the previous state where team-game orders existed in JSON but the live page still used the older small-game-only embedded recommendation constant.",
   "battlegroupTrees": {
     "Wehrmacht": {
       "Breakthrough": {
