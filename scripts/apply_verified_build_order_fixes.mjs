@@ -8,7 +8,7 @@ const REPORT_PATH = 'assets/build-icons-report.json';
 const OUT_DIR = 'assets/build-icons';
 const CDN_RAW = 'https://raw.githubusercontent.com/cohstats/coh3-cdn/master/public';
 const CDN = 'https://cdn.coh3stats.com';
-const VERSION = 'v1.1.28';
+const VERSION = 'v1.1.29';
 
 const ICON_OVERRIDES = {
   'Wehrmacht|jager squad': 'export/icons/races/german/infantry/jaeger_ger.webp',
@@ -72,6 +72,12 @@ async function syncEmbeddedProfiles(data) {
   }
 
   html = html.replace(profilesPattern, `${profilesBlock}const MATCHUPS=`);
+
+  // Keep internal tech QA metadata in the data file, but do not render the
+  // methodology-heavy QA notice in the public advisor UI.
+  const publicTechQaBlock = '${p.techQa?`<div class="goodnotice" style="margin-top:10px"><strong>Tech / production QA:</strong> ${p.techQa}.${(p.techQaNotes||[]).length?` <details style="margin-top:6px"><summary>Corrections / clarifications for this profile</summary><ul>${p.techQaNotes.map(x=>`<li>${x}</li>`).join("")}</ul></details>`:""}</div>`:""}';
+  html = html.replaceAll(publicTechQaBlock, '');
+
   html = html.replace(/CoH3 Build Advisor v1\.1\.\d+/g, `CoH3 Build Advisor ${VERSION}`);
   await fs.writeFile(HTML_PATH, html);
 }
