@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-11T13:22:07.432Z",
+  "generatedAt": "2026-09-11T13:42:38.432Z",
   "total": 396,
   "resolved": [
     {
@@ -5449,7 +5449,7 @@
   "coveragePct": 66.7,
   "iconQa": {
     "version": "v1.1.18",
-    "generatedAt": "2026-09-11T13:23:28.134Z",
+    "generatedAt": "2026-09-11T13:43:19.773Z",
     "sameFactionCdnFixes": 213,
     "removedAmbiguous": 17,
     "fixes": [
@@ -6804,8 +6804,8 @@
     ]
   },
   "knownIconOverrides": {
-    "version": "v1.1.19",
-    "generatedAt": "2026-09-11T13:23:28.985Z",
+    "version": "v1.1.25",
+    "generatedAt": "2026-09-11T13:43:21.685Z",
     "applied": [
       {
         "key": "Wehrmacht|fallschirmpioneer paradrop",
@@ -6826,12 +6826,87 @@
         "key": "Wehrmacht|sturmpanzer iv brummbaer",
         "source": "export/icons/races/german/vehicles/brummbar_german.webp",
         "localPath": "assets/build-icons/wehrmacht--sturmpanzer-iv-brummbaer.webp"
+      },
+      {
+        "key": "DAK|kradschutzen",
+        "source": "export/icons/races/afrika_corps/vehicles/kradschutzen_motorcycle_ak.webp",
+        "localPath": "assets/build-icons/dak--kradschutzen.webp"
+      },
+      {
+        "key": "DAK|250 half track",
+        "source": "export/icons/races/afrika_corps/vehicles/halftrack_250_ak.webp",
+        "localPath": "assets/build-icons/dak--250-half-track.webp"
+      },
+      {
+        "key": "DAK|light support kompanie",
+        "source": "export/icons/races/afrika_corps/buildings/infanterie_support_ak.webp",
+        "localPath": "assets/build-icons/dak--light-support-kompanie.webp"
+      },
+      {
+        "key": "DAK|fire support elements",
+        "source": "export/icons/races/afrika_corps/vehicles/halftrack_7_flak_ak.webp",
+        "localPath": "assets/build-icons/dak--fire-support-elements.webp"
+      },
+      {
+        "key": "DAK|panzerjager",
+        "source": "export/icons/races/afrika_corps/infantry/panzerjaegar_ak.webp",
+        "localPath": "assets/build-icons/dak--panzerjager.webp"
+      },
+      {
+        "key": "DAK|flakvierling",
+        "source": "export/icons/races/afrika_corps/vehicles/halftrack_7_flak_ak.webp",
+        "localPath": "assets/build-icons/dak--flakvierling.webp"
+      },
+      {
+        "key": "DAK|flakvierling pak 38",
+        "source": "export/icons/races/afrika_corps/vehicles/halftrack_7_flak_ak.webp",
+        "localPath": "assets/build-icons/dak--flakvierling-pak-38.webp"
+      },
+      {
+        "key": "DAK|panzerarmee kommand",
+        "source": "export/icons/races/afrika_corps/buildings/panzer_kompanie_ak.webp",
+        "localPath": "assets/build-icons/dak--panzerarmee-kommand.webp"
+      },
+      {
+        "key": "DAK|support armor elements",
+        "source": "export/icons/races/afrika_corps/vehicles/stug_iii_d_ak.webp",
+        "localPath": "assets/build-icons/dak--support-armor-elements.webp"
+      },
+      {
+        "key": "DAK|254 recon tractor",
+        "source": "export/icons/races/afrika_corps/vehicles/armored_tractor_254_ak.webp",
+        "localPath": "assets/build-icons/dak--254-recon-tractor.webp"
+      },
+      {
+        "key": "DAK|carro armato",
+        "source": "export/icons/races/afrika_corps/vehicles/m13_40_ak.webp",
+        "localPath": "assets/build-icons/dak--carro-armato.webp"
+      },
+      {
+        "key": "DAK|armored reserves before tiger call in",
+        "source": "export/icons/races/afrika_corps/vehicles/tiger_ak.webp",
+        "localPath": "assets/build-icons/dak--armored-reserves-before-tiger-call-in.webp"
+      },
+      {
+        "key": "DAK|elefant only in a true heavy armor endgame",
+        "source": "export/icons/races/afrika_corps/vehicles/elefant_tank_destroyer_ak.webp",
+        "localPath": "assets/build-icons/dak--elefant-only-in-a-true-heavy-armor-endgame.webp"
+      },
+      {
+        "key": "DAK|bersaglieri bolster",
+        "source": "export/icons/races/afrika_corps/abilities/bersaglieri_bolster.webp",
+        "localPath": "assets/build-icons/dak--bersaglieri-bolster.webp"
+      },
+      {
+        "key": "DAK|convert 250 to 250 3 funkpanzerwagen",
+        "source": "export/icons/races/afrika_corps/vehicles/vampire_ht_ak_icon.webp",
+        "localPath": "assets/build-icons/dak--convert-250-to-250-3-funkpanzerwagen.webp"
       }
     ]
   },
   "verifiedBuildOrderFixes": {
     "version": "v1.1.24",
-    "generatedAt": "2026-09-11T13:23:29.812Z",
+    "generatedAt": "2026-09-11T13:43:22.126Z",
     "source": "User-verified Wehrmacht build-order QA with exact CoH3Stats CDN assets",
     "appliedIcons": [
       {
