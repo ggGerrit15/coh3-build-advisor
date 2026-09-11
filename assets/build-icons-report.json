@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-11T14:01:37.371Z",
+  "generatedAt": "2026-09-11T14:20:31.181Z",
   "total": 396,
   "resolved": [
     {
@@ -5449,7 +5449,7 @@
   "coveragePct": 66.7,
   "iconQa": {
     "version": "v1.1.18",
-    "generatedAt": "2026-09-11T14:02:01.258Z",
+    "generatedAt": "2026-09-11T14:21:08.738Z",
     "sameFactionCdnFixes": 213,
     "removedAmbiguous": 17,
     "fixes": [
@@ -6804,8 +6804,8 @@
     ]
   },
   "knownIconOverrides": {
-    "version": "v1.1.26",
-    "generatedAt": "2026-09-11T14:02:02.222Z",
+    "version": "v1.1.27",
+    "generatedAt": "2026-09-11T14:21:09.690Z",
     "applied": [
       {
         "key": "Wehrmacht|fallschirmpioneer paradrop",
@@ -6904,74 +6904,74 @@
       },
       {
         "key": "USF|rifleman",
-        "source": "export/icons/races/american/symbols/riflemen_us.webp",
-        "localPath": "assets/build-icons/usf--rifleman.webp"
+        "source": "export/icons/common/units/icons/13_rifleman.webp",
+        "localPath": "assets/build-icons/usf--rifleman-portrait.webp"
       },
       {
         "key": "USF|french rifle section",
-        "source": "export/icons/races/american/symbols/french_infantry_us.webp",
-        "localPath": "assets/build-icons/usf--french-rifle-section.webp"
+        "source": "alias:USF|french",
+        "localPath": "assets/build-icons/usf--french.webp"
       },
       {
         "key": "USF|rifle",
         "source": "alias:USF|rifleman",
-        "localPath": "assets/build-icons/usf--rifleman.webp"
+        "localPath": "assets/build-icons/usf--rifleman-portrait.webp"
       },
       {
         "key": "USF|rifle 2",
         "source": "alias:USF|rifleman",
-        "localPath": "assets/build-icons/usf--rifleman.webp"
+        "localPath": "assets/build-icons/usf--rifleman-portrait.webp"
       },
       {
         "key": "USF|rifle 3",
         "source": "alias:USF|rifleman",
-        "localPath": "assets/build-icons/usf--rifleman.webp"
+        "localPath": "assets/build-icons/usf--rifleman-portrait.webp"
       },
       {
         "key": "USF|2 rifle core",
         "source": "alias:USF|rifleman",
-        "localPath": "assets/build-icons/usf--rifleman.webp"
+        "localPath": "assets/build-icons/usf--rifleman-portrait.webp"
       },
       {
         "key": "USF|3 rifles",
         "source": "alias:USF|rifleman",
-        "localPath": "assets/build-icons/usf--rifleman.webp"
+        "localPath": "assets/build-icons/usf--rifleman-portrait.webp"
       },
       {
         "key": "USF|optional third rifle",
         "source": "alias:USF|rifleman",
-        "localPath": "assets/build-icons/usf--rifleman.webp"
+        "localPath": "assets/build-icons/usf--rifleman-portrait.webp"
       },
       {
         "key": "USF|french 3",
         "source": "alias:USF|french rifle section",
-        "localPath": "assets/build-icons/usf--french-rifle-section.webp"
+        "localPath": "assets/build-icons/usf--french.webp"
       },
       {
         "key": "USF|more french rifle sections usually 3 4 total",
         "source": "alias:USF|french rifle section",
-        "localPath": "assets/build-icons/usf--french-rifle-section.webp"
+        "localPath": "assets/build-icons/usf--french.webp"
       },
       {
         "key": "USF|french rifle sections call ins",
         "source": "alias:USF|french rifle section",
-        "localPath": "assets/build-icons/usf--french-rifle-section.webp"
+        "localPath": "assets/build-icons/usf--french.webp"
       },
       {
         "key": "USF|third fourth french rifle section",
         "source": "alias:USF|french rifle section",
-        "localPath": "assets/build-icons/usf--french-rifle-section.webp"
+        "localPath": "assets/build-icons/usf--french.webp"
       },
       {
         "key": "USF|optional third french section on a wide infantry lane",
         "source": "alias:USF|french rifle section",
-        "localPath": "assets/build-icons/usf--french-rifle-section.webp"
+        "localPath": "assets/build-icons/usf--french.webp"
       }
     ]
   },
   "verifiedBuildOrderFixes": {
     "version": "v1.1.26",
-    "generatedAt": "2026-09-11T14:02:02.596Z",
+    "generatedAt": "2026-09-11T14:21:09.994Z",
     "source": "User-verified Wehrmacht build-order QA with exact CoH3Stats CDN assets",
     "appliedIcons": [
       {
