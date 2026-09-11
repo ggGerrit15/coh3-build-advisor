@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'scripts/sync_build_order_icons.mjs'
+      - 'scripts/fix_build_icon_assets.mjs'
       - '.github/workflows/sync-build-order-icons.yml'
 
 permissions:
@@ -27,6 +28,9 @@ jobs:
       - name: Vendor build-order icons from CoH3Stats
         run: node scripts/sync_build_order_icons.mjs
 
+      - name: QA build-order icons against same-faction CoH3Stats CDN assets
+        run: node scripts/fix_build_icon_assets.mjs
+
       - name: Commit build-order icon assets
         run: |
           git config user.name "github-actions[bot]"
@@ -36,6 +40,6 @@ jobs:
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "Vendor CoH3 build order icons"
+          git commit -m "QA CoH3 build order icons"
           git pull --rebase origin main
           git push
