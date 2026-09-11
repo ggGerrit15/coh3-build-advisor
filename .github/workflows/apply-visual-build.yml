@@ -1,0 +1,41 @@
+name: Apply visual build UI
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/add_visual_build_icons.mjs'
+      - '.github/workflows/apply-visual-build.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply-visual-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Apply visual build order cards and CoH3 icons
+        run: node scripts/add_visual_build_icons.mjs
+
+      - name: Commit generated index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No visual build changes."
+            exit 0
+          fi
+          git commit -m "Apply visual build order icons"
+          git pull --rebase origin main
+          git push
