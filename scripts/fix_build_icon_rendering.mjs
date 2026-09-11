@@ -1,8 +1,10 @@
 import fs from 'node:fs/promises';
 
 const HTML_PATH = 'index.html';
-const VERSION = 'v1.1.20';
-const MARKER = 'BUILD_ICON_RENDER_FIX_V1';
+const VERSION = 'v1.1.21';
+const RENDER_MARKER = 'BUILD_ICON_RENDER_FIX_V1';
+const BADGE_MARKER = 'BUILD_STEP_BADGE_OUTSIDE_V2';
+const OLD_BADGE_MARKER = 'BUILD_STEP_BADGE_LAYOUT_V1';
 
 let html = await fs.readFile(HTML_PATH, 'utf8');
 let changed = false;
@@ -12,10 +14,28 @@ let changed = false;
 // native lazy-loading this can create a deadlock: a hidden lazy image is not
 // fetched, so the load event never fires, so the image never becomes visible.
 // Keep the image in the layout/fetch pipeline and reveal it only after load.
-if (!html.includes(MARKER)) {
-  const styleFix = `\n/* ${MARKER}: keep CoH3 artwork fetchable while the fallback remains visible */\n.buildstepimg{display:block!important;opacity:0;visibility:hidden;transition:opacity .12s ease}\n.buildstepicon.loaded .buildstepimg{display:block!important;opacity:1;visibility:visible}\n.buildstepicon.failed .buildstepimg{display:none!important}\n\n/* BUILD_STEP_BADGE_LAYOUT_V1: numbered steps sit inside the card instead of overlapping content */\n.buildstepbadge:not(.start){top:10px;right:10px;left:auto;min-width:28px;width:28px;height:28px;padding:0;font-size:12px;line-height:1;z-index:3;box-shadow:0 2px 8px rgba(0,0,0,.25)}\n.buildstepbadge.start{right:auto}\n`;
+if (!html.includes(RENDER_MARKER)) {
+  const styleFix = `\n/* ${RENDER_MARKER}: keep CoH3 artwork fetchable while the fallback remains visible */\n.buildstepimg{display:block!important;opacity:0;visibility:hidden;transition:opacity .12s ease}\n.buildstepicon.loaded .buildstepimg{display:block!important;opacity:1;visibility:visible}\n.buildstepicon.failed .buildstepimg{display:none!important}\n`;
   if (!html.includes('</style>')) throw new Error('Could not find </style> in index.html');
   html = html.replace('</style>', `${styleFix}</style>`);
+  changed = true;
+}
+
+// Keep numbered build steps completely outside the cards. The grid reserves
+// enough horizontal space so a badge never covers the card text/icon and also
+// never touches the next card. START remains the blue pill on the first card.
+const badgeCss = `\n/* ${BADGE_MARKER}: numbered steps live fully to the right of each build card */\n.buildstepgrid{column-gap:46px;row-gap:10px;padding-right:36px}\n.buildstepbadge:not(.start){top:10px;right:-36px;left:auto;min-width:28px;width:28px;height:28px;padding:0;font-size:12px;line-height:1;z-index:3;box-shadow:0 2px 8px rgba(0,0,0,.25);transform:none}\n.buildstepbadge.start{right:auto}\n`;
+
+if (html.includes(OLD_BADGE_MARKER)) {
+  const oldBadgeBlock = new RegExp(`\\n/\\* ${OLD_BADGE_MARKER}:[\\s\\S]*?\\n\\.buildstepbadge\\.start\\{right:auto\\}\\n?`, 'm');
+  if (oldBadgeBlock.test(html)) {
+    html = html.replace(oldBadgeBlock, badgeCss);
+    changed = true;
+  }
+}
+if (!html.includes(BADGE_MARKER)) {
+  if (!html.includes('</style>')) throw new Error('Could not find </style> in index.html');
+  html = html.replace('</style>', `${badgeCss}</style>`);
   changed = true;
 }
 
@@ -58,7 +78,7 @@ if (versioned !== html) {
 
 if (changed) {
   await fs.writeFile(HTML_PATH, html);
-  console.log(`Fixed build-order CoH3 icon rendering and badge layout; ${VERSION}.`);
+  console.log(`Fixed build-order CoH3 icon rendering and outside badge layout; ${VERSION}.`);
 } else {
-  console.log(`Build-order icon rendering and badge layout fix already present; ${VERSION}.`);
+  console.log(`Build-order icon rendering and outside badge layout already present; ${VERSION}.`);
 }
