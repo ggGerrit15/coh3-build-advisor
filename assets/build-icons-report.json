@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-11T11:32:46.054Z",
+  "generatedAt": "2026-09-11T11:35:41.485Z",
   "total": 396,
   "resolved": [
     {
@@ -5449,7 +5449,7 @@
   "coveragePct": 66.7,
   "iconQa": {
     "version": "v1.1.18",
-    "generatedAt": "2026-09-11T11:33:10.345Z",
+    "generatedAt": "2026-09-11T11:36:12.052Z",
     "sameFactionCdnFixes": 213,
     "removedAmbiguous": 17,
     "fixes": [
@@ -6800,6 +6800,32 @@
       {
         "key": "USF|at as needed",
         "reason": "removed non-faction/ambiguous source export/icons/common/weapons/weapon_ptrs.webp"
+      }
+    ]
+  },
+  "knownIconOverrides": {
+    "version": "v1.1.19",
+    "generatedAt": "2026-09-11T11:36:12.208Z",
+    "applied": [
+      {
+        "key": "Wehrmacht|fallschirmpioneer paradrop",
+        "source": "export/icons/races/german/infantry/fallschirmpioneers_ger.webp",
+        "localPath": "assets/build-icons/wehrmacht--fallschirmpioneer-paradrop.webp"
+      },
+      {
+        "key": "Wehrmacht|fallschirmpioneer squad paradrop",
+        "source": "export/icons/races/german/infantry/fallschirmpioneers_ger.webp",
+        "localPath": "assets/build-icons/wehrmacht--fallschirmpioneer-squad-paradrop.webp"
+      },
+      {
+        "key": "Wehrmacht|medical bunker station",
+        "source": "export/icons/races/german/buildings/bunker_medical_ger.webp",
+        "localPath": "assets/build-icons/wehrmacht--medical-bunker-station.webp"
+      },
+      {
+        "key": "Wehrmacht|sturmpanzer iv brummbaer",
+        "source": "export/icons/races/german/vehicles/brummbar_german.webp",
+        "localPath": "assets/build-icons/wehrmacht--sturmpanzer-iv-brummbaer.webp"
       }
     ]
   }
