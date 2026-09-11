@@ -8,6 +8,7 @@ on:
       - 'scripts/fix_build_icon_assets.mjs'
       - 'scripts/fix_known_build_icon_overrides.mjs'
       - 'scripts/fix_build_icon_rendering.mjs'
+      - 'scripts/apply_verified_build_order_fixes.mjs'
       - '.github/workflows/sync-build-order-icons.yml'
 
 permissions:
@@ -27,6 +28,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Apply verified build-order content corrections
+        run: node scripts/apply_verified_build_order_fixes.mjs --data
+
       - name: Vendor build-order icons from CoH3Stats
         run: node scripts/sync_build_order_icons.mjs
 
@@ -39,15 +43,18 @@ jobs:
       - name: Fix build-order icon rendering
         run: node scripts/fix_build_icon_rendering.mjs
 
-      - name: Commit build-order icon assets
+      - name: Apply verified exact icon mappings
+        run: node scripts/apply_verified_build_order_fixes.mjs --icons
+
+      - name: Commit build-order data and icon assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html assets/build-icons assets/build-icons.json assets/build-icons-report.json
+          git add coh3_build_advisor_data.json index.html assets/build-icons assets/build-icons.json assets/build-icons-report.json
           if git diff --cached --quiet; then
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "QA CoH3 build order icons"
+          git commit -m "Apply verified Wehrmacht build order fixes"
           git pull --rebase origin main
           git push
