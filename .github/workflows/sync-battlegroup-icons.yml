@@ -13,7 +13,6 @@ on:
       - 'scripts/clean_public_copy.mjs'
       - 'scripts/clarify_starting_units.mjs'
       - 'scripts/add_visual_build_icons.mjs'
-      - 'scripts/sync_build_order_icons.mjs'
       - '.github/workflows/sync-battlegroup-icons.yml'
 
 permissions:
