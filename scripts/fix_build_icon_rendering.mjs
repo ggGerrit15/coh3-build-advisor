@@ -13,7 +13,7 @@ let changed = false;
 // fetched, so the load event never fires, so the image never becomes visible.
 // Keep the image in the layout/fetch pipeline and reveal it only after load.
 if (!html.includes(MARKER)) {
-  const styleFix = `\n/* ${MARKER}: keep CoH3 artwork fetchable while the fallback remains visible */\n.buildstepimg{display:block!important;opacity:0;visibility:hidden;transition:opacity .12s ease}\n.buildstepicon.loaded .buildstepimg{display:block!important;opacity:1;visibility:visible}\n.buildstepicon.failed .buildstepimg{display:none!important}\n`;
+  const styleFix = `\n/* ${MARKER}: keep CoH3 artwork fetchable while the fallback remains visible */\n.buildstepimg{display:block!important;opacity:0;visibility:hidden;transition:opacity .12s ease}\n.buildstepicon.loaded .buildstepimg{display:block!important;opacity:1;visibility:visible}\n.buildstepicon.failed .buildstepimg{display:none!important}\n\n/* BUILD_STEP_BADGE_LAYOUT_V1: numbered steps sit inside the card instead of overlapping content */\n.buildstepbadge:not(.start){top:10px;right:10px;left:auto;min-width:28px;width:28px;height:28px;padding:0;font-size:12px;line-height:1;z-index:3;box-shadow:0 2px 8px rgba(0,0,0,.25)}\n.buildstepbadge.start{right:auto}\n`;
   if (!html.includes('</style>')) throw new Error('Could not find </style> in index.html');
   html = html.replace('</style>', `${styleFix}</style>`);
   changed = true;
@@ -58,7 +58,7 @@ if (versioned !== html) {
 
 if (changed) {
   await fs.writeFile(HTML_PATH, html);
-  console.log(`Fixed build-order CoH3 icon rendering; ${VERSION}.`);
+  console.log(`Fixed build-order CoH3 icon rendering and badge layout; ${VERSION}.`);
 } else {
-  console.log(`Build-order icon rendering fix already present; ${VERSION}.`);
+  console.log(`Build-order icon rendering and badge layout fix already present; ${VERSION}.`);
 }
