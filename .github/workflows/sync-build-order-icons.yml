@@ -7,6 +7,7 @@ on:
       - 'scripts/sync_build_order_icons.mjs'
       - 'scripts/fix_build_icon_assets.mjs'
       - 'scripts/fix_known_build_icon_overrides.mjs'
+      - 'scripts/fix_build_icon_rendering.mjs'
       - '.github/workflows/sync-build-order-icons.yml'
 
 permissions:
@@ -34,6 +35,9 @@ jobs:
 
       - name: Apply known build-order icon corrections
         run: node scripts/fix_known_build_icon_overrides.mjs
+
+      - name: Fix build-order icon rendering
+        run: node scripts/fix_build_icon_rendering.mjs
 
       - name: Commit build-order icon assets
         run: |
