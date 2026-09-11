@@ -8,7 +8,7 @@ const REPORT_PATH = 'assets/build-icons-report.json';
 const OUT_DIR = 'assets/build-icons';
 const CDN_RAW = 'https://raw.githubusercontent.com/cohstats/coh3-cdn/master/public';
 const CDN = 'https://cdn.coh3stats.com';
-const VERSION = 'v1.1.24';
+const VERSION = 'v1.1.26';
 
 const ICON_OVERRIDES = {
   'Wehrmacht|jager squad': 'export/icons/races/german/infantry/jaeger_ger.webp',

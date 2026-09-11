@@ -7,7 +7,7 @@ const REPORT_PATH = 'assets/build-icons-report.json';
 const OUT_DIR = 'assets/build-icons';
 const CDN_RAW = 'https://raw.githubusercontent.com/cohstats/coh3-cdn/master/public';
 const CDN = 'https://cdn.coh3stats.com';
-const VERSION = 'v1.1.25';
+const VERSION = 'v1.1.26';
 
 const OVERRIDES = {
   'Wehrmacht|fallschirmpioneer paradrop': 'export/icons/races/german/infantry/fallschirmpioneers_ger.webp',
@@ -35,7 +35,29 @@ const OVERRIDES = {
   // Two cards already had artwork in some profiles, but the automatic matcher
   // could select a merely similar asset. Pin them to the actual CoH3 icons too.
   'DAK|bersaglieri bolster': 'export/icons/races/afrika_corps/abilities/bersaglieri_bolster.webp',
-  'DAK|convert 250 to 250 3 funkpanzerwagen': 'export/icons/races/afrika_corps/vehicles/vampire_ht_ak_icon.webp'
+  'DAK|convert 250 to 250 3 funkpanzerwagen': 'export/icons/races/afrika_corps/vehicles/vampire_ht_ak_icon.webp',
+
+  // USF: exact same-faction unit symbols. The automatic matcher previously used
+  // a generic common Rifleman icon, mapped the short "Rifle" label to an AT rifle,
+  // and could not resolve French Rifle Section at all.
+  'USF|rifleman': 'export/icons/races/american/symbols/riflemen_us.webp',
+  'USF|french rifle section': 'export/icons/races/american/symbols/french_infantry_us.webp'
+};
+
+// Several builds use shorthand/plural wording for the same unit. Point these
+// labels at the verified local assets so every visual build card stays consistent.
+const ALIASES = {
+  'USF|rifle': 'USF|rifleman',
+  'USF|rifle 2': 'USF|rifleman',
+  'USF|rifle 3': 'USF|rifleman',
+  'USF|2 rifle core': 'USF|rifleman',
+  'USF|3 rifles': 'USF|rifleman',
+  'USF|optional third rifle': 'USF|rifleman',
+  'USF|french 3': 'USF|french rifle section',
+  'USF|more french rifle sections usually 3 4 total': 'USF|french rifle section',
+  'USF|french rifle sections call ins': 'USF|french rifle section',
+  'USF|third fourth french rifle section': 'USF|french rifle section',
+  'USF|optional third french section on a wide infantry lane': 'USF|french rifle section'
 };
 
 function slug(value = '') {
@@ -63,6 +85,13 @@ for (const [key, rel] of Object.entries(OVERRIDES)) {
   await fs.writeFile(outPath, hit.buf);
   manifest[key] = outPath;
   applied.push({ key, source: rel, localPath: outPath });
+}
+
+for (const [key, targetKey] of Object.entries(ALIASES)) {
+  const localPath = manifest[targetKey];
+  if (!localPath) throw new Error(`Missing alias target ${targetKey} for ${key}`);
+  manifest[key] = localPath;
+  applied.push({ key, source: `alias:${targetKey}`, localPath });
 }
 
 await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + '\n');
