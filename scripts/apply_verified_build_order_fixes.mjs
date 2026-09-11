@@ -8,7 +8,7 @@ const REPORT_PATH = 'assets/build-icons-report.json';
 const OUT_DIR = 'assets/build-icons';
 const CDN_RAW = 'https://raw.githubusercontent.com/cohstats/coh3-cdn/master/public';
 const CDN = 'https://cdn.coh3stats.com';
-const VERSION = 'v1.1.23';
+const VERSION = 'v1.1.24';
 
 const ICON_OVERRIDES = {
   'Wehrmacht|jager squad': 'export/icons/races/german/infantry/jaeger_ger.webp',
@@ -54,6 +54,20 @@ function replaceBuildAt(profile, index, expectedOld, newValue) {
   profile.build[index] = newValue;
 }
 
+async function syncEmbeddedProfiles(data) {
+  let html = await fs.readFile(HTML_PATH, 'utf8');
+  const profilesBlock = `const PROFILES=${JSON.stringify(data.profiles || [])};\n`;
+  const profilesPattern = /const PROFILES=.*?;\nconst MATCHUPS=/;
+
+  if (!profilesPattern.test(html)) {
+    throw new Error('Embedded PROFILES block not found in index.html');
+  }
+
+  html = html.replace(profilesPattern, `${profilesBlock}const MATCHUPS=`);
+  html = html.replace(/CoH3 Build Advisor v1\.1\.\d+/g, `CoH3 Build Advisor ${VERSION}`);
+  await fs.writeFile(HTML_PATH, html);
+}
+
 async function applyDataFixes() {
   const data = JSON.parse(await fs.readFile(DATA_PATH, 'utf8'));
 
@@ -94,7 +108,8 @@ async function applyDataFixes() {
   if (!siege.techQaNotes.includes(siegeQa)) siege.techQaNotes.push(siegeQa);
 
   await fs.writeFile(DATA_PATH, JSON.stringify(data, null, 2) + '\n');
-  console.log('Applied verified Wehrmacht build-order content corrections.');
+  await syncEmbeddedProfiles(data);
+  console.log('Applied verified Wehrmacht build-order content corrections and synchronized embedded live profiles.');
 }
 
 async function download(rel) {
