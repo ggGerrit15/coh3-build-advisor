@@ -13,6 +13,7 @@ on:
       - 'scripts/clean_public_copy.mjs'
       - 'scripts/clarify_starting_units.mjs'
       - 'scripts/add_visual_build_icons.mjs'
+      - 'scripts/sync_build_order_icons.mjs'
       - '.github/workflows/sync-battlegroup-icons.yml'
 
 permissions:
@@ -74,14 +75,17 @@ jobs:
       - name: Add visual build order cards and CoH3 icons
         run: node scripts/add_visual_build_icons.mjs
 
+      - name: Vendor build-order icons from CoH3Stats
+        run: node scripts/sync_build_order_icons.mjs
+
       - name: Commit generated assets and site update
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html coh3_build_advisor_data.json assets/icons assets/bg-icons.json assets/bg-icons-report.json
+          git add index.html coh3_build_advisor_data.json assets/icons assets/bg-icons.json assets/bg-icons-report.json assets/build-icons assets/build-icons.json assets/build-icons-report.json
           if git diff --cached --quiet; then
             echo "No generated changes."
             exit 0
           fi
-          git commit -m "Add visual build order icons"
+          git commit -m "Vendor CoH3 build order icons"
           git push
