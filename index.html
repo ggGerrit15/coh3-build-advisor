@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CoH3 Build Advisor v1.1.21</title>
+<title>CoH3 Build Advisor v1.1.22</title>
 <link rel="canonical" href="https://gggerrit15.github.io/coh3-build-advisor/">
 <!-- GoatCounter analytics -->
 <script data-goatcounter="https://gggerrit15.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -60,17 +60,19 @@
 .buildstepicon.loaded .buildstepimg{display:block!important;opacity:1;visibility:visible}
 .buildstepicon.failed .buildstepimg{display:none!important}
 
-/* BUILD_STEP_BADGE_OUTSIDE_V2: numbered steps live fully to the right of each build card */
-.buildstepgrid{column-gap:46px;row-gap:10px;padding-right:36px}
-.buildstepbadge:not(.start){top:10px;right:-36px;left:auto;min-width:28px;width:28px;height:28px;padding:0;font-size:12px;line-height:1;z-index:3;box-shadow:0 2px 8px rgba(0,0,0,.25);transform:none}
-.buildstepbadge.start{right:auto}
+
+/* BUILD_STEP_BADGE_INSIDE_V3: all step badges sit inside the card's top-right corner */
+.buildstepgrid{column-gap:10px;row-gap:10px;padding-right:0}
+.buildstepcard{position:relative}
+.buildstepbadge:not(.start){top:8px;right:8px;left:auto;min-width:28px;width:28px;height:28px;padding:0;font-size:12px;line-height:1;z-index:3;box-shadow:0 2px 8px rgba(0,0,0,.25);transform:none}
+.buildstepbadge.start{top:8px;right:8px;left:auto;min-width:56px;width:auto;height:30px;padding:0 10px;font-size:12px;line-height:1;z-index:3;transform:none}
 </style>
 </head>
 <body>
 <div class="shell">
   <div class="top">
     <div>
-      <h1>CoH3 Build Advisor v1.1.21</h1>
+      <h1>CoH3 Build Advisor v1.1.22</h1>
       <div class="muted">Unofficial community tool • all four factions • Smart Advisor for 1v1 / 2v2 / 3v3 / 4v4 • map + ELO context • creator comparison</div>
     </div>
     <div>
