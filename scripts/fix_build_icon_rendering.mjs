@@ -1,19 +1,15 @@
 import fs from 'node:fs/promises';
 
 const HTML_PATH = 'index.html';
-const VERSION = 'v1.1.21';
+const VERSION = 'v1.1.22';
 const RENDER_MARKER = 'BUILD_ICON_RENDER_FIX_V1';
-const BADGE_MARKER = 'BUILD_STEP_BADGE_OUTSIDE_V2';
-const OLD_BADGE_MARKER = 'BUILD_STEP_BADGE_LAYOUT_V1';
+const BADGE_MARKER = 'BUILD_STEP_BADGE_INSIDE_V3';
+const LEGACY_BADGE_MARKERS = ['BUILD_STEP_BADGE_OUTSIDE_V2', 'BUILD_STEP_BADGE_LAYOUT_V1'];
 
 let html = await fs.readFile(HTML_PATH, 'utf8');
 let changed = false;
 
-// The build-order images were present and correctly mapped, but the CSS hid
-// them with display:none until the image load event fired. Together with
-// native lazy-loading this can create a deadlock: a hidden lazy image is not
-// fetched, so the load event never fires, so the image never becomes visible.
-// Keep the image in the layout/fetch pipeline and reveal it only after load.
+// Keep the real CoH3 artwork fetchable while the symbol fallback remains visible.
 if (!html.includes(RENDER_MARKER)) {
   const styleFix = `\n/* ${RENDER_MARKER}: keep CoH3 artwork fetchable while the fallback remains visible */\n.buildstepimg{display:block!important;opacity:0;visibility:hidden;transition:opacity .12s ease}\n.buildstepicon.loaded .buildstepimg{display:block!important;opacity:1;visibility:visible}\n.buildstepicon.failed .buildstepimg{display:none!important}\n`;
   if (!html.includes('</style>')) throw new Error('Could not find </style> in index.html');
@@ -21,34 +17,35 @@ if (!html.includes(RENDER_MARKER)) {
   changed = true;
 }
 
-// Keep numbered build steps completely outside the cards. The grid reserves
-// enough horizontal space so a badge never covers the card text/icon and also
-// never touches the next card. START remains the blue pill on the first card.
-const badgeCss = `\n/* ${BADGE_MARKER}: numbered steps live fully to the right of each build card */\n.buildstepgrid{column-gap:46px;row-gap:10px;padding-right:36px}\n.buildstepbadge:not(.start){top:10px;right:-36px;left:auto;min-width:28px;width:28px;height:28px;padding:0;font-size:12px;line-height:1;z-index:3;box-shadow:0 2px 8px rgba(0,0,0,.25);transform:none}\n.buildstepbadge.start{right:auto}\n`;
+// Put every step badge INSIDE the card, in its top-right corner. Both numbered
+// badges and START use the same anchor. Reset the extra spacing from the old
+// outside-badge layout so the cards return to their normal compact grid.
+const badgeCss = `\n/* ${BADGE_MARKER}: all step badges sit inside the card's top-right corner */\n.buildstepgrid{column-gap:10px;row-gap:10px;padding-right:0}\n.buildstepcard{position:relative}\n.buildstepbadge:not(.start){top:8px;right:8px;left:auto;min-width:28px;width:28px;height:28px;padding:0;font-size:12px;line-height:1;z-index:3;box-shadow:0 2px 8px rgba(0,0,0,.25);transform:none}\n.buildstepbadge.start{top:8px;right:8px;left:auto;min-width:56px;width:auto;height:30px;padding:0 10px;font-size:12px;line-height:1;z-index:3;transform:none}\n`;
 
-if (html.includes(OLD_BADGE_MARKER)) {
-  const oldBadgeBlock = new RegExp(`\\n/\\* ${OLD_BADGE_MARKER}:[\\s\\S]*?\\n\\.buildstepbadge\\.start\\{right:auto\\}\\n?`, 'm');
-  if (oldBadgeBlock.test(html)) {
-    html = html.replace(oldBadgeBlock, badgeCss);
+for (const marker of LEGACY_BADGE_MARKERS) {
+  if (!html.includes(marker)) continue;
+  const legacyBlock = new RegExp(`\\n/\\* ${marker}:[\\s\\S]*?(?=\\n/\\* BUILD_|\\n</style>)`, 'm');
+  if (legacyBlock.test(html)) {
+    html = html.replace(legacyBlock, '');
     changed = true;
   }
 }
+
 if (!html.includes(BADGE_MARKER)) {
   if (!html.includes('</style>')) throw new Error('Could not find </style> in index.html');
   html = html.replace('</style>', `${badgeCss}</style>`);
   changed = true;
 }
 
-// These tiny local assets should not use native lazy-loading. They are only
-// hydrated for the currently visible build order and should load immediately.
+// These tiny local assets are only hydrated for the visible build order and
+// should load immediately rather than waiting on native lazy-loading.
 const lazyPattern = /<img class="buildstepimg" alt="" loading="lazy">/g;
 if (lazyPattern.test(html)) {
   html = html.replace(lazyPattern, '<img class="buildstepimg" alt="" decoding="async">');
   changed = true;
 }
 
-// Make the post-render hydration timing explicit. requestAnimationFrame runs
-// after the advisor HTML has been inserted and before the next paint.
+// Hydrate immediately after the advisor HTML has been inserted.
 const timerPattern = /setTimeout\(\(\)=>\{try\{hydrateBuildIcons\(p,\$\((['"])advisorContent\1\)\)\}catch\(e\)\{console\.warn\((['"])Build icons could not be hydrated\.\2,e\)\}\},0\)/;
 if (timerPattern.test(html)) {
   html = html.replace(timerPattern, "requestAnimationFrame(()=>{try{hydrateBuildIcons(p,$('advisorContent'))}catch(e){console.warn('Build icons could not be hydrated.',e)}})");
@@ -78,7 +75,7 @@ if (versioned !== html) {
 
 if (changed) {
   await fs.writeFile(HTML_PATH, html);
-  console.log(`Fixed build-order CoH3 icon rendering and outside badge layout; ${VERSION}.`);
+  console.log(`Fixed build-order CoH3 icon rendering and inside top-right badge layout; ${VERSION}.`);
 } else {
-  console.log(`Build-order icon rendering and outside badge layout already present; ${VERSION}.`);
+  console.log(`Build-order icon rendering and inside top-right badge layout already present; ${VERSION}.`);
 }
