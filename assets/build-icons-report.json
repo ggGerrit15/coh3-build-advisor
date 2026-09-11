@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-11T11:52:20.206Z",
+  "generatedAt": "2026-09-11T11:57:47.931Z",
   "total": 396,
   "resolved": [
     {
@@ -5449,7 +5449,7 @@
   "coveragePct": 66.7,
   "iconQa": {
     "version": "v1.1.18",
-    "generatedAt": "2026-09-11T11:52:37.640Z",
+    "generatedAt": "2026-09-11T11:58:08.114Z",
     "sameFactionCdnFixes": 213,
     "removedAmbiguous": 17,
     "fixes": [
@@ -6805,7 +6805,7 @@
   },
   "knownIconOverrides": {
     "version": "v1.1.19",
-    "generatedAt": "2026-09-11T11:52:37.786Z",
+    "generatedAt": "2026-09-11T11:58:08.281Z",
     "applied": [
       {
         "key": "Wehrmacht|fallschirmpioneer paradrop",
