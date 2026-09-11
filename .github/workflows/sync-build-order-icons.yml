@@ -1,0 +1,41 @@
+name: Sync build order icons
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/sync_build_order_icons.mjs'
+      - '.github/workflows/sync-build-order-icons.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  sync-build-icons:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Vendor build-order icons from CoH3Stats
+        run: node scripts/sync_build_order_icons.mjs
+
+      - name: Commit build-order icon assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html assets/build-icons assets/build-icons.json assets/build-icons-report.json
+          if git diff --cached --quiet; then
+            echo "No generated changes."
+            exit 0
+          fi
+          git commit -m "Vendor CoH3 build order icons"
+          git pull --rebase origin main
+          git push
