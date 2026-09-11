@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/sync_build_order_icons.mjs'
       - 'scripts/fix_build_icon_assets.mjs'
+      - 'scripts/fix_known_build_icon_overrides.mjs'
       - '.github/workflows/sync-build-order-icons.yml'
 
 permissions:
@@ -30,6 +31,9 @@ jobs:
 
       - name: QA build-order icons against same-faction CoH3Stats CDN assets
         run: node scripts/fix_build_icon_assets.mjs
+
+      - name: Apply known build-order icon corrections
+        run: node scripts/fix_known_build_icon_overrides.mjs
 
       - name: Commit build-order icon assets
         run: |
