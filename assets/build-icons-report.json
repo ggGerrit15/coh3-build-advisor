@@ -1,0 +1,3274 @@
+{
+  "dataTag": "v2.5.3-3",
+  "generatedAt": "2026-09-11T11:18:53.324Z",
+  "total": 353,
+  "resolved": [
+    {
+      "faction": "Wehrmacht",
+      "step": "Pioneer",
+      "lookup": "pioneer",
+      "matched": "Pioneer Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/infantry/pioneer_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--pioneer.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Infanterie Kompanie",
+      "lookup": "infanterie kompanie",
+      "matched": "Infanterie Kompanie",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/buildings/infanterie_kompanie_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--infanterie-kompanie.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Grenadier",
+      "lookup": "grenadier",
+      "matched": "Grenadier Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/infantry/grenadier_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--grenadier.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "MG42",
+      "lookup": "mg42",
+      "matched": "MG42 Machine Gun Team",
+      "score": 480,
+      "sourceIcon": "export/icons/races/british/team_weapons/hmg_vickers_africa_uk.webp",
+      "localPath": "assets/build-icons/wehrmacht--mg42.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Officer Quarters",
+      "lookup": "officer quarters",
+      "matched": "german upgrade research officer_quarters battlegroup_luft_and_pg_kompanie_vet_ger",
+      "score": 510,
+      "sourceIcon": "export/icons/common/abilities/promote_captain_us.webp",
+      "localPath": "assets/build-icons/wehrmacht--officer-quarters.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzergrenadier Kompanie",
+      "lookup": "panzergrenadier kompanie",
+      "matched": "Panzergrenadier Kompanie",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/buildings/support_armory_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzergrenadier-kompanie.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Pak 40",
+      "lookup": "pak 40",
+      "matched": "Pak 40 Anti-tank Gun Team",
+      "score": 348,
+      "sourceIcon": "export/icons/races/german/team_weapons/at_gun_75mm_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--pak-40.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Medical Bunker",
+      "lookup": "medical bunker",
+      "matched": "Medical Bunker",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/buildings/bunker_medical_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--medical-bunker.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzer IV Command Tank",
+      "lookup": "panzer iv command tank",
+      "matched": "Panzer IV Command Tank Sd.Kfz. 161/1",
+      "score": 390,
+      "sourceIcon": "export/icons/races/german/vehicles/panzer_iv_cmd_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzer-iv-command-tank.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Sniper",
+      "lookup": "sniper",
+      "matched": "Sniper",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/infantry/sniper_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--sniper.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Support Elements",
+      "lookup": "support elements",
+      "matched": "Support Elements",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/vehicles/stug_iii_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--support-elements.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "StuG III G from Panzergrenadier Kompanie",
+      "lookup": "stug iii g from panzergrenadier kompanie",
+      "matched": "Panzergrenadier Kompanie",
+      "score": 280,
+      "sourceIcon": "export/icons/races/german/buildings/support_armory_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--stug-iii-g-from-panzergrenadier-kompanie.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "3.5t Truck on fuel",
+      "lookup": "3 5t truck on fuel",
+      "matched": "2.5-tonne Fuel Truck",
+      "score": 60,
+      "sourceIcon": "export/icons/races/german/vehicles/2_5_truck_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--3-5t-truck-on-fuel.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Repair Bunker",
+      "lookup": "repair bunker",
+      "matched": "Repair Bunker",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/buildings/bunker_repair_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--repair-bunker.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Mortar",
+      "lookup": "mortar",
+      "matched": "german sbps emplacements mortar_bunker_autobuild_ger",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/buildings/bunker_mortar_autobuild_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--mortar.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Tiger",
+      "lookup": "tiger",
+      "matched": "King Tiger Heavy Tank",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/vehicles/king_tiger_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--tiger.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Pak",
+      "lookup": "pak",
+      "matched": "Pak 43 Anti-tank Gun Team",
+      "score": 480,
+      "sourceIcon": "export/icons/common/units/icons/vehicle_west_german_ig18_infantry_support_gun.webp",
+      "localPath": "assets/build-icons/wehrmacht--pak.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "StuG III",
+      "lookup": "stug iii",
+      "matched": "StuG III D Assault Gun",
+      "score": 510,
+      "sourceIcon": "export/icons/races/german/vehicles/stug_iii_d_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--stug-iii.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Coastal Reserve",
+      "lookup": "coastal reserve",
+      "matched": "german sbps infantry coastal_reserves_at_ger",
+      "score": 410,
+      "sourceIcon": "export/icons/races/german/infantry/coastal_reserves_squad_wicd.webp",
+      "localPath": "assets/build-icons/wehrmacht--coastal-reserve.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Medical Station",
+      "lookup": "medical station",
+      "matched": "Medical Station",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/common/abilities/healing.webp",
+      "localPath": "assets/build-icons/wehrmacht--medical-station.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Artillery Officer",
+      "lookup": "artillery officer",
+      "matched": "Artillery Officer",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/infantry/artillery_officer_wicd.webp",
+      "localPath": "assets/build-icons/wehrmacht--artillery-officer.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzer Kompanie",
+      "lookup": "panzer kompanie",
+      "matched": "Panzer Kompanie",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/buildings/panzer_armory_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzer-kompanie.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzer IV",
+      "lookup": "panzer iv",
+      "matched": "Command Panzer IV Medium Tank",
+      "score": 510,
+      "sourceIcon": "export/icons/races/german/vehicles/panzer_iv_cmd_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzer-iv.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Obice",
+      "lookup": "obice",
+      "matched": "german sbps emplacements howitzer_obice_210_ger",
+      "score": 480,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/wehrmacht--obice.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Convert Pioneer to Sturmpioneer",
+      "lookup": "convert pioneer to sturmpioneer",
+      "matched": "german upgrade infantry pioneer_convert_to_sturmpioneer_ui_override_ger",
+      "score": 200,
+      "sourceIcon": "export/icons/common/units/icons/sturmpioneer_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--convert-pioneer-to-sturmpioneer.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Sturmpioneer upgrade as needed",
+      "lookup": "sturmpioneer upgrade as needed",
+      "matched": "german upgrade infantry pioneer_convert_to_sturmpioneer_ui_override_ger",
+      "score": 60,
+      "sourceIcon": "export/icons/common/units/icons/sturmpioneer_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--sturmpioneer-upgrade-as-needed.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Flak 36 emplacement only",
+      "lookup": "flak 36 emplacement only",
+      "matched": "Flak 36 Anti-tank Emplacement",
+      "score": 78,
+      "sourceIcon": "export/icons/races/german/team_weapons/tw_88mm_emplacement_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--flak-36-emplacement-only.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Kettenkrad",
+      "lookup": "kettenkrad",
+      "matched": "Kettenkrad Recon Vehicle",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/vehicles/kettenkrad_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--kettenkrad.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "251 Half-track",
+      "lookup": "251 half track",
+      "matched": "Flak Half-track",
+      "score": 158,
+      "sourceIcon": "export/icons/races/german/vehicles/halftrack_251_flak_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--251-half-track.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Pak 40 first",
+      "lookup": "pak 40 first",
+      "matched": "Pak 40 Anti-tank Gun Team",
+      "score": 48,
+      "sourceIcon": "export/icons/races/german/team_weapons/at_gun_75mm_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--pak-40-first.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Stummel conversion",
+      "lookup": "stummel conversion",
+      "matched": "Stummel Conversion",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/vehicles/halftrack_stummel_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--stummel-conversion.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Fallschirmjäger",
+      "lookup": "fallschirmjager",
+      "matched": "Fallschirmjäger Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/infantry/fallschirmjagers_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--fallschirmjager.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzergrenadier Officer Quarters",
+      "lookup": "panzergrenadier officer quarters",
+      "matched": "Panzergrenadier Officer Quarters",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/upgrades/officer_quarters_for_wehrmacht.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzergrenadier-officer-quarters.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Medical Bunker/Station",
+      "lookup": "medical bunker station",
+      "matched": "Medical Bunker",
+      "score": 280,
+      "sourceIcon": "export/icons/races/german/buildings/bunker_medical_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--medical-bunker-station.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Fallschirmpioneer",
+      "lookup": "fallschirmpioneer",
+      "matched": "Fallschirmpioneer Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/infantry/fallschirmpioneers_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--fallschirmpioneer.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "251",
+      "lookup": "251",
+      "matched": "sd.Kfz 251 Mortar Half-track",
+      "score": 468,
+      "sourceIcon": "export/icons/common/units/icons/vehicle_german_251_mortar_halftrack.webp",
+      "localPath": "assets/build-icons/wehrmacht--251.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Stummel",
+      "lookup": "stummel",
+      "matched": "Stummel Half-track",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/vehicles/halftrack_stummel_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--stummel.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Fallschirmjäger ×2",
+      "lookup": "fallschirmjager 2",
+      "matched": "Fallschirmjäger Squad Paradrop",
+      "score": 128,
+      "sourceIcon": "export/icons/races/german/infantry/fallschirmjagers_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--fallschirmjager-2.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzer IV ×2–3",
+      "lookup": "panzer iv 2 3",
+      "matched": "Command Panzer IV Medium Tank",
+      "score": 60,
+      "sourceIcon": "export/icons/races/german/vehicles/panzer_iv_cmd_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzer-iv-2-3.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Luftwaffe Kompanie",
+      "lookup": "luftwaffe kompanie",
+      "matched": "Luftwaffe Kompanie",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/buildings/mechanized_kompanie_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--luftwaffe-kompanie.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Jäger Squad",
+      "lookup": "jager squad",
+      "matched": "Jäger Squad",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/infantry/jaeger_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--jager-squad.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzerschreck upgrade",
+      "lookup": "panzerschreck upgrade",
+      "matched": "RPzB 54 Panzerschreck Package",
+      "score": 140,
+      "sourceIcon": "export/icons/common/upgrades/panzerschrek_2_sturmpioneer_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzerschreck-upgrade.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "8 Rad call-in",
+      "lookup": "8 rad call in",
+      "matched": "8 Rad",
+      "score": 268,
+      "sourceIcon": "export/icons/races/german/vehicles/armored_car_8_rad_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--8-rad-call-in.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panther unlock",
+      "lookup": "panther unlock",
+      "matched": "german upgrade battlegroups mechanized mechanized_left_panther_production_unlock_ger",
+      "score": 140,
+      "sourceIcon": "export/icons/races/german/abilities/panther_build.webp",
+      "localPath": "assets/build-icons/wehrmacht--panther-unlock.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panther",
+      "lookup": "panther",
+      "matched": "Panther Heavy Tank",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/vehicles/panther_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--panther.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzergrenadier",
+      "lookup": "panzergrenadier",
+      "matched": "Panzergrenadier Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/infantry/panzer_grenadier_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzergrenadier.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzergrenadier Officer upgrade",
+      "lookup": "panzergrenadier officer upgrade",
+      "matched": "Panzergrenadier Officer Quarters",
+      "score": 170,
+      "sourceIcon": "export/icons/races/german/upgrades/officer_quarters_for_wehrmacht.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzergrenadier-officer-upgrade.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Siege Camp",
+      "lookup": "siege camp",
+      "matched": "german upgrade battlegroups siegebreakers siegebreakers_siege_camp_ger",
+      "score": 510,
+      "sourceIcon": "export/icons/races/german/buildings/bunker_mortar_autobuild_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--siege-camp.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Brummbär",
+      "lookup": "brummbar",
+      "matched": "Sturmpanzer IV Brummbär",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/vehicles/brummbar_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--brummbar.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Officer upgrade",
+      "lookup": "officer upgrade",
+      "matched": "Artillery Officer",
+      "score": 140,
+      "sourceIcon": "export/icons/races/german/infantry/artillery_officer_wicd.webp",
+      "localPath": "assets/build-icons/wehrmacht--officer-upgrade.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "King Tiger",
+      "lookup": "king tiger",
+      "matched": "King Tiger Heavy Tank",
+      "score": 510,
+      "sourceIcon": "export/icons/races/german/vehicles/king_tiger_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--king-tiger.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Assault Gren upgrade(s)",
+      "lookup": "assault gren upgrade s",
+      "matched": "Assault Grenadiers",
+      "score": 70,
+      "sourceIcon": "export/icons/races/german/abilities/assault_package.webp",
+      "localPath": "assets/build-icons/wehrmacht--assault-gren-upgrade-s.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzer IV (Panzer Kompanie)",
+      "lookup": "panzer iv panzer kompanie",
+      "matched": "Panzer Kompanie",
+      "score": 310,
+      "sourceIcon": "export/icons/races/german/buildings/panzer_armory_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzer-iv-panzer-kompanie.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Defensive Line",
+      "lookup": "defensive line",
+      "matched": "Designate Defensive Line",
+      "score": 360,
+      "sourceIcon": "export/icons/races/german/abilities/ability_designated_defensive_line.webp",
+      "localPath": "assets/build-icons/wehrmacht--defensive-line.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Flak 36",
+      "lookup": "flak 36",
+      "matched": "Flak 36 Anti-tank Emplacement",
+      "score": 348,
+      "sourceIcon": "export/icons/races/german/team_weapons/tw_88mm_emplacement_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--flak-36.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Jäger",
+      "lookup": "jager",
+      "matched": "german upgrade infantry buff jager_slowing_fire_buff_ger",
+      "score": 480,
+      "sourceIcon": "export/icons/legacy/abilities/ability_aef_distribute_medical_supplies.webp",
+      "localPath": "assets/build-icons/wehrmacht--jager.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzerschreck",
+      "lookup": "panzerschreck",
+      "matched": "RPzB 54 Panzerschreck",
+      "score": 330,
+      "sourceIcon": "export/icons/common/weapons/weapon_panzerschreck.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzerschreck.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Wespe",
+      "lookup": "wespe",
+      "matched": "Wespe Self-propelled Artillery",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/vehicles/wespe_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--wespe.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panther production unlock (BG)",
+      "lookup": "panther production unlock bg",
+      "matched": "german upgrade battlegroups mechanized mechanized_left_panther_production_unlock_ger",
+      "score": 90,
+      "sourceIcon": "export/icons/races/german/abilities/panther_build.webp",
+      "localPath": "assets/build-icons/wehrmacht--panther-production-unlock-bg.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "King Tiger late",
+      "lookup": "king tiger late",
+      "matched": "King Tiger Heavy Tank",
+      "score": 60,
+      "sourceIcon": "export/icons/races/german/vehicles/king_tiger_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--king-tiger-late.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "221 Scout Car",
+      "lookup": "221 scout car",
+      "matched": "221 Scout Car",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/vehicles/armored_car_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--221-scout-car.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Optional Flak 30",
+      "lookup": "optional flak 30",
+      "matched": "Flak 30 Anti-aircraft Gun Team",
+      "score": 48,
+      "sourceIcon": "export/icons/races/german/team_weapons/aa_gun_20mm_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--optional-flak-30.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Wirbelwind",
+      "lookup": "wirbelwind",
+      "matched": "Wirbelwind Flakpanzer",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/vehicles/wirbelwind_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--wirbelwind.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Marder(s)",
+      "lookup": "marder s",
+      "matched": "german ebps vehicles marder_static_ger exts",
+      "score": 400,
+      "sourceIcon": "export/icons/common/units/icons/panzer_iv_sdkfz_161_1_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--marder-s.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzer Kompanie optional late",
+      "lookup": "panzer kompanie optional late",
+      "matched": "Panzer Kompanie",
+      "score": 280,
+      "sourceIcon": "export/icons/races/german/buildings/panzer_armory_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzer-kompanie-optional-late.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Pak 40 x1-2 as needed",
+      "lookup": "pak 40 x1 2 as needed",
+      "matched": "Pak 40 Anti-tank Gun Team",
+      "score": 48,
+      "sourceIcon": "export/icons/races/german/team_weapons/at_gun_75mm_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--pak-40-x1-2-as-needed.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "T3 Officer Quarters",
+      "lookup": "t3 officer quarters",
+      "matched": "german upgrade research officer_quarters battlegroup_luft_and_pg_kompanie_vet_ger",
+      "score": 60,
+      "sourceIcon": "export/icons/common/abilities/promote_captain_us.webp",
+      "localPath": "assets/build-icons/wehrmacht--t3-officer-quarters.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzer IV x2-3",
+      "lookup": "panzer iv x2 3",
+      "matched": "Command Panzer IV Medium Tank",
+      "score": 60,
+      "sourceIcon": "export/icons/races/german/vehicles/panzer_iv_cmd_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzer-iv-x2-3.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "8 Rad",
+      "lookup": "8 rad",
+      "matched": "8 Rad",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/vehicles/armored_car_8_rad_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--8-rad.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Stummel conversion usually",
+      "lookup": "stummel conversion usually",
+      "matched": "Stummel Conversion",
+      "score": 280,
+      "sourceIcon": "export/icons/races/german/vehicles/halftrack_stummel_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--stummel-conversion-usually.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "MP40 Assault Grenadier upgrade on a fresh Grenadier",
+      "lookup": "mp40 assault grenadier upgrade on a fresh grenadier",
+      "matched": "Reinforce",
+      "score": 90,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/wehrmacht--mp40-assault-grenadier-upgrade-on-a-fresh-grenadier.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Rapid Production",
+      "lookup": "rapid production",
+      "matched": "Rapid Production",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/abilities/rapid_production.webp",
+      "localPath": "assets/build-icons/wehrmacht--rapid-production.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "221 Scout Car (radio antenna favored)",
+      "lookup": "221 scout car radio antenna favored",
+      "matched": "Radio Antenna",
+      "score": 310,
+      "sourceIcon": "export/icons/legacy/commander/cmdr_soviet_radio_intercept.webp",
+      "localPath": "assets/build-icons/wehrmacht--221-scout-car-radio-antenna-favored.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzerschreck on Jaeger vs vehicles",
+      "lookup": "panzerschreck on jaeger vs vehicles",
+      "matched": "RPzB 54 Panzerschreck",
+      "score": 60,
+      "sourceIcon": "export/icons/races/german/upgrades/panzerschreck.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzerschreck-on-jaeger-vs-vehicles.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "T2 Officer Quarters",
+      "lookup": "t2 officer quarters",
+      "matched": "german upgrade research officer_quarters battlegroup_luft_and_pg_kompanie_vet_ger",
+      "score": 60,
+      "sourceIcon": "export/icons/common/abilities/promote_captain_us.webp",
+      "localPath": "assets/build-icons/wehrmacht--t2-officer-quarters.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Jaeger",
+      "lookup": "jaeger",
+      "matched": "Reinforce",
+      "score": 260,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/wehrmacht--jaeger.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "T1 Officer Quarters",
+      "lookup": "t1 officer quarters",
+      "matched": "german upgrade research officer_quarters battlegroup_luft_and_pg_kompanie_vet_ger",
+      "score": 60,
+      "sourceIcon": "export/icons/common/abilities/promote_captain_us.webp",
+      "localPath": "assets/build-icons/wehrmacht--t1-officer-quarters.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Luftwaffe Officer Quarters",
+      "lookup": "luftwaffe officer quarters",
+      "matched": "Luftwaffe Officer Quarters",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/upgrades/officer_quarters_for_wehrmacht.webp",
+      "localPath": "assets/build-icons/wehrmacht--luftwaffe-officer-quarters.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Flamethrower on one Grenadier while retaining Panzerfaust munitions",
+      "lookup": "flamethrower on one grenadier while retaining panzerfaust munitions",
+      "matched": "Flammenwerfer 35",
+      "score": 60,
+      "sourceIcon": "export/icons/common/weapons/weapon_flamethrower.webp",
+      "localPath": "assets/build-icons/wehrmacht--flamethrower-on-one-grenadier-while-retaining-panzerfaust-munitions.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Additional Siege Camp",
+      "lookup": "additional siege camp",
+      "matched": "german upgrade battlegroups siegebreakers siegebreakers_siege_camp_ger",
+      "score": 60,
+      "sourceIcon": "export/icons/races/german/buildings/bunker_mortar_autobuild_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--additional-siege-camp.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Early Sniper",
+      "lookup": "early sniper",
+      "matched": "Sniper",
+      "score": 250,
+      "sourceIcon": "export/icons/races/german/infantry/sniper_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--early-sniper.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Nebelwerfer",
+      "lookup": "nebelwerfer",
+      "matched": "Nebelwerfer 42 Rocket Launcher Team",
+      "score": 480,
+      "sourceIcon": "export/icons/races/german/team_weapons/nebelwerfer_150mm_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--nebelwerfer.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Pioneer Squad",
+      "lookup": "pioneer squad",
+      "matched": "Pioneer Squad",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/infantry/pioneer_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--pioneer-squad.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Grenadier Squad",
+      "lookup": "grenadier squad",
+      "matched": "Grenadier Squad",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/infantry/grenadier_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--grenadier-squad.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Pak 40 Anti-Tank Gun Team",
+      "lookup": "pak 40 anti tank gun team",
+      "matched": "Pak 40 Anti-tank Gun Team",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/team_weapons/at_gun_75mm_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--pak-40-anti-tank-gun-team.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzergrenadier Squad",
+      "lookup": "panzergrenadier squad",
+      "matched": "Panzergrenadier Squad",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/infantry/panzer_grenadier_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzergrenadier-squad.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Sturmpanzer IV Brummbaer",
+      "lookup": "sturmpanzer iv brummbaer",
+      "matched": "Sturmpanzer IV Brummbär",
+      "score": 60,
+      "sourceIcon": "export/icons/races/german/vehicles/brummbar_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--sturmpanzer-iv-brummbaer.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Jaeger Squad",
+      "lookup": "jaeger squad",
+      "matched": "Reinforce",
+      "score": 110,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/wehrmacht--jaeger-squad.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzer IV Medium Tank",
+      "lookup": "panzer iv medium tank",
+      "matched": "Panzer IV Medium Tank",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+      "localPath": "assets/build-icons/wehrmacht--panzer-iv-medium-tank.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Panzerpioneer",
+      "lookup": "panzerpioneer",
+      "matched": "Panzerpioneer Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/afrika_corps/infantry/panzerpioneer_ak.webp",
+      "localPath": "assets/build-icons/dak--panzerpioneer.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Kradschützen",
+      "lookup": "kradschutzen",
+      "matched": "Kradschützen",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/kradschutzen_motorcycle_ak.webp",
+      "localPath": "assets/build-icons/dak--kradschutzen.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Panzergrenadier",
+      "lookup": "panzergrenadier",
+      "matched": "Panzergrenadier Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/afrika_corps/infantry/panzergrenadier_ak.webp",
+      "localPath": "assets/build-icons/dak--panzergrenadier.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "250 Half-track",
+      "lookup": "250 half track",
+      "matched": "250 Half-Track",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/halftrack_250_ak.webp",
+      "localPath": "assets/build-icons/dak--250-half-track.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Light Support Kompanie",
+      "lookup": "light support kompanie",
+      "matched": "Light Support Kompanie",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/buildings/infanterie_support_ak.webp",
+      "localPath": "assets/build-icons/dak--light-support-kompanie.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Assault Grenadier",
+      "lookup": "assault grenadier",
+      "matched": "Assault Grenadier Squad",
+      "score": 360,
+      "sourceIcon": "export/icons/races/afrika_corps/infantry/assault_panzergrenadier_ak.webp",
+      "localPath": "assets/build-icons/dak--assault-grenadier.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Fire Support Elements",
+      "lookup": "fire support elements",
+      "matched": "Fire Support Elements",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/halftrack_7_flak_ak.webp",
+      "localPath": "assets/build-icons/dak--fire-support-elements.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Pak 38",
+      "lookup": "pak 38",
+      "matched": "Pak 38 Anti-tank Gun Team",
+      "score": 498,
+      "sourceIcon": "export/icons/races/afrika_corps/team_weapons/tw_pak_38_ak.webp",
+      "localPath": "assets/build-icons/dak--pak-38.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Mechanized Kompanie",
+      "lookup": "mechanized kompanie",
+      "matched": "Mechanized Kompanie",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/buildings/mechanized_kompanie_ak.webp",
+      "localPath": "assets/build-icons/dak--mechanized-kompanie.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "8 Rad",
+      "lookup": "8 rad",
+      "matched": "8 Rad",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/armored_car_8_rad_ak.webp",
+      "localPath": "assets/build-icons/dak--8-rad.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Support Armor Elements",
+      "lookup": "support armor elements",
+      "matched": "Support Armor Elements",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/stug_iii_d_ak.webp",
+      "localPath": "assets/build-icons/dak--support-armor-elements.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "StuG III D",
+      "lookup": "stug iii d",
+      "matched": "StuG III D Assault Gun",
+      "score": 540,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/stug_iii_d_ak.webp",
+      "localPath": "assets/build-icons/dak--stug-iii-d.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Panzerarmee Kommand",
+      "lookup": "panzerarmee kommand",
+      "matched": "Panzerarmee Kommand",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/buildings/panzer_kompanie_ak.webp",
+      "localPath": "assets/build-icons/dak--panzerarmee-kommand.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Panzer III",
+      "lookup": "panzer iii",
+      "matched": "Panzer III Medium Tank",
+      "score": 510,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/panzer_iii_ak.webp",
+      "localPath": "assets/build-icons/dak--panzer-iii.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Convert 250 to 250/3 Funkpanzerwagen",
+      "lookup": "convert 250 to 250 3 funkpanzerwagen",
+      "matched": "250/3 Funkpanzerwagen",
+      "score": 304,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/vampire_ht_ak_icon.webp",
+      "localPath": "assets/build-icons/dak--convert-250-to-250-3-funkpanzerwagen.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Flakvierling",
+      "lookup": "flakvierling",
+      "matched": "Flakvierling Half-track",
+      "score": 330,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/halftrack_7_flak_ak.webp",
+      "localPath": "assets/build-icons/dak--flakvierling.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Skirmisher Package on key PGrens",
+      "lookup": "skirmisher package on key pgrens",
+      "matched": "afrika_korps upgrade battlegroups elite_forces buffs elite_forces_buff_skirmisher_package_ak",
+      "score": 60,
+      "sourceIcon": "export/icons/legacy/abilities/ability_aef_distribute_medical_supplies.webp",
+      "localPath": "assets/build-icons/dak--skirmisher-package-on-key-pgrens.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Panzerjäger",
+      "lookup": "panzerjager",
+      "matched": "Panzerjäger I Tank Destroyer",
+      "score": 480,
+      "sourceIcon": "export/icons/common/units/icons/vehicle_soviet_su76m_assault_gun.webp",
+      "localPath": "assets/build-icons/dak--panzerjager.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Armored Reserves before Tiger call-in",
+      "lookup": "armored reserves before tiger call in",
+      "matched": "Armored Reserves",
+      "score": 280,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/tiger_ak.webp",
+      "localPath": "assets/build-icons/dak--armored-reserves-before-tiger-call-in.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Tiger Ace late",
+      "lookup": "tiger ace late",
+      "matched": "Tiger Tank",
+      "score": 60,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/tiger_ace_ak.webp",
+      "localPath": "assets/build-icons/dak--tiger-ace-late.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Bersaglieri",
+      "lookup": "bersaglieri",
+      "matched": "Bersaglieri Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/afrika_corps/infantry/bersaglieri_ak.webp",
+      "localPath": "assets/build-icons/dak--bersaglieri.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "MG34",
+      "lookup": "mg34",
+      "matched": "MG34 Team",
+      "score": 480,
+      "sourceIcon": "export/icons/races/afrika_corps/team_weapons/hmg_mg34_ak.webp",
+      "localPath": "assets/build-icons/dak--mg34.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Bersaglieri Bolster",
+      "lookup": "bersaglieri bolster",
+      "matched": "Bersaglieri Bolster",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/abilities/bersaglieri_bolster.webp",
+      "localPath": "assets/build-icons/dak--bersaglieri-bolster.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Carro Armato",
+      "lookup": "carro armato",
+      "matched": "Carro Armato M13/40 Light Tank",
+      "score": 360,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/m13_40_ak.webp",
+      "localPath": "assets/build-icons/dak--carro-armato.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Pact of Steel",
+      "lookup": "pact of steel",
+      "matched": "Pact of Steel",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/abilities/pact_of_steel.webp",
+      "localPath": "assets/build-icons/dak--pact-of-steel.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Carro",
+      "lookup": "carro",
+      "matched": "Carro Armato M13/40 Light Tank",
+      "score": 330,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/m13_40_ak.webp",
+      "localPath": "assets/build-icons/dak--carro.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Guastatori",
+      "lookup": "guastatori",
+      "matched": "Guastatori Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/afrika_corps/infantry/guastatori_ak.webp",
+      "localPath": "assets/build-icons/dak--guastatori.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "2.5t Medical Truck",
+      "lookup": "2 5t medical truck",
+      "matched": "Medical Truck",
+      "score": 280,
+      "sourceIcon": "export/icons/races/german/vehicles/halftrack_medical_german.webp",
+      "localPath": "assets/build-icons/dak--2-5t-medical-truck.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Krad",
+      "lookup": "krad",
+      "matched": "Kradschützen Motorcycle Team",
+      "score": 380,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/kradschutzen_motorcycle_ak.webp",
+      "localPath": "assets/build-icons/dak--krad.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "250",
+      "lookup": "250",
+      "matched": "250/9 Armored Half-track",
+      "score": 468,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/halftrack_250_20mm_ak.webp",
+      "localPath": "assets/build-icons/dak--250.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Light Support",
+      "lookup": "light support",
+      "matched": "Light Support Kompanie",
+      "score": 330,
+      "sourceIcon": "export/icons/races/afrika_corps/buildings/infanterie_support_ak.webp",
+      "localPath": "assets/build-icons/dak--light-support.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Combat Half-tracks",
+      "lookup": "combat half tracks",
+      "matched": "Combat Half-tracks",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/upgrades/combat_halftracks.webp",
+      "localPath": "assets/build-icons/dak--combat-half-tracks.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Guastatori/Assault Group concept",
+      "lookup": "guastatori assault group concept",
+      "matched": "Assault Package",
+      "score": 60,
+      "sourceIcon": "export/icons/common/upgrades/mp40_grenadier_ger.webp",
+      "localPath": "assets/build-icons/dak--guastatori-assault-group-concept.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Kriegsmariner",
+      "lookup": "kriegsmariner",
+      "matched": "afrika_korps upgrade battlegroups kriegsmarine kriegsmarine_kriegsmariner_squad_ak",
+      "score": 480,
+      "sourceIcon": "export/icons/races/afrika_corps/infantry/kriegsmarine_ak.webp",
+      "localPath": "assets/build-icons/dak--kriegsmariner.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Marder III",
+      "lookup": "marder iii",
+      "matched": "Marder III",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/marder_iii_ak.webp",
+      "localPath": "assets/build-icons/dak--marder-iii.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "254 Recon Tractor",
+      "lookup": "254 recon tractor",
+      "matched": "Recon Tractor",
+      "score": 378,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/armored_tractor_254_ak.webp",
+      "localPath": "assets/build-icons/dak--254-recon-tractor.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "StuG",
+      "lookup": "stug",
+      "matched": "StuG III G Assault Gun",
+      "score": 480,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/stug_iii_ak.webp",
+      "localPath": "assets/build-icons/dak--stug.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Marder",
+      "lookup": "marder",
+      "matched": "Marder III Tank Destroyer",
+      "score": 480,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/marder_iii_ak.webp",
+      "localPath": "assets/build-icons/dak--marder.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Recon Tractor",
+      "lookup": "recon tractor",
+      "matched": "Recon Tractor",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/armored_tractor_254_ak.webp",
+      "localPath": "assets/build-icons/dak--recon-tractor.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Pak",
+      "lookup": "pak",
+      "matched": "Pak 38 Anti-tank Gun Team",
+      "score": 480,
+      "sourceIcon": "export/icons/races/afrika_corps/team_weapons/tw_pak_38_ak.webp",
+      "localPath": "assets/build-icons/dak--pak.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Command Panzer IV",
+      "lookup": "command panzer iv",
+      "matched": "Command Panzer IV Medium Tank",
+      "score": 390,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/panzer_iv_command_stubby_ak.webp",
+      "localPath": "assets/build-icons/dak--command-panzer-iv.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Skirmisher Package",
+      "lookup": "skirmisher package",
+      "matched": "afrika_korps upgrade battlegroups elite_forces buffs elite_forces_buff_skirmisher_package_ak",
+      "score": 510,
+      "sourceIcon": "export/icons/legacy/abilities/ability_aef_distribute_medical_supplies.webp",
+      "localPath": "assets/build-icons/dak--skirmisher-package.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Semovente from Headquarters",
+      "lookup": "semovente from headquarters",
+      "matched": "Headquarters",
+      "score": 250,
+      "sourceIcon": "export/icons/races/afrika_corps/buildings/hq_ak.webp",
+      "localPath": "assets/build-icons/dak--semovente-from-headquarters.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Cannone da 105/28",
+      "lookup": "cannone da 105 28",
+      "matched": "Cannone da 105/28 Howitzer",
+      "score": 396,
+      "sourceIcon": "export/icons/races/afrika_corps/team_weapons/tw_howitzer_canonne_da_105_ak.webp",
+      "localPath": "assets/build-icons/dak--cannone-da-105-28.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Walking Stuka",
+      "lookup": "walking stuka",
+      "matched": "Walking Stuka Rocket Launcher",
+      "score": 360,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/halftrack_251_stuka_ak.webp",
+      "localPath": "assets/build-icons/dak--walking-stuka.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "heavy AT",
+      "lookup": "heavy at",
+      "matched": "Reinforce",
+      "score": 110,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/dak--heavy-at.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "250 Half-track queued alongside opener",
+      "lookup": "250 half track queued alongside opener",
+      "matched": "250 Half-Track",
+      "score": 298,
+      "sourceIcon": "export/icons/races/afrika_corps/vehicles/halftrack_250_ak.webp",
+      "localPath": "assets/build-icons/dak--250-half-track-queued-alongside-opener.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Panzerjaeger",
+      "lookup": "panzerjaeger",
+      "matched": "Reinforce",
+      "score": 260,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/dak--panzerjaeger.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Assault Grenadier OR Panzerjaeger first",
+      "lookup": "assault grenadier or panzerjaeger first",
+      "matched": "Assault Grenadier Squad",
+      "score": 60,
+      "sourceIcon": "export/icons/races/afrika_corps/infantry/assault_panzergrenadier_ak.webp",
+      "localPath": "assets/build-icons/dak--assault-grenadier-or-panzerjaeger-first.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "Combat Half-tracks upgrade",
+      "lookup": "combat half tracks upgrade",
+      "matched": "Combat Half-tracks",
+      "score": 420,
+      "sourceIcon": "export/icons/races/afrika_corps/upgrades/combat_halftracks.webp",
+      "localPath": "assets/build-icons/dak--combat-half-tracks-upgrade.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "259 autocannon conversion",
+      "lookup": "259 autocannon conversion",
+      "matched": "KwK 38 Autocannon Conversion",
+      "score": 60,
+      "sourceIcon": "export/icons/races/afrika_corps/abilities/250_autocannon_ak.webp",
+      "localPath": "assets/build-icons/dak--259-autocannon-conversion.webp"
+    },
+    {
+      "faction": "DAK",
+      "step": "T2",
+      "lookup": "t2",
+      "matched": "Locked Armory Upgrades II",
+      "score": 260,
+      "sourceIcon": "export/icons/races/afrika_corps/upgrades/armory_level_ii.webp",
+      "localPath": "assets/build-icons/dak--t2.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Scout",
+      "lookup": "scout",
+      "matched": "Scout Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/infantry/scout_us.webp",
+      "localPath": "assets/build-icons/usf--scout.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Barracks",
+      "lookup": "barracks",
+      "matched": "Barracks",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/buildings/barracks_us.webp",
+      "localPath": "assets/build-icons/usf--barracks.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Rifleman",
+      "lookup": "rifleman",
+      "matched": "american ebps infantry rifleman_us exts",
+      "score": 480,
+      "sourceIcon": "export/icons/common/units/icons/13_rifleman.webp",
+      "localPath": "assets/build-icons/usf--rifleman.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Grenade Package",
+      "lookup": "grenade package",
+      "matched": "Grenade Package",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/abilities/mk2_grenade.webp",
+      "localPath": "assets/build-icons/usf--grenade-package.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Infantry Support Center",
+      "lookup": "infantry support center",
+      "matched": "Infantry Support Center",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/buildings/infantry_support_center_us.webp",
+      "localPath": "assets/build-icons/usf--infantry-support-center.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Captain",
+      "lookup": "captain",
+      "matched": "Captain Retinue",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/infantry/captain_us.webp",
+      "localPath": "assets/build-icons/usf--captain.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Convert best Rifle to Ranger",
+      "lookup": "convert best rifle to ranger",
+      "matched": "Convert to Ranger Squad",
+      "score": 100,
+      "sourceIcon": "export/icons/races/american/abilities/convert_rifleman_to_ranger.webp",
+      "localPath": "assets/build-icons/usf--convert-best-rifle-to-ranger.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Motor Pool",
+      "lookup": "motor pool",
+      "matched": "Motor Pool",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/buildings/motor_pool_us.webp",
+      "localPath": "assets/build-icons/usf--motor-pool.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M8 Greyhound",
+      "lookup": "m8 greyhound",
+      "matched": "M8 Greyhound Armored Car",
+      "score": 360,
+      "sourceIcon": "export/icons/races/american/vehicles/greyhound_us.webp",
+      "localPath": "assets/build-icons/usf--m8-greyhound.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Engineer",
+      "lookup": "engineer",
+      "matched": "Assault Engineer Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/infantry/assault_engineer_us.webp",
+      "localPath": "assets/build-icons/usf--engineer.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Tank Depot",
+      "lookup": "tank depot",
+      "matched": "Tank Depot",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/buildings/tank_depot_us.webp",
+      "localPath": "assets/build-icons/usf--tank-depot.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Sherman",
+      "lookup": "sherman",
+      "matched": "M4A1(76) Sherman Medium Tank",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/vehicles/sherman_76mm_us.webp",
+      "localPath": "assets/build-icons/usf--sherman.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Convert 1 Rifle → Ranger",
+      "lookup": "convert 1 rifle ranger",
+      "matched": "Convert to Ranger Squad",
+      "score": 88,
+      "sourceIcon": "export/icons/races/american/abilities/convert_rifleman_to_ranger.webp",
+      "localPath": "assets/build-icons/usf--convert-1-rifle-ranger.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Ranger",
+      "lookup": "ranger",
+      "matched": "Ranger Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/infantry/ranger_us.webp",
+      "localPath": "assets/build-icons/usf--ranger.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "105mm Howitzer",
+      "lookup": "105mm howitzer",
+      "matched": "M2A1 105mm Howitzer Emplacement",
+      "score": 360,
+      "sourceIcon": "export/icons/races/american/abilities/105mm_howitzer_passive.webp",
+      "localPath": "assets/build-icons/usf--105mm-howitzer.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "155mm Rapid Artillery",
+      "lookup": "155mm rapid artillery",
+      "matched": "155mm Rapid Artillery Barrage",
+      "score": 390,
+      "sourceIcon": "export/icons/races/american/abilities/155mm_off-map.webp",
+      "localPath": "assets/build-icons/usf--155mm-rapid-artillery.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Paratrooper Squad",
+      "lookup": "paratrooper squad",
+      "matched": "Paratrooper Squad",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/infantry/paratrooper_us.webp",
+      "localPath": "assets/build-icons/usf--paratrooper-squad.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Mechanized Support Center",
+      "lookup": "mechanized support center",
+      "matched": "Mechanized Support Center",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/buildings/mechanized_support_center_us.webp",
+      "localPath": "assets/build-icons/usf--mechanized-support-center.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "AT Gun Paradrop or M1 AT Gun",
+      "lookup": "at gun paradrop or m1 at gun",
+      "matched": "M1 Anti-tank Gun Team",
+      "score": 120,
+      "sourceIcon": "export/icons/races/american/team_weapons/at_gun57mm_us.webp",
+      "localPath": "assets/build-icons/usf--at-gun-paradrop-or-m1-at-gun.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M8",
+      "lookup": "m8",
+      "matched": "M83 Cluster Bomb Strike",
+      "score": 370,
+      "sourceIcon": "export/icons/common/abilities/ability_artillery_barrage.webp",
+      "localPath": "assets/build-icons/usf--m8.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M1 AT",
+      "lookup": "m1 at",
+      "matched": "M1 Anti-tank Gun Team",
+      "score": 140,
+      "sourceIcon": "export/icons/races/american/team_weapons/at_gun57mm_us.webp",
+      "localPath": "assets/build-icons/usf--m1-at.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "HMG Paradrop",
+      "lookup": "hmg paradrop",
+      "matched": "Reinforce",
+      "score": 140,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/usf--hmg-paradrop.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Paratrooper",
+      "lookup": "paratrooper",
+      "matched": "Paratrooper Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/infantry/paratrooper_us.webp",
+      "localPath": "assets/build-icons/usf--paratrooper.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Engineer → Assault Engineer",
+      "lookup": "engineer assault engineer",
+      "matched": "Reinforce",
+      "score": 170,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/usf--engineer-assault-engineer.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M1 AT Gun",
+      "lookup": "m1 at gun",
+      "matched": "M1 Anti-tank Gun Team",
+      "score": 140,
+      "sourceIcon": "export/icons/races/american/team_weapons/at_gun57mm_us.webp",
+      "localPath": "assets/build-icons/usf--m1-at-gun.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "War Machine",
+      "lookup": "war machine",
+      "matched": "War Machine",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/abilities/war_machine.webp",
+      "localPath": "assets/build-icons/usf--war-machine.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Easy Eight",
+      "lookup": "easy eight",
+      "matched": "M4A3E8 Sherman Easy Eight",
+      "score": 360,
+      "sourceIcon": "export/icons/races/american/vehicles/sherman_easy_8_us.webp",
+      "localPath": "assets/build-icons/usf--easy-eight.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "AT",
+      "lookup": "at",
+      "matched": "american ebps weapons ballistic_weapon infantry_anti_tank_weapon w_panzerbuchse39_at_rifle_tungsten_marksmen_team_partisan exts",
+      "score": 480,
+      "sourceIcon": "export/icons/common/weapons/weapon_ptrs.webp",
+      "localPath": "assets/build-icons/usf--at.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Motor Pool safety",
+      "lookup": "motor pool safety",
+      "matched": "Motor Pool",
+      "score": 280,
+      "sourceIcon": "export/icons/races/american/buildings/motor_pool_us.webp",
+      "localPath": "assets/build-icons/usf--motor-pool-safety.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M8 Scott",
+      "lookup": "m8 scott",
+      "matched": "M8 Scott SPG",
+      "score": 360,
+      "sourceIcon": "export/icons/races/american/vehicles/scott_us.webp",
+      "localPath": "assets/build-icons/usf--m8-scott.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Barracks core",
+      "lookup": "barracks core",
+      "matched": "Barracks",
+      "score": 250,
+      "sourceIcon": "export/icons/races/american/buildings/barracks_us.webp",
+      "localPath": "assets/build-icons/usf--barracks-core.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Medical/MSC",
+      "lookup": "medical msc",
+      "matched": "Medic",
+      "score": 230,
+      "sourceIcon": "export/icons/races/american/infantry/medic_partisan.webp",
+      "localPath": "assets/build-icons/usf--medical-msc.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "New Blood",
+      "lookup": "new blood",
+      "matched": "american upgrade battlegroups french french_new_blood_us",
+      "score": 510,
+      "sourceIcon": "export/icons/races/american/abilities/new_blood.webp",
+      "localPath": "assets/build-icons/usf--new-blood.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Char B1 production unlock",
+      "lookup": "char b1 production unlock",
+      "matched": "american sbps vehicles char_b1_us",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/vehicles/char_b1_us.webp",
+      "localPath": "assets/build-icons/usf--char-b1-production-unlock.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Char B1",
+      "lookup": "char b1",
+      "matched": "american sbps vehicles char_b1_us",
+      "score": 510,
+      "sourceIcon": "export/icons/races/american/vehicles/char_b1_us.webp",
+      "localPath": "assets/build-icons/usf--char-b1.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "French",
+      "lookup": "french",
+      "matched": "american sbps infantry french_infantry_us",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/infantry/french_infantry_us.webp",
+      "localPath": "assets/build-icons/usf--french.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Rifle",
+      "lookup": "rifle",
+      "matched": "Panzerbüchse 39 Anti-Tank Rifle",
+      "score": 480,
+      "sourceIcon": "export/icons/common/weapons/weapon_ptrs.webp",
+      "localPath": "assets/build-icons/usf--rifle.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Weapons Support Center",
+      "lookup": "weapons support center",
+      "matched": "Weapon Support Center",
+      "score": 70,
+      "sourceIcon": "export/icons/races/american/buildings/weapon_support_center_us.webp",
+      "localPath": "assets/build-icons/usf--weapons-support-center.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M1919 HMG or Bazooka Squad",
+      "lookup": "m1919 hmg or bazooka squad",
+      "matched": "Bazooka Squad",
+      "score": 250,
+      "sourceIcon": "export/icons/races/american/infantry/bazooka_team_us.webp",
+      "localPath": "assets/build-icons/usf--m1919-hmg-or-bazooka-squad.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "WSC",
+      "lookup": "wsc",
+      "matched": "american upgrade vehicle mass_production_wsc_us",
+      "score": 480,
+      "sourceIcon": "export/icons/common/upgrades/hmg_us.webp",
+      "localPath": "assets/build-icons/usf--wsc.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "HMG",
+      "lookup": "hmg",
+      "matched": "HMG Fighting Position",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/buildings/base_defense_us.webp",
+      "localPath": "assets/build-icons/usf--hmg.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M3",
+      "lookup": "m3",
+      "matched": "M3 75 mm Gun Motor Carriage",
+      "score": 330,
+      "sourceIcon": "export/icons/races/american/vehicles/halftrack_75mm_us.webp",
+      "localPath": "assets/build-icons/usf--m3.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Pershing",
+      "lookup": "pershing",
+      "matched": "M26 Pershing Heavy Tank",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/vehicles/pershing_us.webp",
+      "localPath": "assets/build-icons/usf--pershing.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Construct Tunnel Network",
+      "lookup": "construct tunnel network",
+      "matched": "american upgrade battlegroups partisans partisans_tunnel_network_us",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/abilities/partisan_tunnel_main.webp",
+      "localPath": "assets/build-icons/usf--construct-tunnel-network.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Resistance Fighter Infiltration",
+      "lookup": "resistance fighter infiltration",
+      "matched": "Resistance Fighter Squad",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/infantry/resistance_fighters_partisan.webp",
+      "localPath": "assets/build-icons/usf--resistance-fighter-infiltration.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Tunnel network",
+      "lookup": "tunnel network",
+      "matched": "american upgrade battlegroups partisans partisans_tunnel_network_us",
+      "score": 510,
+      "sourceIcon": "export/icons/races/american/abilities/partisan_tunnel_main.webp",
+      "localPath": "assets/build-icons/usf--tunnel-network.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Resistance Fighter",
+      "lookup": "resistance fighter",
+      "matched": "Resistance Fighter Squad",
+      "score": 510,
+      "sourceIcon": "export/icons/races/american/infantry/resistance_fighters_partisan.webp",
+      "localPath": "assets/build-icons/usf--resistance-fighter.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Smuggling Routes",
+      "lookup": "smuggling routes",
+      "matched": "american upgrade battlegroups partisans partisans_smuggling_routes_us",
+      "score": 510,
+      "sourceIcon": "export/icons/races/american/abilities/smuggling_routes.webp",
+      "localPath": "assets/build-icons/usf--smuggling-routes.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Tunnel",
+      "lookup": "tunnel",
+      "matched": "american sbps emplacements partisan_tunnel_constructed_us",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/buildings/tunnel_hideout_us.webp",
+      "localPath": "assets/build-icons/usf--tunnel.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "False Orders/Spy Network",
+      "lookup": "false orders spy network",
+      "matched": "american upgrade battlegroups partisans partisans_false_orders_us",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/abilities/false_orders.webp",
+      "localPath": "assets/build-icons/usf--false-orders-spy-network.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M29 Weasel",
+      "lookup": "m29 weasel",
+      "matched": "M29 Weasel Recon Vehicle",
+      "score": 360,
+      "sourceIcon": "export/icons/races/american/vehicles/m_29_weassel.webp",
+      "localPath": "assets/build-icons/usf--m29-weasel.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "SSF Commandos",
+      "lookup": "ssf commandos",
+      "matched": "american ebps infantry ssf_commandos_us exts",
+      "score": 510,
+      "sourceIcon": "export/icons/common/units/icons/22_ssf_commando.webp",
+      "localPath": "assets/build-icons/usf--ssf-commandos.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Whizbang production unlock",
+      "lookup": "whizbang production unlock",
+      "matched": "american upgrade battlegroups special_operations special_operations_sherman_whizbang_production_unlock_us",
+      "score": 540,
+      "sourceIcon": "export/icons/races/american/abilities/sherman_whizbang_us_quickbuild.webp",
+      "localPath": "assets/build-icons/usf--whizbang-production-unlock.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Whizbang",
+      "lookup": "whizbang",
+      "matched": "M4 Sherman \"Whizbang\"",
+      "score": 480,
+      "sourceIcon": "export/icons/common/units/icons/vehicle_aef_calliope.webp",
+      "localPath": "assets/build-icons/usf--whizbang.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Weasel + Pack Howitzer call-in",
+      "lookup": "weasel pack howitzer call in",
+      "matched": "M29 Weasel with M1 Pack Howitzer",
+      "score": 90,
+      "sourceIcon": "export/icons/races/american/abilities/m29_weasel_with_pack_howitzer.webp",
+      "localPath": "assets/build-icons/usf--weasel-pack-howitzer-call-in.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "SSF",
+      "lookup": "ssf",
+      "matched": "SSF Commando Squad",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/infantry/ssf_commandos_us.webp",
+      "localPath": "assets/build-icons/usf--ssf.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "HMG Paradrop or third Rifle",
+      "lookup": "hmg paradrop or third rifle",
+      "matched": "Reinforce",
+      "score": 60,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/usf--hmg-paradrop-or-third-rifle.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "AT Gun Paradrop",
+      "lookup": "at gun paradrop",
+      "matched": "Reinforce",
+      "score": 140,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/usf--at-gun-paradrop.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Para",
+      "lookup": "para",
+      "matched": "Paratrooper Squad",
+      "score": 380,
+      "sourceIcon": "export/icons/races/american/infantry/paratrooper_us.webp",
+      "localPath": "assets/build-icons/usf--para.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "1 specialist",
+      "lookup": "1 specialist",
+      "matched": "1⁄4-ton 4x4 Medical Truck",
+      "score": 128,
+      "sourceIcon": "export/icons/races/common/specialists/jeep_specialist.webp",
+      "localPath": "assets/build-icons/usf--1-specialist.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M1919 HMG",
+      "lookup": "m1919 hmg",
+      "matched": "M1919 Machine Gun Team",
+      "score": 140,
+      "sourceIcon": "export/icons/races/american/team_weapons/hmg_30cal_paradrop_us.webp",
+      "localPath": "assets/build-icons/usf--m1919-hmg.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M3 Assault Carrier",
+      "lookup": "m3 assault carrier",
+      "matched": "M3 Assault Carrier",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/vehicles/halftrack_assault_us.webp",
+      "localPath": "assets/build-icons/usf--m3-assault-carrier.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Hellcat",
+      "lookup": "hellcat",
+      "matched": "M18 Hellcat Tank Destroyer",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/vehicles/hellcat_us.webp",
+      "localPath": "assets/build-icons/usf--hellcat.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M2A1 105mm Howitzer BG unlock",
+      "lookup": "m2a1 105mm howitzer bg unlock",
+      "matched": "M2A1 Howitzer Team",
+      "score": 90,
+      "sourceIcon": "export/icons/races/american/team_weapons/howitzer_105mm_us.webp",
+      "localPath": "assets/build-icons/usf--m2a1-105mm-howitzer-bg-unlock.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "105mm Howitzer only",
+      "lookup": "105mm howitzer only",
+      "matched": "M2A1 Howitzer Team",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/team_weapons/howitzer_105mm_us.webp",
+      "localPath": "assets/build-icons/usf--105mm-howitzer-only.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Carpet Bombing late",
+      "lookup": "carpet bombing late",
+      "matched": "Carpet Bombing Run",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/abilities/carpet_bombing_run.webp",
+      "localPath": "assets/build-icons/usf--carpet-bombing-late.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Optional third French Section on a wide infantry lane",
+      "lookup": "optional third french section on a wide infantry lane",
+      "matched": "Reinforce",
+      "score": 60,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/usf--optional-third-french-section-on-a-wide-infantry-lane.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Bolstered Team Weapons",
+      "lookup": "bolstered team weapons",
+      "matched": "Bolstered Team Weapons",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/abilities/bolstered_team_weapons.webp",
+      "localPath": "assets/build-icons/usf--bolstered-team-weapons.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Paradrop HMG",
+      "lookup": "paradrop hmg",
+      "matched": "Heavy Machine Gun Paradrop",
+      "score": 290,
+      "sourceIcon": "export/icons/races/american/team_weapons/hmg_30cal_paradrop_us.webp",
+      "localPath": "assets/build-icons/usf--paradrop-hmg.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Support Center: ISC in 1v1",
+      "lookup": "support center isc in 1v1",
+      "matched": "Air Support Center",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/buildings/air_support_center_us.webp",
+      "localPath": "assets/build-icons/usf--support-center-isc-in-1v1.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Weapon Support Center",
+      "lookup": "weapon support center",
+      "matched": "Weapon Support Center",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/american/buildings/weapon_support_center_us.webp",
+      "localPath": "assets/build-icons/usf--weapon-support-center.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Fast M3 Half-track",
+      "lookup": "fast m3 half track",
+      "matched": "M3 Armored Medical Half-track",
+      "score": 90,
+      "sourceIcon": "export/icons/races/american/vehicles/halftrack_medical_us.webp",
+      "localPath": "assets/build-icons/usf--fast-m3-half-track.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Paradrop AT Gun as needed",
+      "lookup": "paradrop at gun as needed",
+      "matched": "Reinforce",
+      "score": 60,
+      "sourceIcon": "export/icons/common/orders/reinforce.webp",
+      "localPath": "assets/build-icons/usf--paradrop-at-gun-as-needed.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Greyhound",
+      "lookup": "greyhound",
+      "matched": "M8 Greyhound Armored Car",
+      "score": 480,
+      "sourceIcon": "export/icons/races/american/vehicles/greyhound_us.webp",
+      "localPath": "assets/build-icons/usf--greyhound.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "AT Gun",
+      "lookup": "at gun",
+      "matched": "american upgrade infantry buff at_gun_57mm_fast_move_ak",
+      "score": 480,
+      "sourceIcon": "export/icons/legacy/abilities/ability_aef_distribute_medical_supplies.webp",
+      "localPath": "assets/build-icons/usf--at-gun.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "New Blood in the creator patch",
+      "lookup": "new blood in the creator patch",
+      "matched": "american upgrade battlegroups french french_new_blood_us",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/abilities/new_blood.webp",
+      "localPath": "assets/build-icons/usf--new-blood-in-the-creator-patch.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Char B1 as frontline + Hellcats as anti-tank late",
+      "lookup": "char b1 as frontline hellcats as anti tank late",
+      "matched": "american sbps vehicles char_b1_us",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/vehicles/char_b1_us.webp",
+      "localPath": "assets/build-icons/usf--char-b1-as-frontline-hellcats-as-anti-tank-late.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "Fast Mechanized Support Center",
+      "lookup": "fast mechanized support center",
+      "matched": "Mechanized Support Center",
+      "score": 310,
+      "sourceIcon": "export/icons/races/american/buildings/mechanized_support_center_us.webp",
+      "localPath": "assets/build-icons/usf--fast-mechanized-support-center.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "M3 Half-track",
+      "lookup": "m3 half track",
+      "matched": "M3 Armored Medical Half-track",
+      "score": 170,
+      "sourceIcon": "export/icons/races/american/vehicles/halftrack_medical_us.webp",
+      "localPath": "assets/build-icons/usf--m3-half-track.webp"
+    },
+    {
+      "faction": "USF",
+      "step": "New Blood in source patch",
+      "lookup": "new blood in source patch",
+      "matched": "american upgrade battlegroups french french_new_blood_us",
+      "score": 60,
+      "sourceIcon": "export/icons/races/american/abilities/new_blood.webp",
+      "localPath": "assets/build-icons/usf--new-blood-in-source-patch.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Royal Engineer Section",
+      "lookup": "royal engineer section",
+      "matched": "Royal Engineer Section",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/infantry/sapper_uk.webp",
+      "localPath": "assets/build-icons/british--royal-engineer-section.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Vickers Machine Gun Team",
+      "lookup": "vickers machine gun team",
+      "matched": "Vickers Machine Gun Team",
+      "score": 1000,
+      "sourceIcon": "export/icons/common/units/icons/unit_british_vickers_hmg.webp",
+      "localPath": "assets/build-icons/british--vickers-machine-gun-team.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Section Command Post",
+      "lookup": "section command post",
+      "matched": "Section Command Post",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/buildings/barracks_africa_uk.webp",
+      "localPath": "assets/build-icons/british--section-command-post.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Dingo Light Scout Car",
+      "lookup": "dingo light scout car",
+      "matched": "Dingo Light Scout Car",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/vehicles/dingo_uk.webp",
+      "localPath": "assets/build-icons/british--dingo-light-scout-car.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Infantry Section",
+      "lookup": "infantry section",
+      "matched": "Infantry Section",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/infantry/tommy_uk.webp",
+      "localPath": "assets/build-icons/british--infantry-section.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Platoon Command Post",
+      "lookup": "platoon command post",
+      "matched": "Platoon Command Post",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/buildings/motor_platoon_africa_uk.webp",
+      "localPath": "assets/build-icons/british--platoon-command-post.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Commando Section",
+      "lookup": "commando section",
+      "matched": "Commando Section",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/infantry/commando_uk.webp",
+      "localPath": "assets/build-icons/british--commando-section.webp"
+    },
+    {
+      "faction": "British",
+      "step": "6-pounder",
+      "lookup": "6 pounder",
+      "matched": "6-pounder Anti-tank Gun Team",
+      "score": 348,
+      "sourceIcon": "export/icons/races/british/team_weapons/at_gun_6pdr_uk.webp",
+      "localPath": "assets/build-icons/british--6-pounder.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Company Command Post",
+      "lookup": "company command post",
+      "matched": "Company Command Post",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/buildings/armoured_platoon_africa_uk.webp",
+      "localPath": "assets/build-icons/british--company-command-post.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Unlock M3 Grant Medium Tanks",
+      "lookup": "unlock m3 grant medium tanks",
+      "matched": "Unlock M3 Grant Medium Tanks",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/vehicles/grant_africa_uk.webp",
+      "localPath": "assets/build-icons/british--unlock-m3-grant-medium-tanks.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Grant",
+      "lookup": "grant",
+      "matched": "M3 Grant Medium Tank",
+      "score": 480,
+      "sourceIcon": "export/icons/common/units/icons/vehicle_aef_m4a3_sherman.webp",
+      "localPath": "assets/build-icons/british--grant.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Vickers",
+      "lookup": "vickers",
+      "matched": "Vickers Machine Gun Team",
+      "score": 480,
+      "sourceIcon": "export/icons/races/british/team_weapons/hmg_vickers_uk.webp",
+      "localPath": "assets/build-icons/british--vickers.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Dingo",
+      "lookup": "dingo",
+      "matched": "Dingo Light Scout Car",
+      "score": 480,
+      "sourceIcon": "export/icons/races/british/vehicles/dingo_uk.webp",
+      "localPath": "assets/build-icons/british--dingo.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Infantry Section ×2",
+      "lookup": "infantry section 2",
+      "matched": "Infantry Section",
+      "score": 280,
+      "sourceIcon": "export/icons/races/british/infantry/tommy_uk.webp",
+      "localPath": "assets/build-icons/british--infantry-section-2.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Grant unlock",
+      "lookup": "grant unlock",
+      "matched": "Unlock M3 Grant Medium Tanks",
+      "score": 290,
+      "sourceIcon": "export/icons/races/british/vehicles/grant_africa_uk.webp",
+      "localPath": "assets/build-icons/british--grant-unlock.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Humber",
+      "lookup": "humber",
+      "matched": "Humber Armored Car",
+      "score": 480,
+      "sourceIcon": "export/icons/races/british/vehicles/humber_uk.webp",
+      "localPath": "assets/build-icons/british--humber.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Infantry Section ×3",
+      "lookup": "infantry section 3",
+      "matched": "Infantry Section",
+      "score": 280,
+      "sourceIcon": "export/icons/races/british/infantry/tommy_uk.webp",
+      "localPath": "assets/build-icons/british--infantry-section-3.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Grenade Package",
+      "lookup": "grenade package",
+      "matched": "Grenade Package",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/abilities/rifle_grenade.webp",
+      "localPath": "assets/build-icons/british--grenade-package.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Field Infirmary",
+      "lookup": "field infirmary",
+      "matched": "Field Infirmary",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/buildings/triage_center_africa_uk.webp",
+      "localPath": "assets/build-icons/british--field-infirmary.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Australian Light Infantry",
+      "lookup": "australian light infantry",
+      "matched": "Australian Light Infantry Section",
+      "score": 510,
+      "sourceIcon": "export/icons/races/british/infantry/australian_light_infantry_africa_uk.webp",
+      "localPath": "assets/build-icons/british--australian-light-infantry.webp"
+    },
+    {
+      "faction": "British",
+      "step": "2-pounder",
+      "lookup": "2 pounder",
+      "matched": "2-pounder Light Anti-tank Gun Team",
+      "score": 348,
+      "sourceIcon": "export/icons/races/british/team_weapons/at_gun_2pdr_uk.webp",
+      "localPath": "assets/build-icons/british--2-pounder.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Canadian Shock Section",
+      "lookup": "canadian shock section",
+      "matched": "Canadian Shock Section",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/infantry/heavy_infantry_canadian_uk.webp",
+      "localPath": "assets/build-icons/british--canadian-shock-section.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Crusader AA BG production unlock",
+      "lookup": "crusader aa bg production unlock",
+      "matched": "Crusader AA Medium Tank",
+      "score": 60,
+      "sourceIcon": "export/icons/common/units/icons/vehicle_aef_halftrack_m15a1_aa.webp",
+      "localPath": "assets/build-icons/british--crusader-aa-bg-production-unlock.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Crusader AA",
+      "lookup": "crusader aa",
+      "matched": "Crusader AA Medium Tank",
+      "score": 510,
+      "sourceIcon": "export/icons/common/units/icons/vehicle_aef_halftrack_m15a1_aa.webp",
+      "localPath": "assets/build-icons/british--crusader-aa.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Churchill IV BG production unlock",
+      "lookup": "churchill iv bg production unlock",
+      "matched": "british upgrade battlegroups british_armored british_armored_churchill_production_unlock_uk",
+      "score": 90,
+      "sourceIcon": "export/icons/races/british/abilities/churchill_afrika_uk_quickbuild.webp",
+      "localPath": "assets/build-icons/british--churchill-iv-bg-production-unlock.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Churchill IV",
+      "lookup": "churchill iv",
+      "matched": "Churchill IV Heavy Tank",
+      "score": 360,
+      "sourceIcon": "export/icons/races/british/vehicles/churchill_uk.webp",
+      "localPath": "assets/build-icons/british--churchill-iv.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Gurkha Rifles",
+      "lookup": "gurkha rifles",
+      "matched": "Gurkha Rifles Section",
+      "score": 360,
+      "sourceIcon": "export/icons/races/british/infantry/gurkhas_uk.webp",
+      "localPath": "assets/build-icons/british--gurkha-rifles.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Polish Lancer Section",
+      "lookup": "polish lancer section",
+      "matched": "british upgrade battlegroups polish_cavalry buffs buff_sight_in_polish_lancer_uk",
+      "score": 60,
+      "sourceIcon": "export/icons/legacy/abilities/ability_aef_distribute_medical_supplies.webp",
+      "localPath": "assets/build-icons/british--polish-lancer-section.webp"
+    },
+    {
+      "faction": "British",
+      "step": "SSB Commando Section",
+      "lookup": "ssb commando section",
+      "matched": "Commando Section",
+      "score": 280,
+      "sourceIcon": "export/icons/races/british/infantry/commando_uk.webp",
+      "localPath": "assets/build-icons/british--ssb-commando-section.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Pack Howitzer",
+      "lookup": "pack howitzer",
+      "matched": "M1 Pack Howitzer Team",
+      "score": 510,
+      "sourceIcon": "export/icons/races/british/team_weapons/pack_howitzer_75mm_uk.webp",
+      "localPath": "assets/build-icons/british--pack-howitzer.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Mortar",
+      "lookup": "mortar",
+      "matched": "ML 3-inch Mortar Team",
+      "score": 480,
+      "sourceIcon": "export/icons/races/british/team_weapons/mortar_81mm_uk.webp",
+      "localPath": "assets/build-icons/british--mortar.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Bishop unlock",
+      "lookup": "bishop unlock",
+      "matched": "Unlock Bishop Self-propelled Artillery",
+      "score": 140,
+      "sourceIcon": "export/icons/races/british/vehicles/bishop_africa_uk.webp",
+      "localPath": "assets/build-icons/british--bishop-unlock.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Bishop",
+      "lookup": "bishop",
+      "matched": "Bishop Self-propelled Artillery",
+      "score": 480,
+      "sourceIcon": "export/icons/races/british/vehicles/bishop_uk.webp",
+      "localPath": "assets/build-icons/british--bishop.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Defensive Tactics only on a real lane",
+      "lookup": "defensive tactics only on a real lane",
+      "matched": "Defensive Tactics",
+      "score": 280,
+      "sourceIcon": "export/icons/races/british/abilities/defensive_tactics.webp",
+      "localPath": "assets/build-icons/british--defensive-tactics-only-on-a-real-lane.webp"
+    },
+    {
+      "faction": "British",
+      "step": "4.2-inch Heavy Mortar",
+      "lookup": "4 2 inch heavy mortar",
+      "matched": "Towed ML 4.2-inch Heavy Mortar",
+      "score": 546,
+      "sourceIcon": "export/icons/races/british/team_weapons/mortar_heavy_4_2_africa_uk.webp",
+      "localPath": "assets/build-icons/british--4-2-inch-heavy-mortar.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Dead Drop in a safe forward area",
+      "lookup": "dead drop in a safe forward area",
+      "matched": "british upgrade battlegroups special_services special_services_dead_drop_rendevous_uk",
+      "score": 60,
+      "sourceIcon": "export/icons/races/british/abilities/dead_drops.webp",
+      "localPath": "assets/build-icons/british--dead-drop-in-a-safe-forward-area.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Defensive Tactics BG production unlock",
+      "lookup": "defensive tactics bg production unlock",
+      "matched": "Defensive Tactics",
+      "score": 280,
+      "sourceIcon": "export/icons/races/british/abilities/defensive_tactics.webp",
+      "localPath": "assets/build-icons/british--defensive-tactics-bg-production-unlock.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Bofors/17-pounder emplacement only on a secure lane",
+      "lookup": "bofors 17 pounder emplacement only on a secure lane",
+      "matched": "QF 17-pounder Anti-tank Gun",
+      "score": 78,
+      "sourceIcon": "export/icons/common/battlegroups/infantry_right_2b_howitzer_105mm_us.webp",
+      "localPath": "assets/build-icons/british--bofors-17-pounder-emplacement-only-on-a-secure-lane.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Archer",
+      "lookup": "archer",
+      "matched": "Archer Tank Destroyer",
+      "score": 480,
+      "sourceIcon": "export/icons/races/british/vehicles/archer_uk.webp",
+      "localPath": "assets/build-icons/british--archer.webp"
+    },
+    {
+      "faction": "British",
+      "step": "BL5.5 only",
+      "lookup": "bl5 5 only",
+      "matched": "BL5.5 Artillery Emplacement",
+      "score": 48,
+      "sourceIcon": "export/icons/races/british/team_weapons/howitzer_bl_5_5_uk.webp",
+      "localPath": "assets/build-icons/british--bl5-5-only.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Dead Drop",
+      "lookup": "dead drop",
+      "matched": "british upgrade battlegroups special_services special_services_dead_drop_rendevous_uk",
+      "score": 510,
+      "sourceIcon": "export/icons/races/british/abilities/dead_drops.webp",
+      "localPath": "assets/build-icons/british--dead-drop.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Humber Armored Car",
+      "lookup": "humber armored car",
+      "matched": "Humber Armored Car",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/vehicles/humber_uk.webp",
+      "localPath": "assets/build-icons/british--humber-armored-car.webp"
+    },
+    {
+      "faction": "British",
+      "step": "6-pounder Anti-Tank Gun Team",
+      "lookup": "6 pounder anti tank gun team",
+      "matched": "6-pounder Anti-tank Gun Team",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/team_weapons/at_gun_6pdr_uk.webp",
+      "localPath": "assets/build-icons/british--6-pounder-anti-tank-gun-team.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Crusader AA Medium Tank",
+      "lookup": "crusader aa medium tank",
+      "matched": "Crusader AA Medium Tank",
+      "score": 1000,
+      "sourceIcon": "export/icons/common/units/icons/vehicle_aef_halftrack_m15a1_aa.webp",
+      "localPath": "assets/build-icons/british--crusader-aa-medium-tank.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Crusader II Medium Tank",
+      "lookup": "crusader ii medium tank",
+      "matched": "Crusader II Medium Tank",
+      "score": 1000,
+      "sourceIcon": "export/icons/races/british/vehicles/crusader_uk.webp",
+      "localPath": "assets/build-icons/british--crusader-ii-medium-tank.webp"
+    },
+    {
+      "faction": "British",
+      "step": "Late: 6-pounder Gun Conversion on Crusader II",
+      "lookup": "late 6 pounder gun conversion on crusader ii",
+      "matched": "6-pounder Gun Conversion",
+      "score": 328,
+      "sourceIcon": "export/icons/races/british/upgrades/crusader_6_pounder.webp",
+      "localPath": "assets/build-icons/british--late-6-pounder-gun-conversion-on-crusader-ii.webp"
+    }
+  ],
+  "unresolved": [
+    {
+      "faction": "Wehrmacht",
+      "step": "Fallschirmpioneer paradrop",
+      "lookup": "fallschirmpioneer paradrop",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Fallschirmpioneer Squad",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "enemy light-vehicle tech",
+      "lookup": "enemy light vehicle tech",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Unlock German Side Tech",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "PGrens",
+      "lookup": "pgrens",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "german sbps aircraft heinkel_bomber_ger",
+        "score": 0
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Sturmpioneer conversion",
+      "lookup": "sturmpioneer conversion",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Fallschirmjaeger x2-3",
+      "lookup": "fallschirmjaeger x2 3",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 18
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "LG40 vs enemy light vehicles",
+      "lookup": "lg40 vs enemy light vehicles",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Grenadier or MG42",
+      "lookup": "grenadier or mg42",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "251 normally first OR Panzergrenadier first vs Armored/Greyhound risk",
+      "lookup": "251 normally first or panzergrenadier first vs armored greyhound risk",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Mechanized call-in pressure",
+      "lookup": "mechanized call in pressure",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Luftwaffe Kompanie",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panther normally first in armor-heavy team games",
+      "lookup": "panther normally first in armor heavy team games",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Panther Heavy Tank",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Transfer one Grenadier",
+      "lookup": "transfer one grenadier",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Late conventional armor",
+      "lookup": "late conventional armor",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "8 Rad Armored Car",
+        "score": 10
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "extra Grenadier",
+      "lookup": "extra grenadier",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Panzerbuechse 221",
+      "lookup": "panzerbuechse 221",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "221 Scout Car",
+        "score": 18
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "One extra composition-counter unit",
+      "lookup": "one extra composition counter unit",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "german sbps aircraft heinkel_bomber_ger",
+        "score": 0
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Support tech",
+      "lookup": "support tech",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "le.IG 18 Support Gun Team",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "More Wirbelwinds + Marders",
+      "lookup": "more wirbelwinds marders",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Marder III M Tank Destroyer",
+        "score": 10
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Flamethrower 251",
+      "lookup": "flamethrower 251",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Flammenwerfer 35",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "One more enemy-composition counter",
+      "lookup": "one more enemy composition counter",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "german sbps aircraft heinkel_bomber_ger",
+        "score": 0
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Brummbaer rush",
+      "lookup": "brummbaer rush",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "german sbps aircraft heinkel_bomber_ger",
+        "score": 0
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Brummbaer",
+      "lookup": "brummbaer",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "german sbps aircraft heinkel_bomber_ger",
+        "score": 0
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Grenadier core",
+      "lookup": "grenadier core",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Frontline/base healing",
+      "lookup": "frontline base healing",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "HMG Nest",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Mines + wire",
+      "lookup": "mines wire",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Barbed Wire Fence",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Camo MGs",
+      "lookup": "camo mgs",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Machine Gun Camouflage",
+        "score": 10
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "More MG",
+      "lookup": "more mg",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "MG 42 Bunker",
+        "score": 30
+      }
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "251/16 Flammpanzerwagen",
+      "lookup": "251 16 flammpanzerwagen",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Flak Half-track",
+        "score": 18
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Semovente production unlock (BG)",
+      "lookup": "semovente production unlock bg",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Semovente da 75/18 Assault Gun",
+        "score": 30
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Assault Grenadiers",
+      "lookup": "assault grenadiers",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Assault Grenadier Squad",
+        "score": 40
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Kriegsmariner ×4",
+      "lookup": "kriegsmariner 4",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "afrika_korps upgrade battlegroups kriegsmarine kriegsmarine_kriegsmariner_squad_ak",
+        "score": 30
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Elefant only in a true heavy-armor endgame",
+      "lookup": "elefant only in a true heavy armor endgame",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Elefant Tank Destroyer",
+        "score": 30
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Kriegsmariner immediately",
+      "lookup": "kriegsmariner immediately",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "afrika_korps upgrade battlegroups kriegsmarine kriegsmarine_kriegsmariner_squad_ak",
+        "score": 30
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "First Hardpoint on a safe but useful point",
+      "lookup": "first hardpoint on a safe but useful point",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "afrika_korps sbps emplacements point_fortification_20mm_aa_ak",
+        "score": 30
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Continue into standard DAK tech based on enemy composition",
+      "lookup": "continue into standard dak tech based on enemy composition",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "afrika_korps upgrade vehicle elite_forces_panzer_standard_barrel_ak",
+        "score": 30
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Kriegsmariner x4",
+      "lookup": "kriegsmariner x4",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "afrika_korps upgrade battlegroups kriegsmarine kriegsmarine_kriegsmariner_squad_ak",
+        "score": 30
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Kradschuetzen",
+      "lookup": "kradschuetzen",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "afrika_korps sbps aircraft stuka_ace_ju87_strafe_ak",
+        "score": 0
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Panzerjaeger in newer anti-LV iteration",
+      "lookup": "panzerjaeger in newer anti lv iteration",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "afrika_korps sbps aircraft stuka_ju87_anti_vehicle_loiter_ak",
+        "score": 30
+      }
+    },
+    {
+      "faction": "DAK",
+      "step": "Medical/late support as required",
+      "lookup": "medical late support as required",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "le.IG 18 Support Gun Team",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Scout enemy tech",
+      "lookup": "scout enemy tech",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "BARs",
+      "lookup": "bars",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "B25 Bomber",
+        "score": 0
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Rifle ×3",
+      "lookup": "rifle 3",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "RPzB 54 Panzerschreck",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Grenades",
+      "lookup": "grenades",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "GrB 39 Grenade Launcher",
+        "score": 10
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "ISC",
+      "lookup": "isc",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "B25 Bomber",
+        "score": 0
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "M8/AT",
+      "lookup": "m8 at",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "T4",
+      "lookup": "t4",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "B25 Bomber",
+        "score": 0
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Stable AT",
+      "lookup": "stable at",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "MSC",
+      "lookup": "msc",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "B25 Bomber",
+        "score": 0
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Rifle ×2",
+      "lookup": "rifle 2",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "RPzB 54 Panzerschreck",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Open Creator Builds section below",
+      "lookup": "open creator builds section below",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "american upgrade vehicle buffs buff_recon_hellcat_open_topped_us",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "M8/Chaffee",
+      "lookup": "m8 chaffee",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "M24 Chaffee Light Tank",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Sherman/E8",
+      "lookup": "sherman e8",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "M4A1(76) Sherman Medium Tank",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "AT coverage",
+      "lookup": "at coverage",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "French Rifle Section",
+      "lookup": "french rifle section",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "French ×3",
+      "lookup": "french 3",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Pershing only very late",
+      "lookup": "pershing only very late",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "M26 Pershing Heavy Tank",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Stable midgame army",
+      "lookup": "stable midgame army",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "B25 Bomber",
+        "score": 0
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Forward HQ",
+      "lookup": "forward hq",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Headquarters",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "2 Rifle core",
+      "lookup": "2 rifle core",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "RPzB 54 Panzerschreck",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "AT as needed",
+      "lookup": "at as needed",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "3 Rifles",
+      "lookup": "3 rifles",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "M1918 Browning Automatic Rifles",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "HMG drop",
+      "lookup": "hmg drop",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "HMG Nest",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "AT drop",
+      "lookup": "at drop",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Para later",
+      "lookup": "para later",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 10
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "AT option",
+      "lookup": "at option",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "AT/M8",
+      "lookup": "at m8",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Pershing late",
+      "lookup": "pershing late",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "M26 Pershing Heavy Tank",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Optional third Rifle",
+      "lookup": "optional third rifle",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "RPzB 54 Panzerschreck",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Convert/use GMC",
+      "lookup": "convert use gmc",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Convert to Ranger Squad",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Paratroopers with M1919 LMGs",
+      "lookup": "paratroopers with m1919 lmgs",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "M1919 Machine Gun Team",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Jeep",
+      "lookup": "jeep",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "B25 Bomber",
+        "score": 0
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Mortar only",
+      "lookup": "mortar only",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Mortar Pit",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "More French Rifle Sections (usually 3-4 total)",
+      "lookup": "more french rifle sections usually 3 4 total",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Zone Rouge",
+      "lookup": "zone rouge",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "american upgrade battlegroups french french_red_zone_us",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "French Rifle Sections call-ins",
+      "lookup": "french rifle sections call ins",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "american upgrade battlegroups french french_infantry_callin_us",
+        "score": 40
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Early HMG",
+      "lookup": "early hmg",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "HMG Nest",
+        "score": 30
+      }
+    },
+    {
+      "faction": "USF",
+      "step": "Third/Fourth French Rifle Section",
+      "lookup": "third fourth french rifle section",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "British",
+      "step": "Training Center",
+      "lookup": "training center",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Field Infirmary",
+        "score": 30
+      }
+    },
+    {
+      "faction": "British",
+      "step": "Infantry Training",
+      "lookup": "infantry training",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "British",
+      "step": "Archer only",
+      "lookup": "archer only",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Archer Tank Destroyer",
+        "score": 30
+      }
+    },
+    {
+      "faction": "British",
+      "step": "Tulips",
+      "lookup": "tulips",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "british upgrade battlegroups polish_cavalry polish_cavalry_tulip_rockets_uk",
+        "score": 10
+      }
+    },
+    {
+      "faction": "British",
+      "step": "LRDG Truck only on an open map",
+      "lookup": "lrdg truck only on an open map",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "CMP 15cwt Anti-air Truck",
+        "score": 30
+      }
+    },
+    {
+      "faction": "British",
+      "step": "Archer vs heavy armor",
+      "lookup": "archer vs heavy armor",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Archer Tank Destroyer",
+        "score": 30
+      }
+    },
+    {
+      "faction": "British",
+      "step": "Crocodile only in a long infantry-heavy game",
+      "lookup": "crocodile only in a long infantry heavy game",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    },
+    {
+      "faction": "British",
+      "step": "Firefly unlock",
+      "lookup": "firefly unlock",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "british sbps vehicles sherman_firefly_uk",
+        "score": 30
+      }
+    },
+    {
+      "faction": "British",
+      "step": "Crocodile late",
+      "lookup": "crocodile late",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Churchill Crocodile Heavy Tank",
+        "score": 30
+      }
+    },
+    {
+      "faction": "British",
+      "step": "AT layer",
+      "lookup": "at layer",
+      "reason": "no confident CoH3Stats data match",
+      "best": {
+        "name": "Reinforce",
+        "score": 30
+      }
+    }
+  ],
+  "resolvedCount": 267,
+  "unresolvedCount": 86
+}
