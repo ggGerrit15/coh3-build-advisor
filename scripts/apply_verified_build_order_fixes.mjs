@@ -8,7 +8,7 @@ const REPORT_PATH = 'assets/build-icons-report.json';
 const OUT_DIR = 'assets/build-icons';
 const CDN_RAW = 'https://raw.githubusercontent.com/cohstats/coh3-cdn/master/public';
 const CDN = 'https://cdn.coh3stats.com';
-const VERSION = 'v1.1.26';
+const VERSION = 'v1.1.28';
 
 const ICON_OVERRIDES = {
   'Wehrmacht|jager squad': 'export/icons/races/german/infantry/jaeger_ger.webp',
@@ -17,7 +17,15 @@ const ICON_OVERRIDES = {
   'Wehrmacht|officer upgrade when affordable': 'export/icons/races/german/upgrades/officer_quarters_for_wehrmacht.webp',
   'Wehrmacht|support elements if choosing stug iii g': 'export/icons/races/german/buildings/support_armory_ger.webp',
   'Wehrmacht|3 5t truck on fuel': 'export/icons/races/german/vehicles/2_5_truck_german.webp',
-  'Wehrmacht|medical bunker': 'export/icons/races/german/buildings/bunker_medical_ger.webp'
+  'Wehrmacht|medical bunker': 'export/icons/races/german/buildings/bunker_medical_ger.webp',
+
+  // British: exact CoH3Stats unit portraits. The automatic matcher can miss these
+  // because the in-game entity names are sapper_uk / tommy_africa_uk rather than
+  // the player-facing Royal Engineer Section / Infantry Section labels.
+  'British|royal engineer section': 'export/icons/races/british/infantry/sapper_uk.webp',
+  'British|infantry section': 'export/icons/races/british/infantry/tommy_africa_uk.webp',
+  'British|infantry section 2': 'export/icons/races/british/infantry/tommy_africa_uk.webp',
+  'British|infantry section 3': 'export/icons/races/british/infantry/tommy_africa_uk.webp'
 };
 
 function norm(value = '') {
@@ -146,7 +154,7 @@ async function applyIconFixes() {
   report.verifiedBuildOrderFixes = {
     version: VERSION,
     generatedAt: new Date().toISOString(),
-    source: 'User-verified Wehrmacht build-order QA with exact CoH3Stats CDN assets',
+    source: 'User-verified build-order QA with exact CoH3Stats CDN assets',
     appliedIcons: applied
   };
   await fs.writeFile(REPORT_PATH, JSON.stringify(report, null, 2) + '\n');
