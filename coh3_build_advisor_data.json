@@ -5132,7 +5132,7 @@
         "MG42",
         "Grenadier",
         "Coastal Reserve",
-        "Medical Station",
+        "Medical Bunker",
         "Panzergrenadier Kompanie",
         "Pak 40",
         "Artillery Officer",
@@ -5312,7 +5312,7 @@
         "Jäger Squad",
         "Panzerschreck upgrade if enemy LV",
         "8 Rad call-in when safe",
-        "Medical Station",
+        "Medical Bunker",
         "Panzer Kompanie",
         "Panzer IV",
         "Panther unlock",
@@ -5358,7 +5358,7 @@
       "battlegroup": "Siege Breaker",
       "mode": "1v1",
       "confidence": "Medium-High",
-      "verdict": "A strong pressure build when the opponent leans on MGs, AT guns or fixed positions. The Siege Camp is a utility piece, not a replacement for real army strength.",
+      "verdict": "A strong pressure build when the opponent leans on MGs, AT guns or fixed positions. This default route uses Grinding Advance; Construct Siege Camp is the mutually exclusive alternative.",
       "build": [
         "Starting unit: Pioneer",
         "2nd Pioneer",
@@ -5372,7 +5372,6 @@
         "Panzergrenadier",
         "Pak 40",
         "Panzergrenadier Officer upgrade",
-        "Siege Camp",
         "Panzer Kompanie",
         "Panzer IV",
         "Brummbär / Sturmtiger after BG production unlock"
@@ -5383,24 +5382,24 @@
         "MG42",
         "2–3 Panzergrenadiers",
         "Pak 40",
-        "Siege Camp",
+        "Grinding Advance",
         "Panzer IV",
         "Brummbär/Sturmtiger"
       ],
       "tips": [
-        "The Siege Camp is strongest after you already have enough units to hold ground.",
+        "The default battlegroup route uses Grinding Advance; Construct Siege Camp is mutually exclusive and is therefore not part of this build.",
         "Use probing/smoke tools to create pushes rather than waiting for artillery to win alone.",
         "Sturmtiger is a late specialist; Panzer IV remains the safer first T4 unit in many games."
       ],
       "branches": [
         [
           "Enemy team-weapon wall",
-          "Siege Camp earlier after AT safety",
+          "Use Grinding Advance to displace the support-weapon line, then push with Panzergrenadiers and armor",
           "This is the battlegroup's ideal matchup."
         ],
         [
           "Open/mobile game",
-          "Delay siege investments and play conventional T3→T4",
+          "Play conventional T3→T4 and use Grinding Advance only when it creates a clean push",
           "Static tools lose value."
         ]
       ],
@@ -5420,7 +5419,6 @@
           "PGrens",
           "Pak",
           "Officer upgrade",
-          "Siege Camp",
           "Panzer IV",
           "Brummbär"
         ]
@@ -5430,7 +5428,8 @@
         "Current Siege Breaker ability roster from CoH3Stats"
       ],
       "techQaNotes": [
-        "Sturmtiger requires the Siege Breaker production unlock and Panzer Kompanie; Brummbär is standard Panzer-Kompanie production."
+        "Sturmtiger requires the Siege Breaker production unlock and Panzer Kompanie; Brummbär is standard Panzer-Kompanie production.",
+        "Grinding Advance and Construct Siege Camp are mutually exclusive Siegeworks Tier 2 choices; this build uses Grinding Advance, so Siege Camp is not included."
       ],
       "techQa": "Production/tech legality retained from the v1.1.0 audit; battlegroup unlock legality is now resolved from the centralized canonical tree"
     },
@@ -5446,7 +5445,7 @@
         "MG42",
         "Grenadier",
         "Grenadier",
-        "Medical Station",
+        "Medical Bunker",
         "Panzergrenadier Kompanie",
         "Pak 40",
         "Panzergrenadier",

@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-11T12:03:44.634Z",
+  "generatedAt": "2026-09-11T12:33:32.002Z",
   "total": 396,
   "resolved": [
     {
@@ -218,18 +218,6 @@
       "margin": 0,
       "sourceIcon": "export/icons/races/german/symbols/coastal_reserves_squad_dec.webp",
       "localPath": "assets/build-icons/wehrmacht--coastal-reserve.webp"
-    },
-    {
-      "faction": "Wehrmacht",
-      "step": "Medical Station",
-      "search": "Medical Station",
-      "lookup": "medical station",
-      "matched": "Medical Station",
-      "method": "coh3-data",
-      "score": 2209,
-      "margin": 1919,
-      "sourceIcon": "export/icons/races/common/abilities/healing.webp",
-      "localPath": "assets/build-icons/wehrmacht--medical-station.webp"
     },
     {
       "faction": "Wehrmacht",
@@ -557,18 +545,6 @@
     },
     {
       "faction": "Wehrmacht",
-      "step": "Siege Camp",
-      "search": "Siege Camp",
-      "lookup": "siege camp",
-      "matched": "german upgrade battlegroups siegebreakers siegebreakers_siege_camp_ger",
-      "method": "coh3-data",
-      "score": 509,
-      "margin": 300,
-      "sourceIcon": "export/icons/races/german/buildings/bunker_mortar_autobuild_ger.webp",
-      "localPath": "assets/build-icons/wehrmacht--siege-camp.webp"
-    },
-    {
-      "faction": "Wehrmacht",
       "step": "Brummbär / Sturmtiger",
       "search": "Brummbär",
       "lookup": "brummbar sturmtiger",
@@ -614,6 +590,18 @@
       "margin": 0,
       "sourceIcon": "export/icons/races/german/symbols/king_tiger_ger.webp",
       "localPath": "assets/build-icons/wehrmacht--king-tiger.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Medical Station",
+      "search": "Medical Station",
+      "lookup": "medical station",
+      "matched": "Medical Station",
+      "method": "coh3-data",
+      "score": 2209,
+      "margin": 1919,
+      "sourceIcon": "export/icons/races/common/abilities/healing.webp",
+      "localPath": "assets/build-icons/wehrmacht--medical-station.webp"
     },
     {
       "faction": "Wehrmacht",
@@ -722,6 +710,18 @@
       "margin": null,
       "sourceIcon": "export/icons/races/german/vehicles/panther_german.webp",
       "localPath": "assets/build-icons/wehrmacht--panther-production-unlock-bg.webp"
+    },
+    {
+      "faction": "Wehrmacht",
+      "step": "Siege Camp",
+      "search": "Siege Camp",
+      "lookup": "siege camp",
+      "matched": "german upgrade battlegroups siegebreakers siegebreakers_siege_camp_ger",
+      "method": "coh3-data",
+      "score": 509,
+      "margin": 300,
+      "sourceIcon": "export/icons/races/german/buildings/bunker_mortar_autobuild_ger.webp",
+      "localPath": "assets/build-icons/wehrmacht--siege-camp.webp"
     },
     {
       "faction": "Wehrmacht",
@@ -5449,7 +5449,7 @@
   "coveragePct": 66.7,
   "iconQa": {
     "version": "v1.1.18",
-    "generatedAt": "2026-09-11T12:04:32.281Z",
+    "generatedAt": "2026-09-11T12:34:25.869Z",
     "sameFactionCdnFixes": 213,
     "removedAmbiguous": 17,
     "fixes": [
@@ -6805,7 +6805,7 @@
   },
   "knownIconOverrides": {
     "version": "v1.1.19",
-    "generatedAt": "2026-09-11T12:04:33.333Z",
+    "generatedAt": "2026-09-11T12:34:26.120Z",
     "applied": [
       {
         "key": "Wehrmacht|fallschirmpioneer paradrop",
@@ -6826,6 +6826,48 @@
         "key": "Wehrmacht|sturmpanzer iv brummbaer",
         "source": "export/icons/races/german/vehicles/brummbar_german.webp",
         "localPath": "assets/build-icons/wehrmacht--sturmpanzer-iv-brummbaer.webp"
+      }
+    ]
+  },
+  "verifiedBuildOrderFixes": {
+    "version": "v1.1.23",
+    "generatedAt": "2026-09-11T12:34:26.541Z",
+    "source": "User-verified Wehrmacht build-order QA with exact CoH3Stats CDN assets",
+    "appliedIcons": [
+      {
+        "key": "Wehrmacht|jager squad",
+        "source": "export/icons/races/german/infantry/jaeger_ger.webp",
+        "localPath": "assets/build-icons/wehrmacht--jager-squad.webp"
+      },
+      {
+        "key": "Wehrmacht|panzergrenadier",
+        "source": "export/icons/races/german/infantry/panzer_grenadier_ger.webp",
+        "localPath": "assets/build-icons/wehrmacht--panzergrenadier.webp"
+      },
+      {
+        "key": "Wehrmacht|panzergrenadier officer upgrade",
+        "source": "export/icons/races/german/upgrades/officer_quarters_for_wehrmacht.webp",
+        "localPath": "assets/build-icons/wehrmacht--panzergrenadier-officer-upgrade.webp"
+      },
+      {
+        "key": "Wehrmacht|officer upgrade when affordable",
+        "source": "export/icons/races/german/upgrades/officer_quarters_for_wehrmacht.webp",
+        "localPath": "assets/build-icons/wehrmacht--officer-upgrade-when-affordable.webp"
+      },
+      {
+        "key": "Wehrmacht|support elements if choosing stug iii g",
+        "source": "export/icons/races/german/buildings/support_armory_ger.webp",
+        "localPath": "assets/build-icons/wehrmacht--support-elements-if-choosing-stug-iii-g.webp"
+      },
+      {
+        "key": "Wehrmacht|3 5t truck on fuel",
+        "source": "export/icons/races/german/vehicles/2_5_truck_german.webp",
+        "localPath": "assets/build-icons/wehrmacht--3-5t-truck-on-fuel.webp"
+      },
+      {
+        "key": "Wehrmacht|medical bunker",
+        "source": "export/icons/races/german/buildings/bunker_medical_ger.webp",
+        "localPath": "assets/build-icons/wehrmacht--medical-bunker.webp"
       }
     ]
   }

@@ -43,7 +43,6 @@
   "Wehrmacht|panther unlock": "assets/build-icons/wehrmacht--panther-unlock.webp",
   "Wehrmacht|panther": "assets/build-icons/wehrmacht--panther.webp",
   "Wehrmacht|panzergrenadier": "assets/build-icons/wehrmacht--panzergrenadier.webp",
-  "Wehrmacht|siege camp": "assets/build-icons/wehrmacht--siege-camp.webp",
   "Wehrmacht|brummbar sturmtiger": "assets/build-icons/wehrmacht--brummbar-sturmtiger.webp",
   "Wehrmacht|officer upgrade": "assets/build-icons/wehrmacht--officer-upgrade.webp",
   "Wehrmacht|brummbar": "assets/build-icons/wehrmacht--brummbar.webp",
@@ -57,6 +56,7 @@
   "Wehrmacht|panzerschreck": "assets/build-icons/wehrmacht--panzerschreck.webp",
   "Wehrmacht|wespe": "assets/build-icons/wehrmacht--wespe.webp",
   "Wehrmacht|panther production unlock bg": "assets/build-icons/wehrmacht--panther-production-unlock-bg.webp",
+  "Wehrmacht|siege camp": "assets/build-icons/wehrmacht--siege-camp.webp",
   "Wehrmacht|king tiger late": "assets/build-icons/wehrmacht--king-tiger-late.webp",
   "Wehrmacht|grenadier mg42 map dependent order": "assets/build-icons/wehrmacht--grenadier-mg42-map-dependent-order.webp",
   "Wehrmacht|221 scout car": "assets/build-icons/wehrmacht--221-scout-car.webp",
@@ -270,5 +270,9 @@
   "DAK|kriegsmariner x4": "assets/build-icons/dak--kriegsmariner-x4.webp",
   "DAK|assault grenadier or panzerjaeger first": "assets/build-icons/dak--assault-grenadier-or-panzerjaeger-first.webp",
   "DAK|medical late support as required": "assets/build-icons/dak--medical-late-support-as-required.webp",
-  "Wehrmacht|fallschirmpioneer squad paradrop": "assets/build-icons/wehrmacht--fallschirmpioneer-squad-paradrop.webp"
+  "Wehrmacht|fallschirmpioneer squad paradrop": "assets/build-icons/wehrmacht--fallschirmpioneer-squad-paradrop.webp",
+  "Wehrmacht|panzergrenadier officer upgrade": "assets/build-icons/wehrmacht--panzergrenadier-officer-upgrade.webp",
+  "Wehrmacht|officer upgrade when affordable": "assets/build-icons/wehrmacht--officer-upgrade-when-affordable.webp",
+  "Wehrmacht|support elements if choosing stug iii g": "assets/build-icons/wehrmacht--support-elements-if-choosing-stug-iii-g.webp",
+  "Wehrmacht|3 5t truck on fuel": "assets/build-icons/wehrmacht--3-5t-truck-on-fuel.webp"
 }
