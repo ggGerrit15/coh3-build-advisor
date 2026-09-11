@@ -7,7 +7,7 @@ const REPORT_PATH = 'assets/build-icons-report.json';
 const OUT_DIR = 'assets/build-icons';
 const CDN_RAW = 'https://raw.githubusercontent.com/cohstats/coh3-cdn/master/public';
 const CDN = 'https://cdn.coh3stats.com';
-const VERSION = 'v1.1.26';
+const VERSION = 'v1.1.27';
 
 const OVERRIDES = {
   'Wehrmacht|fallschirmpioneer paradrop': 'export/icons/races/german/infantry/fallschirmpioneers_ger.webp',
@@ -37,16 +37,15 @@ const OVERRIDES = {
   'DAK|bersaglieri bolster': 'export/icons/races/afrika_corps/abilities/bersaglieri_bolster.webp',
   'DAK|convert 250 to 250 3 funkpanzerwagen': 'export/icons/races/afrika_corps/vehicles/vampire_ht_ak_icon.webp',
 
-  // USF: exact same-faction unit symbols. The automatic matcher previously used
-  // a generic common Rifleman icon, mapped the short "Rifle" label to an AT rifle,
-  // and could not resolve French Rifle Section at all.
-  'USF|rifleman': 'export/icons/races/american/symbols/riflemen_us.webp',
-  'USF|french rifle section': 'export/icons/races/american/symbols/french_infantry_us.webp'
+  // USF: use the full unit portrait rather than the small crossed-rifles symbol.
+  // A distinct output filename below also busts the browser cache from v1.1.26.
+  'USF|rifleman': 'export/icons/common/units/icons/13_rifleman.webp'
 };
 
-// Several builds use shorthand/plural wording for the same unit. Point these
-// labels at the verified local assets so every visual build card stays consistent.
+// Several builds use shorthand/plural wording for the same unit. French Rifle
+// Section reuses the already-vendored, verified French infantry portrait.
 const ALIASES = {
+  'USF|french rifle section': 'USF|french',
   'USF|rifle': 'USF|rifleman',
   'USF|rifle 2': 'USF|rifleman',
   'USF|rifle 3': 'USF|rifleman',
@@ -60,17 +59,28 @@ const ALIASES = {
   'USF|optional third french section on a wide infantry lane': 'USF|french rifle section'
 };
 
+const OUTPUT_NAMES = {
+  'USF|rifleman': 'usf--rifleman-portrait.webp'
+};
+
 function slug(value = '') {
   return String(value).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ß/g, 'ss').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
+
+function isWebp(buf) {
+  return buf.length >= 12 &&
+    buf.subarray(0, 4).toString('ascii') === 'RIFF' &&
+    buf.subarray(8, 12).toString('ascii') === 'WEBP';
+}
+
 async function download(rel) {
   for (const url of [`${CDN_RAW}/${rel}`, `${CDN}/${rel}`]) {
     const r = await fetch(url, { headers: { 'user-agent': 'coh3-build-advisor-known-icon-fixes' } });
     if (!r.ok) continue;
     const buf = Buffer.from(await r.arrayBuffer());
-    if (buf.length >= 250) return { buf, url };
+    if (isWebp(buf)) return { buf, url };
   }
-  throw new Error(`Could not download ${rel}`);
+  throw new Error(`Could not download a valid WebP for ${rel}`);
 }
 
 await fs.mkdir(OUT_DIR, { recursive: true });
@@ -81,7 +91,8 @@ const applied = [];
 for (const [key, rel] of Object.entries(OVERRIDES)) {
   const [faction, lookup] = key.split('|');
   const hit = await download(rel);
-  const outPath = path.join(OUT_DIR, `${slug(faction)}--${slug(lookup)}.webp`).replaceAll('\\', '/');
+  const filename = OUTPUT_NAMES[key] || `${slug(faction)}--${slug(lookup)}.webp`;
+  const outPath = path.join(OUT_DIR, filename).replaceAll('\\', '/');
   await fs.writeFile(outPath, hit.buf);
   manifest[key] = outPath;
   applied.push({ key, source: rel, localPath: outPath });
