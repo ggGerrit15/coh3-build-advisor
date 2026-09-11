@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-11T11:26:40.514Z",
+  "generatedAt": "2026-09-11T11:32:46.054Z",
   "total": 396,
   "resolved": [
     {
@@ -5446,5 +5446,1361 @@
   ],
   "resolvedCount": 264,
   "unresolvedCount": 132,
-  "coveragePct": 66.7
+  "coveragePct": 66.7,
+  "iconQa": {
+    "version": "v1.1.18",
+    "generatedAt": "2026-09-11T11:33:10.345Z",
+    "sameFactionCdnFixes": 213,
+    "removedAmbiguous": 17,
+    "fixes": [
+      {
+        "key": "Wehrmacht|pioneer",
+        "search": "Pioneer",
+        "source": "export/icons/races/german/infantry/pioneer_ger.webp",
+        "method": "cdn:1996/1758"
+      },
+      {
+        "key": "Wehrmacht|infanterie kompanie",
+        "search": "Infanterie Kompanie",
+        "source": "export/icons/races/german/buildings/infanterie_kompanie_ger.webp",
+        "method": "cdn:2032/1918"
+      },
+      {
+        "key": "Wehrmacht|grenadier",
+        "search": "Grenadier",
+        "source": "export/icons/races/german/infantry/grenadier_ger.webp",
+        "method": "cdn:1996/80"
+      },
+      {
+        "key": "Wehrmacht|mg42",
+        "search": "MG42",
+        "source": "export/icons/races/german/team_weapons/hmg_mg42_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|officer quarters",
+        "search": "Officer Quarters",
+        "source": "export/icons/races/german/upgrades/officer_quarters_for_wehrmacht.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|pak 40",
+        "search": "Pak 40",
+        "source": "export/icons/races/german/team_weapons/at_gun_75mm_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|medical bunker",
+        "search": "Medical Bunker",
+        "source": "export/icons/races/german/buildings/bunker_ger.webp",
+        "method": "cdn:274/102"
+      },
+      {
+        "key": "Wehrmacht|panzer iv command tank",
+        "search": "Panzer IV Command Tank",
+        "source": "export/icons/races/german/vehicles/panzer_iv_cmd_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|sniper",
+        "search": "Sniper",
+        "source": "export/icons/races/german/infantry/sniper_ger.webp",
+        "method": "cdn:1996/1918"
+      },
+      {
+        "key": "Wehrmacht|stug iii g from panzergrenadier kompanie",
+        "search": "StuG III G",
+        "source": "export/icons/races/german/vehicles/stug_iii_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|repair bunker",
+        "search": "Repair Bunker",
+        "source": "export/icons/races/german/buildings/bunker_ger.webp",
+        "method": "cdn:274/102"
+      },
+      {
+        "key": "Wehrmacht|mortar",
+        "search": "Mortar",
+        "source": "export/icons/races/german/team_weapons/mortar_81mm_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|tiger",
+        "search": "Tiger",
+        "source": "export/icons/races/german/vehicles/tiger_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|pak",
+        "search": "Pak",
+        "source": "export/icons/races/german/team_weapons/at_gun_75mm_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|stug iii",
+        "search": "StuG III",
+        "source": "export/icons/races/german/vehicles/stug_iii_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|coastal reserve",
+        "search": "Coastal Reserve",
+        "source": "export/icons/races/german/infantry/coastal_reserves_squad_wicd.webp",
+        "method": "cdn:304/80"
+      },
+      {
+        "key": "Wehrmacht|artillery officer",
+        "search": "Artillery Officer",
+        "source": "export/icons/races/german/infantry/artillery_officer_wicd.webp",
+        "method": "cdn:332/58"
+      },
+      {
+        "key": "Wehrmacht|panzer iv",
+        "search": "Panzer IV",
+        "source": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|obice at bunker only",
+        "search": "Obice",
+        "source": "export/icons/races/german/team_weapons/tw_howitzer_obice_210_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|convert pioneer to sturmpioneer",
+        "search": "Convert Pioneer to Sturmpioneer",
+        "source": "export/icons/races/german/infantry/sturmpioneer_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|sturmpioneer upgrade as needed",
+        "search": "Sturmpioneer upgrade",
+        "source": "export/icons/races/german/infantry/sturmpioneer_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|kettenkrad",
+        "search": "Kettenkrad",
+        "source": "export/icons/races/german/vehicles/kettenkrad_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|fallschirmpioneer paradrop",
+        "search": "Fallschirmpioneer paradrop",
+        "source": "export/icons/races/german/infantry/pioneer_ger.webp",
+        "method": "cdn:216/130"
+      },
+      {
+        "key": "Wehrmacht|251 half track",
+        "search": "251 Half-track",
+        "source": "export/icons/races/german/vehicles/halftrack_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|pak 40 first",
+        "search": "Pak 40",
+        "source": "export/icons/races/german/team_weapons/at_gun_75mm_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|stummel conversion",
+        "search": "Stummel conversion",
+        "source": "export/icons/races/german/vehicles/halftrack_stummel_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|fallschirmjager",
+        "search": "Fallschirmjäger",
+        "source": "export/icons/races/german/infantry/fallschirmjagers_ger.webp",
+        "method": "cdn:268/190"
+      },
+      {
+        "key": "Wehrmacht|medical bunker station",
+        "search": "Medical Bunker/Station",
+        "source": "export/icons/races/german/buildings/bunker_ger.webp",
+        "method": "cdn:252/102"
+      },
+      {
+        "key": "Wehrmacht|panzer iv brummbar",
+        "search": "Panzer IV",
+        "source": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|fallschirmpioneer",
+        "search": "Fallschirmpioneer",
+        "source": "export/icons/races/german/infantry/fallschirmpioneers_ger.webp",
+        "method": "cdn:268/30"
+      },
+      {
+        "key": "Wehrmacht|stummel",
+        "search": "Stummel",
+        "source": "export/icons/races/german/vehicles/halftrack_stummel_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|panzer iv 2 3",
+        "search": "Panzer IV ×2–3",
+        "source": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|panzerschreck upgrade",
+        "search": "Panzerschreck upgrade",
+        "source": "export/icons/races/german/upgrades/panzerschreck.webp",
+        "method": "cdn:996/918"
+      },
+      {
+        "key": "Wehrmacht|8 rad call in",
+        "search": "8 Rad call-in",
+        "source": "export/icons/races/german/vehicles/armored_car_8_rad_german.webp",
+        "method": "cdn:201/100"
+      },
+      {
+        "key": "Wehrmacht|panther unlock",
+        "search": "Panther unlock",
+        "source": "export/icons/races/german/vehicles/panther_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|panther",
+        "search": "Panther",
+        "source": "export/icons/races/german/vehicles/panther_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|brummbar sturmtiger",
+        "search": "Brummbär",
+        "source": "export/icons/races/german/vehicles/brummbar_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|officer upgrade",
+        "search": "Officer upgrade",
+        "source": "export/icons/races/german/symbols/officer_ger.webp",
+        "method": "cdn:896/40"
+      },
+      {
+        "key": "Wehrmacht|brummbar",
+        "search": "Brummbär",
+        "source": "export/icons/races/german/vehicles/brummbar_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|king tiger",
+        "search": "King Tiger",
+        "source": "export/icons/races/german/vehicles/king_tiger_german.webp",
+        "method": "cdn:2032/100"
+      },
+      {
+        "key": "Wehrmacht|panzer iv panzer kompanie stug iii g panzergrenadier kompanie",
+        "search": "Panzer IV",
+        "source": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|defensive line support bunker",
+        "search": "Defensive Line",
+        "source": "export/icons/races/german/abilities/ability_designated_defensive_line.webp",
+        "method": "cdn:232/176"
+      },
+      {
+        "key": "Wehrmacht|obice at bunker",
+        "search": "Obice",
+        "source": "export/icons/races/german/team_weapons/tw_howitzer_obice_210_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|panzer iv 2nd brummbar",
+        "search": "Panzer IV",
+        "source": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|panzerschreck",
+        "search": "Panzerschreck",
+        "source": "export/icons/races/german/upgrades/panzerschreck.webp",
+        "method": "cdn:1856/1748"
+      },
+      {
+        "key": "Wehrmacht|wespe",
+        "search": "Wespe",
+        "source": "export/icons/races/german/vehicles/wespe_german.webp",
+        "method": "cdn:1856/1640"
+      },
+      {
+        "key": "Wehrmacht|panther production unlock bg",
+        "search": "Panther production unlock",
+        "source": "export/icons/races/german/vehicles/panther_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|king tiger late",
+        "search": "King Tiger",
+        "source": "export/icons/races/german/vehicles/king_tiger_german.webp",
+        "method": "cdn:2032/100"
+      },
+      {
+        "key": "Wehrmacht|grenadier mg42 map dependent order",
+        "search": "Grenadier",
+        "source": "export/icons/races/german/infantry/grenadier_ger.webp",
+        "method": "cdn:1996/80"
+      },
+      {
+        "key": "Wehrmacht|wirbelwind",
+        "search": "Wirbelwind",
+        "source": "export/icons/races/german/vehicles/wirbelwind_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|marder s",
+        "search": "Marder",
+        "source": "export/icons/races/german/vehicles/marder_iii_german.webp",
+        "method": "cdn:296/100"
+      },
+      {
+        "key": "Wehrmacht|grenadier mg42",
+        "search": "Grenadier",
+        "source": "export/icons/races/german/infantry/grenadier_ger.webp",
+        "method": "cdn:1996/80"
+      },
+      {
+        "key": "Wehrmacht|pak 40 x1 2 as needed",
+        "search": "Pak 40 x1-2",
+        "source": "export/icons/races/german/team_weapons/at_gun_75mm_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|medical bunker forward healing",
+        "search": "Medical Bunker",
+        "source": "export/icons/races/german/buildings/bunker_ger.webp",
+        "method": "cdn:274/102"
+      },
+      {
+        "key": "Wehrmacht|panzer iv x2 3 matchup tank choice",
+        "search": "Panzer IV x2-3",
+        "source": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|mg42 grenadier follow up",
+        "search": "MG42",
+        "source": "export/icons/races/german/team_weapons/hmg_mg42_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|8 rad",
+        "search": "8 Rad",
+        "source": "export/icons/races/german/vehicles/armored_car_8_rad_german.webp",
+        "method": "cdn:361/100"
+      },
+      {
+        "key": "Wehrmacht|panther panzer iv based on enemy armor",
+        "search": "Panther",
+        "source": "export/icons/races/german/vehicles/panther_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|stummel conversion usually",
+        "search": "Stummel conversion usually",
+        "source": "export/icons/races/german/vehicles/halftrack_stummel_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|panther normally first in armor heavy team games",
+        "search": "Panther normally first in armor-heavy team games",
+        "source": "export/icons/races/german/vehicles/panther_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|rapid production",
+        "search": "Rapid Production",
+        "source": "export/icons/races/german/abilities/rapid_production.webp",
+        "method": "cdn:1896/1818"
+      },
+      {
+        "key": "Wehrmacht|transfer one grenadier",
+        "search": "Transfer one Grenadier",
+        "source": "export/icons/races/german/infantry/grenadier_ger.webp",
+        "method": "cdn:252/80"
+      },
+      {
+        "key": "Wehrmacht|jaeger flak 30 as needed",
+        "search": "Jaeger",
+        "source": "export/icons/races/german/infantry/jaeger_ger.webp",
+        "method": "cdn:1996/80"
+      },
+      {
+        "key": "Wehrmacht|extra grenadier",
+        "search": "extra Grenadier",
+        "source": "export/icons/races/german/infantry/grenadier_ger.webp",
+        "method": "cdn:274/80"
+      },
+      {
+        "key": "Wehrmacht|more wirbelwinds marders",
+        "search": "More Wirbelwinds + Marders",
+        "source": "export/icons/races/german/vehicles/wirbelwind_german.webp",
+        "method": "cdn:224/160"
+      },
+      {
+        "key": "Wehrmacht|grenadier core",
+        "search": "Grenadier core",
+        "source": "export/icons/races/german/infantry/grenadier_ger.webp",
+        "method": "cdn:274/80"
+      },
+      {
+        "key": "Wehrmacht|early sniper",
+        "search": "Early Sniper",
+        "source": "export/icons/races/german/infantry/sniper_ger.webp",
+        "method": "cdn:274/218"
+      },
+      {
+        "key": "Wehrmacht|nebelwerfer",
+        "search": "Nebelwerfer",
+        "source": "export/icons/races/german/symbols/nebelwerfer_ger.webp",
+        "method": "cdn:1916/1720"
+      },
+      {
+        "key": "Wehrmacht|pioneer squad",
+        "search": "Pioneer Squad",
+        "source": "export/icons/races/german/infantry/pioneer_ger.webp",
+        "method": "cdn:996/918"
+      },
+      {
+        "key": "Wehrmacht|grenadier squad",
+        "search": "Grenadier Squad",
+        "source": "export/icons/races/german/infantry/grenadier_ger.webp",
+        "method": "cdn:996/80"
+      },
+      {
+        "key": "Wehrmacht|pak 40 anti tank gun team",
+        "search": "Pak 40 Anti-Tank Gun Team",
+        "source": "export/icons/races/german/team_weapons/at_gun_75mm_ger.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|sturmpanzer iv brummbaer",
+        "search": "Sturmpanzer IV Brummbaer",
+        "source": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+        "method": "cdn:252/100"
+      },
+      {
+        "key": "Wehrmacht|panzer iv brummbaer follow up",
+        "search": "Panzer IV",
+        "source": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "Wehrmacht|jaeger squad",
+        "search": "Jaeger Squad",
+        "source": "export/icons/races/german/infantry/jaeger_ger.webp",
+        "method": "cdn:996/80"
+      },
+      {
+        "key": "Wehrmacht|panzer iv medium tank",
+        "search": "Panzer IV Medium Tank",
+        "source": "export/icons/races/german/vehicles/panzer_iv_german.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|panzerpioneer",
+        "search": "Panzerpioneer",
+        "source": "export/icons/races/afrika_corps/infantry/panzerpioneer_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|kradschutzen",
+        "search": "Kradschützen",
+        "source": "export/icons/races/afrika_corps/symbols/kradschutzen_motorcycle.webp",
+        "method": "cdn:216/60"
+      },
+      {
+        "key": "DAK|panzergrenadier",
+        "search": "Panzergrenadier",
+        "source": "export/icons/races/afrika_corps/infantry/panzergrenadier_ak.webp",
+        "method": "cdn:1856/1700"
+      },
+      {
+        "key": "DAK|pak 38 flakvierling",
+        "search": "Pak 38",
+        "source": "export/icons/races/afrika_corps/team_weapons/tw_pak_38_ak.webp",
+        "method": "cdn:361/433"
+      },
+      {
+        "key": "DAK|mechanized kompanie",
+        "search": "Mechanized Kompanie",
+        "source": "export/icons/races/afrika_corps/buildings/mechanized_kompanie_ak.webp",
+        "method": "cdn:2032/1918"
+      },
+      {
+        "key": "DAK|8 rad",
+        "search": "8 Rad",
+        "source": "export/icons/races/afrika_corps/vehicles/armored_car_8_rad_ak.webp",
+        "method": "cdn:361/200"
+      },
+      {
+        "key": "DAK|panzer iii command panzer iv",
+        "search": "Panzer III",
+        "source": "export/icons/races/afrika_corps/vehicles/panzer_iii_ak.webp",
+        "method": "cdn:2032/1700"
+      },
+      {
+        "key": "DAK|pak 38",
+        "search": "Pak 38",
+        "source": "export/icons/races/afrika_corps/team_weapons/tw_pak_38_ak.webp",
+        "method": "cdn:361/433"
+      },
+      {
+        "key": "DAK|panzer iii",
+        "search": "Panzer III",
+        "source": "export/icons/races/afrika_corps/vehicles/panzer_iii_ak.webp",
+        "method": "cdn:2032/1700"
+      },
+      {
+        "key": "DAK|panzer iii 2nd panzer iii as needed",
+        "search": "Panzer III",
+        "source": "export/icons/races/afrika_corps/vehicles/panzer_iii_ak.webp",
+        "method": "cdn:2032/1700"
+      },
+      {
+        "key": "DAK|bersaglieri",
+        "search": "Bersaglieri",
+        "source": "export/icons/races/afrika_corps/infantry/bersaglieri_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|mg34 panzerjager as required",
+        "search": "MG34",
+        "source": "export/icons/races/afrika_corps/team_weapons/hmg_mg34_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|bersaglieri bolster",
+        "search": "Bersaglieri Bolster",
+        "source": "export/icons/races/afrika_corps/infantry/bersaglieri_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|stug",
+        "search": "StuG",
+        "source": "export/icons/races/afrika_corps/vehicles/stug_iii_ak.webp",
+        "method": "cdn:296/0"
+      },
+      {
+        "key": "DAK|pak heavy anti tank as required",
+        "search": "Pak",
+        "source": "export/icons/races/afrika_corps/team_weapons/tw_pak_38_ak.webp",
+        "method": "cdn:296/218"
+      },
+      {
+        "key": "DAK|command panzer iv additional armor",
+        "search": "Command Panzer IV",
+        "source": "export/icons/races/afrika_corps/vehicles/panzer_iv_ak.webp",
+        "method": "cdn:310/102"
+      },
+      {
+        "key": "DAK|mg34 panzerjager",
+        "search": "MG34",
+        "source": "export/icons/races/afrika_corps/team_weapons/hmg_mg34_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|panzergrenadier krad",
+        "search": "Panzergrenadier",
+        "source": "export/icons/races/afrika_corps/infantry/panzergrenadier_ak.webp",
+        "method": "cdn:1856/1700"
+      },
+      {
+        "key": "DAK|mg34",
+        "search": "MG34",
+        "source": "export/icons/races/afrika_corps/team_weapons/hmg_mg34_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|mg34 assault grenadier",
+        "search": "MG34",
+        "source": "export/icons/races/afrika_corps/team_weapons/hmg_mg34_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|pak",
+        "search": "Pak",
+        "source": "export/icons/races/afrika_corps/team_weapons/tw_pak_38_ak.webp",
+        "method": "cdn:296/218"
+      },
+      {
+        "key": "USF|scout",
+        "search": "Scout",
+        "source": "export/icons/races/american/infantry/scout_us.webp",
+        "method": "cdn:1996/80"
+      },
+      {
+        "key": "USF|barracks",
+        "search": "Barracks",
+        "source": "export/icons/races/american/buildings/barracks_us.webp",
+        "method": "cdn:1856/1778"
+      },
+      {
+        "key": "USF|infantry support center",
+        "search": "Infantry Support Center",
+        "source": "export/icons/races/american/buildings/infantry_support_center_us.webp",
+        "method": "cdn:2032/1858"
+      },
+      {
+        "key": "USF|captain",
+        "search": "Captain",
+        "source": "export/icons/races/american/infantry/captain_us.webp",
+        "method": "cdn:1996/80"
+      },
+      {
+        "key": "USF|convert best rifle to ranger",
+        "search": "Convert best Rifle to Ranger",
+        "source": "export/icons/races/american/infantry/ranger_us.webp",
+        "method": "cdn:208/80"
+      },
+      {
+        "key": "USF|motor pool",
+        "search": "Motor Pool",
+        "source": "export/icons/races/american/buildings/motor_pool_us.webp",
+        "method": "cdn:2032/1976"
+      },
+      {
+        "key": "USF|scout enemy tech",
+        "search": "Scout enemy tech",
+        "source": "export/icons/races/american/infantry/scout_us.webp",
+        "method": "cdn:252/80"
+      },
+      {
+        "key": "USF|m8 greyhound m1 at gun",
+        "search": "M8 Greyhound",
+        "source": "export/icons/races/american/vehicles/greyhound_us.webp",
+        "method": "cdn:274/202"
+      },
+      {
+        "key": "USF|engineer",
+        "search": "Engineer",
+        "source": "export/icons/races/american/infantry/engineer_us.webp",
+        "method": "cdn:1996/1700"
+      },
+      {
+        "key": "USF|tank depot",
+        "search": "Tank Depot",
+        "source": "export/icons/races/american/buildings/tank_depot_us.webp",
+        "method": "cdn:1996/1918"
+      },
+      {
+        "key": "USF|sherman hellcat",
+        "search": "Sherman",
+        "source": "export/icons/races/american/vehicles/sherman_us.webp",
+        "method": "cdn:1996/1700"
+      },
+      {
+        "key": "USF|ranger",
+        "search": "Ranger",
+        "source": "export/icons/races/american/infantry/ranger_us.webp",
+        "method": "cdn:1996/80"
+      },
+      {
+        "key": "USF|paratrooper squad",
+        "search": "Paratrooper Squad",
+        "source": "export/icons/races/american/infantry/paratrooper_us.webp",
+        "method": "cdn:996/80"
+      },
+      {
+        "key": "USF|mechanized support center",
+        "search": "Mechanized Support Center",
+        "source": "export/icons/races/american/buildings/mechanized_support_center_us.webp",
+        "method": "cdn:2032/1918"
+      },
+      {
+        "key": "USF|m8 greyhound chaffee",
+        "search": "M8 Greyhound",
+        "source": "export/icons/races/american/vehicles/greyhound_us.webp",
+        "method": "cdn:274/202"
+      },
+      {
+        "key": "USF|paratrooper",
+        "search": "Paratrooper",
+        "source": "export/icons/races/american/infantry/paratrooper_us.webp",
+        "method": "cdn:1996/80"
+      },
+      {
+        "key": "USF|engineer assault engineer",
+        "search": "Engineer → Assault Engineer",
+        "source": "export/icons/races/american/infantry/assault_engineer_us.webp",
+        "method": "cdn:368/58"
+      },
+      {
+        "key": "USF|sherman",
+        "search": "Sherman",
+        "source": "export/icons/races/american/vehicles/sherman_us.webp",
+        "method": "cdn:1996/1700"
+      },
+      {
+        "key": "USF|war machine easy eight unlock",
+        "search": "War Machine",
+        "source": "export/icons/races/american/abilities/war_machine.webp",
+        "method": "cdn:1932/1876"
+      },
+      {
+        "key": "USF|m8 chaffee",
+        "search": "M8/Chaffee",
+        "source": "export/icons/races/american/vehicles/chaffee_us.webp",
+        "method": "cdn:274/100"
+      },
+      {
+        "key": "USF|sherman e8",
+        "search": "Sherman/E8",
+        "source": "export/icons/races/american/vehicles/sherman_us.webp",
+        "method": "cdn:274/160"
+      },
+      {
+        "key": "USF|motor pool safety",
+        "search": "Motor Pool safety",
+        "source": "export/icons/races/american/buildings/motor_pool_us.webp",
+        "method": "cdn:310/276"
+      },
+      {
+        "key": "USF|medical msc",
+        "search": "Medical/MSC",
+        "source": "export/icons/races/american/infantry/medic_us.webp",
+        "method": "cdn:246/160"
+      },
+      {
+        "key": "USF|new blood",
+        "search": "New Blood",
+        "source": "export/icons/races/american/abilities/new_blood.webp",
+        "method": "cdn:1932/1876"
+      },
+      {
+        "key": "USF|char b1 production unlock",
+        "search": "Char B1 production unlock",
+        "source": "export/icons/races/american/symbols/char_b1_us.webp",
+        "method": "cdn:952/60"
+      },
+      {
+        "key": "USF|char b1 hellcat",
+        "search": "Char B1",
+        "source": "export/icons/races/american/symbols/char_b1_us.webp",
+        "method": "cdn:1952/60"
+      },
+      {
+        "key": "USF|french",
+        "search": "French",
+        "source": "export/icons/races/american/infantry/french_infantry_eng_us.webp",
+        "method": "cdn:296/0"
+      },
+      {
+        "key": "USF|rifle",
+        "search": "Rifle",
+        "source": "export/icons/races/american/infantry/riflemen_us.webp",
+        "method": "cdn:268/72"
+      },
+      {
+        "key": "USF|char b1",
+        "search": "Char B1",
+        "source": "export/icons/races/american/symbols/char_b1_us.webp",
+        "method": "cdn:1952/60"
+      },
+      {
+        "key": "USF|hmg",
+        "search": "HMG",
+        "source": "export/icons/races/american/team_weapons/hmg_30cal_paradrop_us.webp",
+        "method": "cdn:296/0"
+      },
+      {
+        "key": "USF|m3",
+        "search": "M3",
+        "source": "export/icons/races/american/symbols/m3_m75_gmc.webp",
+        "method": "cdn:216/138"
+      },
+      {
+        "key": "USF|pershing",
+        "search": "Pershing",
+        "source": "export/icons/races/american/symbols/pershing_us.webp",
+        "method": "cdn:1916/60"
+      },
+      {
+        "key": "USF|construct tunnel network",
+        "search": "Construct Tunnel Network",
+        "source": "export/icons/races/american/symbols/tunnel_network.webp",
+        "method": "cdn:230/58"
+      },
+      {
+        "key": "USF|tunnel network",
+        "search": "Tunnel network",
+        "source": "export/icons/races/american/symbols/tunnel_network.webp",
+        "method": "cdn:1952/1758"
+      },
+      {
+        "key": "USF|resistance fighter",
+        "search": "Resistance Fighter",
+        "source": "export/icons/races/american/infantry/resistance_fighters_partisan.webp",
+        "method": "cdn:304/80"
+      },
+      {
+        "key": "USF|smuggling routes",
+        "search": "Smuggling Routes",
+        "source": "export/icons/races/american/abilities/smuggling_routes.webp",
+        "method": "cdn:1932/1876"
+      },
+      {
+        "key": "USF|tunnel",
+        "search": "Tunnel",
+        "source": "export/icons/races/american/symbols/tunnel.webp",
+        "method": "cdn:1916/1700"
+      },
+      {
+        "key": "USF|forward hq",
+        "search": "Forward HQ",
+        "source": "export/icons/races/american/buildings/hq_us.webp",
+        "method": "cdn:274/218"
+      },
+      {
+        "key": "USF|ssf commandos",
+        "search": "SSF Commandos",
+        "source": "export/icons/races/american/infantry/ssf_commandos_us.webp",
+        "method": "cdn:2032/80"
+      },
+      {
+        "key": "USF|m8 greyhound chaffee m1 at gun",
+        "search": "M8 Greyhound",
+        "source": "export/icons/races/american/vehicles/greyhound_us.webp",
+        "method": "cdn:274/202"
+      },
+      {
+        "key": "USF|para",
+        "search": "Para",
+        "source": "export/icons/races/american/infantry/paratrooper_us.webp",
+        "method": "cdn:268/80"
+      },
+      {
+        "key": "USF|hellcat sherman",
+        "search": "Hellcat",
+        "source": "export/icons/races/american/vehicles/hellcat_us.webp",
+        "method": "cdn:1996/1800"
+      },
+      {
+        "key": "USF|carpet bombing late",
+        "search": "Carpet Bombing",
+        "source": "export/icons/races/american/abilities/carpet_bombing_run.webp",
+        "method": "cdn:232/176"
+      },
+      {
+        "key": "USF|hellcat",
+        "search": "Hellcat",
+        "source": "export/icons/races/american/vehicles/hellcat_us.webp",
+        "method": "cdn:1996/1800"
+      },
+      {
+        "key": "USF|bolstered team weapons",
+        "search": "Bolstered Team Weapons",
+        "source": "export/icons/races/american/abilities/bolstered_team_weapons.webp",
+        "method": "cdn:1932/1876"
+      },
+      {
+        "key": "USF|pershing late",
+        "search": "Pershing",
+        "source": "export/icons/races/american/symbols/pershing_us.webp",
+        "method": "cdn:1916/60"
+      },
+      {
+        "key": "USF|weapon support center",
+        "search": "Weapon Support Center",
+        "source": "export/icons/races/american/buildings/weapon_support_center_us.webp",
+        "method": "cdn:2032/1700"
+      },
+      {
+        "key": "USF|tank depot t4 armor",
+        "search": "Tank Depot",
+        "source": "export/icons/races/american/buildings/tank_depot_us.webp",
+        "method": "cdn:1996/1918"
+      },
+      {
+        "key": "USF|mortar only",
+        "search": "Mortar",
+        "source": "export/icons/races/american/team_weapons/mortar_81mm_us.webp",
+        "method": "cdn:296/0"
+      },
+      {
+        "key": "USF|greyhound",
+        "search": "Greyhound",
+        "source": "export/icons/races/american/vehicles/greyhound_us.webp",
+        "method": "cdn:1996/1800"
+      },
+      {
+        "key": "USF|at gun",
+        "search": "AT Gun",
+        "source": "export/icons/races/american/team_weapons/at_gun57mm_us.webp",
+        "method": "cdn:296/0"
+      },
+      {
+        "key": "USF|zone rouge",
+        "search": "Zone Rouge",
+        "source": "export/icons/races/american/abilities/zone_rouge.webp",
+        "method": "cdn:1932/1876"
+      },
+      {
+        "key": "USF|tank depot t4",
+        "search": "Tank Depot",
+        "source": "export/icons/races/american/buildings/tank_depot_us.webp",
+        "method": "cdn:1996/1918"
+      },
+      {
+        "key": "USF|char b1 as frontline hellcats as anti tank late",
+        "search": "Char B1 as frontline + Hellcats as anti-tank",
+        "source": "export/icons/races/american/vehicles/char_b1_us.webp",
+        "method": "cdn:244/86"
+      },
+      {
+        "key": "USF|fast mechanized support center",
+        "search": "Fast Mechanized Support Center",
+        "source": "export/icons/races/american/buildings/mechanized_support_center_us.webp",
+        "method": "cdn:310/218"
+      },
+      {
+        "key": "USF|greyhound at response",
+        "search": "Greyhound",
+        "source": "export/icons/races/american/vehicles/greyhound_us.webp",
+        "method": "cdn:1996/1800"
+      },
+      {
+        "key": "USF|tank depot char b1 hellcats",
+        "search": "Tank Depot",
+        "source": "export/icons/races/american/buildings/tank_depot_us.webp",
+        "method": "cdn:1996/1918"
+      },
+      {
+        "key": "British|dingo light scout car",
+        "search": "Dingo Light Scout Car",
+        "source": "export/icons/races/british/vehicles/dingo_uk.webp",
+        "method": "cdn:252/100"
+      },
+      {
+        "key": "British|commando section",
+        "search": "Commando Section",
+        "source": "export/icons/races/british/infantry/commando_uk.webp",
+        "method": "cdn:996/80"
+      },
+      {
+        "key": "British|6 pounder",
+        "search": "6-pounder",
+        "source": "export/icons/races/british/upgrades/crusader_6_pounder.webp",
+        "method": "cdn:221/293"
+      },
+      {
+        "key": "British|training center",
+        "search": "Training Center",
+        "source": "export/icons/races/british/buildings/training_center_africa_uk.webp",
+        "method": "cdn:332/218"
+      },
+      {
+        "key": "British|unlock m3 grant medium tanks",
+        "search": "Unlock M3 Grant Medium Tanks",
+        "source": "export/icons/races/british/symbols/m3_grant.webp",
+        "method": "cdn:210/118"
+      },
+      {
+        "key": "British|grant centaur",
+        "search": "Grant",
+        "source": "export/icons/races/british/vehicles/grant_africa_uk.webp",
+        "method": "cdn:296/100"
+      },
+      {
+        "key": "British|dingo",
+        "search": "Dingo",
+        "source": "export/icons/races/british/vehicles/dingo_uk.webp",
+        "method": "cdn:1996/100"
+      },
+      {
+        "key": "British|grant",
+        "search": "Grant",
+        "source": "export/icons/races/british/vehicles/grant_africa_uk.webp",
+        "method": "cdn:296/100"
+      },
+      {
+        "key": "British|humber",
+        "search": "Humber",
+        "source": "export/icons/races/british/vehicles/humber_uk.webp",
+        "method": "cdn:1996/100"
+      },
+      {
+        "key": "British|australian light infantry",
+        "search": "Australian Light Infantry",
+        "source": "export/icons/races/british/infantry/australian_light_infantry_africa_uk.webp",
+        "method": "cdn:332/80"
+      },
+      {
+        "key": "British|2 pounder",
+        "search": "2-pounder",
+        "source": "export/icons/races/british/upgrades/cwt_lrdg_2_pounder.webp",
+        "method": "cdn:221/178"
+      },
+      {
+        "key": "British|archer only",
+        "search": "Archer",
+        "source": "export/icons/races/british/vehicles/archer_uk.webp",
+        "method": "cdn:1856/1640"
+      },
+      {
+        "key": "British|crusader aa bg production unlock",
+        "search": "Crusader AA BG production unlock",
+        "source": "export/icons/races/british/symbols/crusader_aa.webp",
+        "method": "cdn:230/58"
+      },
+      {
+        "key": "British|crusader aa",
+        "search": "Crusader AA",
+        "source": "export/icons/races/british/symbols/crusader_aa.webp",
+        "method": "cdn:1952/60"
+      },
+      {
+        "key": "British|churchill iv bg production unlock unlock m3 grant medium tanks",
+        "search": "Churchill IV BG production unlock",
+        "source": "export/icons/races/british/vehicles/churchill_uk.webp",
+        "method": "cdn:252/100"
+      },
+      {
+        "key": "British|churchill iv grant",
+        "search": "Churchill IV",
+        "source": "export/icons/races/british/vehicles/churchill_uk.webp",
+        "method": "cdn:274/100"
+      },
+      {
+        "key": "British|grant firefly",
+        "search": "Grant",
+        "source": "export/icons/races/british/vehicles/grant_africa_uk.webp",
+        "method": "cdn:296/100"
+      },
+      {
+        "key": "British|ssb commando section",
+        "search": "SSB Commando Section",
+        "source": "export/icons/races/british/infantry/ssb_commando_uk.webp",
+        "method": "cdn:1032/80"
+      },
+      {
+        "key": "British|pack howitzer",
+        "search": "Pack Howitzer",
+        "source": "export/icons/races/british/team_weapons/pack_howitzer_75mm_africa_uk.webp",
+        "method": "cdn:332/0"
+      },
+      {
+        "key": "British|mortar",
+        "search": "Mortar",
+        "source": "export/icons/races/british/team_weapons/mortar_81mm_africa_uk.webp",
+        "method": "cdn:296/0"
+      },
+      {
+        "key": "British|bishop unlock",
+        "search": "Bishop unlock",
+        "source": "export/icons/races/british/vehicles/bishop_uk.webp",
+        "method": "cdn:996/860"
+      },
+      {
+        "key": "British|bishop",
+        "search": "Bishop",
+        "source": "export/icons/races/british/vehicles/bishop_uk.webp",
+        "method": "cdn:1996/1700"
+      },
+      {
+        "key": "British|humber unlock m3 stuart light tanks",
+        "search": "Humber",
+        "source": "export/icons/races/british/vehicles/humber_uk.webp",
+        "method": "cdn:1996/100"
+      },
+      {
+        "key": "British|humber stuart only",
+        "search": "Humber",
+        "source": "export/icons/races/british/vehicles/humber_uk.webp",
+        "method": "cdn:1996/100"
+      },
+      {
+        "key": "British|pack howitzer commando support section",
+        "search": "Pack Howitzer",
+        "source": "export/icons/races/british/team_weapons/pack_howitzer_75mm_africa_uk.webp",
+        "method": "cdn:332/0"
+      },
+      {
+        "key": "British|defensive tactics bg production unlock",
+        "search": "Defensive Tactics BG production unlock",
+        "source": "export/icons/races/british/abilities/defensive_tactics.webp",
+        "method": "cdn:210/176"
+      },
+      {
+        "key": "British|archer",
+        "search": "Archer",
+        "source": "export/icons/races/british/vehicles/archer_uk.webp",
+        "method": "cdn:1856/1640"
+      },
+      {
+        "key": "British|crocodile late extra at as required",
+        "search": "Crocodile",
+        "source": "export/icons/races/british/symbols/churchill_crocodile_uk.webp",
+        "method": "cdn:216/60"
+      },
+      {
+        "key": "British|crusader aa bg production unlock unlock m3 grant medium tanks",
+        "search": "Crusader AA BG production unlock",
+        "source": "export/icons/races/british/symbols/crusader_aa.webp",
+        "method": "cdn:230/58"
+      },
+      {
+        "key": "British|crusader aa grant",
+        "search": "Crusader AA",
+        "source": "export/icons/races/british/symbols/crusader_aa.webp",
+        "method": "cdn:1952/60"
+      },
+      {
+        "key": "British|churchill iv bg production unlock",
+        "search": "Churchill IV BG production unlock",
+        "source": "export/icons/races/british/vehicles/churchill_uk.webp",
+        "method": "cdn:252/100"
+      },
+      {
+        "key": "British|dead drop ssb sniper",
+        "search": "Dead Drop",
+        "source": "export/icons/races/british/symbols/dead_drop.webp",
+        "method": "cdn:1952/1748"
+      },
+      {
+        "key": "British|humber armored car",
+        "search": "Humber Armored Car",
+        "source": "export/icons/races/british/vehicles/humber_uk.webp",
+        "method": "cdn:252/100"
+      },
+      {
+        "key": "British|crusader aa medium tank",
+        "search": "Crusader AA Medium Tank",
+        "source": "export/icons/races/british/symbols/crusader_aa.webp",
+        "method": "cdn:952/60"
+      },
+      {
+        "key": "British|crusader aa medium tank withdraw and refit",
+        "search": "Crusader AA Medium Tank",
+        "source": "export/icons/races/british/symbols/crusader_aa.webp",
+        "method": "cdn:952/60"
+      },
+      {
+        "key": "British|crusader ii medium tank",
+        "search": "Crusader II Medium Tank",
+        "source": "export/icons/races/british/symbols/crusader_uk.webp",
+        "method": "cdn:194/60"
+      },
+      {
+        "key": "DAK|assault grenadier",
+        "search": "Assault Grenadier",
+        "source": "export/icons/races/afrika_corps/infantry/assault_panzergrenadier_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|stug iii d",
+        "search": "StuG III D",
+        "source": "export/icons/races/afrika_corps/vehicles/stug_iii_d_ak.webp",
+        "method": "cdn:2068/1758"
+      },
+      {
+        "key": "DAK|assault grenadier panzerjager",
+        "search": "Assault Grenadier",
+        "source": "export/icons/races/afrika_corps/infantry/assault_panzergrenadier_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|armored reserves before tiger call in",
+        "search": "Armored Reserves before Tiger call-in",
+        "source": "export/icons/races/afrika_corps/vehicles/tiger_ak.webp",
+        "method": "cdn:230/100"
+      },
+      {
+        "key": "DAK|tiger ace late",
+        "search": "Tiger Ace",
+        "source": "export/icons/races/afrika_corps/vehicles/tiger_ace_ak.webp",
+        "method": "cdn:2032/100"
+      },
+      {
+        "key": "DAK|semovente production unlock bg",
+        "search": "Semovente production unlock",
+        "source": "export/icons/races/afrika_corps/symbols/semovente.webp",
+        "method": "cdn:896/760"
+      },
+      {
+        "key": "DAK|pact of steel",
+        "search": "Pact of Steel",
+        "source": "export/icons/races/afrika_corps/abilities/pact_of_steel.webp",
+        "method": "cdn:1968/1934"
+      },
+      {
+        "key": "DAK|guastatori",
+        "search": "Guastatori",
+        "source": "export/icons/races/afrika_corps/infantry/guastatori_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|2 5t medical truck",
+        "search": "2.5t Medical Truck",
+        "source": "export/icons/races/afrika_corps/vehicles/2_5_truck_medical_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|assault grenadiers",
+        "search": "Assault Grenadiers",
+        "source": "export/icons/races/afrika_corps/infantry/assault_panzergrenadier_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|guastatori assault group concept",
+        "search": "Guastatori/Assault Group concept",
+        "source": "export/icons/races/afrika_corps/infantry/guastatori_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|kriegsmariner",
+        "search": "Kriegsmariner",
+        "source": "export/icons/races/afrika_corps/infantry/kriegsmarine_ak.webp",
+        "method": "cdn:268/80"
+      },
+      {
+        "key": "DAK|marder iii",
+        "search": "Marder III",
+        "source": "export/icons/races/afrika_corps/vehicles/marder_iii_ak.webp",
+        "method": "cdn:2032/100"
+      },
+      {
+        "key": "DAK|254 recon tractor",
+        "search": "254 Recon Tractor",
+        "source": "export/icons/races/afrika_corps/symbols/254_recon_tractor.webp",
+        "method": "cdn:1997/1818"
+      },
+      {
+        "key": "DAK|stug iii d panzerarmee transition",
+        "search": "StuG III D",
+        "source": "export/icons/races/afrika_corps/vehicles/stug_iii_d_ak.webp",
+        "method": "cdn:2068/1758"
+      },
+      {
+        "key": "DAK|marder",
+        "search": "Marder",
+        "source": "export/icons/races/afrika_corps/vehicles/marder_iii_ak.webp",
+        "method": "cdn:296/100"
+      },
+      {
+        "key": "DAK|recon tractor",
+        "search": "Recon Tractor",
+        "source": "export/icons/races/afrika_corps/symbols/254_recon_tractor.webp",
+        "method": "cdn:232/118"
+      },
+      {
+        "key": "DAK|skirmisher package",
+        "search": "Skirmisher Package",
+        "source": "export/icons/races/afrika_corps/abilities/skirmisher_package.webp",
+        "method": "cdn:1932/1600"
+      },
+      {
+        "key": "DAK|semovente from headquarters",
+        "search": "Semovente",
+        "source": "export/icons/races/afrika_corps/symbols/semovente.webp",
+        "method": "cdn:1896/1600"
+      },
+      {
+        "key": "DAK|kriegsmariner immediately",
+        "search": "Kriegsmariner immediately",
+        "source": "export/icons/races/afrika_corps/infantry/kriegsmarine_ak.webp",
+        "method": "cdn:246/80"
+      },
+      {
+        "key": "DAK|panzerjaeger",
+        "search": "Panzerjaeger",
+        "source": "export/icons/races/afrika_corps/symbols/panzerjaeger_ak.webp",
+        "method": "cdn:1896/1788"
+      },
+      {
+        "key": "DAK|kriegsmariner x4",
+        "search": "Kriegsmariner x4",
+        "source": "export/icons/races/afrika_corps/infantry/kriegsmarine_ak.webp",
+        "method": "cdn:246/80"
+      },
+      {
+        "key": "DAK|assault grenadier or panzerjaeger first",
+        "search": "Assault Grenadier OR Panzerjaeger",
+        "source": "export/icons/races/afrika_corps/infantry/assault_panzergrenadier_ak.webp",
+        "method": "exact"
+      },
+      {
+        "key": "DAK|medical late support as required",
+        "search": "Medical/late support as required",
+        "source": "export/icons/races/afrika_corps/infantry/medic_ak.webp",
+        "method": "cdn:202/190"
+      }
+    ],
+    "removed": [
+      {
+        "key": "Wehrmacht|support elements",
+        "reason": "ambiguous tech label; keep symbol fallback"
+      },
+      {
+        "key": "Wehrmacht|medical station",
+        "reason": "removed non-faction/ambiguous source export/icons/races/common/abilities/healing.webp"
+      },
+      {
+        "key": "DAK|250 half track",
+        "reason": "removed non-faction/ambiguous source export/icons/races/common/abilities/healing.webp"
+      },
+      {
+        "key": "DAK|light support kompanie",
+        "reason": "removed non-faction/ambiguous source export/icons/races/common/symbols/building_barracks.webp"
+      },
+      {
+        "key": "DAK|panzerarmee kommand",
+        "reason": "removed non-faction/ambiguous source export/icons/races/common/symbols/building_tank_depot.webp"
+      },
+      {
+        "key": "DAK|panzerjager",
+        "reason": "removed non-faction/ambiguous source export/icons/common/units/symbols/vehicle_soviet_su76m_assault_gun_symbol.webp"
+      },
+      {
+        "key": "DAK|krad",
+        "reason": "removed non-faction/ambiguous source export/icons/common/units/symbols/cmdr_german_field_officer_group_symbol.webp"
+      },
+      {
+        "key": "DAK|250",
+        "reason": "removed non-faction/ambiguous source export/icons/common/units/symbols/vehicle_german_250_halftrack_symbol.webp"
+      },
+      {
+        "key": "DAK|light support",
+        "reason": "removed non-faction/ambiguous source export/icons/races/common/symbols/building_barracks.webp"
+      },
+      {
+        "key": "DAK|walking stuka",
+        "reason": "removed non-faction/ambiguous source export/icons/common/units/symbols/vehicle_west_german_halftrack_251_walking_stuka_symbol.webp"
+      },
+      {
+        "key": "DAK|t2",
+        "reason": "removed non-faction/ambiguous source export/icons/common/upgrades/g43_jaeger_ger.webp"
+      },
+      {
+        "key": "USF|rifleman",
+        "reason": "removed non-faction/ambiguous source export/icons/common/units/icons/13_rifleman.webp"
+      },
+      {
+        "key": "USF|m8",
+        "reason": "removed non-faction/ambiguous source export/icons/common/abilities/ability_artillery_barrage.webp"
+      },
+      {
+        "key": "USF|at",
+        "reason": "removed non-faction/ambiguous source export/icons/common/weapons/weapon_ptrs.webp"
+      },
+      {
+        "key": "USF|wsc",
+        "reason": "removed non-faction/ambiguous source export/icons/common/upgrades/hmg_us.webp"
+      },
+      {
+        "key": "USF|whizbang",
+        "reason": "removed non-faction/ambiguous source export/icons/common/units/icons/vehicle_aef_calliope.webp"
+      },
+      {
+        "key": "USF|at as needed",
+        "reason": "removed non-faction/ambiguous source export/icons/common/weapons/weapon_ptrs.webp"
+      }
+    ]
+  }
 }
