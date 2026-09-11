@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-11T14:20:31.181Z",
+  "generatedAt": "2026-09-11T14:33:24.622Z",
   "total": 396,
   "resolved": [
     {
@@ -5449,7 +5449,7 @@
   "coveragePct": 66.7,
   "iconQa": {
     "version": "v1.1.18",
-    "generatedAt": "2026-09-11T14:21:08.738Z",
+    "generatedAt": "2026-09-11T14:34:12.034Z",
     "sameFactionCdnFixes": 213,
     "removedAmbiguous": 17,
     "fixes": [
@@ -6805,7 +6805,7 @@
   },
   "knownIconOverrides": {
     "version": "v1.1.27",
-    "generatedAt": "2026-09-11T14:21:09.690Z",
+    "generatedAt": "2026-09-11T14:34:13.871Z",
     "applied": [
       {
         "key": "Wehrmacht|fallschirmpioneer paradrop",
@@ -6970,9 +6970,9 @@
     ]
   },
   "verifiedBuildOrderFixes": {
-    "version": "v1.1.26",
-    "generatedAt": "2026-09-11T14:21:09.994Z",
-    "source": "User-verified Wehrmacht build-order QA with exact CoH3Stats CDN assets",
+    "version": "v1.1.28",
+    "generatedAt": "2026-09-11T14:34:14.717Z",
+    "source": "User-verified build-order QA with exact CoH3Stats CDN assets",
     "appliedIcons": [
       {
         "key": "Wehrmacht|jager squad",
@@ -7008,6 +7008,26 @@
         "key": "Wehrmacht|medical bunker",
         "source": "export/icons/races/german/buildings/bunker_medical_ger.webp",
         "localPath": "assets/build-icons/wehrmacht--medical-bunker.webp"
+      },
+      {
+        "key": "British|royal engineer section",
+        "source": "export/icons/races/british/infantry/sapper_uk.webp",
+        "localPath": "assets/build-icons/british--royal-engineer-section.webp"
+      },
+      {
+        "key": "British|infantry section",
+        "source": "export/icons/races/british/infantry/tommy_africa_uk.webp",
+        "localPath": "assets/build-icons/british--infantry-section.webp"
+      },
+      {
+        "key": "British|infantry section 2",
+        "source": "export/icons/races/british/infantry/tommy_africa_uk.webp",
+        "localPath": "assets/build-icons/british--infantry-section-2.webp"
+      },
+      {
+        "key": "British|infantry section 3",
+        "source": "export/icons/races/british/infantry/tommy_africa_uk.webp",
+        "localPath": "assets/build-icons/british--infantry-section-3.webp"
       }
     ]
   }
