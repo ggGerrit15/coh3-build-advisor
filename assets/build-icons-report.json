@@ -1,6 +1,6 @@
 {
   "dataTag": "v2.5.3-3",
-  "generatedAt": "2026-09-11T12:33:32.002Z",
+  "generatedAt": "2026-09-11T13:22:07.432Z",
   "total": 396,
   "resolved": [
     {
@@ -5449,7 +5449,7 @@
   "coveragePct": 66.7,
   "iconQa": {
     "version": "v1.1.18",
-    "generatedAt": "2026-09-11T12:34:25.869Z",
+    "generatedAt": "2026-09-11T13:23:28.134Z",
     "sameFactionCdnFixes": 213,
     "removedAmbiguous": 17,
     "fixes": [
@@ -6805,7 +6805,7 @@
   },
   "knownIconOverrides": {
     "version": "v1.1.19",
-    "generatedAt": "2026-09-11T12:34:26.120Z",
+    "generatedAt": "2026-09-11T13:23:28.985Z",
     "applied": [
       {
         "key": "Wehrmacht|fallschirmpioneer paradrop",
@@ -6830,8 +6830,8 @@
     ]
   },
   "verifiedBuildOrderFixes": {
-    "version": "v1.1.23",
-    "generatedAt": "2026-09-11T12:34:26.541Z",
+    "version": "v1.1.24",
+    "generatedAt": "2026-09-11T13:23:29.812Z",
     "source": "User-verified Wehrmacht build-order QA with exact CoH3Stats CDN assets",
     "appliedIcons": [
       {
