@@ -7,13 +7,35 @@ const REPORT_PATH = 'assets/build-icons-report.json';
 const OUT_DIR = 'assets/build-icons';
 const CDN_RAW = 'https://raw.githubusercontent.com/cohstats/coh3-cdn/master/public';
 const CDN = 'https://cdn.coh3stats.com';
-const VERSION = 'v1.1.19';
+const VERSION = 'v1.1.25';
 
 const OVERRIDES = {
   'Wehrmacht|fallschirmpioneer paradrop': 'export/icons/races/german/infantry/fallschirmpioneers_ger.webp',
   'Wehrmacht|fallschirmpioneer squad paradrop': 'export/icons/races/german/infantry/fallschirmpioneers_ger.webp',
   'Wehrmacht|medical bunker station': 'export/icons/races/german/buildings/bunker_medical_ger.webp',
-  'Wehrmacht|sturmpanzer iv brummbaer': 'export/icons/races/german/vehicles/brummbar_german.webp'
+  'Wehrmacht|sturmpanzer iv brummbaer': 'export/icons/races/german/vehicles/brummbar_german.webp',
+
+  // DAK: exact CoH3Stats artwork for the build-order labels used by the advisor.
+  // These overrides run after the automatic matcher so generic/incorrect fallbacks
+  // cannot replace the verified same-faction assets below.
+  'DAK|kradschutzen': 'export/icons/races/afrika_corps/vehicles/kradschutzen_motorcycle_ak.webp',
+  'DAK|250 half track': 'export/icons/races/afrika_corps/vehicles/halftrack_250_ak.webp',
+  'DAK|light support kompanie': 'export/icons/races/afrika_corps/buildings/infanterie_support_ak.webp',
+  'DAK|fire support elements': 'export/icons/races/afrika_corps/vehicles/halftrack_7_flak_ak.webp',
+  'DAK|panzerjager': 'export/icons/races/afrika_corps/infantry/panzerjaegar_ak.webp',
+  'DAK|flakvierling': 'export/icons/races/afrika_corps/vehicles/halftrack_7_flak_ak.webp',
+  'DAK|flakvierling pak 38': 'export/icons/races/afrika_corps/vehicles/halftrack_7_flak_ak.webp',
+  'DAK|panzerarmee kommand': 'export/icons/races/afrika_corps/buildings/panzer_kompanie_ak.webp',
+  'DAK|support armor elements': 'export/icons/races/afrika_corps/vehicles/stug_iii_d_ak.webp',
+  'DAK|254 recon tractor': 'export/icons/races/afrika_corps/vehicles/armored_tractor_254_ak.webp',
+  'DAK|carro armato': 'export/icons/races/afrika_corps/vehicles/m13_40_ak.webp',
+  'DAK|armored reserves before tiger call in': 'export/icons/races/afrika_corps/vehicles/tiger_ak.webp',
+  'DAK|elefant only in a true heavy armor endgame': 'export/icons/races/afrika_corps/vehicles/elefant_tank_destroyer_ak.webp',
+
+  // Two cards already had artwork in some profiles, but the automatic matcher
+  // could select a merely similar asset. Pin them to the actual CoH3 icons too.
+  'DAK|bersaglieri bolster': 'export/icons/races/afrika_corps/abilities/bersaglieri_bolster.webp',
+  'DAK|convert 250 to 250 3 funkpanzerwagen': 'export/icons/races/afrika_corps/vehicles/vampire_ht_ak_icon.webp'
 };
 
 function slug(value = '') {
