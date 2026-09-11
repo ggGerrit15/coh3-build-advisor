@@ -77,6 +77,12 @@ jobs:
       - name: Vendor build-order icons from CoH3Stats
         run: node scripts/sync_build_order_icons.mjs
 
+      - name: QA build-order icons against same-faction CoH3Stats CDN assets
+        run: node scripts/fix_build_icon_assets.mjs
+
+      - name: Apply known build-order icon corrections
+        run: node scripts/fix_known_build_icon_overrides.mjs
+
       - name: Commit generated assets and site update
         run: |
           git config user.name "github-actions[bot]"
