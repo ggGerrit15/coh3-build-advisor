@@ -1,6 +1,6 @@
 {
-  "patch": "2.5.5",
-  "verified": "10 Sep 2026 — v1.1.14 starting-unit clarity pass. Current Advisor build orders now label the unit already present at game start as “Starting unit: …”. If the same starting unit is intentionally produced again, subsequent copies are explicitly labelled “2nd …”, “3rd …”, etc. Creator-source data remains preserved; the live renderer applies the same display clarification without rewriting creator originals.",
+  "patch": "2.5.6",
+  "verified": "21 Sep 2026 — v1.1.30 Kriegsmarine 1v1 update. Added the early 250 opening, explicit Hardpoint timing, and a scout-dependent 8 Rad versus Pak 38/Marder branch for Stuart and Greyhound pressure. Client patch 2.5.6 made no multiplayer balance changes; CoHDB statistical layers remain labelled by their source patch.",
   "battlegroupTrees": {
     "Wehrmacht": {
       "Breakthrough": {
@@ -1410,8 +1410,8 @@
         ]
       },
       "Kriegsmarine": {
-        "verifiedPatch": "2.5.5",
-        "source": "CoH3Stats DAK Explorer / cohstats open battlegroup data; tier grouping re-audited for Step 1.",
+        "verifiedPatch": "2.5.6",
+        "source": "CoH3Stats DAK Explorer / cohstats open battlegroup data; rechecked after the official 2.5.6 hotfix, which did not alter multiplayer balance or the battlegroup tree.",
         "branches": [
           {
             "name": "Off-shore Support",
@@ -4663,7 +4663,7 @@
       },
       "Kriegsmarine": {
         "small": {
-          "label": "Havoc-corrected Kriegsmarine priority",
+          "label": "Early Hardpoint logistics priority",
           "scope": "1v1 / 2v2 small-game baseline",
           "confidence": "High",
           "sequence": [
@@ -4699,11 +4699,12 @@
             }
           ],
           "notes": [
-            "Hardpoints are prioritized before Flares, directly addressing Havoc's criticism of the previous recommendation.",
-            "Improved Hardpoints is selected before Supply Interdiction; the validator now enforces this prerequisite chain.",
-            "Starburst Flares and Naval Intervention are the default later Off-shore picks. Stuka Overflight and Fritz X remain situational alternatives."
+            "Unlock Kriegsmariners first, then prioritize Designate Resupply Point before Starburst Flares.",
+            "Place the first 50-munition Hardpoint on a safe, useful fuel or munitions point after the two-Kriegsmariner + 250 opening; do not spam exposed points.",
+            "Improved Hardpoints must come before Supply Interdiction in the recommended logistics sequence.",
+            "Starburst Flares and Naval Intervention are later utility choices; Stuka Overflight and Fritz X remain situational alternatives."
           ],
-          "evidence": "Havoc feedback supplied by the project owner plus the current canonical Patch 2.5.5 Kriegsmarine tree."
+          "evidence": "HelpingHans Kriegsmarine guide evidence plus Havoc feedback, reconciled with the canonical tree and the official 2.5.6 no-balance hotfix."
         },
         "3v3": {
           "label": "3v3 team-game battlegroup order",
@@ -6730,48 +6731,71 @@
       "faction": "DAK",
       "battlegroup": "Kriegsmarine",
       "mode": "1v1",
-      "confidence": "Medium-High",
-      "verdict": "Kriegsmariner pressure into a mobile DAK midgame. Hardpoints are the main battlegroup investment; Flares are utility, not the opening priority.",
+      "confidence": "Medium",
+      "verdict": "Open with two Kriegsmariners and an early 250, then use Panzerjäger plus a real scouting fork: 8 Rad for uncontested anti-infantry tempo, or Pak 38 into Marder against a fast Stuart or Greyhound.",
       "build": [
         "Starting unit: Panzerpioneer",
         "Kriegsmariner",
         "Kriegsmariner",
+        "250 Light Carrier",
         "Kriegsmariner",
         "Light Support Kompanie",
         "Panzerjäger",
+        "Fire Support Elements",
+        "[SCOUT] Stuart / Greyhound tech",
         "Mechanized Kompanie",
-        "8 Rad",
+        "8 Rad if no fast enemy light vehicle",
         "Support Armor Elements",
         "StuG III D",
         "Marder III",
         "254 Recon Tractor",
-        "Marder III",
-        "StuG III D / Panzerarmee transition"
+        "Marder III / StuG III D according to enemy composition"
       ],
       "target": [
         "Panzerpioneer",
-        "3 Kriegsmariner",
-        "8 Rad",
+        "2–3 Kriegsmariners",
+        "250 Light Carrier",
         "Panzerjäger",
-        "StuG",
-        "1–2 Marders",
-        "Recon Tractor"
+        "8 Rad versus infantry or Pak 38 + Marder versus Allied light vehicles",
+        "StuG III D when anti-infantry armor is needed",
+        "254 Recon Tractor",
+        "1–2 Marders as enemy armor scales"
       ],
       "tips": [
-        "Do not feed the 8 Rad into snares just because it is your first vehicle.",
-        "The first Panzerjäger is the safety valve against enemy LVs.",
-        "Use Flares to take fights on your terms and to support Marders."
+        "Use the 250 as a transport, combined-arms and healing platform; preserve it instead of taking frontal vehicle fights.",
+        "Place one early Hardpoint on a safe, useful fuel or munitions point once 50 munitions are available; improve it before expanding to more points.",
+        "The 8 Rad is not the answer to a Stuart. Panzerjäger buys time, while Pak 38 and Marder provide the hard anti-vehicle layer."
       ],
       "branches": [
         [
-          "Enemy fast LV",
-          "Panzerjäger before or immediately after 8 Rad",
-          "Prevents the mobile build being hard-countered."
+          "Motor Pool or Stuart tech is likely",
+          "After Fire Support Elements: Pak 38 → Mechanized Kompanie → Marder III; delay or skip the 8 Rad",
+          "A Stuart or Greyhound can punish an uncovered 8-Rad timing."
         ],
         [
-          "You cannot keep 3 Kriegs healthy",
-          "Stop adding infantry and invest in vehicles/healing",
-          "Four-model squads can bleed badly."
+          "Stuart / Greyhound is already fielded",
+          "Pak 38 immediately, Panzerjäger screening in front, then Mechanized → Marder III",
+          "Do not try to solve the vehicle with an unsupported 8 Rad."
+        ],
+        [
+          "No early enemy light-vehicle tech",
+          "Mechanized → 8 Rad → Support Armor → StuG III D; add Marder as enemy armor appears",
+          "This converts the safe opening into anti-infantry map pressure."
+        ],
+        [
+          "First 50 munitions after two Kriegs + 250",
+          "Designate one safe fuel or munitions point as the first Hardpoint; then Improved Hardpoints → Supply Interdiction",
+          "One defensible point starts the logistics value without wasting munitions on exposed structures."
+        ],
+        [
+          "Manpower is tight before the first tech",
+          "Delay the third Kriegsmariner; if necessary, skip the 250 rather than delaying all tech and anti-LV coverage",
+          "The 250 is the preferred default, not an unconditional tax."
+        ],
+        [
+          "Behind or fuel-starved",
+          "Stabilize with Panzerjäger + Pak 38 and 250 healing before Support Armor / StuG investment",
+          "Field safety matters more than forcing the planned vehicle timing."
         ]
       ],
       "profileType": "Current recommendation",
@@ -6789,14 +6813,55 @@
         ]
       },
       "evidence": [
-        "Havoc-derived Kriegsmarine build previously supplied by user",
-        "Current Kriegsmarine ability roster and DAK unit roster"
+        "HelpingHans Kriegsmarine guide transcript directly supports an early 250, two Kriegsmariners and an early safe Hardpoint.",
+        "CoHDB current statistical patch 2.5.5 shows the 250 in recurring DAK Fire Support / Mechanized variants; those archetypes are faction-level, not Kriegsmarine-specific.",
+        "CoH3Stats production data supports Panzerjäger from Light Support, Pak 38 after Fire Support Elements, and Marder III from Mechanized Kompanie.",
+        "Official client Hot Fix 2.5.6 changed a Final Stand exploit only and did not announce multiplayer balance changes."
       ],
       "techQaNotes": [
-        "Panzerjäger is produced from Light Support Kompanie; StuG III D is produced from Mechanized Kompanie only after Support Armor Elements.",
-        "Battlegroup priority corrected: Hardpoints → Improved Hardpoints → Supply Interdiction is the main logistics progression; SLD Starburst Flares is treated as separate situational utility."
+        "Panzerjäger is available from the Light Support Kompanie. Fire Support Elements unlocks the Pak 38 branch used against Stuart/Greyhound pressure.",
+        "Marder III is produced from the Mechanized Kompanie; Support Armor Elements unlocks StuG III D and is not treated as the anti-vehicle prerequisite.",
+        "The 8 Rad branch is explicitly conditional and must not be used as the sole answer to a Stuart."
       ],
-      "techQa": "Production/tech legality retained from the v1.1.0 audit; battlegroup unlock legality is now resolved from the centralized canonical tree"
+      "techQa": "Patch 2.5.6 production legality checked; the hotfix did not change multiplayer balance or this tech route",
+      "variants": [
+        {
+          "name": "250 → 8 Rad tempo",
+          "when": "No fast Motor Pool / Stuart timing is showing",
+          "build": [
+            "Panzerpioneer",
+            "Kriegsmariner ×2",
+            "250 Light Carrier",
+            "Kriegsmariner #3",
+            "Light Support Kompanie",
+            "Panzerjäger",
+            "Fire Support Elements",
+            "Mechanized Kompanie",
+            "8 Rad",
+            "Support Armor Elements",
+            "StuG III D",
+            "Marder III"
+          ],
+          "note": "The 8 Rad is the anti-infantry tempo choice only after scouting confirms that it will not have to duel the first Allied light vehicle."
+        },
+        {
+          "name": "Pak 38 → Marder safety",
+          "when": "USF Motor Pool or British Stuart tech is likely / confirmed",
+          "build": [
+            "Panzerpioneer",
+            "Kriegsmariner ×2",
+            "250 Light Carrier",
+            "Light Support Kompanie",
+            "Panzerjäger",
+            "Fire Support Elements",
+            "Pak 38",
+            "Mechanized Kompanie",
+            "Marder III",
+            "StuG III D only after anti-vehicle safety"
+          ],
+          "note": "Delay the third Kriegsmariner or 8 Rad when needed; Pak 38 plus Marder is the reliable answer to the first Stuart/Greyhound window."
+        }
+      ]
     },
     {
       "faction": "DAK",
@@ -15820,9 +15885,9 @@
       "note": "Official multiplayer balance baseline for this 2.5.x snapshot."
     },
     {
-      "name": "Official Hot Fix 2.5.5",
+      "name": "Official Hot Fix 2.5.6",
       "url": "https://steamcommunity.com/app/1677280/allnews/",
-      "note": "Current client-version verification. Hot Fix 2.5.5 addressed the artillery barrage cooldown exploit and logging; it did not announce a battlegroup-tree rebalance."
+      "note": "Current client-version verification. Hot Fix 2.5.6 fixed a Final Stand perk exploit and did not announce multiplayer balance or battlegroup-tree changes."
     },
     {
       "name": "CoHDB Battlegroups – exact 4v4",

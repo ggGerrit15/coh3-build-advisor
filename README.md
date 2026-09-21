@@ -20,7 +20,7 @@ https://gggerrit15.github.io/coh3-build-advisor/
 
 ## Current Version
 
-**v1.0.0 — Patch 2.5.3**
+**v1.1.30 — Client Patch 2.5.6**
 
 
 ## Important
