@@ -37,6 +37,7 @@ jobs:
           node --check scripts/add_cohdb_runtime.mjs
           node --check scripts/cohdb_runtime.js
           node --check scripts/embed_cohdb_snapshot.mjs
+          node tests/test_cohdb_runtime.mjs
 
       - name: Validate imported snapshot
         run: |
