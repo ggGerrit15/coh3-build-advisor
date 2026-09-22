@@ -45,6 +45,23 @@ The advisor uses a combination of:
 
 See the "Sources / Method" tab inside the advisor for additional information.
 
+## CoHDB importer
+
+The repository now contains a reviewable importer for the public CoHDB HTML pages:
+
+```bash
+python scripts/import_cohdb.py --output data/cohdb/latest.json
+python -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+The importer discovers the latest CoHDB patch, imports the public unfiltered battlegroup table, and imports configured build-order pages with their mode summaries, rating bands, variants, follow-ups and tech paths. It stores the patch, filters, source URLs and retrieval timestamp with every record. Filtered battlegroup URLs can be requested explicitly with `--include-filtered-battlegroups`; CoHDB may serve those requests through a browser challenge, which the importer reports instead of bypassing.
+
+The importer does not overwrite curated advisor profiles, matchup rules or battlegroup trees. The scheduled GitHub Action updates only the imported snapshot embedded in the self-contained `index.html` and opens a Pull Request for review.
+
+The current integration embeds the reviewed snapshot into the self-contained advisor. Imported CoHDB Battlegroup records provide a small, clearly labelled Smart Advisor score component, while matching faction-level build-order archetypes provide mode/ELO context and a small alignment signal. Curated builds, matchup rules, battlegroup trees and creator builds remain the primary recommendation layer.
+
+The frontend separates the recommendation layer from the statistics layer: the Smart Advisor and selected build remain the recommendation, while imported CoHDB win rates, samples and archetype context are displayed separately as evidence.
+
 ## Feedback
 
 Found an incorrect build order, tech requirement or recommendation?
