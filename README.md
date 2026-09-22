@@ -56,7 +56,9 @@ python -m unittest discover -s tests -p 'test_*.py' -v
 
 The importer discovers the latest CoHDB patch, imports the public unfiltered battlegroup table, and imports configured build-order pages with their mode summaries, rating bands, variants, follow-ups and tech paths. It stores the patch, filters, source URLs and retrieval timestamp with every record. Filtered battlegroup URLs can be requested explicitly with `--include-filtered-battlegroups`; CoHDB may serve those requests through a browser challenge, which the importer reports instead of bypassing.
 
-The importer does not overwrite curated advisor profiles or `index.html`. The scheduled GitHub Action opens a Pull Request for review before any later frontend integration.
+The importer does not overwrite curated advisor profiles, matchup rules or battlegroup trees. The scheduled GitHub Action updates only the imported snapshot embedded in the self-contained `index.html` and opens a Pull Request for review.
+
+The current integration embeds the reviewed snapshot into the self-contained advisor. Imported CoHDB Battlegroup records provide a small, clearly labelled Smart Advisor score component, while matching faction-level build-order archetypes provide mode/ELO context and a small alignment signal. Curated builds, matchup rules, battlegroup trees and creator builds remain the primary recommendation layer.
 
 ## Feedback
 

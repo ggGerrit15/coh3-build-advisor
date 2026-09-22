@@ -29,6 +29,15 @@ jobs:
       - name: Import current CoHDB snapshot
         run: python scripts/import_cohdb.py --output data/cohdb/latest.json
 
+      - name: Embed imported snapshot into the advisor
+        run: node scripts/embed_cohdb_snapshot.mjs
+
+      - name: Validate frontend integration
+        run: |
+          node --check scripts/add_cohdb_runtime.mjs
+          node --check scripts/cohdb_runtime.js
+          node --check scripts/embed_cohdb_snapshot.mjs
+
       - name: Validate imported snapshot
         run: |
           python - <<'PY'
@@ -39,6 +48,7 @@ jobs:
           assert data['schema_version'] == 'cohdb.snapshot.v1'
           assert data['patch']['id']
           assert data['patch']['label']
+          assert data['cohdbSnapshot']['patch']['id'] == data['patch']['id']
           assert data['coverage']['battlegroups'][0]['mode'] == 'all'
           assert data['coverage']['battlegroups'][0]['rating_filter'] == 'balanced_all'
           assert len(data['battlegroups']) >= 32
@@ -56,7 +66,10 @@ jobs:
           title: "Update CoHDB statistics snapshot"
           branch: automation/cohdb-statistics
           delete-branch: true
-          add-paths: data/cohdb/latest.json
+          add-paths: |
+            data/cohdb/latest.json
+            coh3_build_advisor_data.json
+            index.html
           labels: data,cohdb
           body: |
             Automated CoHDB snapshot import.
