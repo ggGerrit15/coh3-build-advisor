@@ -19,6 +19,7 @@ class CoHDBIntegrationTests(unittest.TestCase):
         self.assertEqual(len(re.findall(r"const COHDB_SNAPSHOT=", html)), 1)
         self.assertIn("function cohdbComponent(p)", html)
         self.assertIn("function cohdbStatsSection(p)", html)
+        self.assertIn("function smartRows(f,m,o,map,band,list=null)", html)
         self.assertIn("const COHDB_MIN_RATING_GAMES = 30", html)
         self.assertIn("Zu kleine Stichprobe", html)
         self.assertIn("do not influence the recommendation", html)
