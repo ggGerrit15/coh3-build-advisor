@@ -62,6 +62,8 @@ The current integration embeds the reviewed snapshot into the self-contained adv
 
 The frontend separates the recommendation layer from the statistics layer: the Smart Advisor and selected build remain the recommendation, while imported CoHDB win rates, samples and archetype context are displayed separately as evidence.
 
+Rating-band samples are guarded separately: fewer than 30 games are displayed as "Zu kleine Stichprobe" and do not contribute to the recommendation. Samples from 30 to 99 games remain visible but are labelled as weak evidence.
+
 ## Feedback
 
 Found an incorrect build order, tech requirement or recommendation?
