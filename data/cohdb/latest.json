@@ -1,0 +1,2426 @@
+{
+  "schema_version": "cohdb.snapshot.v1",
+  "source": "CoHDB",
+  "retrieved_at": "2026-09-22T17:47:04Z",
+  "parser": {
+    "name": "coh3-build-advisor-cohdb-importer",
+    "version": "1.0.0"
+  },
+  "patch": {
+    "label": "2.5.6",
+    "id": "50313",
+    "url": "https://cohdb.com/battlegroups?patch=50313"
+  },
+  "coverage": {
+    "battlegroups": [
+      {
+        "mode": "all",
+        "rating_filter": "balanced_all",
+        "map": "all",
+        "rows": 32
+      }
+    ],
+    "build_orders": [
+      "wehrmacht_panzergrenadier",
+      "dak_mechanized",
+      "usf_barracks_motor_pool",
+      "british_company_command",
+      "british_platoon_command"
+    ]
+  },
+  "battlegroups": [
+    {
+      "faction": "USF",
+      "battlegroup": "Special Operations",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 3818,
+      "losses": 3747,
+      "win_rate": 50.5,
+      "adjusted": -0.3,
+      "selections": 7565
+    },
+    {
+      "faction": "USF",
+      "battlegroup": "Airborne",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 3566,
+      "losses": 3325,
+      "win_rate": 51.7,
+      "adjusted": 1.06,
+      "selections": 6891
+    },
+    {
+      "faction": "USF",
+      "battlegroup": "Advanced Infantry",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 3457,
+      "losses": 3255,
+      "win_rate": 51.5,
+      "adjusted": 0.71,
+      "selections": 6712
+    },
+    {
+      "faction": "USF",
+      "battlegroup": "Armored",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 2473,
+      "losses": 2684,
+      "win_rate": 48.0,
+      "adjusted": -2.58,
+      "selections": 5157
+    },
+    {
+      "faction": "USF",
+      "battlegroup": "Free French",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1533,
+      "losses": 1459,
+      "win_rate": 51.2,
+      "adjusted": 0.45,
+      "selections": 2992
+    },
+    {
+      "faction": "USF",
+      "battlegroup": "Heavy Weapons",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1411,
+      "losses": 1460,
+      "win_rate": 49.1,
+      "adjusted": -1.72,
+      "selections": 2871
+    },
+    {
+      "faction": "USF",
+      "battlegroup": "Italian Partisan",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 340,
+      "losses": 316,
+      "win_rate": 51.8,
+      "adjusted": 1.29,
+      "selections": 656
+    },
+    {
+      "faction": "USF",
+      "battlegroup": "No Battlegroup",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 578,
+      "losses": 659,
+      "win_rate": 46.7,
+      "adjusted": -4.2,
+      "selections": 1237
+    },
+    {
+      "faction": "British",
+      "battlegroup": "Heavy Armor",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 3320,
+      "losses": 3284,
+      "win_rate": 50.3,
+      "adjusted": -0.51,
+      "selections": 6604
+    },
+    {
+      "faction": "British",
+      "battlegroup": "Air and Sea",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 2940,
+      "losses": 3146,
+      "win_rate": 48.3,
+      "adjusted": -2.39,
+      "selections": 6086
+    },
+    {
+      "faction": "British",
+      "battlegroup": "Indian Artillery",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 2687,
+      "losses": 2959,
+      "win_rate": 47.6,
+      "adjusted": -3.18,
+      "selections": 5646
+    },
+    {
+      "faction": "British",
+      "battlegroup": "Polish Cavalry",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 2498,
+      "losses": 2667,
+      "win_rate": 48.4,
+      "adjusted": -2.43,
+      "selections": 5165
+    },
+    {
+      "faction": "British",
+      "battlegroup": "Australian Defense",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1325,
+      "losses": 1552,
+      "win_rate": 46.1,
+      "adjusted": -4.74,
+      "selections": 2877
+    },
+    {
+      "faction": "British",
+      "battlegroup": "Canadian Shock",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 870,
+      "losses": 928,
+      "win_rate": 48.4,
+      "adjusted": -2.28,
+      "selections": 1798
+    },
+    {
+      "faction": "British",
+      "battlegroup": "Special Service",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 459,
+      "losses": 550,
+      "win_rate": 45.5,
+      "adjusted": -5.17,
+      "selections": 1009
+    },
+    {
+      "faction": "British",
+      "battlegroup": "No Battlegroup",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 606,
+      "losses": 803,
+      "win_rate": 43.0,
+      "adjusted": -7.34,
+      "selections": 1409
+    },
+    {
+      "faction": "Wehrmacht",
+      "battlegroup": "Mechanized",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 4614,
+      "losses": 4304,
+      "win_rate": 51.7,
+      "adjusted": 2.51,
+      "selections": 8918
+    },
+    {
+      "faction": "Wehrmacht",
+      "battlegroup": "Luftwaffe",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 3587,
+      "losses": 3282,
+      "win_rate": 52.2,
+      "adjusted": 2.88,
+      "selections": 6869
+    },
+    {
+      "faction": "Wehrmacht",
+      "battlegroup": "Breakthrough",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 2694,
+      "losses": 2930,
+      "win_rate": 47.9,
+      "adjusted": -1.31,
+      "selections": 5624
+    },
+    {
+      "faction": "Wehrmacht",
+      "battlegroup": "Italian Coastal",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 2527,
+      "losses": 2597,
+      "win_rate": 49.3,
+      "adjusted": 0.22,
+      "selections": 5124
+    },
+    {
+      "faction": "Wehrmacht",
+      "battlegroup": "Terror",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1920,
+      "losses": 1779,
+      "win_rate": 51.9,
+      "adjusted": 2.9,
+      "selections": 3699
+    },
+    {
+      "faction": "Wehrmacht",
+      "battlegroup": "Siege Breaker",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1838,
+      "losses": 1734,
+      "win_rate": 51.5,
+      "adjusted": 2.24,
+      "selections": 3572
+    },
+    {
+      "faction": "Wehrmacht",
+      "battlegroup": "Last Stand",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1185,
+      "losses": 1178,
+      "win_rate": 50.1,
+      "adjusted": 0.82,
+      "selections": 2363
+    },
+    {
+      "faction": "Wehrmacht",
+      "battlegroup": "No Battlegroup",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 854,
+      "losses": 945,
+      "win_rate": 47.5,
+      "adjusted": -1.97,
+      "selections": 1799
+    },
+    {
+      "faction": "DAK",
+      "battlegroup": "Elite Forces",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 3518,
+      "losses": 3420,
+      "win_rate": 50.7,
+      "adjusted": 1.42,
+      "selections": 6938
+    },
+    {
+      "faction": "DAK",
+      "battlegroup": "Italian Infantry",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 2901,
+      "losses": 2863,
+      "win_rate": 50.3,
+      "adjusted": 1.04,
+      "selections": 5764
+    },
+    {
+      "faction": "DAK",
+      "battlegroup": "Armored Support",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1537,
+      "losses": 1504,
+      "win_rate": 50.5,
+      "adjusted": 1.27,
+      "selections": 3041
+    },
+    {
+      "faction": "DAK",
+      "battlegroup": "Kriegsmarine",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1522,
+      "losses": 1362,
+      "win_rate": 52.8,
+      "adjusted": 3.37,
+      "selections": 2884
+    },
+    {
+      "faction": "DAK",
+      "battlegroup": "Panzerjäger Kommand",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1316,
+      "losses": 1225,
+      "win_rate": 51.8,
+      "adjusted": 2.43,
+      "selections": 2541
+    },
+    {
+      "faction": "DAK",
+      "battlegroup": "Italian Combined Arms",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 1266,
+      "losses": 1164,
+      "win_rate": 52.1,
+      "adjusted": 2.78,
+      "selections": 2430
+    },
+    {
+      "faction": "DAK",
+      "battlegroup": "Battlefield Espionage",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 956,
+      "losses": 911,
+      "win_rate": 51.2,
+      "adjusted": 1.84,
+      "selections": 1867
+    },
+    {
+      "faction": "DAK",
+      "battlegroup": "No Battlegroup",
+      "mode": "all",
+      "rating_filter": "balanced_all",
+      "map": "all",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "wins": 556,
+      "losses": 685,
+      "win_rate": 44.8,
+      "adjusted": -4.71,
+      "selections": 1241
+    }
+  ],
+  "build_orders": [
+    {
+      "title": "Panzergrenadier Kompanie",
+      "source_url": "https://cohdb.com/build_orders/germans/panzergrenadier_kompanie",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "mode_summaries": {
+        "all": {
+          "win_rate": 36.7,
+          "games": 7347,
+          "wins": 2698,
+          "losses": 4649
+        },
+        "1v1": {
+          "win_rate": 39.6,
+          "games": 632,
+          "wins": 250,
+          "losses": 382
+        },
+        "2v2": {
+          "win_rate": 34.6,
+          "games": 875,
+          "wins": 303,
+          "losses": 572
+        },
+        "3v3": {
+          "win_rate": 34.6,
+          "games": 1502,
+          "wins": 520,
+          "losses": 982
+        },
+        "4v4": {
+          "win_rate": 37.5,
+          "games": 4338,
+          "wins": 1625,
+          "losses": 2713
+        }
+      },
+      "rating_bands": {
+        "all": {
+          "1800+": {
+            "win_rate": 61.1,
+            "games": 54
+          },
+          "1600 – 1800": {
+            "win_rate": 44.3,
+            "games": 264
+          },
+          "1400 – 1600": {
+            "win_rate": 40.7,
+            "games": 632
+          },
+          "1200 – 1400": {
+            "win_rate": 40.0,
+            "games": 1336
+          },
+          "1000 – 1200": {
+            "win_rate": 36.7,
+            "games": 2391
+          },
+          "Under 1000": {
+            "win_rate": 32.9,
+            "games": 2670
+          }
+        },
+        "1v1": {
+          "1800+": {
+            "win_rate": 60.0,
+            "games": 5
+          },
+          "1600 – 1800": {
+            "win_rate": 45.5,
+            "games": 33
+          },
+          "1400 – 1600": {
+            "win_rate": 42.6,
+            "games": 47
+          },
+          "1200 – 1400": {
+            "win_rate": 37.7,
+            "games": 138
+          },
+          "1000 – 1200": {
+            "win_rate": 38.9,
+            "games": 211
+          },
+          "Under 1000": {
+            "win_rate": 39.4,
+            "games": 198
+          }
+        },
+        "2v2": {
+          "1800+": {
+            "win_rate": 38.1,
+            "games": 21
+          },
+          "1600 – 1800": {
+            "win_rate": 56.0,
+            "games": 50
+          },
+          "1400 – 1600": {
+            "win_rate": 40.0,
+            "games": 95
+          },
+          "1200 – 1400": {
+            "win_rate": 39.7,
+            "games": 189
+          },
+          "1000 – 1200": {
+            "win_rate": 31.1,
+            "games": 312
+          },
+          "Under 1000": {
+            "win_rate": 27.4,
+            "games": 208
+          }
+        },
+        "3v3": {
+          "1800+": {
+            "win_rate": 0.0,
+            "games": 1
+          },
+          "1600 – 1800": {
+            "win_rate": 48.0,
+            "games": 25
+          },
+          "1400 – 1600": {
+            "win_rate": 40.7,
+            "games": 81
+          },
+          "1200 – 1400": {
+            "win_rate": 41.2,
+            "games": 255
+          },
+          "1000 – 1200": {
+            "win_rate": 34.7,
+            "games": 600
+          },
+          "Under 1000": {
+            "win_rate": 30.0,
+            "games": 540
+          }
+        },
+        "4v4": {
+          "1800+": {
+            "win_rate": 81.5,
+            "games": 27
+          },
+          "1600 – 1800": {
+            "win_rate": 39.7,
+            "games": 156
+          },
+          "1400 – 1600": {
+            "win_rate": 40.6,
+            "games": 409
+          },
+          "1200 – 1400": {
+            "win_rate": 40.1,
+            "games": 754
+          },
+          "1000 – 1200": {
+            "win_rate": 38.7,
+            "games": 1268
+          },
+          "Under 1000": {
+            "win_rate": 33.8,
+            "games": 1724
+          }
+        }
+      },
+      "most_common_and_variants": [
+        {
+          "label": "Variant 1",
+          "games": 1780,
+          "steps": [
+            {
+              "name": "Construct Infanterie Kompanie",
+              "icon_url": "/assets/races/german/buildings/infanterie_kompanie_ger-df70926272ba2c89a75dd71dcf1da619ca308dee4ac83a1271d5bd54ace514b4.webp"
+            },
+            {
+              "name": "MG 42 Machine Gun Team",
+              "icon_url": "/assets/races/german/team_weapons/hmg_mg42_ger-9bf747ab26f17e383e08de6bd24826d0d2f0d264d43c7ca220902d282f434869.webp"
+            },
+            {
+              "name": "Grenadier Squad",
+              "icon_url": "/assets/races/german/infantry/grenadier_ger-f4a16f572be2e1ef1a5e5e2047e1ac2e695ae13268596e4cc8eac48704b7dc8b.webp"
+            },
+            {
+              "name": "Grenadier Squad",
+              "icon_url": "/assets/races/german/infantry/grenadier_ger-f4a16f572be2e1ef1a5e5e2047e1ac2e695ae13268596e4cc8eac48704b7dc8b.webp"
+            },
+            {
+              "name": "Construct Panzergrenadier Kompanie",
+              "icon_url": "/assets/races/german/buildings/support_armory_ger-b046aba5dec40f3f71ccf75c4581f0dbc7d90cbae17347603f9c37ef36882bf5.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 2",
+          "games": 1360,
+          "steps": [
+            {
+              "name": "Construct Infanterie Kompanie",
+              "icon_url": "/assets/races/german/buildings/infanterie_kompanie_ger-df70926272ba2c89a75dd71dcf1da619ca308dee4ac83a1271d5bd54ace514b4.webp"
+            },
+            {
+              "name": "Kettenkrad Recon Vehicle",
+              "icon_url": "/assets/races/german/vehicles/kettenkrad_german-0ea416b1889b1583a1f7c73e3ad1e41613bb1727192b69d0488707a25556ca95.webp"
+            },
+            {
+              "name": "MG 42 Machine Gun Team",
+              "icon_url": "/assets/races/german/team_weapons/hmg_mg42_ger-9bf747ab26f17e383e08de6bd24826d0d2f0d264d43c7ca220902d282f434869.webp"
+            },
+            {
+              "name": "Grenadier Squad",
+              "icon_url": "/assets/races/german/infantry/grenadier_ger-f4a16f572be2e1ef1a5e5e2047e1ac2e695ae13268596e4cc8eac48704b7dc8b.webp"
+            },
+            {
+              "name": "Grenadier Squad",
+              "icon_url": "/assets/races/german/infantry/grenadier_ger-f4a16f572be2e1ef1a5e5e2047e1ac2e695ae13268596e4cc8eac48704b7dc8b.webp"
+            },
+            {
+              "name": "Construct Panzergrenadier Kompanie",
+              "icon_url": "/assets/races/german/buildings/support_armory_ger-b046aba5dec40f3f71ccf75c4581f0dbc7d90cbae17347603f9c37ef36882bf5.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 3",
+          "games": 1350,
+          "steps": [
+            {
+              "name": "Construct Infanterie Kompanie",
+              "icon_url": "/assets/races/german/buildings/infanterie_kompanie_ger-df70926272ba2c89a75dd71dcf1da619ca308dee4ac83a1271d5bd54ace514b4.webp"
+            },
+            {
+              "name": "Grenadier Squad",
+              "icon_url": "/assets/races/german/infantry/grenadier_ger-f4a16f572be2e1ef1a5e5e2047e1ac2e695ae13268596e4cc8eac48704b7dc8b.webp"
+            },
+            {
+              "name": "MG 42 Machine Gun Team",
+              "icon_url": "/assets/races/german/team_weapons/hmg_mg42_ger-9bf747ab26f17e383e08de6bd24826d0d2f0d264d43c7ca220902d282f434869.webp"
+            },
+            {
+              "name": "Grenadier Squad",
+              "icon_url": "/assets/races/german/infantry/grenadier_ger-f4a16f572be2e1ef1a5e5e2047e1ac2e695ae13268596e4cc8eac48704b7dc8b.webp"
+            },
+            {
+              "name": "Construct Panzergrenadier Kompanie",
+              "icon_url": "/assets/races/german/buildings/support_armory_ger-b046aba5dec40f3f71ccf75c4581f0dbc7d90cbae17347603f9c37ef36882bf5.webp"
+            }
+          ]
+        }
+      ],
+      "followups": [
+        {
+          "label": "Followup 1",
+          "games": 403,
+          "steps": [
+            {
+              "name": "251 Medium Carrier",
+              "icon_url": "/assets/races/german/vehicles/halftrack_german-fd2ca7097008a3ade0ffe0d9c4238f327b676fc58db2b9e83d0a4bd7aceea207.webp"
+            },
+            {
+              "name": "Pak 40 Anti-tank Gun Team",
+              "icon_url": "/assets/races/german/team_weapons/at_gun_75mm_ger-99a955e4f57f89ba74bff5dfc6a083862bd4b02c59446dc8c5ae4bacfef8a173.webp"
+            },
+            {
+              "name": "Panzergrenadier Squad",
+              "icon_url": "/assets/races/german/infantry/panzer_grenadier_ger-ba49fec59193f63b1c3814a840c2404bfe04223a157c84cc561d1712609611c3.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 2",
+          "games": 386,
+          "steps": [
+            {
+              "name": "251 Medium Carrier",
+              "icon_url": "/assets/races/german/vehicles/halftrack_german-fd2ca7097008a3ade0ffe0d9c4238f327b676fc58db2b9e83d0a4bd7aceea207.webp"
+            },
+            {
+              "name": "Panzergrenadier Squad",
+              "icon_url": "/assets/races/german/infantry/panzer_grenadier_ger-ba49fec59193f63b1c3814a840c2404bfe04223a157c84cc561d1712609611c3.webp"
+            },
+            {
+              "name": "Pak 40 Anti-tank Gun Team",
+              "icon_url": "/assets/races/german/team_weapons/at_gun_75mm_ger-99a955e4f57f89ba74bff5dfc6a083862bd4b02c59446dc8c5ae4bacfef8a173.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 3",
+          "games": 316,
+          "steps": [
+            {
+              "name": "Panzergrenadier Squad",
+              "icon_url": "/assets/races/german/infantry/panzer_grenadier_ger-ba49fec59193f63b1c3814a840c2404bfe04223a157c84cc561d1712609611c3.webp"
+            },
+            {
+              "name": "251 Medium Carrier",
+              "icon_url": "/assets/races/german/vehicles/halftrack_german-fd2ca7097008a3ade0ffe0d9c4238f327b676fc58db2b9e83d0a4bd7aceea207.webp"
+            },
+            {
+              "name": "Pak 40 Anti-tank Gun Team",
+              "icon_url": "/assets/races/german/team_weapons/at_gun_75mm_ger-99a955e4f57f89ba74bff5dfc6a083862bd4b02c59446dc8c5ae4bacfef8a173.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 4",
+          "games": 181,
+          "steps": [
+            {
+              "name": "Panzergrenadier Squad",
+              "icon_url": "/assets/races/german/infantry/panzer_grenadier_ger-ba49fec59193f63b1c3814a840c2404bfe04223a157c84cc561d1712609611c3.webp"
+            },
+            {
+              "name": "Panzergrenadier Squad",
+              "icon_url": "/assets/races/german/infantry/panzer_grenadier_ger-ba49fec59193f63b1c3814a840c2404bfe04223a157c84cc561d1712609611c3.webp"
+            },
+            {
+              "name": "Panzergrenadier Officer Quarters",
+              "icon_url": "/assets/races/german/upgrades/officer_quarters_for_wehrmacht-e0251e0aa82fc712cbab40e9612d5babab2ab71ef53173f1081ef692cbddfd62.webp"
+            }
+          ]
+        }
+      ],
+      "tech_paths": [
+        {
+          "path": "Infanterie Kompanie → Panzergrenadier Kompanie",
+          "games": 7401,
+          "share": 100.0
+        }
+      ],
+      "id": "wehrmacht_panzergrenadier",
+      "faction": "Wehrmacht",
+      "notes": "Representative Wehrmacht T3-to-T4 archetype."
+    },
+    {
+      "title": "Mechanized",
+      "source_url": "https://cohdb.com/build_orders/afrika_korps/mechanized",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "mode_summaries": {
+        "all": {
+          "win_rate": 38.3,
+          "games": 2013,
+          "wins": 770,
+          "losses": 1243
+        },
+        "1v1": {
+          "win_rate": 49.8,
+          "games": 269,
+          "wins": 134,
+          "losses": 135
+        },
+        "2v2": {
+          "win_rate": 41.9,
+          "games": 260,
+          "wins": 109,
+          "losses": 151
+        },
+        "3v3": {
+          "win_rate": 38.8,
+          "games": 343,
+          "wins": 133,
+          "losses": 210
+        },
+        "4v4": {
+          "win_rate": 34.5,
+          "games": 1141,
+          "wins": 394,
+          "losses": 747
+        }
+      },
+      "rating_bands": {
+        "all": {
+          "1800+": {
+            "win_rate": 29.4,
+            "games": 17
+          },
+          "1600 – 1800": {
+            "win_rate": 60.6,
+            "games": 66
+          },
+          "1400 – 1600": {
+            "win_rate": 45.2,
+            "games": 168
+          },
+          "1200 – 1400": {
+            "win_rate": 45.6,
+            "games": 375
+          },
+          "1000 – 1200": {
+            "win_rate": 40.7,
+            "games": 659
+          },
+          "Under 1000": {
+            "win_rate": 28.8,
+            "games": 728
+          }
+        },
+        "1v1": {
+          "1800+": {
+            "win_rate": 33.3,
+            "games": 6
+          },
+          "1600 – 1800": {
+            "win_rate": 72.7,
+            "games": 11
+          },
+          "1400 – 1600": {
+            "win_rate": 50.0,
+            "games": 42
+          },
+          "1200 – 1400": {
+            "win_rate": 48.5,
+            "games": 66
+          },
+          "1000 – 1200": {
+            "win_rate": 53.3,
+            "games": 90
+          },
+          "Under 1000": {
+            "win_rate": 42.6,
+            "games": 54
+          }
+        },
+        "2v2": {
+          "1800+": {
+            "win_rate": 33.3,
+            "games": 6
+          },
+          "1600 – 1800": {
+            "win_rate": 81.3,
+            "games": 16
+          },
+          "1400 – 1600": {
+            "win_rate": 58.8,
+            "games": 17
+          },
+          "1200 – 1400": {
+            "win_rate": 45.5,
+            "games": 66
+          },
+          "1000 – 1200": {
+            "win_rate": 45.6,
+            "games": 90
+          },
+          "Under 1000": {
+            "win_rate": 20.0,
+            "games": 65
+          }
+        },
+        "3v3": {
+          "1800+": {
+            "win_rate": 0.0,
+            "games": 2
+          },
+          "1600 – 1800": {
+            "win_rate": 50.0,
+            "games": 6
+          },
+          "1400 – 1600": {
+            "win_rate": 43.8,
+            "games": 16
+          },
+          "1200 – 1400": {
+            "win_rate": 61.7,
+            "games": 47
+          },
+          "1000 – 1200": {
+            "win_rate": 45.5,
+            "games": 132
+          },
+          "Under 1000": {
+            "win_rate": 24.3,
+            "games": 140
+          }
+        },
+        "4v4": {
+          "1800+": {
+            "win_rate": 33.3,
+            "games": 3
+          },
+          "1600 – 1800": {
+            "win_rate": 48.5,
+            "games": 33
+          },
+          "1400 – 1600": {
+            "win_rate": 40.9,
+            "games": 93
+          },
+          "1200 – 1400": {
+            "win_rate": 40.8,
+            "games": 196
+          },
+          "1000 – 1200": {
+            "win_rate": 34.3,
+            "games": 347
+          },
+          "Under 1000": {
+            "win_rate": 29.9,
+            "games": 469
+          }
+        }
+      },
+      "most_common_and_variants": [
+        {
+          "label": "Variant 1",
+          "games": 500,
+          "steps": [
+            {
+              "name": "Panzergrenadier Squad",
+              "icon_url": "/assets/races/afrika_corps/infantry/panzergrenadier_ak-4fc5c6cb707ff7b610aa0b198e3f7393bcb8076f9e4b21e486cf2e14553158ef.webp"
+            },
+            {
+              "name": "Panzergrenadier Squad",
+              "icon_url": "/assets/races/afrika_corps/infantry/panzergrenadier_ak-4fc5c6cb707ff7b610aa0b198e3f7393bcb8076f9e4b21e486cf2e14553158ef.webp"
+            },
+            {
+              "name": "Panzergrenadier Squad",
+              "icon_url": "/assets/races/afrika_corps/infantry/panzergrenadier_ak-4fc5c6cb707ff7b610aa0b198e3f7393bcb8076f9e4b21e486cf2e14553158ef.webp"
+            },
+            {
+              "name": "Construct Light Support Kompanie",
+              "icon_url": "/assets/races/afrika_corps/buildings/infanterie_support_ak-53a36d30a766583e97e2ae79e0b9d285f69420d7f44e1f625e5a41a78a52ca4f.webp"
+            },
+            {
+              "name": "Construct Mechanized Kompanie",
+              "icon_url": "/assets/races/afrika_corps/buildings/mechanized_kompanie_ak-ed4d5ecfc1b4d46d6fd61066c91e34f9177fd6f8d0e4224397eeb8e4c306d7d7.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 2",
+          "games": 368,
+          "steps": [
+            {
+              "name": "Kradschützen Motorcycle Team",
+              "icon_url": "/assets/races/afrika_corps/vehicles/kradschutzen_motorcycle_ak-b3c415cced471bfd0459641cfeddf8c6c1c0aa3ea5ddd5cfb7a4ec54e3d6df4e.webp"
+            },
+            {
+              "name": "250 Light Carrier",
+              "icon_url": "/assets/races/afrika_corps/vehicles/halftrack_250_ak-4fb8a80a30cedabc92fab29dbc150aa1ca00c29c545696770c304af607831511.webp"
+            },
+            {
+              "name": "Construct Light Support Kompanie",
+              "icon_url": "/assets/races/afrika_corps/buildings/infanterie_support_ak-53a36d30a766583e97e2ae79e0b9d285f69420d7f44e1f625e5a41a78a52ca4f.webp"
+            },
+            {
+              "name": "Construct Mechanized Kompanie",
+              "icon_url": "/assets/races/afrika_corps/buildings/mechanized_kompanie_ak-ed4d5ecfc1b4d46d6fd61066c91e34f9177fd6f8d0e4224397eeb8e4c306d7d7.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 3",
+          "games": 351,
+          "steps": [
+            {
+              "name": "Kradschützen Motorcycle Team",
+              "icon_url": "/assets/races/afrika_corps/vehicles/kradschutzen_motorcycle_ak-b3c415cced471bfd0459641cfeddf8c6c1c0aa3ea5ddd5cfb7a4ec54e3d6df4e.webp"
+            },
+            {
+              "name": "Kradschützen Motorcycle Team",
+              "icon_url": "/assets/races/afrika_corps/vehicles/kradschutzen_motorcycle_ak-b3c415cced471bfd0459641cfeddf8c6c1c0aa3ea5ddd5cfb7a4ec54e3d6df4e.webp"
+            },
+            {
+              "name": "Construct Light Support Kompanie",
+              "icon_url": "/assets/races/afrika_corps/buildings/infanterie_support_ak-53a36d30a766583e97e2ae79e0b9d285f69420d7f44e1f625e5a41a78a52ca4f.webp"
+            },
+            {
+              "name": "Construct Mechanized Kompanie",
+              "icon_url": "/assets/races/afrika_corps/buildings/mechanized_kompanie_ak-ed4d5ecfc1b4d46d6fd61066c91e34f9177fd6f8d0e4224397eeb8e4c306d7d7.webp"
+            }
+          ]
+        }
+      ],
+      "followups": [
+        {
+          "label": "Followup 1",
+          "games": 62,
+          "steps": [
+            {
+              "name": "8 Rad Armored Car",
+              "icon_url": "/assets/races/afrika_corps/vehicles/armored_car_8_rad_ak-747701772f790c7b8e55308972e9e807cfbcb9bb5e25fec32ff4626a91ba22ba.webp"
+            },
+            {
+              "name": "Panzerjäger Mechanized Group",
+              "icon_url": "/assets/races/afrika_corps/infantry/panzerjaegar_ak-f2129d9aca522e57722c2095b0ee76c53ece02709c59ac80c618d2abb61f7a2c.webp"
+            },
+            {
+              "name": "8 Rad Armored Car",
+              "icon_url": "/assets/races/afrika_corps/vehicles/armored_car_8_rad_ak-747701772f790c7b8e55308972e9e807cfbcb9bb5e25fec32ff4626a91ba22ba.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 2",
+          "games": 46,
+          "steps": [
+            {
+              "name": "Marder III Tank Destroyer",
+              "icon_url": "/assets/races/afrika_corps/vehicles/marder_iii_ak-a21b816326b38ac485d0a663542eb42355927d1d85760c0c856944354221d800.webp"
+            },
+            {
+              "name": "Marder III Tank Destroyer",
+              "icon_url": "/assets/races/afrika_corps/vehicles/marder_iii_ak-a21b816326b38ac485d0a663542eb42355927d1d85760c0c856944354221d800.webp"
+            },
+            {
+              "name": "Marder III Tank Destroyer",
+              "icon_url": "/assets/races/afrika_corps/vehicles/marder_iii_ak-a21b816326b38ac485d0a663542eb42355927d1d85760c0c856944354221d800.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 3",
+          "games": 32,
+          "steps": [
+            {
+              "name": "8 Rad Armored Car",
+              "icon_url": "/assets/races/afrika_corps/vehicles/armored_car_8_rad_ak-747701772f790c7b8e55308972e9e807cfbcb9bb5e25fec32ff4626a91ba22ba.webp"
+            },
+            {
+              "name": "8 Rad Armored Car",
+              "icon_url": "/assets/races/afrika_corps/vehicles/armored_car_8_rad_ak-747701772f790c7b8e55308972e9e807cfbcb9bb5e25fec32ff4626a91ba22ba.webp"
+            },
+            {
+              "name": "Smoke Package",
+              "icon_url": "/assets/races/afrika_corps/upgrades/smoke_survivability-95f12edac9e37e82f312c3b0d67a5f1ffe1d9f4cfd8111888570e5801aeae208.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 4",
+          "games": 30,
+          "steps": [
+            {
+              "name": "Marder III Tank Destroyer",
+              "icon_url": "/assets/races/afrika_corps/vehicles/marder_iii_ak-a21b816326b38ac485d0a663542eb42355927d1d85760c0c856944354221d800.webp"
+            },
+            {
+              "name": "Marder III Tank Destroyer",
+              "icon_url": "/assets/races/afrika_corps/vehicles/marder_iii_ak-a21b816326b38ac485d0a663542eb42355927d1d85760c0c856944354221d800.webp"
+            },
+            {
+              "name": "Marder III Tank Destroyer",
+              "icon_url": "/assets/races/afrika_corps/vehicles/marder_iii_ak-a21b816326b38ac485d0a663542eb42355927d1d85760c0c856944354221d800.webp"
+            },
+            {
+              "name": "Marder III Tank Destroyer",
+              "icon_url": "/assets/races/afrika_corps/vehicles/marder_iii_ak-a21b816326b38ac485d0a663542eb42355927d1d85760c0c856944354221d800.webp"
+            },
+            {
+              "name": "Marder III Tank Destroyer",
+              "icon_url": "/assets/races/afrika_corps/vehicles/marder_iii_ak-a21b816326b38ac485d0a663542eb42355927d1d85760c0c856944354221d800.webp"
+            }
+          ]
+        }
+      ],
+      "tech_paths": [
+        {
+          "path": "Light Support Kompanie → Mechanized Kompanie",
+          "games": 2021,
+          "share": 100.0
+        }
+      ],
+      "id": "dak_mechanized",
+      "faction": "DAK",
+      "notes": "Representative DAK Mechanized archetype."
+    },
+    {
+      "title": "Barracks Motor Pool",
+      "source_url": "https://cohdb.com/build_orders/americans/barracks_motor_pool",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "mode_summaries": {
+        "all": {
+          "win_rate": 56.8,
+          "games": 20520,
+          "wins": 11663,
+          "losses": 8857
+        },
+        "1v1": {
+          "win_rate": 54.7,
+          "games": 2455,
+          "wins": 1344,
+          "losses": 1111
+        },
+        "2v2": {
+          "win_rate": 55.5,
+          "games": 3298,
+          "wins": 1829,
+          "losses": 1469
+        },
+        "3v3": {
+          "win_rate": 58.2,
+          "games": 3578,
+          "wins": 2081,
+          "losses": 1497
+        },
+        "4v4": {
+          "win_rate": 57.3,
+          "games": 11189,
+          "wins": 6409,
+          "losses": 4780
+        }
+      },
+      "rating_bands": {
+        "all": {
+          "1800+": {
+            "win_rate": 51.2,
+            "games": 164
+          },
+          "1600 – 1800": {
+            "win_rate": 57.3,
+            "games": 798
+          },
+          "1400 – 1600": {
+            "win_rate": 55.5,
+            "games": 1870
+          },
+          "1200 – 1400": {
+            "win_rate": 56.3,
+            "games": 4104
+          },
+          "1000 – 1200": {
+            "win_rate": 55.9,
+            "games": 6859
+          },
+          "Under 1000": {
+            "win_rate": 58.6,
+            "games": 6725
+          }
+        },
+        "1v1": {
+          "1800+": {
+            "win_rate": 65.6,
+            "games": 32
+          },
+          "1600 – 1800": {
+            "win_rate": 54.3,
+            "games": 116
+          },
+          "1400 – 1600": {
+            "win_rate": 48.1,
+            "games": 185
+          },
+          "1200 – 1400": {
+            "win_rate": 54.8,
+            "games": 549
+          },
+          "1000 – 1200": {
+            "win_rate": 52.6,
+            "games": 859
+          },
+          "Under 1000": {
+            "win_rate": 58.5,
+            "games": 714
+          }
+        },
+        "2v2": {
+          "1800+": {
+            "win_rate": 52.3,
+            "games": 65
+          },
+          "1600 – 1800": {
+            "win_rate": 52.3,
+            "games": 149
+          },
+          "1400 – 1600": {
+            "win_rate": 54.0,
+            "games": 409
+          },
+          "1200 – 1400": {
+            "win_rate": 54.4,
+            "games": 712
+          },
+          "1000 – 1200": {
+            "win_rate": 53.7,
+            "games": 1158
+          },
+          "Under 1000": {
+            "win_rate": 60.5,
+            "games": 805
+          }
+        },
+        "3v3": {
+          "1800+": {
+            "win_rate": 100.0,
+            "games": 5
+          },
+          "1600 – 1800": {
+            "win_rate": 53.4,
+            "games": 58
+          },
+          "1400 – 1600": {
+            "win_rate": 57.3,
+            "games": 234
+          },
+          "1200 – 1400": {
+            "win_rate": 55.6,
+            "games": 730
+          },
+          "1000 – 1200": {
+            "win_rate": 59.4,
+            "games": 1348
+          },
+          "Under 1000": {
+            "win_rate": 58.5,
+            "games": 1203
+          }
+        },
+        "4v4": {
+          "1800+": {
+            "win_rate": 38.7,
+            "games": 62
+          },
+          "1600 – 1800": {
+            "win_rate": 60.0,
+            "games": 475
+          },
+          "1400 – 1600": {
+            "win_rate": 57.0,
+            "games": 1042
+          },
+          "1200 – 1400": {
+            "win_rate": 57.5,
+            "games": 2113
+          },
+          "1000 – 1200": {
+            "win_rate": 56.0,
+            "games": 3494
+          },
+          "Under 1000": {
+            "win_rate": 58.3,
+            "games": 4003
+          }
+        }
+      },
+      "most_common_and_variants": [
+        {
+          "label": "Variant 1",
+          "games": 1439,
+          "steps": [
+            {
+              "name": "Construct Barracks",
+              "icon_url": "/assets/races/american/buildings/barracks_us-ab48797a0228e8e31cac2c4e3fe536d8d0f2987449553b6e11d76bb6514726f7.webp"
+            },
+            {
+              "name": "Riflemen Squad",
+              "icon_url": "/assets/races/american/infantry/riflemen_us-a6126faec074ff384bd4cf6c3f4d2735ec00e3b4d8b616fcc1780cd28c51a879.webp"
+            },
+            {
+              "name": "Riflemen Squad",
+              "icon_url": "/assets/races/american/infantry/riflemen_us-a6126faec074ff384bd4cf6c3f4d2735ec00e3b4d8b616fcc1780cd28c51a879.webp"
+            },
+            {
+              "name": "Grenade Package",
+              "icon_url": "/assets/races/american/abilities/mk2_grenade-eb16ba270ef8a1882e74f55fd2aa8ca2e61f766f50833f17f29c8c3c05f62d4e.webp"
+            },
+            {
+              "name": "Riflemen Squad",
+              "icon_url": "/assets/races/american/infantry/riflemen_us-a6126faec074ff384bd4cf6c3f4d2735ec00e3b4d8b616fcc1780cd28c51a879.webp"
+            },
+            {
+              "name": "Air Support Center",
+              "icon_url": "/assets/races/american/buildings/air_support_center_us-b38c3ce0af424d9ba927fef6a93d84edb7b6f240be7852f9de895ed4db1c0745.webp"
+            },
+            {
+              "name": "Construct Motor Pool",
+              "icon_url": "/assets/races/american/buildings/motor_pool_us-bf582fa919dea282f9f4db522b996882c27b53b78ebc8b4e43e23dd44a3e2911.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 2",
+          "games": 1076,
+          "steps": [
+            {
+              "name": "Construct Barracks",
+              "icon_url": "/assets/races/american/buildings/barracks_us-ab48797a0228e8e31cac2c4e3fe536d8d0f2987449553b6e11d76bb6514726f7.webp"
+            },
+            {
+              "name": "Riflemen Squad",
+              "icon_url": "/assets/races/american/infantry/riflemen_us-a6126faec074ff384bd4cf6c3f4d2735ec00e3b4d8b616fcc1780cd28c51a879.webp"
+            },
+            {
+              "name": "Riflemen Squad",
+              "icon_url": "/assets/races/american/infantry/riflemen_us-a6126faec074ff384bd4cf6c3f4d2735ec00e3b4d8b616fcc1780cd28c51a879.webp"
+            },
+            {
+              "name": "Grenade Package",
+              "icon_url": "/assets/races/american/abilities/mk2_grenade-eb16ba270ef8a1882e74f55fd2aa8ca2e61f766f50833f17f29c8c3c05f62d4e.webp"
+            },
+            {
+              "name": "Riflemen Squad",
+              "icon_url": "/assets/races/american/infantry/riflemen_us-a6126faec074ff384bd4cf6c3f4d2735ec00e3b4d8b616fcc1780cd28c51a879.webp"
+            },
+            {
+              "name": "Infantry Support Center",
+              "icon_url": "/assets/races/american/buildings/infantry_support_center_us-ad7372a70c4b4a25ad9631f9ec2823b1fef795ca4d50a37090a6e60252e07d81.webp"
+            },
+            {
+              "name": "Construct Motor Pool",
+              "icon_url": "/assets/races/american/buildings/motor_pool_us-bf582fa919dea282f9f4db522b996882c27b53b78ebc8b4e43e23dd44a3e2911.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 3",
+          "games": 1053,
+          "steps": [
+            {
+              "name": "Construct Barracks",
+              "icon_url": "/assets/races/american/buildings/barracks_us-ab48797a0228e8e31cac2c4e3fe536d8d0f2987449553b6e11d76bb6514726f7.webp"
+            },
+            {
+              "name": "Riflemen Squad",
+              "icon_url": "/assets/races/american/infantry/riflemen_us-a6126faec074ff384bd4cf6c3f4d2735ec00e3b4d8b616fcc1780cd28c51a879.webp"
+            },
+            {
+              "name": "Riflemen Squad",
+              "icon_url": "/assets/races/american/infantry/riflemen_us-a6126faec074ff384bd4cf6c3f4d2735ec00e3b4d8b616fcc1780cd28c51a879.webp"
+            },
+            {
+              "name": "Riflemen Squad",
+              "icon_url": "/assets/races/american/infantry/riflemen_us-a6126faec074ff384bd4cf6c3f4d2735ec00e3b4d8b616fcc1780cd28c51a879.webp"
+            },
+            {
+              "name": "Infantry Support Center",
+              "icon_url": "/assets/races/american/buildings/infantry_support_center_us-ad7372a70c4b4a25ad9631f9ec2823b1fef795ca4d50a37090a6e60252e07d81.webp"
+            },
+            {
+              "name": "Construct Motor Pool",
+              "icon_url": "/assets/races/american/buildings/motor_pool_us-bf582fa919dea282f9f4db522b996882c27b53b78ebc8b4e43e23dd44a3e2911.webp"
+            }
+          ]
+        }
+      ],
+      "followups": [
+        {
+          "label": "Followup 1",
+          "games": 115,
+          "steps": [
+            {
+              "name": "M8 Greyhound Armored Car",
+              "icon_url": "/assets/races/american/vehicles/greyhound_us-3db45adfe22e849e5f2606433dae13b055a431f6f9501e77d63e346fbcd142a0.webp"
+            },
+            {
+              "name": "M1 Anti-tank Gun Team",
+              "icon_url": "/assets/races/american/team_weapons/at_gun57mm_us-3fa9c0cc48721afe35cdd1481b1acd820ecc090f71c4a75dd9ffeeac9d1719f5.webp"
+            },
+            {
+              "name": "Engineer Squad",
+              "icon_url": "/assets/races/american/infantry/engineer_us-6716bccad51fc1eb43598f415ce6c70c26909930e3b4b0bd490ac168ebbddb74.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 2",
+          "games": 107,
+          "steps": [
+            {
+              "name": "M8 Greyhound Armored Car",
+              "icon_url": "/assets/races/american/vehicles/greyhound_us-3db45adfe22e849e5f2606433dae13b055a431f6f9501e77d63e346fbcd142a0.webp"
+            },
+            {
+              "name": "Engineer Squad",
+              "icon_url": "/assets/races/american/infantry/engineer_us-6716bccad51fc1eb43598f415ce6c70c26909930e3b4b0bd490ac168ebbddb74.webp"
+            },
+            {
+              "name": "M1918 Browning Automatic Rifles",
+              "icon_url": "/assets/races/american/upgrades/m1918a2_browning-3d4207ffc24cc811cf04ab9b602937501844ae37cb7a544ff09b9d7ab8d6499a.webp"
+            },
+            {
+              "name": "M1 Anti-tank Gun Team",
+              "icon_url": "/assets/races/american/team_weapons/at_gun57mm_us-3fa9c0cc48721afe35cdd1481b1acd820ecc090f71c4a75dd9ffeeac9d1719f5.webp"
+            },
+            {
+              "name": "Construct Tank Depot",
+              "icon_url": "/assets/races/american/buildings/tank_depot_us-8b9dd75120bc777ee90fcfab0bd68cac552e62f60db3b1d8079a0dbad392b1e1.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 3",
+          "games": 96,
+          "steps": [
+            {
+              "name": "M8 Greyhound Armored Car",
+              "icon_url": "/assets/races/american/vehicles/greyhound_us-3db45adfe22e849e5f2606433dae13b055a431f6f9501e77d63e346fbcd142a0.webp"
+            },
+            {
+              "name": "Engineer Squad",
+              "icon_url": "/assets/races/american/infantry/engineer_us-6716bccad51fc1eb43598f415ce6c70c26909930e3b4b0bd490ac168ebbddb74.webp"
+            },
+            {
+              "name": "M1 Anti-tank Gun Team",
+              "icon_url": "/assets/races/american/team_weapons/at_gun57mm_us-3fa9c0cc48721afe35cdd1481b1acd820ecc090f71c4a75dd9ffeeac9d1719f5.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 4",
+          "games": 91,
+          "steps": [
+            {
+              "name": "M8 Greyhound Armored Car",
+              "icon_url": "/assets/races/american/vehicles/greyhound_us-3db45adfe22e849e5f2606433dae13b055a431f6f9501e77d63e346fbcd142a0.webp"
+            },
+            {
+              "name": "M1 Anti-tank Gun Team",
+              "icon_url": "/assets/races/american/team_weapons/at_gun57mm_us-3fa9c0cc48721afe35cdd1481b1acd820ecc090f71c4a75dd9ffeeac9d1719f5.webp"
+            },
+            {
+              "name": "M1918 Browning Automatic Rifles",
+              "icon_url": "/assets/races/american/upgrades/m1918a2_browning-3d4207ffc24cc811cf04ab9b602937501844ae37cb7a544ff09b9d7ab8d6499a.webp"
+            }
+          ]
+        }
+      ],
+      "tech_paths": [
+        {
+          "path": "Barracks → Motor Pool → Tank Depot",
+          "games": 11469,
+          "share": 55.7
+        },
+        {
+          "path": "Barracks → Motor Pool",
+          "games": 6716,
+          "share": 32.6
+        },
+        {
+          "path": "Barracks → Motor Pool → Tank Depot → Weapon Support Center",
+          "games": 1005,
+          "share": 4.9
+        },
+        {
+          "path": "Barracks → Motor Pool → Weapon Support Center → Tank Depot",
+          "games": 944,
+          "share": 4.6
+        },
+        {
+          "path": "Barracks → Motor Pool → Weapon Support Center",
+          "games": 466,
+          "share": 2.3
+        }
+      ],
+      "id": "usf_barracks_motor_pool",
+      "faction": "USF",
+      "notes": "Representative USF Barracks-to-Motor-Pool archetype."
+    },
+    {
+      "title": "Company Command",
+      "source_url": "https://cohdb.com/build_orders/british_africa/company_command",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "mode_summaries": {
+        "all": {
+          "win_rate": 59.0,
+          "games": 13513,
+          "wins": 7979,
+          "losses": 5534
+        },
+        "1v1": {
+          "win_rate": 54.0,
+          "games": 387,
+          "wins": 209,
+          "losses": 178
+        },
+        "2v2": {
+          "win_rate": 58.8,
+          "games": 1119,
+          "wins": 658,
+          "losses": 461
+        },
+        "3v3": {
+          "win_rate": 60.3,
+          "games": 2465,
+          "wins": 1487,
+          "losses": 978
+        },
+        "4v4": {
+          "win_rate": 58.9,
+          "games": 9542,
+          "wins": 5625,
+          "losses": 3917
+        }
+      },
+      "rating_bands": {
+        "all": {
+          "1800+": {
+            "win_rate": 71.4,
+            "games": 14
+          },
+          "1600 – 1800": {
+            "win_rate": 58.4,
+            "games": 113
+          },
+          "1400 – 1600": {
+            "win_rate": 54.0,
+            "games": 428
+          },
+          "1200 – 1400": {
+            "win_rate": 54.5,
+            "games": 1509
+          },
+          "1000 – 1200": {
+            "win_rate": 56.9,
+            "games": 3988
+          },
+          "Under 1000": {
+            "win_rate": 61.4,
+            "games": 7461
+          }
+        },
+        "1v1": {
+          "1800+": {
+            "win_rate": 100.0,
+            "games": 1
+          },
+          "1600 – 1800": {
+            "win_rate": 0.0,
+            "games": 3
+          },
+          "1400 – 1600": {
+            "win_rate": 20.0,
+            "games": 10
+          },
+          "1200 – 1400": {
+            "win_rate": 50.9,
+            "games": 55
+          },
+          "1000 – 1200": {
+            "win_rate": 53.6,
+            "games": 110
+          },
+          "Under 1000": {
+            "win_rate": 57.2,
+            "games": 208
+          }
+        },
+        "2v2": {
+          "1800+": {
+            "win_rate": 100.0,
+            "games": 2
+          },
+          "1600 – 1800": {
+            "win_rate": 37.5,
+            "games": 16
+          },
+          "1400 – 1600": {
+            "win_rate": 46.0,
+            "games": 50
+          },
+          "1200 – 1400": {
+            "win_rate": 54.1,
+            "games": 170
+          },
+          "1000 – 1200": {
+            "win_rate": 54.6,
+            "games": 421
+          },
+          "Under 1000": {
+            "win_rate": 66.3,
+            "games": 460
+          }
+        },
+        "3v3": {
+          "1600 – 1800": {
+            "win_rate": 50.0,
+            "games": 6
+          },
+          "1400 – 1600": {
+            "win_rate": 58.2,
+            "games": 55
+          },
+          "1200 – 1400": {
+            "win_rate": 59.3,
+            "games": 209
+          },
+          "1000 – 1200": {
+            "win_rate": 57.8,
+            "games": 880
+          },
+          "Under 1000": {
+            "win_rate": 62.3,
+            "games": 1315
+          }
+        },
+        "4v4": {
+          "1800+": {
+            "win_rate": 63.6,
+            "games": 11
+          },
+          "1600 – 1800": {
+            "win_rate": 64.8,
+            "games": 88
+          },
+          "1400 – 1600": {
+            "win_rate": 55.6,
+            "games": 313
+          },
+          "1200 – 1400": {
+            "win_rate": 53.8,
+            "games": 1075
+          },
+          "1000 – 1200": {
+            "win_rate": 57.1,
+            "games": 2577
+          },
+          "Under 1000": {
+            "win_rate": 60.9,
+            "games": 5478
+          }
+        }
+      },
+      "most_common_and_variants": [
+        {
+          "label": "Variant 1",
+          "games": 201,
+          "steps": [
+            {
+              "name": "Vickers Machine Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/hmg_vickers_africa_uk-539db2256ad6c7ae31c4677d3519291cdab0e71bf0aca31675423788532d4317.webp"
+            },
+            {
+              "name": "Construct Section Command Post",
+              "icon_url": "/assets/races/british/buildings/barracks_africa_uk-4665cba36a31ad65e35bf2f663fca5b29cbe227be376c3eb2a45de36b58f7582.webp"
+            },
+            {
+              "name": "Dingo Light Scout Car",
+              "icon_url": "/assets/races/british/vehicles/dingo_africa_uk-1e35da2e6cfaf344fd2f864913e3544ff36ec6b7aaf748ebeb37c87e780c9551.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Construct Platoon Command Post",
+              "icon_url": "/assets/races/british/buildings/motor_platoon_africa_uk-0d7c504a7318fbe328be3b28c7616e6d6dfe1a79a5362e5c0b504f78a0fbfef5.webp"
+            },
+            {
+              "name": "Construct Company Command Post",
+              "icon_url": "/assets/races/british/buildings/armoured_platoon_africa_uk-c5d847e739666915e8693bc519083b4a781d75a6cde7d95f2b368294db14d097.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 2",
+          "games": 196,
+          "steps": [
+            {
+              "name": "Vickers Machine Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/hmg_vickers_africa_uk-539db2256ad6c7ae31c4677d3519291cdab0e71bf0aca31675423788532d4317.webp"
+            },
+            {
+              "name": "Construct Section Command Post",
+              "icon_url": "/assets/races/british/buildings/barracks_africa_uk-4665cba36a31ad65e35bf2f663fca5b29cbe227be376c3eb2a45de36b58f7582.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Construct Platoon Command Post",
+              "icon_url": "/assets/races/british/buildings/motor_platoon_africa_uk-0d7c504a7318fbe328be3b28c7616e6d6dfe1a79a5362e5c0b504f78a0fbfef5.webp"
+            },
+            {
+              "name": "Construct Company Command Post",
+              "icon_url": "/assets/races/british/buildings/armoured_platoon_africa_uk-c5d847e739666915e8693bc519083b4a781d75a6cde7d95f2b368294db14d097.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 3",
+          "games": 169,
+          "steps": [
+            {
+              "name": "Vickers Machine Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/hmg_vickers_africa_uk-539db2256ad6c7ae31c4677d3519291cdab0e71bf0aca31675423788532d4317.webp"
+            },
+            {
+              "name": "Construct Section Command Post",
+              "icon_url": "/assets/races/british/buildings/barracks_africa_uk-4665cba36a31ad65e35bf2f663fca5b29cbe227be376c3eb2a45de36b58f7582.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Construct Platoon Command Post",
+              "icon_url": "/assets/races/british/buildings/motor_platoon_africa_uk-0d7c504a7318fbe328be3b28c7616e6d6dfe1a79a5362e5c0b504f78a0fbfef5.webp"
+            },
+            {
+              "name": "6-pounder Anti-tank Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/at_gun_6pdr_africa_uk-311592de7df41b46d452e693c83533e1011268d708bb94af31ac15c59d213837.webp"
+            },
+            {
+              "name": "Construct Company Command Post",
+              "icon_url": "/assets/races/british/buildings/armoured_platoon_africa_uk-c5d847e739666915e8693bc519083b4a781d75a6cde7d95f2b368294db14d097.webp"
+            }
+          ]
+        }
+      ],
+      "followups": [
+        {
+          "label": "Followup 1",
+          "games": 1074,
+          "steps": [
+            {
+              "name": "Unlock M3 Grant Medium Tanks",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 2",
+          "games": 859,
+          "steps": [
+            {
+              "name": "Unlock M3 Grant Medium Tanks",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 3",
+          "games": 557,
+          "steps": [
+            {
+              "name": "Unlock M3 Grant Medium Tanks",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "Royal Engineer Section",
+              "icon_url": "/assets/races/british/infantry/sapper_africa_uk-22750823ed740edb8c8b9de5d3dad118707676a46487e391927611672678b38c.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 4",
+          "games": 454,
+          "steps": [
+            {
+              "name": "Unlock M3 Grant Medium Tanks",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "M3 Grant Medium Tank",
+              "icon_url": "/assets/races/british/vehicles/grant_africa_uk-51c8c383e7b6694b096eaaac1fdd7efc780053603a35f35ee8e81ac53d43a1f2.webp"
+            },
+            {
+              "name": "Armored Vehicle Training",
+              "icon_url": "/assets/races/british/upgrades/training_brit_armored-eefe3c664214ff7ea608759b7fe1b115e9a369e88e23422b87b8bf8d4abf7a9d.webp"
+            }
+          ]
+        }
+      ],
+      "tech_paths": [
+        {
+          "path": "Section Command Post → Platoon Command Post → Company Command Post",
+          "games": 6763,
+          "share": 53.2
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Company Command Post → Grants",
+          "games": 3264,
+          "share": 25.7
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Company Command Post → 17-Pounder",
+          "games": 1233,
+          "share": 9.7
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Company Command Post → Grants → 17-Pounder",
+          "games": 535,
+          "share": 4.2
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Company Command Post → Bishops",
+          "games": 349,
+          "share": 2.7
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Company Command Post → 17-Pounder → Grants",
+          "games": 281,
+          "share": 2.2
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Stuarts → Company Command Post",
+          "games": 159,
+          "share": 1.3
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Company Command Post → Grants → Bishops",
+          "games": 136,
+          "share": 1.1
+        }
+      ],
+      "id": "british_company_command",
+      "faction": "British",
+      "notes": "Representative British Company Command archetype."
+    },
+    {
+      "title": "Platoon Command",
+      "source_url": "https://cohdb.com/build_orders/british_africa/platoon_command",
+      "patch": {
+        "label": "2.5.6",
+        "id": "50313",
+        "url": "https://cohdb.com/battlegroups?patch=50313"
+      },
+      "mode_summaries": {
+        "all": {
+          "win_rate": 46.0,
+          "games": 6913,
+          "wins": 3179,
+          "losses": 3734
+        },
+        "1v1": {
+          "win_rate": 34.3,
+          "games": 411,
+          "wins": 141,
+          "losses": 270
+        },
+        "2v2": {
+          "win_rate": 43.3,
+          "games": 730,
+          "wins": 316,
+          "losses": 414
+        },
+        "3v3": {
+          "win_rate": 45.2,
+          "games": 1373,
+          "wins": 620,
+          "losses": 753
+        },
+        "4v4": {
+          "win_rate": 47.8,
+          "games": 4399,
+          "wins": 2102,
+          "losses": 2297
+        }
+      },
+      "rating_bands": {
+        "all": {
+          "1800+": {
+            "win_rate": 31.3,
+            "games": 32
+          },
+          "1600 – 1800": {
+            "win_rate": 41.9,
+            "games": 117
+          },
+          "1400 – 1600": {
+            "win_rate": 44.4,
+            "games": 444
+          },
+          "1200 – 1400": {
+            "win_rate": 46.3,
+            "games": 1102
+          },
+          "1000 – 1200": {
+            "win_rate": 45.0,
+            "games": 2083
+          },
+          "Under 1000": {
+            "win_rate": 47.1,
+            "games": 3135
+          }
+        },
+        "1v1": {
+          "1800+": {
+            "win_rate": 0.0,
+            "games": 3
+          },
+          "1600 – 1800": {
+            "win_rate": 25.0,
+            "games": 16
+          },
+          "1400 – 1600": {
+            "win_rate": 37.0,
+            "games": 27
+          },
+          "1200 – 1400": {
+            "win_rate": 31.7,
+            "games": 63
+          },
+          "1000 – 1200": {
+            "win_rate": 36.0,
+            "games": 114
+          },
+          "Under 1000": {
+            "win_rate": 35.1,
+            "games": 188
+          }
+        },
+        "2v2": {
+          "1800+": {
+            "win_rate": 22.2,
+            "games": 9
+          },
+          "1600 – 1800": {
+            "win_rate": 21.1,
+            "games": 19
+          },
+          "1400 – 1600": {
+            "win_rate": 35.6,
+            "games": 45
+          },
+          "1200 – 1400": {
+            "win_rate": 45.3,
+            "games": 161
+          },
+          "1000 – 1200": {
+            "win_rate": 44.2,
+            "games": 240
+          },
+          "Under 1000": {
+            "win_rate": 44.9,
+            "games": 256
+          }
+        },
+        "3v3": {
+          "1800+": {
+            "win_rate": 100.0,
+            "games": 1
+          },
+          "1600 – 1800": {
+            "win_rate": 33.3,
+            "games": 6
+          },
+          "1400 – 1600": {
+            "win_rate": 38.3,
+            "games": 60
+          },
+          "1200 – 1400": {
+            "win_rate": 48.2,
+            "games": 199
+          },
+          "1000 – 1200": {
+            "win_rate": 45.5,
+            "games": 521
+          },
+          "Under 1000": {
+            "win_rate": 44.5,
+            "games": 586
+          }
+        },
+        "4v4": {
+          "1800+": {
+            "win_rate": 36.8,
+            "games": 19
+          },
+          "1600 – 1800": {
+            "win_rate": 51.3,
+            "games": 76
+          },
+          "1400 – 1600": {
+            "win_rate": 47.4,
+            "games": 312
+          },
+          "1200 – 1400": {
+            "win_rate": 47.3,
+            "games": 679
+          },
+          "1000 – 1200": {
+            "win_rate": 45.8,
+            "games": 1208
+          },
+          "Under 1000": {
+            "win_rate": 49.1,
+            "games": 2105
+          }
+        }
+      },
+      "most_common_and_variants": [
+        {
+          "label": "Variant 1",
+          "games": 1719,
+          "steps": [
+            {
+              "name": "Vickers Machine Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/hmg_vickers_africa_uk-539db2256ad6c7ae31c4677d3519291cdab0e71bf0aca31675423788532d4317.webp"
+            },
+            {
+              "name": "Construct Section Command Post",
+              "icon_url": "/assets/races/british/buildings/barracks_africa_uk-4665cba36a31ad65e35bf2f663fca5b29cbe227be376c3eb2a45de36b58f7582.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Construct Platoon Command Post",
+              "icon_url": "/assets/races/british/buildings/motor_platoon_africa_uk-0d7c504a7318fbe328be3b28c7616e6d6dfe1a79a5362e5c0b504f78a0fbfef5.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 2",
+          "games": 1530,
+          "steps": [
+            {
+              "name": "Construct Section Command Post",
+              "icon_url": "/assets/races/british/buildings/barracks_africa_uk-4665cba36a31ad65e35bf2f663fca5b29cbe227be376c3eb2a45de36b58f7582.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Construct Platoon Command Post",
+              "icon_url": "/assets/races/british/buildings/motor_platoon_africa_uk-0d7c504a7318fbe328be3b28c7616e6d6dfe1a79a5362e5c0b504f78a0fbfef5.webp"
+            }
+          ]
+        },
+        {
+          "label": "Variant 3",
+          "games": 1475,
+          "steps": [
+            {
+              "name": "Vickers Machine Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/hmg_vickers_africa_uk-539db2256ad6c7ae31c4677d3519291cdab0e71bf0aca31675423788532d4317.webp"
+            },
+            {
+              "name": "Construct Section Command Post",
+              "icon_url": "/assets/races/british/buildings/barracks_africa_uk-4665cba36a31ad65e35bf2f663fca5b29cbe227be376c3eb2a45de36b58f7582.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            },
+            {
+              "name": "Construct Platoon Command Post",
+              "icon_url": "/assets/races/british/buildings/motor_platoon_africa_uk-0d7c504a7318fbe328be3b28c7616e6d6dfe1a79a5362e5c0b504f78a0fbfef5.webp"
+            }
+          ]
+        }
+      ],
+      "followups": [
+        {
+          "label": "Followup 1",
+          "games": 106,
+          "steps": [
+            {
+              "name": "CMP 15cwt Truck",
+              "icon_url": "/assets/races/british/vehicles/cwt_15_africa_uk-517111f5eb5d2f8983de59297673b956bad0f59d20cb5387b77814a3eb8a70cc.webp"
+            },
+            {
+              "name": "6-pounder Anti-tank Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/at_gun_6pdr_africa_uk-311592de7df41b46d452e693c83533e1011268d708bb94af31ac15c59d213837.webp"
+            },
+            {
+              "name": "Infantry Training",
+              "icon_url": "/assets/races/british/upgrades/training_brit_infantry-1ef5660671605d27e627dd988b6610721541fd44114330cdae18d203a5866b55.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 2",
+          "games": 103,
+          "steps": [
+            {
+              "name": "CMP 15cwt Truck",
+              "icon_url": "/assets/races/british/vehicles/cwt_15_africa_uk-517111f5eb5d2f8983de59297673b956bad0f59d20cb5387b77814a3eb8a70cc.webp"
+            },
+            {
+              "name": "6-pounder Anti-tank Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/at_gun_6pdr_africa_uk-311592de7df41b46d452e693c83533e1011268d708bb94af31ac15c59d213837.webp"
+            },
+            {
+              "name": "6-pounder Anti-tank Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/at_gun_6pdr_africa_uk-311592de7df41b46d452e693c83533e1011268d708bb94af31ac15c59d213837.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 3",
+          "games": 74,
+          "steps": [
+            {
+              "name": "CMP 15cwt Truck",
+              "icon_url": "/assets/races/british/vehicles/cwt_15_africa_uk-517111f5eb5d2f8983de59297673b956bad0f59d20cb5387b77814a3eb8a70cc.webp"
+            },
+            {
+              "name": "6-pounder Anti-tank Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/at_gun_6pdr_africa_uk-311592de7df41b46d452e693c83533e1011268d708bb94af31ac15c59d213837.webp"
+            },
+            {
+              "name": "Grenade Package",
+              "icon_url": "/assets/races/british/abilities/rifle_grenade-ee10d6ac1c2d4f6b113bc2cb005cb56e0bbf06c619892ab95585ff03771fddd6.webp"
+            }
+          ]
+        },
+        {
+          "label": "Followup 4",
+          "games": 69,
+          "steps": [
+            {
+              "name": "6-pounder Anti-tank Gun Team",
+              "icon_url": "/assets/races/british/team_weapons/at_gun_6pdr_africa_uk-311592de7df41b46d452e693c83533e1011268d708bb94af31ac15c59d213837.webp"
+            },
+            {
+              "name": "CMP 15cwt Truck",
+              "icon_url": "/assets/races/british/vehicles/cwt_15_africa_uk-517111f5eb5d2f8983de59297673b956bad0f59d20cb5387b77814a3eb8a70cc.webp"
+            },
+            {
+              "name": "Infantry Section",
+              "icon_url": "/assets/races/british/infantry/tommy_africa_uk-f785b2e7a890a053a85f7c417a405cf51e68c5a1921f3b09b14f01d589816539.webp"
+            }
+          ]
+        }
+      ],
+      "tech_paths": [
+        {
+          "path": "Section Command Post → Platoon Command Post",
+          "games": 5338,
+          "share": 76.7
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Stuarts",
+          "games": 839,
+          "share": 12.1
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Bishops",
+          "games": 576,
+          "share": 8.3
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Stuarts → Bishops",
+          "games": 136,
+          "share": 2.0
+        },
+        {
+          "path": "Section Command Post → Platoon Command Post → Bishops → Stuarts",
+          "games": 72,
+          "share": 1.0
+        }
+      ],
+      "id": "british_platoon_command",
+      "faction": "British",
+      "notes": "British Platoon Command page; its common variants are imported from the page itself."
+    }
+  ],
+  "warnings": [
+    "Filtered battlegroup pages are not imported by default because CoHDB may require a browser challenge; the snapshot covers the public unfiltered table only."
+  ]
+}

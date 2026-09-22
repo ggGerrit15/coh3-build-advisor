@@ -1,0 +1,34 @@
+{
+  "build_orders": [
+    {
+      "id": "wehrmacht_panzergrenadier",
+      "faction": "Wehrmacht",
+      "path": "/build_orders/germans/panzergrenadier_kompanie",
+      "notes": "Representative Wehrmacht T3-to-T4 archetype."
+    },
+    {
+      "id": "dak_mechanized",
+      "faction": "DAK",
+      "path": "/build_orders/afrika_korps/mechanized",
+      "notes": "Representative DAK Mechanized archetype."
+    },
+    {
+      "id": "usf_barracks_motor_pool",
+      "faction": "USF",
+      "path": "/build_orders/americans/barracks_motor_pool",
+      "notes": "Representative USF Barracks-to-Motor-Pool archetype."
+    },
+    {
+      "id": "british_company_command",
+      "faction": "British",
+      "path": "/build_orders/british_africa/company_command",
+      "notes": "Representative British Company Command archetype."
+    },
+    {
+      "id": "british_platoon_command",
+      "faction": "British",
+      "path": "/build_orders/british_africa/platoon_command",
+      "notes": "British Platoon Command page; its common variants are imported from the page itself."
+    }
+  ]
+}

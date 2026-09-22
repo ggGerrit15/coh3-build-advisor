@@ -1,0 +1,66 @@
+name: Import CoHDB statistics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  import-cohdb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run importer tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Import current CoHDB snapshot
+        run: python scripts/import_cohdb.py --output data/cohdb/latest.json
+
+      - name: Validate imported snapshot
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path('data/cohdb/latest.json').read_text(encoding='utf-8'))
+          assert data['schema_version'] == 'cohdb.snapshot.v1'
+          assert data['patch']['id']
+          assert data['patch']['label']
+          assert data['coverage']['battlegroups'][0]['mode'] == 'all'
+          assert data['coverage']['battlegroups'][0]['rating_filter'] == 'balanced_all'
+          assert len(data['battlegroups']) >= 32
+          assert len(data['build_orders']) >= 4
+          print(f"Validated CoHDB patch {data['patch']['label']} ({data['patch']['id']})")
+          print(f"Battlegroup rows: {len(data['battlegroups'])}")
+          print(f"Build-order pages: {len(data['build_orders'])}")
+          PY
+
+      - name: Open reviewable Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update CoHDB statistics snapshot"
+          title: "Update CoHDB statistics snapshot"
+          branch: automation/cohdb-statistics
+          delete-branch: true
+          add-paths: data/cohdb/latest.json
+          labels: data,cohdb
+          body: |
+            Automated CoHDB snapshot import.
+
+            This PR updates the normalized source snapshot only. Curated advisor profiles and the public HTML are intentionally not changed automatically.
+
+            Please review the patch ID, mode/rating filters, sample sizes and parser diff before merging.

@@ -45,6 +45,19 @@ The advisor uses a combination of:
 
 See the "Sources / Method" tab inside the advisor for additional information.
 
+## CoHDB importer
+
+The repository now contains a reviewable importer for the public CoHDB HTML pages:
+
+```bash
+python scripts/import_cohdb.py --output data/cohdb/latest.json
+python -m unittest discover -s tests -p 'test_*.py' -v
+```
+
+The importer discovers the latest CoHDB patch, imports the public unfiltered battlegroup table, and imports configured build-order pages with their mode summaries, rating bands, variants, follow-ups and tech paths. It stores the patch, filters, source URLs and retrieval timestamp with every record. Filtered battlegroup URLs can be requested explicitly with `--include-filtered-battlegroups`; CoHDB may serve those requests through a browser challenge, which the importer reports instead of bypassing.
+
+The importer does not overwrite curated advisor profiles or `index.html`. The scheduled GitHub Action opens a Pull Request for review before any later frontend integration.
+
 ## Feedback
 
 Found an incorrect build order, tech requirement or recommendation?
