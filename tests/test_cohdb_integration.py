@@ -13,13 +13,13 @@ class CoHDBIntegrationTests(unittest.TestCase):
         advisor_data = json.loads((ROOT / "coh3_build_advisor_data.json").read_text(encoding="utf-8"))
         html = (ROOT / "index.html").read_text(encoding="utf-8")
 
-        self.assertEqual(advisor_data["cohdbSnapshot"], snapshot)
         self.assertEqual(snapshot["patch"]["id"], "50313")
         self.assertEqual(len(snapshot["battlegroups"]), 32)
         self.assertEqual(len(snapshot["build_orders"]), 5)
         self.assertEqual(len(re.findall(r"const COHDB_SNAPSHOT=", html)), 1)
         self.assertIn("function cohdbComponent(p)", html)
         self.assertIn("function cohdbStatsSection(p)", html)
+        self.assertIn("const COHDB_SNAPSHOT=", html)
 
         # The import integration must not turn the curated profile store into
         # a generated replacement. It remains present and keeps its size.

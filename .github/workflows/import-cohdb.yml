@@ -48,11 +48,13 @@ jobs:
           assert data['schema_version'] == 'cohdb.snapshot.v1'
           assert data['patch']['id']
           assert data['patch']['label']
-          assert data['cohdbSnapshot']['patch']['id'] == data['patch']['id']
           assert data['coverage']['battlegroups'][0]['mode'] == 'all'
           assert data['coverage']['battlegroups'][0]['rating_filter'] == 'balanced_all'
           assert len(data['battlegroups']) >= 32
           assert len(data['build_orders']) >= 4
+          html = Path('index.html').read_text(encoding='utf-8')
+          assert 'const COHDB_SNAPSHOT=' in html
+          assert data['patch']['id'] in html
           print(f"Validated CoHDB patch {data['patch']['label']} ({data['patch']['id']})")
           print(f"Battlegroup rows: {len(data['battlegroups'])}")
           print(f"Build-order pages: {len(data['build_orders'])}")
@@ -68,7 +70,6 @@ jobs:
           delete-branch: true
           add-paths: |
             data/cohdb/latest.json
-            coh3_build_advisor_data.json
             index.html
           labels: data,cohdb
           body: |
