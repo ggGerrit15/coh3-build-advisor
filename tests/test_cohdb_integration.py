@@ -20,6 +20,8 @@ class CoHDBIntegrationTests(unittest.TestCase):
         self.assertIn("function cohdbComponent(p)", html)
         self.assertIn("function cohdbStatsSection(p)", html)
         self.assertIn("const COHDB_SNAPSHOT=", html)
+        self.assertIn('advisorSectionHeader("Recommendation"', html)
+        self.assertIn('advisorSectionHeader("Statistics"', html)
 
         # The import integration must not turn the curated profile store into
         # a generated replacement. It remains present and keeps its size.

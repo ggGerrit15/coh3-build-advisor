@@ -60,6 +60,8 @@ The importer does not overwrite curated advisor profiles, matchup rules or battl
 
 The current integration embeds the reviewed snapshot into the self-contained advisor. Imported CoHDB Battlegroup records provide a small, clearly labelled Smart Advisor score component, while matching faction-level build-order archetypes provide mode/ELO context and a small alignment signal. Curated builds, matchup rules, battlegroup trees and creator builds remain the primary recommendation layer.
 
+The frontend separates the recommendation layer from the statistics layer: the Smart Advisor and selected build remain the recommendation, while imported CoHDB win rates, samples and archetype context are displayed separately as evidence.
+
 ## Feedback
 
 Found an incorrect build order, tech requirement or recommendation?
