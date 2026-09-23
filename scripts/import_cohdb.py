@@ -331,8 +331,10 @@ def parse_battlegroups_page(content: str, source_url: str, patch: dict[str, str]
         and "border-lighter" in row.parent.attrs.get("class", "")
         and all(token in compact(row.parent.text()) for token in ("Record", "Win%", "Selections"))
     )]
-    if len(rows) < 32:
-        raise ImportErrorWithContext(f"Expected at least 32 battlegroup rows on {source_url}, found {len(rows)}")
+    # Filtered rating cohorts can omit battlegroups with no observed selections.
+    # Keep those pages sparse; the snapshot coverage records which rows are absent.
+    if not rows or len(rows) > 32:
+        raise ImportErrorWithContext(f"Expected between 1 and 32 battlegroup rows on {source_url}, found {len(rows)}")
     result: list[dict[str, object]] = []
     for row in sorted(rows, key=lambda item: item.order):
         preceding = [header for order, header in headers if order < row.order]
@@ -482,6 +484,7 @@ def main() -> int:
         }
 
         if not args.skip_battlegroups:
+            expected_battlegroups: set[tuple[str, str]] = set()
             requests = 0
             battlegroup_requests = [(None, "all", "bal:all", "balanced_all")]
             if args.include_filtered_battlegroups:
@@ -498,6 +501,20 @@ def main() -> int:
                         url = add_query(patch_url, **({"mode": mode_query} if mode_query else {}), rating_range=rating_query)
                     html = fetch(url, args.timeout)
                     rows = parse_battlegroups_page(html, url, patch, mode_label, rating_label)
+                    if mode_label == "all" and rating_label == "balanced_all":
+                        if len(rows) != 32:
+                            raise ImportErrorWithContext(
+                                f"Expected 32 baseline battlegroup rows on {url}, found {len(rows)}"
+                            )
+                        expected_battlegroups = {
+                            (row["faction"], row["battlegroup"]) for row in rows
+                        }
+                    if not expected_battlegroups:
+                        raise ImportErrorWithContext("Missing the all-modes balanced baseline")
+                    observed_battlegroups = {
+                        (row["faction"], row["battlegroup"]) for row in rows
+                    }
+                    missing_battlegroups = sorted(expected_battlegroups - observed_battlegroups)
                     snapshot["battlegroups"].extend(rows)
                     snapshot["coverage"]["battlegroups"].append(
                         {
@@ -506,6 +523,12 @@ def main() -> int:
                             "map": "all",
                             "opponent": "all",
                             "rows": len(rows),
+                            "expected_rows": len(expected_battlegroups),
+                            "missing_battlegroups": [
+                                {"faction": faction, "battlegroup": battlegroup}
+                                for faction, battlegroup in missing_battlegroups
+                            ],
+                            "source_url": url,
                         }
                     )
                     requests += 1

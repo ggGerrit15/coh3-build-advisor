@@ -48,6 +48,34 @@ class CoHDBImporterTests(unittest.TestCase):
         self.assertTrue(all(row["opponent"] == "all" for row in rows))
         self.assertTrue(all(row["wins"] + row["losses"] == row["selections"] for row in rows))
 
+    def test_battlegroup_page_parser_allows_unobserved_filtered_rows(self):
+        parts = []
+        for faction in MODULE.FACTIONS:
+            parts.append(f'<span class="font-semibold text-sm">{faction}</span>')
+            group_count = 6 if faction == "Wehrmacht" else 7
+            for index in range(group_count):
+                parts.append(
+                    '<div class="bg-light border-lighter">'
+                    f'<img alt="{faction} Battlegroup {index}" src="icon.webp">'
+                    '<span>Record 1–1 Win% 50.0% Adjusted + 0.00 Selections 2</span>'
+                    '</div>'
+                )
+            parts.append(
+                '<div class="bg-light border-lighter">'
+                '<span class="font-bold">No Battlegroup</span>'
+                '<span>Record 1–1 Win% 50.0% Adjusted + 0.00 Selections 2</span>'
+                '</div>'
+            )
+        rows = MODULE.parse_battlegroups_page(
+            "".join(parts),
+            "https://cohdb.com/battlegroups?mode=ones&rating_range=avg%3A1600_1800",
+            PATCH,
+            "1v1",
+            "avg_1600_1800",
+        )
+        self.assertEqual(len(rows), 31)
+        self.assertEqual({row["faction"] for row in rows}, set(MODULE.FACTIONS))
+
     def test_build_order_mode_and_rating_parser(self):
         html = """
         <h1>Mechanized</h1>
