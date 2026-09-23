@@ -92,4 +92,40 @@ const missing = loadRuntime(missingSnapshot);
 assert.equal(missing.cohdbSelectedBattlegroupStat(profile), null);
 assert.match(missing.cohdbStatsSection(profile), /CoHDB did not report this battlegroup for this filter/);
 
-console.log('CoHDB mode/rating runtime checks passed.');
+const malformedSnapshot = makeSnapshot(30);
+for (const row of malformedSnapshot.battlegroups) row.win_rate = 'not-a-number';
+malformedSnapshot.build_orders[0].rating_bands['1v1']['1600 – 1800'].win_rate = 'not-a-number';
+const malformed = loadRuntime(malformedSnapshot);
+assert.equal(Number.isFinite(malformed.cohdbComponent(profile).bonus), true);
+assert.doesNotMatch(malformed.cohdbStatsSection(profile), /NaN/);
+
+const page = fs.readFileSync('index.html', 'utf8');
+const scoreStart = page.indexOf('function scoreProfile(');
+const scoreEnd = page.indexOf('\nfunction smartRows(', scoreStart);
+assert.ok(scoreStart >= 0 && scoreEnd > scoreStart, 'scoreProfile must remain embedded in index.html');
+const scoreProfile = new Function(
+  'teamMatchupComponent',
+  'eloComponent',
+  'exactModeComponent',
+  'mapComponent',
+  'recoveryComponent',
+  'confidenceBonus',
+  'cohdbComponent',
+  'clamp',
+  page.slice(scoreStart, scoreEnd) + '\nreturn scoreProfile;'
+)(
+  () => ({laneRank: 1, bonus: 10}),
+  () => ({bonus: 2}),
+  () => ({bonus: 1}),
+  () => 4,
+  () => 3,
+  () => 9,
+  () => ({bonus: Number.NaN}),
+  clamp
+);
+const safeScore = scoreProfile(profile, 'Allies', 'Balanced', 'All Ratings');
+assert.equal(safeScore.score, 84);
+assert.equal(safeScore.cohdb, 0);
+assert.equal(Number.isFinite(safeScore.score), true);
+
+console.log('CoHDB runtime and advisor score NaN regression checks passed.');
