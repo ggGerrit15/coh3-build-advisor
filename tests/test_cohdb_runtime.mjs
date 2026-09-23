@@ -14,14 +14,26 @@ const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({
 
 function makeSnapshot(ratingGames) {
   return {
-    battlegroups: [{
-      faction: 'DAK',
-      battlegroup: 'Kriegsmarine',
-      mode: 'all',
-      rating_filter: 'balanced_all',
-      win_rate: 52.8,
-      selections: 2884
-    }],
+    battlegroups: [
+      {
+        faction: 'DAK',
+        battlegroup: 'Kriegsmarine',
+        mode: 'all',
+        rating_filter: 'balanced_all',
+        win_rate: 52.8,
+        selections: 2884
+      },
+      {
+        faction: 'DAK',
+        battlegroup: 'Kriegsmarine',
+        mode: '1v1',
+        rating_filter: 'avg_1600_1800',
+        wins: Math.ceil(ratingGames * 0.6),
+        losses: ratingGames - Math.ceil(ratingGames * 0.6),
+        win_rate: Number((Math.ceil(ratingGames * 0.6) * 100 / ratingGames).toFixed(1)),
+        selections: ratingGames
+      }
+    ],
     build_orders: [{
       faction: 'DAK',
       title: 'Mechanized',
@@ -40,7 +52,7 @@ function loadRuntime(snapshot) {
     'clamp',
     'elo',
     'escapeHtml',
-    `${runtime}\nreturn {cohdbComponent, cohdbStatsSection};`
+    `${runtime}\nreturn {cohdbComponent, cohdbStatsSection, cohdbSelectedBattlegroupStat};`
   )(snapshot, normalizeBuildIconToken, clamp, {value: '1600-1800'}, escapeHtml);
 }
 
@@ -67,4 +79,17 @@ assert.equal(weakComponent.ratingEvidence.usable, true);
 assert.match(weak.cohdbStatsSection(profile), /55\.0%|72\.7%/);
 assert.match(weak.cohdbStatsSection(profile), /Schwache Evidenz/);
 
-console.log('CoHDB sparse-rating runtime checks passed.');
+const selectedCohort = weak.cohdbComponent(profile).selectedBgStat;
+assert.equal(selectedCohort.rating_filter, 'avg_1600_1800');
+assert.equal(selectedCohort.selections, 30);
+assert.match(weak.cohdbStatsSection(profile), /1v1 battlegroup · 1600-1800/);
+assert.match(weak.cohdbStatsSection(profile), /60\.0%/);
+assert.match(weak.cohdbStatsSection(profile), /Record 18–12/);
+
+const missingSnapshot = makeSnapshot(30);
+missingSnapshot.battlegroups = missingSnapshot.battlegroups.filter(row => row.mode === 'all');
+const missing = loadRuntime(missingSnapshot);
+assert.equal(missing.cohdbSelectedBattlegroupStat(profile), null);
+assert.match(missing.cohdbStatsSection(profile), /CoHDB did not report this battlegroup for this filter/);
+
+console.log('CoHDB mode/rating runtime checks passed.');
