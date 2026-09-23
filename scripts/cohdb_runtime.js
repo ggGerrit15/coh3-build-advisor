@@ -13,7 +13,8 @@ function cohdbSelectedBattlegroupStat(p) {
 }
 function cohdbRatingEvidence(stat) {
   if (!stat) return {status: 'unavailable', usable: false, label: 'Keine Rating-Daten'};
-  const games = Number(stat.games ?? stat.selections) || 0;
+  const games = Number(stat.games ?? stat.selections);
+  if (!Number.isFinite(games) || games <= 0) return {status: 'unavailable', usable: false, label: 'Keine Rating-Daten'};
   if (games < COHDB_MIN_RATING_GAMES) return {status: 'sparse', usable: false, label: 'Zu kleine Stichprobe'};
   if (games < COHDB_WEAK_RATING_GAMES) return {status: 'weak', usable: true, label: 'Schwache Evidenz'};
   return {status: 'usable', usable: true, label: 'Ausreichende Stichprobe'};
@@ -36,31 +37,38 @@ function cohdbComponent(p) {
   const bgStat = cohdbBattlegroupStat(p);
   const selectedBgStat = cohdbSelectedBattlegroupStat(p);
   const family = (COHDB_SNAPSHOT?.battlegroups || []).filter(x => x.faction === p.faction && x.mode === 'all' && x.rating_filter === 'balanced_all');
-  const familyAvg = family.length ? family.reduce((sum, x) => sum + x.win_rate, 0) / family.length : 50;
+  const familyRates = family.map(x => Number(x.win_rate)).filter(Number.isFinite);
+  const familyAvg = familyRates.length ? familyRates.reduce((sum, rate) => sum + rate, 0) / familyRates.length : 50;
   let bonus = 0;
-  if (bgStat) {
-    bonus += clamp((bgStat.win_rate - familyAvg) * 0.12, -2.5, 2.5);
-    if (bgStat.selections < 150) bonus -= 0.75;
-    else if (bgStat.selections < 300) bonus -= 0.25;
-    else if (bgStat.selections >= 1000) bonus += 0.25;
+  const bgWinRate = Number(bgStat?.win_rate);
+  if (bgStat && Number.isFinite(bgWinRate)) {
+    bonus += clamp((bgWinRate - familyAvg) * 0.12, -2.5, 2.5);
+    const selections = Number(bgStat.selections) || 0;
+    if (selections < 150) bonus -= 0.75;
+    else if (selections < 300) bonus -= 0.25;
+    else if (selections >= 1000) bonus += 0.25;
   }
   const archetype = cohdbArchetypeFor(p);
   const modeStat = archetype?.source?.mode_summaries?.[cohdbModeKey(p.mode)] || null;
   const ratingStat = archetype?.source?.rating_bands?.[cohdbModeKey(p.mode)]?.[cohdbRatingKey(elo.value)] || null;
   const ratingEvidence = cohdbRatingEvidence(ratingStat);
-  if (archetype?.alignment >= 0.25) bonus += clamp((archetype.alignment - 0.25) * 3, 0, 2);
-  return {bonus: clamp(bonus, -3, 4), bgStat, selectedBgStat, familyAvg, archetype, modeStat, ratingStat, ratingEvidence};
+  const alignment = Number(archetype?.alignment);
+  if (Number.isFinite(alignment) && alignment >= 0.25) bonus += clamp((alignment - 0.25) * 3, 0, 2);
+  const safeBonus = Number.isFinite(bonus) ? clamp(bonus, -3, 4) : 0;
+  return {bonus: safeBonus, bgStat, selectedBgStat, familyAvg, archetype, modeStat, ratingStat, ratingEvidence};
 }
 function cohdbRatingStatMarkup(p, ratingStat, ratingEvidence) {
   if (!ratingStat) return '';
   const games = Number(ratingStat.games) || 0;
-  const value = ratingEvidence.usable ? Number(ratingStat.win_rate).toFixed(1) + '%' : '—';
+  const winRate = Number(ratingStat.win_rate);
+  const value = ratingEvidence.usable && Number.isFinite(winRate) ? winRate.toFixed(1) + '%' : '—';
   return '<div class="statpill"><div class="statnum">' + value + '</div><div class="small muted">' + escapeHtml(p.mode) + ' · ' + escapeHtml(elo.value) + ' archetype</div><div class="small muted">n=' + games.toLocaleString() + ' · ' + ratingEvidence.label + '</div></div>';
 }
 function cohdbBattlegroupStatMarkup(stat, label) {
   if (!stat) return '<div class="statpill"><div class="statnum">—</div><div class="small muted">' + escapeHtml(label) + '</div><div class="small muted">CoHDB did not report this battlegroup for this filter</div></div>';
   const evidence = cohdbRatingEvidence(stat);
-  const value = evidence.usable ? Number(stat.win_rate).toFixed(1) + '%' : '—';
+  const winRate = Number(stat.win_rate);
+  const value = evidence.usable && Number.isFinite(winRate) ? winRate.toFixed(1) + '%' : '—';
   const wins = Number(stat.wins) || 0;
   const losses = Number(stat.losses) || 0;
   const selections = Number(stat.selections) || 0;
