@@ -45,6 +45,8 @@ class CoHDBImporterTests(unittest.TestCase):
         self.assertEqual(len(rows), 32)
         self.assertEqual({row["faction"] for row in rows}, set(MODULE.FACTIONS))
         self.assertEqual(sum(row["battlegroup"] == MODULE.NO_BATTLEGROUP for row in rows), 4)
+        self.assertTrue(all(row["opponent"] == "all" for row in rows))
+        self.assertTrue(all(row["wins"] + row["losses"] == row["selections"] for row in rows))
 
     def test_build_order_mode_and_rating_parser(self):
         html = """
@@ -71,6 +73,17 @@ class CoHDBImporterTests(unittest.TestCase):
         self.assertEqual(result["rating_bands"]["1v1"]["1600 – 1800"]["games"], 20)
         self.assertEqual(result["most_common_and_variants"][0]["steps"][0]["name"], "Panzergrenadier Squad")
         self.assertEqual(result["followups"][0]["steps"][0]["name"], "8 Rad Armored Car")
+
+    def test_rating_filter_query_uses_shared_scope(self):
+        url = MODULE.add_query(
+            "https://cohdb.com/battlegroups?patch=50313",
+            mode="ones",
+            rating_range="avg:1800_plus",
+        )
+        self.assertEqual(
+            url,
+            "https://cohdb.com/battlegroups?patch=50313&mode=ones&rating_range=avg%3A1800_plus",
+        )
 
 
 if __name__ == "__main__":
