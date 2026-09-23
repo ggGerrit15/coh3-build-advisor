@@ -20,7 +20,7 @@ https://gggerrit15.github.io/coh3-build-advisor/
 
 ## Current Version
 
-**v1.1.30 — Client Patch 2.5.6**
+**v1.1.31 — Client Patch 2.5.6**
 
 
 ## Important
@@ -58,7 +58,7 @@ The importer discovers the latest CoHDB patch, imports the public unfiltered bat
 
 The importer does not overwrite curated advisor profiles, matchup rules or battlegroup trees. The scheduled GitHub Action updates only the imported snapshot embedded in the self-contained `index.html` and opens a Pull Request for review.
 
-The current integration embeds the reviewed snapshot into the self-contained advisor. Imported CoHDB Battlegroup records provide a small, clearly labelled Smart Advisor score component, while matching faction-level build-order archetypes provide mode/ELO context and a small alignment signal. Curated builds, matchup rules, battlegroup trees and creator builds remain the primary recommendation layer.
+The current integration embeds the reviewed snapshot into the self-contained advisor. Exact 4v4 battlegroup context is computed from that same current-patch snapshot by combining all six Average Rating bands for all maps and opponents; the old hard-coded Patch 2.5.3 battlegroup table is no longer used. Imported CoHDB Battlegroup records provide a small, clearly labelled Smart Advisor score component, while matching faction-level build-order archetypes provide mode/ELO context and a small alignment signal. Curated builds, matchup rules, battlegroup trees and creator builds remain the primary recommendation layer.
 
 The frontend separates the recommendation layer from the statistics layer: the Smart Advisor and selected build remain the recommendation, while imported CoHDB win rates, samples and archetype context are displayed separately as evidence.
 
