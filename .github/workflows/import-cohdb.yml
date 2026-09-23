@@ -31,7 +31,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_*.py' -v
 
       - name: Import current CoHDB snapshot
-        run: python scripts/import_cohdb.py --output data/cohdb/latest.json.candidate
+        run: python scripts/import_cohdb.py --output data/cohdb/latest.json.candidate --include-filtered-battlegroups
 
       - name: Detect meaningful CoHDB changes
         id: snapshot
@@ -64,6 +64,13 @@ jobs:
           assert data['patch']['label']
           assert data['coverage']['battlegroups'][0]['mode'] == 'all'
           assert data['coverage']['battlegroups'][0]['rating_filter'] == 'balanced_all'
+          assert data['coverage']['battlegroups'][0]['map'] == 'all'
+          assert data['coverage']['battlegroups'][0]['opponent'] == 'all'
+          expected_coverage = {(mode, rating) for mode in ('all', '1v1', '2v2', '3v3', '4v4') for rating in ('balanced_all', 'avg_under_1000', 'avg_1000_1200', 'avg_1200_1400', 'avg_1400_1600', 'avg_1600_1800', 'avg_1800_plus')}
+          actual_coverage = {(row['mode'], row['rating_filter']) for row in data['coverage']['battlegroups']}
+          assert expected_coverage <= actual_coverage, (expected_coverage - actual_coverage)
+          assert all(isinstance(row.get('wins'), int) and isinstance(row.get('losses'), int) for row in data['battlegroups'])
+          assert all(row['wins'] + row['losses'] == row['selections'] for row in data['battlegroups'])
           assert len(data['battlegroups']) >= 32
           assert len(data['build_orders']) >= 4
           html = Path('index.html').read_text(encoding='utf-8')
