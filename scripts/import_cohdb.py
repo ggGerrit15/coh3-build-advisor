@@ -314,7 +314,7 @@ def find_faction_headers(root: Node) -> list[tuple[int, str]]:
     return sorted(headers)
 
 
-def parse_battlegroups_page(content: str, source_url: str, patch: dict[str, str], mode: str, rating_filter: str) -> list[dict[str, object]]:
+def parse_battlegroups_page(content: str, source_url: str, patch: dict[str, str], mode: str, rating_filter: str, opponent: str = "all") -> list[dict[str, object]]:
     root = parse_html(content)
     headers = find_faction_headers(root)
     if len(headers) != 4:
@@ -357,7 +357,16 @@ def parse_battlegroups_page(content: str, source_url: str, patch: dict[str, str]
         expected = round(100 * record["wins"] / record["selections"], 1) if record["selections"] else 0
         if abs(expected - record["win_rate"]) > 0.2:
             raise ImportErrorWithContext(f"Win-rate mismatch for {faction}/{name}: {record}")
-        result.append({"faction": faction, "battlegroup": name, "mode": mode, "rating_filter": rating_filter, "map": "all", "patch": patch, **record})
+        result.append({
+            "faction": faction,
+            "battlegroup": name,
+            "mode": mode,
+            "rating_filter": rating_filter,
+            "map": "all",
+            "opponent": opponent,
+            "patch": patch,
+            **record,
+        })
     if len(result) != len(set((row["faction"], row["battlegroup"]) for row in result)):
         raise ImportErrorWithContext(f"Duplicate battlegroup rows in {source_url}")
     return result
@@ -456,6 +465,16 @@ def main() -> int:
             "retrieved_at": retrieved_at,
             "parser": {"name": "coh3-build-advisor-cohdb-importer", "version": "1.0.0"},
             "patch": patch,
+            "filter_scope": {
+                "battlegroups": {
+                    "mode": "selected",
+                    "map": "all",
+                    "opponent": "all",
+                    "faction": "selected",
+                    "battlegroup": "selected",
+                    "rating": "each_band_and_derived_all",
+                }
+            },
             "coverage": {"battlegroups": [], "build_orders": []},
             "battlegroups": [],
             "build_orders": [],
@@ -481,7 +500,13 @@ def main() -> int:
                     rows = parse_battlegroups_page(html, url, patch, mode_label, rating_label)
                     snapshot["battlegroups"].extend(rows)
                     snapshot["coverage"]["battlegroups"].append(
-                        {"mode": mode_label, "rating_filter": rating_label, "map": "all", "rows": len(rows)}
+                        {
+                            "mode": mode_label,
+                            "rating_filter": rating_label,
+                            "map": "all",
+                            "opponent": "all",
+                            "rows": len(rows),
+                        }
                     )
                     requests += 1
                     time.sleep(args.delay)
