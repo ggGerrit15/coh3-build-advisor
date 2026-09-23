@@ -97,7 +97,7 @@ jobs:
           body: |
             Automated CoHDB snapshot import.
 
-            This PR updates the normalized source snapshot only. Curated advisor profiles and the public HTML are intentionally not changed automatically.
+            This PR updates the normalized source snapshot and its embedded public HTML representation. Curated advisor profiles remain unchanged.
 
             Please review the patch ID, mode/rating filters, sample sizes and parser diff before merging.
 
