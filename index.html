@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CoH3 Build Advisor v1.1.32</title>
+<title>CoH3 Build Advisor v1.1.33</title>
 <link rel="canonical" href="https://gggerrit15.github.io/coh3-build-advisor/">
 <!-- GoatCounter analytics -->
 <script data-goatcounter="https://gggerrit15.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -72,7 +72,7 @@
 <div class="shell">
   <div class="top">
     <div>
-      <h1>CoH3 Build Advisor v1.1.32</h1>
+      <h1>CoH3 Build Advisor v1.1.33</h1>
       <div class="muted">Unofficial community tool • all four factions • Smart Advisor for 1v1 / 2v2 / 3v3 / 4v4 • map + ELO context • creator comparison</div>
     </div>
     <div>
@@ -476,10 +476,6 @@ function smartSection(){
     '<p class="small muted">Recommendations combine curated builds, average matchup rankings, technical checks, map fit and current-patch CoHDB evidence.</p>'+
     '<p class="small muted">The matchup score averages the available enemy-faction rankings. CoHDB data uses the selected mode and all-map scope; incomplete rating coverage is shown but does not affect the score.</p>'+
     '<div class="smartgrid">'+rows.map((x,i)=>{
-      const modeStat=x.modeInfo?.stat;
-      const modeText=modeStat
-        ? x.modeInfo.label+": "+modeStat.wr.toFixed(1)+"% / n="+modeStat.n.toLocaleString()+" · "+modeStat.coverage+"/"+modeStat.expectedRows+" rating groups"
-        : x.modeInfo.label;
       return '<div class="smartcard '+(i===0?"first":"")+'"><div class="tags"><span class="tag">#'+(i+1)+'</span><span class="tag">'+x.p.confidence+'</span></div>'+
         '<h3>'+x.p.battlegroup+'</h3><div class="score">'+x.score+'<span class="small muted">/100</span></div>'+
         '<div class="scorebar"><span style="width:'+x.score+'%"></span></div><div class="smartreason">'+smartReason(x)+'</div>'+
@@ -490,7 +486,7 @@ function smartSection(){
         '<div class="scorepart"><b>'+(x.mode>=0?"+":"")+x.mode.toFixed(1)+'</b>mode</div>'+
         '<div class="scorepart"><b>'+(x.cohdb>=0?"+":"")+x.cohdb.toFixed(1)+'</b>CoHDB</div>'+
         '<div class="scorepart"><b>+'+x.recovery+'</b>recovery</div></div>'+
-        '<div class="small muted" style="margin-top:8px">'+x.eloInfo.scopeLabel+": "+x.eloInfo.label+" · "+modeText+'</div>'+
+        '<div class="small muted" style="margin-top:8px">'+x.eloInfo.scopeLabel+": "+x.eloInfo.label+'</div>'+
         '<div class="smartactions"><button onclick="selectBG(\''+jsq(x.p.battlegroup)+'\')">Use build</button>'+
         '<button onclick="toggleFavoriteByName(\''+jsq(x.p.battlegroup)+'\')">★</button></div></div>';
     }).join("")+'</div>'+
@@ -520,11 +516,12 @@ function eloPanel(p){
     : "";
   let exact="";
   if(modeStat){
-    exact='<div class="'+(modeStat.complete?"goodnotice":"notice")+'" style="margin-top:9px"><strong>'+x.modeInfo.label+':</strong> '+
-      modeStat.wr.toFixed(1)+'% over n='+modeStat.n.toLocaleString()+' games (Patch '+escapeHtml(x.modeInfo.patch||COHDB_SNAPSHOT?.patch?.label||"unknown")+' · All Maps · Average Rating bands '+modeStat.coverage+'/'+modeStat.expectedRows+'). '+
-      (modeStat.complete?"This current-patch mode context contributes to the score.":"Partial coverage is shown for transparency and does not contribute to the score.")+'</div>';
+    const modeNote=modeStat.complete
+      ? "The Advisor Score includes current-patch battlegroup results for this mode."
+      : "Incomplete current-patch mode data does not affect the Advisor Score.";
+    exact='<p class="small muted" style="margin-top:9px">'+modeNote+'</p>';
   }else{
-    exact='<div class="notice" style="margin-top:9px"><strong>'+x.modeInfo.label+'</strong></div>';
+    exact='<p class="small muted" style="margin-top:9px">No current-patch mode data is available for the Advisor Score.</p>';
   }
   return '<div class="card"><h3>Advisor Score & current-patch ELO context</h3><div class="statline">'+scoreCell+ratingCell+sampleCell+'</div>'+partialNote+sparseNote+exact+'</div>';
 }
@@ -618,7 +615,7 @@ function renderSources(){
     '<div class="goodnotice" style="margin-top:10px"><strong>Matchup context:</strong> The Advisor Score averages the available curated enemy-faction rankings. Scouting notes remain available by faction in the Match Guide. 3v3/4v4 provide general team-game scouting prompts.</div>'+
     '<div class="goodnotice" style="margin-top:10px"><strong>Community / attribution note:</strong> This is an unofficial community project and is not affiliated with Relic, CoHDB, CoH3Stats or the featured creators. Creator builds are preserved from supplied videos, transcripts or screenshots and should not be read as creator endorsement of this advisor. Creator-original sequences may omit routine tech/building steps shown elsewhere in the source; the green tech-QA badge applies to Current Advisor profiles, not historical creator recaps.</div>'+
     '<div class="methodgrid" style="margin-top:12px"><div class="methoditem"><b>Confidence</b><div class="small muted">Current-patch evidence quality.</div></div><div class="methoditem"><b>Matchup</b><div class="small muted">Average advisor rank across available enemy-faction rankings.</div></div><div class="methoditem"><b>Map fit</b><div class="small muted">Qualitative strategic inference.</div></div><div class="methoditem"><b>ELO context</b><div class="small muted">Current-patch mode and rating-band samples, compared with faction-level context.</div></div></div>'+
-    '<div class="goodnotice" style="margin-top:10px"><strong>v1.1.32 update:</strong> Opponent and enemy-lineup selectors were removed. The Advisor and ranking view use averaged matchup ranks. Current-patch battlegroup context covers 1v1 through 4v4; partial rating coverage stays visible and has no Advisor Score contribution.</div>'+
+    '<div class="goodnotice" style="margin-top:10px"><strong>v1.1.33 update:</strong> Opponent selectors remain removed. Recommendation cards show one battlegroup rate line per rating scope. Incomplete current-patch rating coverage does not affect the Advisor Score.</div>'+
     '<h3 style="margin-top:20px">Advisor Score</h3><p>The score starts from a neutral baseline, then adds profile confidence, average matchup rank, map fit, recovery safety and current-patch ELO-relative battlegroup context. It supports practical selection and is not a measured win probability.</p>'+
     '<div style="margin-top:14px">'+SOURCES.map(x=>'<div class="source"><div><strong>'+x.name+'</strong><div class="muted small">'+x.note+'</div></div><a href="'+x.url+'" target="_blank" rel="noopener noreferrer">Open ↗</a></div>').join("")+'</div>'+
     '<h3 style="margin-top:20px">Data architecture</h3><p>The v1.1.4 download remains a self-contained HTML file. The JSON export stores <code>battlegroupTrees</code> once per battlegroup and <code>battlegroupRecommendations</code> separately from mode profiles. The page validates strict recommendation paths against the canonical tree at runtime, so an illegal prerequisite jump or mutually exclusive sequence is blocked instead of displayed.</p></div>';
