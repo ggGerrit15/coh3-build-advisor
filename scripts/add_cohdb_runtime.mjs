@@ -28,7 +28,7 @@ function replaceFunction(name, nextName, replacement) {
 replaceFunction(
   'scoreProfile',
   'recommendation',
-  `function scoreProfile(p,o,m,band,list=null){const mu=teamMatchupComponent(p,o,list),r=mu.laneRank,ec=eloComponent(p,band),xc=exactModeComponent(p),mb=mapComponent(p,m),rc=recoveryComponent(p),cb=confidenceBonus(p.confidence),rb=mu.bonus,cc=cohdbComponent(p);const score=Math.round(clamp(55+cb+rb+mb+rc+ec.bonus+xc.bonus+cc.bonus,35,95));return {score,rank:r,confidence:cb,rankBonus:rb,teamMatchupInfo:mu,map:mb,recovery:rc,elo:ec.bonus,eloInfo:ec,mode:xc.bonus,modeInfo:xc,cohdb:cc.bonus,cohdbInfo:cc}}\nfunction smartRows(f,m,o,map,band,list=null){return PROFILES.filter(p=>p.faction===f&&p.mode===m).map(p=>({p,...scoreProfile(p,o,map,band,list)})).sort((a,b)=>b.score-a.score||a.rank-b.rank)}\n`
+  `function scoreProfile(p,o,m,band,list=null){const mu=teamMatchupComponent(p,o,list),r=mu.laneRank,ec=eloComponent(p,band),xc=exactModeComponent(p),mb=mapComponent(p,m),rc=recoveryComponent(p),cb=confidenceBonus(p.confidence),rb=mu.bonus,cc=cohdbComponent(p),cohdbScore=Number.isFinite(cc?.bonus)?cc.bonus:0;const rawScore=55+cb+rb+mb+rc+ec.bonus+xc.bonus+cohdbScore;const score=Math.round(clamp(Number.isFinite(rawScore)?rawScore:55,35,95));return {score,rank:r,confidence:cb,rankBonus:rb,teamMatchupInfo:mu,map:mb,recovery:rc,elo:ec.bonus,eloInfo:ec,mode:xc.bonus,modeInfo:xc,cohdb:cohdbScore,cohdbInfo:cc}}\nfunction smartRows(f,m,o,map,band,list=null){return PROFILES.filter(p=>p.faction===f&&p.mode===m).map(p=>({p,...scoreProfile(p,o,map,band,list)})).sort((a,b)=>b.score-a.score||a.rank-b.rank)}\n`
 );
 
 replaceFunction(
