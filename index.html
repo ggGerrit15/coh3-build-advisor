@@ -288,7 +288,8 @@ function cohdbRatingStatMarkup(p, ratingStat, ratingEvidence) {
   if (!ratingStat) return '';
   const games = Number(ratingStat.games) || 0;
   const value = ratingEvidence.usable ? `${Number(ratingStat.win_rate).toFixed(1)}%` : '—';
-  return `<div class="statpill"><div class="statnum">${value}</div><div class="small muted">${p.mode} · ${elo.value} archetype</div><div class="small muted">n=${games.toLocaleString()} · ${ratingEvidence.label}</div></div>`;
+  const scope = elo.value === 'All Ratings' ? 'All Ratings' : `${elo.value} archetype`;
+  return `<div class="statpill"><div class="statnum">${value}</div><div class="small muted">${p.mode} · ${scope} · n=${games.toLocaleString()}</div><div class="small muted">${ratingEvidence.label}</div></div>`;
 }
 function cohdbStatsSection(p) {
   const c = cohdbComponent(p), bgStat = c.bgStat, a = c.archetype, modeStat = c.modeStat, ratingStat = c.ratingStat;
