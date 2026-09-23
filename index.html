@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CoH3 Build Advisor v1.1.34</title>
+<title>CoH3 Build Advisor v1.1.35</title>
 <link rel="canonical" href="https://gggerrit15.github.io/coh3-build-advisor/">
 <!-- GoatCounter analytics -->
 <script data-goatcounter="https://gggerrit15.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <style>
 :root{--bg:#090d12;--panel:#131a22;--panel2:#1b2430;--line:#303b49;--txt:#edf2f7;--muted:#99a6b5;--accent:#e7a23b;--accent2:#ffd078;--green:#73d49b;--yellow:#edc45f;--red:#df7777;--blue:#77b9e8;--purple:#b690ff}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#070a0f,#101720 68%,#090d12);color:var(--txt);font-family:Inter,Segoe UI,Arial,sans-serif}.shell{max-width:1380px;margin:auto;padding:24px 16px 72px}.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:15px}h1{font-size:35px;margin:0 0 5px}h2,h3,h4{margin-top:0}.muted{color:var(--muted)}.small{font-size:12px}.patch{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 12px;color:var(--accent2);font-weight:700}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}.tab{background:var(--panel);border:1px solid var(--line);color:var(--txt);padding:9px 13px;border-radius:9px;cursor:pointer}.tab.active{border-color:var(--accent);color:var(--accent2);box-shadow:0 0 0 1px #e7a23b33 inset}.controls{display:grid;grid-template-columns:repeat(5,minmax(0,1fr)) auto;gap:10px;background:var(--panel);padding:14px;border:1px solid var(--line);border-radius:14px;position:sticky;top:8px;z-index:10;box-shadow:0 12px 32px #0008}label{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}select,input,textarea,button.action{width:100%;background:#0d131a;color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:10px}button.action{cursor:pointer;color:var(--accent2);font-weight:700}.controls button.action{margin-top:16px}.layout{display:grid;grid-template-columns:1.38fr .62fr;gap:14px;margin-top:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}.tag{padding:5px 8px;border:1px solid var(--line);background:var(--panel2);border-radius:999px;font-size:11px}.conf.High,.conf.Medium-High{color:var(--green)}.conf.Medium,.conf.Low-Medium{color:var(--yellow)}.conf.Low{color:var(--red)}.build{font-size:16px;line-height:1.75;padding:13px;background:#0d131a;border:1px solid var(--line);border-radius:10px}.arrow{color:var(--accent2);font-weight:800;padding:0 3px}.notice{border-left:3px solid var(--yellow);padding:10px 12px;background:#171a16;border-radius:8px;color:#d7d1b5}.info{border-left:3px solid var(--blue);padding:10px 12px;background:#101923;border-radius:8px;color:#c0d4e8}.goodnotice{border-left:3px solid var(--green);padding:10px 12px;background:#101c17;border-radius:8px;color:#c5e6d1}.branchgrid{display:grid;grid-template-columns:1fr 1.15fr 1.35fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}.branchgrid>div{padding:9px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}.branchgrid>div:nth-child(3n){border-right:0}.head{background:var(--panel2);font-weight:700;color:var(--accent2)}ol,ul{line-height:1.55;padding-left:21px}.source{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding:10px 0}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.hidden{display:none!important} .communitylinks{
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#070a0f,#101720 68%,#090d12);color:var(--txt);font-family:Inter,Segoe UI,Arial,sans-serif}.shell{max-width:1380px;margin:auto;padding:24px 16px 72px}.top{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:15px}h1{font-size:35px;margin:0 0 5px}h2,h3,h4{margin-top:0}.muted{color:var(--muted)}.small{font-size:12px}.patch{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 12px;color:var(--accent2);font-weight:700}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}.tab{background:var(--panel);border:1px solid var(--line);color:var(--txt);padding:9px 13px;border-radius:9px;cursor:pointer}.tab.active{border-color:var(--accent);color:var(--accent2);box-shadow:0 0 0 1px #e7a23b33 inset}.controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:10px;background:var(--panel);padding:14px;border:1px solid var(--line);border-radius:14px;position:sticky;top:8px;z-index:10;box-shadow:0 12px 32px #0008}label{display:block;color:var(--muted);font-size:11px;margin-bottom:5px}select,input,textarea,button.action{width:100%;background:#0d131a;color:var(--txt);border:1px solid var(--line);border-radius:8px;padding:10px}button.action{cursor:pointer;color:var(--accent2);font-weight:700}.controls button.action{margin-top:16px}.layout{display:grid;grid-template-columns:1.38fr .62fr;gap:14px;margin-top:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px;margin-bottom:14px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}.tag{padding:5px 8px;border:1px solid var(--line);background:var(--panel2);border-radius:999px;font-size:11px}.conf.High,.conf.Medium-High{color:var(--green)}.conf.Medium,.conf.Low-Medium{color:var(--yellow)}.conf.Low{color:var(--red)}.build{font-size:16px;line-height:1.75;padding:13px;background:#0d131a;border:1px solid var(--line);border-radius:10px}.arrow{color:var(--accent2);font-weight:800;padding:0 3px}.notice{border-left:3px solid var(--yellow);padding:10px 12px;background:#171a16;border-radius:8px;color:#d7d1b5}.info{border-left:3px solid var(--blue);padding:10px 12px;background:#101923;border-radius:8px;color:#c0d4e8}.goodnotice{border-left:3px solid var(--green);padding:10px 12px;background:#101c17;border-radius:8px;color:#c5e6d1}.branchgrid{display:grid;grid-template-columns:1fr 1.15fr 1.35fr;border:1px solid var(--line);border-radius:10px;overflow:hidden}.branchgrid>div{padding:9px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}.branchgrid>div:nth-child(3n){border-right:0}.head{background:var(--panel2);font-weight:700;color:var(--accent2)}ol,ul{line-height:1.55;padding-left:21px}.source{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding:10px 0}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.hidden{display:none!important} .communitylinks{
   display:flex;
   gap:8px;
   flex-wrap:wrap;
@@ -72,7 +72,7 @@
 <div class="shell">
   <div class="top">
     <div>
-      <h1>CoH3 Build Advisor v1.1.34</h1>
+      <h1>CoH3 Build Advisor v1.1.35</h1>
       <div class="muted">Unofficial community tool • all four factions • Smart Advisor for 1v1 / 2v2 / 3v3 / 4v4 • map + ELO context • creator comparison</div>
     </div>
     <div>
@@ -96,7 +96,7 @@
     <div class="controls">
       <div><label>Your faction</label><select id="faction"></select></div>
       <div><label>Mode</label><select id="mode"></select></div>
-      <div><label>Map type</label><select id="maptype"><option>Balanced</option><option>Open / mobile</option><option>Lane-heavy</option><option>Urban / close</option></select></div>
+      
       <div><label>Your ELO band</label><select id="elo"><option selected>All Ratings</option><option>Under 1000</option><option>1000-1200</option><option>1200-1400</option><option>1400-1600</option><option>1600-1800</option><option>1800+</option></select></div>
       <div><label>Battlegroup</label><select id="bg"></select></div>
       <div><button class="action" id="recommended">Use Smart #1</button></div>
@@ -105,7 +105,7 @@
   </div>
   <div id="matchView" class="hidden"><div id="matchContent"></div></div>
   <div id="creatorsView" class="hidden"><div class="creatorfilters"><div><label>Creator</label><select id="cname"></select></div><div><label>Faction</label><select id="cfaction"></select></div><div><label>Mode</label><select id="cmode"></select></div><div><label>Battlegroup</label><select id="cbg"></select></div></div><div id="creatorContent"></div></div>
-  <div id="rankingsView" class="hidden"><div class="controls" style="grid-template-columns:1fr 1fr 1fr 1fr"><div><label>Faction</label><select id="rfaction"></select></div><div><label>Mode</label><select id="rmode"></select></div><div><label>Map type</label><select id="rmap"><option>Balanced</option><option>Open / mobile</option><option>Lane-heavy</option><option>Urban / close</option></select></div><div><label>ELO</label><select id="relo"><option selected>All Ratings</option><option>Under 1000</option><option>1000-1200</option><option>1200-1400</option><option>1400-1600</option><option>1600-1800</option><option>1800+</option></select></div></div><div id="rankContent"></div></div>
+  <div id="rankingsView" class="hidden"><div class="controls" style="grid-template-columns:1fr 1fr 1fr"><div><label>Faction</label><select id="rfaction"></select></div><div><label>Mode</label><select id="rmode"></select></div><div><label>ELO</label><select id="relo"><option selected>All Ratings</option><option>Under 1000</option><option>1000-1200</option><option>1200-1400</option><option>1400-1600</option><option>1600-1800</option><option>1800+</option></select></div></div><div id="rankContent"></div></div>
   <div id="sourcesView" class="hidden"></div>
 </div>
 <script>
@@ -322,8 +322,8 @@ function cohdbStatsSection(p) {
 }
 function advisorSectionHeader(title, text) { return '<div class="card" style="margin-top:14px;border-left:3px solid var(--accent2)"><div class="small muted" style="text-transform:uppercase;letter-spacing:.08em">Advisor section</div><h2 style="margin:4px 0 5px">' + escapeHtml(title) + '</h2><p class="small muted" style="margin:0">' + escapeHtml(text) + '</p></div>'; }
 const $=id=>document.getElementById(id); const uniq=a=>[...new Set(a)]; const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
-const fac=$("faction"),mode=$("mode"),maptype=$("maptype"),elo=$("elo"),bg=$("bg");
-const rfac=$("rfaction"),rmode=$("rmode"),rmap=$("rmap"),relo=$("relo");
+const fac=$("faction"),mode=$("mode"),elo=$("elo"),bg=$("bg");
+const rfac=$("rfaction"),rmode=$("rmode"),relo=$("relo");
 const tmode=$("tmode"),tfaction=$("tfaction"),tsort=$("tsort"); const cname=$("cname"),cfac=$("cfaction"),cmode=$("cmode"),cbg=$("cbg");
 function options(el,vals){el.innerHTML=vals.map(v=>`<option>${v}</option>`).join("")}
 function cclass(c){return c.replaceAll(" ","-")}
@@ -368,7 +368,7 @@ function modeOptions(f){return [...uniq(PROFILES.filter(p=>p.faction===f).map(p=
 function refreshMain(){options(mode,modeOptions(fac.value));refreshBG()}
 function refreshBG(){
   const old=bg.value,available=mode.value==="All Modes"?allModesBattlegroups(fac.value):uniq(PROFILES.filter(p=>p.faction===fac.value&&p.mode===mode.value).map(p=>p.battlegroup));
-  const ranked=smartRows(fac.value,mode.value,maptype.value,elo.value).map(x=>x.p.battlegroup).filter(x=>available.includes(x)),names=[...new Set([...ranked,...available])];
+  const ranked=smartRows(fac.value,mode.value,elo.value).map(x=>x.p.battlegroup).filter(x=>available.includes(x)),names=[...new Set([...ranked,...available])];
   options(bg,names);if([...bg.options].some(o=>o.value===old))bg.value=old;renderAdvisor()
 }
 function confidenceBonus(c){return ({"High":12,"Medium-High":9,"Medium":6,"Low-Medium":3,"Low":0}[c]??5)}
@@ -457,7 +457,6 @@ function eloComponent(p,band){
   if(n>=1000)bonus+=1;else if(n>=300)bonus+=0.5;else if(n<150)bonus-=0.75;else if(n<300)bonus-=0.25;
   return {bonus:clamp(bonus,-5,5),label,scopeLabel,stat,avg};
 }
-function mapComponent(p,m){return BG_META?.[p.faction]?.[p.battlegroup]?.map?.[m]??0}
 function recoveryComponent(p){return (BG_META?.[p.faction]?.[p.battlegroup]?.recovery??3)-2}
 function exactModeComponent(p) {
   const stat = cohdbModeAllRatingsStat(p.faction, p.battlegroup, p.mode);
@@ -473,30 +472,30 @@ function exactModeComponent(p) {
   return {bonus,label,stat,avg,patch};
 }
 function safeScoreValue(value,fallback=0){const number=Number(value);return Number.isFinite(number)?number:fallback}
-function scoreProfile(p,m,band){
+function scoreProfile(p,band){
   const mu=averageMatchupComponent(p),ec=eloComponent(p,band),xc=exactModeComponent(p);
-  const mb=safeScoreValue(mapComponent(p,m)),rc=safeScoreValue(recoveryComponent(p));
+  const rc=safeScoreValue(recoveryComponent(p));
   const cb=safeScoreValue(p.averageConfidence??confidenceBonus(p.confidence),5),rb=safeScoreValue(mu.bonus);
   const eb=safeScoreValue(ec.bonus),xb=safeScoreValue(xc.bonus);
   const modeCohdb=p.modeProfiles?.length?p.modeProfiles.map(profile=>cohdbComponent(profile).bonus):null;
   const cc=modeCohdb?.length?{bonus:modeCohdb.reduce((sum,value)=>sum+safeScoreValue(value),0)/modeCohdb.length}:cohdbComponent(p);
   const cohdbScore=safeScoreValue(cc?.bonus);
-  const rawScore=55+cb+rb+mb+rc+eb+xb+cohdbScore;
+  const rawScore=55+cb+rb+rc+eb+xb+cohdbScore;
   const score=Math.round(clamp(Number.isFinite(rawScore)?rawScore:55,35,95));
-  return {score,rank:safeScoreValue(mu.laneRank,99),confidence:cb,rankBonus:rb,teamMatchupInfo:mu,map:mb,recovery:rc,elo:eb,eloInfo:ec,mode:xb,modeInfo:xc,cohdb:cohdbScore,cohdbInfo:cc};
+  return {score,rank:safeScoreValue(mu.laneRank,99),confidence:cb,rankBonus:rb,teamMatchupInfo:mu,recovery:rc,elo:eb,eloInfo:ec,mode:xb,modeInfo:xc,cohdb:cohdbScore,cohdbInfo:cc};
 }
-function smartRows(f,m,map,band){
+function smartRows(f,m,band){
   const profiles=m==="All Modes"?allModesBattlegroups(f).map(name=>allModesProfile(f,name)).filter(Boolean):PROFILES.filter(p=>p.faction===f&&p.mode===m);
-  return profiles.map(p=>({p,...scoreProfile(p,map,band)})).sort((a,b)=>b.score-a.score||a.rank-b.rank)
+  return profiles.map(p=>({p,...scoreProfile(p,band)})).sort((a,b)=>b.score-a.score||a.rank-b.rank)
 }
-function recommendation(){return smartRows(fac.value,mode.value,maptype.value,elo.value)[0]}
-function smartReason(x){const bits=[];if(x.rank<=1.5)bits.push("strong average matchup rank");else if(x.rank<=3)bits.push("good average matchup rank");if(x.map>=4)bits.push("excellent map fit");else if(x.map<0)bits.push("map penalty");if(x.elo>=2)bits.push("positive ELO context");if(x.mode>=1.5)bits.push("strong current-patch mode signal");if(x.cohdb>=1)bits.push("CoHDB evidence supports the shell");if(x.recovery>=3)bits.push("strong recovery path");return bits.join(" • ")||"Balanced current recommendation"}
+function recommendation(){return smartRows(fac.value,mode.value,elo.value)[0]}
+function smartReason(x){const bits=[];if(x.rank<=1.5)bits.push("strong average matchup rank");else if(x.rank<=3)bits.push("good average matchup rank");if(x.elo>=2)bits.push("positive ELO context");if(x.mode>=1.5)bits.push("strong current-patch mode signal");if(x.cohdb>=1)bits.push("CoHDB evidence supports the shell");if(x.recovery>=3)bits.push("strong recovery path");return bits.join(" • ")||"Balanced current recommendation"}
 function smartSection(){
-  const rows=smartRows(fac.value,mode.value,maptype.value,elo.value).slice(0,3);
+  const rows=smartRows(fac.value,mode.value,elo.value).slice(0,3);
   const favs=getFavorites().filter(k=>k.startsWith(fac.value+"|"+mode.value+"|"));
   const fmt=x=>Number.isInteger(x)?x:x.toFixed(1);
   return '<div class="card" style="margin-top:14px"><h2>Recommendation ranking</h2>'+
-    '<p class="small muted">Recommendations combine curated builds, average matchup rankings, technical checks, map fit and current-patch CoHDB evidence.</p>'+
+    '<p class="small muted">Recommendations combine curated builds, average matchup rankings, technical checks and current-patch CoHDB evidence.</p>'+
     '<p class="small muted">The matchup score averages the available enemy-faction rankings. CoHDB data uses the selected mode and all-map scope; incomplete rating coverage is shown but does not affect the score.</p>'+
     '<div class="smartgrid">'+rows.map((x,i)=>{
       return '<div class="smartcard '+(i===0?"first":"")+'"><div class="tags"><span class="tag">#'+(i+1)+'</span><span class="tag">'+x.p.confidence+'</span></div>'+
@@ -504,7 +503,7 @@ function smartSection(){
         '<div class="scorebar"><span style="width:'+x.score+'%"></span></div><div class="smartreason">'+smartReason(x)+'</div>'+
         '<div class="scoreparts"><div class="scorepart"><b>+'+x.confidence+'</b>confidence</div>'+
         '<div class="scorepart"><b>+'+fmt(x.rankBonus)+'</b>matchup</div>'+
-        '<div class="scorepart"><b>'+(x.map>=0?"+":"")+x.map+'</b>map</div>'+
+        
         '<div class="scorepart"><b>'+(x.elo>=0?"+":"")+x.elo.toFixed(1)+'</b>ELO</div>'+
         '<div class="scorepart"><b>'+(x.mode>=0?"+":"")+x.mode.toFixed(1)+'</b>mode</div>'+
         '<div class="scorepart"><b>'+(x.cohdb>=0?"+":"")+x.cohdb.toFixed(1)+'</b>CoHDB</div>'+
@@ -526,7 +525,7 @@ function compareCandidates(p){return CREATOR_BUILDS.filter(c=>c.faction===p.fact
 function compareSection(p){const cs=compareCandidates(p);if(!cs.length)return "";return `<div class="card"><h3>Current vs Creator</h3><div class="comparetop"><div><label>Creator build</label><select id="compareCreator" onchange="updateCompare(this.value)">${cs.map((c,i)=>`<option value="${i}">${c.creator} — ${c.title}</option>`).join("")}</select></div></div><div id="compareDetail"></div></div>`}
 function updateCompare(idx){const p=currentProfile(),advisorBuild=effectiveBuild(p),cs=compareCandidates(p),c=cs[Number(idx)||0];if(!c||!$("compareDetail"))return;const currentSet=new Set(advisorBuild.map(normalizeStep)),creatorSet=new Set(c.build.map(normalizeStep));const currentOnly=advisorBuild.filter(x=>!creatorSet.has(normalizeStep(x)));const creatorOnly=c.build.filter(x=>!currentSet.has(normalizeStep(x)));const patchCurrent=(c.sourceLabel||"").includes(PATCH);const warn=patchCurrent?`<div class="goodnotice"><strong>Patch match:</strong> this creator entry is labelled for patch ${PATCH}.</div>`:`<div class="notice"><strong>Patch warning:</strong> this creator build is preserved as supplied and is not confirmed as a current-${PATCH} recommendation. Use the Current Advisor as the default if they conflict.</div>`;$("compareDetail").innerHTML=`${warn}<div class="comparegrid" style="margin-top:10px"><div class="comparecol"><h4>Current Advisor</h4><div class="stepchips">${advisorBuild.map(x=>`<span class="stepchip ${creatorSet.has(normalizeStep(x))?'shared':'only'}">${x}</span>`).join("")}</div></div><div class="comparecol"><h4>${c.creator}</h4><div class="stepchips">${c.build.map(x=>`<span class="stepchip ${currentSet.has(normalizeStep(x))?'shared':'only'}">${x}</span>`).join("")}</div></div></div><div class="diffgrid"><div class="diffbox"><strong>Advisor-only steps</strong><ul>${currentOnly.slice(0,8).map(x=>`<li>${x}</li>`).join("")||'<li>Mostly shared structure</li>'}</ul></div><div class="diffbox"><strong>Creator-only steps</strong><ul>${creatorOnly.slice(0,8).map(x=>`<li>${x}</li>`).join("")||'<li>Mostly shared structure</li>'}</ul></div></div><div class="small muted">Green = shared · Amber = unique</div>`}
 function eloPanel(p){
-  const stat=eloStat(p,elo.value),x=scoreProfile(p,maptype.value,elo.value),modeStat=x.modeInfo?.stat;
+  const stat=eloStat(p,elo.value),x=scoreProfile(p,elo.value),modeStat=x.modeInfo?.stat;
   const scoreCell='<div class="statpill"><div class="statnum">'+x.score+'/100</div><div class="small muted">Advisor Score</div></div>';
   const ratingCell=stat
     ? '<div class="statpill"><div class="statnum">'+stat.wr.toFixed(1)+'%</div><div class="small muted">'+elo.value+' · '+p.mode+' · All Maps</div></div>'
@@ -571,7 +570,7 @@ function renderAllModesAdvisor(p,score){
   const completeness=ratingStat&&Number.isFinite(Number(ratingStat.coverage))?ratingStat.coverage+'/'+ratingStat.expectedRows:'unavailable';
   $("advisorContent").innerHTML=smartSection()+
     advisorSectionHeader("All Modes recommendation","This ranking combines the four mode-specific profiles and uses CoHDB’s native All Modes data for the selected battlegroup.")+
-    '<div class="card"><div class="tags"><span class="tag">'+p.faction+'</span><span class="tag">All Modes</span><span class="tag">'+maptype.value+'</span><span class="tag">ELO '+elo.value+'</span><span class="tag">'+p.battlegroup+'</span></div>'+
+    '<div class="card"><div class="tags"><span class="tag">'+p.faction+'</span><span class="tag">All Modes</span><span class="tag">ELO '+elo.value+'</span><span class="tag">'+p.battlegroup+'</span></div>'+
     '<h2>'+p.battlegroup+' <span class="score" style="font-size:24px">'+score.score+'/100</span></h2>'+
     '<p><strong>Average confidence across '+p.modeProfiles.length+' modes:</strong> <span class="conf '+cclass(p.confidence)+'">'+p.confidence+'</span> · <strong>Style:</strong> '+(BG_META?.[p.faction]?.[p.battlegroup]?.style||"Combined arms")+'</p>'+
     '<div class="statline">'+cohdbBattlegroupStatMarkup(ratingStat,"All Modes battlegroup · "+elo.value+" · current patch")+cohdbBattlegroupStatMarkup(balancedStat,"All Modes · Balanced (all ratings) reference")+'</div>'+
@@ -583,7 +582,7 @@ function renderAllModesAdvisor(p,score){
 function renderAdvisor(){
   const p=currentProfile();
   if(!p)return;
-  const displayBuild=effectiveBuild(p),rec=recommendation(),score=scoreProfile(p,maptype.value,elo.value);
+  const displayBuild=effectiveBuild(p),rec=recommendation(),score=scoreProfile(p,elo.value);
   if(p.mode==="All Modes"){renderAllModesAdvisor(p,score);return;}
   const teamNotes=teamCompositionSection(p),matchNotes=matchupDecisionSections(p.faction);
   const recNotice=rec&&rec.p.battlegroup!==p.battlegroup
@@ -592,7 +591,7 @@ function renderAdvisor(){
   const evidence=p.evidence?.length?'<ul>'+p.evidence.map(x=>'<li>'+x+'</li>').join("")+'</ul>':"";
   $("advisorContent").innerHTML=smartSection()+
     advisorSectionHeader("Recommendation","The build is the curated, technically checked plan. The ranking helps compare battlegroups using average matchup context and the selected mode.")+
-    '<div class="layout"><main><div class="card"><div class="tags"><span class="tag">'+p.faction+'</span><span class="tag">'+p.mode+'</span><span class="tag">'+maptype.value+'</span><span class="tag">ELO '+elo.value+'</span><span class="tag">'+p.battlegroup+'</span></div>'+
+    '<div class="layout"><main><div class="card"><div class="tags"><span class="tag">'+p.faction+'</span><span class="tag">'+p.mode+'</span><span class="tag">ELO '+elo.value+'</span><span class="tag">'+p.battlegroup+'</span></div>'+
     '<h2>'+p.battlegroup+' <span class="score" style="font-size:24px">'+score.score+'/100</span></h2><p>'+p.verdict+'</p>'+
     '<p><strong>Confidence:</strong> <span class="conf '+cclass(p.confidence)+'">'+p.confidence+'</span> • <strong>Style:</strong> '+(BG_META?.[p.faction]?.[p.battlegroup]?.style||"Combined arms")+'</p>'+
     recNotice+'<div class="smartactions"><button onclick="toggleFavorite()">'+(isFavorite()?"★ Favorite":"☆ Add favorite")+'</button><button onclick="switchView(\'match\')">Open Match Guide</button></div></div>'+
@@ -604,7 +603,7 @@ function renderAdvisor(){
     '</main><aside>'+battlegroupUnlockCard(p,"Battlegroup unlocks")+
     '<div class="card"><h3>Target composition</h3><ul>'+(p.target||[]).map(x=>'<li>'+x+'</li>').join("")+'</ul></div>'+
     '<div class="card"><h3>How to play it</h3><ol>'+(p.tips||[]).map(x=>'<li>'+x+'</li>').join("")+'</ol></div>'+
-    '<div class="card"><h3>Map fit</h3><div class="statnum">'+(mapComponent(p,maptype.value)>=0?"+":"")+mapComponent(p,maptype.value)+'</div><p class="small muted">'+MAP_INFO[maptype.value]+'</p></div>'+
+    
     '<div class="card"><h3>My notes</h3><textarea id="profileNotes" placeholder="Example: adjust AT timing based on scouting...">'+(localStorage.getItem(notesKey())||"")+'</textarea><button class="action" style="margin-top:7px" onclick="saveNotes()">Save note</button><div id="saveok" class="saveok">Saved locally in this browser.</div></div></aside></div>';
   if(compareCandidates(p).length)updateCompare(0);
 }
@@ -617,13 +616,13 @@ function renderMatch(){
       '<div class="smartactions">'+p.modeProfiles.map(profile=>'<button onclick="openExactMode(\''+profile.mode+'\')">Open '+profile.mode+' guide</button>').join("")+'</div></div>';
     return;
   }
-  const displayBuild=effectiveBuild(p),sc=scoreProfile(p,maptype.value,elo.value);
+  const displayBuild=effectiveBuild(p),sc=scoreProfile(p,elo.value);
   const rows=[...(p.branches||[]),...(teamMode(p.mode)?teamAdjustmentRows(p):[])];
   const lv=findDecision(rows,["lv","vehicle","motor pool","greyhound","stuart","8 rad","flak"],["Fast vehicle spotted","Add reliable AT before greedy tech","Keep field safety first."]);
   const inf=findDecision(rows,["infantry","mg","team-weapon","team weapon","rifle","section"],["Infantry / team weapons","Use anti-infantry power and flanking tools","Avoid equal frontal trades."]);
   const ahead=findDecision(rows,["ahead","fuel lead"],["You are ahead","Keep minimum AT, then accelerate the next power spike","Convert the lead without gambling it."]);
   const behind=findDecision(rows,["behind","fuel-starved","fuel starved","lost fuel"],["You are behind","Heal and secure anti-vehicle safety before expensive tech","Stabilize the field first."]);
-  $("matchContent").innerHTML='<div class="matchwrap"><div class="matchhero"><div class="card"><div class="tags"><span class="tag">'+p.faction+'</span><span class="tag">'+p.mode+'</span><span class="tag">'+maptype.value+'</span><span class="tag">'+p.battlegroup+'</span></div>'+
+  $("matchContent").innerHTML='<div class="matchwrap"><div class="matchhero"><div class="card"><div class="tags"><span class="tag">'+p.faction+'</span><span class="tag">'+p.mode+'</span><span class="tag">'+p.battlegroup+'</span></div>'+
     '<h2>'+p.battlegroup+'</h2><div class="matchbuild">'+buildHtml(displayBuild)+'</div></div>'+
     '<div class="card"><div class="matchscore">'+sc.score+'</div><div class="muted">Advisor Score / 100</div><p><strong>'+elo.value+'</strong>: '+sc.eloInfo.label+'</p><button class="action" onclick="switchView(\'advisor\')">Back to full advisor</button></div></div>'+
     teamCompositionSection(p)+
@@ -637,9 +636,9 @@ function refreshCreatorBG(){let rows=CREATOR_BUILDS;if(cname.value!=='All')rows=
 function renderCreators(){let rows=CREATOR_BUILDS;if(cname.value!=='All')rows=rows.filter(c=>c.creator===cname.value);if(cfac.value!=='All')rows=rows.filter(c=>c.faction===cfac.value);if(cmode.value!=='All')rows=rows.filter(c=>(c.modes||[]).includes(cmode.value));if(cbg.value!=='All')rows=rows.filter(c=>c.battlegroup===cbg.value);$("creatorContent").innerHTML=`<div class="card" style="margin-top:14px"><h2>Creator Build Library <span class="countbadge">${rows.length} shown / ${CREATOR_BUILDS.length} saved</span></h2><p class="muted">Original builds stay preserved. Use Current vs Creator in the Smart Advisor for a direct patch-aware comparison.</p></div><div class="creatorgrid">${rows.map(creatorMiniCard).join("")}</div>`}
 function refreshRankControls(){options(rmode,modeOptions(rfac.value));renderRank()}
 function renderRank(){
-  const rows=smartRows(rfac.value,rmode.value,rmap.value,relo.value);
+  const rows=smartRows(rfac.value,rmode.value,relo.value);
   const explanation=rmode.value==="All Modes"?"CoHDB uses its native All Modes rows; matchup rank and confidence are averaged across the four exact-mode profiles.":"Matchup rank averages the available enemy-faction rankings.";
-  $("rankContent").innerHTML='<div class="card" style="margin-top:14px"><h2>'+rfac.value+' '+rmode.value+' — Average matchup ranking</h2><p class="muted">'+rmap.value+' · ELO '+relo.value+'</p><p class="small muted">'+explanation+'</p>'+rows.map((x,i)=>'<div class="rankrow"><div class="rank">'+(i+1)+'</div><div><strong>'+x.p.battlegroup+'</strong><div class="small muted">'+(BG_META?.[x.p.faction]?.[x.p.battlegroup]?.style||"")+'</div></div><div class="conf '+cclass(x.p.confidence)+'">'+x.p.confidence+'</div><div><strong>'+x.score+'/100</strong></div><div class="muted">'+smartReason(x)+' • '+x.eloInfo.scopeLabel+": "+x.eloInfo.label+'</div></div>').join("")+'</div>';
+  $("rankContent").innerHTML='<div class="card" style="margin-top:14px"><h2>'+rfac.value+' '+rmode.value+' — Average matchup ranking</h2><p class="muted">ELO '+relo.value+'</p><p class="small muted">'+explanation+'</p>'+rows.map((x,i)=>'<div class="rankrow"><div class="rank">'+(i+1)+'</div><div><strong>'+x.p.battlegroup+'</strong><div class="small muted">'+(BG_META?.[x.p.faction]?.[x.p.battlegroup]?.style||"")+'</div></div><div class="conf '+cclass(x.p.confidence)+'">'+x.p.confidence+'</div><div><strong>'+x.score+'/100</strong></div><div class="muted">'+smartReason(x)+' • '+x.eloInfo.scopeLabel+": "+x.eloInfo.label+'</div></div>').join("")+'</div>';
 }
 function wilsonLB(w,n){if(!n)return 0;const z=1.96,p=w/n,z2=z*z;return (p+z2/(2*n)-z*Math.sqrt((p*(1-p)+z2/(4*n))/n))/(1+z2/n)}
 function sampleLabel(n){if(n<30)return 'Too sparse';if(n<100)return 'Weak';if(n<300)return 'Useful / uncertain';return 'Stable descriptive'}
@@ -668,15 +667,15 @@ function renderSources(){
     '<div class="notice"><strong>Patch status:</strong> CoHDB battlegroup statistics were retrieved on 23 Sep 2026 from patch 2.5.6 (patch ID 50313). The snapshot includes All Modes and 1v1–4v4, plus Balanced (all ratings) and six Average Rating bands. Mode statistics use current-patch, all-map records. All Ratings combines the available Average Rating bands. Missing rating groups are listed in coverage metadata, shown as partial in the interface and excluded from Advisor Score.</div>'+
     '<div class="goodnotice" style="margin-top:10px"><strong>Matchup context:</strong> The Advisor Score averages the available curated enemy-faction rankings. Scouting notes remain available by faction in the Match Guide. 3v3/4v4 provide general team-game scouting prompts.</div>'+
     '<div class="goodnotice" style="margin-top:10px"><strong>Community / attribution note:</strong> This is an unofficial community project and is not affiliated with Relic, CoHDB, CoH3Stats or the featured creators. Creator builds are preserved from supplied videos, transcripts or screenshots and should not be read as creator endorsement of this advisor. Creator-original sequences may omit routine tech/building steps shown elsewhere in the source; the green tech-QA badge applies to Current Advisor profiles, not historical creator recaps.</div>'+
-    '<div class="methodgrid" style="margin-top:12px"><div class="methoditem"><b>Confidence</b><div class="small muted">Current-patch evidence quality.</div></div><div class="methoditem"><b>Matchup</b><div class="small muted">Average advisor rank across available enemy-faction rankings.</div></div><div class="methoditem"><b>Map fit</b><div class="small muted">Qualitative strategic inference.</div></div><div class="methoditem"><b>ELO context</b><div class="small muted">Current-patch mode and rating-band samples, compared with faction-level context.</div></div></div>'+
-    '<div class="goodnotice" style="margin-top:10px"><strong>v1.1.34 update:</strong> Opponent selectors remain removed. Recommendation cards show one battlegroup rate line per rating scope. Incomplete current-patch rating coverage does not affect the Advisor Score.</div>'+
-    '<h3 style="margin-top:20px">Advisor Score</h3><p>The score starts from a neutral baseline, then adds profile confidence, average matchup rank, map fit, recovery safety and current-patch ELO-relative battlegroup context. It supports practical selection and is not a measured win probability.</p>'+
+    '<div class="methodgrid" style="margin-top:12px"><div class="methoditem"><b>Confidence</b><div class="small muted">Current-patch evidence quality.</div></div><div class="methoditem"><b>Matchup</b><div class="small muted">Average advisor rank across available enemy-faction rankings.</div></div><div class="methoditem"><b>ELO context</b><div class="small muted">Current-patch mode and rating-band samples, compared with faction-level context.</div></div></div>'+
+    '<div class="goodnotice" style="margin-top:10px"><strong>v1.1.35 update:</strong> Map-type filters and qualitative map-fit scoring are removed; CoHDB statistics stay on the all-map scope. Opponent selectors remain removed, and incomplete current-patch rating coverage does not affect the Advisor Score.</div>'+
+    '<h3 style="margin-top:20px">Advisor Score</h3><p>The score starts from a neutral baseline, then adds profile confidence, average matchup rank, recovery safety and current-patch ELO-relative battlegroup context. It supports practical selection and is not a measured win probability.</p>'+
     '<div style="margin-top:14px">'+SOURCES.map(x=>'<div class="source"><div><strong>'+x.name+'</strong><div class="muted small">'+x.note+'</div></div><a href="'+x.url+'" target="_blank" rel="noopener noreferrer">Open ↗</a></div>').join("")+'</div>'+
     '<h3 style="margin-top:20px">Data architecture</h3><p>The v1.1.4 download remains a self-contained HTML file. The JSON export stores <code>battlegroupTrees</code> once per battlegroup and <code>battlegroupRecommendations</code> separately from mode profiles. The page validates strict recommendation paths against the canonical tree at runtime, so an illegal prerequisite jump or mutually exclusive sequence is blocked instead of displayed.</p></div>';
 }
 function switchView(v){['advisor','match','creators','rankings','sources'].forEach(x=>$(x+'View').classList.toggle('hidden',x!==v));document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.view===v));if(v==='match')renderMatch();if(v==='creators')renderCreators();if(v==='rankings')renderRank();if(v==='sources')renderSources()}
 options(fac,uniq(PROFILES.map(p=>p.faction)));options(rfac,uniq(PROFILES.map(p=>p.faction)));refreshMain();refreshRankControls();refreshCreatorFilters();renderSources();
-fac.addEventListener('change',refreshMain);mode.addEventListener('change',refreshBG);maptype.addEventListener('change',renderAdvisor);elo.addEventListener('change',renderAdvisor);bg.addEventListener('change',renderAdvisor);$("recommended").addEventListener('click',useRecommended);
-rfac.addEventListener('change',refreshRankControls);rmode.addEventListener('change',renderRank);rmap.addEventListener('change',renderRank);relo.addEventListener('change',renderRank);[cname,cfac,cmode].forEach(e=>e.addEventListener('change',refreshCreatorBG));cbg.addEventListener('change',renderCreators);document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>switchView(t.dataset.view)));
+fac.addEventListener('change',refreshMain);mode.addEventListener('change',refreshBG);elo.addEventListener('change',renderAdvisor);bg.addEventListener('change',renderAdvisor);$("recommended").addEventListener('click',useRecommended);
+rfac.addEventListener('change',refreshRankControls);rmode.addEventListener('change',renderRank);relo.addEventListener('change',renderRank);[cname,cfac,cmode].forEach(e=>e.addEventListener('change',refreshCreatorBG));cbg.addEventListener('change',renderCreators);document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>switchView(t.dataset.view)));
 </script>
 </body></html>
