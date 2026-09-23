@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CoH3 Build Advisor v1.1.33</title>
+<title>CoH3 Build Advisor v1.1.34</title>
 <link rel="canonical" href="https://gggerrit15.github.io/coh3-build-advisor/">
 <!-- GoatCounter analytics -->
 <script data-goatcounter="https://gggerrit15.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -72,7 +72,7 @@
 <div class="shell">
   <div class="top">
     <div>
-      <h1>CoH3 Build Advisor v1.1.33</h1>
+      <h1>CoH3 Build Advisor v1.1.34</h1>
       <div class="muted">Unofficial community tool • all four factions • Smart Advisor for 1v1 / 2v2 / 3v3 / 4v4 • map + ELO context • creator comparison</div>
     </div>
     <div>
@@ -227,7 +227,7 @@ function renderBranchTree(p,branch,selectionMap){return `<div class="bg-branch-c
 function renderBattlegroupTree(p){const tree=battlegroupTreeFor(p),schema=validateBattlegroupTree(tree);if(!schema.ok)return `<div class="notice"><strong>Tree data error:</strong> ${schema.errors.join(' ')}</div>`;const selectionMap=recommendationSelectionMap(p),hasSelected=Object.keys(selectionMap).length>0;return `${hasSelected?'<div class="bg-tree-key"><span class="bg-tree-pill"><span class="bg-tree-dot numbered"></span>Yellow badge = pick order</span></div>':''}<div class="bg-tree-wrap" style="margin-top:12px">${tree.branches.map(branch=>renderBranchTree(p,branch,selectionMap)).join('')}</div>`}
 function renderUnlockRecommendation(p){const check=validateUnlockRecommendation(p);if(!check.rec)return '';if(!check.ok)return `<div class="notice"><strong>Recommendation blocked by validator.</strong><ul>${check.errors.map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul></div>`;const rec=check.rec;let body='';if(Array.isArray(rec.sequence)&&rec.sequence.length){body=`<div class="pathbox"><strong>Numbered pick order</strong><div class="stepchips" style="margin-top:10px">${rec.sequence.map((s,i)=>`<span class="stepchip"><b style="color:var(--accent2)">${i+1}.</b> ${escapeHtml(s.choice)}</span>`).join('')}</div></div>`}else{body=(rec.paths||[]).map(x=>`<div class="pathbox"><strong>${escapeHtml(x.branch)}</strong><div style="margin-top:6px">${x.path.map(escapeHtml).join(' <span class="arrow">→</span> ')}</div></div>`).join('')}return `<div class="goodnotice"><strong>Recommendation</strong></div>${body}`}
 function battlegroupUnlockCard(p,heading='Battlegroup unlocks'){return `<div class="card"><h3>${heading}</h3>${renderBattlegroupTree(p)}${renderUnlockRecommendation(p)}</div>`}
-const COHDB_MODE_KEYS = {'1v1': '1v1', '2v2': '2v2', '3v3': '3v3', '4v4': '4v4'};
+const COHDB_MODE_KEYS = {'1v1': '1v1', '2v2': '2v2', '3v3': '3v3', '4v4': '4v4', 'All Modes': 'all'};
 const COHDB_RATING_KEYS = {'Under 1000': 'Under 1000', '1000-1200': '1000 – 1200', '1200-1400': '1200 – 1400', '1400-1600': '1400 – 1600', '1600-1800': '1600 – 1800', '1800+': '1800+'};
 const COHDB_BATTLEGROUP_RATING_FILTERS = {'All Ratings': 'balanced_all', 'Under 1000': 'avg_under_1000', '1000-1200': 'avg_1000_1200', '1200-1400': 'avg_1200_1400', '1400-1600': 'avg_1400_1600', '1600-1800': 'avg_1600_1800', '1800+': 'avg_1800_plus'};
 const COHDB_MIN_RATING_GAMES = 30;
@@ -342,7 +342,16 @@ function hydrateBuildIcons(p,root=document){const nodes=[...root.querySelectorAl
 function renderBuildVisualizer(arr,p){const steps=displayBuildSteps(arr||[]),phases=phaseBuild(steps);let stepNo=1;const legend='<div class="buildlegend"><span class="legenditem"><span class="legendicon">⚔</span> Units</span><span class="legenditem"><span class="legendicon">▦</span> Tech</span><span class="legenditem"><span class="legendicon">◆</span> Vehicles</span><span class="legenditem"><span class="legendicon">⚙</span> Upgrades</span><span class="legenditem"><span class="legendicon">★</span> Battlegroup</span><span class="legenditem"><span class="legendicon">S</span> Starting unit</span></div>';const blocks=phases.map((ph,i)=>{const cards=ph.steps.map(step=>{const info=buildStepInfo(step,stepNo);if(!info.isStart)stepNo++;return '<div class="buildstepcard type-'+info.type+' '+(info.note?'conditional ':'')+(info.isStart?'startcard':'')+'"><div class="buildstepbadge '+(info.isStart?'start':'')+'">'+info.badge+'</div><div class="buildsteptype">'+info.label+'</div><div class="buildstepbody"><div class="buildstepicon loading" data-build-icon-name="'+escapeHtml(info.name)+'"><span class="buildstepemoji">'+info.icon+'</span><img class="buildstepimg" alt="" decoding="async"></div><div class="buildsteptext"><div class="buildstepname">'+escapeHtml(info.name)+'</div>'+(info.note?'<div class="buildstepnote">'+escapeHtml(info.note)+'</div>':'')+'</div></div></div>'}).join('');return '<div class="buildphase"><div class="buildphasehead"><div><div class="buildphasekicker">Phase '+(i+1)+'</div><h4>'+escapeHtml(ph.name)+'</h4></div></div><div class="buildstepgrid">'+cards+'</div></div>'}).join('');requestAnimationFrame(()=>{try{hydrateBuildIcons(p,$('advisorContent'))}catch(e){console.warn('Build icons could not be hydrated.',e)}});return '<div class="buildviz">'+legend+blocks+'<details class="buildtexttoggle"><summary>Show compact text version</summary><div class="build">'+buildHtml(steps)+'</div></details></div>'}
 function branchRows(rows){if(!rows?.length)return `<div class="muted">No additional branch recorded.</div>`;return `<div class="branchgrid"><div class="head">Signal</div><div class="head">Change</div><div class="head">Why</div>${rows.map(r=>r.map(x=>`<div>${x}</div>`).join("")).join("")}</div>`}
 function rankKey(f,m,o){return f+"|"+m+"|"+o}
-function currentProfile(){return PROFILES.find(p=>p.faction===fac.value&&p.mode===mode.value&&p.battlegroup===bg.value)}
+const EXACT_MODES=["1v1","2v2","3v3","4v4"];
+function allModesBattlegroups(f){return uniq(PROFILES.filter(p=>p.faction===f).map(p=>p.battlegroup))}
+function allModesProfile(f,battlegroup){
+  const modeProfiles=EXACT_MODES.map(m=>PROFILES.find(p=>p.faction===f&&p.mode===m&&p.battlegroup===battlegroup)).filter(Boolean);
+  if(!modeProfiles.length)return null;
+  const averageConfidence=modeProfiles.reduce((sum,p)=>sum+confidenceBonus(p.confidence),0)/modeProfiles.length;
+  const confidence=["Low","Low-Medium","Medium","Medium-High","High"].reduce((best,label)=>Math.abs(confidenceBonus(label)-averageConfidence)<Math.abs(confidenceBonus(best)-averageConfidence)?label:best,"Low");
+  return {...modeProfiles[0],mode:"All Modes",modeProfiles,averageConfidence,confidence};
+}
+function currentProfile(){return mode.value==="All Modes"?allModesProfile(fac.value,bg.value):PROFILES.find(p=>p.faction===fac.value&&p.mode===mode.value&&p.battlegroup===bg.value)}
 function profileKey(p){return p.faction+"|"+p.mode+"|"+p.battlegroup}
 function teamMode(m){return m==="3v3"||m==="4v4"}
 function effectiveBuild(p){return [...(p.build||[])]}
@@ -355,12 +364,23 @@ function teamAdjustmentRows(p){return [
 ]}
 function teamCompositionSection(p){if(!teamMode(p.mode))return "";return '<div class="card"><h3>Team-game scouting priorities</h3><p class="small muted">These general scouting branches help adapt a team-game plan during play.</p>'+branchRows(teamAdjustmentRows(p))+'</div>'}
 function matchupDecisionSections(faction){const enemies=ENEMIES[faction]||[];if(!enemies.length)return '<div class="muted">No faction scouting notes recorded.</div>';return enemies.map(enemy=>'<details style="margin:8px 0"><summary>'+escapeHtml(enemy)+' scouting notes</summary>'+branchRows(MATCHUPS?.[faction]?.[enemy]||[])+'</details>').join("")}
-function refreshMain(){options(mode,uniq(PROFILES.filter(p=>p.faction===fac.value).map(p=>p.mode)));refreshBG()}
-function refreshBG(){const old=bg.value,available=PROFILES.filter(p=>p.faction===fac.value&&p.mode===mode.value).map(p=>p.battlegroup),ranked=smartRows(fac.value,mode.value,maptype.value,elo.value).map(x=>x.p.battlegroup).filter(x=>available.includes(x)),names=[...new Set([...ranked,...available])];options(bg,names);if([...bg.options].some(o=>o.value===old))bg.value=old;renderAdvisor()}
+function modeOptions(f){return [...uniq(PROFILES.filter(p=>p.faction===f).map(p=>p.mode)), "All Modes"]}
+function refreshMain(){options(mode,modeOptions(fac.value));refreshBG()}
+function refreshBG(){
+  const old=bg.value,available=mode.value==="All Modes"?allModesBattlegroups(fac.value):uniq(PROFILES.filter(p=>p.faction===fac.value&&p.mode===mode.value).map(p=>p.battlegroup));
+  const ranked=smartRows(fac.value,mode.value,maptype.value,elo.value).map(x=>x.p.battlegroup).filter(x=>available.includes(x)),names=[...new Set([...ranked,...available])];
+  options(bg,names);if([...bg.options].some(o=>o.value===old))bg.value=old;renderAdvisor()
+}
 function confidenceBonus(c){return ({"High":12,"Medium-High":9,"Medium":6,"Low-Medium":3,"Low":0}[c]??5)}
 function staticRank(p,o){const rows=RANKINGS[rankKey(p.faction,p.mode,o)]||[];const i=rows.findIndex(r=>r[0]===p.battlegroup);return i<0?99:i+1}
 function rankBonus(r){return r===1?10:r===2?7:r===3?5:r===4?3:r===5?1:0}
-function averageMatchupComponent(p){const enemies=ENEMIES[p.faction]||[],ranks=enemies.map(o=>staticRank(p,o)).filter(r=>r<99),points=ranks.map(rankBonus),avgRank=ranks.length?ranks.reduce((a,b)=>a+b,0)/ranks.length:99,bonus=points.length?points.reduce((a,b)=>a+b,0)/points.length:0;return {bonus,laneRank:avgRank,label:"Average matchup rank",active:false,enemyCount:ranks.length}}
+function averageMatchupComponent(p){
+  const enemies=ENEMIES[p.faction]||[],modes=p.mode==="All Modes"?EXACT_MODES:[p.mode];
+  const ranks=enemies.flatMap(o=>modes.map(m=>staticRank({...p,mode:m},o)).filter(r=>r<99));
+  const points=ranks.map(rankBonus),avgRank=ranks.length?ranks.reduce((a,b)=>a+b,0)/ranks.length:99;
+  const bonus=points.length?points.reduce((a,b)=>a+b,0)/points.length:0;
+  return {bonus,laneRank:avgRank,label:p.mode==="All Modes"?"Average matchup rank across modes":"Average matchup rank",active:false,enemyCount:ranks.length}
+}
 const COHDB_RAW_RATING_FILTERS=['avg_under_1000','avg_1000_1200','avg_1200_1400','avg_1400_1600','avg_1600_1800','avg_1800_plus'];
 function cohdbScopeFor(p) {
   return {mode: cohdbModeKey(p.mode), map: 'all', opponent: 'all', patch: COHDB_SNAPSHOT?.patch?.id || ''};
@@ -408,16 +428,14 @@ function cohdbRatingStat(p, band) {
 }
 function eloStat(p,band){return cohdbRatingStat(p,band)}
 function factionEloAvg(f,band,mode){
+  const patch=COHDB_SNAPSHOT?.patch?.id||"",modeKey=cohdbModeKey(mode);
   if(band==="All Ratings"){
-    const rates=cohdbModeBattlegroups(f,mode)
-      .map(name=>cohdbModeAllRatingsStat(f,name,mode))
-      .filter(stat=>stat?.complete&&Number.isFinite(stat.wr))
-      .map(stat=>stat.wr);
-    return rates.length?rates.reduce((sum,rate)=>sum+rate,0)/rates.length:50;
+    const stats=cohdbModeBattlegroups(f,mode).map(name=>cohdbModeAllRatingsStat(f,name,mode)).filter(stat=>stat?.complete&&Number.isFinite(stat.wr));
+    const games=stats.reduce((sum,stat)=>sum+(Number(stat.n)||0),0),wins=stats.reduce((sum,stat)=>sum+(Number(stat.wins)||0),0);
+    return games?wins/games*100:50;
   }
   const ratingFilter=cohdbRatingFilterForBand(band);
   if(!ratingFilter)return 50;
-  const modeKey=COHDB_MODE_KEYS[mode]||mode||"all",patch=COHDB_SNAPSHOT?.patch?.id||"";
   const rows=(COHDB_SNAPSHOT?.battlegroups||[]).filter(x=>
     x.faction===f&&x.mode===modeKey&&(x.map||"all")==="all"&&(x.opponent||"all")==="all"&&
     (!patch||x.patch?.id===patch)&&x.rating_filter===ratingFilter
@@ -446,26 +464,31 @@ function exactModeComponent(p) {
   const patch = COHDB_SNAPSHOT?.patch?.label || "unknown";
   const label = "Current-patch " + p.mode + " battlegroup context";
   if (!stat) return {bonus:0,label:label+" unavailable",stat:null,patch};
-  const factionRates = cohdbModeBattlegroups(p.faction,p.mode)
-    .map(battlegroup => cohdbModeAllRatingsStat(p.faction,battlegroup,p.mode))
-    .filter(row => row?.complete && Number.isFinite(row.wr))
-    .map(row => row.wr);
-  const avg = factionRates.length ? factionRates.reduce((sum,rate)=>sum+rate,0)/factionRates.length : 50;
-  const bonus = stat.complete ? clamp((stat.wr-avg)*0.75,-4,4) : 0;
+  const factionStats=cohdbModeBattlegroups(p.faction,p.mode)
+    .map(battlegroup=>cohdbModeAllRatingsStat(p.faction,battlegroup,p.mode))
+    .filter(row=>row?.complete&&Number.isFinite(row.wr));
+  const games=factionStats.reduce((sum,row)=>sum+(Number(row.n)||0),0),wins=factionStats.reduce((sum,row)=>sum+(Number(row.wins)||0),0);
+  const avg=games?wins/games*100:50;
+  const bonus=stat.complete?clamp((stat.wr-avg)*0.75,-4,4):0;
   return {bonus,label,stat,avg,patch};
 }
 function safeScoreValue(value,fallback=0){const number=Number(value);return Number.isFinite(number)?number:fallback}
 function scoreProfile(p,m,band){
   const mu=averageMatchupComponent(p),ec=eloComponent(p,band),xc=exactModeComponent(p);
   const mb=safeScoreValue(mapComponent(p,m)),rc=safeScoreValue(recoveryComponent(p));
-  const cb=safeScoreValue(confidenceBonus(p.confidence),5),rb=safeScoreValue(mu.bonus);
-  const eb=safeScoreValue(ec.bonus),xb=safeScoreValue(xc.bonus),cc=cohdbComponent(p);
+  const cb=safeScoreValue(p.averageConfidence??confidenceBonus(p.confidence),5),rb=safeScoreValue(mu.bonus);
+  const eb=safeScoreValue(ec.bonus),xb=safeScoreValue(xc.bonus);
+  const modeCohdb=p.modeProfiles?.length?p.modeProfiles.map(profile=>cohdbComponent(profile).bonus):null;
+  const cc=modeCohdb?.length?{bonus:modeCohdb.reduce((sum,value)=>sum+safeScoreValue(value),0)/modeCohdb.length}:cohdbComponent(p);
   const cohdbScore=safeScoreValue(cc?.bonus);
   const rawScore=55+cb+rb+mb+rc+eb+xb+cohdbScore;
   const score=Math.round(clamp(Number.isFinite(rawScore)?rawScore:55,35,95));
   return {score,rank:safeScoreValue(mu.laneRank,99),confidence:cb,rankBonus:rb,teamMatchupInfo:mu,map:mb,recovery:rc,elo:eb,eloInfo:ec,mode:xb,modeInfo:xc,cohdb:cohdbScore,cohdbInfo:cc};
 }
-function smartRows(f,m,map,band){return PROFILES.filter(p=>p.faction===f&&p.mode===m).map(p=>({p,...scoreProfile(p,map,band)})).sort((a,b)=>b.score-a.score||a.rank-b.rank)}
+function smartRows(f,m,map,band){
+  const profiles=m==="All Modes"?allModesBattlegroups(f).map(name=>allModesProfile(f,name)).filter(Boolean):PROFILES.filter(p=>p.faction===f&&p.mode===m);
+  return profiles.map(p=>({p,...scoreProfile(p,map,band)})).sort((a,b)=>b.score-a.score||a.rank-b.rank)
+}
 function recommendation(){return smartRows(fac.value,mode.value,maptype.value,elo.value)[0]}
 function smartReason(x){const bits=[];if(x.rank<=1.5)bits.push("strong average matchup rank");else if(x.rank<=3)bits.push("good average matchup rank");if(x.map>=4)bits.push("excellent map fit");else if(x.map<0)bits.push("map penalty");if(x.elo>=2)bits.push("positive ELO context");if(x.mode>=1.5)bits.push("strong current-patch mode signal");if(x.cohdb>=1)bits.push("CoHDB evidence supports the shell");if(x.recovery>=3)bits.push("strong recovery path");return bits.join(" • ")||"Balanced current recommendation"}
 function smartSection(){
@@ -495,6 +518,7 @@ function smartSection(){
 }
 function jsq(s){return String(s).replaceAll("\\","\\\\").replaceAll("'","\\'")}
 function selectBG(name){if([...bg.options].some(o=>o.value===name)){bg.value=name;renderAdvisor()}}
+function openExactMode(modeName){if(!EXACT_MODES.includes(modeName))return;mode.value=modeName;refreshBG();switchView("advisor")}
 function phaseBuild(arr){const n=arr.length;if(n<=4)return [{name:"Opening",steps:arr}];let cuts=[Math.max(3,Math.round(n*.28)),Math.max(6,Math.round(n*.50)),Math.max(9,Math.round(n*.75))];cuts=cuts.map((x,i)=>i?Math.max(x,cuts[i-1]+1):x).map(x=>Math.min(x,n));return [{name:"Opening",steps:arr.slice(0,cuts[0])},{name:"First tech / safety",steps:arr.slice(cuts[0],cuts[1])},{name:"Midgame spike",steps:arr.slice(cuts[1],cuts[2])},{name:"Late game",steps:arr.slice(cuts[2])}].filter(x=>x.steps.length)}
 function phaseSection(p,arr=null){const b=arr||p.build;return `<div class="card"><h3>Build phases / decision-tree quick view</h3><div class="phasegrid">${phaseBuild(b).map((ph,i)=>`<div class="phase"><h4>${i+1}. ${ph.name}</h4><div class="phasesteps">${ph.steps.map(x=>`<div class="phasestep">${x}</div>`).join("")}</div></div>`).join("")}</div></div>`}
 function normalizeStep(x){return x.toLowerCase().replace(/^start:\s*/,"").replace(/squad|team|production unlock|medium tank|heavy tank|anti-tank gun|section/g,"").replace(/[^a-z0-9äöüß]+/g," ").trim().split(" ").filter(w=>w.length>2&&!['when','safe','needed','late','early','only','if','enemy','upgrade'].includes(w)).slice(0,4).join(" ")}
@@ -536,10 +560,31 @@ function toggleFavorite(){const k=favoriteKey();if(!k)return;let a=getFavorites(
 function toggleFavoriteByName(name){const k=`${fac.value}|${mode.value}|${name}`;let a=getFavorites();a=a.includes(k)?a.filter(x=>x!==k):[...a,k];localStorage.setItem('coh3-v7-favorites',JSON.stringify(a));renderAdvisor()}
 function notesKey(){const p=currentProfile();return p?`coh3-v7-note:${profileKey(p)}`:''}
 function saveNotes(){localStorage.setItem(notesKey(),$("profileNotes").value);$("saveok").style.display='block';setTimeout(()=>$("saveok").style.display='none',1200)}
+function renderAllModesAdvisor(p,score){
+  const ratingStat=cohdbSelectedBattlegroupStat(p),balancedStat=cohdbBattlegroupStat(p);
+  const modeCards=p.modeProfiles.map(profile=>{
+    const preview=effectiveBuild(profile).slice(0,5),more=profile.build.length>5?' <span class="muted">…</span>':'';
+    return '<div class="card"><div class="tags"><span class="tag">'+profile.mode+'</span><span class="tag">Confidence: '+profile.confidence+'</span></div>'+
+      '<h3>'+profile.mode+' build</h3><div class="small">'+buildHtml(preview)+more+'</div>'+
+      '<button class="action" style="margin-top:10px" onclick="openExactMode(\''+profile.mode+'\')">Open full '+profile.mode+' guide</button></div>';
+  }).join("");
+  const completeness=ratingStat&&Number.isFinite(Number(ratingStat.coverage))?ratingStat.coverage+'/'+ratingStat.expectedRows:'unavailable';
+  $("advisorContent").innerHTML=smartSection()+
+    advisorSectionHeader("All Modes recommendation","This ranking combines the four mode-specific profiles and uses CoHDB’s native All Modes data for the selected battlegroup.")+
+    '<div class="card"><div class="tags"><span class="tag">'+p.faction+'</span><span class="tag">All Modes</span><span class="tag">'+maptype.value+'</span><span class="tag">ELO '+elo.value+'</span><span class="tag">'+p.battlegroup+'</span></div>'+
+    '<h2>'+p.battlegroup+' <span class="score" style="font-size:24px">'+score.score+'/100</span></h2>'+
+    '<p><strong>Average confidence across '+p.modeProfiles.length+' modes:</strong> <span class="conf '+cclass(p.confidence)+'">'+p.confidence+'</span> · <strong>Style:</strong> '+(BG_META?.[p.faction]?.[p.battlegroup]?.style||"Combined arms")+'</p>'+
+    '<div class="statline">'+cohdbBattlegroupStatMarkup(ratingStat,"All Modes battlegroup · "+elo.value+" · current patch")+cohdbBattlegroupStatMarkup(balancedStat,"All Modes · Balanced (all ratings) reference")+'</div>'+
+    '<p class="small muted">CoHDB’s native All Modes rows are used. All Ratings pools wins and losses across the six Average Rating groups before calculating win rate ('+completeness+' groups); Balanced (all ratings) is a separate reference cohort.</p>'+
+    '<div class="smartactions"><button onclick="toggleFavorite()">'+(isFavorite()?"★ Favorite":"☆ Add favorite")+'</button></div>'+
+    '<h3 style="margin-top:18px">Mode-specific builds</h3><p class="small muted">Build orders differ by mode. Open a mode to see its full guide and match advice.</p>'+
+    '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px">'+modeCards+'</div></div>';
+}
 function renderAdvisor(){
   const p=currentProfile();
   if(!p)return;
   const displayBuild=effectiveBuild(p),rec=recommendation(),score=scoreProfile(p,maptype.value,elo.value);
+  if(p.mode==="All Modes"){renderAllModesAdvisor(p,score);return;}
   const teamNotes=teamCompositionSection(p),matchNotes=matchupDecisionSections(p.faction);
   const recNotice=rec&&rec.p.battlegroup!==p.battlegroup
     ? '<div class="notice">The Smart Advisor ranks <strong>'+rec.p.battlegroup+'</strong> highest for these filters ('+rec.score+'/100). This page shows the stored build for '+p.battlegroup+'.</div>'
@@ -567,6 +612,11 @@ function findDecision(rows,words,fallback){const all=[...(rows||[])];const r=all
 function renderMatch(){
   const p=currentProfile();
   if(!p)return;
+  if(p.mode==="All Modes"){
+    $("matchContent").innerHTML='<div class="card"><h2>Choose a mode for the Match Guide</h2><p class="muted">Match advice and build decisions depend on the exact team size. Open one of the mode-specific guides for '+p.battlegroup+'.</p>'+
+      '<div class="smartactions">'+p.modeProfiles.map(profile=>'<button onclick="openExactMode(\''+profile.mode+'\')">Open '+profile.mode+' guide</button>').join("")+'</div></div>';
+    return;
+  }
   const displayBuild=effectiveBuild(p),sc=scoreProfile(p,maptype.value,elo.value);
   const rows=[...(p.branches||[]),...(teamMode(p.mode)?teamAdjustmentRows(p):[])];
   const lv=findDecision(rows,["lv","vehicle","motor pool","greyhound","stuart","8 rad","flak"],["Fast vehicle spotted","Add reliable AT before greedy tech","Keep field safety first."]);
@@ -585,8 +635,12 @@ function useRecommended(){const r=recommendation();if(r){bg.value=r.p.battlegrou
 function refreshCreatorFilters(){options(cname,['All',...uniq(CREATOR_BUILDS.map(c=>c.creator)).sort()]);options(cfac,['All',...uniq(CREATOR_BUILDS.map(c=>c.faction)).sort()]);options(cmode,['All',...uniq(CREATOR_BUILDS.flatMap(c=>c.modes||[])).sort()]);refreshCreatorBG()}
 function refreshCreatorBG(){let rows=CREATOR_BUILDS;if(cname.value!=='All')rows=rows.filter(c=>c.creator===cname.value);if(cfac.value!=='All')rows=rows.filter(c=>c.faction===cfac.value);if(cmode.value!=='All')rows=rows.filter(c=>(c.modes||[]).includes(cmode.value));const old=cbg.value;options(cbg,['All',...uniq(rows.map(c=>c.battlegroup)).sort()]);if([...cbg.options].some(o=>o.value===old))cbg.value=old;renderCreators()}
 function renderCreators(){let rows=CREATOR_BUILDS;if(cname.value!=='All')rows=rows.filter(c=>c.creator===cname.value);if(cfac.value!=='All')rows=rows.filter(c=>c.faction===cfac.value);if(cmode.value!=='All')rows=rows.filter(c=>(c.modes||[]).includes(cmode.value));if(cbg.value!=='All')rows=rows.filter(c=>c.battlegroup===cbg.value);$("creatorContent").innerHTML=`<div class="card" style="margin-top:14px"><h2>Creator Build Library <span class="countbadge">${rows.length} shown / ${CREATOR_BUILDS.length} saved</span></h2><p class="muted">Original builds stay preserved. Use Current vs Creator in the Smart Advisor for a direct patch-aware comparison.</p></div><div class="creatorgrid">${rows.map(creatorMiniCard).join("")}</div>`}
-function refreshRankControls(){options(rmode,uniq(PROFILES.filter(p=>p.faction===rfac.value).map(p=>p.mode)));renderRank()}
-function renderRank(){const rows=smartRows(rfac.value,rmode.value,rmap.value,relo.value);$("rankContent").innerHTML='<div class="card" style="margin-top:14px"><h2>'+rfac.value+' '+rmode.value+' — Average matchup ranking</h2><p class="muted">'+rmap.value+' · ELO '+relo.value+'</p><p class="small muted">Matchup rank averages the available enemy-faction rankings.</p>'+rows.map((x,i)=>'<div class="rankrow"><div class="rank">'+(i+1)+'</div><div><strong>'+x.p.battlegroup+'</strong><div class="small muted">'+(BG_META?.[x.p.faction]?.[x.p.battlegroup]?.style||"")+'</div></div><div class="conf '+cclass(x.p.confidence)+'">'+x.p.confidence+'</div><div><strong>'+x.score+'/100</strong></div><div class="muted">'+smartReason(x)+' • '+x.eloInfo.scopeLabel+": "+x.eloInfo.label+'</div></div>').join("")+'</div>'}
+function refreshRankControls(){options(rmode,modeOptions(rfac.value));renderRank()}
+function renderRank(){
+  const rows=smartRows(rfac.value,rmode.value,rmap.value,relo.value);
+  const explanation=rmode.value==="All Modes"?"CoHDB uses its native All Modes rows; matchup rank and confidence are averaged across the four exact-mode profiles.":"Matchup rank averages the available enemy-faction rankings.";
+  $("rankContent").innerHTML='<div class="card" style="margin-top:14px"><h2>'+rfac.value+' '+rmode.value+' — Average matchup ranking</h2><p class="muted">'+rmap.value+' · ELO '+relo.value+'</p><p class="small muted">'+explanation+'</p>'+rows.map((x,i)=>'<div class="rankrow"><div class="rank">'+(i+1)+'</div><div><strong>'+x.p.battlegroup+'</strong><div class="small muted">'+(BG_META?.[x.p.faction]?.[x.p.battlegroup]?.style||"")+'</div></div><div class="conf '+cclass(x.p.confidence)+'">'+x.p.confidence+'</div><div><strong>'+x.score+'/100</strong></div><div class="muted">'+smartReason(x)+' • '+x.eloInfo.scopeLabel+": "+x.eloInfo.label+'</div></div>').join("")+'</div>';
+}
 function wilsonLB(w,n){if(!n)return 0;const z=1.96,p=w/n,z2=z*z;return (p+z2/(2*n)-z*Math.sqrt((p*(1-p)+z2/(4*n))/n))/(1+z2/n)}
 function sampleLabel(n){if(n<30)return 'Too sparse';if(n<100)return 'Weak';if(n<300)return 'Useful / uncertain';return 'Stable descriptive'}
 function renderTeamStats(){
@@ -615,7 +669,7 @@ function renderSources(){
     '<div class="goodnotice" style="margin-top:10px"><strong>Matchup context:</strong> The Advisor Score averages the available curated enemy-faction rankings. Scouting notes remain available by faction in the Match Guide. 3v3/4v4 provide general team-game scouting prompts.</div>'+
     '<div class="goodnotice" style="margin-top:10px"><strong>Community / attribution note:</strong> This is an unofficial community project and is not affiliated with Relic, CoHDB, CoH3Stats or the featured creators. Creator builds are preserved from supplied videos, transcripts or screenshots and should not be read as creator endorsement of this advisor. Creator-original sequences may omit routine tech/building steps shown elsewhere in the source; the green tech-QA badge applies to Current Advisor profiles, not historical creator recaps.</div>'+
     '<div class="methodgrid" style="margin-top:12px"><div class="methoditem"><b>Confidence</b><div class="small muted">Current-patch evidence quality.</div></div><div class="methoditem"><b>Matchup</b><div class="small muted">Average advisor rank across available enemy-faction rankings.</div></div><div class="methoditem"><b>Map fit</b><div class="small muted">Qualitative strategic inference.</div></div><div class="methoditem"><b>ELO context</b><div class="small muted">Current-patch mode and rating-band samples, compared with faction-level context.</div></div></div>'+
-    '<div class="goodnotice" style="margin-top:10px"><strong>v1.1.33 update:</strong> Opponent selectors remain removed. Recommendation cards show one battlegroup rate line per rating scope. Incomplete current-patch rating coverage does not affect the Advisor Score.</div>'+
+    '<div class="goodnotice" style="margin-top:10px"><strong>v1.1.34 update:</strong> Opponent selectors remain removed. Recommendation cards show one battlegroup rate line per rating scope. Incomplete current-patch rating coverage does not affect the Advisor Score.</div>'+
     '<h3 style="margin-top:20px">Advisor Score</h3><p>The score starts from a neutral baseline, then adds profile confidence, average matchup rank, map fit, recovery safety and current-patch ELO-relative battlegroup context. It supports practical selection and is not a measured win probability.</p>'+
     '<div style="margin-top:14px">'+SOURCES.map(x=>'<div class="source"><div><strong>'+x.name+'</strong><div class="muted small">'+x.note+'</div></div><a href="'+x.url+'" target="_blank" rel="noopener noreferrer">Open ↗</a></div>').join("")+'</div>'+
     '<h3 style="margin-top:20px">Data architecture</h3><p>The v1.1.4 download remains a self-contained HTML file. The JSON export stores <code>battlegroupTrees</code> once per battlegroup and <code>battlegroupRecommendations</code> separately from mode profiles. The page validates strict recommendation paths against the canonical tree at runtime, so an illegal prerequisite jump or mutually exclusive sequence is blocked instead of displayed.</p></div>';
