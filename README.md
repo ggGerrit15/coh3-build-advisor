@@ -10,7 +10,7 @@ https://gggerrit15.github.io/coh3-build-advisor/
 - All four factions
 - 1v1 / 2v2 / 3v3 / 4v4
 - Battlegroup recommendations
-- Matchup-specific advice
+- Matchup scouting notes, with rankings averaged across available enemy factions
 - Map context
 - ELO context
 - Creator build comparisons
@@ -20,7 +20,7 @@ https://gggerrit15.github.io/coh3-build-advisor/
 
 ## Current Version
 
-**v1.1.31 — Client Patch 2.5.6**
+**v1.1.32 — Client Patch 2.5.6**
 
 
 ## Important
@@ -58,11 +58,11 @@ The importer discovers the latest CoHDB patch, imports the public unfiltered bat
 
 The importer does not overwrite curated advisor profiles, matchup rules or battlegroup trees. The scheduled GitHub Action updates only the imported snapshot embedded in the self-contained `index.html` and opens a Pull Request for review.
 
-The current integration embeds the reviewed snapshot into the self-contained advisor. Exact 4v4 battlegroup context is computed from that same current-patch snapshot by combining all six Average Rating bands for all maps and opponents; the old hard-coded Patch 2.5.3 battlegroup table is no longer used. Imported CoHDB Battlegroup records provide a small, clearly labelled Smart Advisor score component, while matching faction-level build-order archetypes provide mode/ELO context and a small alignment signal. Curated builds, matchup rules, battlegroup trees and creator builds remain the primary recommendation layer.
+The current integration embeds the reviewed snapshot into the self-contained advisor. Current-patch battlegroup context is computed separately for 1v1, 2v2, 3v3 and 4v4 by combining the six Average Rating bands for the selected mode and all-map scope. Incomplete rating coverage is displayed with its coverage count and does not contribute to Advisor Score. Complete current-patch mode aggregates can add a small recommendation signal; build archetype alignment contributes a separate small signal. Curated builds, matchup rules, battlegroup trees and creator builds remain the primary recommendation layer.
 
 The frontend separates the recommendation layer from the statistics layer: the Smart Advisor and selected build remain the recommendation, while imported CoHDB win rates, samples and archetype context are displayed separately as evidence.
 
-Rating-band samples are guarded separately: fewer than 30 games are displayed as "Zu kleine Stichprobe" and do not contribute to the recommendation. Samples from 30 to 99 games remain visible but are labelled as weak evidence.
+Rating-band samples are guarded separately: fewer than 30 games remain visible and contribute no ELO bonus. Samples from 30 to 99 games remain visible but are labelled as weak evidence. When a battlegroup is missing one or more of the six Average Rating bands, the combined rate is marked partial and excluded from Advisor Score.
 
 ## Feedback
 
