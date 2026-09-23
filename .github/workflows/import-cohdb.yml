@@ -9,6 +9,10 @@ permissions:
   contents: write
   pull-requests: write
 
+# Repository setting required in addition to these permissions:
+# Settings -> Actions -> General -> Workflow permissions ->
+# Allow GitHub Actions to create and approve pull requests.
+
 jobs:
   import-cohdb:
     runs-on: ubuntu-latest
@@ -27,9 +31,18 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_*.py' -v
 
       - name: Import current CoHDB snapshot
-        run: python scripts/import_cohdb.py --output data/cohdb/latest.json
+        run: python scripts/import_cohdb.py --output data/cohdb/latest.json.candidate
+
+      - name: Detect meaningful CoHDB changes
+        id: snapshot
+        run: >-
+          python scripts/cohdb_snapshot_diff.py
+          --existing data/cohdb/latest.json
+          --candidate data/cohdb/latest.json.candidate
+          --github-output "$GITHUB_OUTPUT"
 
       - name: Embed imported snapshot into the advisor
+        if: steps.snapshot.outputs.changed == 'true'
         run: node scripts/embed_cohdb_snapshot.mjs
 
       - name: Validate frontend integration
@@ -62,6 +75,7 @@ jobs:
           PY
 
       - name: Open reviewable Pull Request
+        if: steps.snapshot.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -79,3 +93,7 @@ jobs:
             This PR updates the normalized source snapshot only. Curated advisor profiles and the public HTML are intentionally not changed automatically.
 
             Please review the patch ID, mode/rating filters, sample sizes and parser diff before merging.
+
+      - name: Report unchanged snapshot
+        if: steps.snapshot.outputs.changed != 'true'
+        run: echo "No meaningful CoHDB data changed; no Pull Request is needed."
