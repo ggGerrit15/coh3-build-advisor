@@ -230,6 +230,7 @@ function battlegroupUnlockCard(p,heading='Battlegroup unlocks'){return `<div cla
 const COHDB_MODE_KEYS = {'1v1': '1v1', '2v2': '2v2', '3v3': '3v3', '4v4': '4v4', 'All Modes': 'all'};
 const COHDB_RATING_KEYS = {'Under 1000': 'Under 1000', '1000-1200': '1000 – 1200', '1200-1400': '1200 – 1400', '1400-1600': '1400 – 1600', '1600-1800': '1600 – 1800', '1800+': '1800+'};
 const COHDB_BATTLEGROUP_RATING_FILTERS = {'All Ratings': 'balanced_all', 'Under 1000': 'avg_under_1000', '1000-1200': 'avg_1000_1200', '1200-1400': 'avg_1200_1400', '1400-1600': 'avg_1400_1600', '1600-1800': 'avg_1600_1800', '1800+': 'avg_1800_plus'};
+const COHDB_RAW_RATING_FILTERS = ['avg_under_1000', 'avg_1000_1200', 'avg_1200_1400', 'avg_1400_1600', 'avg_1600_1800', 'avg_1800_plus'];
 const COHDB_MIN_RATING_GAMES = 30;
 const COHDB_WEAK_RATING_GAMES = 100;
 function cohdbModeKey(value) { return COHDB_MODE_KEYS[value] || 'all'; }
