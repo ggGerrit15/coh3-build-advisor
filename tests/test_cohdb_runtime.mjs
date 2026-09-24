@@ -1,131 +1,174 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
-const runtime = fs.readFileSync('scripts/cohdb_runtime.js', 'utf8');
-const normalizeBuildIconToken = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
-const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
-const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({
-  '&': '&amp;',
-  '<': '&lt;',
-  '>': '&gt;',
-  '"': '&quot;',
-  "'": '&#39;'
-}[character]));
+const page = fs.readFileSync('index.html', 'utf8');
 
-function makeSnapshot(ratingGames) {
-  return {
-    battlegroups: [
-      {
-        faction: 'DAK',
-        battlegroup: 'Kriegsmarine',
-        mode: 'all',
-        rating_filter: 'balanced_all',
-        win_rate: 52.8,
-        selections: 2884
-      },
-      {
-        faction: 'DAK',
-        battlegroup: 'Kriegsmarine',
-        mode: '1v1',
-        rating_filter: 'avg_1600_1800',
-        wins: Math.ceil(ratingGames * 0.6),
-        losses: ratingGames - Math.ceil(ratingGames * 0.6),
-        win_rate: Number((Math.ceil(ratingGames * 0.6) * 100 / ratingGames).toFixed(1)),
-        selections: ratingGames
-      }
-    ],
-    build_orders: [{
-      faction: 'DAK',
-      title: 'Mechanized',
-      source_url: 'https://cohdb.com/build_orders/afrika_korps/mechanized',
-      most_common_and_variants: [{steps: [{name: 'Kriegsmariner'}]}],
-      mode_summaries: {'1v1': {win_rate: 49.8, games: 269}},
-      rating_bands: {'1v1': {'1600 – 1800': {win_rate: 72.7, games: ratingGames}}}
-    }]
-  };
+function extractFunction(name) {
+  const start = page.indexOf('function ' + name + '(');
+  assert.ok(start >= 0, 'missing function ' + name);
+  const open = page.indexOf('{', start);
+  let depth = 0;
+  let quote = null;
+  let escaped = false;
+  let lineComment = false;
+  let blockComment = false;
+  for (let i = open; i < page.length; i += 1) {
+    const ch = page[i];
+    const next = page[i + 1];
+    if (lineComment) {
+      if (ch === '\n') lineComment = false;
+      continue;
+    }
+    if (blockComment) {
+      if (ch === '*' && next === '/') { blockComment = false; i += 1; }
+      continue;
+    }
+    if (quote) {
+      if (escaped) { escaped = false; continue; }
+      if (ch === '\\') { escaped = true; continue; }
+      if (ch === quote) quote = null;
+      continue;
+    }
+    if (ch === '/' && next === '/') { lineComment = true; i += 1; continue; }
+    if (ch === '/' && next === '*') { blockComment = true; i += 1; continue; }
+    if (ch === "'" || ch === '"' || ch === '`') { quote = ch; continue; }
+    if (ch === '{') depth += 1;
+    if (ch === '}') {
+      depth -= 1;
+      if (depth === 0) return page.slice(start, i + 1);
+    }
+  }
+  throw new Error('unterminated function ' + name);
 }
 
-function loadRuntime(snapshot) {
-  return new Function(
-    'COHDB_SNAPSHOT',
-    'normalizeBuildIconToken',
-    'clamp',
-    'elo',
-    'escapeHtml',
-    `${runtime}\nreturn {cohdbComponent, cohdbStatsSection, cohdbSelectedBattlegroupStat};`
-  )(snapshot, normalizeBuildIconToken, clamp, {value: '1600-1800'}, escapeHtml);
+function extractConstant(name) {
+  const marker = 'const ' + name + ' =';
+  const start = page.indexOf(marker);
+  assert.ok(start >= 0, 'missing constant ' + name);
+  const valueStart = start + marker.length;
+  const end = page.indexOf(';', valueStart);
+  assert.ok(end > valueStart, 'unterminated constant ' + name);
+  return new Function('return (' + page.slice(valueStart, end).trim() + ');')();
 }
 
-const profile = {
-  faction: 'DAK',
-  battlegroup: 'Kriegsmarine',
-  mode: '1v1',
-  build: ['Kriegsmariner']
+const modeKeys = extractConstant('COHDB_MODE_KEYS');
+const ratingFilters = extractConstant('COHDB_RAW_RATING_FILTERS');
+const patchId = 'test-patch';
+const rates = [
+  ['avg_under_1000', 1, 9],
+  ['avg_1000_1200', 90, 10],
+  ['avg_1200_1400', 6, 4],
+  ['avg_1400_1600', 7, 3],
+  ['avg_1600_1800', 8, 2],
+  ['avg_1800_plus', 9, 1]
+];
+
+function bgRows(name, mode, wins, losses) {
+  return rates.map(([rating_filter], i) => ({
+    faction: 'DAK',
+    battlegroup: name,
+    mode,
+    rating_filter,
+    map: 'all',
+    opponent: 'all',
+    patch: {id: patchId},
+    wins: typeof wins === 'function' ? wins(i) : wins,
+    losses: typeof losses === 'function' ? losses(i) : losses
+  }));
+}
+
+const snapshot = {
+  patch: {id: patchId, label: 'test patch'},
+  battlegroups: [
+    ...bgRows('Kriegsmarine', 'all', i => rates[i][1], i => rates[i][2]),
+    ...bgRows('Mechanized', 'all', 1, 9),
+    ...bgRows('Kriegsmarine', '1v1', 10000, 0),
+    {
+      faction: 'DAK', battlegroup: 'Kriegsmarine', mode: 'all',
+      rating_filter: 'balanced_all', map: 'all', opponent: 'all',
+      patch: {id: patchId}, wins: 53, losses: 47
+    },
+    {
+      faction: 'DAK', battlegroup: 'Kriegsmarine', mode: 'all',
+      rating_filter: 'avg_under_1000', map: 'specific-map', opponent: 'all',
+      patch: {id: patchId}, wins: 10000, losses: 0
+    }
+  ]
 };
 
-const sparse = loadRuntime(makeSnapshot(11));
-const sparseComponent = sparse.cohdbComponent(profile);
-assert.equal(sparseComponent.ratingEvidence.status, 'sparse');
-assert.equal(sparseComponent.ratingEvidence.usable, false);
-const sparseMarkup = sparse.cohdbStatsSection(profile);
-assert.match(sparseMarkup, /Zu kleine Stichprobe/);
-assert.match(sparseMarkup, />—<\/div>/);
-assert.doesNotMatch(sparseMarkup, /72\.7%/);
+const functions = [
+  extractFunction('cohdbModeKey'),
+  extractFunction('cohdbScopeFor'),
+  extractFunction('cohdbRawRowsFor'),
+  extractFunction('cohdbAggregateRows'),
+  extractFunction('cohdbRatingFilterForBand'),
+  extractFunction('cohdbRatingStat'),
+  extractFunction('cohdbModeBattlegroups'),
+  extractFunction('cohdbModeAllRatingsStat'),
+  extractFunction('factionEloAvg'),
+  extractFunction('exactModeComponent')
+].join('\n');
 
-const weak = loadRuntime(makeSnapshot(30));
-const weakComponent = weak.cohdbComponent(profile);
-assert.equal(weakComponent.ratingEvidence.status, 'weak');
-assert.equal(weakComponent.ratingEvidence.usable, true);
-assert.match(weak.cohdbStatsSection(profile), /55\.0%|72\.7%/);
-assert.match(weak.cohdbStatsSection(profile), /Schwache Evidenz/);
+const stats = new Function(
+  'COHDB_SNAPSHOT', 'COHDB_MODE_KEYS', 'COHDB_RAW_RATING_FILTERS', 'clamp',
+  functions + '\nreturn {cohdbModeKey,cohdbScopeFor,cohdbRatingStat,cohdbModeBattlegroups,factionEloAvg,exactModeComponent};'
+)(snapshot, modeKeys, ratingFilters, (x, min, max) => Math.max(min, Math.min(max, x)));
 
-const selectedCohort = weak.cohdbComponent(profile).selectedBgStat;
-assert.equal(selectedCohort.rating_filter, 'avg_1600_1800');
-assert.equal(selectedCohort.selections, 30);
-assert.match(weak.cohdbStatsSection(profile), /1v1 battlegroup · 1600-1800/);
-assert.match(weak.cohdbStatsSection(profile), /60\.0%/);
-assert.match(weak.cohdbStatsSection(profile), /Record 18–12/);
+const profile = {faction: 'DAK', battlegroup: 'Kriegsmarine', mode: 'All Modes'};
+const pooled = stats.cohdbRatingStat(profile, 'All Ratings');
+assert.equal(stats.cohdbModeKey('All Modes'), 'all');
+assert.deepEqual(stats.cohdbScopeFor(profile), {mode: 'all', map: 'all', opponent: 'all', patch: patchId});
+assert.equal(pooled.wins, 121);
+assert.equal(pooled.losses, 29);
+assert.equal(pooled.n, 150);
+assert.equal(pooled.coverage, 6);
+assert.equal(pooled.complete, true);
+assert.ok(Math.abs(pooled.wr - (121 / 150 * 100)) < 1e-9);
+assert.equal(stats.cohdbModeBattlegroups('DAK', 'All Modes').length, 2);
+assert.ok(Math.abs(stats.factionEloAvg('DAK', 'All Ratings', 'All Modes') - (127 / 210 * 100)) < 1e-9);
+assert.equal(stats.exactModeComponent(profile).bonus, 4);
 
-const missingSnapshot = makeSnapshot(30);
-missingSnapshot.battlegroups = missingSnapshot.battlegroups.filter(row => row.mode === 'all');
-const missing = loadRuntime(missingSnapshot);
-assert.equal(missing.cohdbSelectedBattlegroupStat(profile), null);
-assert.match(missing.cohdbStatsSection(profile), /CoHDB did not report this battlegroup for this filter/);
+const partialSnapshot = {...snapshot, battlegroups: snapshot.battlegroups.filter(
+  row => !(row.battlegroup === 'Kriegsmarine' && row.mode === 'all' && row.rating_filter === 'avg_1800_plus')
+)};
+const partialStats = new Function(
+  'COHDB_SNAPSHOT', 'COHDB_MODE_KEYS', 'COHDB_RAW_RATING_FILTERS', 'clamp',
+  functions + '\nreturn {cohdbRatingStat};'
+)(partialSnapshot, modeKeys, ratingFilters, (x, min, max) => Math.max(min, Math.min(max, x)));
+const partial = partialStats.cohdbRatingStat(profile, 'All Ratings');
+assert.equal(partial.coverage, 5);
+assert.equal(partial.complete, false);
 
-const malformedSnapshot = makeSnapshot(30);
-for (const row of malformedSnapshot.battlegroups) row.win_rate = 'not-a-number';
-malformedSnapshot.build_orders[0].rating_bands['1v1']['1600 – 1800'].win_rate = 'not-a-number';
-const malformed = loadRuntime(malformedSnapshot);
-assert.equal(Number.isFinite(malformed.cohdbComponent(profile).bonus), true);
-assert.doesNotMatch(malformed.cohdbStatsSection(profile), /NaN/);
-
-const page = fs.readFileSync('index.html', 'utf8');
-const scoreStart = page.indexOf('function scoreProfile(');
-const scoreEnd = page.indexOf('\nfunction smartRows(', scoreStart);
-assert.ok(scoreStart >= 0 && scoreEnd > scoreStart, 'scoreProfile must remain embedded in index.html');
-const scoreProfile = new Function(
-  'teamMatchupComponent',
-  'eloComponent',
-  'exactModeComponent',
-  'mapComponent',
-  'recoveryComponent',
-  'confidenceBonus',
-  'cohdbComponent',
-  'clamp',
-  page.slice(scoreStart, scoreEnd) + '\nreturn scoreProfile;'
+const scoreSource = extractFunction('scoreProfile');
+const safeScoreSource = extractFunction('safeScoreValue');
+const score = new Function(
+  'averageMatchupComponent', 'eloComponent', 'exactModeComponent',
+  'recoveryComponent', 'confidenceBonus', 'cohdbComponent',
+  'clamp', 'safeScoreValue',
+  safeScoreSource + '\n' + scoreSource + '\nreturn scoreProfile;'
 )(
   () => ({laneRank: 1, bonus: 10}),
   () => ({bonus: 2}),
   () => ({bonus: 1}),
-  () => 4,
   () => 3,
   () => 9,
-  () => ({bonus: Number.NaN}),
-  clamp
+  p => ({bonus: p.cohdbBonus ?? Number.NaN}),
+  (x, min, max) => Math.max(min, Math.min(max, x)),
+  (value, fallback = 0) => Number.isFinite(Number(value)) ? Number(value) : fallback
 );
-const safeScore = scoreProfile(profile, 'Allies', 'Balanced', 'All Ratings');
-assert.equal(safeScore.score, 84);
-assert.equal(safeScore.cohdb, 0);
-assert.equal(Number.isFinite(safeScore.score), true);
+const exactModeScore = score({faction: 'DAK', battlegroup: 'Kriegsmarine', mode: '1v1', confidence: 'High'}, 'All Ratings');
+assert.equal(exactModeScore.score, 80);
+assert.equal(exactModeScore.cohdb, 0);
+assert.equal('map' in exactModeScore, false);
+const allModesScore = score({
+  ...profile,
+  averageConfidence: 6,
+  modeProfiles: [
+    {cohdbBonus: 2}, {cohdbBonus: 4}, {cohdbBonus: 6}, {cohdbBonus: 8}
+  ]
+}, 'All Ratings');
+assert.equal(allModesScore.score, 82);
+assert.equal(allModesScore.cohdb, 5);
+assert.equal('map' in allModesScore, false);
 
-console.log('CoHDB runtime and advisor score NaN regression checks passed.');
+console.log('Current embedded CoHDB statistics and All Modes scoring checks passed.');
