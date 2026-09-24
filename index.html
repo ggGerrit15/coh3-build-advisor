@@ -366,7 +366,7 @@ function teamAdjustmentRows(p){return [
 function teamCompositionSection(p){if(!teamMode(p.mode))return "";return '<div class="card"><h3>Team-game scouting priorities</h3><p class="small muted">These general scouting branches help adapt a team-game plan during play.</p>'+branchRows(teamAdjustmentRows(p))+'</div>'}
 function matchupDecisionSections(faction){const enemies=ENEMIES[faction]||[];if(!enemies.length)return '<div class="muted">No faction scouting notes recorded.</div>';return enemies.map(enemy=>'<details style="margin:8px 0"><summary>'+escapeHtml(enemy)+' scouting notes</summary>'+branchRows(MATCHUPS?.[faction]?.[enemy]||[])+'</details>').join("")}
 function modeOptions(f){return ["All Modes", ...uniq(PROFILES.filter(p=>p.faction===f).map(p=>p.mode))]}
-function refreshMain(){options(mode,modeOptions(fac.value));refreshBG()}
+function refreshMain(){const previousMode=mode.value;options(mode,modeOptions(fac.value));if([...mode.options].some(option=>option.value===previousMode))mode.value=previousMode;refreshBG()}
 function refreshBG(){
   const old=bg.value,available=mode.value==="All Modes"?allModesBattlegroups(fac.value):uniq(PROFILES.filter(p=>p.faction===fac.value&&p.mode===mode.value).map(p=>p.battlegroup));
   const ranked=smartRows(fac.value,mode.value,elo.value).map(x=>x.p.battlegroup).filter(x=>available.includes(x)),names=[...new Set([...ranked,...available])];
