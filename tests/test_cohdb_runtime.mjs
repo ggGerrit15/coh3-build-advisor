@@ -70,6 +70,30 @@ assert.equal(modeChoices[0], 'All Modes');
 assert.deepEqual(modeChoices.slice(1).sort(), ['1v1', '2v2', '3v3', '4v4']);
 assert.ok(extractFunction('refreshMain').includes('options(mode,modeOptions(fac.value))'));
 assert.ok(extractFunction('refreshRankControls').includes('options(rmode,modeOptions(rfac.value))'));
+const simulateRefreshMain = (previousMode, availableModes) => {
+  const faction = {value: 'USF'};
+  const mode = {value: previousMode, options: []};
+  const setOptions = (element, values) => {
+    element.options = values.map(value => ({value}));
+    element.value = values[0];
+  };
+  const refreshMain = new Function(
+    'fac', 'mode', 'options', 'modeOptions', 'refreshBG',
+    extractFunction('refreshMain') + '\nreturn refreshMain;'
+  )(faction, mode, setOptions, () => availableModes, () => {});
+  refreshMain();
+  return mode.value;
+};
+assert.equal(
+  simulateRefreshMain('3v3', ['All Modes', '1v1', '2v2', '3v3', '4v4']),
+  '3v3',
+  'changing faction should preserve a still-available 3v3 selection'
+);
+assert.equal(
+  simulateRefreshMain('4v4', ['All Modes', '1v1', '2v2']),
+  'All Modes',
+  'changing faction should fall back to All Modes if the previous mode is unavailable'
+);
 
 const patchId = 'test-patch';
 const rates = [
