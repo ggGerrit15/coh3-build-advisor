@@ -382,7 +382,6 @@ function averageMatchupComponent(p){
   const bonus=points.length?points.reduce((a,b)=>a+b,0)/points.length:0;
   return {bonus,laneRank:avgRank,label:p.mode==="All Modes"?"Average matchup rank across modes":"Average matchup rank",active:false,enemyCount:ranks.length}
 }
-const COHDB_RAW_RATING_FILTERS=['avg_under_1000','avg_1000_1200','avg_1200_1400','avg_1400_1600','avg_1600_1800','avg_1800_plus'];
 function cohdbScopeFor(p) {
   return {mode: cohdbModeKey(p.mode), map: 'all', opponent: 'all', patch: COHDB_SNAPSHOT?.patch?.id || ''};
 }

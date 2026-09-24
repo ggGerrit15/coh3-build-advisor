@@ -1,7 +1,16 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import vm from 'node:vm';
 
 const page = fs.readFileSync('index.html', 'utf8');
+
+const inlineScripts = [...page.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/gi)]
+  .filter(([, attrs, body]) => !/\bsrc\s*=/.test(attrs) && body.trim());
+assert.ok(inlineScripts.length > 0, 'page should include an inline application script');
+for (const [index, [, attrs, body]] of inlineScripts.entries()) {
+  assert.doesNotThrow(() => new vm.Script(body), 'inline script ' + index + ' should parse');
+}
+
 
 function extractFunction(name) {
   const start = page.indexOf('function ' + name + '(');
