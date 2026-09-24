@@ -53,6 +53,15 @@ function extractConstant(name) {
 
 const modeKeys = extractConstant('COHDB_MODE_KEYS');
 const ratingFilters = extractConstant('COHDB_RAW_RATING_FILTERS');
+const modeChoices = new Function('PROFILES', 'uniq', extractFunction('modeOptions') + '; return modeOptions("DAK");')(
+  ['1v1', '2v2', '3v3', '4v4'].map(mode => ({faction: 'DAK', mode})),
+  values => [...new Set(values)]
+);
+assert.equal(modeChoices[0], 'All Modes');
+assert.deepEqual(modeChoices.slice(1).sort(), ['1v1', '2v2', '3v3', '4v4']);
+assert.ok(extractFunction('refreshMain').includes('options(mode,modeOptions(fac.value))'));
+assert.ok(extractFunction('refreshRankControls').includes('options(rmode,modeOptions(rfac.value))'));
+
 const patchId = 'test-patch';
 const rates = [
   ['avg_under_1000', 1, 9],
