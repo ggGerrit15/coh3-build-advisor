@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CoH3 Build Advisor v1.1.35</title>
+<title>CoH3 Build Advisor v1.1.36</title>
 <link rel="canonical" href="https://gggerrit15.github.io/coh3-build-advisor/">
 <!-- GoatCounter analytics -->
 <script data-goatcounter="https://gggerrit15.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -72,7 +72,7 @@
 <div class="shell">
   <div class="top">
     <div>
-      <h1>CoH3 Build Advisor v1.1.35</h1>
+      <h1>CoH3 Build Advisor v1.1.36</h1>
       <div class="muted">Unofficial community tool • all four factions • Smart Advisor for 1v1 / 2v2 / 3v3 / 4v4 • map + ELO context • creator comparison</div>
     </div>
     <div>
@@ -365,7 +365,7 @@ function teamAdjustmentRows(p){return [
 ]}
 function teamCompositionSection(p){if(!teamMode(p.mode))return "";return '<div class="card"><h3>Team-game scouting priorities</h3><p class="small muted">These general scouting branches help adapt a team-game plan during play.</p>'+branchRows(teamAdjustmentRows(p))+'</div>'}
 function matchupDecisionSections(faction){const enemies=ENEMIES[faction]||[];if(!enemies.length)return '<div class="muted">No faction scouting notes recorded.</div>';return enemies.map(enemy=>'<details style="margin:8px 0"><summary>'+escapeHtml(enemy)+' scouting notes</summary>'+branchRows(MATCHUPS?.[faction]?.[enemy]||[])+'</details>').join("")}
-function modeOptions(f){return [...uniq(PROFILES.filter(p=>p.faction===f).map(p=>p.mode)), "All Modes"]}
+function modeOptions(f){return ["All Modes", ...uniq(PROFILES.filter(p=>p.faction===f).map(p=>p.mode))]}
 function refreshMain(){options(mode,modeOptions(fac.value));refreshBG()}
 function refreshBG(){
   const old=bg.value,available=mode.value==="All Modes"?allModesBattlegroups(fac.value):uniq(PROFILES.filter(p=>p.faction===fac.value&&p.mode===mode.value).map(p=>p.battlegroup));
@@ -669,7 +669,7 @@ function renderSources(){
     '<div class="goodnotice" style="margin-top:10px"><strong>Matchup context:</strong> The Advisor Score averages the available curated enemy-faction rankings. Scouting notes remain available by faction in the Match Guide. 3v3/4v4 provide general team-game scouting prompts.</div>'+
     '<div class="goodnotice" style="margin-top:10px"><strong>Community / attribution note:</strong> This is an unofficial community project and is not affiliated with Relic, CoHDB, CoH3Stats or the featured creators. Creator builds are preserved from supplied videos, transcripts or screenshots and should not be read as creator endorsement of this advisor. Creator-original sequences may omit routine tech/building steps shown elsewhere in the source; the green tech-QA badge applies to Current Advisor profiles, not historical creator recaps.</div>'+
     '<div class="methodgrid" style="margin-top:12px"><div class="methoditem"><b>Confidence</b><div class="small muted">Current-patch evidence quality.</div></div><div class="methoditem"><b>Matchup</b><div class="small muted">Average advisor rank across available enemy-faction rankings.</div></div><div class="methoditem"><b>ELO context</b><div class="small muted">Current-patch mode and rating-band samples, compared with faction-level context.</div></div></div>'+
-    '<div class="goodnotice" style="margin-top:10px"><strong>v1.1.35 update:</strong> Map-type filters and qualitative map-fit scoring are removed; CoHDB statistics stay on the all-map scope. Opponent selectors remain removed, and incomplete current-patch rating coverage does not affect the Advisor Score.</div>'+
+    '<div class="goodnotice" style="margin-top:10px"><strong>v1.1.36 update:</strong> Mode selectors now default to All Modes, matching CoHDB. Select a specific mode whenever you want to narrow the view.</div>'+
     '<h3 style="margin-top:20px">Advisor Score</h3><p>The score starts from a neutral baseline, then adds profile confidence, average matchup rank, recovery safety and current-patch ELO-relative battlegroup context. It supports practical selection and is not a measured win probability.</p>'+
     '<div style="margin-top:14px">'+SOURCES.map(x=>'<div class="source"><div><strong>'+x.name+'</strong><div class="muted small">'+x.note+'</div></div><a href="'+x.url+'" target="_blank" rel="noopener noreferrer">Open ↗</a></div>').join("")+'</div>'+
     '<h3 style="margin-top:20px">Data architecture</h3><p>The v1.1.4 download remains a self-contained HTML file. The JSON export stores <code>battlegroupTrees</code> once per battlegroup and <code>battlegroupRecommendations</code> separately from mode profiles. The page validates strict recommendation paths against the canonical tree at runtime, so an illegal prerequisite jump or mutually exclusive sequence is blocked instead of displayed.</p></div>';
