@@ -595,7 +595,7 @@ function renderAdvisor(){
     '<h2>'+p.battlegroup+' <span class="score" style="font-size:24px">'+score.score+'/100</span></h2><p>'+p.verdict+'</p>'+
     '<p><strong>Confidence:</strong> <span class="conf '+cclass(p.confidence)+'">'+p.confidence+'</span> • <strong>Style:</strong> '+(BG_META?.[p.faction]?.[p.battlegroup]?.style||"Combined arms")+'</p>'+
     recNotice+'<div class="smartactions"><button onclick="toggleFavorite()">'+(isFavorite()?"★ Favorite":"☆ Add favorite")+'</button><button onclick="switchView(\'match\')">Open Match Guide</button></div></div>'+
-    teamNotes+'<div class="card"><h3>Recommended build order</h3><div class="buildcallout">Quick-scan build order</div>'+renderBuildVisualizer(displayBuild,p)+'</div>'+
+    '<div class="card"><h3>Recommended build order</h3><div class="buildcallout">Quick-scan build order</div>'+renderBuildVisualizer(displayBuild,p)+'</div>'+teamNotes+
     variantSection(p)+advisorSectionHeader("Statistics","Imported CoHDB records and build archetype context are shown separately from the recommendation logic.")+
     eloPanel(p)+factionStatsSection(p)+cohdbStatsSection(p)+
     '<div class="card"><h3>Battlegroup scouting notes</h3>'+matchNotes+'</div>'+
