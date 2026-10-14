@@ -80,10 +80,10 @@ not part of the planned Mechanized 1v1 ranked cohort and not a win-rate claim.
 - AI players, disconnects, mods, non-Automatch games, unsupported team sizes,
   absent profiles, and missing result/rating also block eligibility.
 
-Metadata currently comes from the explicitly verified capture or a supplied
-JSON file. A bulk downloader, automatic metadata adapter, opener aggregation,
-and public frontend integration are later steps. Use match ID plus profile ID
-to deduplicate different replay recordings of the same player/game.
+Metadata can come from the explicitly verified capture or a supplied JSON
+file. The [cohort workflow](replay-cohort.md) adds bounded public collection,
+a CoH3Stats daily metadata adapter, match/player deduplication, and complete
+ordered-opener comparisons. Public frontend integration remains a later step.
 
 ## Checks
 

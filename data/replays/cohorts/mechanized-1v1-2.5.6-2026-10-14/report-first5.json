@@ -1,0 +1,3698 @@
+{
+  "schema_version": "coh3.replay-cohort-report.v1",
+  "generated_at": "2026-10-14T13:22:38.115516+00:00",
+  "scope": {
+    "faction": "Wehrmacht",
+    "battlegroup": "Mechanized",
+    "mode": "1v1",
+    "patch": "2.5.6"
+  },
+  "prefix_length": 5,
+  "max_opener_seconds": 600,
+  "timing_semantics": "command_issued; not production completion or arrival",
+  "counts": {
+    "matches": 30,
+    "match_players": 30,
+    "unique_players": 23,
+    "duplicates_ignored": 0,
+    "with_result": 30,
+    "with_pre_match_rating": 29,
+    "usable_complete_openers": 28,
+    "ranked_eligible_complete_openers": 0
+  },
+  "ranked_exclusion_counts": {
+    "pre_match_rating_available": 1,
+    "ranked_game": 30,
+    "metadata_match_type_consistent": 29,
+    "no_match_ai_takeover": 2,
+    "no_ai_takeover": 1,
+    "names_resolved": 1
+  },
+  "opener_exclusion_counts": {
+    "no_match_ai_takeover": 2,
+    "no_ai_takeover": 1,
+    "names_resolved": 1
+  },
+  "exploratory_openers": [
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 2,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88334321,
+          "profile_id": 1324066
+        },
+        {
+          "match_id": 88335484,
+          "profile_id": 1324066
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 2,
+      "unique_players": 2,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331807,
+          "profile_id": 411006
+        },
+        {
+          "match_id": 88334397,
+          "profile_id": 63169
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 2,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88333017,
+          "profile_id": 378232
+        },
+        {
+          "match_id": 88335657,
+          "profile_id": 378232
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1200_1400",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 2,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88334832,
+          "profile_id": 85265
+        },
+        {
+          "match_id": 88335178,
+          "profile_id": 85265
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137120,
+          "name": "Sniper"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331830,
+          "profile_id": 129552
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88333092,
+          "profile_id": 801958
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331671,
+          "profile_id": 431443
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1200_1400",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331853,
+          "profile_id": 1114114
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331855,
+          "profile_id": 396549
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332596,
+          "profile_id": 1378239
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88335303,
+          "profile_id": 1222282
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332106,
+          "profile_id": 407764
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332364,
+          "profile_id": 351653
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331978,
+          "profile_id": 307928
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331396,
+          "profile_id": 72759
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1200_1400",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331180,
+          "profile_id": 1297836
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88335699,
+          "profile_id": 1390563
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332807,
+          "profile_id": 1406893
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88336093,
+          "profile_id": 1390563
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88336353,
+          "profile_id": 1324066
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331585,
+          "profile_id": 997039
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332706,
+          "profile_id": 212904
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88335815,
+          "profile_id": 1222282
+        }
+      ]
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "unknown",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88330206,
+          "profile_id": 652059
+        }
+      ]
+    }
+  ],
+  "ranked_openers": [],
+  "matches": [
+    {
+      "match_id": 88330206,
+      "profile_id": 652059,
+      "name": "assault",
+      "source_url": "https://cohdb.com/replays/7280438",
+      "map": "data:scenarios\\multiplayer\\angoville_farms_2p\\angoville_farms_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 0,
+      "source_description": "unnamed_session",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "win",
+      "rating_before": null,
+      "rating_band": "unknown",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "pre_match_rating_available",
+        "ranked_game"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 2.5,
+          "time_label": "0:02",
+          "tick": 20
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 6.625,
+          "time_label": "0:06",
+          "tick": 53
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 33.5,
+          "time_label": "0:33",
+          "tick": 268
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 74.875,
+          "time_label": "1:14",
+          "tick": 599
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 152.875,
+          "time_label": "2:32",
+          "tick": 1223
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 380.375,
+          "time_label": "6:20"
+        },
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 505.125,
+          "time_label": "8:25"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 1022.75,
+          "time_label": "17:02"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1023.125,
+          "time_label": "17:03"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 1688.5,
+          "time_label": "28:08"
+        },
+        {
+          "name": "Mechanized Assault ",
+          "seconds": 1689.375,
+          "time_label": "28:09"
+        }
+      ]
+    },
+    {
+      "match_id": 88331180,
+      "profile_id": 1297836,
+      "name": "Crescendo",
+      "source_url": "https://cohdb.com/replays/7280236",
+      "map": "data:scenarios\\multiplayer\\community\\faymonville_2p\\faymonville",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "win",
+      "rating_before": 1394,
+      "rating_band": "1200_1400",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 4.5,
+          "time_label": "0:04",
+          "tick": 36
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 8.0,
+          "time_label": "0:08",
+          "tick": 64
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 29.625,
+          "time_label": "0:29",
+          "tick": 237
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 70.875,
+          "time_label": "1:10",
+          "tick": 567
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 143.5,
+          "time_label": "2:23",
+          "tick": 1148
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Spotting Scopes",
+          "seconds": 738.25,
+          "time_label": "12:18"
+        },
+        {
+          "name": "Raid Package",
+          "seconds": 749.0,
+          "time_label": "12:29"
+        },
+        {
+          "name": "8 Rad Armored Car",
+          "seconds": 751.375,
+          "time_label": "12:31"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1234.625,
+          "time_label": "20:34"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 1236.0,
+          "time_label": "20:36"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1236.375,
+          "time_label": "20:36"
+        }
+      ]
+    },
+    {
+      "match_id": 88331396,
+      "profile_id": 72759,
+      "name": "Khayyam",
+      "source_url": "https://cohdb.com/replays/7280253",
+      "map": "data:scenarios\\multiplayer\\semois_2p\\semois_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "win",
+      "rating_before": 1033,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 5.125,
+          "time_label": "0:05",
+          "tick": 41
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 5.375,
+          "time_label": "0:05",
+          "tick": 43
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 9.5,
+          "time_label": "0:09",
+          "tick": 76
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 94.0,
+          "time_label": "1:34",
+          "tick": 752
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 160.75,
+          "time_label": "2:40",
+          "tick": 1286
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 467.625,
+          "time_label": "7:47"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 634.5,
+          "time_label": "10:34"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 889.875,
+          "time_label": "14:49"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 891.5,
+          "time_label": "14:51"
+        }
+      ]
+    },
+    {
+      "match_id": 88331585,
+      "profile_id": 997039,
+      "name": "♡Best",
+      "source_url": "https://cohdb.com/replays/7280288",
+      "map": "data:scenarios\\multiplayer\\community\\faymonville_2p\\faymonville",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 860,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 10.875,
+          "time_label": "0:10",
+          "tick": 87
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 11.375,
+          "time_label": "0:11",
+          "tick": 91
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 13.25,
+          "time_label": "0:13",
+          "tick": 106
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 57.875,
+          "time_label": "0:57",
+          "tick": 463
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station",
+          "seconds": 94.125,
+          "time_label": "1:34",
+          "tick": 753
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 876.25,
+          "time_label": "14:36"
+        },
+        {
+          "name": "8 Rad Armored Car",
+          "seconds": 876.625,
+          "time_label": "14:36"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 877.125,
+          "time_label": "14:37"
+        },
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 1113.125,
+          "time_label": "18:33"
+        },
+        {
+          "name": "Stoßtruppen Assault Package",
+          "seconds": 1113.375,
+          "time_label": "18:33"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1342.75,
+          "time_label": "22:22"
+        }
+      ]
+    },
+    {
+      "match_id": 88331671,
+      "profile_id": 431443,
+      "name": "DroN",
+      "source_url": "https://cohdb.com/replays/7280276",
+      "map": "data:scenarios\\multiplayer\\cliff_crossing_2p\\cliff_crossing_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "British"
+      ],
+      "result": "win",
+      "rating_before": 1068,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 2.75,
+          "time_label": "0:02",
+          "tick": 22
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 13.75,
+          "time_label": "0:13",
+          "tick": 110
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 32.625,
+          "time_label": "0:32",
+          "tick": 261
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 76.625,
+          "time_label": "1:16",
+          "tick": 613
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 142.0,
+          "time_label": "2:22",
+          "tick": 1136
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 277.75,
+          "time_label": "4:37"
+        },
+        {
+          "name": "8 Rad Armored Car",
+          "seconds": 570.375,
+          "time_label": "9:30"
+        },
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 787.625,
+          "time_label": "13:07"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 789.0,
+          "time_label": "13:09"
+        },
+        {
+          "name": "Mechanized Assault ",
+          "seconds": 829.625,
+          "time_label": "13:49"
+        }
+      ]
+    },
+    {
+      "match_id": 88331807,
+      "profile_id": 411006,
+      "name": "masterhex",
+      "source_url": "https://cohdb.com/replays/7280309",
+      "map": "data:scenarios\\multiplayer\\cliff_crossing_2p\\cliff_crossing_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 1049,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 2.5,
+          "time_label": "0:02",
+          "tick": 20
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 3.75,
+          "time_label": "0:03",
+          "tick": 30
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 23.75,
+          "time_label": "0:23",
+          "tick": 190
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 78.25,
+          "time_label": "1:18",
+          "tick": 626
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 132.75,
+          "time_label": "2:12",
+          "tick": 1062
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 389.125,
+          "time_label": "6:29"
+        },
+        {
+          "name": "Raid Package",
+          "seconds": 467.875,
+          "time_label": "7:47"
+        },
+        {
+          "name": "8 Rad Armored Car",
+          "seconds": 682.375,
+          "time_label": "11:22"
+        },
+        {
+          "name": "Stoßtruppen Assault Package",
+          "seconds": 1042.125,
+          "time_label": "17:22"
+        }
+      ]
+    },
+    {
+      "match_id": 88331830,
+      "profile_id": 129552,
+      "name": "Der Regulator",
+      "source_url": "https://cohdb.com/replays/7280453",
+      "map": "data:scenarios\\multiplayer\\desert_village_2p_mkiii\\desert_village_2p_mkiii",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "British"
+      ],
+      "result": "loss",
+      "rating_before": 1161,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 3.375,
+          "time_label": "0:03",
+          "tick": 27
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 8.125,
+          "time_label": "0:08",
+          "tick": 65
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 25.875,
+          "time_label": "0:25",
+          "tick": 207
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137120,
+          "name": "Sniper",
+          "seconds": 91.375,
+          "time_label": "1:31",
+          "tick": 731
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 150.625,
+          "time_label": "2:30",
+          "tick": 1205
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 385.25,
+          "time_label": "6:25"
+        },
+        {
+          "name": "8 Rad Armored Car",
+          "seconds": 584.25,
+          "time_label": "9:44"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 860.875,
+          "time_label": "14:20"
+        },
+        {
+          "name": "Stoßtruppen Assault Package",
+          "seconds": 1066.375,
+          "time_label": "17:46"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1148.875,
+          "time_label": "19:08"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1394.375,
+          "time_label": "23:14"
+        }
+      ]
+    },
+    {
+      "match_id": 88331853,
+      "profile_id": 1114114,
+      "name": "♊ BLITZ ♊",
+      "source_url": "https://cohdb.com/replays/7280466",
+      "map": "data:scenarios\\multiplayer\\community\\egletons_2p\\egletons_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "British"
+      ],
+      "result": "win",
+      "rating_before": 1389,
+      "rating_band": "1200_1400",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 2.375,
+          "time_label": "0:02",
+          "tick": 19
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 14.25,
+          "time_label": "0:14",
+          "tick": 114
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 20.5,
+          "time_label": "0:20",
+          "tick": 164
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 75.875,
+          "time_label": "1:15",
+          "tick": 607
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 136.375,
+          "time_label": "2:16",
+          "tick": 1091
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 410.625,
+          "time_label": "6:50"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 544.125,
+          "time_label": "9:04"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 859.375,
+          "time_label": "14:19"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1115.75,
+          "time_label": "18:35"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 1298.625,
+          "time_label": "21:38"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1299.625,
+          "time_label": "21:39"
+        }
+      ]
+    },
+    {
+      "match_id": 88331855,
+      "profile_id": 396549,
+      "name": "Clarence Callahan AKA Razor",
+      "source_url": "https://cohdb.com/replays/7280331",
+      "map": "data:scenarios\\multiplayer\\community\\faymonville_2p\\faymonville",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "British"
+      ],
+      "result": "loss",
+      "rating_before": 872,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 4.875,
+          "time_label": "0:04",
+          "tick": 39
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team",
+          "seconds": 36.25,
+          "time_label": "0:36",
+          "tick": 290
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 55.25,
+          "time_label": "0:55",
+          "tick": 442
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 106.375,
+          "time_label": "1:46",
+          "tick": 851
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 152.125,
+          "time_label": "2:32",
+          "tick": 1217
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 360.625,
+          "time_label": "6:00"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 558.25,
+          "time_label": "9:18"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 825.625,
+          "time_label": "13:45"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 1023.5,
+          "time_label": "17:03"
+        },
+        {
+          "name": "Stoßtruppen Assault Package",
+          "seconds": 1024.125,
+          "time_label": "17:04"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1352.0,
+          "time_label": "22:32"
+        }
+      ]
+    },
+    {
+      "match_id": 88331978,
+      "profile_id": 307928,
+      "name": "Lovestick",
+      "source_url": "https://cohdb.com/replays/7280374",
+      "map": "data:scenarios\\multiplayer\\desert_village_2p_mkiii\\desert_village_2p_mkiii",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "win",
+      "rating_before": 1038,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 4.25,
+          "time_label": "0:04",
+          "tick": 34
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 6.375,
+          "time_label": "0:06",
+          "tick": 51
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 28.625,
+          "time_label": "0:28",
+          "tick": 229
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 52.375,
+          "time_label": "0:52",
+          "tick": 419
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 120.375,
+          "time_label": "2:00",
+          "tick": 963
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 737.375,
+          "time_label": "12:17"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 883.5,
+          "time_label": "14:43"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 883.875,
+          "time_label": "14:43"
+        }
+      ]
+    },
+    {
+      "match_id": 88332106,
+      "profile_id": 407764,
+      "name": "TS",
+      "source_url": "https://cohdb.com/replays/7280382",
+      "map": "data:scenarios\\multiplayer\\cliff_crossing_2p\\cliff_crossing_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 1014,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 6.875,
+          "time_label": "0:06",
+          "tick": 55
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 20.375,
+          "time_label": "0:20",
+          "tick": 163
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 26.625,
+          "time_label": "0:26",
+          "tick": 213
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 76.875,
+          "time_label": "1:16",
+          "tick": 615
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 146.0,
+          "time_label": "2:26",
+          "tick": 1168
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 573.125,
+          "time_label": "9:33"
+        },
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 576.5,
+          "time_label": "9:36"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 689.375,
+          "time_label": "11:29"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1064.75,
+          "time_label": "17:44"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 1105.0,
+          "time_label": "18:25"
+        },
+        {
+          "name": "Mechanized Assault ",
+          "seconds": 1106.125,
+          "time_label": "18:26"
+        }
+      ]
+    },
+    {
+      "match_id": 88332364,
+      "profile_id": 351653,
+      "name": "The Miracle",
+      "source_url": "https://cohdb.com/replays/7280359",
+      "map": "data:scenarios\\multiplayer\\butcher_and_bolt_2p\\butcher_and_bolt_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "win",
+      "rating_before": 1099,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 4.125,
+          "time_label": "0:04",
+          "tick": 33
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 11.625,
+          "time_label": "0:11",
+          "tick": 93
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 32.75,
+          "time_label": "0:32",
+          "tick": 262
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 78.625,
+          "time_label": "1:18",
+          "tick": 629
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 137.625,
+          "time_label": "2:17",
+          "tick": 1101
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 309.875,
+          "time_label": "5:09"
+        },
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 551.75,
+          "time_label": "9:11"
+        }
+      ]
+    },
+    {
+      "match_id": 88332596,
+      "profile_id": 1378239,
+      "name": "Mongis",
+      "source_url": "https://cohdb.com/replays/7280544",
+      "map": "data:scenarios\\multiplayer\\angoville_farms_2p\\angoville_farms_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "British"
+      ],
+      "result": "loss",
+      "rating_before": 962,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 4.0,
+          "time_label": "0:04",
+          "tick": 32
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 7.75,
+          "time_label": "0:07",
+          "tick": 62
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 32.5,
+          "time_label": "0:32",
+          "tick": 260
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 89.875,
+          "time_label": "1:29",
+          "tick": 719
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 154.0,
+          "time_label": "2:34",
+          "tick": 1232
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 345.5,
+          "time_label": "5:45"
+        },
+        {
+          "name": "Raid Package",
+          "seconds": 500.75,
+          "time_label": "8:20"
+        },
+        {
+          "name": "8 Rad Armored Car",
+          "seconds": 724.0,
+          "time_label": "12:04"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 1060.375,
+          "time_label": "17:40"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1542.125,
+          "time_label": "25:42"
+        }
+      ]
+    },
+    {
+      "match_id": 88332706,
+      "profile_id": 212904,
+      "name": "Reb0rN",
+      "source_url": "https://cohdb.com/replays/7280499",
+      "map": "data:scenarios\\multiplayer\\langres_2p\\langres_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "win",
+      "rating_before": 979,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 3.5,
+          "time_label": "0:03",
+          "tick": 28
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 3.75,
+          "time_label": "0:03",
+          "tick": 30
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 19.125,
+          "time_label": "0:19",
+          "tick": 153
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 44.875,
+          "time_label": "0:44",
+          "tick": 359
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 100.25,
+          "time_label": "1:40",
+          "tick": 802
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 432.75,
+          "time_label": "7:12"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 626.375,
+          "time_label": "10:26"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 854.75,
+          "time_label": "14:14"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 1092.625,
+          "time_label": "18:12"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1226.5,
+          "time_label": "20:26"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1340.5,
+          "time_label": "22:20"
+        }
+      ]
+    },
+    {
+      "match_id": 88332807,
+      "profile_id": 1406893,
+      "name": "Marcess98",
+      "source_url": "https://cohdb.com/replays/7280539",
+      "map": "data:scenarios\\multiplayer\\community\\faymonville_2p\\faymonville",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 872,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 2.625,
+          "time_label": "0:02",
+          "tick": 21
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 9.5,
+          "time_label": "0:09",
+          "tick": 76
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 23.625,
+          "time_label": "0:23",
+          "tick": 189
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 78.625,
+          "time_label": "1:18",
+          "tick": 629
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 132.0,
+          "time_label": "2:12",
+          "tick": 1056
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 284.75,
+          "time_label": "4:44"
+        },
+        {
+          "name": "Stoßtruppen Assault Package",
+          "seconds": 285.375,
+          "time_label": "4:45"
+        },
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 288.125,
+          "time_label": "4:48"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 556.875,
+          "time_label": "9:16"
+        },
+        {
+          "name": "Raid Package",
+          "seconds": 849.625,
+          "time_label": "14:09"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 918.5,
+          "time_label": "15:18"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 919.5,
+          "time_label": "15:19"
+        },
+        {
+          "name": "Mechanized Assault ",
+          "seconds": 1201.625,
+          "time_label": "20:01"
+        }
+      ]
+    },
+    {
+      "match_id": 88333017,
+      "profile_id": 378232,
+      "name": "Mase316 | ♥",
+      "source_url": "https://cohdb.com/replays/7280498",
+      "map": "data:scenarios\\multiplayer\\angoville_farms_2p\\angoville_farms_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 1132,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 4.75,
+          "time_label": "0:04",
+          "tick": 38
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 7.125,
+          "time_label": "0:07",
+          "tick": 57
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 30.625,
+          "time_label": "0:30",
+          "tick": 245
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 80.5,
+          "time_label": "1:20",
+          "tick": 644
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 126.375,
+          "time_label": "2:06",
+          "tick": 1011
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 951.375,
+          "time_label": "15:51"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 951.875,
+          "time_label": "15:51"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 953.25,
+          "time_label": "15:53"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 953.875,
+          "time_label": "15:53"
+        }
+      ]
+    },
+    {
+      "match_id": 88333092,
+      "profile_id": 801958,
+      "name": "ingmar geilers",
+      "source_url": "https://cohdb.com/replays/7280479",
+      "map": "data:scenarios\\multiplayer\\community\\tuscan_vineyard_2p\\tuscan_vineyard_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "British"
+      ],
+      "result": "win",
+      "rating_before": 1187,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 2.25,
+          "time_label": "0:02",
+          "tick": 18
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 8.75,
+          "time_label": "0:08",
+          "tick": 70
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 41.625,
+          "time_label": "0:41",
+          "tick": 333
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 74.0,
+          "time_label": "1:14",
+          "tick": 592
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 145.75,
+          "time_label": "2:25",
+          "tick": 1166
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 231.5,
+          "time_label": "3:51"
+        },
+        {
+          "name": "Raid Package",
+          "seconds": 505.875,
+          "time_label": "8:25"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 594.75,
+          "time_label": "9:54"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 841.125,
+          "time_label": "14:01"
+        }
+      ]
+    },
+    {
+      "match_id": 88333804,
+      "profile_id": 378232,
+      "name": "Mase316 | ♥",
+      "source_url": "https://cohdb.com/replays/7280649",
+      "map": "data:scenarios\\multiplayer\\desert_village_2p_mkiii\\desert_village_2p_mkiii",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "win",
+      "rating_before": 1116,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "no_match_ai_takeover",
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [
+        "no_match_ai_takeover"
+      ],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 4.875,
+          "time_label": "0:04",
+          "tick": 39
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 6.5,
+          "time_label": "0:06",
+          "tick": 52
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 26.125,
+          "time_label": "0:26",
+          "tick": 209
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 70.375,
+          "time_label": "1:10",
+          "tick": 563
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 129.625,
+          "time_label": "2:09",
+          "tick": 1037
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 1048.125,
+          "time_label": "17:28"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 1049.125,
+          "time_label": "17:29"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1049.5,
+          "time_label": "17:29"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 1219.5,
+          "time_label": "20:19"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 1220.125,
+          "time_label": "20:20"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1422.5,
+          "time_label": "23:42"
+        }
+      ]
+    },
+    {
+      "match_id": 88334321,
+      "profile_id": 1324066,
+      "name": "y_sun",
+      "source_url": "https://cohdb.com/replays/7280630",
+      "map": "data:scenarios\\multiplayer\\langres_2p\\langres_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "British"
+      ],
+      "result": "win",
+      "rating_before": 928,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 12.125,
+          "time_label": "0:12",
+          "tick": 97
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 13.0,
+          "time_label": "0:13",
+          "tick": 104
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 29.5,
+          "time_label": "0:29",
+          "tick": 236
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 74.125,
+          "time_label": "1:14",
+          "tick": 593
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team",
+          "seconds": 166.75,
+          "time_label": "2:46",
+          "tick": 1334
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 360.75,
+          "time_label": "6:00"
+        }
+      ]
+    },
+    {
+      "match_id": 88334397,
+      "profile_id": 63169,
+      "name": "[GER] Miau",
+      "source_url": "https://cohdb.com/replays/7280791",
+      "map": "data:scenarios\\multiplayer\\villa_fiore_2p_mkii\\villa_fiore_2p_mkii",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 1148,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 3.5,
+          "time_label": "0:03",
+          "tick": 28
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 5.0,
+          "time_label": "0:05",
+          "tick": 40
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 28.0,
+          "time_label": "0:28",
+          "tick": 224
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 78.75,
+          "time_label": "1:18",
+          "tick": 630
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 135.25,
+          "time_label": "2:15",
+          "tick": 1082
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 1753.5,
+          "time_label": "29:13"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 1754.0,
+          "time_label": "29:14"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1754.5,
+          "time_label": "29:14"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 1754.875,
+          "time_label": "29:14"
+        },
+        {
+          "name": "Stoßtruppen Assault Package",
+          "seconds": 1755.875,
+          "time_label": "29:15"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1756.25,
+          "time_label": "29:16"
+        }
+      ]
+    },
+    {
+      "match_id": 88334832,
+      "profile_id": 85265,
+      "name": "Testicular Chewing Goat",
+      "source_url": "https://cohdb.com/replays/7280698",
+      "map": "data:scenarios\\multiplayer\\community\\bologna_2p\\bologna_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 1370,
+      "rating_band": "1200_1400",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 3.5,
+          "time_label": "0:03",
+          "tick": 28
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 4.5,
+          "time_label": "0:04",
+          "tick": 36
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 26.875,
+          "time_label": "0:26",
+          "tick": 215
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 81.75,
+          "time_label": "1:21",
+          "tick": 654
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 135.375,
+          "time_label": "2:15",
+          "tick": 1083
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 457.125,
+          "time_label": "7:37"
+        },
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 457.625,
+          "time_label": "7:37"
+        },
+        {
+          "name": "Raid Package",
+          "seconds": 459.625,
+          "time_label": "7:39"
+        }
+      ]
+    },
+    {
+      "match_id": 88335099,
+      "profile_id": 186872,
+      "name": "Æpi⊆",
+      "source_url": "https://cohdb.com/replays/7280822",
+      "map": "data:scenarios\\multiplayer\\langres_2p\\langres_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 939,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "no_ai_takeover",
+        "no_match_ai_takeover",
+        "ranked_game",
+        "metadata_match_type_consistent",
+        "names_resolved"
+      ],
+      "opener_exclusion_reasons": [
+        "no_ai_takeover",
+        "no_match_ai_takeover",
+        "names_resolved"
+      ],
+      "opener": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 4.25,
+          "time_label": "0:04",
+          "tick": 34
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 10.875,
+          "time_label": "0:10",
+          "tick": 87
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 22.875,
+          "time_label": "0:22",
+          "tick": 183
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 88.125,
+          "time_label": "1:28",
+          "tick": 705
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station",
+          "seconds": 142.25,
+          "time_label": "2:22",
+          "tick": 1138
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 1098.75,
+          "time_label": "18:18"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 1099.125,
+          "time_label": "18:19"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1099.5,
+          "time_label": "18:19"
+        },
+        {
+          "name": "Spotting Scopes",
+          "seconds": 1531.5,
+          "time_label": "25:31"
+        },
+        {
+          "name": "Stoßtruppen Assault Package",
+          "seconds": 1532.125,
+          "time_label": "25:32"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1532.75,
+          "time_label": "25:32"
+        }
+      ]
+    },
+    {
+      "match_id": 88335178,
+      "profile_id": 85265,
+      "name": "Testicular Chewing Goat",
+      "source_url": "https://cohdb.com/replays/7280771",
+      "map": "data:scenarios\\multiplayer\\community\\djebel_2p\\djebel_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "win",
+      "rating_before": 1346,
+      "rating_band": "1200_1400",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 6.625,
+          "time_label": "0:06",
+          "tick": 53
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 7.75,
+          "time_label": "0:07",
+          "tick": 62
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 33.0,
+          "time_label": "0:33",
+          "tick": 264
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 92.375,
+          "time_label": "1:32",
+          "tick": 739
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 156.0,
+          "time_label": "2:36",
+          "tick": 1248
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 373.875,
+          "time_label": "6:13"
+        },
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 437.875,
+          "time_label": "7:17"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 721.125,
+          "time_label": "12:01"
+        }
+      ]
+    },
+    {
+      "match_id": 88335303,
+      "profile_id": 1222282,
+      "name": "germanyya",
+      "source_url": "https://cohdb.com/replays/7280747",
+      "map": "data:scenarios\\multiplayer\\cliff_crossing_2p\\cliff_crossing_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "British"
+      ],
+      "result": "win",
+      "rating_before": 974,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 3.5,
+          "time_label": "0:03",
+          "tick": 28
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 3.625,
+          "time_label": "0:03",
+          "tick": 29
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 5.0,
+          "time_label": "0:05",
+          "tick": 40
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 46.5,
+          "time_label": "0:46",
+          "tick": 372
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 111.875,
+          "time_label": "1:51",
+          "tick": 895
+        }
+      ],
+      "bg_unlocks": []
+    },
+    {
+      "match_id": 88335484,
+      "profile_id": 1324066,
+      "name": "y_sun",
+      "source_url": "https://cohdb.com/replays/7280833",
+      "map": "data:scenarios\\multiplayer\\community\\tuscan_vineyard_2p\\tuscan_vineyard_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "British"
+      ],
+      "result": "win",
+      "rating_before": 942,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 3.25,
+          "time_label": "0:03",
+          "tick": 26
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 4.0,
+          "time_label": "0:04",
+          "tick": 32
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 20.625,
+          "time_label": "0:20",
+          "tick": 165
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 79.5,
+          "time_label": "1:19",
+          "tick": 636
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team",
+          "seconds": 157.125,
+          "time_label": "2:37",
+          "tick": 1257
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Mobile Repair Stations",
+          "seconds": 316.125,
+          "time_label": "5:16"
+        },
+        {
+          "name": "Raid Package",
+          "seconds": 514.625,
+          "time_label": "8:34"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 837.625,
+          "time_label": "13:57"
+        },
+        {
+          "name": "Wespe Self-propelled Artillery",
+          "seconds": 1043.75,
+          "time_label": "17:23"
+        },
+        {
+          "name": "Zeroing Artillery Barrage",
+          "seconds": 1229.5,
+          "time_label": "20:29"
+        }
+      ]
+    },
+    {
+      "match_id": 88335657,
+      "profile_id": 378232,
+      "name": "Mase316 | ♥",
+      "source_url": "https://cohdb.com/replays/7280838",
+      "map": "data:scenarios\\multiplayer\\pachino_2p\\pachino_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 1130,
+      "rating_band": "1000_1200",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 3.0,
+          "time_label": "0:03",
+          "tick": 24
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 6.75,
+          "time_label": "0:06",
+          "tick": 54
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 24.375,
+          "time_label": "0:24",
+          "tick": 195
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 69.375,
+          "time_label": "1:09",
+          "tick": 555
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 124.5,
+          "time_label": "2:04",
+          "tick": 996
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 1099.625,
+          "time_label": "18:19"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 1100.125,
+          "time_label": "18:20"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1100.5,
+          "time_label": "18:20"
+        }
+      ]
+    },
+    {
+      "match_id": 88335699,
+      "profile_id": 1390563,
+      "name": "cuack450",
+      "source_url": "https://cohdb.com/replays/7280808",
+      "map": "data:scenarios\\multiplayer\\angoville_farms_2p\\angoville_farms_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 810,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 9.625,
+          "time_label": "0:09",
+          "tick": 77
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 10.75,
+          "time_label": "0:10",
+          "tick": 86
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 29.5,
+          "time_label": "0:29",
+          "tick": 236
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 98.25,
+          "time_label": "1:38",
+          "tick": 786
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 133.75,
+          "time_label": "2:13",
+          "tick": 1070
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 430.25,
+          "time_label": "7:10"
+        }
+      ]
+    },
+    {
+      "match_id": 88335815,
+      "profile_id": 1222282,
+      "name": "germanyya",
+      "source_url": "https://cohdb.com/replays/7280882",
+      "map": "data:scenarios\\multiplayer\\butcher_and_bolt_2p\\butcher_and_bolt_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 991,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 3.125,
+          "time_label": "0:03",
+          "tick": 25
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad",
+          "seconds": 3.25,
+          "time_label": "0:03",
+          "tick": 26
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 4.875,
+          "time_label": "0:04",
+          "tick": 39
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 47.0,
+          "time_label": "0:47",
+          "tick": 376
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 105.0,
+          "time_label": "1:45",
+          "tick": 840
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 296.125,
+          "time_label": "4:56"
+        },
+        {
+          "name": "StuG Assault Group",
+          "seconds": 903.625,
+          "time_label": "15:03"
+        },
+        {
+          "name": "Unlock Panther Heavy Tank Production",
+          "seconds": 1286.5,
+          "time_label": "21:26"
+        }
+      ]
+    },
+    {
+      "match_id": 88336093,
+      "profile_id": 1390563,
+      "name": "cuack450",
+      "source_url": "https://cohdb.com/replays/7280907",
+      "map": "data:scenarios\\multiplayer\\angoville_farms_2p\\angoville_farms_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 806,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 3.25,
+          "time_label": "0:03",
+          "tick": 26
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 6.875,
+          "time_label": "0:06",
+          "tick": 55
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 25.625,
+          "time_label": "0:25",
+          "tick": 205
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 91.875,
+          "time_label": "1:31",
+          "tick": 735
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad",
+          "seconds": 133.625,
+          "time_label": "2:13",
+          "tick": 1069
+        }
+      ],
+      "bg_unlocks": [
+        {
+          "name": "Raid Package",
+          "seconds": 400.0,
+          "time_label": "6:40"
+        },
+        {
+          "name": "8 Rad Armored Car",
+          "seconds": 541.75,
+          "time_label": "9:01"
+        }
+      ]
+    },
+    {
+      "match_id": 88336353,
+      "profile_id": 1324066,
+      "name": "y_sun",
+      "source_url": "https://cohdb.com/replays/7280878",
+      "map": "data:scenarios\\multiplayer\\semois_2p\\semois_2p",
+      "game_type": "Custom",
+      "source_matchtype_id": 20,
+      "source_description": "AUTOMATCH",
+      "opponent_factions": [
+        "USF"
+      ],
+      "result": "loss",
+      "rating_before": 956,
+      "rating_band": "under_1000",
+      "eligible_for_ranked_statistics": false,
+      "ranked_exclusion_reasons": [
+        "ranked_game",
+        "metadata_match_type_consistent"
+      ],
+      "opener_exclusion_reasons": [],
+      "opener": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle",
+          "seconds": 2.25,
+          "time_label": "0:02",
+          "tick": 18
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie",
+          "seconds": 3.125,
+          "time_label": "0:03",
+          "tick": 25
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 21.5,
+          "time_label": "0:21",
+          "tick": 172
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team",
+          "seconds": 74.625,
+          "time_label": "1:14",
+          "tick": 597
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team",
+          "seconds": 133.375,
+          "time_label": "2:13",
+          "tick": 1067
+        }
+      ],
+      "bg_unlocks": []
+    }
+  ],
+  "limitations": [
+    "Available-replay convenience sample; collection completeness is not guaranteed.",
+    "Repeated players, opponents and maps can confound outcomes; Wilson intervals do not remove those biases.",
+    "Prefixes require the full window; games ending before it are reported as incomplete rather than silently counted.",
+    "Battlegroup selection may occur after the opener; BG-specific cohort membership is retrospective.",
+    "Exploratory counts are not ranked win-rate evidence. No automatic best-build claim or advisor update."
+  ],
+  "collection": {
+    "collected_at": "2026-10-14T13:00:47.298061+00:00",
+    "target": 30,
+    "target_reached": true,
+    "attempted_downloads": 85,
+    "stopped_reason": "target_reached",
+    "sampling": "Newest available matches, no outcome filter; convenience sample, not population coverage"
+  }
+}

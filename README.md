@@ -66,14 +66,20 @@ Rating-band samples are guarded separately: fewer than 30 games remain visible a
 
 ## Replay pilot
 
-An independent single-replay importer now extracts player-specific production,
+An independent replay importer now extracts player-specific production,
 construction, upgrade, and battlegroup commands from `.rec` files. It retains
 cancelled and suspect actions for review, accepts ID-matched match metadata,
 and records the quality checks required before using a game in ranked statistics.
 
-See [the replay pilot guide](docs/replay-pilot.md) for setup, the verified
-capture, commands, data contract, and limitations. The pilot has no frontend
-or recommendation-scoring integration yet.
+See [the replay pilot guide](docs/replay-pilot.md) for setup and the verified
+single-game capture. The [cohort workflow](docs/replay-cohort.md) adds bounded
+collection, ID-matched CoH3Stats outcomes/pre-match ratings, deduplication, and
+ordered-opener comparison reports. The pilot has no frontend or
+recommendation-scoring integration yet.
+
+The first [Mechanized 1v1 capture](data/replays/cohorts/mechanized-1v1-2.5.6-2026-10-14/report.md)
+contains 30 matches from 23 players. It is exploratory: replay and daily
+metadata disagree on the game type, so it makes no ranked build-win-rate claim.
 
 ## Feedback
 

@@ -48,6 +48,8 @@ def normalize(reader: dict, profiles: list[dict], metadata: dict | None = None,
     if match.get("match_id") is not None:
         integer(match["match_id"], "match ID", 1)
     metadata_players = {}
+    source_record = None
+    metadata_type_consistent = True
     if metadata is not None:
         if not isinstance(metadata, dict) or metadata.get("schema_version") != "coh3.match-metadata.v1":
             raise ValueError("Unsupported match metadata schema")
@@ -61,6 +63,15 @@ def normalize(reader: dict, profiles: list[dict], metadata: dict | None = None,
             if pid in metadata_players or pid not in ids:
                 raise ValueError("Duplicate or unmatched metadata profile ID")
             metadata_players[pid] = player
+        source_record = metadata.get("source_record")
+        if source_record is not None:
+            if not isinstance(source_record, dict):
+                raise ValueError("Invalid metadata source record")
+            description = str(source_record.get("description") or "").upper()
+            if description == "AUTOMATCH":
+                metadata_type_consistent = match.get("game_type") == "Automatch"
+            elif source_record.get("matchtype_id") == 0 or description == "CUSTOM":
+                metadata_type_consistent = match.get("game_type") == "Custom"
     players = []
     for player in raw_players:
         faction = player["faction"]
@@ -116,6 +127,7 @@ def normalize(reader: dict, profiles: list[dict], metadata: dict | None = None,
             "pre_match_rating_available": rating is not None,
             "exact_patch_data": reader["parser"].get("exact_game_data_available") is True,
             "ranked_game": match.get("game_type") == "Automatch",
+            "metadata_match_type_consistent": metadata_type_consistent,
             "unmodded": match.get("mod_uuid") == "00000000-0000-0000-0000-000000000000",
             "names_resolved": all("unresolved_name" not in a["excluded_reasons"] for a in actions),
         }
@@ -123,6 +135,7 @@ def normalize(reader: dict, profiles: list[dict], metadata: dict | None = None,
         output.update(battlegroup_advisor_name=bg_name, profile_key=profile_key,
                       opponent_factions=sorted({p["faction"] for p in raw_players if p["team"] != player["team"]}),
                       result=result, rating_before=rating, displayed_rating=data.get("displayed_rating"),
+                      rating_before_unverified=data.get("rating_before_unverified"),
                       starting_units=None, actions=actions, build_sequence=sequence,
                       battlegroup_unlocks=unlocks, quality_checks=checks,
                       eligible_for_ranked_statistics=all(checks.values()))
@@ -130,6 +143,7 @@ def normalize(reader: dict, profiles: list[dict], metadata: dict | None = None,
     return {"schema_version": "coh3.replay-dataset.v1",
             "imported_at": datetime.now(timezone.utc).isoformat(), "source_url": source_url,
             "metadata_source": metadata.get("source") if metadata else None,
+            "match_metadata": source_record,
             "parser": reader["parser"], "replay_sha256": reader["replay_sha256"],
             "timing_semantics": "command_issued; not production completion or arrival",
             "match": match, "players": players}
