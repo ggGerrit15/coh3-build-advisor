@@ -78,8 +78,12 @@ ordered-opener comparison reports. The pilot has no frontend or
 recommendation-scoring integration yet.
 
 The first [Mechanized 1v1 capture](data/replays/cohorts/mechanized-1v1-2.5.6-2026-10-14/report.md)
-contains 30 matches from 23 players. It is exploratory: replay and daily
-metadata disagree on the game type, so it makes no ranked build-win-rate claim.
+contains 30 matches from 23 players. The [match-type investigation](docs/replay-match-type.md)
+resolves the Quick Match/AUTO-flag mismatch using Relic's live ladder maps.
+The separate [1600+ capture](data/replays/cohorts/mechanized-1600plus-1v1-2.5.6-2026-10-14/report.md)
+contains 30 games from 13 players with verified pre-match ELO 1627–2090:
+29 eligible eight-command prefixes and 30 five-command prefixes.
+Outcome groups remain descriptive and too small for a best-build claim.
 
 ## Feedback
 

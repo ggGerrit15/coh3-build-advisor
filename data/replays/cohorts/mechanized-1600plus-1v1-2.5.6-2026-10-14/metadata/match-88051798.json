@@ -1,0 +1,46 @@
+{
+  "schema_version": "coh3.match-metadata.v1",
+  "match_id": 88051798,
+  "mode": "1v1",
+  "source": {
+    "url": "https://storage.coh3stats.com/matches/matches-1791590400.json",
+    "sha256": "69544f8b130cc5574e8341afc671d8639f78901e953900cf3873b159f57b1921",
+    "name": "CoH3Stats open daily match data",
+    "rating_field": "matchhistorymember.oldrating",
+    "outcome_field": "matchhistoryreportresults.resulttype"
+  },
+  "players": [
+    {
+      "profile_id": 4627,
+      "faction": "Wehrmacht",
+      "result": "win",
+      "rating_before": 1857,
+      "rating_before_unverified": null,
+      "rating_after": 1858
+    },
+    {
+      "profile_id": 393536,
+      "faction": "British",
+      "result": "loss",
+      "rating_before": 1375,
+      "rating_before_unverified": null,
+      "rating_after": 1374
+    }
+  ],
+  "classification_reference": {
+    "schema_version": "coh3.relic-reference.v1",
+    "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+    "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+    "captured_at": "2026-10-14T13:39:46.995953+00:00",
+    "applicable_game_builds": [
+      50313
+    ]
+  },
+  "source_record": {
+    "matchtype_id": 20,
+    "description": "AUTOMATCH",
+    "startgametime": 1791660710,
+    "completiontime": 1791661162,
+    "platform": "steam"
+  }
+}

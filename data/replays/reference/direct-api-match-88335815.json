@@ -1,0 +1,45 @@
+{
+  "schema_version": "coh3.match-type-investigation.v1",
+  "source_url": "https://coh3-api.reliclink.com/community/leaderboard/getrecentmatchhistory?profile_ids=%5B1222282%5D&title=coh3",
+  "response_sha256": "06175ef46e604ac18c505cc80deebf41edea6f94bc1af0c11354a172f16b90cd",
+  "captured_at": "2026-10-14T13:47:01.653656+00:00",
+  "match_id": 88335815,
+  "matchtype_id": 20,
+  "description": "AUTOMATCH",
+  "members": [
+    {
+      "matchhistory_id": 88335815,
+      "profile_id": 1222282,
+      "race_id": 137123,
+      "statgroup_id": 911861,
+      "teamid": 0,
+      "wins": 364,
+      "losses": 392,
+      "streak": -1,
+      "arbitration": 1,
+      "outcome": 0,
+      "oldrating": 991,
+      "newrating": 979,
+      "reporttype": 1
+    },
+    {
+      "matchhistory_id": 88335815,
+      "profile_id": 29666,
+      "race_id": 129494,
+      "statgroup_id": 3763,
+      "teamid": 1,
+      "wins": 5169,
+      "losses": 5190,
+      "streak": 1,
+      "arbitration": 1,
+      "outcome": 1,
+      "oldrating": 1062,
+      "newrating": 1074,
+      "reporttype": 1
+    }
+  ],
+  "daily_values_match_direct_api": true,
+  "replay_auto_byte": 0,
+  "cohlib_game_type": "Custom",
+  "conclusion": "Type 20 Quick Match belongs to isranked=1 Relic ladders. cohlib AUTO=0 is not an authoritative test for ladder membership."
+}

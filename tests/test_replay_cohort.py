@@ -1,6 +1,7 @@
 """Source identity, bounded collection, deduplication and ordered-cohort tests."""
 import copy
 from argparse import Namespace
+from datetime import datetime, timezone
 import gzip
 import io
 import json
@@ -17,6 +18,7 @@ import collect_replays as collector
 from import_replay import normalize
 import replay_cohort as sources
 import report_replay_cohort as report
+import replay_match_type as match_types
 
 
 class CohortTests(unittest.TestCase):
@@ -114,6 +116,25 @@ class CohortTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             sources.listing('<turbo-frame id="load-page" src="https://other.example/page"></turbo-frame>')
 
+    def test_build_preview_rejects_only_two_complete_recognized_other_bgs(self):
+        row = {"profile_ids": [63169, 832443]}
+        def page(first, second):
+            return f'''<title>cohdb – Match 88366979</title><a href="/players/63169">Miau</a>
+            <span data-tooltip-content-value="0:01 &amp;mdash; Selects {first}"></span>
+            <a href="/players/832443">British</a>
+            <span data-tooltip-content-value="0:02 &amp;mdash; Selects {second}"></span>'''
+        other = sources.build_preview(page("Breakthrough Battlegroup", "Heavy Armor Battlegroup"), row, "Mechanized", self.profiles)
+        self.assertTrue(other["both_battlegroups_recognized"])
+        self.assertFalse(other["possible_target"])
+        target = sources.build_preview(page("Mechanized Battlegroup", "Heavy Armor Battlegroup"), row, "Mechanized", self.profiles)
+        self.assertTrue(target["possible_target"])
+        unknown = sources.build_preview(page("Breakthrough Battlegroup", "Unknown BG"), row, "Mechanized", self.profiles)
+        self.assertTrue(unknown["possible_target"])
+        self.assertFalse(unknown["both_battlegroups_recognized"])
+        target_known = sources.build_preview(page("Breakthrough Battlegroup", "Unknown BG"), row, "Mechanized", self.profiles, [63169])
+        self.assertFalse(target_known["possible_target"])
+        self.assertTrue(target_known["required_battlegroups_recognized"])
+
     def test_scope_never_combines_different_patch_mode_or_bg(self):
         dataset = self.dataset()
         self.assertEqual(len(sources.target_players(dataset, self.scope)), 1)
@@ -155,6 +176,110 @@ class CohortTests(unittest.TestCase):
         self.assertEqual(r["counts"]["ranked_eligible_complete_openers"], 0)
         self.assertNotIn("win_rate", r["exploratory_openers"][0])
         self.assertEqual(r["ranked_exclusion_counts"], {"ranked_game": 1, "metadata_match_type_consistent": 1})
+
+    def api_dataset(self):
+        raw = dict(self.raw, platform="steam")
+        metadata = sources.stats_metadata(raw, self.reader, {"url": "https://storage.coh3stats.com/matches/matches-1791849600.json"})
+        return normalize(self.reader, self.profiles, metadata), metadata
+
+    def test_quick_match_is_ladder_rated_only_with_the_verified_api_reference(self):
+        dataset, metadata = self.api_dataset()
+        resolution = dataset["match"]["match_type_resolution"]
+        self.assertEqual(dataset["match"]["game_type"], "Custom")
+        self.assertEqual(resolution["kind"], "ladder_automatch")
+        self.assertEqual(resolution["queue_name"], "Quick Match")
+        self.assertTrue(resolution["raw_disagreement"])
+        self.assertEqual(len(resolution["leaderboards"]), 2)
+        self.assertTrue(dataset["players"][0]["eligible_for_ranked_statistics"])
+        del metadata["classification_reference"]
+        unproved = normalize(self.reader, self.profiles, metadata)
+        self.assertFalse(unproved["players"][0]["eligible_for_ranked_statistics"])
+
+    def test_invalid_or_incomplete_api_reference_cannot_promote_a_replay(self):
+        _, metadata = self.api_dataset()
+        altered = copy.deepcopy(metadata)
+        altered["classification_reference"]["sha256"] = "wrong"
+        with self.assertRaises(ValueError):
+            normalize(self.reader, self.profiles, altered)
+        altered = copy.deepcopy(metadata)
+        altered["players"] = altered["players"][:1]
+        with self.assertRaises(ValueError):
+            normalize(self.reader, self.profiles, altered)
+        altered = copy.deepcopy(metadata)
+        altered["source"]["url"] = "https://other.example/matches.json"
+        self.assertFalse(normalize(self.reader, self.profiles, altered)["players"][0]["eligible_for_ranked_statistics"])
+
+    def test_definition_scope_and_non_ladder_types_are_respected(self):
+        _, metadata = self.api_dataset()
+        reader = copy.deepcopy(self.reader)
+        reader["match"]["game_build"] = 50314
+        self.assertFalse(normalize(reader, self.profiles, metadata)["players"][0]["eligible_for_ranked_statistics"])
+        reader["match"]["game_type"] = "Automatch"
+        metadata["source_record"]["matchtype_id"] = 5
+        self.assertFalse(normalize(reader, self.profiles, metadata)["players"][0]["eligible_for_ranked_statistics"])
+
+    def test_target_rating_window_uses_verified_pre_match_values_and_exclusive_max(self):
+        dataset = self.dataset()
+        scope = dict(self.scope, min_player_rating=1600, max_player_rating=1800)
+        for value, expected in ((1599, 0), (1600, 1), (1799, 1), (1800, 0), (None, 0)):
+            dataset["players"][0]["rating_before"] = value
+            dataset["players"][0]["displayed_rating"] = 2000
+            self.assertEqual(len(sources.target_players(dataset, scope)), expected)
+
+    def test_coarse_listing_rating_cannot_substitute_for_target_player_elo(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            path = root / "daily.json"
+            other = copy.deepcopy(self.raw)
+            other["id"] += 1
+            other["matchhistoryreportresults"][1]["matchhistorymember"]["oldrating"] = 1700
+            path.write_text(json.dumps({"matches": [dict(self.raw, platform="steam"), dict(other, platform="steam")]}))
+            args = self.args(root)
+            args.min_player_rating, args.listing_rating = 1600, "min:1600"
+            args.metadata_file, args.metadata_url = [path], "https://storage.coh3stats.com/matches/matches-1791849600.json"
+            requested = []
+            def get(_, url, limit=0):
+                requested.append(url)
+                return self.listing().encode() if "/matches?" in url else b"replay"
+            with patch.object(sources.HttpCache, "get", get), patch.object(collector.subprocess, "run", return_value=Namespace(stdout=json.dumps(self.reader))):
+                result = collector.collect(args)
+            self.assertIn("rating=min%3A1600", requested[0])
+            self.assertEqual(result["collected_players"], 0)
+            self.assertEqual(result["records"][0]["status"], "outside_player_rating")
+
+    def test_live_definition_and_direct_match_receipt_support_type20_ladder(self):
+        definitions, provenance = match_types.reference()
+        raw = json.loads((ROOT / "data/replays/reference/direct-api-match-88335815.json").read_text())
+        self.assertTrue(raw["daily_values_match_direct_api"])
+        self.assertEqual((raw["matchtype_id"], raw["replay_auto_byte"]), (20, 0))
+        self.assertTrue(any(l["isranked"] == 1 and any(m["matchtype_id"] == 20 and m["race_id"] == 137123
+                                                       for m in l["leaderboardmap"]) for l in definitions["leaderboards"]))
+        self.assertIn(50313, provenance["applicable_game_builds"])
+
+    def test_preview_cannot_use_ratings_from_a_different_player_roster(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            wrong_roster = copy.deepcopy(self.raw)
+            wrong_roster["matchhistoryreportresults"][0]["profile_id"] = 9999
+            other = copy.deepcopy(self.raw)
+            other["id"] += 1
+            other["matchhistoryreportresults"][1]["matchhistorymember"]["oldrating"] = 1700
+            path = root / "daily.json"
+            path.write_text(json.dumps({"matches": [wrong_roster, other]}))
+            args = self.args(root)
+            args.min_player_rating, args.preview_builds, args.max_previews = 1600, True, 3
+            args.metadata_file, args.metadata_url = [path], "https://storage.coh3stats.com/matches/matches-1791849600.json"
+            def get(_, url, limit=0):
+                if "/matches?" in url:
+                    return self.listing().encode()
+                if url.endswith("/builds"):
+                    return b'<title>cohdb - Match 88366979</title>'
+                return b"replay"
+            with patch.object(sources.HttpCache, "get", get), patch.object(collector.subprocess, "run", return_value=Namespace(stdout=json.dumps(self.reader))):
+                result = collector.collect(args)
+            self.assertEqual(result["attempted_downloads"], 1)
+            self.assertEqual(result["records"][0]["status"], "import_error")
+            self.assertIn("player", result["records"][0]["error"].lower())
 
     def test_automatch_replay_with_custom_daily_metadata_is_not_ranked(self):
         reader = copy.deepcopy(self.reader)
@@ -209,8 +334,49 @@ class CohortTests(unittest.TestCase):
             self.assertFalse(result["target_reached"])
             self.assertIn("403", result["stopped_reason"])
 
-    def test_committed_capture_reproduces_reports_and_metadata_joins(self):
-        folder = ROOT / "data/replays/cohorts/mechanized-1v1-2.5.6-2026-10-14"
+    def test_missing_completion_date_does_not_end_the_date_window(self):
+        with tempfile.TemporaryDirectory() as folder:
+            args = self.args(Path(folder))
+            args.completed_after, args.completed_before = "2026-10-07", "2026-10-14"
+            unknown_date = self.listing(7283961).replace('title="October 13, 2026, 11:59 PM UTC"', '')
+            def get(_, url, limit=0):
+                return (unknown_date + self.listing()).encode() if "/matches?" in url else b"replay"
+            with patch.object(sources.HttpCache, "get", get), patch.object(collector.subprocess, "run", return_value=Namespace(stdout=json.dumps(self.reader))):
+                result = collector.collect(args)
+            self.assertTrue(result["target_reached"])
+            self.assertEqual(result["records"][0]["status"], "missing_completion_date")
+            self.assertEqual(result["attempted_downloads"], 1)
+
+    def test_preview_exclusions_save_downloads_and_positive_preview_keeps_binary_validation(self):
+        with tempfile.TemporaryDirectory() as folder:
+            args = self.args(Path(folder))
+            args.preview_builds, args.max_previews = True, 3
+            requested = []
+            def get(_, url, limit=0):
+                requested.append(url)
+                if "/matches?" in url:
+                    return (self.listing(7283961) + self.listing()).encode()
+                if url.endswith("/builds"):
+                    bg = "Breakthrough" if "7283961" in url else "Mechanized"
+                    return f'''<title>cohdb – Match 88366979</title><a href="/players/63169">Wehr</a>
+                    <span data-tooltip-content-value="0:01 &amp;mdash; Selects {bg} Battlegroup"></span>
+                    <a href="/players/832443">British</a>
+                    <span data-tooltip-content-value="0:02 &amp;mdash; Selects Heavy Armor Battlegroup"></span>'''.encode()
+                return b"replay"
+            with patch.object(sources.HttpCache, "get", get), patch.object(collector.subprocess, "run", return_value=Namespace(stdout=json.dumps(self.reader))) as reader:
+                result = collector.collect(args)
+            self.assertTrue(result["target_reached"])
+            self.assertEqual(result["checked_build_previews"], 2)
+            self.assertEqual(result["records"][0]["status"], "preview_other_battlegroups")
+            self.assertEqual(result["records"][1]["status"], "collected")
+            self.assertTrue(result["records"][1]["preview"]["possible_target"])
+            self.assertIn("preview_sha256", result["records"][1])
+            self.assertEqual(reader.call_count, 1)
+            self.assertEqual(sum("/file?" in url for url in requested), 1)
+            self.assertEqual(result["records"][1]["eligible_players"], 0)
+
+    def verify_capture(self, name):
+        folder = ROOT / "data/replays/cohorts" / name
         manifest = json.loads((folder / "manifest.json").read_text())
         datasets = []
         for record in manifest["records"]:
@@ -224,6 +390,18 @@ class CohortTests(unittest.TestCase):
             for p in metadata["players"]:
                 self.assertEqual((players[p["profile_id"]]["result"], players[p["profile_id"]]["rating_before"]),
                                  (p["result"], p["rating_before"]))
+            if manifest["scope"].get("min_player_rating") is not None:
+                targets = sources.target_players(dataset, manifest["scope"])
+                self.assertTrue(targets)
+                self.assertTrue(all(p["rating_before"] >= manifest["scope"]["min_player_rating"] for p in targets))
+                self.assertEqual(dataset["match"]["match_type_resolution"]["kind"], "ladder_automatch")
+                self.assertEqual(dataset["match"]["game_build"], manifest["discovery"]["game_build"])
+                self.assertEqual(record["preview"]["match_id"], record["match_id"])
+                day = datetime.fromtimestamp(dataset["match_metadata"]["completiontime"], timezone.utc).date().isoformat()
+                self.assertGreaterEqual(day, manifest["discovery"]["completed_after"])
+                self.assertLess(day, manifest["discovery"]["completed_before"])
+                receipts = {(s["url"], s["sha256"]) for s in manifest["metadata_sources"]}
+                self.assertIn((metadata["source"]["url"], metadata["source"]["sha256"]), receipts)
             datasets.append(dataset)
         self.assertTrue(manifest["target_reached"])
         self.assertEqual(len(datasets), manifest["collected_players"])
@@ -232,9 +410,19 @@ class CohortTests(unittest.TestCase):
             regenerated = report.analyze(datasets, manifest["scope"], saved["prefix_length"], saved["max_opener_seconds"])
             for key in ("counts", "ranked_exclusion_counts", "opener_exclusion_counts", "exploratory_openers", "ranked_openers"):
                 self.assertEqual(regenerated[key], saved[key])
+        return folder
+
+    def test_committed_capture_reproduces_reports_and_metadata_joins(self):
+        folder = self.verify_capture("mechanized-1v1-2.5.6-2026-10-14")
         validation = json.loads((folder / "validation-88336093.json").read_text())
         self.assertTrue(validation["exact_match"])
         self.assertEqual(validation["matched"], 53)
+
+    def test_stronger_capture_reproduces_reports_and_verified_target_elo(self):
+        folder = self.verify_capture("mechanized-1600plus-1v1-2.5.6-2026-10-14")
+        validation = json.loads((folder / "validation-88314882.json").read_text())
+        self.assertTrue(validation["exact_match"])
+        self.assertEqual(validation["matched"], 27)
 
     def args(self, root):
         return Namespace(**self.scope, source="cohdb", game_build=50313, target=1, max_pages=3, max_downloads=3,

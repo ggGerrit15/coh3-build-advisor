@@ -77,7 +77,7 @@ not part of the planned Mechanized 1v1 ranked cohort and not a win-rate claim.
 - Game-data lookups can fall back across versions. The dataset records exact
   build coverage and unresolved names; missing coverage or unresolved names
   block ranked statistical eligibility.
-- AI players, disconnects, mods, non-Automatch games, unsupported team sizes,
+- AI players, disconnects, mods, games without verified ladder membership, unsupported team sizes,
   absent profiles, and missing result/rating also block eligibility.
 
 Metadata can come from the explicitly verified capture or a supplied JSON

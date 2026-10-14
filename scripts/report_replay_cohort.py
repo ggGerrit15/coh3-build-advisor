@@ -70,6 +70,7 @@ def analyze(datasets, scope, length=8, max_seconds=600):
                              "map": dataset["match"]["map"], "game_type": dataset["match"]["game_type"],
                              "source_matchtype_id": (dataset.get("match_metadata") or {}).get("matchtype_id"),
                              "source_description": (dataset.get("match_metadata") or {}).get("description"),
+                             "match_type_resolution": dataset["match"].get("match_type_resolution"),
                              "opponent_factions": player["opponent_factions"], "result": player["result"],
                              "rating_before": player["rating_before"], "rating_band": rating_band(player["rating_before"]),
                              "eligible_for_ranked_statistics": eligible, "ranked_exclusion_reasons": [k for k, v in checks.items() if not v],
@@ -103,6 +104,7 @@ def analyze(datasets, scope, length=8, max_seconds=600):
     valid = [r for r in selected if not r["opener_exclusion_reasons"]]
     ranked = [r for r in valid if r["eligible_for_ranked_statistics"]]
     return {"schema_version": "coh3.replay-cohort-report.v1", "generated_at": datetime.now(timezone.utc).isoformat(),
+            "statistics_population": "Ladder-rated Automatch, including Quick Match; legacy ranked keys do not identify the Ranked queue.",
             "scope": scope, "prefix_length": length, "max_opener_seconds": max_seconds,
             "timing_semantics": "command_issued; not production completion or arrival",
             "counts": {"matches": len({r["match_id"] for r in selected}), "match_players": len(selected),
@@ -127,11 +129,19 @@ def markdown(report, manifest=None):
              f"Collected **{counts['matches']} matches**, {counts['unique_players']} distinct target players. "
              f"Results: {counts['with_result']}/{counts['match_players']}; verified pre-match ELO: {counts['with_pre_match_rating']}/{counts['match_players']}.", "",
              f"Complete first-{report['prefix_length']} production/build/research prefixes within {report['max_opener_seconds']:g}s: "
-             f"**{counts['usable_complete_openers']}**; eligible for ranked comparisons: **{counts['ranked_eligible_complete_openers']}**.", "",
+             f"**{counts['usable_complete_openers']}**; eligible for rated-ladder comparisons: **{counts['ranked_eligible_complete_openers']}**.", "",
              "Times are issued commands, not production completion. Starting units are not recorded as production commands.", ""]
+    if scope.get("min_player_rating") is not None or scope.get("max_player_rating") is not None:
+        lines += [f"Verified target-player ELO window: minimum {scope.get('min_player_rating')}, exclusive maximum {scope.get('max_player_rating')}. "
+                  f"Coarse discovery filter: {scope.get('listing_rating') or 'none'}.", ""]
     if manifest:
         lines += [f"Collection: target {manifest['target']}, attempted downloads {manifest['attempted_downloads']}, "
                   f"listing pages {len(manifest['pages'])}; stopped: `{manifest['stopped_reason']}`.", ""]
+        if manifest.get("discovery"):
+            discovery = manifest["discovery"]
+            lines += [f"UTC completion-date window: {discovery.get('completed_after') or 'no lower cutoff'} inclusive "
+                      f"to {discovery.get('completed_before') or 'no upper cutoff'} exclusive. "
+                      f"Public build previews checked: {manifest.get('checked_build_previews', 0)}.", ""]
     lines += ["## Quality exclusions", "", "| Check | Target records failing |", "| --- | ---: |"]
     lines += [f"| {k} | {v} |" for k, v in report["ranked_exclusion_counts"].items()]
     if not report["ranked_exclusion_counts"]:
@@ -146,19 +156,22 @@ def markdown(report, manifest=None):
         lines.append(f"| {', '.join(g['opponent_factions'])} | {g['rating_band']} | {g['games']} | {g['unique_players']} | {sequence} |")
     if not report["exploratory_openers"]:
         lines.append("| — | — | 0 | 0 | No complete verified prefixes available |")
-    lines += ["", "## Ranked outcomes", ""]
+    lines += ["", "## Rated-ladder outcomes", "",
+              "These include Quick Match games assigned to Relic's isranked=1 ladders. They do not identify a separate Ranked queue. "
+              "Groups below 30 games are too sparse for a best-build claim; repeated players are not independent evidence.", ""]
     if not report["ranked_openers"]:
-        lines.append("No eligible ranked comparison is available. Resolve the documented quality exclusions before interpreting results as ranked build statistics.")
+        lines.append("No eligible rated-ladder comparison is available. Resolve the documented quality exclusions before interpreting outcomes.")
     else:
-        lines += ["| Opponent | Player ELO band | Games | W–L | Raw WR | Wilson 95% | Ordered sequence |", "| --- | --- | ---: | --- | ---: | --- | --- |"]
+        lines += ["| Opponent | Player ELO band | Games | W–L | Raw WR | Wilson 95% | Evidence | Ordered sequence |", "| --- | --- | ---: | --- | ---: | --- | --- | --- |"]
         for g in report["ranked_openers"]:
             ci = g["wilson_95"]
-            lines.append(f"| {', '.join(g['opponent_factions'])} | {g['rating_band']} | {g['games']} | {g['wins']}–{g['losses']} | {g['win_rate']:.1%} | {ci['lower']:.1%}–{ci['upper']:.1%} | " + " → ".join(escape(a["name"]) for a in g["sequence"]) + " |")
-    lines += ["", "## Match evidence", "", "| Match | Target player | Opponent | Pre-match ELO | Result | Replay / metadata type | First orders with times |", "| --- | --- | --- | ---: | --- | --- | --- |"]
+            lines.append(f"| {', '.join(g['opponent_factions'])} | {g['rating_band']} | {g['games']} | {g['wins']}–{g['losses']} | {g['win_rate']:.1%} | {ci['lower']:.1%}–{ci['upper']:.1%} | {g['evidence']} | " + " → ".join(escape(a["name"]) for a in g["sequence"]) + " |")
+    lines += ["", "## Match evidence", "", "| Match | Target player | Opponent | Pre-match ELO | Result | Replay / metadata / resolved type | First orders with times |", "| --- | --- | --- | ---: | --- | --- | --- |"]
     for r in report["matches"]:
         source = r["source_url"] or ""
         label = f"[{r['match_id']}]({source})" if source.startswith("https://") else str(r["match_id"])
         classification = f"{r['game_type']} / {r['source_description'] or 'unknown'} ({r['source_matchtype_id'] if r['source_matchtype_id'] is not None else 'unknown'})"
+        classification += " / " + ((r.get("match_type_resolution") or {}).get("kind") or "unresolved")
         lines.append(f"| {label} | {escape(r['name'])} ({r['profile_id']}) | {', '.join(r['opponent_factions'])} | {r['rating_before'] if r['rating_before'] is not None else 'unknown'} | {r['result'] or 'unknown'} | {escape(classification)} | " + " → ".join(f"{a['time_label']} {escape(a['name'].strip())}" for a in r["opener"]) + " |")
     lines += ["", "## Limitations", ""] + ["- " + item for item in report["limitations"]]
     lines += ["", "Sources: [CoHDB](https://cohdb.com/matches), [CoH3Stats open data](https://coh3stats.com/other/open-data). Exact source URLs and IDs are retained in the JSON evidence.", ""]
@@ -184,6 +197,9 @@ def main():
         datasets.append(json.loads(path.read_text()))
     report = analyze(datasets, manifest["scope"], args.prefix_length, args.max_opener_seconds)
     report["collection"] = {k: manifest[k] for k in ("collected_at", "target", "target_reached", "attempted_downloads", "stopped_reason", "sampling")}
+    for key in ("discovery", "checked_build_previews", "metadata_sources"):
+        if key in manifest:
+            report["collection"][key] = manifest[key]
     write_json(args.output_json, report)
     args.output_markdown.parent.mkdir(parents=True, exist_ok=True)
     args.output_markdown.write_text(markdown(report, manifest), encoding="utf-8")

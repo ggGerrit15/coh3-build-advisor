@@ -1,6 +1,7 @@
 {
   "schema_version": "coh3.replay-cohort-report.v1",
-  "generated_at": "2026-10-14T13:22:37.989494+00:00",
+  "generated_at": "2026-10-14T13:50:07.743955+00:00",
+  "statistics_population": "Ladder-rated Automatch, including Quick Match; legacy ranked keys do not identify the Ranked queue.",
   "scope": {
     "faction": "Wehrmacht",
     "battlegroup": "Mechanized",
@@ -18,12 +19,11 @@
     "with_result": 30,
     "with_pre_match_rating": 29,
     "usable_complete_openers": 27,
-    "ranked_eligible_complete_openers": 0
+    "ranked_eligible_complete_openers": 26
   },
   "ranked_exclusion_counts": {
     "pre_match_rating_available": 1,
-    "ranked_game": 30,
-    "metadata_match_type_consistent": 29,
+    "ranked_game": 1,
     "no_match_ai_takeover": 2,
     "no_ai_takeover": 1,
     "names_resolved": 1
@@ -1469,7 +1469,1576 @@
       ]
     }
   ],
-  "ranked_openers": [],
+  "ranked_openers": [
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 2,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 188624,
+          "name": "Jäger Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88334321,
+          "profile_id": 1324066
+        },
+        {
+          "match_id": 88335484,
+          "profile_id": 1324066
+        }
+      ],
+      "wins": 2,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.34237195288961925,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1200_1400",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 2,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88334832,
+          "profile_id": 85265
+        },
+        {
+          "match_id": 88335178,
+          "profile_id": 85265
+        }
+      ],
+      "wins": 1,
+      "losses": 1,
+      "win_rate": 0.5,
+      "wilson_95": {
+        "lower": 0.09452865480086614,
+        "upper": 0.9054713451991339
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137120,
+          "name": "Sniper"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174545,
+          "name": "Construct Panzergrenadier Kompanie"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 2140327,
+          "name": "Medical Bunker"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331830,
+          "profile_id": 129552
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 2081885,
+          "name": "Infanterie Officer Quarters"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170303,
+          "name": "Flak 30 Anti-aircraft Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88333092,
+          "profile_id": 801958
+        }
+      ],
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.20654329147389294,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 2140327,
+          "name": "Medical Bunker"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331671,
+          "profile_id": 431443
+        }
+      ],
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.20654329147389294,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1200_1400",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174545,
+          "name": "Construct Panzergrenadier Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170304,
+          "name": "Pak 40 Anti-tank Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331853,
+          "profile_id": 1114114
+        }
+      ],
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.20654329147389294,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 2081885,
+          "name": "Infanterie Officer Quarters"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331855,
+          "profile_id": 396549
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 2081885,
+          "name": "Infanterie Officer Quarters"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332596,
+          "profile_id": 1378239
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88335303,
+          "profile_id": 1222282
+        }
+      ],
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.20654329147389294,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174545,
+          "name": "Construct Panzergrenadier Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 188642,
+          "name": "Panzergrenadier Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332106,
+          "profile_id": 407764
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332364,
+          "profile_id": 351653
+        }
+      ],
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.20654329147389294,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 188624,
+          "name": "Jäger Squad"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331807,
+          "profile_id": 411006
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 2081885,
+          "name": "Infanterie Officer Quarters"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174545,
+          "name": "Construct Panzergrenadier Kompanie"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88334397,
+          "profile_id": 63169
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88333017,
+          "profile_id": 378232
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88335657,
+          "profile_id": 378232
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331978,
+          "profile_id": 307928
+        }
+      ],
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.20654329147389294,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1000_1200",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 201588,
+          "name": "Support Elements"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331396,
+          "profile_id": 72759
+        }
+      ],
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.20654329147389294,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1200_1400",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174545,
+          "name": "Construct Panzergrenadier Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 188642,
+          "name": "Panzergrenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170304,
+          "name": "Pak 40 Anti-tank Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331180,
+          "profile_id": 1297836
+        }
+      ],
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.20654329147389294,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 188624,
+          "name": "Jäger Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88335699,
+          "profile_id": 1390563
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332807,
+          "profile_id": 1406893
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 188624,
+          "name": "Jäger Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88336093,
+          "profile_id": 1390563
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 170742,
+          "name": "Medical Station"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88331585,
+          "profile_id": 997039
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "research_upgrade",
+          "pbgid": 2081885,
+          "name": "Infanterie Officer Quarters"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88332706,
+          "profile_id": 212904
+        }
+      ],
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 1.0,
+      "wilson_95": {
+        "lower": 0.20654329147389294,
+        "upper": 1.0
+      },
+      "evidence": "too_sparse"
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "under_1000",
+      "map_scope": "all_maps_in_collected_sample",
+      "games": 1,
+      "unique_players": 1,
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174539,
+          "name": "Construct Luftwaffe Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 170317,
+          "name": "221 Scout Car"
+        }
+      ],
+      "match_players": [
+        {
+          "match_id": 88335815,
+          "profile_id": 1222282
+        }
+      ],
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "wilson_95": {
+        "lower": 0.0,
+        "upper": 0.7934567085261071
+      },
+      "evidence": "too_sparse"
+    }
+  ],
   "matches": [
     {
       "match_id": 88330206,
@@ -1480,6 +3049,16 @@
       "game_type": "Custom",
       "source_matchtype_id": 0,
       "source_description": "unnamed_session",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 0,
+        "api_description": "UNNAMED_SESSION",
+        "raw_disagreement": false,
+        "kind": "custom",
+        "basis": "matched_metadata_custom_type",
+        "ladder_reference": null,
+        "leaderboards": []
+      },
       "opponent_factions": [
         "USF"
       ],
@@ -1600,17 +3179,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1297836,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 3357,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "win",
       "rating_before": 1394,
       "rating_band": "1200_1400",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -1720,17 +3330,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 72759,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 1000178,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "win",
       "rating_before": 1033,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -1830,17 +3471,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 997039,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 119353,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 860,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -1950,17 +3622,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 192831,
+            "race_id": 203852,
+            "leaderboard_id": 2130257,
+            "leaderboard_name": "1v1BritishUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 431443,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "British"
       ],
       "result": "win",
       "rating_before": 1068,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -2065,17 +3768,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 411006,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 201567,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 1049,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -2175,17 +3909,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 129552,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 953442,
+            "race_id": 203852,
+            "leaderboard_id": 2130257,
+            "leaderboard_name": "1v1BritishUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "British"
       ],
       "result": "loss",
       "rating_before": 1161,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -2295,17 +4060,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1114114,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 27210,
+            "race_id": 203852,
+            "leaderboard_id": 2130257,
+            "leaderboard_name": "1v1BritishUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "British"
       ],
       "result": "win",
       "rating_before": 1389,
       "rating_band": "1200_1400",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -2415,17 +4211,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 396549,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 1419636,
+            "race_id": 203852,
+            "leaderboard_id": 2130257,
+            "leaderboard_name": "1v1BritishUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "British"
       ],
       "result": "loss",
       "rating_before": 872,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -2535,17 +4362,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 307928,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 574793,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "win",
       "rating_before": 1038,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -2640,17 +4498,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 407764,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 401107,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 1014,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -2760,17 +4649,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 351653,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 29666,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "win",
       "rating_before": 1099,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -2860,17 +4780,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1378239,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 511082,
+            "race_id": 203852,
+            "leaderboard_id": 2130257,
+            "leaderboard_name": "1v1BritishUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "British"
       ],
       "result": "loss",
       "rating_before": 962,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -2975,17 +4926,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 212904,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 113674,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "win",
       "rating_before": 979,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -3095,17 +5077,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1406893,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 960815,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 872,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -3225,17 +5238,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 378232,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 1297870,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 1132,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -3335,17 +5379,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 801958,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 8840,
+            "race_id": 203852,
+            "leaderboard_id": 2130257,
+            "leaderboard_name": "1v1BritishUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "British"
       ],
       "result": "win",
       "rating_before": 1187,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -3445,6 +5520,40 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 378232,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 29666,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
@@ -3453,9 +5562,7 @@
       "rating_band": "1000_1200",
       "eligible_for_ranked_statistics": false,
       "ranked_exclusion_reasons": [
-        "no_match_ai_takeover",
-        "ranked_game",
-        "metadata_match_type_consistent"
+        "no_match_ai_takeover"
       ],
       "opener_exclusion_reasons": [
         "no_match_ai_takeover"
@@ -3568,17 +5675,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1324066,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 677739,
+            "race_id": 203852,
+            "leaderboard_id": 2130257,
+            "leaderboard_name": "1v1BritishUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "British"
       ],
       "result": "win",
       "rating_before": 928,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -3663,17 +5801,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 63169,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 1264940,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 1148,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -3783,17 +5952,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 85265,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 36649,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 1370,
       "rating_band": "1200_1400",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -3888,6 +6088,40 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 186872,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 440954,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
@@ -3898,8 +6132,6 @@
       "ranked_exclusion_reasons": [
         "no_ai_takeover",
         "no_match_ai_takeover",
-        "ranked_game",
-        "metadata_match_type_consistent",
         "names_resolved"
       ],
       "opener_exclusion_reasons": [
@@ -4015,17 +6247,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 85265,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 696665,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "win",
       "rating_before": 1346,
       "rating_band": "1200_1400",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -4120,17 +6383,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1222282,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 70778,
+            "race_id": 203852,
+            "leaderboard_id": 2130257,
+            "leaderboard_name": "1v1BritishUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "British"
       ],
       "result": "win",
       "rating_before": 974,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -4209,17 +6503,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1324066,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 396351,
+            "race_id": 203852,
+            "leaderboard_id": 2130257,
+            "leaderboard_name": "1v1BritishUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "British"
       ],
       "result": "win",
       "rating_before": 942,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -4324,17 +6649,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 378232,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 332406,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 1130,
       "rating_band": "1000_1200",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -4429,17 +6785,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1390563,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 201567,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 810,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -4524,17 +6911,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1222282,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 29666,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 991,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -4629,17 +7047,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1390563,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 1182593,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 806,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [],
       "opener": [
         {
@@ -4729,17 +7178,48 @@
       "game_type": "Custom",
       "source_matchtype_id": 20,
       "source_description": "AUTOMATCH",
+      "match_type_resolution": {
+        "raw_replay_type": "Custom",
+        "api_matchtype_id": 20,
+        "api_description": "AUTOMATCH",
+        "raw_disagreement": true,
+        "kind": "ladder_automatch",
+        "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+        "ladder_reference": {
+          "schema_version": "coh3.relic-reference.v1",
+          "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+          "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+          "captured_at": "2026-10-14T13:39:46.995953+00:00",
+          "applicable_game_builds": [
+            50313
+          ]
+        },
+        "leaderboards": [
+          {
+            "profile_id": 1324066,
+            "race_id": 137123,
+            "leaderboard_id": 2130261,
+            "leaderboard_name": "1v1GermanUnranked",
+            "isranked": 1
+          },
+          {
+            "profile_id": 201567,
+            "race_id": 129494,
+            "leaderboard_id": 2130255,
+            "leaderboard_name": "1v1AmericanUnranked",
+            "isranked": 1
+          }
+        ],
+        "queue_name": "Quick Match"
+      },
       "opponent_factions": [
         "USF"
       ],
       "result": "loss",
       "rating_before": 956,
       "rating_band": "under_1000",
-      "eligible_for_ranked_statistics": false,
-      "ranked_exclusion_reasons": [
-        "ranked_game",
-        "metadata_match_type_consistent"
-      ],
+      "eligible_for_ranked_statistics": true,
+      "ranked_exclusion_reasons": [],
       "opener_exclusion_reasons": [
         "incomplete_opener_window"
       ],

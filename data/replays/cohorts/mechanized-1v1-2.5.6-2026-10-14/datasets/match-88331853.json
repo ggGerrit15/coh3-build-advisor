@@ -1,6 +1,6 @@
 {
   "schema_version": "coh3.replay-dataset.v1",
-  "imported_at": "2026-10-14T13:22:24.932614+00:00",
+  "imported_at": "2026-10-14T13:49:54.843988+00:00",
   "source_url": "https://cohdb.com/replays/7280466",
   "metadata_source": {
     "url": "https://storage.coh3stats.com/matches/matches-1791849600.json",
@@ -35,7 +35,41 @@
     "mod_uuid": "00000000-0000-0000-0000-000000000000",
     "patch": "2.5.6",
     "recorded_at_local": "13.10.2026 23:17",
-    "mode": "1v1"
+    "mode": "1v1",
+    "match_type_resolution": {
+      "raw_replay_type": "Custom",
+      "api_matchtype_id": 20,
+      "api_description": "AUTOMATCH",
+      "raw_disagreement": true,
+      "kind": "ladder_automatch",
+      "basis": "matched_daily_record_and_relic_ranked_leaderboard_map",
+      "ladder_reference": {
+        "schema_version": "coh3.relic-reference.v1",
+        "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+        "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+        "captured_at": "2026-10-14T13:39:46.995953+00:00",
+        "applicable_game_builds": [
+          50313
+        ]
+      },
+      "leaderboards": [
+        {
+          "profile_id": 1114114,
+          "race_id": 137123,
+          "leaderboard_id": 2130261,
+          "leaderboard_name": "1v1GermanUnranked",
+          "isranked": 1
+        },
+        {
+          "profile_id": 27210,
+          "race_id": 203852,
+          "leaderboard_id": 2130257,
+          "leaderboard_name": "1v1BritishUnranked",
+          "isranked": 1
+        }
+      ],
+      "queue_name": "Quick Match"
+    }
   },
   "players": [
     {
@@ -1196,12 +1230,12 @@
         "result_available": true,
         "pre_match_rating_available": true,
         "exact_patch_data": true,
-        "ranked_game": false,
-        "metadata_match_type_consistent": false,
+        "ranked_game": true,
+        "metadata_match_type_consistent": true,
         "unmodded": true,
         "names_resolved": true
       },
-      "eligible_for_ranked_statistics": false
+      "eligible_for_ranked_statistics": true
     },
     {
       "ai_takeover_at_tick": null,
@@ -2453,12 +2487,12 @@
         "result_available": true,
         "pre_match_rating_available": true,
         "exact_patch_data": true,
-        "ranked_game": false,
-        "metadata_match_type_consistent": false,
+        "ranked_game": true,
+        "metadata_match_type_consistent": true,
         "unmodded": true,
         "names_resolved": true
       },
-      "eligible_for_ranked_statistics": false
+      "eligible_for_ranked_statistics": true
     }
   ]
 }

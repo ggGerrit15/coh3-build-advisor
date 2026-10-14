@@ -19,9 +19,11 @@ retain the manifest, all 30 normalized games, and ID-matched metadata.
 - 27 usable eight-command prefixes and 28 usable five-command prefixes.
   The exclusion checks can overlap; two matches have AI takeover, one has an
   unresolved name, and one does not reach eight commands within the window.
-- Zero eligible ranked comparisons: all 30 replay files are classified as
-  Custom; 29 of their daily records say AUTOMATCH. Resolve that mismatch
-  before interpreting the sample as ranked build performance.
+- The [match-type investigation](replay-match-type.md) identifies 29 of these
+  as ladder-rated Quick Matches and one as a genuine Custom game. Their raw
+  replay label remains Custom. With all quality gates applied, 26 complete
+  eight-command prefixes and 27 five-command prefixes qualify for descriptive
+  ladder outcome comparisons.
 - Match [88336093](https://cohdb.com/replays/7280907): all **53 unique,
   non-cancelled timed labels** match the CoHDB build display at one-second
   resolution. The capture preserves the comparison and source HTML hash.
@@ -39,6 +41,63 @@ python scripts/report_replay_cohort.py \
   --output-json work/replays/reproduced-report.json \
   --output-markdown work/replays/reproduced-report.md
 ```
+
+## Collect stronger players
+
+For stronger players, require their own verified pre-match rating rather than
+trusting the listing's apparent ELO range. The separate
+[1600+ eight-command capture](../data/replays/cohorts/mechanized-1600plus-1v1-2.5.6-2026-10-14/report.md)
+and [five-command capture](../data/replays/cohorts/mechanized-1600plus-1v1-2.5.6-2026-10-14/report-first5.md)
+contain:
+
+- **30 games from 13 distinct target players**, verified pre-match ELO
+  **1627–2090**. Nine games are in the 1600–1800 band and 21 at 1800+.
+- 14 games against USF and 16 against British; 21 wins and 9 losses. Outcomes
+  and pre-match ratings are ID-matched for all 30. The selected games finished
+  on 10–13 October UTC within the requested 7–13 October discovery window.
+- All 30 raw replay labels remain Custom, independently resolved to
+  ladder-rated Quick Match through the documented Relic reference.
+- 29 eligible eight-command prefixes and all 30 five-command prefixes.
+  Match 88161475 has an uncertain command inside the eight-command window;
+  its shorter five-command window is unaffected.
+- 59 recordings downloaded, 243 build previews checked, and 16 listing pages.
+  Known other battlegroups, unqualified profile/rating candidates and parsed
+  out-of-scope games have separate exclusion receipts in the manifest.
+- Match [88314882](https://cohdb.com/replays/7278131): all **27 unique,
+  non-cancelled timed labels** match the CoHDB build display.
+
+The most frequent eight-command group has three games from two players; the
+most frequent five-command group has five games from two players. These are
+descriptive observations, not enough evidence for a best-build recommendation.
+The lower-rated and stronger captures remain separate.
+
+The stronger capture uses this bounded discovery configuration:
+
+```sh
+cargo build --locked --release --manifest-path tools/replay-reader/Cargo.toml
+python scripts/collect_replays.py \
+  --patch 2.5.6 --game-build 50313 \
+  --target 30 --max-pages 80 --max-downloads 250 --max-previews 400 \
+  --min-player-rating 1600 --listing-rating min:1600 --preview-builds \
+  --completed-after 2026-10-07 --completed-before 2026-10-14 \
+  --metadata-day 2026-10-13 --metadata-day 2026-10-12 \
+  --metadata-day 2026-10-11 --metadata-day 2026-10-10 \
+  --metadata-day 2026-10-09 --metadata-day 2026-10-08 \
+  --metadata-day 2026-10-07 \
+  --output-dir work/replays/mechanized-1600plus-2026-10-14
+```
+
+The completed-date lower cutoff is inclusive and the upper cutoff exclusive,
+both in UTC. A missing listing timestamp is skipped, not treated as the end of
+the date window. The manifest preserves the discovery window, source hashes,
+preview receipts, exclusions and request limits. The captured run reused a
+local copy of 13 October's daily dump with its original source URL and hash;
+the command above requests that same completed day directly.
+
+To reproduce this saved report offline, use the earlier report command with
+`--collection-dir data/replays/cohorts/mechanized-1600plus-1v1-2.5.6-2026-10-14`.
+Re-running discovery against a fresh live listing is a new convenience sample;
+the committed capture is the reproducible evidence for this report.
 
 ## Run a small cohort
 
@@ -88,7 +147,8 @@ out-of-scope games, not just successful target records.
   minimum interval, disk caching, and positive collection limits. Access
   failures 401/403/429 stop collection rather than retrying a challenge.
 - The source manifest records listing URLs and hashes, attempted recordings,
-  exclusions/errors, stopping reason, and whether the target was reached.
+  build previews, metadata source hashes, exclusions/errors, stopping reason,
+  discovery window and whether the target was reached.
 - Filter faction, battlegroup, patch and mode from the parsed replay itself.
   CoHDB replay IDs and Relic match IDs are different identifiers.
 
@@ -113,15 +173,12 @@ If daily metadata is unavailable, the CoHDB list's revealed victor can supply
 an outcome for an exact, verified two-player human match. Predicted win
 probabilities are never used as results. Pre-match ELO stays null.
 
-The first observed cohort recordings are identified as `Custom` by the pinned
-reader, while the joined daily records say `description: AUTOMATCH` and
-`matchtype_id: 20`. Preserve both values. The metadata label does not override
-the replay classification; those games remain ineligible for ranked
-statistics pending investigation. `metadata_match_type_consistent` additionally
-blocks the reverse conflict (an Automatch replay with Custom daily metadata).
-The CoH3Stats frontend currently uses type
-20 for 1v1, while its historical type name says `1V1_Unranked`, so a type number
-alone must not be treated as independent proof of ranked status.
+The raw replay label alone is not authoritative for ladder membership.
+The [verified resolution policy](replay-match-type.md) uses the current Relic
+leaderboard maps, exact matched daily records, and an immutable reference hash
+to identify ladder-rated Quick Matches while retaining the original flag.
+A bare metadata label never overrides a Custom replay, and genuine Custom
+matches remain excluded.
 
 ## What the report compares
 
@@ -138,9 +195,9 @@ alone must not be treated as independent proof of ranked status.
 - Keep opponent faction and target-player pre-match ELO band separate.
   Group map scope is explicitly all maps in this available-replay sample.
   The report retains every individual map and source match for review.
-- Exploratory tables show frequency only. Ranked outcome comparisons require
+- Exploratory tables show frequency only. Rated-ladder comparisons require
   every existing quality check, including exact patch data, unmodded human
-  Automatch, no AI takeover, resolved names, result and pre-match ELO.
+  Automatch/Quick Match, no AI takeover, resolved names, result and pre-match ELO.
 - Eligible outcome groups show wins/losses, raw WR and a 95% Wilson interval.
   Small samples are flagged; this neither corrects repeated-player dependence
   nor identifies a causal advantage. Groups are sorted by frequency, not WR.

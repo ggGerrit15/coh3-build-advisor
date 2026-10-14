@@ -1,6 +1,6 @@
 {
   "schema_version": "coh3.replay-dataset.v1",
-  "imported_at": "2026-10-14T13:22:37.871845+00:00",
+  "imported_at": "2026-10-14T13:50:07.612551+00:00",
   "source_url": "https://cohdb.com/replays/7280438",
   "metadata_source": {
     "url": "https://storage.coh3stats.com/matches/matches-1791849600.json",
@@ -36,7 +36,17 @@
     "mod_uuid": "00000000-0000-0000-0000-000000000000",
     "patch": "2.5.6",
     "recorded_at_local": "10/13/2026 4:41 PM",
-    "mode": "1v1"
+    "mode": "1v1",
+    "match_type_resolution": {
+      "raw_replay_type": "Custom",
+      "api_matchtype_id": 0,
+      "api_description": "UNNAMED_SESSION",
+      "raw_disagreement": false,
+      "kind": "custom",
+      "basis": "matched_metadata_custom_type",
+      "ladder_reference": null,
+      "leaderboards": []
+    }
   },
   "players": [
     {

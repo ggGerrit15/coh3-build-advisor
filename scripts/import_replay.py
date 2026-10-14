@@ -15,6 +15,8 @@ import re
 import subprocess
 import sys
 
+from replay_match_type import resolve as resolve_match_type
+
 ROOT = Path(__file__).resolve().parents[1]
 BUILD_KINDS = {"construct_building", "train_unit", "research_upgrade"}
 ALL_KINDS = BUILD_KINDS | {"select_battlegroup", "select_battlegroup_ability", "use_battlegroup_ability", "ai_takeover"}
@@ -49,7 +51,6 @@ def normalize(reader: dict, profiles: list[dict], metadata: dict | None = None,
         integer(match["match_id"], "match ID", 1)
     metadata_players = {}
     source_record = None
-    metadata_type_consistent = True
     if metadata is not None:
         if not isinstance(metadata, dict) or metadata.get("schema_version") != "coh3.match-metadata.v1":
             raise ValueError("Unsupported match metadata schema")
@@ -67,11 +68,8 @@ def normalize(reader: dict, profiles: list[dict], metadata: dict | None = None,
         if source_record is not None:
             if not isinstance(source_record, dict):
                 raise ValueError("Invalid metadata source record")
-            description = str(source_record.get("description") or "").upper()
-            if description == "AUTOMATCH":
-                metadata_type_consistent = match.get("game_type") == "Automatch"
-            elif source_record.get("matchtype_id") == 0 or description == "CUSTOM":
-                metadata_type_consistent = match.get("game_type") == "Custom"
+    resolution, rated_automatch, metadata_type_consistent = resolve_match_type(match, raw_players, metadata)
+    match["match_type_resolution"] = resolution
     players = []
     for player in raw_players:
         faction = player["faction"]
@@ -126,7 +124,7 @@ def normalize(reader: dict, profiles: list[dict], metadata: dict | None = None,
             "result_available": result in ("win", "loss"),
             "pre_match_rating_available": rating is not None,
             "exact_patch_data": reader["parser"].get("exact_game_data_available") is True,
-            "ranked_game": match.get("game_type") == "Automatch",
+            "ranked_game": rated_automatch,
             "metadata_match_type_consistent": metadata_type_consistent,
             "unmodded": match.get("mod_uuid") == "00000000-0000-0000-0000-000000000000",
             "names_resolved": all("unresolved_name" not in a["excluded_reasons"] for a in actions),

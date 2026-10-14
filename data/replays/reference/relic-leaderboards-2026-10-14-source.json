@@ -1,0 +1,10 @@
+{
+  "schema_version": "coh3.relic-reference.v1",
+  "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+  "captured_at": "2026-10-14T13:39:46.995953+00:00",
+  "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+  "applicable_game_builds": [
+    50313
+  ],
+  "note": "Live public Relic definitions. Quick Match type 20 has isranked=1 leaderboard mappings; preserve the historical type and leaderboard names."
+}

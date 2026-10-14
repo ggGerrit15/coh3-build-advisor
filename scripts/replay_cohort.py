@@ -14,6 +14,7 @@ from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
 from import_replay import bg_key
+from replay_match_type import classification_reference
 
 RACES = {129494: "USF", 203852: "British", 137123: "Wehrmacht", 198437: "DAK"}
 MODES = {1: "1v1", 20: "1v1", 2: "2v2", 21: "2v2", 3: "3v3", 22: "3v3", 4: "4v4", 23: "4v4"}
@@ -73,7 +74,8 @@ class MatchListing(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.rows, self.next_url, self.row = [], None, None
-        self.cell, self.text, self.skip = -1, [], 0
+        self.cell, self.text, self.skip, self.player_link = -1, [], 0, None
+        self.link_text = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -82,7 +84,7 @@ class MatchListing(HTMLParser):
         if tag == "tr":
             match = re.fullmatch(r"/replays/(\d+)", attrs.get("data-href", ""))
             if match:
-                self.row = {"replay_id": int(match[1]), "source_url": "https://cohdb.com" + match[0], "profile_ids": []}
+                self.row = {"replay_id": int(match[1]), "source_url": "https://cohdb.com" + match[0], "profile_ids": [], "profile_names": {}}
                 self.cell = -1
         if self.row is None:
             return
@@ -95,6 +97,7 @@ class MatchListing(HTMLParser):
             player = re.fullmatch(r"/players/(\d+)", attrs.get("href", ""))
             if player:
                 self.row["profile_ids"].append(int(player[1]))
+                self.player_link, self.link_text = int(player[1]), []
         if attrs.get("title", "").endswith(" UTC"):
             try:
                 date = datetime.strptime(attrs["title"], "%B %d, %Y, %I:%M %p UTC").replace(tzinfo=timezone.utc)
@@ -105,12 +108,19 @@ class MatchListing(HTMLParser):
     def handle_data(self, text):
         if self.row is not None and not self.skip:
             self.text.append(text)
+            if self.player_link is not None:
+                self.link_text.append(text)
 
     def handle_endtag(self, tag):
         if tag == "button" and self.skip:
             self.skip -= 1
         if self.row is None:
             return
+        if tag == "a" and self.player_link is not None:
+            name = " ".join("".join(self.link_text).split())
+            if name:
+                self.row["profile_names"][str(self.player_link)] = name
+            self.player_link, self.link_text = None, []
         if tag == "td":
             value = " ".join("".join(self.text).split())
             if self.cell == 0:
@@ -177,6 +187,7 @@ def stats_metadata(raw: dict, reader: dict, source: dict) -> dict:
         source["rating_note"] = "CoH3Stats warns that Custom-game ELO is not accurate; oldrating is retained as unverified, not pre-match ELO."
     return {"schema_version": "coh3.match-metadata.v1", "match_id": raw["id"],
             "mode": MODES.get(raw.get("matchtype_id")), "source": source, "players": players,
+            "classification_reference": classification_reference(),
             "source_record": {k: raw.get(k) for k in ("matchtype_id", "description", "startgametime", "completiontime", "platform")}}
 
 
@@ -199,5 +210,39 @@ def listing_metadata(row: dict, reader: dict) -> dict | None:
 def target_players(dataset: dict, scope: dict) -> list[dict]:
     if dataset["match"].get("patch") != scope["patch"] or dataset["match"].get("mode") != scope["mode"]:
         return []
-    return [p for p in dataset["players"] if p["faction"] == scope["faction"]
-            and bg_key((p.get("battlegroup") or {}).get("name") or "") == bg_key(scope["battlegroup"])]
+    players = [p for p in dataset["players"] if p["faction"] == scope["faction"]
+               and bg_key((p.get("battlegroup") or {}).get("name") or "") == bg_key(scope["battlegroup"])]
+    return [p for p in players if rating_in_scope(p.get("rating_before"), scope)]
+
+
+def rating_in_scope(value, scope):
+    minimum, maximum = scope.get("min_player_rating"), scope.get("max_player_rating")
+    if minimum is None and maximum is None:
+        return True
+    if value is None or isinstance(value, bool) or not isinstance(value, (int, float)) or not math.isfinite(value):
+        return False
+    return (minimum is None or value >= minimum) and (maximum is None or value < maximum)
+
+
+def build_preview(html, row, battlegroup, profiles, target_profile_ids=None):
+    """Reject only with a recognizable BG for every required, ID-matched player."""
+    from check_replay_cohdb import TimedLabels
+    names = row.get("profile_names", {})
+    players = [{"name": name, "profile_id": int(pid)} for pid, name in names.items()]
+    try:
+        page = TimedLabels(players)
+    except ValueError:
+        page = TimedLabels()
+    page.feed(html)
+    known = {bg_key(p["battlegroup"]) for p in profiles}
+    groups = {pid: set() for pid in row["profile_ids"]}
+    for pid, _, label in page.entries:
+        if pid in groups and bg_key(label) in known:
+            groups[pid].add(bg_key(label))
+    both = page.match_id is not None and len(groups) == 2 and all(groups.values())
+    required = list(target_profile_ids) if target_profile_ids is not None else list(groups)
+    complete = page.match_id is not None and bool(required) and all(pid in groups and groups[pid] for pid in required)
+    return {"match_id": page.match_id, "both_battlegroups_recognized": both,
+            "required_battlegroups_recognized": complete, "target_profile_ids": required,
+            "possible_target": not complete or any(bg_key(battlegroup) in groups[pid] for pid in required),
+            "battlegroups_by_profile": {str(pid): sorted(v) for pid, v in groups.items()}}

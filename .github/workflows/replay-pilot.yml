@@ -9,6 +9,7 @@ on:
       - 'scripts/check_replay_cohdb.py'
       - 'scripts/collect_replays.py'
       - 'scripts/replay_cohort.py'
+      - 'scripts/replay_match_type.py'
       - 'scripts/report_replay_cohort.py'
       - 'tests/**'
       - 'data/replays/**'
