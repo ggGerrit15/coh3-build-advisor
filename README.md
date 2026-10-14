@@ -64,6 +64,17 @@ The frontend separates the recommendation layer from the statistics layer: the S
 
 Rating-band samples are guarded separately: fewer than 30 games remain visible and contribute no ELO bonus. Samples from 30 to 99 games remain visible but are labelled as weak evidence. When a battlegroup is missing one or more of the six Average Rating bands, the combined rate is marked partial and excluded from Advisor Score.
 
+## Replay pilot
+
+An independent single-replay importer now extracts player-specific production,
+construction, upgrade, and battlegroup commands from `.rec` files. It retains
+cancelled and suspect actions for review, accepts ID-matched match metadata,
+and records the quality checks required before using a game in ranked statistics.
+
+See [the replay pilot guide](docs/replay-pilot.md) for setup, the verified
+capture, commands, data contract, and limitations. The pilot has no frontend
+or recommendation-scoring integration yet.
+
 ## Feedback
 
 Found an incorrect build order, tech requirement or recommendation?

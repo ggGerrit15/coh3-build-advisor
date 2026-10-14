@@ -1,0 +1,16 @@
+{
+  "schema_version": "coh3.match-metadata.v1",
+  "match_id": 88366979,
+  "patch": "2.5.6",
+  "mode": "1v1",
+  "source": {
+    "name": "CoHDB match overview, manually verified capture",
+    "url": "https://cohdb.com/replays/7283962",
+    "captured_on": "2026-10-14",
+    "rating_note": "The page labels these values ELO. Pre-match timing was not independently verified, so rating_before remains null. Victor is Axis."
+  },
+  "players": [
+    {"profile_id": 832443, "faction": "British", "result": "loss", "displayed_rating": 886, "rating_before": null},
+    {"profile_id": 63169, "faction": "Wehrmacht", "result": "win", "displayed_rating": 1083, "rating_before": null}
+  ]
+}

@@ -1,0 +1,11 @@
+[package]
+name = "coh3-replay-reader"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+cohlib = { git = "https://github.com/ryantaylor/cohlib", rev = "d31ade03fa69301c571ceb7416d0d1e67eff99aa" }
+flate2 = "1"
+serde_json = "1"
+sha2 = "0.10"

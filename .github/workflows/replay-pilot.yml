@@ -1,0 +1,48 @@
+name: Validate replay pilot
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'tools/replay-reader/**'
+      - 'scripts/import_replay.py'
+      - 'scripts/check_replay_cohdb.py'
+      - 'tests/**'
+      - 'data/replays/**'
+      - '.github/workflows/replay-pilot.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test Python import and existing integration
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Install pinned Rust toolchain
+        run: rustup toolchain install 1.99.0 --profile minimal
+      - name: Test and build the pinned reader
+        run: |
+          cargo +1.99.0 test --locked --manifest-path tools/replay-reader/Cargo.toml
+          cargo +1.99.0 build --locked --release --manifest-path tools/replay-reader/Cargo.toml
+      - name: Smoke-test an upstream replay fixture
+        run: |
+          curl -fsSL --retry 2 --max-time 60 https://raw.githubusercontent.com/ryantaylor/cohlib/d31ade03fa69301c571ceb7416d0d1e67eff99aa/crates/cohlib/replays/v50313_load_targeting_block.rec -o /tmp/coh3-parser-fixture.rec
+          tools/replay-reader/target/release/coh3-replay-reader /tmp/coh3-parser-fixture.rec > /tmp/coh3-parser-fixture.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          replay = json.loads(Path('/tmp/coh3-parser-fixture.json').read_text())
+          assert replay['schema_version'] == 'coh3.replay-reader.v1'
+          assert replay['match']['game_build'] == 50313
+          assert replay['parser']['exact_game_data_available']
+          assert replay['players']
+          assert any(p['actions'] for p in replay['players'])
+          PY
+      - name: Check frontend baseline
+        run: node tests/test_cohdb_runtime.mjs
