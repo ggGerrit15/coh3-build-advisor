@@ -10,6 +10,7 @@ from collections import Counter
 from datetime import datetime, timezone
 import json
 import math
+import os
 from pathlib import Path
 import re
 import subprocess
@@ -18,6 +19,7 @@ import sys
 from replay_match_type import resolve as resolve_match_type
 
 ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_READER = ROOT / "tools/replay-reader/target/release" / ("coh3-replay-reader.exe" if os.name == "nt" else "coh3-replay-reader")
 BUILD_KINDS = {"construct_building", "train_unit", "research_upgrade"}
 ALL_KINDS = BUILD_KINDS | {"select_battlegroup", "select_battlegroup_ability", "use_battlegroup_ability", "ai_takeover"}
 
@@ -147,21 +149,30 @@ def normalize(reader: dict, profiles: list[dict], metadata: dict | None = None,
             "match": match, "players": players}
 
 
+def read_replay(path: Path, reader: Path = DEFAULT_READER) -> dict:
+    if not path.is_file():
+        raise ValueError("Replay input must be a regular file")
+    if path.stat().st_size > 128 * 1024 * 1024:
+        raise ValueError("Replay exceeds the 128 MiB input limit")
+    process = subprocess.run([str(reader.resolve()), str(path.resolve())],
+                             check=True, capture_output=True, text=True, timeout=120)
+    return json.loads(process.stdout)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--replay", type=Path, required=True)
-    parser.add_argument("--reader", type=Path, default=ROOT / "tools/replay-reader/target/release/coh3-replay-reader")
+    parser.add_argument("--reader", type=Path, default=DEFAULT_READER)
     parser.add_argument("--advisor-data", type=Path, default=ROOT / "coh3_build_advisor_data.json")
     parser.add_argument("--metadata", type=Path, help="Optional coh3.match-metadata.v1 JSON")
     parser.add_argument("--source-url")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     try:
-        process = subprocess.run([str(args.reader.resolve()), str(args.replay.resolve())],
-                                 check=True, capture_output=True, text=True, timeout=120)
+        reader = read_replay(args.replay, args.reader)
         profiles = json.loads(args.advisor_data.read_text(encoding="utf-8"))["profiles"]
         metadata = json.loads(args.metadata.read_text(encoding="utf-8")) if args.metadata else None
-        dataset = normalize(json.loads(process.stdout), profiles, metadata, args.source_url)
+        dataset = normalize(reader, profiles, metadata, args.source_url)
         args.output.parent.mkdir(parents=True, exist_ok=True)
         temporary = args.output.with_name(args.output.name + ".tmp")
         temporary.write_text(json.dumps(dataset, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")

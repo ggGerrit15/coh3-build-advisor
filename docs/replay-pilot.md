@@ -95,3 +95,8 @@ node tests/test_cohdb_runtime.mjs
 
 The replay-specific workflow also smoke-tests a fixed upstream build-50313
 replay fixture. It has read-only permissions and does not deploy the website.
+
+For already downloaded replay files, the [local folder importer](local-replay-import.md)
+adds batch processing, duplicate/conflict checks and a readable import summary.
+It reuses this same reader and normalizer, preserves missing ratings/results,
+and writes scope-specific reports without making network requests.

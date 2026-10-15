@@ -6,6 +6,7 @@ on:
     paths:
       - 'tools/replay-reader/**'
       - 'scripts/import_replay.py'
+      - 'scripts/import_local_replays.py'
       - 'scripts/check_replay_cohdb.py'
       - 'scripts/collect_replays.py'
       - 'scripts/replay_cohort.py'
@@ -51,3 +52,34 @@ jobs:
           PY
       - name: Check frontend baseline
         run: node tests/test_cohdb_runtime.mjs
+      - name: Smoke-test offline folder import with plain and compressed replays
+        run: |
+          python - <<'PY'
+          import gzip
+          from pathlib import Path
+          folder = Path('/tmp/coh3-local-input')
+          folder.mkdir()
+          data = Path('/tmp/coh3-parser-fixture.rec').read_bytes()
+          (folder / 'first replay.rec').write_bytes(data)
+          (folder / 'same replay.rec.gz').write_bytes(gzip.compress(data))
+          PY
+          python scripts/import_local_replays.py /tmp/coh3-local-input --patch 2.5.6 --output-dir /tmp/coh3-local-output
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          output = Path('/tmp/coh3-local-output')
+          manifest = json.loads((output / 'manifest.json').read_text())
+          assert manifest['import_counts']['imported'] == 1
+          assert manifest['import_counts']['duplicates'] == 1
+          assert manifest['import_counts']['errors'] == 0
+          datasets = list((output / 'datasets').glob('*.json'))
+          assert len(datasets) == 1
+          dataset = json.loads(datasets[0].read_text())
+          assert dataset['players']
+          for player in dataset['players']:
+              assert player['rating_before'] is None
+              assert player['result'] is None
+              assert not player['eligible_for_ranked_statistics']
+          assert (output / 'summary.md').exists()
+          assert json.loads((output / 'candidates.json').read_text())['candidates'] == []
+          PY

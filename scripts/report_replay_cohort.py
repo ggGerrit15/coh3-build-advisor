@@ -134,7 +134,11 @@ def markdown(report, manifest=None):
     if scope.get("min_player_rating") is not None or scope.get("max_player_rating") is not None:
         lines += [f"Verified target-player ELO window: minimum {scope.get('min_player_rating')}, exclusive maximum {scope.get('max_player_rating')}. "
                   f"Coarse discovery filter: {scope.get('listing_rating') or 'none'}.", ""]
-    if manifest:
+    if manifest and manifest.get("import_source") == "local_files":
+        stats = manifest["import_counts"]
+        lines += [f"Local files: {stats['files']}; imported: {stats['imported']}; outside this scope: {stats['outside_scope']}; "
+                  f"duplicates: {stats['duplicates']}; errors: {stats['errors']}. Stopped: `{manifest['stopped_reason']}`.", ""]
+    elif manifest:
         lines += [f"Collection: target {manifest['target']}, attempted downloads {manifest['attempted_downloads']}, "
                   f"listing pages {len(manifest['pages'])}; stopped: `{manifest['stopped_reason']}`.", ""]
         if manifest.get("discovery"):
@@ -197,7 +201,7 @@ def main():
         datasets.append(json.loads(path.read_text()))
     report = analyze(datasets, manifest["scope"], args.prefix_length, args.max_opener_seconds)
     report["collection"] = {k: manifest[k] for k in ("collected_at", "target", "target_reached", "attempted_downloads", "stopped_reason", "sampling")}
-    for key in ("discovery", "checked_build_previews", "metadata_sources"):
+    for key in ("discovery", "checked_build_previews", "metadata_sources", "import_source", "import_counts", "target_unit"):
         if key in manifest:
             report["collection"][key] = manifest[key]
     write_json(args.output_json, report)
