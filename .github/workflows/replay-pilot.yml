@@ -14,6 +14,7 @@ on:
       - 'scripts/report_replay_cohort.py'
       - 'scripts/export_replay_candidates.py'
       - 'scripts/replay_database.py'
+      - 'scripts/enrich_replay_database.py'
       - 'tests/**'
       - 'data/replays/**'
       - '.github/workflows/replay-pilot.yml'

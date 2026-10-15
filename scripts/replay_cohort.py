@@ -14,7 +14,7 @@ from urllib.parse import urljoin, urlparse
 from urllib.request import Request, urlopen
 
 from import_replay import bg_key
-from replay_match_type import classification_reference
+from replay_match_type import classification_reference, relic_history_source
 
 RACES = {129494: "USF", 203852: "British", 137123: "Wehrmacht", 198437: "DAK"}
 MODES = {1: "1v1", 20: "1v1", 2: "2v2", 21: "2v2", 3: "3v3", 22: "3v3", 4: "4v4", 23: "4v4"}
@@ -189,6 +189,39 @@ def stats_metadata(raw: dict, reader: dict, source: dict) -> dict:
             "mode": MODES.get(raw.get("matchtype_id")), "source": source, "players": players,
             "classification_reference": classification_reference(),
             "source_record": {k: raw.get(k) for k in ("matchtype_id", "description", "startgametime", "completiontime", "platform")}}
+
+
+def relic_history_metadata(raw: dict, reader: dict, source: dict) -> dict:
+    """Join Relic's separate member/report arrays before reusing the normalizer."""
+    if not relic_history_source(source):
+        raise ValueError("Expected a hashed canonical Steam Relic history capture")
+    requested_profile = int(source["url"].rsplit("=", 1)[1])
+    expected = {p["profile_id"] for p in reader["players"]}
+    if requested_profile not in expected:
+        raise ValueError("Requested history profile is not a replay participant")
+    members = raw.get("matchhistorymember")
+    reports = raw.get("matchhistoryreportresults")
+    if not isinstance(members, list) or not isinstance(reports, list):
+        raise ValueError("Missing Relic member/report arrays")
+    by_id = {m.get("profile_id"): m for m in members}
+    if len(by_id) != len(members) or set(by_id) != expected:
+        raise ValueError("Relic member IDs do not match replay")
+    joined = []
+    for report in reports:
+        member = by_id.get(report.get("profile_id"))
+        if member is None or any(row.get("matchhistory_id") != raw.get("id") for row in (report, member)):
+            raise ValueError("Relic member/report match identity mismatch")
+        if member.get("race_id") != report.get("race_id") or member.get("teamid") != report.get("teamid"):
+            raise ValueError("Relic member/report faction or team mismatch")
+        joined.append(dict(report, matchhistorymember=member))
+    # The endpoint's title=coh3 selects Steam; this is not inferred from player names.
+    processed = dict(raw, matchhistoryreportresults=joined, platform="steam")
+    metadata = stats_metadata(processed, reader, source)
+    metadata["source"].update(name="Relic public Steam match history",
+        rating_field="matchHistoryStats.matchhistorymember.oldrating",
+        outcome_field="matchHistoryStats.matchhistoryreportresults.resulttype")
+    metadata["source_record"]["platform_basis"] = "Relic API title=coh3"
+    return metadata
 
 
 def listing_metadata(row: dict, reader: dict) -> dict | None:

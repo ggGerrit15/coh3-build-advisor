@@ -14,6 +14,7 @@ import sys
 
 from import_replay import ROOT, normalize, integer
 from report_replay_cohort import analyze
+from replay_match_type import relic_history_source
 
 APPLICATION_ID = 1129269299
 SCHEMA_VERSION = 1
@@ -110,7 +111,9 @@ def evidence_status(dataset, player):
     resolution = dataset["match"].get("match_type_resolution") or {}
     daily = (re.fullmatch(r"https://storage\.coh3stats\.com/matches/matches-\d+\.json", source.get("url", "")) is not None
              and re.fullmatch(r"[0-9a-f]{64}", source.get("sha256", "")) is not None)
-    rating_verified = (daily and source.get("rating_field") == "matchhistorymember.oldrating"
+    rating_field_verified = ((daily and source.get("rating_field") == "matchhistorymember.oldrating")
+                             or (relic_history_source(source) and source.get("rating_field") == "matchHistoryStats.matchhistorymember.oldrating"))
+    rating_verified = (rating_field_verified
                        and resolution.get("kind") == "ladder_automatch" and player["rating_before"] is not None)
     rating_status = "verified_pre_match" if rating_verified else "source_claim" if player["rating_before"] is not None else (
         "unverified" if any(player.get(k) is not None for k in ("displayed_rating", "rating_before_unverified")) else "unknown")

@@ -14,6 +14,13 @@ RACES = {129494: "USF", 203852: "British", 137123: "Wehrmacht", 198437: "DAK"}
 MODES = {1: "1v1", 20: "1v1", 2: "2v2", 21: "2v2", 3: "3v3", 22: "3v3", 4: "4v4", 23: "4v4"}
 
 
+def relic_history_source(source):
+    """Recognize a hashed capture of the exact public Steam history endpoint."""
+    return (isinstance(source, dict)
+            and re.fullmatch(r"https://coh3-api\.reliclink\.com/community/leaderboard/getRecentMatchHistoryByProfileId\?title=coh3&profile_id=[1-9][0-9]*", source.get("url", "")) is not None
+            and re.fullmatch(r"[0-9a-f]{64}", source.get("sha256", "")) is not None)
+
+
 @lru_cache(maxsize=1)
 def reference():
     raw = REFERENCE.read_bytes()
@@ -61,7 +68,8 @@ def resolve(match, players, metadata):
     metadata_source = metadata.get("source") or {}
     source_url = metadata_source.get("url") or ""
     source_is_daily = re.fullmatch(r"https://storage\.coh3stats\.com/matches/matches-\d+\.json", source_url) is not None
-    if not (source_is_daily and record and description == "AUTOMATCH" and record.get("platform") == "steam"
+    source_is_history = relic_history_source(metadata_source)
+    if not ((source_is_daily or source_is_history) and record and description == "AUTOMATCH" and record.get("platform") == "steam"
             and match.get("game_build") in source["applicable_game_builds"]
             and MODES.get(type_id) == match.get("mode") and raw_type in {"Custom", "Automatch", "Multiplayer"}):
         return resolution, rated, consistent
@@ -86,7 +94,8 @@ def resolve(match, players, metadata):
             return resolution, False, False
         maps.extend(candidates)
     queue = next((t for t in definitions["matchTypes"] if t["id"] == type_id), {})
-    resolution.update(kind="ladder_automatch", basis="matched_daily_record_and_relic_ranked_leaderboard_map",
+    basis = "matched_relic_history_and_ranked_leaderboard_map" if source_is_history else "matched_daily_record_and_relic_ranked_leaderboard_map"
+    resolution.update(kind="ladder_automatch", basis=basis,
                       queue_name=queue.get("localizedName") or queue.get("name"),
                       ladder_reference=marker, leaderboards=maps)
     return resolution, True, True

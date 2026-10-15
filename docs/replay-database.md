@@ -92,12 +92,21 @@ reports, including uncertain commands and AI takeover exclusions.
 
 Each observation retains its rating status:
 
-- `verified_pre_match`: supplied pre-match rating with captured daily-source
-  URL/hash, the expected oldrating field and the validated ladder resolution.
+- `verified_pre_match`: supplied pre-match rating with a captured daily-source
+  or canonical Relic Steam history URL/hash, the source's expected oldrating
+  field and the validated ladder resolution.
 - `source_claim`: supplied pre-match value without that complete evidence chain.
 - `unverified`: displayed or explicitly unverified ratings, never substituted
   into the verified-rating column.
 - `unknown`: no rating evidence.
+
+Relic history captures join the separate member and result arrays using exact
+match/player IDs, factions and teams. Only `oldrating` supplies pre-match ELO;
+`newrating` and a listing filter cannot fill a missing value. History results
+use the existing `observed_source` status, with the exact Relic URL retained;
+`matched_daily_source` remains reserved for daily dumps.
+
+See [metadata enrichment](replay-metadata.md) for the offline capture workflow.
 
 These labels preserve the captured pipeline's evidence; the database import
 does not fetch live sources or authenticate an arbitrary third-party JSON file.
