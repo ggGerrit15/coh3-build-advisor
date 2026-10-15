@@ -13,6 +13,7 @@ on:
       - 'scripts/replay_match_type.py'
       - 'scripts/report_replay_cohort.py'
       - 'scripts/export_replay_candidates.py'
+      - 'scripts/replay_database.py'
       - 'tests/**'
       - 'data/replays/**'
       - '.github/workflows/replay-pilot.yml'
@@ -52,6 +53,21 @@ jobs:
           PY
       - name: Check frontend baseline
         run: node tests/test_cohdb_runtime.mjs
+      - name: Smoke-test SQLite import and repeat import
+        run: |
+          python scripts/replay_database.py import --database /tmp/coh3-research.sqlite3 --input data/replays/cohorts/mechanized-1600plus-1v1-2.5.6-2026-10-14 --source-key ci-stronger --source-kind cohort
+          python scripts/replay_database.py import --database /tmp/coh3-research.sqlite3 --input data/replays/cohorts/mechanized-1600plus-1v1-2.5.6-2026-10-14 --source-key ci-stronger --source-kind cohort
+          python scripts/replay_database.py stats --database /tmp/coh3-research.sqlite3 --output-json /tmp/coh3-research-summary.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          counts = json.loads(Path('/tmp/coh3-research-summary.json').read_text())['counts']
+          assert counts['matches'] == 30
+          assert counts['match_players'] == 60
+          assert counts['datasets'] == 30
+          assert counts['sources'] == 1
+          assert counts['verified_player_ratings'] == 60
+          PY
       - name: Smoke-test offline folder import with plain and compressed replays
         run: |
           python - <<'PY'
