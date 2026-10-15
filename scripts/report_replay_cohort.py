@@ -137,7 +137,8 @@ def markdown(report, manifest=None):
     if manifest and manifest.get("import_source") == "local_files":
         stats = manifest["import_counts"]
         lines += [f"Local files: {stats['files']}; imported: {stats['imported']}; outside this scope: {stats['outside_scope']}; "
-                  f"duplicates: {stats['duplicates']}; errors: {stats['errors']}. Stopped: `{manifest['stopped_reason']}`.", ""]
+                  f"unidentified: {stats.get('unidentified', 0)}; duplicates: {stats['duplicates']}; errors: {stats['errors']}. "
+                  f"Stopped: `{manifest['stopped_reason']}`.", ""]
     elif manifest:
         lines += [f"Collection: target {manifest['target']}, attempted downloads {manifest['attempted_downloads']}, "
                   f"listing pages {len(manifest['pages'])}; stopped: `{manifest['stopped_reason']}`.", ""]

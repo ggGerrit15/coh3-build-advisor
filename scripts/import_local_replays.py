@@ -49,11 +49,11 @@ def summary(manifest, datasets):
     scope = manifest["scope"]
     lines = ["# Local replay import", "", "Offline import. Ratings and results are unknown unless supplied in ID-matched metadata.", "",
         f"Analysis scope: {scope['faction']} / {scope['battlegroup']} / {scope['mode']} / patch {scope['patch']}.", "",
-        "Files from other scopes are retained and listed below, but do not enter this scope's comparison reports.", "",
+        "Files from other scopes, or without complete match/player identity, are retained and listed below but do not enter this scope's comparison reports.", "",
         "[First five commands](report-first5.md) · [First eight commands](report.md) · [Verified candidates](candidates.md)", "",
         "| File | Status | Match | Detail |", "| --- | --- | --- | --- |"]
     for record in manifest["records"]:
-        detail = record.get("error") or record.get("duplicate_of") or record.get("dataset") or ""
+        detail = record.get("error") or ", ".join(record.get("identity_exclusions", [])) or record.get("duplicate_of") or record.get("dataset") or ""
         lines.append(f"| {escape(record['local_file'])} | {record['status']} | {record.get('match_id') or 'unknown'} | {escape(detail)} |")
     lines += ["", "## Imported players", "",
         "Issued commands only; default starting units are absent. Statistical eligibility does not guarantee a usable opener window; the comparison reports apply that additional check.", "",
@@ -93,8 +93,8 @@ def import_batch(args):
         "attempted_downloads": 0, "pages": [], "records": [], "collected_players": 0,
         "sampling": "User-supplied local recordings; selection and population coverage unknown",
         "stopped_reason": "importing", "import_counts": {"files": len(files), "imported": 0,
-            "outside_scope": 0, "duplicates": 0, "errors": 0}}
-    datasets, seen_hashes, seen_matches = [], {}, {}
+            "outside_scope": 0, "unidentified": 0, "duplicates": 0, "errors": 0}}
+    datasets, analysis_datasets, seen_hashes, seen_matches = [], [], {}, {}
     interrupted = False
     for path in files:
         record = {"local_file": path.name, "status": "pending", "source_url": None}
@@ -129,14 +129,21 @@ def import_batch(args):
                 write_json(output / name, dataset)
                 if metadata is not None:
                     write_json(output / "metadata" / f"match-{mid}.json", metadata)
-                players = target_players(dataset, scope)
-                record.update(status="collected" if players else "outside_scope", dataset=name,
+                identity_exclusions = (["missing_match_id"] if mid is None else [])
+                if any(p["profile_id"] is None for p in dataset["players"]):
+                    identity_exclusions.append("missing_profile_id")
+                players = [] if identity_exclusions else target_players(dataset, scope)
+                record.update(status="unidentified" if identity_exclusions else "collected" if players else "outside_scope", dataset=name,
+                    identity_exclusions=identity_exclusions,
                     profile_ids=[p["profile_id"] for p in players],
                     eligible_players=sum(p["eligible_for_ranked_statistics"] for p in players))
                 manifest["collected_players"] += len(players)
                 manifest["import_counts"]["imported"] += 1
-                manifest["import_counts"]["outside_scope"] += not bool(players)
+                manifest["import_counts"]["outside_scope"] += record["status"] == "outside_scope"
+                manifest["import_counts"]["unidentified"] += record["status"] == "unidentified"
                 datasets.append(dataset)
+                if record["status"] == "collected":
+                    analysis_datasets.append(dataset)
                 seen_hashes[digest] = name
                 if mid is not None:
                     seen_matches[mid] = (signature, name)
@@ -157,7 +164,7 @@ def import_batch(args):
     write_json(output / "manifest.json", manifest)
     (output / "summary.md").write_text(summary(manifest, datasets), encoding="utf-8")
     for length, stem in ((5, "report-first5"), (8, "report")):
-        report = analyze(datasets, scope, length)
+        report = analyze(analysis_datasets, scope, length)
         report["collection"] = {k: manifest[k] for k in ("import_source", "import_counts", "collected_at", "target", "target_unit", "target_reached", "attempted_downloads", "stopped_reason", "sampling")}
         write_json(output / f"{stem}.json", report)
         (output / f"{stem}.md").write_text(cohort_markdown(report, manifest), encoding="utf-8")

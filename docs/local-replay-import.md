@@ -126,6 +126,9 @@ obtaining verified external ratings/results remains a separate requirement.
 - Separate recordings with the same match ID count once only when their
   normalized player/event/quality evidence agrees. Conflicting recordings
   are reported as errors; the first accepted recording is retained.
+- Games without a match ID or complete player profile IDs are retained for
+  command review with explicit identity exclusions. They do not enter
+  comparison reports or get merged together under an unknown ID.
 - A broken replay or a parser timeout affects only that file. Inputs over
   128 MiB are rejected; the Rust reader also bounds decompression.
 - Ctrl+C preserves completed datasets and writes a partial summary/reports.

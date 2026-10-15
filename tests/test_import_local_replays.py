@@ -160,6 +160,29 @@ class LocalReplayTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 local.discover([nested / "ignore.txt"])
 
+    def test_missing_match_or_player_ids_remain_reviewable_without_false_deduplication(self):
+        for missing in ("match", "profile"):
+            with self.subTest(missing=missing), tempfile.TemporaryDirectory() as folder:
+                args = self.args(folder)
+                (args.inputs[0] / "second.rec").write_bytes(b"second")
+                first, second = copy.deepcopy(self.reader), copy.deepcopy(self.reader)
+                second["match"]["match_id"] += 1
+                second["replay_sha256"] = "different recording"
+                second["players"][0]["actions"][0]["pbgid"] += 1
+                for reader in (first, second):
+                    if missing == "match":
+                        reader["match"]["match_id"] = None
+                    else:
+                        reader["players"][0]["profile_id"] = None
+                with patch.object(local, "read_replay", side_effect=[first, second]):
+                    manifest = local.import_batch(args)
+                self.assertEqual(manifest["import_counts"]["imported"], 2)
+                self.assertEqual(manifest["import_counts"]["unidentified"], 2)
+                self.assertEqual(manifest["import_counts"]["errors"], 0)
+                self.assertTrue(all(r["status"] == "unidentified" for r in manifest["records"]))
+                self.assertEqual(json.loads((args.output_dir / "report.json").read_text())["counts"]["matches"], 0)
+                self.assertEqual(len(list((args.output_dir / "datasets").glob("*.json"))), 2)
+
     def test_existing_output_and_missing_reader_fail_before_import(self):
         with tempfile.TemporaryDirectory() as folder:
             args = self.args(folder)
