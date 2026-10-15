@@ -11,6 +11,7 @@ on:
       - 'scripts/replay_cohort.py'
       - 'scripts/replay_match_type.py'
       - 'scripts/report_replay_cohort.py'
+      - 'scripts/export_replay_candidates.py'
       - 'tests/**'
       - 'data/replays/**'
       - '.github/workflows/replay-pilot.yml'

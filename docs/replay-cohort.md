@@ -207,6 +207,13 @@ collection pilot, not evidence for a "best" build. Battlegroup membership is
 retrospective: some players choose it after already playing their opener.
 Recommendations still need a larger comparable sample and gameplay review.
 
+The next offline step is the [candidate export](replay-candidates.md). It links
+each eligible five-command core to that same match/player's real eight-command
+continuation, shows repeated-player sensitivity, and preserves opponent/rating
+strata. All candidates remain observed-only pending a larger sample and
+gameplay review. The document also records the blocked collection attempt on
+15 October; the original captures are unchanged.
+
 ## Files and verification
 
 The working folder contains `manifest.json`, cached source responses, raw

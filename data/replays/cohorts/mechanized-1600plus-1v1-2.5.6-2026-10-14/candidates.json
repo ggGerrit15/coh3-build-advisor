@@ -1,0 +1,3767 @@
+{
+  "schema_version": "coh3.replay-build-candidates.v1",
+  "generated_at": "2026-10-15T04:28:35.101144+00:00",
+  "scope": {
+    "faction": "Wehrmacht",
+    "battlegroup": "Mechanized",
+    "mode": "1v1",
+    "patch": "2.5.6",
+    "min_player_rating": 1600,
+    "max_player_rating": null,
+    "listing_rating": "min:1600"
+  },
+  "core_length": 5,
+  "followup_length": 8,
+  "max_opener_seconds": 600,
+  "recommendation_status": "observed_only",
+  "frontend_integration": false,
+  "starting_units": null,
+  "timing_semantics": "command_issued; not production completion or arrival",
+  "core_counts": {
+    "matches": 30,
+    "match_players": 30,
+    "unique_players": 13,
+    "duplicates_ignored": 0,
+    "with_result": 30,
+    "with_pre_match_rating": 30,
+    "usable_complete_openers": 30,
+    "ranked_eligible_complete_openers": 30
+  },
+  "followup_counts": {
+    "matches": 30,
+    "match_players": 30,
+    "unique_players": 13,
+    "duplicates_ignored": 0,
+    "with_result": 30,
+    "with_pre_match_rating": 30,
+    "usable_complete_openers": 29,
+    "ranked_eligible_complete_openers": 29
+  },
+  "ranked_exclusion_counts": {},
+  "core_exclusion_counts": {},
+  "followup_exclusion_counts": {
+    "uncertain_opener_command": 1
+  },
+  "populations": [
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1600_1800",
+      "games": 5,
+      "unique_players": 4
+    },
+    {
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1800_plus",
+      "games": 11,
+      "unique_players": 5
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1600_1800",
+      "games": 4,
+      "unique_players": 4
+    },
+    {
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1800_plus",
+      "games": 10,
+      "unique_players": 6
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "fad6ba300aeb7c01",
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1600_1800",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "support": {
+        "games": 3,
+        "unique_players": 2,
+        "population_games": 5,
+        "population_unique_players": 4,
+        "game_frequency": 0.6,
+        "equal_player_frequency": 0.5,
+        "player_contributions": [
+          {
+            "profile_id": 26279,
+            "games": 2
+          },
+          {
+            "profile_id": 911190,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 0.6666666666666666,
+        "without_largest_contributor": {
+          "profile_id": 26279,
+          "games": 1,
+          "unique_players": 1,
+          "population_games": 3,
+          "game_frequency": 0.3333333333333333
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "repeated_player_dependence"
+      ],
+      "match_players": [
+        {
+          "match_id": 88063708,
+          "profile_id": 26279,
+          "source_url": "https://cohdb.com/replays/7251108"
+        },
+        {
+          "match_id": 88064383,
+          "profile_id": 26279,
+          "source_url": "https://cohdb.com/replays/7251261"
+        },
+        {
+          "match_id": 88262633,
+          "profile_id": 911190,
+          "source_url": "https://cohdb.com/replays/7273162"
+        }
+      ],
+      "usable_followup_games": 3,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170303,
+              "name": "Flak 30 Anti-aircraft Gun Team"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170303,
+              "name": "Flak 30 Anti-aircraft Gun Team"
+            }
+          ],
+          "support": {
+            "games": 2,
+            "unique_players": 1,
+            "population_games": 3,
+            "population_unique_players": 2,
+            "game_frequency": 0.6666666666666666,
+            "equal_player_frequency": 0.5,
+            "player_contributions": [
+              {
+                "profile_id": 26279,
+                "games": 2
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 26279,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 1,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88063708,
+              "profile_id": 26279,
+              "source_url": "https://cohdb.com/replays/7251108"
+            },
+            {
+              "match_id": 88064383,
+              "profile_id": 26279,
+              "source_url": "https://cohdb.com/replays/7251261"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137120,
+              "name": "Sniper"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137120,
+              "name": "Sniper"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 3,
+            "population_unique_players": 2,
+            "game_frequency": 0.3333333333333333,
+            "equal_player_frequency": 0.5,
+            "player_contributions": [
+              {
+                "profile_id": 911190,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 911190,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 2,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88262633,
+              "profile_id": 911190,
+              "source_url": "https://cohdb.com/replays/7273162"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "aca86743eeb685e4",
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1600_1800",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "support": {
+        "games": 2,
+        "unique_players": 2,
+        "population_games": 5,
+        "population_unique_players": 4,
+        "game_frequency": 0.4,
+        "equal_player_frequency": 0.5,
+        "player_contributions": [
+          {
+            "profile_id": 66030,
+            "games": 1
+          },
+          {
+            "profile_id": 401110,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 0.5,
+        "without_largest_contributor": {
+          "profile_id": 66030,
+          "games": 1,
+          "unique_players": 1,
+          "population_games": 4,
+          "game_frequency": 0.25
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix"
+      ],
+      "match_players": [
+        {
+          "match_id": 88114615,
+          "profile_id": 66030,
+          "source_url": "https://cohdb.com/replays/7256969"
+        },
+        {
+          "match_id": 88290186,
+          "profile_id": 401110,
+          "source_url": "https://cohdb.com/replays/7275854"
+        }
+      ],
+      "usable_followup_games": 2,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170318,
+              "name": "251 Medium Carrier"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170318,
+              "name": "251 Medium Carrier"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 2,
+            "population_unique_players": 2,
+            "game_frequency": 0.5,
+            "equal_player_frequency": 0.5,
+            "player_contributions": [
+              {
+                "profile_id": 66030,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 66030,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 1,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88114615,
+              "profile_id": 66030,
+              "source_url": "https://cohdb.com/replays/7256969"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 2,
+            "population_unique_players": 2,
+            "game_frequency": 0.5,
+            "equal_player_frequency": 0.5,
+            "player_contributions": [
+              {
+                "profile_id": 401110,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 401110,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 1,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88290186,
+              "profile_id": 401110,
+              "source_url": "https://cohdb.com/replays/7275854"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "2aae03371e5f533b",
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "support": {
+        "games": 5,
+        "unique_players": 2,
+        "population_games": 11,
+        "population_unique_players": 5,
+        "game_frequency": 0.45454545454545453,
+        "equal_player_frequency": 0.3333333333333333,
+        "player_contributions": [
+          {
+            "profile_id": 353207,
+            "games": 4
+          },
+          {
+            "profile_id": 4627,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 0.8,
+        "without_largest_contributor": {
+          "profile_id": 353207,
+          "games": 1,
+          "unique_players": 1,
+          "population_games": 5,
+          "game_frequency": 0.2
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "repeated_player_dependence",
+        "incomplete_or_uncertain_followups"
+      ],
+      "match_players": [
+        {
+          "match_id": 88051798,
+          "profile_id": 4627,
+          "source_url": "https://cohdb.com/replays/7249449"
+        },
+        {
+          "match_id": 88063782,
+          "profile_id": 353207,
+          "source_url": "https://cohdb.com/replays/7251082"
+        },
+        {
+          "match_id": 88064110,
+          "profile_id": 353207,
+          "source_url": "https://cohdb.com/replays/7251262"
+        },
+        {
+          "match_id": 88112320,
+          "profile_id": 353207,
+          "source_url": "https://cohdb.com/replays/7256678"
+        },
+        {
+          "match_id": 88161475,
+          "profile_id": 353207,
+          "source_url": "https://cohdb.com/replays/7262157"
+        }
+      ],
+      "usable_followup_games": 4,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "support": {
+            "games": 2,
+            "unique_players": 1,
+            "population_games": 4,
+            "population_unique_players": 2,
+            "game_frequency": 0.5,
+            "equal_player_frequency": 0.3333333333333333,
+            "player_contributions": [
+              {
+                "profile_id": 353207,
+                "games": 2
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 353207,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 1,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88063782,
+              "profile_id": 353207,
+              "source_url": "https://cohdb.com/replays/7251082"
+            },
+            {
+              "match_id": 88064110,
+              "profile_id": 353207,
+              "source_url": "https://cohdb.com/replays/7251262"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 4,
+            "population_unique_players": 2,
+            "game_frequency": 0.25,
+            "equal_player_frequency": 0.5,
+            "player_contributions": [
+              {
+                "profile_id": 4627,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 4627,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 3,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88051798,
+              "profile_id": 4627,
+              "source_url": "https://cohdb.com/replays/7249449"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 4,
+            "population_unique_players": 2,
+            "game_frequency": 0.25,
+            "equal_player_frequency": 0.16666666666666666,
+            "player_contributions": [
+              {
+                "profile_id": 353207,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 353207,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 1,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88112320,
+              "profile_id": 353207,
+              "source_url": "https://cohdb.com/replays/7256678"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": [
+        {
+          "match_id": 88161475,
+          "profile_id": 353207,
+          "source_url": "https://cohdb.com/replays/7262157",
+          "reasons": [
+            "uncertain_opener_command"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "7ad8f37f35d71997",
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "support": {
+        "games": 2,
+        "unique_players": 1,
+        "population_games": 11,
+        "population_unique_players": 5,
+        "game_frequency": 0.18181818181818182,
+        "equal_player_frequency": 0.06666666666666667,
+        "player_contributions": [
+          {
+            "profile_id": 353207,
+            "games": 2
+          }
+        ],
+        "largest_player_share": 1.0,
+        "without_largest_contributor": {
+          "profile_id": 353207,
+          "games": 0,
+          "unique_players": 0,
+          "population_games": 5,
+          "game_frequency": 0.0
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "single_player_only",
+        "repeated_player_dependence"
+      ],
+      "match_players": [
+        {
+          "match_id": 88159419,
+          "profile_id": 353207,
+          "source_url": "https://cohdb.com/replays/7261823"
+        },
+        {
+          "match_id": 88253306,
+          "profile_id": 353207,
+          "source_url": "https://cohdb.com/replays/7272084"
+        }
+      ],
+      "usable_followup_games": 2,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2140327,
+              "name": "Medical Bunker"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2140327,
+              "name": "Medical Bunker"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 2,
+            "population_unique_players": 1,
+            "game_frequency": 0.5,
+            "equal_player_frequency": 0.5,
+            "player_contributions": [
+              {
+                "profile_id": 353207,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 353207,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88253306,
+              "profile_id": 353207,
+              "source_url": "https://cohdb.com/replays/7272084"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 2,
+            "population_unique_players": 1,
+            "game_frequency": 0.5,
+            "equal_player_frequency": 0.5,
+            "player_contributions": [
+              {
+                "profile_id": 353207,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 353207,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88159419,
+              "profile_id": 353207,
+              "source_url": "https://cohdb.com/replays/7261823"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "d76a10a5383cab92",
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "support": {
+        "games": 1,
+        "unique_players": 1,
+        "population_games": 11,
+        "population_unique_players": 5,
+        "game_frequency": 0.09090909090909091,
+        "equal_player_frequency": 0.2,
+        "player_contributions": [
+          {
+            "profile_id": 154319,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 1.0,
+        "without_largest_contributor": {
+          "profile_id": 154319,
+          "games": 0,
+          "unique_players": 0,
+          "population_games": 10,
+          "game_frequency": 0.0
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "single_player_only"
+      ],
+      "match_players": [
+        {
+          "match_id": 88295400,
+          "profile_id": 154319,
+          "source_url": "https://cohdb.com/replays/7276198"
+        }
+      ],
+      "usable_followup_games": 1,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 1,
+            "population_unique_players": 1,
+            "game_frequency": 1.0,
+            "equal_player_frequency": 1.0,
+            "player_contributions": [
+              {
+                "profile_id": 154319,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 154319,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88295400,
+              "profile_id": 154319,
+              "source_url": "https://cohdb.com/replays/7276198"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "4e15e8c948e8bc8c",
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "support": {
+        "games": 1,
+        "unique_players": 1,
+        "population_games": 11,
+        "population_unique_players": 5,
+        "game_frequency": 0.09090909090909091,
+        "equal_player_frequency": 0.1,
+        "player_contributions": [
+          {
+            "profile_id": 95809,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 1.0,
+        "without_largest_contributor": {
+          "profile_id": 95809,
+          "games": 0,
+          "unique_players": 0,
+          "population_games": 9,
+          "game_frequency": 0.0
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "single_player_only"
+      ],
+      "match_players": [
+        {
+          "match_id": 88030049,
+          "profile_id": 95809,
+          "source_url": "https://cohdb.com/replays/7247136"
+        }
+      ],
+      "usable_followup_games": 1,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 1,
+            "population_unique_players": 1,
+            "game_frequency": 1.0,
+            "equal_player_frequency": 1.0,
+            "player_contributions": [
+              {
+                "profile_id": 95809,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 95809,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88030049,
+              "profile_id": 95809,
+              "source_url": "https://cohdb.com/replays/7247136"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "926a70e407eabef2",
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team"
+        }
+      ],
+      "support": {
+        "games": 1,
+        "unique_players": 1,
+        "population_games": 11,
+        "population_unique_players": 5,
+        "game_frequency": 0.09090909090909091,
+        "equal_player_frequency": 0.1,
+        "player_contributions": [
+          {
+            "profile_id": 95809,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 1.0,
+        "without_largest_contributor": {
+          "profile_id": 95809,
+          "games": 0,
+          "unique_players": 0,
+          "population_games": 9,
+          "game_frequency": 0.0
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "single_player_only"
+      ],
+      "match_players": [
+        {
+          "match_id": 88032636,
+          "profile_id": 95809,
+          "source_url": "https://cohdb.com/replays/7247512"
+        }
+      ],
+      "usable_followup_games": 1,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 168619,
+              "name": "GrW 34 Mortar Team"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 1,
+            "population_unique_players": 1,
+            "game_frequency": 1.0,
+            "equal_player_frequency": 1.0,
+            "player_contributions": [
+              {
+                "profile_id": 95809,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 95809,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88032636,
+              "profile_id": 95809,
+              "source_url": "https://cohdb.com/replays/7247512"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "8d0b2b37da0c10c1",
+      "opponent_factions": [
+        "British"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 168619,
+          "name": "GrW 34 Mortar Team"
+        }
+      ],
+      "support": {
+        "games": 1,
+        "unique_players": 1,
+        "population_games": 11,
+        "population_unique_players": 5,
+        "game_frequency": 0.09090909090909091,
+        "equal_player_frequency": 0.2,
+        "player_contributions": [
+          {
+            "profile_id": 658673,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 1.0,
+        "without_largest_contributor": {
+          "profile_id": 658673,
+          "games": 0,
+          "unique_players": 0,
+          "population_games": 10,
+          "game_frequency": 0.0
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "single_player_only"
+      ],
+      "match_players": [
+        {
+          "match_id": 88209211,
+          "profile_id": 658673,
+          "source_url": "https://cohdb.com/replays/7266932"
+        }
+      ],
+      "usable_followup_games": 1,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 168619,
+              "name": "GrW 34 Mortar Team"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 1,
+            "population_unique_players": 1,
+            "game_frequency": 1.0,
+            "equal_player_frequency": 1.0,
+            "player_contributions": [
+              {
+                "profile_id": 658673,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 658673,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88209211,
+              "profile_id": 658673,
+              "source_url": "https://cohdb.com/replays/7266932"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "e0a689e91230e68d",
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1600_1800",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "support": {
+        "games": 2,
+        "unique_players": 2,
+        "population_games": 4,
+        "population_unique_players": 4,
+        "game_frequency": 0.5,
+        "equal_player_frequency": 0.5,
+        "player_contributions": [
+          {
+            "profile_id": 26279,
+            "games": 1
+          },
+          {
+            "profile_id": 911190,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 0.5,
+        "without_largest_contributor": {
+          "profile_id": 26279,
+          "games": 1,
+          "unique_players": 1,
+          "population_games": 3,
+          "game_frequency": 0.3333333333333333
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix"
+      ],
+      "match_players": [
+        {
+          "match_id": 88070817,
+          "profile_id": 26279,
+          "source_url": "https://cohdb.com/replays/7251842"
+        },
+        {
+          "match_id": 88176973,
+          "profile_id": 911190,
+          "source_url": "https://cohdb.com/replays/7263966"
+        }
+      ],
+      "usable_followup_games": 2,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170303,
+              "name": "Flak 30 Anti-aircraft Gun Team"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170303,
+              "name": "Flak 30 Anti-aircraft Gun Team"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 2,
+            "population_unique_players": 2,
+            "game_frequency": 0.5,
+            "equal_player_frequency": 0.5,
+            "player_contributions": [
+              {
+                "profile_id": 26279,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 26279,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 1,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88070817,
+              "profile_id": 26279,
+              "source_url": "https://cohdb.com/replays/7251842"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 2,
+            "population_unique_players": 2,
+            "game_frequency": 0.5,
+            "equal_player_frequency": 0.5,
+            "player_contributions": [
+              {
+                "profile_id": 911190,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 911190,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 1,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88176973,
+              "profile_id": 911190,
+              "source_url": "https://cohdb.com/replays/7263966"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "756f909be61ae0b5",
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1600_1800",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "support": {
+        "games": 1,
+        "unique_players": 1,
+        "population_games": 4,
+        "population_unique_players": 4,
+        "game_frequency": 0.25,
+        "equal_player_frequency": 0.25,
+        "player_contributions": [
+          {
+            "profile_id": 47812,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 1.0,
+        "without_largest_contributor": {
+          "profile_id": 47812,
+          "games": 0,
+          "unique_players": 0,
+          "population_games": 3,
+          "game_frequency": 0.0
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "single_player_only"
+      ],
+      "match_players": [
+        {
+          "match_id": 88270630,
+          "profile_id": 47812,
+          "source_url": "https://cohdb.com/replays/7273954"
+        }
+      ],
+      "usable_followup_games": 1,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 1,
+            "population_unique_players": 1,
+            "game_frequency": 1.0,
+            "equal_player_frequency": 1.0,
+            "player_contributions": [
+              {
+                "profile_id": 47812,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 47812,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88270630,
+              "profile_id": 47812,
+              "source_url": "https://cohdb.com/replays/7273954"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "2ae77f0c21ff4123",
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1600_1800",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "support": {
+        "games": 1,
+        "unique_players": 1,
+        "population_games": 4,
+        "population_unique_players": 4,
+        "game_frequency": 0.25,
+        "equal_player_frequency": 0.25,
+        "player_contributions": [
+          {
+            "profile_id": 401110,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 1.0,
+        "without_largest_contributor": {
+          "profile_id": 401110,
+          "games": 0,
+          "unique_players": 0,
+          "population_games": 3,
+          "game_frequency": 0.0
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "single_player_only"
+      ],
+      "match_players": [
+        {
+          "match_id": 88075305,
+          "profile_id": 401110,
+          "source_url": "https://cohdb.com/replays/7252323"
+        }
+      ],
+      "usable_followup_games": 1,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 1,
+            "population_unique_players": 1,
+            "game_frequency": 1.0,
+            "equal_player_frequency": 1.0,
+            "player_contributions": [
+              {
+                "profile_id": 401110,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 401110,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88075305,
+              "profile_id": 401110,
+              "source_url": "https://cohdb.com/replays/7252323"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "42d4e546a35b9daa",
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "support": {
+        "games": 5,
+        "unique_players": 3,
+        "population_games": 10,
+        "population_unique_players": 6,
+        "game_frequency": 0.5,
+        "equal_player_frequency": 0.4166666666666667,
+        "player_contributions": [
+          {
+            "profile_id": 4627,
+            "games": 3
+          },
+          {
+            "profile_id": 16432,
+            "games": 1
+          },
+          {
+            "profile_id": 1115048,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 0.6,
+        "without_largest_contributor": {
+          "profile_id": 4627,
+          "games": 2,
+          "unique_players": 2,
+          "population_games": 7,
+          "game_frequency": 0.2857142857142857
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "repeated_player_dependence"
+      ],
+      "match_players": [
+        {
+          "match_id": 88052840,
+          "profile_id": 4627,
+          "source_url": "https://cohdb.com/replays/7249787"
+        },
+        {
+          "match_id": 88056997,
+          "profile_id": 4627,
+          "source_url": "https://cohdb.com/replays/7250298"
+        },
+        {
+          "match_id": 88060572,
+          "profile_id": 4627,
+          "source_url": "https://cohdb.com/replays/7250710"
+        },
+        {
+          "match_id": 88273087,
+          "profile_id": 16432,
+          "source_url": "https://cohdb.com/replays/7274192"
+        },
+        {
+          "match_id": 88314882,
+          "profile_id": 1115048,
+          "source_url": "https://cohdb.com/replays/7278131"
+        }
+      ],
+      "usable_followup_games": 5,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            }
+          ],
+          "support": {
+            "games": 3,
+            "unique_players": 2,
+            "population_games": 5,
+            "population_unique_players": 3,
+            "game_frequency": 0.6,
+            "equal_player_frequency": 0.5555555555555555,
+            "player_contributions": [
+              {
+                "profile_id": 4627,
+                "games": 2
+              },
+              {
+                "profile_id": 1115048,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 0.6666666666666666,
+            "without_largest_contributor": {
+              "profile_id": 4627,
+              "games": 1,
+              "unique_players": 1,
+              "population_games": 2,
+              "game_frequency": 0.5
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88056997,
+              "profile_id": 4627,
+              "source_url": "https://cohdb.com/replays/7250298"
+            },
+            {
+              "match_id": 88060572,
+              "profile_id": 4627,
+              "source_url": "https://cohdb.com/replays/7250710"
+            },
+            {
+              "match_id": 88314882,
+              "profile_id": 1115048,
+              "source_url": "https://cohdb.com/replays/7278131"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 5,
+            "population_unique_players": 3,
+            "game_frequency": 0.2,
+            "equal_player_frequency": 0.1111111111111111,
+            "player_contributions": [
+              {
+                "profile_id": 4627,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 4627,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 2,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88052840,
+              "profile_id": 4627,
+              "source_url": "https://cohdb.com/replays/7249787"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 5,
+            "population_unique_players": 3,
+            "game_frequency": 0.2,
+            "equal_player_frequency": 0.3333333333333333,
+            "player_contributions": [
+              {
+                "profile_id": 16432,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 16432,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 4,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88273087,
+              "profile_id": 16432,
+              "source_url": "https://cohdb.com/replays/7274192"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "ef9bb9ac09f4f045",
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 168613,
+          "name": "Pioneer Squad"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "support": {
+        "games": 3,
+        "unique_players": 3,
+        "population_games": 10,
+        "population_unique_players": 6,
+        "game_frequency": 0.3,
+        "equal_player_frequency": 0.4166666666666667,
+        "player_contributions": [
+          {
+            "profile_id": 16432,
+            "games": 1
+          },
+          {
+            "profile_id": 58719,
+            "games": 1
+          },
+          {
+            "profile_id": 95809,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 0.3333333333333333,
+        "without_largest_contributor": {
+          "profile_id": 16432,
+          "games": 2,
+          "unique_players": 2,
+          "population_games": 8,
+          "game_frequency": 0.25
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix"
+      ],
+      "match_players": [
+        {
+          "match_id": 88027976,
+          "profile_id": 95809,
+          "source_url": "https://cohdb.com/replays/7246867"
+        },
+        {
+          "match_id": 88147020,
+          "profile_id": 58719,
+          "source_url": "https://cohdb.com/replays/7260350"
+        },
+        {
+          "match_id": 88198914,
+          "profile_id": 16432,
+          "source_url": "https://cohdb.com/replays/7266068"
+        }
+      ],
+      "usable_followup_games": 3,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2140327,
+              "name": "Medical Bunker"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2140327,
+              "name": "Medical Bunker"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 3,
+            "population_unique_players": 3,
+            "game_frequency": 0.3333333333333333,
+            "equal_player_frequency": 0.3333333333333333,
+            "player_contributions": [
+              {
+                "profile_id": 58719,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 58719,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 2,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88147020,
+              "profile_id": 58719,
+              "source_url": "https://cohdb.com/replays/7260350"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174545,
+              "name": "Construct Panzergrenadier Kompanie"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 3,
+            "population_unique_players": 3,
+            "game_frequency": 0.3333333333333333,
+            "equal_player_frequency": 0.3333333333333333,
+            "player_contributions": [
+              {
+                "profile_id": 16432,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 16432,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 2,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88198914,
+              "profile_id": 16432,
+              "source_url": "https://cohdb.com/replays/7266068"
+            }
+          ]
+        },
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 168613,
+              "name": "Pioneer Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "research_upgrade",
+              "pbgid": 2081885,
+              "name": "Infanterie Officer Quarters"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 3,
+            "population_unique_players": 3,
+            "game_frequency": 0.3333333333333333,
+            "equal_player_frequency": 0.3333333333333333,
+            "player_contributions": [
+              {
+                "profile_id": 95809,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 95809,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 2,
+              "game_frequency": 0.0
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88027976,
+              "profile_id": 95809,
+              "source_url": "https://cohdb.com/replays/7246867"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "5012ac1980b5d994",
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        }
+      ],
+      "support": {
+        "games": 1,
+        "unique_players": 1,
+        "population_games": 10,
+        "population_unique_players": 6,
+        "game_frequency": 0.1,
+        "equal_player_frequency": 0.08333333333333333,
+        "player_contributions": [
+          {
+            "profile_id": 353207,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 1.0,
+        "without_largest_contributor": {
+          "profile_id": 353207,
+          "games": 0,
+          "unique_players": 0,
+          "population_games": 8,
+          "game_frequency": 0.0
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "single_player_only"
+      ],
+      "match_players": [
+        {
+          "match_id": 88066872,
+          "profile_id": 353207,
+          "source_url": "https://cohdb.com/replays/7251472"
+        }
+      ],
+      "usable_followup_games": 1,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 206397,
+              "name": "Transfer Orders - Jäger Squad"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 206397,
+              "name": "Transfer Orders - Jäger Squad"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 1,
+            "population_unique_players": 1,
+            "game_frequency": 1.0,
+            "equal_player_frequency": 1.0,
+            "player_contributions": [
+              {
+                "profile_id": 353207,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 353207,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88066872,
+              "profile_id": 353207,
+              "source_url": "https://cohdb.com/replays/7251472"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    },
+    {
+      "candidate_id": "42ba73aab8a09ec2",
+      "opponent_factions": [
+        "USF"
+      ],
+      "rating_band": "1800_plus",
+      "map_scope": "all_maps_in_collected_sample",
+      "sequence": [
+        {
+          "kind": "train_unit",
+          "pbgid": 170315,
+          "name": "Kettenkrad Recon Vehicle"
+        },
+        {
+          "kind": "construct_building",
+          "pbgid": 174535,
+          "name": "Construct Infanterie Kompanie"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137122,
+          "name": "Grenadier Squad"
+        },
+        {
+          "kind": "train_unit",
+          "pbgid": 137121,
+          "name": "MG 42 Machine Gun Team"
+        }
+      ],
+      "support": {
+        "games": 1,
+        "unique_players": 1,
+        "population_games": 10,
+        "population_unique_players": 6,
+        "game_frequency": 0.1,
+        "equal_player_frequency": 0.08333333333333333,
+        "player_contributions": [
+          {
+            "profile_id": 353207,
+            "games": 1
+          }
+        ],
+        "largest_player_share": 1.0,
+        "without_largest_contributor": {
+          "profile_id": 353207,
+          "games": 0,
+          "unique_players": 0,
+          "population_games": 8,
+          "game_frequency": 0.0
+        }
+      },
+      "recommendation_status": "observed_only",
+      "evidence_flags": [
+        "gameplay_review_pending",
+        "available_replay_selection",
+        "sparse_exact_prefix",
+        "single_player_only"
+      ],
+      "match_players": [
+        {
+          "match_id": 88068897,
+          "profile_id": 353207,
+          "source_url": "https://cohdb.com/replays/7251758"
+        }
+      ],
+      "usable_followup_games": 1,
+      "followup_denominator": "Only the same core's eligible complete followup windows",
+      "followups": [
+        {
+          "sequence": [
+            {
+              "kind": "train_unit",
+              "pbgid": 170315,
+              "name": "Kettenkrad Recon Vehicle"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174535,
+              "name": "Construct Infanterie Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137122,
+              "name": "Grenadier Squad"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 137121,
+              "name": "MG 42 Machine Gun Team"
+            },
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            }
+          ],
+          "additional_commands": [
+            {
+              "kind": "construct_building",
+              "pbgid": 174539,
+              "name": "Construct Luftwaffe Kompanie"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 170317,
+              "name": "221 Scout Car"
+            },
+            {
+              "kind": "train_unit",
+              "pbgid": 188624,
+              "name": "Jäger Squad"
+            }
+          ],
+          "support": {
+            "games": 1,
+            "unique_players": 1,
+            "population_games": 1,
+            "population_unique_players": 1,
+            "game_frequency": 1.0,
+            "equal_player_frequency": 1.0,
+            "player_contributions": [
+              {
+                "profile_id": 353207,
+                "games": 1
+              }
+            ],
+            "largest_player_share": 1.0,
+            "without_largest_contributor": {
+              "profile_id": 353207,
+              "games": 0,
+              "unique_players": 0,
+              "population_games": 0,
+              "game_frequency": null
+            }
+          },
+          "match_players": [
+            {
+              "match_id": 88068897,
+              "profile_id": 353207,
+              "source_url": "https://cohdb.com/replays/7251758"
+            }
+          ]
+        }
+      ],
+      "excluded_followups": []
+    }
+  ],
+  "limitations": [
+    "Observed issued commands; starting units and unit completion are not inferred.",
+    "Each continuation is an entire observed sequence from the same match/player; no synthetic positional majority.",
+    "Opponent factions, exact core order, player rating bands and collection scope remain separate.",
+    "Equal-player frequency averages each eligible player's within-stratum frequency, including zero uses; it is a sensitivity check, not an adjusted win rate.",
+    "Removing the largest contributor excludes that player's games from both numerator and denominator; ties use the lowest profile ID.",
+    "Continuation frequencies condition on reaching a complete usable window; excluded windows remain visible.",
+    "Frequency and repeated-player sensitivity do not establish strength, tactical triggers or a best build.",
+    "Gameplay review and a larger, more diverse sample are required before recommendations change."
+  ],
+  "provenance": {
+    "manifest_sha256": "e9ae1367fee5e55c7dc6e1727f8824dbbf5c4b0d0b412e24c0084759fd509e55",
+    "datasets": [
+      {
+        "path": "datasets/match-88027976.json",
+        "sha256": "5451fd6ad5e7967306fe371a3c870c81afa06d9ade2168060e6d046b98de0b2a"
+      },
+      {
+        "path": "datasets/match-88030049.json",
+        "sha256": "7a6d571e687afc27ca521a4e4831bc17e2a5f0ba6c453b53fa9d5b95bb0451c3"
+      },
+      {
+        "path": "datasets/match-88032636.json",
+        "sha256": "49abcbd979b18d72d6955ededcbb50d3b35ef092bc63122f5a2b84afa90d01b5"
+      },
+      {
+        "path": "datasets/match-88051798.json",
+        "sha256": "77b17369629e7fd40103c83b99b73d58f7cc5b39d8be0c5653f17d3718aa1dc7"
+      },
+      {
+        "path": "datasets/match-88052840.json",
+        "sha256": "5919ed9108d8c65afb8883a98f0c832b31c54991de217efef1013a0003181ca8"
+      },
+      {
+        "path": "datasets/match-88056997.json",
+        "sha256": "0c31881637f67f545d76432708ffca9b693072bc842ba328861de3c237f6689a"
+      },
+      {
+        "path": "datasets/match-88060572.json",
+        "sha256": "83d6f27290257d4dd3c9ec82cb72c8ec7c1a40f84eb217a725404188dabee259"
+      },
+      {
+        "path": "datasets/match-88063708.json",
+        "sha256": "d558ab1de6588d2eac5b2dab5991e35b609a5c1c0260732e41b1aea79fd0b08f"
+      },
+      {
+        "path": "datasets/match-88063782.json",
+        "sha256": "9c86621bf8629ef9affe81539bd50a5d6ce49faf5533b756fe940448be7d91e7"
+      },
+      {
+        "path": "datasets/match-88064110.json",
+        "sha256": "a62725e862c4d758e3fd6eafbd031f816bdea9eac927d3a5352e32012318e0a4"
+      },
+      {
+        "path": "datasets/match-88064383.json",
+        "sha256": "4f5e8af2b6631dd4988ffa2d438423f9f20b79a015036c5c1fcc86abf502d0b9"
+      },
+      {
+        "path": "datasets/match-88066872.json",
+        "sha256": "bfeba0247ad4a1a4c278fcf4bf52a9ce9469f581c54d9e513cb4bc1127b342f2"
+      },
+      {
+        "path": "datasets/match-88068897.json",
+        "sha256": "5d085a16ace9940ce47d7fa74a6fc35ad08dd6ed5a2e14395cb75d02fdd07b6d"
+      },
+      {
+        "path": "datasets/match-88070817.json",
+        "sha256": "e6e915fde9ed4b187fb608dd9f4fb0a80e377f9cdeba54f8098b4aa135569174"
+      },
+      {
+        "path": "datasets/match-88075305.json",
+        "sha256": "8100009bbd78dbd9df816530ab38f95283f8ed0363d6330af0f1cc83aac490f6"
+      },
+      {
+        "path": "datasets/match-88112320.json",
+        "sha256": "dc9b764bd8a1de27c9bf986e5c484af4b19ecb8fc5746315f83e4525cf5b272e"
+      },
+      {
+        "path": "datasets/match-88114615.json",
+        "sha256": "a229558bc114d616f862840a0a9a5f4bb6983c2c2a55a7328eeb237a3655eed8"
+      },
+      {
+        "path": "datasets/match-88147020.json",
+        "sha256": "f530f525a96708632500277163d9a1d6c43f0121b932a07317c6737f422c9908"
+      },
+      {
+        "path": "datasets/match-88159419.json",
+        "sha256": "00fa328c2062784704c7e356b3df9dc90f640647926fc4a7c5cf61d2f300afdc"
+      },
+      {
+        "path": "datasets/match-88161475.json",
+        "sha256": "8a2597424b8c22147bb91e85e6cc71bdd6403329763d3996a6dc311434bc57a5"
+      },
+      {
+        "path": "datasets/match-88176973.json",
+        "sha256": "eab8a3290727bdbb752ad27d66d8baebaa2a4e5febcecf7305c50b1989f343d2"
+      },
+      {
+        "path": "datasets/match-88198914.json",
+        "sha256": "fa20b09c6374019387c01d0707b8a38f360e42727362ce0c2d3c7da9168cc292"
+      },
+      {
+        "path": "datasets/match-88209211.json",
+        "sha256": "3ec5cbdac44c48e018f4dfea17526540fb6603db597d53dd03acf36edf3f31ad"
+      },
+      {
+        "path": "datasets/match-88253306.json",
+        "sha256": "485b95a3a143ee1607d5493c9561db289940fd9015eea1ac26348911e4ac5499"
+      },
+      {
+        "path": "datasets/match-88262633.json",
+        "sha256": "a54eeeafeff16a843e55324d5a2916f6a288ef21c5cc41f505e3cdcbb2874e52"
+      },
+      {
+        "path": "datasets/match-88270630.json",
+        "sha256": "97f36e28b0de8fa8de1e6590ad756a57ea33cd1c64518f0d00c20db179add69c"
+      },
+      {
+        "path": "datasets/match-88273087.json",
+        "sha256": "22c2034fd153938780d3af277b1494fa970c5ddccbb2c3b4f41198781437c531"
+      },
+      {
+        "path": "datasets/match-88290186.json",
+        "sha256": "30a6930bb4730006c17a653da4e2f7ecfb06e1f04b7549f20c444130a36947c0"
+      },
+      {
+        "path": "datasets/match-88295400.json",
+        "sha256": "a95b24ecc25792f58d913bf4b3907df4b17801adecf1d4cc133d9284ce520f4d"
+      },
+      {
+        "path": "datasets/match-88314882.json",
+        "sha256": "a1ec9eed6db4bfe5bebeae36238cfbe636a4f412c0b6ab70c901467b6cdc75ae"
+      }
+    ],
+    "collected_at": "2026-10-14T16:43:47.810542+00:00",
+    "discovery": {
+      "source": "cohdb",
+      "game_build": 50313,
+      "completed_after": "2026-10-07",
+      "completed_before": "2026-10-14",
+      "metadata_days": [
+        "2026-10-12",
+        "2026-10-11",
+        "2026-10-10",
+        "2026-10-09",
+        "2026-10-08",
+        "2026-10-07"
+      ],
+      "preview_builds": true,
+      "limits": {
+        "max_pages": 80,
+        "max_downloads": 250,
+        "max_previews": 400
+      }
+    },
+    "sampling": "Newest available matches, no outcome filter; convenience sample, not population coverage"
+  }
+}
