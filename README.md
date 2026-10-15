@@ -64,6 +64,27 @@ The frontend separates the recommendation layer from the statistics layer: the S
 
 Rating-band samples are guarded separately: fewer than 30 games remain visible and contribute no ELO bonus. Samples from 30 to 99 games remain visible but are labelled as weak evidence. When a battlegroup is missing one or more of the six Average Rating bands, the combined rate is marked partial and excluded from Advisor Score.
 
+## Replay pilot
+
+An independent replay importer now extracts player-specific production,
+construction, upgrade, and battlegroup commands from `.rec` files. It retains
+cancelled and suspect actions for review, accepts ID-matched match metadata,
+and records the quality checks required before using a game in ranked statistics.
+
+See [the replay pilot guide](docs/replay-pilot.md) for setup and the verified
+single-game capture. The [cohort workflow](docs/replay-cohort.md) adds bounded
+collection, ID-matched CoH3Stats outcomes/pre-match ratings, deduplication, and
+ordered-opener comparison reports. The pilot has no frontend or
+recommendation-scoring integration yet.
+
+The first [Mechanized 1v1 capture](data/replays/cohorts/mechanized-1v1-2.5.6-2026-10-14/report.md)
+contains 30 matches from 23 players. The [match-type investigation](docs/replay-match-type.md)
+resolves the Quick Match/AUTO-flag mismatch using Relic's live ladder maps.
+The separate [1600+ capture](data/replays/cohorts/mechanized-1600plus-1v1-2.5.6-2026-10-14/report.md)
+contains 30 games from 13 players with verified pre-match ELO 1627–2090:
+29 eligible eight-command prefixes and 30 five-command prefixes.
+Outcome groups remain descriptive and too small for a best-build claim.
+
 ## Feedback
 
 Found an incorrect build order, tech requirement or recommendation?

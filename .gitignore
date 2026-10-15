@@ -1,2 +1,8 @@
 __pycache__/
 *.py[cod]
+tools/replay-reader/target/
+work/replays/
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm

@@ -1,0 +1,46 @@
+{
+  "schema_version": "coh3.match-metadata.v1",
+  "match_id": 88198914,
+  "mode": "1v1",
+  "source": {
+    "url": "https://storage.coh3stats.com/matches/matches-1791763200.json",
+    "sha256": "2c691bcd4bc61b89aa3ea48b234b16307e135cad7a6528379898929e7dbf53d2",
+    "name": "CoH3Stats open daily match data",
+    "rating_field": "matchhistorymember.oldrating",
+    "outcome_field": "matchhistoryreportresults.resulttype"
+  },
+  "players": [
+    {
+      "profile_id": 16432,
+      "faction": "Wehrmacht",
+      "result": "loss",
+      "rating_before": 1861,
+      "rating_before_unverified": null,
+      "rating_after": 1847
+    },
+    {
+      "profile_id": 1235648,
+      "faction": "USF",
+      "result": "win",
+      "rating_before": 1884,
+      "rating_before_unverified": null,
+      "rating_after": 1898
+    }
+  ],
+  "classification_reference": {
+    "schema_version": "coh3.relic-reference.v1",
+    "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+    "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+    "captured_at": "2026-10-14T13:39:46.995953+00:00",
+    "applicable_game_builds": [
+      50313
+    ]
+  },
+  "source_record": {
+    "matchtype_id": 20,
+    "description": "AUTOMATCH",
+    "startgametime": 1791801648,
+    "completiontime": 1791802560,
+    "platform": "steam"
+  }
+}

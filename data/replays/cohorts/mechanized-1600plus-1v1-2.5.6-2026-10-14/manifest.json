@@ -1,0 +1,5628 @@
+{
+  "schema_version": "coh3.replay-collection.v1",
+  "collected_at": "2026-10-14T16:43:47.810542+00:00",
+  "scope": {
+    "faction": "Wehrmacht",
+    "battlegroup": "Mechanized",
+    "mode": "1v1",
+    "patch": "2.5.6",
+    "min_player_rating": 1600,
+    "max_player_rating": null,
+    "listing_rating": "min:1600"
+  },
+  "target": 30,
+  "pages": [
+    {
+      "url": "https://cohdb.com/matches?patch=50313&mode=ones&faction=germans&rating=min%3A1600",
+      "sha256": "bd1101c4f21d31fc2125a4497d4155944827609b709530e2e3a4048546f18777",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTE0VDA4OjQ5OjU5LjAwMFoiLDE4MDI5Nzg2XQ",
+      "sha256": "67adbc75e019097454fd4580b9c0ff63a8fc9f740a473efaa880069d7e094a6c",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEzVDIxOjQwOjA3LjAwMFoiLDE4MDE4MjcxXQ",
+      "sha256": "5b10a2ada549cd3ce34ff5f1cfb88f07cc13efbc9de911709116b886acfeca9e",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEzVDE1OjQxOjQ1LjAwMFoiLDE4MDE1NDkzXQ",
+      "sha256": "2a520f4067d526e31ffb9b8edcce691e88583a6d27693bb900a9eb68048432be",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEzVDEyOjMyOjU3LjAwMFoiLDE4MDEzNjYzXQ",
+      "sha256": "2e1c1483257543811162636f073ea426a869ff48e9e2997a44002bb084591603",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEzVDA3OjE0OjIwLjAwMFoiLDE4MDAyNTkzXQ",
+      "sha256": "5c9b4adebb4d4b0b1e9f1c684b5c95f7c83e048691ee30211a5fc1ca2685750b",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEyVDIyOjU5OjQzLjAwMFoiLDE4MDAwNTU5XQ",
+      "sha256": "68bcd00062e15da003a3027d4c6f2e67d7294e8804f6a4affdbae384beba7161",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEyVDE0OjQwOjE4LjAwMFoiLDE3OTk2NTg3XQ",
+      "sha256": "11861b0a4daa09da61ebeb63e8bea7ed66063cbe25e353e0fcb0afbbe8a0feb7",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEyVDExOjAwOjI1LjAwMFoiLDE3OTk0NTU2XQ",
+      "sha256": "0f4d1cf0de96ad8231b6b57bbf84bcd934833cc519d640e673e0a51efb7cf1ec",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEyVDA1OjUxOjQzLjAwMFoiLDE3OTgxNjc4XQ",
+      "sha256": "539a7db061e8445839fcc755e5cdc8086de824726706a005c093c9dc72acd177",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTExVDIxOjQ4OjIzLjAwMFoiLDE3OTc5NjI3XQ",
+      "sha256": "b6926c7ef5108012caee1351295b7ac2c4789c5b45f9f017e8c6a6e0880e5b75",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTExVDE0OjQ0OjIyLjAwMFoiLDE3OTc1Njc0XQ",
+      "sha256": "6a02e24d1fc46ddfea0420bb3a740603289715eaec2dad6d40c060c329c964df",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTExVDEwOjAxOjU2LjAwMFoiLDE3OTcyNTc3XQ",
+      "sha256": "9d6485f756a998ff661c166dab363a229b6c06bfacbca4ebeb0136598f4075aa",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTExVDAwOjQ4OjMxLjAwMFoiLDE3OTU3MzA1XQ",
+      "sha256": "8fd3519735e907f150d7845ef7b52c7d00c1d9538c92e9a6504cbc937d03fbd8",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEwVDIxOjU1OjU3LjAwMFoiLDE3OTU2NDEwXQ",
+      "sha256": "a50e6ad8e1f92cf8f08d1e007d8c9a20a8e5b0b05059842190e94321304547b6",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&rating=min%3A1600&page=WyIyMDI2LTEwLTEwVDE2OjM5OjMyLjAwMFoiLDE3OTUzNzAxXQ",
+      "sha256": "e573c0a33b1a98d8a47410709fc8ac61d7b76311af9c59d4c3c23fa4cedef583",
+      "rows": 20
+    }
+  ],
+  "records": [
+    {
+      "source_url": "https://cohdb.com/replays/7280406",
+      "preview_url": "https://cohdb.com/replays/7280406/builds",
+      "preview_sha256": "1ce4fa077d0eb66191b28ad14a806d1a3578dc8f04a0b0ab745b0debdd1ea705",
+      "preview": {
+        "match_id": 88332909,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "breakthrough"
+          ],
+          "60774": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280342",
+      "download_url": "https://cohdb.com/replays/7280342/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332520
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280011",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        85265,
+        1278841
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7279925",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        26747,
+        144458
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7279666",
+      "preview_url": "https://cohdb.com/replays/7279666/builds",
+      "preview_sha256": "c379463120735480ea0404b3a1b781ca6cc36162f4e4792aaa681ece40096eb1",
+      "preview": {
+        "match_id": 88326784,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "160718": [
+            "specialoperations"
+          ],
+          "353207": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7279680",
+      "preview_url": "https://cohdb.com/replays/7279680/builds",
+      "preview_sha256": "e7bbd1c8f631e7ca48a5761308e37d6d9d70e17c1f2b0fd8bbe3c1ebf72d166e",
+      "preview": {
+        "match_id": 88327876,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1123809
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "26747": [
+            "airborne"
+          ],
+          "1123809": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7279380",
+      "preview_url": "https://cohdb.com/replays/7279380/builds",
+      "preview_sha256": "e860e58843cd625fb849861234ab038c74f4c56dbfb2d9fce7801ff4e093e437",
+      "preview": {
+        "match_id": 88324875,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          149580
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "149580": [
+            "siegebreaker"
+          ],
+          "445142": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7279346",
+      "preview_url": "https://cohdb.com/replays/7279346/builds",
+      "preview_sha256": "f4cd2da3889632e71967ea7242185bb944415adb49294d5c468e2cbba599f78e",
+      "preview": {
+        "match_id": 88323552,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "353207": [
+            "luftwaffe"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7279233",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        1707,
+        361994
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7279185",
+      "preview_url": "https://cohdb.com/replays/7279185/builds",
+      "preview_sha256": "129d230542d56d71734308d44404796ee007bfa23265a3036810f42f0fb803ae",
+      "preview": {
+        "match_id": 88323360,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          399137
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "italiancoastal"
+          ],
+          "445142": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7278903",
+      "preview_url": "https://cohdb.com/replays/7278903/builds",
+      "preview_sha256": "9cf60ac5c5db4bf56e0ba159d225329260e055724e68fcea2cb7d98d12400f5c",
+      "preview": {
+        "match_id": 88320181,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          149580
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "149580": [
+            "siegebreaker"
+          ],
+          "160718": [
+            "indianartillery"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7278896",
+      "preview_url": "https://cohdb.com/replays/7278896/builds",
+      "preview_sha256": "ad9fbcdd34b3017e8327c02b97db7eeef9eb1bf4d9258a592421d0068baf87ab",
+      "preview": {
+        "match_id": 88320328,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          399137
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "italiancoastal"
+          ],
+          "1278841": [
+            "specialservice"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7278647",
+      "preview_url": "https://cohdb.com/replays/7278647/builds",
+      "preview_sha256": "39ec12be7ad99b2c2e07df05351a751a9659e07d08c229e540c34eaed2481a73",
+      "preview": {
+        "match_id": 88318730,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          399137
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "160718": [
+            "indianartillery"
+          ],
+          "399137": [
+            "italiancoastal"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7278554",
+      "preview_url": "https://cohdb.com/replays/7278554/builds",
+      "preview_sha256": "778fa9627ffd262d6a40eda0ae60755941f617f94a9d7603037b920c3d9852f3",
+      "preview": {
+        "match_id": 88317178,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          58719
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "58719": [
+            "breakthrough"
+          ],
+          "1278841": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7278311",
+      "preview_url": "https://cohdb.com/replays/7278311/builds",
+      "preview_sha256": "b12f639fc3f2ff820815eb5cd8a742f8b8b3e795bdeafbcb69d93c3fc66cec7b",
+      "preview": {
+        "match_id": 88315429,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "16432": [
+            "luftwaffe"
+          ],
+          "64263": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7278131",
+      "download_url": "https://cohdb.com/replays/7278131/file?inflate=true",
+      "status": "collected",
+      "match_id": 88314882,
+      "dataset": "datasets/match-88314882.json",
+      "profile_ids": [
+        1115048
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7278131/builds",
+      "preview_sha256": "95b60f0a02799b6bf1b4f618056cc5db0c43bac56a8a2390e8dc89f462037651",
+      "preview": {
+        "match_id": 88314882,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1115048
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "1115048": [
+            "mechanized"
+          ],
+          "1235648": [
+            "airborne"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277907",
+      "preview_url": "https://cohdb.com/replays/7277907/builds",
+      "preview_sha256": "f9f28c8d280e3ac5d1e7f6704dd00d57ecea86199adc0c580ac13b615843b886",
+      "preview": {
+        "match_id": 88311583,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "11441": [
+            "heavyweapons"
+          ],
+          "16432": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277901",
+      "preview_url": "https://cohdb.com/replays/7277901/builds",
+      "preview_sha256": "ef89414c7ffcdb429850ddab3ca58b20fc3cc57336b2589d51b2e57a91877e4b",
+      "preview": {
+        "match_id": 88312611,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          125322
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "125322": [
+            "terror"
+          ],
+          "1235648": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277835",
+      "preview_url": "https://cohdb.com/replays/7277835/builds",
+      "preview_sha256": "abc3217a49c53dd39b92844247bd7c46635f2e71265715330194de5b5a5897c9",
+      "preview": {
+        "match_id": 88310418,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          399137
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "laststand"
+          ],
+          "806123": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277797",
+      "preview_url": "https://cohdb.com/replays/7277797/builds",
+      "preview_sha256": "6e7e0d0bab3dbd6cf8863033fa1a915022e302760ae27f72cd14c014d3d38bda",
+      "preview": {
+        "match_id": 88310966,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          125322
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "125322": [
+            "terror"
+          ],
+          "908788": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277735",
+      "preview_url": "https://cohdb.com/replays/7277735/builds",
+      "preview_sha256": "8e52ba9630301ab966a7fce981ad5037a2a446e40daf9df7cdc7fe71a963ccf4",
+      "preview": {
+        "match_id": 88310181,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "401110": [],
+          "1235648": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277627",
+      "preview_url": "https://cohdb.com/replays/7277627/builds",
+      "preview_sha256": "9bd8bab52c50b6f2f739f1ce065c4c8b398878f3c479d17ba5af0843f58d8471",
+      "preview": {
+        "match_id": 88309593,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "16432": [
+            "luftwaffe"
+          ],
+          "149580": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277506",
+      "download_url": "https://cohdb.com/replays/7277506/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88309390
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277457",
+      "preview_url": "https://cohdb.com/replays/7277457/builds",
+      "preview_sha256": "18d11c67540bab5fc364c0fde389f82e6eb7cbf5a98985459b1716a7720c4bbd",
+      "preview": {
+        "match_id": 88308475,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "16432": [
+            "luftwaffe"
+          ],
+          "908788": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277368",
+      "preview_url": "https://cohdb.com/replays/7277368/builds",
+      "preview_sha256": "9cc617efb047dd14ca9e8026150cd1b036009bad9d8246e33bf76779f3a28f7f",
+      "preview": {
+        "match_id": 88308102,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          776937
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "776937": [
+            "terror"
+          ],
+          "1235648": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277294",
+      "preview_url": "https://cohdb.com/replays/7277294/builds",
+      "preview_sha256": "c3b729d25bd8b7ffa98b5818fa501c46791385d6992a3524cb0a44cfebf29542",
+      "preview": {
+        "match_id": 88306703,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "16432": [
+            "breakthrough"
+          ],
+          "908788": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277178",
+      "preview_url": "https://cohdb.com/replays/7277178/builds",
+      "preview_sha256": "6a9b1ef5da023a32dc082b113b1a59e9f8dabcac191ed78f7275b751c987de1a",
+      "preview": {
+        "match_id": 88304936,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          149580
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "149580": [
+            "siegebreaker"
+          ],
+          "273778": [
+            "freefrench"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7277041",
+      "preview_url": "https://cohdb.com/replays/7277041/builds",
+      "preview_sha256": "4e2b3a106291415189d99c1c57bf41351edeea0b887045e31aebcf872e0d03eb",
+      "preview": {
+        "match_id": 88304437,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "908788": [
+            "specialoperations"
+          ],
+          "1235648": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7276905",
+      "preview_url": "https://cohdb.com/replays/7276905/builds",
+      "preview_sha256": "8761e919237eceab6175285d6fe51575d21f9f9d08cf30309aa2fdfe8d59fbc3",
+      "preview": {
+        "match_id": 88302132,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          149580
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "149580": [
+            "siegebreaker"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7276903",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        141367,
+        255540
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7276887",
+      "preview_url": "https://cohdb.com/replays/7276887/builds",
+      "preview_sha256": "e1bf032757782730b09001c31bfab8e20f06db6f5cc56b6e4c9bfbdae1840eed",
+      "preview": {
+        "match_id": 88302903,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "445142": [
+            "specialoperations"
+          ],
+          "1235648": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7276813",
+      "download_url": "https://cohdb.com/replays/7276813/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88301227
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7276623",
+      "preview_url": "https://cohdb.com/replays/7276623/builds",
+      "preview_sha256": "aedd6157b13b1f6b77637181af6e0f2926b30dec80d9efa2a3b808a19fa33f80",
+      "preview": {
+        "match_id": 88297550,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "luftwaffe"
+          ],
+          "1123809": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7276284",
+      "preview_url": "https://cohdb.com/replays/7276284/builds",
+      "preview_sha256": "298dd2fbaf4c7500dc91072339601181378016567397117a5eab38c3abdd6098",
+      "preview": {
+        "match_id": 88295512,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          399137
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "siegebreaker"
+          ],
+          "908788": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7276198",
+      "download_url": "https://cohdb.com/replays/7276198/file?inflate=true",
+      "status": "collected",
+      "match_id": 88295400,
+      "dataset": "datasets/match-88295400.json",
+      "profile_ids": [
+        154319
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7276198/builds",
+      "preview_sha256": "186e252af008d53278e41bc6201cceeb44881f28fb6089e9a70e3fff64936faa",
+      "preview": {
+        "match_id": 88295400,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "154319": [
+            "mechanized"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7276088",
+      "preview_url": "https://cohdb.com/replays/7276088/builds",
+      "preview_sha256": "58e3ad2d4f15a7397120fe657ab2eb669824d4f2c017ffb17eb344e4267668ea",
+      "preview": {
+        "match_id": 88293684,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "316520": [
+            "specialservice"
+          ],
+          "1235648": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7276053",
+      "preview_url": "https://cohdb.com/replays/7276053/builds",
+      "preview_sha256": "66e47779bf892fe7589481f44847cdd50679612d1b54b2a94c3c4e3e1bd61387",
+      "preview": {
+        "match_id": 88293300,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          399137
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "siegebreaker"
+          ],
+          "908788": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275999",
+      "download_url": "https://cohdb.com/replays/7275999/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88293996
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275866",
+      "preview_url": "https://cohdb.com/replays/7275866/builds",
+      "preview_sha256": "5b6de8bca6b569cfa5992d8619b1e32cb3f0bfd1f2c9c58b682bd626e63aa7d1",
+      "preview": {
+        "match_id": 88292117,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "123509": [
+            "specialoperations"
+          ],
+          "1235648": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275854",
+      "download_url": "https://cohdb.com/replays/7275854/file?inflate=true",
+      "status": "collected",
+      "match_id": 88290186,
+      "dataset": "datasets/match-88290186.json",
+      "profile_ids": [
+        401110
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7275854/builds",
+      "preview_sha256": "12f05506b3b4d100212b5a6a1e818157c97d995bed3875c61f347dbe9ca032de",
+      "preview": {
+        "match_id": 88290186,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": false,
+        "target_profile_ids": [
+          401110
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "399137": [
+            "canadianshock",
+            "mechanized"
+          ],
+          "401110": []
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275791",
+      "preview_url": "https://cohdb.com/replays/7275791/builds",
+      "preview_sha256": "8c5ead5136b61f20090ba80ba1ca2294c524d019b2342596b60238a8d4235d93",
+      "preview": {
+        "match_id": 88290485,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          55306
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "55306": [
+            "italiancoastal"
+          ],
+          "908788": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275828",
+      "download_url": "https://cohdb.com/replays/7275828/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88291472
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275636",
+      "preview_url": "https://cohdb.com/replays/7275636/builds",
+      "preview_sha256": "57d391202444be39b87a0deb726539b9c1c3934c50d435d9f7715aa41c413140",
+      "preview": {
+        "match_id": 88289030,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "1123809": [
+            "heavyarmor"
+          ],
+          "1235648": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275591",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        14019,
+        55306
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275497",
+      "preview_url": "https://cohdb.com/replays/7275497/builds",
+      "preview_sha256": "6cbf2ee378d2808fab49e4791b63a8a3051709f83f189ab83f89423305f69aae",
+      "preview": {
+        "match_id": 88287638,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "luftwaffe"
+          ],
+          "445142": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275397",
+      "preview_url": "https://cohdb.com/replays/7275397/builds",
+      "preview_sha256": "6ab6cc4181233d7dec6e14bd10014ad627340abb81d6256083c083a2f4dfb4e9",
+      "preview": {
+        "match_id": 88286136,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          66030
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "16432": [
+            "specialoperations"
+          ],
+          "66030": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7275256",
+      "preview_url": "https://cohdb.com/replays/7275256/builds",
+      "preview_sha256": "bd0cfc177fe9eb48bdcb11ba67bfc1b2ada414993847b64b2a6dc64417a939b3",
+      "preview": {
+        "match_id": 88285252,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          66030
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "16432": [
+            "specialoperations"
+          ],
+          "66030": [
+            "terror"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274633",
+      "preview_url": "https://cohdb.com/replays/7274633/builds",
+      "preview_sha256": "bd0457c910c65b7ddddddf35dd1c4dec70f13a2e24479e6a779d6023bf7286ec",
+      "preview": {
+        "match_id": 88278145,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1929
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "1929": [
+            "luftwaffe"
+          ],
+          "896750": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274618",
+      "preview_url": "https://cohdb.com/replays/7274618/builds",
+      "preview_sha256": "c690c59aefc4e921ff189b81127ad2b2da469ec4b9b5cc1a19be91c6b66e2ec0",
+      "preview": {
+        "match_id": 88277482,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          742942
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "273778": [
+            "freefrench"
+          ],
+          "742942": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274531",
+      "preview_url": "https://cohdb.com/replays/7274531/builds",
+      "preview_sha256": "977e6c0a4a1af6ca786d575ede39703027b0e18a1bfebc2da670c6f662f7e398",
+      "preview": {
+        "match_id": 88277003,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          896750
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "896750": [
+            "siegebreaker"
+          ],
+          "917165": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274527",
+      "preview_url": "https://cohdb.com/replays/7274527/builds",
+      "preview_sha256": "e25e8ba8e97b31ee045d7ecf9a6b0b07b01da2e51b839463b701a86acded09d1",
+      "preview": {
+        "match_id": 88277275,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": false,
+        "target_profile_ids": [
+          27767
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "27767": [],
+          "273778": [
+            "freefrench"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274448",
+      "preview_url": "https://cohdb.com/replays/7274448/builds",
+      "preview_sha256": "88dc8f511a3ee08f813f4bcc4b628ddc7ad8a1893b90810f7d3b4be47de376f8",
+      "preview": {
+        "match_id": 88275443,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          123509
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "123509": [
+            "breakthrough"
+          ],
+          "742942": [
+            "australiandefense"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274447",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        47343,
+        445142
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274439",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        969681,
+        1137095
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274418",
+      "preview_url": "https://cohdb.com/replays/7274418/builds",
+      "preview_sha256": "cce8b8e3b30d097b3ddaf0ebed8208d319788374e9b9182ec0044aab1d1f0def",
+      "preview": {
+        "match_id": 88275888,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          896750
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "273778": [
+            "freefrench"
+          ],
+          "896750": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274554",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        1233645,
+        1410803
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274347",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        445142,
+        791716
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274318",
+      "download_url": "https://cohdb.com/replays/7274318/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88275130
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274192",
+      "download_url": "https://cohdb.com/replays/7274192/file?inflate=true",
+      "status": "collected",
+      "match_id": 88273087,
+      "dataset": "datasets/match-88273087.json",
+      "profile_ids": [
+        16432
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7274192/builds",
+      "preview_sha256": "2e68f1f0c3b51773d0726a41b874e83dea467cddeea14f2b15042828e25ff9a9",
+      "preview": {
+        "match_id": 88273087,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "16432": [
+            "mechanized"
+          ],
+          "1105572": [
+            "armored"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274125",
+      "download_url": "https://cohdb.com/replays/7274125/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88273548
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7274057",
+      "preview_url": "https://cohdb.com/replays/7274057/builds",
+      "preview_sha256": "ab84daa4965b053779762a9471a5ac44f82b74f82eaeedfed2dee2c31380c7fe",
+      "preview": {
+        "match_id": 88272012,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          141367
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "52453": [],
+          "141367": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273954",
+      "download_url": "https://cohdb.com/replays/7273954/file?inflate=true",
+      "status": "collected",
+      "match_id": 88270630,
+      "dataset": "datasets/match-88270630.json",
+      "profile_ids": [
+        47812
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7273954/builds",
+      "preview_sha256": "aa343adbb7e006dfab3218876ebe89170220b88e5cf845adc3a98022a0058850",
+      "preview": {
+        "match_id": 88270630,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          47812
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "47812": [
+            "mechanized"
+          ],
+          "445142": [
+            "specialoperations"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273938",
+      "preview_url": "https://cohdb.com/replays/7273938/builds",
+      "preview_sha256": "d47448e93ca1be6ddf9385f31521bef05afdd0c4df8288b33ddee2d83349ff1e",
+      "preview": {
+        "match_id": 88271583,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": false,
+        "target_profile_ids": [
+          55306
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "52453": [],
+          "55306": []
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273909",
+      "preview_url": "https://cohdb.com/replays/7273909/builds",
+      "preview_sha256": "27cac5e84fa9c213dfce512ab45cbe7312e90882a1f5913e7d7cf36742c528df",
+      "preview": {
+        "match_id": 88270720,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          791716
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "791716": [
+            "mechanized"
+          ],
+          "911190": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273802",
+      "preview_url": "https://cohdb.com/replays/7273802/builds",
+      "preview_sha256": "2ec0c884b46fbcbf7212696815857e45d087e309245be8f06e7ce16444e66935",
+      "preview": {
+        "match_id": 88269317,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          47812
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "40966": [
+            "airborne"
+          ],
+          "47812": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273580",
+      "preview_url": "https://cohdb.com/replays/7273580/builds",
+      "preview_sha256": "7291dec9b6f98e53b5dc33cbc0ee48c64f9b854273097bb904a4fcfd0cfbc84b",
+      "preview": {
+        "match_id": 88267356,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          125322
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "125322": [
+            "terror"
+          ],
+          "911190": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273561",
+      "preview_url": "https://cohdb.com/replays/7273561/builds",
+      "preview_sha256": "5517e179a514e59f710c931ec538f896cd026e79cc3cc63a8e35c3586043a2a8",
+      "preview": {
+        "match_id": 88267016,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          149580
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "52453": [],
+          "149580": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273524",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        55306,
+        445142
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273544",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        470136,
+        1321286
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273455",
+      "preview_url": "https://cohdb.com/replays/7273455/builds",
+      "preview_sha256": "6cf1ecca5c4a64a4cc38d9e7792092ec875bc95fac888481672d60cfbf4578f3",
+      "preview": {
+        "match_id": 88265896,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          149580
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "149580": [
+            "luftwaffe"
+          ],
+          "917165": [
+            "canadianshock"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273372",
+      "preview_url": "https://cohdb.com/replays/7273372/builds",
+      "preview_sha256": "37ff9d5c804d75b66c33425768cad2715ee5b5a414506b42087ab56f52c1dd18",
+      "preview": {
+        "match_id": 88265835,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": false,
+        "target_profile_ids": [
+          285680
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "52453": [],
+          "285680": []
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273305",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        1321286,
+        1373285
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273280",
+      "preview_url": "https://cohdb.com/replays/7273280/builds",
+      "preview_sha256": "29f83f609d3b94d0c6ccd0ea4c96ca962a14fbdc11f0c7a6e55d1c5a1a641a3c",
+      "preview": {
+        "match_id": 88264980,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          356447
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "149580": [
+            "specialoperations"
+          ],
+          "356447": [
+            "mechanized"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273251",
+      "preview_url": "https://cohdb.com/replays/7273251/builds",
+      "preview_sha256": "f3be89986e55cc3f39464cbce46170f264085163564f6ab85edf5ab2c6a0b37c",
+      "preview": {
+        "match_id": 88264545,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          356447
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "149580": [
+            "freefrench"
+          ],
+          "356447": [
+            "mechanized"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273182",
+      "preview_url": "https://cohdb.com/replays/7273182/builds",
+      "preview_sha256": "15c4c9471957b6af51ac9b2cf8e896962a04f1b13956c2db9b132a97dddc0f50",
+      "preview": {
+        "match_id": 88263463,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "luftwaffe"
+          ],
+          "46139": [
+            "freefrench"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7273162",
+      "download_url": "https://cohdb.com/replays/7273162/file?inflate=true",
+      "status": "collected",
+      "match_id": 88262633,
+      "dataset": "datasets/match-88262633.json",
+      "profile_ids": [
+        911190
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7273162/builds",
+      "preview_sha256": "892565804fb419c13de852ef8acb6b2334110602fc6a1d6ae2aeceac2d00d97c",
+      "preview": {
+        "match_id": 88262633,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          911190
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "399137": [
+            "canadianshock"
+          ],
+          "911190": [
+            "mechanized"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7272870",
+      "preview_url": "https://cohdb.com/replays/7272870/builds",
+      "preview_sha256": "a20049d1a99aaa4c8b562bd9110769733c269953f8715c6142f7c40834eb1507",
+      "preview": {
+        "match_id": 88260330,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          47812
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "47812": [
+            "luftwaffe"
+          ],
+          "399137": [
+            "canadianshock"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7272835",
+      "preview_url": "https://cohdb.com/replays/7272835/builds",
+      "preview_sha256": "06cec0a79109a19e297990e1fe2daca1486ecee81a07371b5e9062482c8a9e66",
+      "preview": {
+        "match_id": 88260527,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "breakthrough"
+          ],
+          "1349113": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7272689",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        26747,
+        149264
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7272565",
+      "preview_url": "https://cohdb.com/replays/7272565/builds",
+      "preview_sha256": "7a02ea80202eb3eefdd610048292c55a1ff832b07dad21782c5cc8a037da3249",
+      "preview": {
+        "match_id": 88257808,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1123809
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "26747": [
+            "heavyarmor"
+          ],
+          "1123809": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7272084",
+      "download_url": "https://cohdb.com/replays/7272084/file?inflate=true",
+      "status": "collected",
+      "match_id": 88253306,
+      "dataset": "datasets/match-88253306.json",
+      "profile_ids": [
+        353207
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7272084/builds",
+      "preview_sha256": "807ffd321a9716107a758e2939f8007e76305bf4c3335c6b2876a6e825856dcb",
+      "preview": {
+        "match_id": 88253306,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "5292": [
+            "polishcavalry"
+          ],
+          "353207": [
+            "mechanized"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7271985",
+      "download_url": "https://cohdb.com/replays/7271985/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88252980
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7271910",
+      "preview_url": "https://cohdb.com/replays/7271910/builds",
+      "preview_sha256": "ed49473af584d61128f864ca1d94f3cc6b2afe8179609c5f7dacb37988e921e7",
+      "preview": {
+        "match_id": 88251391,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5292
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5292": [
+            "siegebreaker"
+          ],
+          "1321110": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7271827",
+      "preview_url": "https://cohdb.com/replays/7271827/builds",
+      "preview_sha256": "0c3bffc5a5db1139f5af9b39023b38dfb3ccfd0ea6217dc2159d17d3cbd9b56d",
+      "preview": {
+        "match_id": 88251600,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          149264
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "149264": [
+            "laststand"
+          ],
+          "658673": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7271812",
+      "preview_url": "https://cohdb.com/replays/7271812/builds",
+      "preview_sha256": "9edf9afdfaffe44d5e78889001d2fd8bb602ccb271a02a64eebb8879b354000a",
+      "preview": {
+        "match_id": 88251188,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "353207": [
+            "luftwaffe"
+          ],
+          "917165": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7271733",
+      "preview_url": "https://cohdb.com/replays/7271733/builds",
+      "preview_sha256": "f7dd54ba0b3fc93ff6adf71b00fd5c9678f8165f048efccda9742367f6d528c8",
+      "preview": {
+        "match_id": 88250924,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          21048
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "21048": [
+            "laststand"
+          ],
+          "1321110": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7271617",
+      "preview_url": "https://cohdb.com/replays/7271617/builds",
+      "preview_sha256": "1f3131982f3dab14154886ef83fec50c3af712de0f4e848efaa43e1572a0a767",
+      "preview": {
+        "match_id": 88250406,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": false,
+        "target_profile_ids": [
+          132465
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "132465": [],
+          "1235648": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7271568",
+      "preview_url": "https://cohdb.com/replays/7271568/builds",
+      "preview_sha256": "9ea9815c4592b395c5685c62582b003fe7b860b389aadaa5e10dc75e06a8bb7f",
+      "preview": {
+        "match_id": 88249917,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5292
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5292": [
+            "siegebreaker"
+          ],
+          "353207": [
+            "specialservice"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7271003",
+      "preview_url": "https://cohdb.com/replays/7271003/builds",
+      "preview_sha256": "f55ab070354221300d6ddaa51351fb1d5b52a7336642b5cda087a74787903d40",
+      "preview": {
+        "match_id": 88244760,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          399137
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "laststand"
+          ],
+          "1321110": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7270503",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        215147,
+        1105572
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7270016",
+      "preview_url": "https://cohdb.com/replays/7270016/builds",
+      "preview_sha256": "771bdb21eb9e5ff0447de354f8c76b884afe6bac54e45de92ed1d2048947b014",
+      "preview": {
+        "match_id": 88237615,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          215147
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "215147": [
+            "terror"
+          ],
+          "399137": [
+            "canadianshock"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7269823",
+      "preview_url": "https://cohdb.com/replays/7269823/builds",
+      "preview_sha256": "26d83b092bcd76c53ab72e781386bdbb23972d4fd30aa605b64ed6510464f468",
+      "preview": {
+        "match_id": 88235589,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          58719
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "58719": [
+            "luftwaffe"
+          ],
+          "63142": [
+            "airandsea"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7269512",
+      "preview_url": "https://cohdb.com/replays/7269512/builds",
+      "preview_sha256": "31babb4c1a269c71898e97f7f6ad3f2e4492fc7fa5927b737b77c09d390d4f0d",
+      "preview": {
+        "match_id": 88233045,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5292
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5292": [
+            "siegebreaker"
+          ],
+          "446929": [
+            "canadianshock"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7269233",
+      "preview_url": "https://cohdb.com/replays/7269233/builds",
+      "preview_sha256": "fbc92552eed948cb64e8c643712adb6819e8dc4b8aede6cb5302e7dc72576548",
+      "preview": {
+        "match_id": 88229904,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "255540": [
+            "armored"
+          ],
+          "908788": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7269185",
+      "preview_url": "https://cohdb.com/replays/7269185/builds",
+      "preview_sha256": "d9114d0b17517e91e41303d17e28dabdc57f85fc4d63cfc529ef4613849ee144",
+      "preview": {
+        "match_id": 88231213,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5292
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5292": [
+            "siegebreaker"
+          ],
+          "63142": [
+            "airandsea"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7269126",
+      "preview_url": "https://cohdb.com/replays/7269126/builds",
+      "preview_sha256": "4261809e1782e844e6b4f1754ad3bb884f572a022dd8efb1917b819d1b484fa7",
+      "preview": {
+        "match_id": 88229185,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "luftwaffe"
+          ],
+          "658673": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7268929",
+      "preview_url": "https://cohdb.com/replays/7268929/builds",
+      "preview_sha256": "ee8b1e5b604322c29ff6aa583d62d06713042c9f9b22e77e391364cd3b66248e",
+      "preview": {
+        "match_id": 88228165,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5292
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5292": [
+            "siegebreaker"
+          ],
+          "45203": [
+            "polishcavalry"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7268900",
+      "preview_url": "https://cohdb.com/replays/7268900/builds",
+      "preview_sha256": "66c33fa6bd14b0cc800dfa141bf31ba0ae33028f3294139811419a5245218af1",
+      "preview": {
+        "match_id": 88226637,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "255540": [
+            "armored"
+          ],
+          "908788": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7268681",
+      "preview_url": "https://cohdb.com/replays/7268681/builds",
+      "preview_sha256": "f5fe4a54277c9319d23fd77e4cfc1541ecae5a1d705e3c4ec6d0f49b3a6b6efe",
+      "preview": {
+        "match_id": 88223080,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "breakthrough"
+          ],
+          "149580": [
+            "armored"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7268429",
+      "preview_url": "https://cohdb.com/replays/7268429/builds",
+      "preview_sha256": "d831009736332de8aedb268ab08282a4c0a154e487ceaceb885e7ab92b9f7226",
+      "preview": {
+        "match_id": 88223441,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "908788": [
+            "luftwaffe"
+          ],
+          "1105572": [
+            "armored"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7268247",
+      "preview_url": "https://cohdb.com/replays/7268247/builds",
+      "preview_sha256": "7c70276df5ff582df45c2aab422939929b5671ff663cada4b789615db5221eb4",
+      "preview": {
+        "match_id": 88220535,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "luftwaffe"
+          ],
+          "1105572": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7268087",
+      "preview_url": "https://cohdb.com/replays/7268087/builds",
+      "preview_sha256": "e5a25f7c0040668385a43f1d32d88e2f562777086277159ce1d31655c61a6bd1",
+      "preview": {
+        "match_id": 88218764,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          66030
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "66030": [
+            "breakthrough"
+          ],
+          "255540": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267946",
+      "preview_url": "https://cohdb.com/replays/7267946/builds",
+      "preview_sha256": "5bca1986d94402d06b9b3bea8c34db9c85b3903e1707c2b01f9d111691c2466e",
+      "preview": {
+        "match_id": 88219611,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "69423": [
+            "airandsea"
+          ],
+          "154319": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267780",
+      "preview_url": "https://cohdb.com/replays/7267780/builds",
+      "preview_sha256": "5a32badc937128635aa40b3b87086405e29fb1bbe02fefeb058541dbd817cdde",
+      "preview": {
+        "match_id": 88217400,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "luftwaffe"
+          ],
+          "255540": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267631",
+      "preview_url": "https://cohdb.com/replays/7267631/builds",
+      "preview_sha256": "837118addb88c2b5bc57b63df3013b31d6bb667fa8cfbece78f42a8d04154ba9",
+      "preview": {
+        "match_id": 88214853,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "908788": [
+            "breakthrough"
+          ],
+          "1105572": [
+            "armored"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267594",
+      "preview_url": "https://cohdb.com/replays/7267594/builds",
+      "preview_sha256": "c7defec4bdf8cc4087409225862049ba81c7bce7787d407877d8e2aa4643b79a",
+      "preview": {
+        "match_id": 88214017,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "luftwaffe"
+          ],
+          "255540": [
+            "armored"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267560",
+      "preview_url": "https://cohdb.com/replays/7267560/builds",
+      "preview_sha256": "2f3a34bbfa35f24ca79801f843fa55c001764530cb9228d9b9bfc38f0e577772",
+      "preview": {
+        "match_id": 88214949,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          929115
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "47812": [
+            "airborne"
+          ],
+          "929115": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267378",
+      "download_url": "https://cohdb.com/replays/7267378/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88210999
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267372",
+      "preview_url": "https://cohdb.com/replays/7267372/builds",
+      "preview_sha256": "f8391ad00066a21ad0ebdbafbb5ff4f769f8b95afb81ce0dc1ee75bb7027c7a2",
+      "preview": {
+        "match_id": 88213799,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "908788": [
+            "luftwaffe"
+          ],
+          "1105572": [
+            "armored"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267269",
+      "download_url": "https://cohdb.com/replays/7267269/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88213260
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267223",
+      "preview_url": "https://cohdb.com/replays/7267223/builds",
+      "preview_sha256": "ce524ebd6b00ab53de7812191117c1f4672d808569762f04a67a5d5beef2faff",
+      "preview": {
+        "match_id": 88212011,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "luftwaffe"
+          ],
+          "285680": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267048",
+      "preview_url": "https://cohdb.com/replays/7267048/builds",
+      "preview_sha256": "059e7a87c2c28e8adc88be43bcb2a9699e70cb0c7e3af198cac7e6a6bcf72557",
+      "preview": {
+        "match_id": 88209941,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "breakthrough"
+          ],
+          "1235648": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7267024",
+      "preview_url": "https://cohdb.com/replays/7267024/builds",
+      "preview_sha256": "da60fb5aa85b6c808561e1e7efcc4b9f1667029d57b26d265304ec52dd32958a",
+      "preview": {
+        "match_id": 88207690,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          47812
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "47812": [
+            "breakthrough"
+          ],
+          "401110": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266932",
+      "download_url": "https://cohdb.com/replays/7266932/file?inflate=true",
+      "status": "collected",
+      "match_id": 88209211,
+      "dataset": "datasets/match-88209211.json",
+      "profile_ids": [
+        658673
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7266932/builds",
+      "preview_sha256": "1e2d5ae42f4e262fd203184c70be2f0dfa4c7c12816da8325c7224303beb4736",
+      "preview": {
+        "match_id": 88209211,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          658673
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "5830": [
+            "heavyarmor"
+          ],
+          "658673": [
+            "mechanized"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266907",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        85822,
+        1105572
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266861",
+      "preview_url": "https://cohdb.com/replays/7266861/builds",
+      "preview_sha256": "e290e6769e7386901526f1d740a9fd0d8d28755d75942d37c32a9c7c3ad10bfa",
+      "preview": {
+        "match_id": 88207397,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          14153
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "14153": [
+            "luftwaffe"
+          ],
+          "1197868": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266558",
+      "preview_url": "https://cohdb.com/replays/7266558/builds",
+      "preview_sha256": "7f4a92a0c0c574f981a3f42b20e1109d12992d1da145b1f3ac80353c9530af42",
+      "preview": {
+        "match_id": 88203814,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "908788": [
+            "luftwaffe"
+          ],
+          "1235648": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266393",
+      "preview_url": "https://cohdb.com/replays/7266393/builds",
+      "preview_sha256": "b9d8c9e3ca83dc3b3e8f0b5eaf4b8dd380d3d3ac33ed007636064394aa6e59f4",
+      "preview": {
+        "match_id": 88202869,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "908788": [
+            "luftwaffe"
+          ],
+          "1197868": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266308",
+      "preview_url": "https://cohdb.com/replays/7266308/builds",
+      "preview_sha256": "e09dfd554bad1068e78ee592d57b0cf932a2f51530067b0edc5e6a4845a9c03d",
+      "preview": {
+        "match_id": 88200912,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "908788": [
+            "luftwaffe"
+          ],
+          "1197868": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266286",
+      "preview_url": "https://cohdb.com/replays/7266286/builds",
+      "preview_sha256": "8e1597face550679423867b76a2ec4bfc156b07c61b6344b13ee4d9fb0bc3f13",
+      "preview": {
+        "match_id": 88200581,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          444155
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "401110": [],
+          "444155": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266191",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        5962,
+        49277
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266106",
+      "preview_url": "https://cohdb.com/replays/7266106/builds",
+      "preview_sha256": "a28a520bf4c7934225326c66cbf4f06a21aa1c0844bc940f4cf4bc011f9a97f0",
+      "preview": {
+        "match_id": 88199661,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1197868
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5962": [],
+          "1197868": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266068",
+      "download_url": "https://cohdb.com/replays/7266068/file?inflate=true",
+      "status": "collected",
+      "match_id": 88198914,
+      "dataset": "datasets/match-88198914.json",
+      "profile_ids": [
+        16432
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7266068/builds",
+      "preview_sha256": "15792df583b958cbda73f1dbf09d9e1f25c683f851d5f9ae8bf6d11d40b164e4",
+      "preview": {
+        "match_id": 88198914,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "16432": [
+            "mechanized"
+          ],
+          "1235648": [
+            "airborne"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7266035",
+      "preview_url": "https://cohdb.com/replays/7266035/builds",
+      "preview_sha256": "2835548a0b489e37645e6cd666c633fa9b91f1d773875fc872de170845b34254",
+      "preview": {
+        "match_id": 88199034,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1197868
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5962": [],
+          "1197868": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265961",
+      "preview_url": "https://cohdb.com/replays/7265961/builds",
+      "preview_sha256": "88f16f16263aef49fc8784b1e8892c17c0eb9968233f525cf3df53abdf42bbfb",
+      "preview": {
+        "match_id": 88198388,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5962": [],
+          "16432": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265913",
+      "download_url": "https://cohdb.com/replays/7265913/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88198016
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265883",
+      "preview_url": "https://cohdb.com/replays/7265883/builds",
+      "preview_sha256": "81e153de19858c72eabe8fcf7e9b4e34bc13fa9a48c91b41f23c0dfbd74dc541",
+      "preview": {
+        "match_id": 88197299,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5962": [],
+          "16432": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265710",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        5962,
+        470136
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265488",
+      "preview_url": "https://cohdb.com/replays/7265488/builds",
+      "preview_sha256": "ae14993393e9083e69717803bafcc678b7fc150af86281fbf1ff59083c9e9a27",
+      "preview": {
+        "match_id": 88193210,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "16432": [
+            "breakthrough"
+          ],
+          "1123809": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265427",
+      "download_url": "https://cohdb.com/replays/7265427/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88192772
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265377",
+      "preview_url": "https://cohdb.com/replays/7265377/builds",
+      "preview_sha256": "5f542199aba6784b0b2fe2fb178aa138676427033329396acf531b1ca88934a7",
+      "preview": {
+        "match_id": 88191515,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1088114
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "1088114": [
+            "breakthrough"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265255",
+      "preview_url": "https://cohdb.com/replays/7265255/builds",
+      "preview_sha256": "f9b8dc448394a1e653dff7ab30842c046f2c656d146bc5b5b070757aefc9076e",
+      "preview": {
+        "match_id": 88189672,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": false,
+        "target_profile_ids": [
+          55306
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "55306": [],
+          "1235648": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265181",
+      "preview_url": "https://cohdb.com/replays/7265181/builds",
+      "preview_sha256": "b98be0277be916fa963ce1d98d041225ae1b306d72d49ab06ae443f82629a87e",
+      "preview": {
+        "match_id": 88189998,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "luftwaffe"
+          ],
+          "52453": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265113",
+      "preview_url": "https://cohdb.com/replays/7265113/builds",
+      "preview_sha256": "ce306fb57c47c765a31b35f242dfe754811db15289afe14b976d5802cb571728",
+      "preview": {
+        "match_id": 88189326,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "breakthrough"
+          ],
+          "52453": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7265066",
+      "preview_url": "https://cohdb.com/replays/7265066/builds",
+      "preview_sha256": "0a0b1b69df62c7824692b94b214056eaf1b5fc6fd62a16b96fba26020109d1ca",
+      "preview": {
+        "match_id": 88187395,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          123509
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "52453": [],
+          "123509": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7264873",
+      "preview_url": "https://cohdb.com/replays/7264873/builds",
+      "preview_sha256": "a20c321a7ad1ea40ae12e4c992c41f077b5ddfcf4c7c967727acccee6ba3045a",
+      "preview": {
+        "match_id": 88186345,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "818941": [
+            "australiandefense"
+          ],
+          "1235648": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7264813",
+      "preview_url": "https://cohdb.com/replays/7264813/builds",
+      "preview_sha256": "478e0bd9649ecbe47d0c51ae5643a176aa1b4f1cc7c25d314f4a602acf3a95b0",
+      "preview": {
+        "match_id": 88186131,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "luftwaffe"
+          ],
+          "637643": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7264809",
+      "preview_url": "https://cohdb.com/replays/7264809/builds",
+      "preview_sha256": "faec223b4d646c38ebe8b57d1ec49c530cdd3ea3150dd54f0bbb8790df64aa0c",
+      "preview": {
+        "match_id": 88185173,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "52453": [],
+          "1235648": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7264780",
+      "preview_url": "https://cohdb.com/replays/7264780/builds",
+      "preview_sha256": "a666149d186cf240afe5e5202275ab2b6351cd735aa655c943141bbb692d4178",
+      "preview": {
+        "match_id": 88185888,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "luftwaffe"
+          ],
+          "818941": [
+            "australiandefense"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7264672",
+      "preview_url": "https://cohdb.com/replays/7264672/builds",
+      "preview_sha256": "7ce48109d1223c58e1c8b3e0d5f5a0e719e61e98f90f89383d98073cecc7fb21",
+      "preview": {
+        "match_id": 88184378,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "637643": [
+            "australiandefense"
+          ],
+          "1235648": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7264660",
+      "download_url": "https://cohdb.com/replays/7264660/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88184433
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7264596",
+      "preview_url": "https://cohdb.com/replays/7264596/builds",
+      "preview_sha256": "ebafaf498d93329bb3c86770e265ed5f0e42bc4853ab66de6c997440785cc4e6",
+      "preview": {
+        "match_id": 88183891,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          637643
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "52453": [],
+          "637643": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7264673",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        87735,
+        1349793
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263966",
+      "download_url": "https://cohdb.com/replays/7263966/file?inflate=true",
+      "status": "collected",
+      "match_id": 88176973,
+      "dataset": "datasets/match-88176973.json",
+      "profile_ids": [
+        911190
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7263966/builds",
+      "preview_sha256": "ae4dd8793de42a5465e3664f766a8ecc24c3dbacb634a01a06ebd5787a51ec9b",
+      "preview": {
+        "match_id": 88176973,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          911190
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "47812": [
+            "specialoperations"
+          ],
+          "911190": [
+            "mechanized"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263938",
+      "download_url": "https://cohdb.com/replays/7263938/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88177445
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263922",
+      "preview_url": "https://cohdb.com/replays/7263922/builds",
+      "preview_sha256": "11ab5ee1ac53c523f61e59774eff74e9836d3de68b352d8acfb7ba90614aa5b9",
+      "preview": {
+        "match_id": 88177229,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "breakthrough"
+          ],
+          "818941": [
+            "australiandefense"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263881",
+      "preview_url": "https://cohdb.com/replays/7263881/builds",
+      "preview_sha256": "10bf0daed166d2e9d50d4b46888c3d91224bae68c582234cf12a5745134cdd5a",
+      "preview": {
+        "match_id": 88176711,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "breakthrough"
+          ],
+          "911190": [
+            "canadianshock"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263767",
+      "preview_url": "https://cohdb.com/replays/7263767/builds",
+      "preview_sha256": "9cdee0a56202dea48fd011bd8742150ccdc77301bef8e57f4740c4cee03ae48b",
+      "preview": {
+        "match_id": 88175321,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          900358
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "900358": [
+            "luftwaffe"
+          ],
+          "911190": [
+            "canadianshock"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263717",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        157017,
+        1105572
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263516",
+      "preview_url": "https://cohdb.com/replays/7263516/builds",
+      "preview_sha256": "45a9e538a8bc0f894c3d2a769c9c640d6df461b9342bfac722dd69a6399c22f3",
+      "preview": {
+        "match_id": 88172731,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "98249": [
+            "canadianshock"
+          ],
+          "1235648": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263385",
+      "preview_url": "https://cohdb.com/replays/7263385/builds",
+      "preview_sha256": "5f24d294df87b8f5dc984725e55c9b0307a77b687ada7adebcd254453a283680",
+      "preview": {
+        "match_id": 88171031,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "breakthrough"
+          ],
+          "55925": [
+            "canadianshock"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263360",
+      "preview_url": "https://cohdb.com/replays/7263360/builds",
+      "preview_sha256": "93d86aa205233dac2e2572157697ec24f0e2dc4ba1e1662e020ccfe2b134ab08",
+      "preview": {
+        "match_id": 88170572,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "16769": [
+            "specialoperations"
+          ],
+          "154319": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263273",
+      "download_url": "https://cohdb.com/replays/7263273/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88170808
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263202",
+      "preview_url": "https://cohdb.com/replays/7263202/builds",
+      "preview_sha256": "466177959f3fd345587a1a35cd3c89fc137720ee57eed536cb18431da9cccc00",
+      "preview": {
+        "match_id": 88170147,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "luftwaffe"
+          ],
+          "1297836": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263132",
+      "preview_url": "https://cohdb.com/replays/7263132/builds",
+      "preview_sha256": "de3f35906a3e9f0f63a0e5519651ca5c96afa58fb0d614edc415cece33ad4452",
+      "preview": {
+        "match_id": 88169483,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "luftwaffe"
+          ],
+          "353207": [
+            "polishcavalry"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7263109",
+      "download_url": "https://cohdb.com/replays/7263109/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88169216
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7262770",
+      "download_url": "https://cohdb.com/replays/7262770/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88166849
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7262747",
+      "download_url": "https://cohdb.com/replays/7262747/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88166615
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7262711",
+      "preview_url": "https://cohdb.com/replays/7262711/builds",
+      "preview_sha256": "21404ba0cea10145437c9c2e3cb4bc63c5e9bff1b47b0dfb2383086aad55781a",
+      "preview": {
+        "match_id": 88165805,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "4627": [
+            "heavyarmor"
+          ],
+          "154319": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7262677",
+      "preview_url": "https://cohdb.com/replays/7262677/builds",
+      "preview_sha256": "36b4575c59e0cf86ebc1584083c7be9463c584ab4aa4d348b02bc0af98633c3d",
+      "preview": {
+        "match_id": 88165932,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "353207": [
+            "luftwaffe"
+          ],
+          "818941": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7262584",
+      "preview_url": "https://cohdb.com/replays/7262584/builds",
+      "preview_sha256": "f3a441edc4367fb2f9e7ac9de33fc86202ef94259282093378c0539dfb21374a",
+      "preview": {
+        "match_id": 88162906,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          4627
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "4627": [
+            "siegebreaker"
+          ],
+          "1105572": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7262618",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        157017,
+        818941
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7262157",
+      "download_url": "https://cohdb.com/replays/7262157/file?inflate=true",
+      "status": "collected",
+      "match_id": 88161475,
+      "dataset": "datasets/match-88161475.json",
+      "profile_ids": [
+        353207
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7262157/builds",
+      "preview_sha256": "5fde46bc0d3c44509734f9b6d76ee3f3f8fd46a0ad6dbc2d16b05bd95fe72f0e",
+      "preview": {
+        "match_id": 88161475,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "4627": [
+            "indianartillery"
+          ],
+          "353207": [
+            "mechanized"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7262131",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        1105572,
+        1297836
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7261970",
+      "preview_url": "https://cohdb.com/replays/7261970/builds",
+      "preview_sha256": "353a2a804e4a7d59d06baffff92285a7a79a50d57ec07ed3f9d0e8b5d39448eb",
+      "preview": {
+        "match_id": 88160325,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "353207": [
+            "breakthrough"
+          ],
+          "1105572": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7261853",
+      "preview_url": "https://cohdb.com/replays/7261853/builds",
+      "preview_sha256": "7cd1519b23c27715fa77c071e0a02cf26c42b31f7e764013f40b899e8fe9004b",
+      "preview": {
+        "match_id": 88159867,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          4627
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "4627": [
+            "luftwaffe"
+          ],
+          "105870": [
+            "advancedinfantry"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7261823",
+      "download_url": "https://cohdb.com/replays/7261823/file?inflate=true",
+      "status": "collected",
+      "match_id": 88159419,
+      "dataset": "datasets/match-88159419.json",
+      "profile_ids": [
+        353207
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7261823/builds",
+      "preview_sha256": "f1979abe7d9624a4d553267459379094fb370dc5344c2935b72eb1e3a36e6932",
+      "preview": {
+        "match_id": 88159419,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "98249": [
+            "canadianshock"
+          ],
+          "353207": [
+            "mechanized"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7261693",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        791716,
+        1105572
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7261511",
+      "preview_url": "https://cohdb.com/replays/7261511/builds",
+      "preview_sha256": "3a6412adf2fcde847cf6b11db8ad5ffe5590a7d7708c21b38e52dd403b5569a0",
+      "preview": {
+        "match_id": 88156264,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "75198": [
+            "heavyweapons"
+          ],
+          "147608": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7261068",
+      "preview_url": "https://cohdb.com/replays/7261068/builds",
+      "preview_sha256": "b14f8ccc54f28e1094bf6d323c272df05e990d9b2282d4712609f7ff1dfe56c9",
+      "preview": {
+        "match_id": 88152205,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "luftwaffe"
+          ],
+          "577821": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7260650",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        123509,
+        1105572
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7260350",
+      "download_url": "https://cohdb.com/replays/7260350/file?inflate=true",
+      "status": "collected",
+      "match_id": 88147020,
+      "dataset": "datasets/match-88147020.json",
+      "profile_ids": [
+        58719
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7260350/builds",
+      "preview_sha256": "2e2420ed9feff03c036b328859bcd5127cc9b8b7d7e57e49b75940a8c741733a",
+      "preview": {
+        "match_id": 88147020,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          58719
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "58719": [
+            "mechanized"
+          ],
+          "273778": [
+            "freefrench"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7260207",
+      "preview_url": "https://cohdb.com/replays/7260207/builds",
+      "preview_sha256": "57f9ef002eba2ad76d773f59ac63c2499c88721c6619dcafd05e7f38a05ca968",
+      "preview": {
+        "match_id": 88143534,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "italianpartisan"
+          ],
+          "908788": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7260171",
+      "preview_url": "https://cohdb.com/replays/7260171/builds",
+      "preview_sha256": "2bc3ea07ad3a06d2c8f27c53a266b18aed7f694fec95bd802c3258ca2cf5cf82",
+      "preview": {
+        "match_id": 88143400,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          16432
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "16432": [
+            "breakthrough"
+          ],
+          "273778": [
+            "freefrench"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7260053",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        5114,
+        818941
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7259740",
+      "preview_url": "https://cohdb.com/replays/7259740/builds",
+      "preview_sha256": "1d1dd1337f38da4a34b2854ec1d122c035b64cb93a3dcd4f3f80fff90966d06f",
+      "preview": {
+        "match_id": 88140703,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "273778": [
+            "specialoperations"
+          ],
+          "908788": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7259308",
+      "preview_url": "https://cohdb.com/replays/7259308/builds",
+      "preview_sha256": "e780486ec85462c8709a048affb80849aff67c2b46b1b575d63bc57c328419c2",
+      "preview": {
+        "match_id": 88137913,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "1105572": [
+            "armored"
+          ],
+          "1235648": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7259147",
+      "preview_url": "https://cohdb.com/replays/7259147/builds",
+      "preview_sha256": "4b3e5d4035c2ee6dc580b56a7704a132f3c9151bf9082051da8e29c5730ea490",
+      "preview": {
+        "match_id": 88136264,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1123809
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "italianpartisan"
+          ],
+          "1123809": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7259072",
+      "preview_url": "https://cohdb.com/replays/7259072/builds",
+      "preview_sha256": "72e02e0d7583ded28e5ce7e30e482a6436a738b0ffab4b452a066613deb4ac5e",
+      "preview": {
+        "match_id": 88135734,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1235648
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "1105572": [
+            "specialoperations"
+          ],
+          "1235648": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7258868",
+      "preview_url": "https://cohdb.com/replays/7258868/builds",
+      "preview_sha256": "94db3d3932a4dd31f2e36d948c13fe6a5597c1ab03240a2b650a33f14c4ee2a7",
+      "preview": {
+        "match_id": 88132055,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "breakthrough"
+          ],
+          "47812": [
+            "advancedinfantry"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7258763",
+      "preview_url": "https://cohdb.com/replays/7258763/builds",
+      "preview_sha256": "555c06780531b0e912eea6b4091d21c4cfc2e7e89fcef6b64f200b3318274e01",
+      "preview": {
+        "match_id": 88131838,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "luftwaffe"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7258745",
+      "preview_url": "https://cohdb.com/replays/7258745/builds",
+      "preview_sha256": "4bd2c25d18fe318e7b0ea8a25ba60fcf8d7aee0dd01999a7a477a204913dc234",
+      "preview": {
+        "match_id": 88132751,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "56734": [
+            "armored"
+          ],
+          "908788": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7258419",
+      "preview_url": "https://cohdb.com/replays/7258419/builds",
+      "preview_sha256": "7dcf168a88d8aeb76ea80dc720d3fa2f04511884f432e7fb9d18cbdb944fb724",
+      "preview": {
+        "match_id": 88130905,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "luftwaffe"
+          ],
+          "806123": [
+            "airandsea"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7258358",
+      "preview_url": "https://cohdb.com/replays/7258358/builds",
+      "preview_sha256": "f3ca04e498276d708e68ecf954c6f2b8f7a0a08fc5382bf03e4462866600131d",
+      "preview": {
+        "match_id": 88130655,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "154319": [
+            "luftwaffe"
+          ],
+          "784617": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7258359",
+      "preview_url": "https://cohdb.com/replays/7258359/builds",
+      "preview_sha256": "6173bbdc4a2ad3800b0ec458067bd98c56d146ff0c96cd85f07faef63500a259",
+      "preview": {
+        "match_id": 88129550,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          908788
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "47812": [
+            "advancedinfantry"
+          ],
+          "908788": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7258096",
+      "preview_url": "https://cohdb.com/replays/7258096/builds",
+      "preview_sha256": "b220f8742669677af5d9bd1fb5e8f43810d9c9c0a624f525ab80597dbeb65325",
+      "preview": {
+        "match_id": 88125346,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5114
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5114": [
+            "terror"
+          ],
+          "47812": [
+            "advancedinfantry"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7257870",
+      "download_url": "https://cohdb.com/replays/7257870/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88124148
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7257756",
+      "download_url": "https://cohdb.com/replays/7257756/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88124495
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7257751",
+      "preview_url": "https://cohdb.com/replays/7257751/builds",
+      "preview_sha256": "e6b09a865aef75f7f9be3f061752fb3f49ce2a7b6ef83653c646ded660169ecb",
+      "preview": {
+        "match_id": 88123937,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          542880
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "542880": [
+            "luftwaffe"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7257526",
+      "preview_url": "https://cohdb.com/replays/7257526/builds",
+      "preview_sha256": "392568bc98bea546d353fdb05659d0e5c854890f688bdfbfcd0475f3f2cd048d",
+      "preview": {
+        "match_id": 88121859,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          784617
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "784617": [
+            "luftwaffe"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7257393",
+      "preview_url": "https://cohdb.com/replays/7257393/builds",
+      "preview_sha256": "05090a24b284c9a9820b48df4dd74c5cac25f0a36e9db64ff2d7bacac67423a1",
+      "preview": {
+        "match_id": 88119258,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          444155
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "401110": [],
+          "444155": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7257375",
+      "preview_url": "https://cohdb.com/replays/7257375/builds",
+      "preview_sha256": "4c47487bd34cd8125a591753f972eaeeeb84b3b7f5ea46701ea570b20c53c817",
+      "preview": {
+        "match_id": 88118719,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          11441
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "11441": [
+            "breakthrough"
+          ],
+          "1235648": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7257105",
+      "preview_url": "https://cohdb.com/replays/7257105/builds",
+      "preview_sha256": "b647b195779f6c0c8a4b0765244331574b00bee4b1d1fbae04a5219e007931d0",
+      "preview": {
+        "match_id": 88115426,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          784617
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "784617": [
+            "luftwaffe"
+          ],
+          "1235648": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7256987",
+      "preview_url": "https://cohdb.com/replays/7256987/builds",
+      "preview_sha256": "0e397083debe4ec6c1b831ecdfe69d0af546ecd4c03bde6b40361ba2a16f5183",
+      "preview": {
+        "match_id": 88112450,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1324125
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "255540": [
+            "armored"
+          ],
+          "1324125": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7256969",
+      "download_url": "https://cohdb.com/replays/7256969/file?inflate=true",
+      "status": "collected",
+      "match_id": 88114615,
+      "dataset": "datasets/match-88114615.json",
+      "profile_ids": [
+        66030
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7256969/builds",
+      "preview_sha256": "89ddc1cec07a3b282b821567f0a7982f6d3f94ca86c3e9a08fc7ca5b96715915",
+      "preview": {
+        "match_id": 88114615,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          66030
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "66030": [
+            "mechanized"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7256678",
+      "download_url": "https://cohdb.com/replays/7256678/file?inflate=true",
+      "status": "collected",
+      "match_id": 88112320,
+      "dataset": "datasets/match-88112320.json",
+      "profile_ids": [
+        353207
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7256678/builds",
+      "preview_sha256": "67e42a04a1bda5c20cfeaf73acf8183b743113405d8038000dc7a7efa86f4365",
+      "preview": {
+        "match_id": 88112320,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "353207": [
+            "mechanized"
+          ],
+          "1123809": [
+            "canadianshock"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7256470",
+      "preview_url": "https://cohdb.com/replays/7256470/builds",
+      "preview_sha256": "f6ec03d76930e7a91afcabebcdb5859123594e877c25281d6ba285c0e030b70e",
+      "preview": {
+        "match_id": 88109993,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1324125
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "1123809": [
+            "heavyarmor"
+          ],
+          "1324125": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7256234",
+      "preview_url": "https://cohdb.com/replays/7256234/builds",
+      "preview_sha256": "be11419d984bd42676beb244a46bb45769286aedd54d97154e010570b1f2fe2a",
+      "preview": {
+        "match_id": 88106003,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          11441
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "11441": [
+            "laststand"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7256175",
+      "preview_url": "https://cohdb.com/replays/7256175/builds",
+      "preview_sha256": "4563589f434e0b422512a78bf6ed00c84e595cc4e0af6a8978d714a08e7cbe3d",
+      "preview": {
+        "match_id": 88106647,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1324125
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "917165": [
+            "heavyarmor"
+          ],
+          "1324125": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7256079",
+      "preview_url": "https://cohdb.com/replays/7256079/builds",
+      "preview_sha256": "182bb3a0ec278662b40ea1ae2303ffd5c9727df04bec4f6ca74b3840f68fbd71",
+      "preview": {
+        "match_id": 88106995,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          119159
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "freefrench"
+          ],
+          "119159": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7255948",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        33016,
+        917165
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7255755",
+      "preview_url": "https://cohdb.com/replays/7255755/builds",
+      "preview_sha256": "109a3a14e6c26135c9b5181bce6a3bbf71cd53b03eb73374b6257f61acbaba66",
+      "preview": {
+        "match_id": 88102485,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          929115
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "1929": [
+            "airborne"
+          ],
+          "929115": [
+            "mechanized"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7254901",
+      "download_url": "https://cohdb.com/replays/7254901/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88098016
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7253861",
+      "preview_url": "https://cohdb.com/replays/7253861/builds",
+      "preview_sha256": "c1f751a00c69d5e9e2907d8eef76888033ebd8f2c51e6161a41cbd04a4856444",
+      "preview": {
+        "match_id": 88090560,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1088114
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "401110": [],
+          "1088114": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7253670",
+      "preview_url": "https://cohdb.com/replays/7253670/builds",
+      "preview_sha256": "a579153fd3cf4ecc05413086abe8127efafbbe94afad1d2ffdf9b6e0345de8e9",
+      "preview": {
+        "match_id": 88089841,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1088114
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "917165": [
+            "heavyweapons"
+          ],
+          "1088114": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7253580",
+      "preview_url": "https://cohdb.com/replays/7253580/builds",
+      "preview_sha256": "5736c4d47fbf2a6cd107cda9e01ca2fd660ebb6f6380c3358c8bc3aded049962",
+      "preview": {
+        "match_id": 88088513,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1088114
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "917165": [
+            "armored"
+          ],
+          "1088114": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7253467",
+      "preview_url": "https://cohdb.com/replays/7253467/builds",
+      "preview_sha256": "94b4f57112fd16bf6ab9a325b096c13f25c2d986c78b9d6c335774a1aa82e53e",
+      "preview": {
+        "match_id": 88087682,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1088114
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "401110": [],
+          "1088114": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7253417",
+      "download_url": "https://cohdb.com/replays/7253417/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88087048
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7253362",
+      "download_url": "https://cohdb.com/replays/7253362/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88085821
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7253308",
+      "download_url": "https://cohdb.com/replays/7253308/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88085704
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7252323",
+      "download_url": "https://cohdb.com/replays/7252323/file?inflate=true",
+      "status": "collected",
+      "match_id": 88075305,
+      "dataset": "datasets/match-88075305.json",
+      "profile_ids": [
+        401110
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7252323/builds",
+      "preview_sha256": "65c38a9b006c5d8ad598b2b3e9b1e9e3bc4dc2df45173bb77876acb39788deb2",
+      "preview": {
+        "match_id": 88075305,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": false,
+        "target_profile_ids": [
+          401110
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "60774": [
+            "heavyweapons",
+            "mechanized"
+          ],
+          "401110": []
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7252175",
+      "preview_url": "https://cohdb.com/replays/7252175/builds",
+      "preview_sha256": "d56178017ad4b8eb3cb840cd1e7c6dbe6d3fc57a92cc90b8177e5bcfe02b217d",
+      "preview": {
+        "match_id": 88074244,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          911190
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "911190": [
+            "siegebreaker"
+          ],
+          "1344371": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7252168",
+      "download_url": "https://cohdb.com/replays/7252168/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88074742
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251957",
+      "preview_url": "https://cohdb.com/replays/7251957/builds",
+      "preview_sha256": "594fe62ac6976d84d170df968f998867f6b6fbcf0bd1482528f3d6a227dbebd5",
+      "preview": {
+        "match_id": 88071216,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1321110
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5292": [
+            "freefrench"
+          ],
+          "1321110": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251842",
+      "download_url": "https://cohdb.com/replays/7251842/file?inflate=true",
+      "status": "collected",
+      "match_id": 88070817,
+      "dataset": "datasets/match-88070817.json",
+      "profile_ids": [
+        26279
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7251842/builds",
+      "preview_sha256": "8ef2c49649c0fa85f9f4f44e56bf5fd367a880d4ed568e0bcbcbbdcb920526a5",
+      "preview": {
+        "match_id": 88070817,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          26279
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "26279": [
+            "mechanized"
+          ],
+          "649535": [
+            "specialoperations"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251780",
+      "preview_url": "https://cohdb.com/replays/7251780/builds",
+      "preview_sha256": "e35182eef0d52f6a933ac7096f2ea5d8e33248fdf709a1a99c7dc32f4ba8ebc4",
+      "preview": {
+        "match_id": 88069846,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1321110
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "950855": [
+            "specialoperations"
+          ],
+          "1321110": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251758",
+      "download_url": "https://cohdb.com/replays/7251758/file?inflate=true",
+      "status": "collected",
+      "match_id": 88068897,
+      "dataset": "datasets/match-88068897.json",
+      "profile_ids": [
+        353207
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7251758/builds",
+      "preview_sha256": "7f4ef4149f9c6c7d2d01d3b0fb2181cab7f94cb6f7e675b5051eb86beab28feb",
+      "preview": {
+        "match_id": 88068897,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "353207": [
+            "mechanized"
+          ],
+          "401110": []
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251705",
+      "download_url": "https://cohdb.com/replays/7251705/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88070141
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251655",
+      "preview_url": "https://cohdb.com/replays/7251655/builds",
+      "preview_sha256": "8b9dc383732e8a35ba2f28cf8e12d8e8083dd6a2d3edcecceec18f660c781f06",
+      "preview": {
+        "match_id": 88068784,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          26279
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "26279": [
+            "luftwaffe"
+          ],
+          "27767": [
+            "airborne"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251559",
+      "preview_url": "https://cohdb.com/replays/7251559/builds",
+      "preview_sha256": "797de4f1d49bb2c552beba4f4ba6293d86f176c441cca0a395ed8d090d568605",
+      "preview": {
+        "match_id": 88068054,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "353207": [
+            "luftwaffe"
+          ],
+          "401110": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251472",
+      "download_url": "https://cohdb.com/replays/7251472/file?inflate=true",
+      "status": "collected",
+      "match_id": 88066872,
+      "dataset": "datasets/match-88066872.json",
+      "profile_ids": [
+        353207
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7251472/builds",
+      "preview_sha256": "a8a0628290a709fc4a8be46d12f882b3dc82153ddf4efd5ab2b1d822912e3741",
+      "preview": {
+        "match_id": 88066872,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "353207": [
+            "mechanized"
+          ],
+          "401110": []
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251371",
+      "preview_url": "https://cohdb.com/replays/7251371/builds",
+      "preview_sha256": "f8d5aeca58f091615a9a630a4b1432d3cb9375d7876805dddb97575920f11945",
+      "preview": {
+        "match_id": 88065896,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "353207": [
+            "luftwaffe"
+          ],
+          "401110": []
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251261",
+      "download_url": "https://cohdb.com/replays/7251261/file?inflate=true",
+      "status": "collected",
+      "match_id": 88064383,
+      "dataset": "datasets/match-88064383.json",
+      "profile_ids": [
+        26279
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7251261/builds",
+      "preview_sha256": "a81210a43004942883f6cb612fb15f850b63e337afa69c26aacf7fadd1d47b97",
+      "preview": {
+        "match_id": 88064383,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          26279
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "26279": [
+            "mechanized"
+          ],
+          "401110": []
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251262",
+      "download_url": "https://cohdb.com/replays/7251262/file?inflate=true",
+      "status": "collected",
+      "match_id": 88064110,
+      "dataset": "datasets/match-88064110.json",
+      "profile_ids": [
+        353207
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7251262/builds",
+      "preview_sha256": "add52aa33350c9028661fe55af0446da891a4954db09f0472c420e9afc64ecd0",
+      "preview": {
+        "match_id": 88064110,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "4627": [
+            "heavyarmor"
+          ],
+          "353207": [
+            "mechanized"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251264",
+      "preview_url": "https://cohdb.com/replays/7251264/builds",
+      "preview_sha256": "734c8b5e5410765fc62f97470a6a87d21a7d16ca4b5783bc2d788796ed1ba165",
+      "preview": {
+        "match_id": 88065238,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5292
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5292": [
+            "siegebreaker"
+          ],
+          "818941": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251203",
+      "preview_url": "https://cohdb.com/replays/7251203/builds",
+      "preview_sha256": "cd5db615525aa390118e8b1102a039dbc0622197d66436e3b925df00c70099dd",
+      "preview": {
+        "match_id": 88064486,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          47812
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "47812": [
+            "breakthrough"
+          ],
+          "911190": [
+            "freefrench"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251119",
+      "preview_url": "https://cohdb.com/replays/7251119/builds",
+      "preview_sha256": "fb0bdf1b5e2f704ed5d15beb7d7e5a392578fc2af3360fe62a42a6f0de0156b3",
+      "preview": {
+        "match_id": 88064114,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          47812
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "47812": [
+            "breakthrough"
+          ],
+          "911190": [
+            "canadianshock"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251108",
+      "download_url": "https://cohdb.com/replays/7251108/file?inflate=true",
+      "status": "collected",
+      "match_id": 88063708,
+      "dataset": "datasets/match-88063708.json",
+      "profile_ids": [
+        26279
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7251108/builds",
+      "preview_sha256": "b0b13089faeb3733bcefed25c9e0bb90701c33cb6ba1a7843bc5417bef0312b2",
+      "preview": {
+        "match_id": 88063708,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          26279
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "26279": [
+            "mechanized"
+          ],
+          "399137": [
+            "airandsea"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251082",
+      "download_url": "https://cohdb.com/replays/7251082/file?inflate=true",
+      "status": "collected",
+      "match_id": 88063782,
+      "dataset": "datasets/match-88063782.json",
+      "profile_ids": [
+        353207
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7251082/builds",
+      "preview_sha256": "8e434363ff6980dcef70e8f752b53d35dec6cd85a1a2cd1d701cdf01a213be23",
+      "preview": {
+        "match_id": 88063782,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "353207": [
+            "mechanized"
+          ],
+          "911190": []
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251072",
+      "preview_url": "https://cohdb.com/replays/7251072/builds",
+      "preview_sha256": "6a828bfa4ecf5bc10a1262fa2dae700d0ce244f1d19cf6b4543d605b9cf26f5b",
+      "preview": {
+        "match_id": 88062587,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          1324125
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "4627": [
+            "heavyarmor"
+          ],
+          "1324125": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251063",
+      "preview_url": "https://cohdb.com/replays/7251063/builds",
+      "preview_sha256": "46a863fcc606054de5668400395ff54f185285536c3b905bb650a70ab1f4a0e6",
+      "preview": {
+        "match_id": 88063583,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": false,
+        "target_profile_ids": [
+          70929
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "47812": [
+            "indianartillery"
+          ],
+          "70929": []
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7251014",
+      "preview_url": "https://cohdb.com/replays/7251014/builds",
+      "preview_sha256": "eaf1a3791dda11e87965babedc59700e78988c2595db8f0108f088bdb5d04c59",
+      "preview": {
+        "match_id": 88062310,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5255
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5255": [
+            "luftwaffe"
+          ],
+          "399137": [
+            "heavyweapons"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250949",
+      "preview_url": "https://cohdb.com/replays/7250949/builds",
+      "preview_sha256": "b4b289b42084f1ab3b0ae600913a7cfebc1d8287ec019541d8228c8c8c97d78d",
+      "preview": {
+        "match_id": 88061750,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          639157
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "639157": [
+            "luftwaffe"
+          ],
+          "911190": [
+            "indianartillery"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250926",
+      "preview_url": "https://cohdb.com/replays/7250926/builds",
+      "preview_sha256": "2536a59926f1bbd172a4a4cd03e1cef7f012d727dd4b45cbaccd0011a28c2959",
+      "preview": {
+        "match_id": 88061500,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "terror"
+          ],
+          "273778": [
+            "freefrench"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250860",
+      "download_url": "https://cohdb.com/replays/7250860/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88062294
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250831",
+      "download_url": "https://cohdb.com/replays/7250831/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88062227
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250780",
+      "preview_url": "https://cohdb.com/replays/7250780/builds",
+      "preview_sha256": "a8adbe027992397e6bec3c730cd93aa5fe1218ec040be384204938e594dd057b",
+      "preview": {
+        "match_id": 88061439,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          4627
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "4627": [
+            "luftwaffe"
+          ],
+          "5255": [
+            "freefrench"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250716",
+      "download_url": "https://cohdb.com/replays/7250716/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88061174
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250710",
+      "download_url": "https://cohdb.com/replays/7250710/file?inflate=true",
+      "status": "collected",
+      "match_id": 88060572,
+      "dataset": "datasets/match-88060572.json",
+      "profile_ids": [
+        4627
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7250710/builds",
+      "preview_sha256": "343900ed9deb71aab2584f89370d9fac6afe8265b3ee22a847572fcecfde864d",
+      "preview": {
+        "match_id": 88060572,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          4627
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "4627": [
+            "mechanized"
+          ],
+          "53041": [
+            "specialoperations"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250643",
+      "preview_url": "https://cohdb.com/replays/7250643/builds",
+      "preview_sha256": "e99675b8ef27619c46896b01a034b5aa44973ac514f23da216393139c66ac1b6",
+      "preview": {
+        "match_id": 88059322,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          26279
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "26279": [
+            "siegebreaker"
+          ],
+          "911190": [
+            "advancedinfantry"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250631",
+      "preview_url": "https://cohdb.com/replays/7250631/builds",
+      "preview_sha256": "24218c02b8488ee44a06cf6722eb96261e31e89f879ee7a83fe525300de924a6",
+      "preview": {
+        "match_id": 88059948,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "luftwaffe"
+          ],
+          "1359291": [
+            "canadianshock"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250503",
+      "preview_url": "https://cohdb.com/replays/7250503/builds",
+      "preview_sha256": "0c29b36b5b7e2aa56caf54f81a573aedcfe63ab22c2a749e31a1416935c3992f",
+      "preview": {
+        "match_id": 88059050,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          4627
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "4627": [
+            "breakthrough"
+          ],
+          "1247028": [
+            "freefrench"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250439",
+      "preview_url": "https://cohdb.com/replays/7250439/builds",
+      "preview_sha256": "db1ff57c4c5deec70b9c4ba7510d7b8e70ab1b90c0c28c03712b2706672168f7",
+      "preview": {
+        "match_id": 88057046,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "terror"
+          ],
+          "353207": [
+            "indianartillery"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7254921",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        1233645,
+        1405478
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250298",
+      "download_url": "https://cohdb.com/replays/7250298/file?inflate=true",
+      "status": "collected",
+      "match_id": 88056997,
+      "dataset": "datasets/match-88056997.json",
+      "profile_ids": [
+        4627
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7250298/builds",
+      "preview_sha256": "967c91d6eb3bd4fa8f06168991022c5c2f9825002ffd953fbb434d466a8a742b",
+      "preview": {
+        "match_id": 88056997,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          4627
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "4627": [
+            "mechanized"
+          ],
+          "399137": [
+            "italianpartisan"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250299",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        19647,
+        542880
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250126",
+      "preview_url": "https://cohdb.com/replays/7250126/builds",
+      "preview_sha256": "03ea49fdb8125e9bf34c914d7dea91ad9b38ac4aafc3ac11b4e7795a6b249ada",
+      "preview": {
+        "match_id": 88056072,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          154319
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "19647": [
+            "specialoperations"
+          ],
+          "154319": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7250057",
+      "preview_url": "https://cohdb.com/replays/7250057/builds",
+      "preview_sha256": "06b112fdef49cd8d42381dc833c3fb272540e77bf1499f2dc2cb1a8b9231798f",
+      "preview": {
+        "match_id": 88056153,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "terror"
+          ],
+          "1359291": [
+            "specialservice"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7254920",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        1233645,
+        1333387
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7254922",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        1099673,
+        1233645
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7249787",
+      "download_url": "https://cohdb.com/replays/7249787/file?inflate=true",
+      "status": "collected",
+      "match_id": 88052840,
+      "dataset": "datasets/match-88052840.json",
+      "profile_ids": [
+        4627
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7249787/builds",
+      "preview_sha256": "392c5f44e8c287dda1d971072cd15267e151aab93e4654804bc5c668ca5774c3",
+      "preview": {
+        "match_id": 88052840,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          4627
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "4627": [
+            "mechanized"
+          ],
+          "658673": [
+            "specialoperations"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7249571",
+      "preview_url": "https://cohdb.com/replays/7249571/builds",
+      "preview_sha256": "acdc59e6dce0da46d27072b003cb42c171bda875e9e21d29813905dd385b484f",
+      "preview": {
+        "match_id": 88051987,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5292
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5292": [
+            "siegebreaker"
+          ],
+          "399137": [
+            "italianpartisan"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7249449",
+      "download_url": "https://cohdb.com/replays/7249449/file?inflate=true",
+      "status": "collected",
+      "match_id": 88051798,
+      "dataset": "datasets/match-88051798.json",
+      "profile_ids": [
+        4627
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7249449/builds",
+      "preview_sha256": "cbb2749778007a528eeb1e6a877adf963980cfb98a627a55826110b0ab7044be",
+      "preview": {
+        "match_id": 88051798,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          4627
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "4627": [
+            "mechanized"
+          ],
+          "393536": [
+            "canadianshock"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7249242",
+      "preview_url": "https://cohdb.com/replays/7249242/builds",
+      "preview_sha256": "0bac83b55347246e0180fe26fbed16d7d4cf168665c279d9e5139730ab1f86ef",
+      "preview": {
+        "match_id": 88049170,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          5292
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "5292": [
+            "siegebreaker"
+          ],
+          "169245": [
+            "freefrench"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7249181",
+      "preview_url": "https://cohdb.com/replays/7249181/builds",
+      "preview_sha256": "990782546995ba786865b488411b4317185976beda7b122f318cac0c8e0fb68e",
+      "preview": {
+        "match_id": 88047290,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          4627
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "4627": [
+            "terror"
+          ],
+          "399137": [
+            "heavyweapons"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7248832",
+      "preview_url": "https://cohdb.com/replays/7248832/builds",
+      "preview_sha256": "6f33983996deae536797883a668b4a7869ebc9631e2e73198b7ca0613f0ebc47",
+      "preview": {
+        "match_id": 88044440,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          938766
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "273778": [
+            "freefrench"
+          ],
+          "938766": [
+            "breakthrough"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7248660",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        36094,
+        54278
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7248536",
+      "preview_url": "https://cohdb.com/replays/7248536/builds",
+      "preview_sha256": "3e4ea3ec6e862fe772344b85804b25f2e4dd28cfbd4bbce96f3eda30ffe07657",
+      "preview": {
+        "match_id": 88042095,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "luftwaffe"
+          ],
+          "791716": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7248509",
+      "preview_url": "https://cohdb.com/replays/7248509/builds",
+      "preview_sha256": "ffb4a9bcd1df3243d62a4ef400fbf03aff72c907260f08681a01a0ee77dede2a",
+      "preview": {
+        "match_id": 88040641,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          938766
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "896750": [
+            "heavyarmor"
+          ],
+          "938766": [
+            "mechanized"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247967",
+      "preview_url": "https://cohdb.com/replays/7247967/builds",
+      "preview_sha256": "94c13154197b47a6250249d41dddc6417ec5d9a28a2e2a1ba708a93d4d2b6575",
+      "preview": {
+        "match_id": 88037107,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "breakthrough"
+          ],
+          "220243": [
+            "heavyweapons"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247946",
+      "preview_url": "https://cohdb.com/replays/7247946/builds",
+      "preview_sha256": "e99bfb7318ba751aa1a671c9c01bdc7f2199ca3e9ce88b3d1f4f9bb13a44781e",
+      "preview": {
+        "match_id": 88036770,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          911190
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "canadianshock"
+          ],
+          "911190": [
+            "siegebreaker"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247891",
+      "preview_url": "https://cohdb.com/replays/7247891/builds",
+      "preview_sha256": "2b21829d10216565670606853c1a7116bf7295dcf7379c6dc840364fa769e1ad",
+      "preview": {
+        "match_id": 88035871,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          95809
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "95809": [
+            "luftwaffe"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247862",
+      "preview_url": "https://cohdb.com/replays/7247862/builds",
+      "preview_sha256": "1c0658351a6eb9f2d9d7b9eafc7f8e01b2e606dbc38bf77ec9c52afc4200a235",
+      "preview": {
+        "match_id": 88035869,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          938766
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "66030": [
+            "indianartillery"
+          ],
+          "938766": [
+            "mechanized"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247629",
+      "status": "no_metadata_qualified_target_profile",
+      "listing_profile_ids": [
+        20185,
+        85822
+      ]
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247615",
+      "preview_url": "https://cohdb.com/replays/7247615/builds",
+      "preview_sha256": "2885865942d3b18f9716f4f83158fce49ce8989bd6bf4e3615ac6c137fa793e7",
+      "preview": {
+        "match_id": 88035959,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "luftwaffe"
+          ],
+          "911190": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247508",
+      "preview_url": "https://cohdb.com/replays/7247508/builds",
+      "preview_sha256": "a7e6b37361d97981fde898412172f1d8393eef3a0c50c97a40b7c04941accaa7",
+      "preview": {
+        "match_id": 88032316,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "luftwaffe"
+          ],
+          "911190": [
+            "heavyweapons"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247512",
+      "download_url": "https://cohdb.com/replays/7247512/file?inflate=true",
+      "status": "collected",
+      "match_id": 88032636,
+      "dataset": "datasets/match-88032636.json",
+      "profile_ids": [
+        95809
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7247512/builds",
+      "preview_sha256": "05dbed996755d7bd951553cf427fdaa4f6c079b66c9dbc01f6faf496c97c907a",
+      "preview": {
+        "match_id": 88032636,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          95809
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "95809": [
+            "mechanized"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247481",
+      "preview_url": "https://cohdb.com/replays/7247481/builds",
+      "preview_sha256": "620a048942f3db0432b571199f5fd127e6019960c5fc13eded0581b30598602b",
+      "preview": {
+        "match_id": 88034629,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          770027
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "66030": [
+            "indianartillery"
+          ],
+          "770027": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247391",
+      "preview_url": "https://cohdb.com/replays/7247391/builds",
+      "preview_sha256": "a001219e067472e7d4cfacfa97458d480ae2cd4512bc1f6f9fe9736e5a077d51",
+      "preview": {
+        "match_id": 88032640,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          399137
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "399137": [
+            "laststand"
+          ],
+          "896750": [
+            "indianartillery"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247356",
+      "preview_url": "https://cohdb.com/replays/7247356/builds",
+      "preview_sha256": "d825e58de8de4af53f1a3a5cbb57b1e0e5f775aded04f6d955574531faa26d37",
+      "preview": {
+        "match_id": 88033272,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          54278
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "54278": [
+            "mechanized"
+          ],
+          "66030": [
+            "indianartillery"
+          ]
+        }
+      },
+      "status": "preview_no_verified_target_rating"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247136",
+      "download_url": "https://cohdb.com/replays/7247136/file?inflate=true",
+      "status": "collected",
+      "match_id": 88030049,
+      "dataset": "datasets/match-88030049.json",
+      "profile_ids": [
+        95809
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7247136/builds",
+      "preview_sha256": "c1e47ef3e79e0f34258a1d9ad5601409622c17045204946360e00f5ece222fe4",
+      "preview": {
+        "match_id": 88030049,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          95809
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "95809": [
+            "mechanized"
+          ],
+          "1123809": [
+            "heavyarmor"
+          ]
+        }
+      }
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7247092",
+      "preview_url": "https://cohdb.com/replays/7247092/builds",
+      "preview_sha256": "17fb8175b6a5851b4833d36c7cb4f4a61ed97f2bdcd41a85e3ed40ccb28fdb87",
+      "preview": {
+        "match_id": 88028671,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          147608
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "147608": [
+            "luftwaffe"
+          ],
+          "911190": [
+            "specialoperations"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7246855",
+      "preview_url": "https://cohdb.com/replays/7246855/builds",
+      "preview_sha256": "793f8fcec0ac76871cb81b7c53dfa531acde015aecc2fbbef0384e713686872e",
+      "preview": {
+        "match_id": 88027278,
+        "both_battlegroups_recognized": false,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          353207
+        ],
+        "possible_target": false,
+        "battlegroups_by_profile": {
+          "52453": [],
+          "353207": [
+            "luftwaffe"
+          ]
+        }
+      },
+      "status": "preview_other_battlegroups"
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7246867",
+      "download_url": "https://cohdb.com/replays/7246867/file?inflate=true",
+      "status": "collected",
+      "match_id": 88027976,
+      "dataset": "datasets/match-88027976.json",
+      "profile_ids": [
+        95809
+      ],
+      "eligible_players": 1,
+      "preview_url": "https://cohdb.com/replays/7246867/builds",
+      "preview_sha256": "b3ceb82d7b365a909943d609318c88e2be3f46ecd8df5245b98141882572c231",
+      "preview": {
+        "match_id": 88027976,
+        "both_battlegroups_recognized": true,
+        "required_battlegroups_recognized": true,
+        "target_profile_ids": [
+          95809
+        ],
+        "possible_target": true,
+        "battlegroups_by_profile": {
+          "95809": [
+            "mechanized"
+          ],
+          "1123809": [
+            "armored"
+          ]
+        }
+      }
+    }
+  ],
+  "stopped_reason": "target_reached",
+  "sampling": "Newest available matches, no outcome filter; convenience sample, not population coverage",
+  "checked_build_previews": 243,
+  "candidate_profiles_from_daily_data": 51,
+  "collected_players": 30,
+  "attempted_downloads": 59,
+  "target_reached": true,
+  "discovery": {
+    "source": "cohdb",
+    "game_build": 50313,
+    "completed_after": "2026-10-07",
+    "completed_before": "2026-10-14",
+    "metadata_days": [
+      "2026-10-12",
+      "2026-10-11",
+      "2026-10-10",
+      "2026-10-09",
+      "2026-10-08",
+      "2026-10-07"
+    ],
+    "preview_builds": true,
+    "limits": {
+      "max_pages": 80,
+      "max_downloads": 250,
+      "max_previews": 400
+    }
+  },
+  "metadata_sources": [
+    {
+      "url": "https://storage.coh3stats.com/matches/matches-1791849600.json",
+      "sha256": "2bb67c5e1b2374955f08e808295909601c2339c22bee84f3b25024b1fd767386"
+    },
+    {
+      "url": "https://storage.coh3stats.com/matches/matches-1791763200.json",
+      "sha256": "2c691bcd4bc61b89aa3ea48b234b16307e135cad7a6528379898929e7dbf53d2"
+    },
+    {
+      "url": "https://storage.coh3stats.com/matches/matches-1791676800.json",
+      "sha256": "1cbc7e00a5174a9248322b0c3ef246cf9c685cf29a9ed29f90ba24432c2f957a"
+    },
+    {
+      "url": "https://storage.coh3stats.com/matches/matches-1791590400.json",
+      "sha256": "69544f8b130cc5574e8341afc671d8639f78901e953900cf3873b159f57b1921"
+    },
+    {
+      "url": "https://storage.coh3stats.com/matches/matches-1791504000.json",
+      "sha256": "bf070b3b3be75cf3dcd241f1b094d11542eaf446ee14916f0b865c2a54d2c4b1"
+    },
+    {
+      "url": "https://storage.coh3stats.com/matches/matches-1791417600.json",
+      "sha256": "d8e47a461ba41385419f910e193907c399fac36395e4400b21e4e3f143d13e9f"
+    },
+    {
+      "url": "https://storage.coh3stats.com/matches/matches-1791331200.json",
+      "sha256": "444ca61d1f63179d3300218d6294ce2b5045f23bee21aa6744f19c6ee6c6ad6e"
+    }
+  ],
+  "capture_finalization": "Reparsed selected cached binaries with the pinned reader; added cached positive preview receipts and discovery settings."
+}

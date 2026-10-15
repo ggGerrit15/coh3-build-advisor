@@ -1,0 +1,102 @@
+name: Validate replay pilot
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'tools/replay-reader/**'
+      - 'scripts/import_replay.py'
+      - 'scripts/import_local_replays.py'
+      - 'scripts/check_replay_cohdb.py'
+      - 'scripts/collect_replays.py'
+      - 'scripts/replay_cohort.py'
+      - 'scripts/replay_match_type.py'
+      - 'scripts/report_replay_cohort.py'
+      - 'scripts/export_replay_candidates.py'
+      - 'scripts/replay_database.py'
+      - 'scripts/enrich_replay_database.py'
+      - 'tests/**'
+      - 'data/replays/**'
+      - '.github/workflows/replay-pilot.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test Python import and existing integration
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Install pinned Rust toolchain
+        run: rustup toolchain install 1.99.0 --profile minimal
+      - name: Test and build the pinned reader
+        run: |
+          cargo +1.99.0 test --locked --manifest-path tools/replay-reader/Cargo.toml
+          cargo +1.99.0 build --locked --release --manifest-path tools/replay-reader/Cargo.toml
+      - name: Smoke-test an upstream replay fixture
+        run: |
+          curl -fsSL --retry 2 --max-time 60 https://raw.githubusercontent.com/ryantaylor/cohlib/d31ade03fa69301c571ceb7416d0d1e67eff99aa/crates/cohlib/replays/v50313_load_targeting_block.rec -o /tmp/coh3-parser-fixture.rec
+          tools/replay-reader/target/release/coh3-replay-reader /tmp/coh3-parser-fixture.rec > /tmp/coh3-parser-fixture.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          replay = json.loads(Path('/tmp/coh3-parser-fixture.json').read_text())
+          assert replay['schema_version'] == 'coh3.replay-reader.v1'
+          assert replay['match']['game_build'] == 50313
+          assert replay['parser']['exact_game_data_available']
+          assert replay['players']
+          assert any(p['actions'] for p in replay['players'])
+          PY
+      - name: Check frontend baseline
+        run: node tests/test_cohdb_runtime.mjs
+      - name: Smoke-test SQLite import and repeat import
+        run: |
+          python scripts/replay_database.py import --database /tmp/coh3-research.sqlite3 --input data/replays/cohorts/mechanized-1600plus-1v1-2.5.6-2026-10-14 --source-key ci-stronger --source-kind cohort
+          python scripts/replay_database.py import --database /tmp/coh3-research.sqlite3 --input data/replays/cohorts/mechanized-1600plus-1v1-2.5.6-2026-10-14 --source-key ci-stronger --source-kind cohort
+          python scripts/replay_database.py stats --database /tmp/coh3-research.sqlite3 --output-json /tmp/coh3-research-summary.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          counts = json.loads(Path('/tmp/coh3-research-summary.json').read_text())['counts']
+          assert counts['matches'] == 30
+          assert counts['match_players'] == 60
+          assert counts['datasets'] == 30
+          assert counts['sources'] == 1
+          assert counts['verified_player_ratings'] == 60
+          PY
+      - name: Smoke-test offline folder import with plain and compressed replays
+        run: |
+          python - <<'PY'
+          import gzip
+          from pathlib import Path
+          folder = Path('/tmp/coh3-local-input')
+          folder.mkdir()
+          data = Path('/tmp/coh3-parser-fixture.rec').read_bytes()
+          (folder / 'first replay.rec').write_bytes(data)
+          (folder / 'same replay.rec.gz').write_bytes(gzip.compress(data))
+          PY
+          python scripts/import_local_replays.py /tmp/coh3-local-input --patch 2.5.6 --output-dir /tmp/coh3-local-output
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          output = Path('/tmp/coh3-local-output')
+          manifest = json.loads((output / 'manifest.json').read_text())
+          assert manifest['import_counts']['imported'] == 1
+          assert manifest['import_counts']['duplicates'] == 1
+          assert manifest['import_counts']['errors'] == 0
+          datasets = list((output / 'datasets').glob('*.json'))
+          assert len(datasets) == 1
+          dataset = json.loads(datasets[0].read_text())
+          assert dataset['players']
+          for player in dataset['players']:
+              assert player['rating_before'] is None
+              assert player['result'] is None
+              assert not player['eligible_for_ranked_statistics']
+          assert (output / 'summary.md').exists()
+          assert json.loads((output / 'candidates.json').read_text())['candidates'] == []
+          PY

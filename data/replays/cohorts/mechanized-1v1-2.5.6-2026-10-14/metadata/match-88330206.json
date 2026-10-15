@@ -1,0 +1,48 @@
+{
+  "schema_version": "coh3.match-metadata.v1",
+  "match_id": 88330206,
+  "mode": null,
+  "source": {
+    "url": "https://storage.coh3stats.com/matches/matches-1791849600.json",
+    "local_file": "daily-2026-10-13.txt",
+    "sha256": "2bb67c5e1b2374955f08e808295909601c2339c22bee84f3b25024b1fd767386",
+    "name": "CoH3Stats open daily match data",
+    "rating_field": "matchhistorymember.oldrating",
+    "outcome_field": "matchhistoryreportresults.resulttype",
+    "rating_note": "CoH3Stats warns that Custom-game ELO is not accurate; oldrating is retained as unverified, not pre-match ELO."
+  },
+  "players": [
+    {
+      "profile_id": 652059,
+      "faction": "Wehrmacht",
+      "result": "win",
+      "rating_before": null,
+      "rating_before_unverified": 1043,
+      "rating_after": 1055
+    },
+    {
+      "profile_id": 572051,
+      "faction": "USF",
+      "result": "loss",
+      "rating_before": null,
+      "rating_before_unverified": 971,
+      "rating_after": 959
+    }
+  ],
+  "classification_reference": {
+    "schema_version": "coh3.relic-reference.v1",
+    "url": "https://coh3-api.reliclink.com/community/leaderboard/getAvailableLeaderboards?title=coh3",
+    "sha256": "2d38af71f8785ffe99fe26d77471bc431a28c4320d43aa8b0704bef260b5fafc",
+    "captured_at": "2026-10-14T13:39:46.995953+00:00",
+    "applicable_game_builds": [
+      50313
+    ]
+  },
+  "source_record": {
+    "matchtype_id": 0,
+    "description": "unnamed_session",
+    "startgametime": 1791924094,
+    "completiontime": 1791926220,
+    "platform": "steam"
+  }
+}

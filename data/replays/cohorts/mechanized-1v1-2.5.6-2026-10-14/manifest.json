@@ -1,0 +1,830 @@
+{
+  "schema_version": "coh3.replay-collection.v1",
+  "collected_at": "2026-10-14T13:00:47.298061+00:00",
+  "scope": {
+    "faction": "Wehrmacht",
+    "battlegroup": "Mechanized",
+    "mode": "1v1",
+    "patch": "2.5.6"
+  },
+  "target": 30,
+  "pages": [
+    {
+      "url": "https://cohdb.com/matches?patch=50313&mode=ones&faction=germans",
+      "sha256": "d07d51cfc126d0f49c61253bd428d5a7d3d82130ce80bec8b098095ce02f46be",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDEyOjMwOjAzLjAwMFoiLDE4MDMxMTQ2XQ",
+      "sha256": "17cf94342b27b88b980dcf331dc99654dd056f9fcf63904790665772a08862c7",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDEyOjEwOjMyLjAwMFoiLDE4MDMxMDAwXQ",
+      "sha256": "928daea589e96aa8b961965846a152d70f259401b0758b84440523e56ef8b6ab",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDExOjU0OjM3LjAwMFoiLDE4MDMwODY0XQ",
+      "sha256": "f0e0e508ba23186c8ba83480ed567e5ccfd71bd1439f9cf5388428afa03b284a",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDExOjM1OjI5LjAwMFoiLDE4MDMwNzM5XQ",
+      "sha256": "1f1f5aa9031a4f3c8f6029fb3e8ad0d5d2f895a6a5dc7ee3f40a4e8b06e88386",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDExOjIxOjQ3LjAwMFoiLDE4MDMwNjI0XQ",
+      "sha256": "cac6d0f9f3726648df5200f19ad2a1c8fd159990ce4d78de80d8b5baf24c7745",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDEwOjU3OjIyLjAwMFoiLDE4MDMwNDc1XQ",
+      "sha256": "b2e4a25c7aa902e5039850bd4e8b3e295940f36bafd15252c477259e97a5c31e",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDEwOjM3OjMzLjAwMFoiLDE4MDMwMzQ5XQ",
+      "sha256": "38cb1d57e03d8c991f0d8ba67c501217b1e7a51f779da69cea39afa0bc6e1ad6",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDEwOjEwOjMwLjAwMFoiLDE4MDMwMjEwXQ",
+      "sha256": "39b506faa952f852561af6b0112a29460d7717b75cc980ed68cb26b4aad559cb",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA5OjUxOjM4LjAwMFoiLDE4MDMwMTEyXQ",
+      "sha256": "325b4ded4f298a3d2cbac5266cc6ec41f845389481aea5d71bf86b36c35ff7fd",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA5OjMxOjE1LjAwMFoiLDE4MDI5OTk3XQ",
+      "sha256": "021617c941d2caa3868afcc6285cfa0b6cf7323a7b13b0eda08473414c2b667c",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA5OjA4OjQwLjAwMFoiLDE4MDI5ODc0XQ",
+      "sha256": "dbb6b62ed7b9abcd698232a66d20d16b45a4b767533949f81b441ec685edea68",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA4OjQyOjA0LjAwMFoiLDE4MDI5NzUwXQ",
+      "sha256": "097e5d3fb9313ba12cf26a092b66baf8c4bc1976922442383af14eb18ea5e8ab",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA4OjA2OjU5LjAwMFoiLDE4MDI5NTczXQ",
+      "sha256": "9803b30f06f277fc7c21d45bd65152fba79d54ed2c9332bde9a5964dacdf8d4c",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA3OjI0OjQyLjAwMFoiLDE4MDIwNjM5XQ",
+      "sha256": "4fef98adc5e58ede31de698ad762581177c0d339448d1fe6c7b3ceb474b55a2c",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA2OjQ1OjI5LjAwMFoiLDE4MDIwNDYxXQ",
+      "sha256": "3b1f55845fca4d9aad8bc1b6fcfd77fae02cddcc9fb67c3f12ae2d1d8c513f5c",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA2OjEyOjQxLjAwMFoiLDE4MDIwMzMzXQ",
+      "sha256": "418a69e21b12dacfb65d6ae0deffa7ff6fb7920609198dfb48a2cfefbee97f55",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA1OjI1OjE0LjAwMFoiLDE4MDIwMTU0XQ",
+      "sha256": "7fdbf150155331a376af5c7a16de38eaeda6b54f0e3b85cd435e2d24ebd3b279",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA0OjU2OjIxLjAwMFoiLDE4MDIwMDQyXQ",
+      "sha256": "3c576a7cd54611390cf8ed464878120bb33139b33d269036a2022dc6b18c3ef9",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDA0OjIwOjA1LjAwMFoiLDE4MDE5ODc1XQ",
+      "sha256": "e4e661f57a6761cf75f483fcf4fb0d340a052f2e8952a498cb19de7705c3a78d",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDAzOjM3OjAxLjAwMFoiLDE4MDE5NzA0XQ",
+      "sha256": "edf1f4c184c85f3ff30ee2b63585a5aa679eb80db2ea1127ab123c4c0c6ac193",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDAzOjAwOjU4LjAwMFoiLDE4MDE5NTU0XQ",
+      "sha256": "c554c018e06531a9084850bcf647624b1f98e747720ccbb35b6e341561cf5f30",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDAyOjIxOjU2LjAwMFoiLDE4MDE5Mzg2XQ",
+      "sha256": "ef1317dd428afc198fb6912e1a77e8eba37e3a29ff97ead794e30bf9da43056c",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDAxOjQyOjM0LjAwMFoiLDE4MDE5MjQwXQ",
+      "sha256": "08c346e38b7f6a8926fc8b5a7be94ad9fab4a1990738fdbcdbf3acb3d5982a5a",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDAwOjUyOjQxLjAwMFoiLDE4MDE5MDU4XQ",
+      "sha256": "6a2c617c89b4acdb9d3ab39b31bf8f7dd1ff17e1b55cc620e4a3b661e4c49af9",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTE0VDAwOjAzOjM0LjAwMFoiLDE4MDE4ODg5XQ",
+      "sha256": "a8d6091c2cce5405f960f67d14b1a5a72f60d994fa15b7a1728ed0c80e015344",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTEzVDIzOjE5OjIwLjAwMFoiLDE4MDE4NzI5XQ",
+      "sha256": "a91e6d560009853df4e9fc1b7ddb651e3c08984a1265869f120f07ae0ec3f2f1",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTEzVDIyOjM1OjE0LjAwMFoiLDE4MDE4NTUwXQ",
+      "sha256": "1da160f3472e4aa1aaa8108943a85bafa86970203510eccaec0b034462584456",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTEzVDIxOjU3OjU2LjAwMFoiLDE4MDE4MzY1XQ",
+      "sha256": "dba73b24f855f399614b42f7c46dc41659df127b5a94e0a191dd30677cef1741",
+      "rows": 20
+    },
+    {
+      "url": "https://cohdb.com/matches.turbo_stream?patch=50313&mode=ones&faction=germans&page=WyIyMDI2LTEwLTEzVDIxOjI2OjE3LjAwMFoiLDE4MDE4MTg3XQ",
+      "sha256": "4c6d033d6d58fdbadb1eff4512b9a509e8221824a1e54b2a8f8cbbf7b6035526",
+      "rows": 20
+    }
+  ],
+  "records": [
+    {
+      "source_url": "https://cohdb.com/replays/7280924",
+      "download_url": "https://cohdb.com/replays/7280924/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88336896
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280925",
+      "download_url": "https://cohdb.com/replays/7280925/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88335663
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280926",
+      "download_url": "https://cohdb.com/replays/7280926/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88336585
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280921",
+      "download_url": "https://cohdb.com/replays/7280921/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88336335
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280912",
+      "download_url": "https://cohdb.com/replays/7280912/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88336692
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280907",
+      "download_url": "https://cohdb.com/replays/7280907/file?inflate=true",
+      "status": "collected",
+      "match_id": 88336093,
+      "dataset": "datasets/match-88336093.json",
+      "profile_ids": [
+        1390563
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280910",
+      "download_url": "https://cohdb.com/replays/7280910/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88335362
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280896",
+      "download_url": "https://cohdb.com/replays/7280896/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88335645
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280885",
+      "download_url": "https://cohdb.com/replays/7280885/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88336387
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280882",
+      "download_url": "https://cohdb.com/replays/7280882/file?inflate=true",
+      "status": "collected",
+      "match_id": 88335815,
+      "dataset": "datasets/match-88335815.json",
+      "profile_ids": [
+        1222282
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280878",
+      "download_url": "https://cohdb.com/replays/7280878/file?inflate=true",
+      "status": "collected",
+      "match_id": 88336353,
+      "dataset": "datasets/match-88336353.json",
+      "profile_ids": [
+        1324066
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280844",
+      "download_url": "https://cohdb.com/replays/7280844/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88336024
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280843",
+      "download_url": "https://cohdb.com/replays/7280843/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88336026
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280838",
+      "download_url": "https://cohdb.com/replays/7280838/file?inflate=true",
+      "status": "collected",
+      "match_id": 88335657,
+      "dataset": "datasets/match-88335657.json",
+      "profile_ids": [
+        378232
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280832",
+      "download_url": "https://cohdb.com/replays/7280832/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88335520
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280833",
+      "download_url": "https://cohdb.com/replays/7280833/file?inflate=true",
+      "status": "collected",
+      "match_id": 88335484,
+      "dataset": "datasets/match-88335484.json",
+      "profile_ids": [
+        1324066
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280822",
+      "download_url": "https://cohdb.com/replays/7280822/file?inflate=true",
+      "status": "collected",
+      "match_id": 88335099,
+      "dataset": "datasets/match-88335099.json",
+      "profile_ids": [
+        186872
+      ],
+      "eligible_players": 0
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280808",
+      "download_url": "https://cohdb.com/replays/7280808/file?inflate=true",
+      "status": "collected",
+      "match_id": 88335699,
+      "dataset": "datasets/match-88335699.json",
+      "profile_ids": [
+        1390563
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280801",
+      "download_url": "https://cohdb.com/replays/7280801/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88335045
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280791",
+      "download_url": "https://cohdb.com/replays/7280791/file?inflate=true",
+      "status": "collected",
+      "match_id": 88334397,
+      "dataset": "datasets/match-88334397.json",
+      "profile_ids": [
+        63169
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280771",
+      "download_url": "https://cohdb.com/replays/7280771/file?inflate=true",
+      "status": "collected",
+      "match_id": 88335178,
+      "dataset": "datasets/match-88335178.json",
+      "profile_ids": [
+        85265
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280772",
+      "download_url": "https://cohdb.com/replays/7280772/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88335134
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280766",
+      "download_url": "https://cohdb.com/replays/7280766/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334594
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280747",
+      "download_url": "https://cohdb.com/replays/7280747/file?inflate=true",
+      "status": "collected",
+      "match_id": 88335303,
+      "dataset": "datasets/match-88335303.json",
+      "profile_ids": [
+        1222282
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280748",
+      "download_url": "https://cohdb.com/replays/7280748/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334876
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280743",
+      "download_url": "https://cohdb.com/replays/7280743/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88335081
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280734",
+      "download_url": "https://cohdb.com/replays/7280734/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334889
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280699",
+      "download_url": "https://cohdb.com/replays/7280699/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334506
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280698",
+      "download_url": "https://cohdb.com/replays/7280698/file?inflate=true",
+      "status": "collected",
+      "match_id": 88334832,
+      "dataset": "datasets/match-88334832.json",
+      "profile_ids": [
+        85265
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280681",
+      "download_url": "https://cohdb.com/replays/7280681/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334174
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280680",
+      "download_url": "https://cohdb.com/replays/7280680/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334670
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280672",
+      "download_url": "https://cohdb.com/replays/7280672/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334015
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280674",
+      "download_url": "https://cohdb.com/replays/7280674/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334484
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280666",
+      "download_url": "https://cohdb.com/replays/7280666/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334754
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280649",
+      "download_url": "https://cohdb.com/replays/7280649/file?inflate=true",
+      "status": "collected",
+      "match_id": 88333804,
+      "dataset": "datasets/match-88333804.json",
+      "profile_ids": [
+        378232
+      ],
+      "eligible_players": 0
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280630",
+      "download_url": "https://cohdb.com/replays/7280630/file?inflate=true",
+      "status": "collected",
+      "match_id": 88334321,
+      "dataset": "datasets/match-88334321.json",
+      "profile_ids": [
+        1324066
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280623",
+      "download_url": "https://cohdb.com/replays/7280623/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88333842
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280624",
+      "download_url": "https://cohdb.com/replays/7280624/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334338
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280613",
+      "download_url": "https://cohdb.com/replays/7280613/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88333521
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280614",
+      "download_url": "https://cohdb.com/replays/7280614/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88333534
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280609",
+      "download_url": "https://cohdb.com/replays/7280609/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88333674
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280606",
+      "download_url": "https://cohdb.com/replays/7280606/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88334120
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280596",
+      "download_url": "https://cohdb.com/replays/7280596/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88333889
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280602",
+      "download_url": "https://cohdb.com/replays/7280602/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332804
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280592",
+      "download_url": "https://cohdb.com/replays/7280592/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88333358
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280562",
+      "download_url": "https://cohdb.com/replays/7280562/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88333073
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280544",
+      "download_url": "https://cohdb.com/replays/7280544/file?inflate=true",
+      "status": "collected",
+      "match_id": 88332596,
+      "dataset": "datasets/match-88332596.json",
+      "profile_ids": [
+        1378239
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280539",
+      "download_url": "https://cohdb.com/replays/7280539/file?inflate=true",
+      "status": "collected",
+      "match_id": 88332807,
+      "dataset": "datasets/match-88332807.json",
+      "profile_ids": [
+        1406893
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280528",
+      "download_url": "https://cohdb.com/replays/7280528/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88333692
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280512",
+      "download_url": "https://cohdb.com/replays/7280512/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88333019
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280499",
+      "download_url": "https://cohdb.com/replays/7280499/file?inflate=true",
+      "status": "collected",
+      "match_id": 88332706,
+      "dataset": "datasets/match-88332706.json",
+      "profile_ids": [
+        212904
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280498",
+      "download_url": "https://cohdb.com/replays/7280498/file?inflate=true",
+      "status": "collected",
+      "match_id": 88333017,
+      "dataset": "datasets/match-88333017.json",
+      "profile_ids": [
+        378232
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280493",
+      "download_url": "https://cohdb.com/replays/7280493/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88331942
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280488",
+      "download_url": "https://cohdb.com/replays/7280488/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332296
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280479",
+      "download_url": "https://cohdb.com/replays/7280479/file?inflate=true",
+      "status": "collected",
+      "match_id": 88333092,
+      "dataset": "datasets/match-88333092.json",
+      "profile_ids": [
+        801958
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280466",
+      "download_url": "https://cohdb.com/replays/7280466/file?inflate=true",
+      "status": "collected",
+      "match_id": 88331853,
+      "dataset": "datasets/match-88331853.json",
+      "profile_ids": [
+        1114114
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280456",
+      "download_url": "https://cohdb.com/replays/7280456/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332678
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280453",
+      "download_url": "https://cohdb.com/replays/7280453/file?inflate=true",
+      "status": "collected",
+      "match_id": 88331830,
+      "dataset": "datasets/match-88331830.json",
+      "profile_ids": [
+        129552
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280433",
+      "download_url": "https://cohdb.com/replays/7280433/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332124
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280434",
+      "download_url": "https://cohdb.com/replays/7280434/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332632
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280416",
+      "download_url": "https://cohdb.com/replays/7280416/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332413
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280406",
+      "download_url": "https://cohdb.com/replays/7280406/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332909
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280397",
+      "download_url": "https://cohdb.com/replays/7280397/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88331996
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280382",
+      "download_url": "https://cohdb.com/replays/7280382/file?inflate=true",
+      "status": "collected",
+      "match_id": 88332106,
+      "dataset": "datasets/match-88332106.json",
+      "profile_ids": [
+        407764
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280374",
+      "download_url": "https://cohdb.com/replays/7280374/file?inflate=true",
+      "status": "collected",
+      "match_id": 88331978,
+      "dataset": "datasets/match-88331978.json",
+      "profile_ids": [
+        307928
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280349",
+      "download_url": "https://cohdb.com/replays/7280349/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88331376
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280352",
+      "download_url": "https://cohdb.com/replays/7280352/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88331181
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280359",
+      "download_url": "https://cohdb.com/replays/7280359/file?inflate=true",
+      "status": "collected",
+      "match_id": 88332364,
+      "dataset": "datasets/match-88332364.json",
+      "profile_ids": [
+        351653
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280331",
+      "download_url": "https://cohdb.com/replays/7280331/file?inflate=true",
+      "status": "collected",
+      "match_id": 88331855,
+      "dataset": "datasets/match-88331855.json",
+      "profile_ids": [
+        396549
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280341",
+      "download_url": "https://cohdb.com/replays/7280341/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332537
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280343",
+      "download_url": "https://cohdb.com/replays/7280343/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332265
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280342",
+      "download_url": "https://cohdb.com/replays/7280342/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332520
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280339",
+      "download_url": "https://cohdb.com/replays/7280339/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88332242
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280315",
+      "download_url": "https://cohdb.com/replays/7280315/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88330866
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280309",
+      "download_url": "https://cohdb.com/replays/7280309/file?inflate=true",
+      "status": "collected",
+      "match_id": 88331807,
+      "dataset": "datasets/match-88331807.json",
+      "profile_ids": [
+        411006
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280288",
+      "download_url": "https://cohdb.com/replays/7280288/file?inflate=true",
+      "status": "collected",
+      "match_id": 88331585,
+      "dataset": "datasets/match-88331585.json",
+      "profile_ids": [
+        997039
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280287",
+      "download_url": "https://cohdb.com/replays/7280287/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88331835
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280276",
+      "download_url": "https://cohdb.com/replays/7280276/file?inflate=true",
+      "status": "collected",
+      "match_id": 88331671,
+      "dataset": "datasets/match-88331671.json",
+      "profile_ids": [
+        431443
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280270",
+      "download_url": "https://cohdb.com/replays/7280270/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88330641
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280253",
+      "download_url": "https://cohdb.com/replays/7280253/file?inflate=true",
+      "status": "collected",
+      "match_id": 88331396,
+      "dataset": "datasets/match-88331396.json",
+      "profile_ids": [
+        72759
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280236",
+      "download_url": "https://cohdb.com/replays/7280236/file?inflate=true",
+      "status": "collected",
+      "match_id": 88331180,
+      "dataset": "datasets/match-88331180.json",
+      "profile_ids": [
+        1297836
+      ],
+      "eligible_players": 1
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280238",
+      "download_url": "https://cohdb.com/replays/7280238/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88330529
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280223",
+      "download_url": "https://cohdb.com/replays/7280223/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88331435
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280208",
+      "download_url": "https://cohdb.com/replays/7280208/file?inflate=true",
+      "status": "outside_scope",
+      "match_id": 88330383
+    },
+    {
+      "source_url": "https://cohdb.com/replays/7280438",
+      "download_url": "https://cohdb.com/replays/7280438/file?inflate=true",
+      "status": "collected",
+      "match_id": 88330206,
+      "dataset": "datasets/match-88330206.json",
+      "profile_ids": [
+        652059
+      ],
+      "eligible_players": 0
+    }
+  ],
+  "stopped_reason": "target_reached",
+  "sampling": "Newest available matches, no outcome filter; convenience sample, not population coverage",
+  "collected_players": 30,
+  "attempted_downloads": 85,
+  "target_reached": true
+}
