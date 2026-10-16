@@ -16628,26 +16628,26 @@
       "title": "Heavy Armor BG: 3 Sections -> Humber -> double 6-pounder -> Crusader AA",
       "build": [
         "Start: Royal Engineer Section",
+        "2nd Royal Engineer Section",
         "Infantry Section",
         "Infantry Section",
         "Infantry Section",
         "Humber Armored Car",
-        "6-pounder Anti-Tank Gun Team",
-        "2nd 6-pounder Anti-Tank Gun Team",
+        "6-pounder Anti-tank Gun Team",
+        "2nd 6-pounder Anti-tank Gun Team",
         "Crusader AA Medium Tank",
-        "2nd Crusader AA Medium Tank / withdraw and refit when it becomes too fragile",
-        "Crusader II Medium Tank",
-        "Late: 6-pounder Gun Conversion on Crusader II"
+        "2nd Crusader AA Medium Tank",
+        "Crusader II Medium Tank"
       ],
       "path": [
-        "1. Rigorous Vehicle Training",
-        "2. Light Vehicle Withdraw and Refit",
-        "3. Crusader AA Medium Tank production unlock",
-        "4. Recon Artillery",
-        "5. Forward Repair Assembly",
-        "6. Churchill IV Heavy Tank production unlock"
+        "Rigorous Vehicle Training",
+        "Light Vehicle Withdraw and Refit",
+        "Production Unlock: Crusader AA Medium Tank",
+        "Recon Artillery",
+        "Forward Repair Assembly",
+        "Production Unlock: Churchill IV Heavy Tank"
       ],
-      "pathLabel": "Numbered battlegroup path shown in the 3HappyDolphin screenshot",
+      "pathLabel": "Battlegroup unlock order from the original guide",
       "notes": [
         "U5 side branch: if you lack fuel for the Humber, add another Infantry Section instead.",
         "U5 emergency branch: if considerably behind and already facing an enemy vehicle, take a 6-pounder AT gun instead of the Humber.",
@@ -16656,12 +16656,79 @@
         "U8 side branch: if short on fuel for the Crusader AA, take the second 6-pounder; if the opponent is already fielding heavier vehicles, a Crusader II is an alternative.",
         "The guide stresses using the Crusader AA to wipe squads and remembering its veterancy-1 ability.",
         "Once a Crusader AA becomes too fragile to use safely, use Light Vehicle Withdraw and Refit rather than throwing it away.",
-        "The screenshot itself does not display the game-mode filter; it is stored here as a 1v1-style creator build rather than presented as a statistical mode claim."
+        "The screenshot itself does not display the game-mode filter; it is stored here as a 1v1-style creator build rather than presented as a statistical mode claim.",
+        "U1 is an additional Royal Engineer Section; the starting Royal Engineer is already on the field.",
+        "U10: upgrade the Crusader II with 6-pounder Gun Conversion in the late game; this is an upgrade, not another unit slot."
       ],
-      "sourceLabel": "3HappyDolphin Heavy Armor build screenshot supplied by user, Patch 2.5.3",
-      "sourceUrl": "",
-      "preserve": "Screenshot-derived creator build. Main U1-U10 sequence and numbered battlegroup choices are preserved; conditional side choices are recorded in the notes.",
-      "techQa": "Creator-original sequence preserved; may omit routine structures/upgrades shown outside the creator graphic/transcript."
+      "sourceLabel": "3HappyDolphin Heavy Armor BG guide, Patch 2.5.3; source checked 16 Oct 2026",
+      "sourceUrl": "https://youtu.be/ANQVav1BMBE",
+      "preserve": "Guide unit order: START is already on the field; U1 is the first unit produced. Buildings, upgrades and other choices are shown separately below.",
+      "techQa": "Unit slots and selected battlegroup path checked against the original Patch 2.5.3 guide. This is a source transcription, not a current-patch gameplay certification.",
+      "unitNumbering": "U",
+      "phaseChoices": [
+        {
+          "label": "P1",
+          "main": [
+            "Section Command Post"
+          ],
+          "side": []
+        },
+        {
+          "label": "P4",
+          "main": [
+            "Field Infirmary",
+            "Platoon Command Post"
+          ],
+          "side": []
+        },
+        {
+          "label": "P5",
+          "main": [
+            "Rigorous Vehicle Training",
+            "Infantry Training"
+          ],
+          "side": []
+        },
+        {
+          "label": "P6",
+          "main": [
+            "Grenade Package"
+          ],
+          "side": []
+        },
+        {
+          "label": "P7",
+          "main": [
+            "Light Vehicle Withdraw and Refit",
+            "Unlock Crusader AA Medium Tank Production",
+            "Company Command Post"
+          ],
+          "side": []
+        },
+        {
+          "label": "P8",
+          "main": [
+            "Recon Artillery",
+            "Forward Repair Assembly"
+          ],
+          "side": []
+        },
+        {
+          "label": "P9",
+          "main": [
+            "Unlock Churchill IV Heavy Tank Production"
+          ],
+          "side": []
+        },
+        {
+          "label": "P10",
+          "main": [
+            "Armored Vehicle Training"
+          ],
+          "side": []
+        }
+      ],
+      "sourcePatch": "2.5.3"
     },
     {
       "creator": "3HappyDolphin",
@@ -16674,26 +16741,26 @@
       "title": "SB BG Build: 3 Grens -> Flame 251 -> Pak/PGrens -> Brummbaer",
       "build": [
         "Start: Pioneer Squad",
+        "2nd Pioneer Squad",
         "Grenadier Squad",
         "Grenadier Squad",
         "Grenadier Squad",
         "251/16 Flammpanzerwagen",
-        "Pak 40 Anti-Tank Gun Team",
+        "Pak 40 Anti-tank Gun Team",
         "Panzergrenadier Squad",
         "Panzergrenadier Squad",
-        "Sturmpanzer IV Brummbaer",
-        "Panzer IV / Brummbaer follow-up depending game state",
-        "Pioneer if additional repair capacity is needed"
+        "Sturmpanzer IV Brummbär",
+        "Panzer IV Medium Tank"
       ],
       "path": [
-        "1. Clearing Gear",
-        "2. Firestorm Doctrine",
-        "3. Siege Specialists",
-        "4. Grinding Advance",
-        "5. Construct Siege Camp",
-        "6. Probing Barrage"
+        "Clearing Gear",
+        "Firestorm Doctrine",
+        "Siege Specialists",
+        "Grinding Advance",
+        "Designate Siege Leader",
+        "Probing Barrage"
       ],
-      "pathLabel": "Exact numbered battlegroup path shown in the 3HappyDolphin screenshot",
+      "pathLabel": "Battlegroup unlock order from the original guide",
       "notes": [
         "U1 side option: Kettenkrad Recon Vehicle. The screenshot suggests it when you can exploit early cover play/map movement.",
         "The 251/16 is built directly in this guide rather than buying a normal 251 first and converting it; use Riegel mines.",
@@ -16703,13 +16770,91 @@
         "A second Pak can be used as either the first or second AT layer depending on the opponent.",
         "At the armor step, use Panzer IV when behind or when facing many light vehicles; use the Brummbaer when the anti-infantry payoff is safe.",
         "If manpower is available but fuel is tight, an additional Panzergrenadier is a side option.",
-        "If you commit to a Sturmtiger later, the screenshot warns not to duplicate the heavy assault-tank investment unnecessarily.",
-        "The screenshot itself does not display the game-mode filter; it is stored here as a 1v1-style creator build."
+        "The screenshot itself does not display the game-mode filter; it is stored here as a 1v1-style creator build.",
+        "U1 is an additional Pioneer Squad. The Kettenkrad is an alternative first production choice, not a replacement for the starting Pioneer.",
+        "U10 defaults to Panzer IV. If Panzer IV was chosen at U9, take Brummbär here; do not automatically add a second Brummbär. An extra Pioneer for repairs is a side option.",
+        "The default battlegroup route selects Grinding Advance and Designate Siege Leader. Siege Camp is the alternative to Grinding Advance; Sturmtiger replaces Designate Siege Leader."
       ],
-      "sourceLabel": "3HappyDolphin Siege Breaker build screenshot supplied by user, Patch 2.5.3",
-      "sourceUrl": "",
-      "preserve": "Screenshot-derived creator build. It is kept separately from the Tightrope/Stephen Siege Breaker builds and from the Current Advisor recommendation.",
-      "techQa": "Creator-original sequence preserved; may omit routine structures/upgrades shown outside the creator graphic/transcript."
+      "sourceLabel": "3HappyDolphin SB BG Build guide, Patch 2.5.3; source checked 16 Oct 2026",
+      "sourceUrl": "https://youtu.be/w1zPwr9BBJs",
+      "preserve": "Guide unit order: START is already on the field; U1 is the first unit produced. Buildings, upgrades and other choices are shown separately below.",
+      "techQa": "Unit slots and selected battlegroup path checked against the original Patch 2.5.3 guide. This is a source transcription, not a current-patch gameplay certification.",
+      "unitNumbering": "U",
+      "phaseChoices": [
+        {
+          "label": "P1",
+          "main": [
+            "Infanterie Kompanie"
+          ],
+          "side": []
+        },
+        {
+          "label": "P4",
+          "main": [
+            "Clearing Gear",
+            "Firestorm Doctrine",
+            "Panzergrenadier Kompanie"
+          ],
+          "side": []
+        },
+        {
+          "label": "P5",
+          "main": [
+            "Infanterie Officer Quarters"
+          ],
+          "side": [
+            "Medical Bunker"
+          ]
+        },
+        {
+          "label": "P6",
+          "main": [
+            "Panzergrenadier Officer Quarters"
+          ],
+          "side": [
+            "Medical Bunker"
+          ]
+        },
+        {
+          "label": "P7",
+          "main": [
+            "Siege Specialists",
+            "Grinding Advance",
+            "Medical Bunker"
+          ],
+          "side": [
+            "Panzer Officer Quarters"
+          ]
+        },
+        {
+          "label": "P8",
+          "main": [
+            "Panzer Kompanie"
+          ],
+          "side": [
+            "Sturmtiger Heavy Tank"
+          ]
+        },
+        {
+          "label": "P9",
+          "main": [],
+          "side": [
+            "Sturmtiger Heavy Tank"
+          ]
+        },
+        {
+          "label": "P10",
+          "main": [
+            "Side Skirts",
+            "Designate Siege leader",
+            "Probing Barrage"
+          ],
+          "side": [
+            "Sturmtiger Heavy Tank"
+          ]
+        }
+      ],
+      "sourcePatch": "2.5.3"
     },
     {
       "creator": "3HappyDolphin",
@@ -16719,44 +16864,120 @@
         "1v1"
       ],
       "matchup": "Any",
-      "title": "Pure Luftwaffe: 4 Grens -> 221 -> Pak -> double Jaeger -> Panzer IV",
+      "title": "Pure Luftwaffe: 4 Grens -> 221 -> LG40 -> double Jaeger -> Brummbaer",
       "build": [
         "Start: Pioneer Squad",
+        "2nd Pioneer Squad",
         "Grenadier Squad",
         "Grenadier Squad",
         "Grenadier Squad",
         "Grenadier Squad",
         "221 Scout Car",
-        "Pak 40 Anti-Tank Gun Team",
-        "Jaeger Squad",
-        "Jaeger Squad",
-        "Panzer IV Medium Tank"
+        "LG40 Recoilless Gun Paradrop",
+        "Jäger Squad",
+        "Jäger Squad",
+        "Sturmpanzer IV Brummbär"
       ],
       "path": [
-        "1. Fallschirmpioneer Squad Paradrop",
-        "2. LG40 Recoilless Gun Paradrop",
-        "3. Infantry Reserves",
-        "4. Stuka Strafing Run",
-        "5. Fallschirmjaeger Squad Paradrop",
-        "6. Stuka Loiter"
+        "Fallschirmpioneer Squad Paradrop",
+        "LG40 Recoilless Gun Paradrop",
+        "Infantry Reserves",
+        "Stuka Strafing Run",
+        "Fallschirmjäger Squad Paradrop",
+        "Stuka Loiter"
       ],
-      "pathLabel": "Exact numbered battlegroup path shown in the 3HappyDolphin screenshot",
+      "pathLabel": "Battlegroup unlock order from the original guide",
       "notes": [
-        "U1 side option: Kettenkrad Recon Vehicle; the guide suggests it when the early map/cover situation makes it worthwhile.",
         "Grenadiers are used at long range and can later be merged for macro; veterancy-1 healing is highlighted as important.",
         "The 221 Scout Car is mainly an anti-infantry/support unit. Convert to the Panzerbuechse 41 only under heavy vehicle pressure.",
         "If the 221 timing is late or unsafe, the LG40 can be taken first as the anti-vehicle safety option.",
-        "Pak 40: use Ambush Camouflage whenever possible.",
+        "LG40: use Ambush Camouflage whenever possible.",
         "Both Jaeger squads should receive Scoped Rifles as soon as practical; the guide treats Scoped Rifles as the main plan.",
         "Infanterie Kompanie is constructed quickly so resources are not floated before Grenadier production.",
         "Infanterie Officer Quarters is described as a very timing-sensitive purchase: if the efficient window is missed, skip it rather than forcing it late.",
         "Medical Bunker is the preferred healing position; Luftwaffe Officer Quarters is a useful flexible later pick if the game state supports it.",
-        "The screenshot itself does not display the game-mode filter; it is stored here as a 1v1-style creator build."
+        "The screenshot itself does not display the game-mode filter; it is stored here as a 1v1-style creator build.",
+        "U1 is an additional Pioneer Squad; the starting Pioneer is already on the field.",
+        "U7 is the LG40 Recoilless Gun Paradrop, not a Pak 40. The source tech route uses Luftwaffe Kompanie and does not build Panzergrenadier Kompanie.",
+        "U10 defaults to Brummbär; Panzer IV is the alternative against substantial enemy vehicle pressure."
       ],
-      "sourceLabel": "3HappyDolphin Pure Luftwaffe build screenshot supplied by user, Patch 2.5.3",
-      "sourceUrl": "",
-      "preserve": "Screenshot-derived creator build. The pure four-Grenadier sequence is preserved even though the Current Advisor may recommend a different Luftwaffe shell.",
-      "techQa": "Creator-original sequence preserved; may omit routine structures/upgrades shown outside the creator graphic/transcript."
+      "sourceLabel": "3HappyDolphin Pure Luftwaffe guide, Patch 2.5.3; source checked 16 Oct 2026",
+      "sourceUrl": "https://youtu.be/7gC-RSsFGio",
+      "preserve": "Guide unit order: START is already on the field; U1 is the first unit produced. Buildings, upgrades and other choices are shown separately below.",
+      "techQa": "Unit slots and selected battlegroup path checked against the original Patch 2.5.3 guide. This is a source transcription, not a current-patch gameplay certification.",
+      "unitNumbering": "U",
+      "phaseChoices": [
+        {
+          "label": "P1",
+          "main": [
+            "Infanterie Kompanie"
+          ],
+          "side": []
+        },
+        {
+          "label": "P4",
+          "main": [
+            "Infanterie Officer Quarters"
+          ],
+          "side": []
+        },
+        {
+          "label": "P5",
+          "main": [
+            "Luftwaffe Kompanie"
+          ],
+          "side": []
+        },
+        {
+          "label": "P6",
+          "main": [
+            "LG40 Recoilless Gun Paradrop",
+            "Fallschirmpioneer Squad Paradrop"
+          ],
+          "side": []
+        },
+        {
+          "label": "P7",
+          "main": [],
+          "side": [
+            "Medical Bunker"
+          ]
+        },
+        {
+          "label": "P8",
+          "main": [
+            "Infantry Reserves",
+            "Medical Bunker",
+            "Luftwaffe Officer Quarters"
+          ],
+          "side": [
+            "Stuka Strafing Run"
+          ]
+        },
+        {
+          "label": "P9",
+          "main": [
+            "Panzer Kompanie"
+          ],
+          "side": [
+            "Infantry Reserves"
+          ]
+        },
+        {
+          "label": "P10",
+          "main": [
+            "Stuka Strafing Run",
+            "Fallschirmjäger Squad Paradrop",
+            "Stuka Loiter",
+            "Side Skirts",
+            "Panzer Officer Quarters"
+          ],
+          "side": [
+            "Infantry Reserves"
+          ]
+        }
+      ],
+      "sourcePatch": "2.5.3"
     }
   ],
   "eloStats": {

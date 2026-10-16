@@ -15,36 +15,12 @@ for (const [index, [, attrs, body]] of inlineScripts.entries()) {
 function extractFunction(name) {
   const start = page.indexOf('function ' + name + '(');
   assert.ok(start >= 0, 'missing function ' + name);
-  const open = page.indexOf('{', start);
-  let depth = 0;
-  let quote = null;
-  let escaped = false;
-  let lineComment = false;
-  let blockComment = false;
-  for (let i = open; i < page.length; i += 1) {
-    const ch = page[i];
-    const next = page[i + 1];
-    if (lineComment) {
-      if (ch === '\n') lineComment = false;
-      continue;
-    }
-    if (blockComment) {
-      if (ch === '*' && next === '/') { blockComment = false; i += 1; }
-      continue;
-    }
-    if (quote) {
-      if (escaped) { escaped = false; continue; }
-      if (ch === '\\') { escaped = true; continue; }
-      if (ch === quote) quote = null;
-      continue;
-    }
-    if (ch === '/' && next === '/') { lineComment = true; i += 1; continue; }
-    if (ch === '/' && next === '*') { blockComment = true; i += 1; continue; }
-    if (ch === "'" || ch === '"' || ch === '`') { quote = ch; continue; }
-    if (ch === '{') depth += 1;
-    if (ch === '}') {
-      depth -= 1;
-      if (depth === 0) return page.slice(start, i + 1);
+  // Let the JS parser handle nested template interpolation, regexes and comments.
+  // The first closing brace yielding a complete declaration is the boundary.
+  for (let end = page.indexOf('}', start); end >= 0; end = page.indexOf('}', end + 1)) {
+    const source = page.slice(start, end + 1);
+    try { new vm.Script(source); return source; } catch (error) {
+      if (!(error instanceof SyntaxError)) throw error;
     }
   }
   throw new Error('unterminated function ' + name);
@@ -214,3 +190,87 @@ assert.equal(allModesScore.cohdb, 5);
 assert.equal('map' in allModesScore, false);
 
 console.log('Current embedded CoHDB statistics and All Modes scoring checks passed.');
+
+// Creator guides number production separately from the squad already on the field.
+// Keep source facts outside the renderer, so a missing U1 or mistaken unit name
+// cannot silently become the new expectation when the frontend is edited.
+const advisorData = JSON.parse(fs.readFileSync('coh3_build_advisor_data.json', 'utf8'));
+const creatorAudit = JSON.parse(fs.readFileSync('data/creator-build-audit.json', 'utf8'));
+const embeddedCreators = JSON.parse(page.match(/const CREATOR_BUILDS=(.*);\n/)[1]);
+assert.deepEqual(embeddedCreators, advisorData.creatorBuilds, 'live creator data must match the editable data file');
+const auditKey = x => `${x.creator}|${x.faction}|${x.battlegroup}|${x.title}`;
+assert.deepEqual(
+  creatorAudit.entries.map(auditKey).sort(),
+  advisorData.creatorBuilds.map(auditKey).sort(),
+  'audit must account for every saved creator entry'
+);
+const creatorFunctions = [
+  'normalizeDisplayUnit', 'starterFromDisplay', 'displayBuildSteps',
+  'escapeHtml', 'creatorBuildItems', 'creatorBuildHtml', 'creatorPhaseChoices',
+  'creatorMiniCard', 'normalizeStep', 'compareCandidates', 'updateCompare',
+  'phaseBuild', 'buildStepInfo', 'buildHtml', 'renderBuildVisualizer'
+].map(extractFunction).join('\n');
+const compareDetail = {innerHTML: ''};
+let comparisonProfile;
+const creatorRuntime = new Function(
+  'CREATOR_BUILDS', 'PATCH', 'currentProfile', 'effectiveBuild', '$', 'requestAnimationFrame',
+  creatorFunctions + '\nreturn {displayBuildSteps,creatorBuildItems,creatorMiniCard,normalizeStep,updateCompare,renderBuildVisualizer};'
+)(embeddedCreators, advisorData.patch, () => comparisonProfile, p => p.build, () => compareDetail, () => {});
+const sourceUnitKey = value => value.replace(/^(?:2nd|3rd|second|third)\s+/i, '').toLowerCase();
+const guideEntries = advisorData.creatorBuilds.filter(c => c.unitNumbering === 'U');
+assert.equal(guideEntries.length, creatorAudit.guideReceipts.length);
+for (const source of creatorAudit.guideReceipts) {
+  const c = guideEntries.find(x => auditKey(x) === auditKey(source));
+  assert.ok(c, `missing audited guide ${source.sourceTitle}`);
+  assert.equal(c.sourcePatch, source.sourcePatch);
+  assert.equal(c.sourceUrl, source.videoUrl);
+  assert.equal(c.build.length, source.unitSlots.length + 1, 'START must not consume a source U slot');
+  const items = creatorRuntime.creatorBuildItems(c);
+  assert.equal(items[0].label, 'START');
+  for (const [i, slot] of source.unitSlots.entries()) {
+    assert.equal(items[i + 1].label, slot.label);
+    assert.equal(sourceUnitKey(items[i + 1].text), sourceUnitKey(slot.unit), `${source.sourceTitle} ${slot.label}`);
+  }
+  assert.match(items[1].text, /^2nd /, 'U1 must retain the additional Pioneer or Engineer');
+  assert.deepEqual(c.phaseChoices, source.phaseSlots, 'P milestones must stay separate from unit production');
+  const choiceKey = value => value.toLowerCase().replace(/production unlock:?|medium tank|heavy tank/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  assert.deepEqual(c.path.map(choiceKey), source.battlegroupSelections.map(choiceKey));
+  const tree = advisorData.battlegroupTrees[c.faction][c.battlegroup];
+  const progress = new Map(tree.branches.map(branch => [branch.name, 0]));
+  for (const choice of c.path) {
+    const matches = tree.branches.flatMap(branch => branch.tiers.flatMap((tier, i) =>
+      tier.options.some(option => choiceKey(option) === choiceKey(choice)) ? [{branch, tier: i + 1}] : []
+    ));
+    assert.equal(matches.length, 1, `unknown or ambiguous BG choice ${choice}`);
+    const match = matches[0];
+    assert.equal(match.tier, progress.get(match.branch.name) + 1, 'default path must respect prerequisites and exclusive choices');
+    progress.set(match.branch.name, match.tier);
+  }
+  const card = creatorRuntime.creatorMiniCard(c);
+  assert.match(card, /<strong>START:<\/strong>/);
+  assert.match(card, /<strong>U1:<\/strong> 2nd /);
+  assert.match(card, /<strong>U10:<\/strong>/);
+  assert.doesNotMatch(card, /<strong>U11:<\/strong>/);
+  assert.match(card, /Buildings, upgrades and other choices/);
+  assert.ok(card.includes(c.sourceUrl), 'checked guide must be directly reviewable');
+  // Exercise the comparison surface too; it must not reintroduce the old U1 loss.
+  comparisonProfile = {faction: c.faction, battlegroup: c.battlegroup, mode: '1v1', build: ['Starting unit: ' + items[0].text]};
+  const candidates = embeddedCreators.filter(x => x.faction === c.faction && x.battlegroup === c.battlegroup && x.modes.includes('1v1'));
+  creatorRuntime.updateCompare(candidates.findIndex(x => auditKey(x) === auditKey(c)));
+  assert.match(compareDetail.innerHTML, /<strong>U1:<\/strong> 2nd /);
+  const visual = creatorRuntime.renderBuildVisualizer(c.build, c);
+  assert.equal((visual.match(/buildstepbadge start/g) || []).length, 1);
+  assert.match(visual, /buildstepbadge ">1<\/div>/, 'first produced unit must be step 1 in visual cards');
+}
+const pureLuftwaffe = guideEntries.find(c => c.battlegroup === 'Luftwaffe');
+assert.match(pureLuftwaffe.build[7], /^LG40 /);
+assert.ok(!JSON.stringify(pureLuftwaffe.build).includes('Pak 40'));
+assert.ok(!pureLuftwaffe.notes.some(note => note.startsWith('Pak 40:')));
+assert.equal(creatorRuntime.normalizeStep('Start: Pioneer'), creatorRuntime.normalizeStep('Starting unit: Pioneer'));
+const triplePioneer = advisorData.creatorBuilds.find(c => c.title.includes('triple-Pioneer'));
+assert.deepEqual(creatorRuntime.displayBuildSteps(triplePioneer.build).slice(0, 3), ['Starting unit: Pioneer', '2nd Pioneer', '3rd Pioneer']);
+const airborne = advisorData.creatorBuilds.find(c => c.creator === 'Havoc' && c.battlegroup === 'Airborne');
+assert.deepEqual(creatorRuntime.displayBuildSteps(airborne.build).slice(0, 2), ['Starting unit: Scout', '2nd Scout']);
+const incomplete = advisorData.creatorBuilds.find(c => c.creator === 'Stephen' && c.battlegroup === 'Terror');
+assert.ok(creatorRuntime.creatorBuildItems(incomplete).every(x => !x.label), 'an incomplete replay recap must not acquire invented U labels');
+console.log('Creator source slots, starting units, legal default BG paths and both display surfaces passed.');
