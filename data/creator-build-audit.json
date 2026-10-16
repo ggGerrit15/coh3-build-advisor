@@ -1,0 +1,573 @@
+{
+  "checkedAt": "2026-10-16",
+  "scope": "Source transcription and starting-unit audit of the saved creator library. Source checks do not certify current-patch balance or complete production legality of historical shorthand.",
+  "entries": [
+    {
+      "creator": "Havoc",
+      "faction": "Wehrmacht",
+      "battlegroup": "Luftwaffe",
+      "title": "Luftwaffe T2 tempo: 221 -> Wirbelwind/Marder",
+      "status": "transcript_reviewed",
+      "source": "Havoc Luftwaffe transcript",
+      "finding": "T2/221, conditional Flak 30, Fallschirmjäger, LG40 and support-tech core corroborated; a flexible recap, not one measured queue."
+    },
+    {
+      "creator": "Havoc",
+      "faction": "Wehrmacht",
+      "battlegroup": "Luftwaffe",
+      "title": "Luftwaffe T3: 251 Stummel + Falls + Pak -> T4",
+      "status": "transcript_reviewed",
+      "source": "Havoc Luftwaffe transcript",
+      "finding": "T3/251 conversion, Fallschirmjäger, Pak and Officer Quarters guidance corroborated; matchup choices remain conditional."
+    },
+    {
+      "creator": "Havoc",
+      "faction": "Wehrmacht",
+      "battlegroup": "Mechanized",
+      "title": "Mechanized small-game triple-Pioneer shell",
+      "status": "transcript_reviewed",
+      "source": "Havoc Mechanized transcript, https://www.youtube.com/watch?v=8ofk-tLt5F8",
+      "finding": "Triple-Pioneer total and small-game T3/call-in core corroborated; the starting Pioneer is separate from the two produced Pioneers."
+    },
+    {
+      "creator": "Havoc",
+      "faction": "Wehrmacht",
+      "battlegroup": "Mechanized",
+      "title": "Mechanized team-game T3 -> StuG Assault Group -> Panther",
+      "status": "transcript_reviewed",
+      "source": "Havoc Mechanized transcript, https://www.youtube.com/watch?v=8ofk-tLt5F8",
+      "finding": "Ketten/MG/Gren team-game opening, fuel-dependent Pak/PGren choice and late Panther corroborated; no fixed CP queue is claimed."
+    },
+    {
+      "creator": "Havoc",
+      "faction": "Wehrmacht",
+      "battlegroup": "Breakthrough",
+      "title": "Breakthrough modern T2 tempo: 3 Grens -> 221 -> Wirbelwind",
+      "status": "transcript_reviewed",
+      "source": "Havoc Breakthrough transcript",
+      "finding": "Two-Pioneer total, three Grens, MP40/221/Rapid Production, transfer and support-tech core corroborated."
+    },
+    {
+      "creator": "Tightrope",
+      "faction": "Wehrmacht",
+      "battlegroup": "Breakthrough",
+      "title": "Breakthrough Tiger macro build (user-saved from video)",
+      "status": "source_unavailable",
+      "source": "Previously saved Tightrope video notes",
+      "finding": "Original video or notes could not be recovered for this pass. Sequence retained without a source-verification claim."
+    },
+    {
+      "creator": "Tightrope",
+      "faction": "Wehrmacht",
+      "battlegroup": "Siege Breaker",
+      "title": "Siege Breaker Build #1: Siege Leader Wirbelwind",
+      "status": "transcript_reviewed",
+      "source": "Tightrope Siege Breaker transcript, https://www.youtube.com/watch?v=2yCmLlstMz8&t=880s",
+      "finding": "Both starting and produced Pioneer, conditional 221, Wirbelwind and Siege Leader route corroborated at 14:40–16:07."
+    },
+    {
+      "creator": "Tightrope",
+      "faction": "Wehrmacht",
+      "battlegroup": "Siege Breaker",
+      "title": "Siege Breaker Build #2: Flame 251 -> Brummbaer rush",
+      "status": "transcript_reviewed",
+      "source": "Tightrope Siege Breaker transcript, https://www.youtube.com/watch?v=2yCmLlstMz8&t=970s",
+      "finding": "Produced Pioneer, triple Gren, normal 251 conversion, Pak/PGren and Brummbär route corroborated at 16:10–17:19; not replaced by the different direct-251/16 Dolphin guide."
+    },
+    {
+      "creator": "Stephen",
+      "faction": "Wehrmacht",
+      "battlegroup": "Siege Breaker",
+      "title": "Siege Breaker vs USF: PGrens + Pak + Siege Camp",
+      "status": "partial_replay",
+      "source": "Stephen Siege Breaker transcript supplied 30 Aug 2026",
+      "finding": "PGren/Pak/Officer Quarters, Siege Camp, Panzer IV and Brummbär core corroborated; narration does not establish the full initial production queue."
+    },
+    {
+      "creator": "Stephen",
+      "faction": "Wehrmacht",
+      "battlegroup": "Terror",
+      "title": "Terror Sniper attrition / CoH1-style control build",
+      "status": "partial_replay",
+      "source": "Stephen Terror transcript",
+      "finding": "Sniper/MG, mines, StuG and Nebelwerfer attrition core corroborated; recording explicitly missed the opening, so no exact opener is inferred."
+    },
+    {
+      "creator": "Helping Hans",
+      "faction": "DAK",
+      "battlegroup": "Kriegsmarine",
+      "title": "Kriegsmarine guide opener: 250 + two Kriegs + early Hardpoint",
+      "status": "transcript_reviewed",
+      "source": "Helping Hans Kriegsmarine deep-dive transcript",
+      "finding": "Starting Panzerpioneer, immediate Kriegsmariner with parallel 250, second Kriegsmariner and light/fire-support core corroborated. BG list is priorities, not a complete prerequisite-ordered path."
+    },
+    {
+      "creator": "Havoc",
+      "faction": "DAK",
+      "battlegroup": "Kriegsmarine",
+      "title": "User-saved Havoc Kriegsmarine: 4 Kriegs -> 8 Rad",
+      "status": "source_unavailable",
+      "source": "User-saved Havoc Kriegsmarine shorthand",
+      "finding": "No original guide or CP sequence recovered. Starting unit and tech are implicit in the saved shorthand; no new production order is invented."
+    },
+    {
+      "creator": "Havoc",
+      "faction": "DAK",
+      "battlegroup": "Italian Infantry",
+      "title": "Italian Infantry / Guastatori current-iteration creator build",
+      "status": "transcript_reviewed",
+      "source": "Havoc Italian Infantry transcript",
+      "finding": "Bike/second Panzerpioneer/250, double Panzerjäger revision, 259 conversion and Guastatori/support-armor core corroborated."
+    },
+    {
+      "creator": "Havoc",
+      "faction": "USF",
+      "battlegroup": "Airborne",
+      "title": "Airborne five-unit opener -> fast M3/GMC -> T4",
+      "status": "transcript_reviewed",
+      "source": "Havoc Airborne transcript",
+      "finding": "Starting Scout plus one produced Scout (two total), two paradrop MGs and Engineer confirmed; support-center split and M3/GMC transition corroborated."
+    },
+    {
+      "creator": "Havoc",
+      "faction": "USF",
+      "battlegroup": "Free French",
+      "title": "Free French vs Wehrmacht: Barracks + Jeep + French Sections -> Motor Pool",
+      "status": "transcript_reviewed",
+      "source": "Havoc Free French transcript",
+      "finding": "French Sections/Jeep, conditional mortar, Motor Pool/Greyhound, Mechanized support and historical New Blood context corroborated."
+    },
+    {
+      "creator": "Havoc",
+      "faction": "USF",
+      "battlegroup": "Free French",
+      "title": "Free French vs DAK team-game WSC opener",
+      "status": "transcript_reviewed",
+      "source": "Havoc Free French transcript",
+      "finding": "WSC opening against DAK and early support vehicles corroborated in the described team game; later tech remains conditional."
+    },
+    {
+      "creator": "3HappyDolphin",
+      "faction": "British",
+      "battlegroup": "Heavy Armor",
+      "title": "Heavy Armor BG: 3 Sections -> Humber -> double 6-pounder -> Crusader AA",
+      "status": "guide_checked",
+      "source": "Original 3HappyDolphin Patch 2.5.3 public guide",
+      "finding": "U1–U10, P milestones and selected BG path checked; restored the additional Royal Engineer and separated the Crusader upgrade."
+    },
+    {
+      "creator": "3HappyDolphin",
+      "faction": "Wehrmacht",
+      "battlegroup": "Siege Breaker",
+      "title": "SB BG Build: 3 Grens -> Flame 251 -> Pak/PGrens -> Brummbaer",
+      "status": "guide_checked",
+      "source": "Original 3HappyDolphin Patch 2.5.3 public guide",
+      "finding": "U1–U10, P milestones and selected BG path checked; restored produced Pioneer, corrected Siege Leader and U10 follow-up."
+    },
+    {
+      "creator": "3HappyDolphin",
+      "faction": "Wehrmacht",
+      "battlegroup": "Luftwaffe",
+      "title": "Pure Luftwaffe: 4 Grens -> 221 -> LG40 -> double Jaeger -> Brummbaer",
+      "status": "guide_checked",
+      "source": "Original 3HappyDolphin Patch 2.5.3 public guide",
+      "finding": "U1–U10, P milestones and selected BG path checked; restored produced Pioneer, corrected LG40, Brummbär default and unsupported U1 side option."
+    }
+  ],
+  "guideReceipts": [
+    {
+      "creator": "3HappyDolphin",
+      "faction": "British",
+      "battlegroup": "Heavy Armor",
+      "title": "Heavy Armor BG: 3 Sections -> Humber -> double 6-pounder -> Crusader AA",
+      "sourceTitle": "Heavy Armor BG",
+      "sourcePatch": "2.5.3",
+      "sourceGuideId": "01beba650caa496e81c980a59afaab82__patch_2_5_3",
+      "videoUrl": "https://youtu.be/ANQVav1BMBE",
+      "retrievalUrl": "https://trainer.3happydolphin.com/api/build-guides",
+      "renderedHtmlSha256": "69dfdaad1b2d45b2747ddfeb26f36a07282247e81dc361e0900035cc042bd2c6",
+      "unitSlots": [
+        {
+          "label": "U1",
+          "unit": "Royal Engineer Section"
+        },
+        {
+          "label": "U2",
+          "unit": "Infantry Section"
+        },
+        {
+          "label": "U3",
+          "unit": "Infantry Section"
+        },
+        {
+          "label": "U4",
+          "unit": "Infantry Section"
+        },
+        {
+          "label": "U5",
+          "unit": "Humber Armored Car"
+        },
+        {
+          "label": "U6",
+          "unit": "6-pounder Anti-tank Gun Team"
+        },
+        {
+          "label": "U7",
+          "unit": "6-pounder Anti-tank Gun Team"
+        },
+        {
+          "label": "U8",
+          "unit": "Crusader AA Medium Tank"
+        },
+        {
+          "label": "U9",
+          "unit": "Crusader AA Medium Tank"
+        },
+        {
+          "label": "U10",
+          "unit": "Crusader II Medium Tank"
+        }
+      ],
+      "phaseSlots": [
+        {
+          "label": "P1",
+          "main": [
+            "Section Command Post"
+          ],
+          "side": []
+        },
+        {
+          "label": "P4",
+          "main": [
+            "Field Infirmary",
+            "Platoon Command Post"
+          ],
+          "side": []
+        },
+        {
+          "label": "P5",
+          "main": [
+            "Rigorous Vehicle Training",
+            "Infantry Training"
+          ],
+          "side": []
+        },
+        {
+          "label": "P6",
+          "main": [
+            "Grenade Package"
+          ],
+          "side": []
+        },
+        {
+          "label": "P7",
+          "main": [
+            "Light Vehicle Withdraw and Refit",
+            "Unlock Crusader AA Medium Tank Production",
+            "Company Command Post"
+          ],
+          "side": []
+        },
+        {
+          "label": "P8",
+          "main": [
+            "Recon Artillery",
+            "Forward Repair Assembly"
+          ],
+          "side": []
+        },
+        {
+          "label": "P9",
+          "main": [
+            "Unlock Churchill IV Heavy Tank Production"
+          ],
+          "side": []
+        },
+        {
+          "label": "P10",
+          "main": [
+            "Armored Vehicle Training"
+          ],
+          "side": []
+        }
+      ],
+      "battlegroupSelections": [
+        "Rigorous Vehicle Training",
+        "Light Vehicle Withdraw and Refit",
+        "Production Unlock: Crusader AA Medium Tank",
+        "Recon Artillery",
+        "Forward Repair Assembly",
+        "Production Unlock: Churchill IV Heavy Tank"
+      ]
+    },
+    {
+      "creator": "3HappyDolphin",
+      "faction": "Wehrmacht",
+      "battlegroup": "Siege Breaker",
+      "title": "SB BG Build: 3 Grens -> Flame 251 -> Pak/PGrens -> Brummbaer",
+      "sourceTitle": "SB BG Build",
+      "sourcePatch": "2.5.3",
+      "sourceGuideId": "fcd97826a89b40819c4ce5756a533162__patch_2_5_3",
+      "videoUrl": "https://youtu.be/w1zPwr9BBJs",
+      "retrievalUrl": "https://trainer.3happydolphin.com/api/build-guides",
+      "renderedHtmlSha256": "e047a409de19bb8d2d476b9bec19a5a80001be83ac13335254f0bda23c399278",
+      "unitSlots": [
+        {
+          "label": "U1",
+          "unit": "Pioneer Squad"
+        },
+        {
+          "label": "U2",
+          "unit": "Grenadier Squad"
+        },
+        {
+          "label": "U3",
+          "unit": "Grenadier Squad"
+        },
+        {
+          "label": "U4",
+          "unit": "Grenadier Squad"
+        },
+        {
+          "label": "U5",
+          "unit": "251/16 Flammpanzerwagen"
+        },
+        {
+          "label": "U6",
+          "unit": "Pak 40 Anti-tank Gun Team"
+        },
+        {
+          "label": "U7",
+          "unit": "Panzergrenadier Squad"
+        },
+        {
+          "label": "U8",
+          "unit": "Panzergrenadier Squad"
+        },
+        {
+          "label": "U9",
+          "unit": "Sturmpanzer IV Brummbär"
+        },
+        {
+          "label": "U10",
+          "unit": "Panzer IV Medium Tank"
+        }
+      ],
+      "phaseSlots": [
+        {
+          "label": "P1",
+          "main": [
+            "Infanterie Kompanie"
+          ],
+          "side": []
+        },
+        {
+          "label": "P4",
+          "main": [
+            "Clearing Gear",
+            "Firestorm Doctrine",
+            "Panzergrenadier Kompanie"
+          ],
+          "side": []
+        },
+        {
+          "label": "P5",
+          "main": [
+            "Infanterie Officer Quarters"
+          ],
+          "side": [
+            "Medical Bunker"
+          ]
+        },
+        {
+          "label": "P6",
+          "main": [
+            "Panzergrenadier Officer Quarters"
+          ],
+          "side": [
+            "Medical Bunker"
+          ]
+        },
+        {
+          "label": "P7",
+          "main": [
+            "Siege Specialists",
+            "Grinding Advance",
+            "Medical Bunker"
+          ],
+          "side": [
+            "Panzer Officer Quarters"
+          ]
+        },
+        {
+          "label": "P8",
+          "main": [
+            "Panzer Kompanie"
+          ],
+          "side": [
+            "Sturmtiger Heavy Tank"
+          ]
+        },
+        {
+          "label": "P9",
+          "main": [],
+          "side": [
+            "Sturmtiger Heavy Tank"
+          ]
+        },
+        {
+          "label": "P10",
+          "main": [
+            "Side Skirts",
+            "Designate Siege leader",
+            "Probing Barrage"
+          ],
+          "side": [
+            "Sturmtiger Heavy Tank"
+          ]
+        }
+      ],
+      "battlegroupSelections": [
+        "Clearing Gear",
+        "Firestorm Doctrine",
+        "Siege Specialists",
+        "Grinding Advance",
+        "Designate Siege leader",
+        "Probing Barrage"
+      ]
+    },
+    {
+      "creator": "3HappyDolphin",
+      "faction": "Wehrmacht",
+      "battlegroup": "Luftwaffe",
+      "title": "Pure Luftwaffe: 4 Grens -> 221 -> LG40 -> double Jaeger -> Brummbaer",
+      "sourceTitle": "Pure Luftwaffe",
+      "sourcePatch": "2.5.3",
+      "sourceGuideId": "fecb3b7545004b1c96fb2108dcceb257__patch_2_5_3",
+      "videoUrl": "https://youtu.be/7gC-RSsFGio",
+      "retrievalUrl": "https://trainer.3happydolphin.com/api/build-guides",
+      "renderedHtmlSha256": "cf2f8385b51836212fbdd24cd6a23d87e3a5da0a3b3a431be4a22e11ec1294b4",
+      "unitSlots": [
+        {
+          "label": "U1",
+          "unit": "Pioneer Squad"
+        },
+        {
+          "label": "U2",
+          "unit": "Grenadier Squad"
+        },
+        {
+          "label": "U3",
+          "unit": "Grenadier Squad"
+        },
+        {
+          "label": "U4",
+          "unit": "Grenadier Squad"
+        },
+        {
+          "label": "U5",
+          "unit": "Grenadier Squad"
+        },
+        {
+          "label": "U6",
+          "unit": "221 Scout Car"
+        },
+        {
+          "label": "U7",
+          "unit": "LG40 Recoilless Gun Paradrop"
+        },
+        {
+          "label": "U8",
+          "unit": "Jäger Squad"
+        },
+        {
+          "label": "U9",
+          "unit": "Jäger Squad"
+        },
+        {
+          "label": "U10",
+          "unit": "Sturmpanzer IV Brummbär"
+        }
+      ],
+      "phaseSlots": [
+        {
+          "label": "P1",
+          "main": [
+            "Infanterie Kompanie"
+          ],
+          "side": []
+        },
+        {
+          "label": "P4",
+          "main": [
+            "Infanterie Officer Quarters"
+          ],
+          "side": []
+        },
+        {
+          "label": "P5",
+          "main": [
+            "Luftwaffe Kompanie"
+          ],
+          "side": []
+        },
+        {
+          "label": "P6",
+          "main": [
+            "LG40 Recoilless Gun Paradrop",
+            "Fallschirmpioneer Squad Paradrop"
+          ],
+          "side": []
+        },
+        {
+          "label": "P7",
+          "main": [],
+          "side": [
+            "Medical Bunker"
+          ]
+        },
+        {
+          "label": "P8",
+          "main": [
+            "Infantry Reserves",
+            "Medical Bunker",
+            "Luftwaffe Officer Quarters"
+          ],
+          "side": [
+            "Stuka Strafing Run"
+          ]
+        },
+        {
+          "label": "P9",
+          "main": [
+            "Panzer Kompanie"
+          ],
+          "side": [
+            "Infantry Reserves"
+          ]
+        },
+        {
+          "label": "P10",
+          "main": [
+            "Stuka Strafing Run",
+            "Fallschirmjäger Squad Paradrop",
+            "Stuka Loiter",
+            "Side Skirts",
+            "Panzer Officer Quarters"
+          ],
+          "side": [
+            "Infantry Reserves"
+          ]
+        }
+      ],
+      "battlegroupSelections": [
+        "Fallschirmpioneer Squad Paradrop",
+        "LG40 Recoilless Gun Paradrop",
+        "Infantry Reserves",
+        "Stuka Strafing Run",
+        "Fallschirmjäger Squad Paradrop",
+        "Stuka Loiter"
+      ]
+    }
+  ]
+}

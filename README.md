@@ -20,7 +20,24 @@ https://gggerrit15.github.io/coh3-build-advisor/
 
 ## Current Version
 
-**v1.1.32 — Client Patch 2.5.6**
+**v1.1.37 — Client Patch 2.5.6**
+
+The creator-library transcription audit corrects 3HappyDolphin's LG40 and
+U1 interpretation, plus the original guides' armor and battlegroup branches.
+START is separate from produced units; U and P labels retain the guide's
+unit and non-unit milestones. These historical Patch 2.5.3 transcriptions
+are separate from current advisor recommendations.
+
+See [the creator build audit](docs/creator-build-audit.md) for the checks and
+remaining source gaps across all 19 saved creator entries.
+
+After editing `creatorBuilds` in the data file, synchronize the standalone page
+and run the regression checks:
+
+```bash
+node scripts/sync_creator_builds.mjs
+node tests/test_cohdb_runtime.mjs
+```
 
 
 ## Important
